@@ -30,7 +30,6 @@ native_earthwork = {
 	}
 	modifier = {
 		local_defensiveness = 0.25
-		local_hostile_movement_speed = -0.25
 	}
 	government_specific = yes
 	
@@ -79,7 +78,7 @@ native_fortified_house = {
 		owner = { government = native }
 	}
 	modifier = {
-		land_forcelimit = 5
+		land_forcelimit = 10
 	}
 	one_per_country = yes
 	government_specific = yes
@@ -130,7 +129,7 @@ native_irrigation = {
 		owner = { government = native }
 	}
 	modifier = {
-		tribal_development_growth = 0.01
+		tribal_development_growth = 0.02
 	}
 	government_specific = yes
 	
@@ -177,7 +176,6 @@ native_longhouse = {
 	}
 	modifier = {
 		monthly_reform_progress_building = 0.1
-		local_governing_cost = -0.25
 	}
 	government_specific = yes
 	
