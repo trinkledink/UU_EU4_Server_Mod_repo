@@ -1,0 +1,2 @@
+CAR = "countries/carthage.txt"
+AUH = "countries/Austriahungary.txt"

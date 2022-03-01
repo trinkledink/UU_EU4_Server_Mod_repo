@@ -1,0 +1,15 @@
+estate_dhimmi_piety = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		monthly_piety = -0.001
+	}
+}
