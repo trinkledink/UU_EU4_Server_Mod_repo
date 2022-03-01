@@ -20,7 +20,7 @@ propagandist = {
 	monarch_power = DIP
 	
 	# Bonus
-	ae_impact = -0.15
+	ae_impact = -0.1
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
