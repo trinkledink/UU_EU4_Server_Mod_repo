@@ -50,6 +50,7 @@ marketplace = {
 	}
 	on_obsolete = {
 	}
+
 	ai_will_do = {
 		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 	}
@@ -77,6 +78,7 @@ workshop = {
 	}
 	on_obsolete = {
 	}
+
 	allow_in_gold_provinces = no
 
 	ai_will_do = {
@@ -156,8 +158,10 @@ temple = {
 			value = 1
 		}
 	}
+	on_obsolete = {
+	}
 	ai_will_do = {
-		factor = 0.75
+		factor = 1
 	}
 }
 
@@ -200,6 +204,8 @@ barracks = {
 			type = manpower
 			value = 1
 		}
+	}
+	on_obsolete = {
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -259,7 +265,7 @@ shipyard = {
 	}
 
 	ai_will_do = {
-		factor = 0.5
+		factor = 1
 		modifier = {
 			factor = 1.5 # bit more likely if close to the naval force limit
 			FROM = { navy_size_percentage = 0.95 }
@@ -355,6 +361,7 @@ courthouse = {
 	}
 	on_obsolete = {
 	}
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -409,10 +416,7 @@ courthouse = {
 		modifier = {
 			factor = 0
 			area_for_scope_province = {
-				any_province = {
-					area = PREV
-					is_capital_of = FROM
-				}
+				is_capital_of = FROM
 			}
 		}
 	}
@@ -463,11 +467,13 @@ dock = {
 			value = 1
 		}
 	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
-		factor = 0.5
+		factor = 1
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 		}
 	}
 }
@@ -477,22 +483,6 @@ regimental_camp = {
 	time = 12
 	modifier = {
 		land_forcelimit = 1
-	}
-	on_built = {
-		add_development_from_building = {
-			building = regimental_camp
-			type = manpower
-			value = 1
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = regimental_camp
-			type = manpower
-			value = 1
-		}
-	}
-	on_obsolete = {
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -517,6 +507,22 @@ regimental_camp = {
 #			}
 #		}
 #	}
+	on_built = {
+		add_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -601,7 +607,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 1.0
+		local_tax_modifier = 0.6
 	}
 	on_built = {
 		if = {
@@ -632,7 +638,7 @@ cathedral = {
 		}
 		add_development_from_upgrading_or_building = {
 			building = cathedral
-			obsolete_building = church
+			obsolete_building = temple
 			type = tax
 			value = 2
 			upgrade_value = 1
@@ -671,9 +677,11 @@ cathedral = {
 			value = 3
 		}
 	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
-		factor = 0.75
+		factor = 1
 	}
 }
 
@@ -685,6 +693,7 @@ university = {
 		local_development_cost = -0.20
 		allowed_num_of_buildings = 1
 	}
+
 	on_built = {
 		add_development_from_building = {
 			building = university
@@ -704,34 +713,67 @@ university = {
 
 	ai_will_do = {
 		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
-		factor = 1
+		factor = 12 # Base of 0.01 ducats per MONTH
 		modifier = {
-			factor = 250
-			development = 20
-			is_state = yes
+			factor = 10
+			development = 16
 		}
 		modifier = {
-			factor = 0.9
-			OR =
-			{
+			factor = 1.4
+			development = 21
+		}
+		modifier = {
+			factor = 1.4
+			development = 26
+		}
+		modifier = {
+			factor = 1.4
+			development = 30
+		}
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
 				has_climate = tropical
 				has_climate = arid
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.2
 			has_climate = arctic
 		}
 		modifier = {
-			factor = 2
+			factor = 1.2
 			OR = {
 				has_terrain = grasslands
 				has_terrain = drylands
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 1.3
 			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 2
+			is_year = 1690 # Enlightenment spawns in 1700
+			not = {
+				owner = {
+					has_institution = enlightenment
+				}
+			}
+			not = {
+				provincial_institution_progress = {
+					which = enlightenment
+					value = 20
+				}
+			}
 		}
 	}
 }
@@ -745,6 +787,7 @@ trade_depot = {
 	modifier = {
 		province_trade_power_modifier = 1
 	}
+
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = trade_depot
@@ -783,6 +826,7 @@ grand_shipyard = {
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
 	}
+
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = grand_shipyard
@@ -803,7 +847,7 @@ grand_shipyard = {
 	}
 
 	ai_will_do = {
-		factor = 0.5
+		factor = 1
 		modifier = {
 			factor = 1.5 # bit more likely if close to the force limit
 			FROM = { navy_size_percentage = 0.95 }
@@ -860,7 +904,7 @@ training_fields = {
 			}
 		}
 		add_development_from_upgrading_or_building = {
-			building = training_field
+			building = training_fields
 			obsolete_building = barracks
 			type = manpower
 			value = 2
@@ -881,7 +925,7 @@ training_fields = {
 	}
 	on_obsolete = {
 		remove_development_from_building = {
-			building = training_field
+			building = training_fields
 			type = manpower
 			value = 2
 		}
@@ -949,6 +993,7 @@ stock_exchange = {
 	modifier = {
 		province_trade_power_modifier = 1.25
 	}
+
 	on_built = {
 		if = {
 			limit = {
@@ -962,7 +1007,7 @@ stock_exchange = {
 		}
 		else_if = {
 			limit = {
-				has_province_flag = build_dev_marketplace
+				has_province_flag = built_dev_marketplace
 			}
 			add_development_from_building = {
 				building = stock_exchange
@@ -1001,6 +1046,7 @@ counting_house = {
 	modifier = {
 		local_production_efficiency = 1
 	}
+
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = counting_house
@@ -1041,6 +1087,7 @@ town_hall = {
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
 	}
+
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = town_hall
@@ -1118,10 +1165,7 @@ town_hall = {
 		modifier = {
 			factor = 0
 			area_for_scope_province = {
-				any_province = {
-					area = PREV
-					is_capital_of = FROM
-				}
+				is_capital_of = FROM
 			}
 		}
 	}
@@ -1181,8 +1225,9 @@ drydock = {
 	on_obsolete = {
 	}
 
+
 	ai_will_do = {
-		factor = 0.5
+		factor = 1
 	}
 }
 
@@ -1559,6 +1604,7 @@ furnace = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
 	}
 	onmap = yes
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
 			building = manufactory
@@ -1575,7 +1621,6 @@ furnace = {
 	}
 	on_obsolete = {
 	}
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
 		factor = 1
@@ -1608,7 +1653,6 @@ soldier_households = {
 		fish
 		livestock
 		wine
-		wool
 	}
 
 	modifier = {
@@ -1618,6 +1662,7 @@ soldier_households = {
 		local_manpower = 0.5
 	}
 	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
 			building = impressment_offices
@@ -1634,7 +1679,6 @@ soldier_households = {
 	}
 	on_obsolete = {
 	}
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
 		factor = 1
@@ -1665,9 +1709,10 @@ impressment_offices = {
 	bonus_modifier = {
 		local_sailors = 250
 		ship_recruit_speed = -0.1
-		local_ship_cost = -0.05 
+		local_ship_cost = -0.05
 	}
 	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
 			building = impressment_offices
@@ -1684,7 +1729,6 @@ impressment_offices = {
 	}
 	on_obsolete = {
 	}
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
 		factor = 1
@@ -1702,7 +1746,6 @@ state_house = {
 		glass
 		gems
 		naval_supplies
-		wool
 	}
 
 	build_trigger = {
@@ -1743,6 +1786,7 @@ state_house = {
 		min_local_autonomy = -5
 	}
 	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
 			building = state_house
@@ -1759,7 +1803,6 @@ state_house = {
 	}
 	on_obsolete = {
 	}
-	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
 		factor = 1
