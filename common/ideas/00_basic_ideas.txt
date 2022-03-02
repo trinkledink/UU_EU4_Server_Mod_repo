@@ -1049,34 +1049,39 @@ humanist_ideas = {
 	category = ADM
 
 	bonus = {
-		idea_cost = -0.1
-		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
-		brahmins_muslim_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		monthly_piety = -0.01
+		yearly_harmony = 0.25  ###########################Used if religion uses harmony (confucianism)
+		possible_policy = 1 #UU change
+		free_adm_policy = 1 #UU change
+		free_dip_policy = 1	#UU change
+		free_mil_policy = 1 #UU change
 	}
 
 	tolerance_idea = {
 		religious_unity = 0.25
+		global_unrest = -2
+		monthly_piety = -0.1
 	}
 	local_traditions = {
-		global_unrest = -2
+		advisor_pool = 1 #UU change
 	}
-	ecumenism = {
+	humanist_tolerance = {
+		tolerance_heathen = 2
 		tolerance_heretic = 2
 	}
+	ecumenism = {
+		all_estate_loyalty_equilibrium = 0.1 #UU Change
+	}
 	indirect_rule = {
-		years_of_nationalism = -10
+		idea_cost = -0.1
 	}
 	cultural_ties = {
 		num_accepted_cultures = 2
 	}
 	benevolence = {
 		improve_relation_modifier = 0.3
+		years_of_nationalism = -10
 	}
-	humanist_tolerance = {
-		tolerance_heathen = 2
-	}
+
 
 	ai_will_do = {
 		factor = 0.9
