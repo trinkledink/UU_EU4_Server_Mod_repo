@@ -69,7 +69,7 @@ christian = {
 				global_religious_conversion_resistance = -0.33
 			}
 			concilatory = {
-				relation_with_heretics = 10
+				relation_with_heretics = 5
 				global_religious_conversion_resistance = 0.25
 				global_heretic_missionary_strength = -0.05
 				improve_relation_modifier = 0.25
@@ -83,7 +83,7 @@ christian = {
 						global_heretic_missionary_strength  = 0.02
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						tolerance_heretic = 2
 					}
 				}
@@ -93,7 +93,7 @@ christian = {
 						institution_spread_from_true_faith = 0.30
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						global_institution_spread = 0.10
 					}
 				}
@@ -103,7 +103,7 @@ christian = {
 						manpower_in_true_faith_provinces  = 0.1
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						global_manpower_modifier = 0.05
 					}
 				}
@@ -113,7 +113,7 @@ christian = {
 						warscore_cost_vs_other_religion  = -0.10
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						curia_powers_cost = -0.10
 					}
 				}
@@ -153,8 +153,6 @@ christian = {
 				}
 				allow = {
 					NOT = { war_with = PAP }
-					NOT = { prestige = 100 }
-					
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -185,7 +183,7 @@ christian = {
 				ai_will_do = {
 					factor = 1
 				}
-			}
+			}	
 			local_saint = {
 				cost = 100
 				potential = {
@@ -319,6 +317,7 @@ christian = {
 		color = { 135 77 255 }
 		icon = 28
 		allow_female_defenders_of_the_faith = yes
+
 		allowed_center_conversion = {
 			catholic
 		}
@@ -334,11 +333,11 @@ christian = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
 		aspects = {
-			kill_heir_aspect
-			gain_armytradition_aspect
+			divorce_consort_aspect
+			gain_consort_aspect
 			dissolve_monasteries_aspect
-			expell_prisoners_aspect
-			force_debate_aspect
+			monopoly_aspect
+			stability_aspect
 		}
 		aspects_name = ANGLICAN_ASPECTS
 		
@@ -350,12 +349,12 @@ christian = {
 	hussite = {
 		color = { 244 55 9 }
 		icon = 22
-		allow_female_defenders_of_the_faith = yes
+
 		allowed_center_conversion = {
 			catholic
 		}
 		country = {
-			shock_damage_received = -0.1
+			shock_damage_received = -0.05
 			global_heretic_missionary_strength = 0.02
 		}
 		
@@ -385,7 +384,7 @@ christian = {
 	protestant = {
 		color = { 0 0 178 }
 		icon = 2
-		allow_female_defenders_of_the_faith = yes
+
 		allowed_conversion = {
 			reformed
 			catholic
@@ -419,6 +418,7 @@ christian = {
 			translated_bibles_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
+		
 		hre_heretic_religion = yes
 		
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -522,7 +522,6 @@ christian = {
 	reformed = {
 		color = { 76 76 229 }
 		icon = 3
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			protestant
 			catholic
@@ -532,7 +531,7 @@ christian = {
 		}
 		country = {
 			tolerance_heretic = 2
-			country_diplomatic_power = 1
+			advisor_pool = 1
 		}
 		
 		country_as_secondary = {
@@ -642,7 +641,6 @@ christian = {
 	orthodox = {
 		color = { 178 127 0 }
 		icon = 4
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
@@ -672,7 +670,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.05
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -692,7 +690,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -717,7 +715,7 @@ christian = {
 			}
 
 			icon_pancreator = {
-				build_time = -0.15
+				development_cost = -0.10
 				build_cost = -0.1
 				
 				allow = {
@@ -735,7 +733,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 0.5
+					factor = 0.01
 				}
 			}
 
@@ -746,7 +744,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 0.8
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -775,15 +773,12 @@ christian = {
 	}
 	
 	coptic = {
-		allow_female_defenders_of_the_faith = yes
+	
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
 		color = { 178 38 76 }
 		icon = 14
-		allowed_conversion = {
-			jewish
-		}
 		country = {
 			defensiveness = 0.1
 			tolerance_own = 1
@@ -898,7 +893,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_hanafi"
 
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			idea_cost = -0.05
+			adm_tech_cost_modifier = -0.05
 		}
 		hanbali_school = {
 			potential_invite_scholar = {
@@ -1115,7 +1110,6 @@ muslim = {
 			picture = "GFX_icon_muslim_school_shafii"
 
 			merchants = 1
-			trade_steering = 0.15
 		}
 		#Shias
 		ismaili_school = {
@@ -1343,7 +1337,6 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
@@ -1364,7 +1357,6 @@ muslim = {
 	shiite = {
 		color = { 0 204 0 }
 		icon = 6
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			heir_chance = 1.0
 			land_morale = 0.05
@@ -1385,7 +1377,6 @@ muslim = {
 	ibadi = {
 		color = { 0 102 0 }
 		icon = 16
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			heir_chance = 1.0
 			global_trade_goods_size_modifier = 0.1
@@ -1410,21 +1401,19 @@ muslim = {
 
 eastern = {
 
-	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
 
 	buddhism = { #Theravada
 		color = { 204 76 0 }
 		icon = 24
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			vajrayana
 			mahayana
 		}
 		country = {
 			tolerance_heretic = 2
-			advisor_cost = -0.15
+			advisor_cost = -0.1
 		}
 		country_as_secondary = {
 			development_cost = -0.1
@@ -1449,13 +1438,12 @@ eastern = {
 	vajrayana = {
 		color = { 204 76 76 }
 		icon = 25
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			mahayana
 			buddhism #Theravada
 		}
 		country = {
-			tolerance_heretic = 2
+			tolerance_heretic = 1
 			land_morale = 0.05
 		}
 		country_as_secondary = {
@@ -1470,9 +1458,6 @@ eastern = {
 				duration = 3650
 			}
 		}
-		province = {
-			local_defensiveness = 0.1
-		}
 		
 		heretic = { ZEN }
 		
@@ -1484,14 +1469,13 @@ eastern = {
 	mahayana = {
 		color = { 204 76 127 }
 		icon = 23
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			vajrayana
 			buddhism #Theravada
 		}
 		country = {
 			tolerance_heretic = 2
-			idea_cost = -0.1
+			idea_cost = -0.05
 		}
 		country_as_secondary = {
 			global_tax_modifier = 0.1
@@ -1516,7 +1500,6 @@ eastern = {
 	confucianism = {
 		color = { 214 229 140 }
 		icon = 9
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_heretic = 2
 			adm_tech_cost_modifier = -0.1
@@ -1532,9 +1515,9 @@ eastern = {
 	shinto = {
 		color = { 204 0 0 }
 		icon = 10
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			land_morale = 0.1
+			tolerance_heathen = 1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1556,14 +1539,12 @@ eastern = {
 
 dharmic = {
 
-	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
 
 	hinduism = {
 		color = { 0 204 204 }
 		icon = 8
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			sikhism
 		}
@@ -1595,7 +1576,6 @@ dharmic = {
 	sikhism = {
 		color = { 0 153 153 }
 		icon = 15
-		allow_female_defenders_of_the_faith = yes
 		allowed_conversion = {
 			hinduism
 			sunni
@@ -1630,7 +1610,7 @@ dharmic = {
 		gurus = {
 			guru_nanak = {
 				trigger = {
-					always = yes
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 1000
@@ -1655,7 +1635,7 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						global_regiment_cost = -0.05
+						global_regiment_cost = -0.025
 					}
 				}
 			}
@@ -1663,6 +1643,7 @@ dharmic = {
 				trigger = {
 					is_year = 1539
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1695,7 +1676,7 @@ dharmic = {
 						type = ADM
 						cost = 50
 
-						technology_cost = -0.05
+						technology_cost = -0.025
 					}
 					temple_langar = {
 						type = DIP
@@ -1715,6 +1696,7 @@ dharmic = {
 				trigger = {
 					is_year = 1552
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1747,7 +1729,7 @@ dharmic = {
 						type = ADM
 						cost = 50
 
-						global_tax_modifier = 0.1
+						global_tax_modifier = 0.05
 					}
 					anand_karaj = {
 						type = DIP
@@ -1769,6 +1751,7 @@ dharmic = {
 				trigger = {
 					is_year = 1574
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1825,6 +1808,7 @@ dharmic = {
 				trigger = {
 					is_year = 1581
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1857,7 +1841,7 @@ dharmic = {
 						type = ADM
 						cost = 50
 
-						global_institution_spread = 0.15
+						global_institution_spread = 0.1
 					}
 					the_abode_of_god = {
 						type = DIP
@@ -1869,7 +1853,7 @@ dharmic = {
 						type = MIL
 						cost = 50
 
-						siege_ability = 0.10
+						land_morale = 0.05
 					}
 				}
 			}
@@ -1877,6 +1861,7 @@ dharmic = {
 				trigger = {
 					is_year = 1606
 					is_month = 6
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1919,7 +1904,7 @@ dharmic = {
 						type = DIP
 						cost = 50
 
-						war_exhaustion = -0.03
+						war_exhaustion = -0.025
 					}
 					miri_and_piri = {
 						type = MIL
@@ -1933,6 +1918,7 @@ dharmic = {
 				trigger = {
 					is_year = 1644
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1971,7 +1957,7 @@ dharmic = {
 						type = DIP
 						cost = 50
 
-						improve_relation_modifier = 0.15
+						improve_relation_modifier = 0.1
 					}
 					one_guru = {
 						type = MIL
@@ -1987,6 +1973,7 @@ dharmic = {
 				trigger = {
 					is_year = 1661
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2039,6 +2026,7 @@ dharmic = {
 				trigger = {
 					is_year = 1665
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2091,6 +2079,7 @@ dharmic = {
 				trigger = {
 					is_year = 1675
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2143,6 +2132,7 @@ dharmic = {
 				trigger = {
 					is_year = 1708
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2202,14 +2192,12 @@ dharmic = {
 
 pagan = {
 
-	defender_of_faith = yes
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
 
 	animism = {
 		color = { 127 0 0 }
 		icon = 11
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
@@ -2227,13 +2215,9 @@ pagan = {
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
 		color = { 127 76 76 }
 		icon = 12
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_heathen = 2
 			diplomatic_reputation = 1
-		}
-		province = {
-			local_missionary_strength = 0.02
 		}
 		country_as_secondary = {
 			tolerance_own = 2
@@ -2246,7 +2230,6 @@ pagan = {
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
@@ -2267,7 +2250,6 @@ pagan = {
 	inti = {
 		color = { 64 115 115 }
 		icon = 18
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_own = 1
 			global_autonomy = -0.05
@@ -2292,7 +2274,6 @@ pagan = {
 	nahuatl = {
 		color = { 64 115 64 }
 		icon = 17
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			land_morale = 0.1
 			global_unrest = -2
@@ -2318,7 +2299,6 @@ pagan = {
 		#color = { 76 25 178 }
 		color = { 127 25 178 }
 		icon = 19
-		allow_female_defenders_of_the_faith = yes
 		country = {
 			tolerance_own = 1
 			advisor_pool = 1
@@ -2339,7 +2319,6 @@ pagan = {
 	
 	norse_pagan_reformed = {
 		icon = 21
-		allow_female_defenders_of_the_faith = yes
 		color = { 191 191 191 }
 		country = {
 			land_forcelimit_modifier = 0.10
@@ -2360,7 +2339,6 @@ pagan = {
 	
 	tengri_pagan_reformed = {
 		icon = 27
-		allow_female_defenders_of_the_faith = yes
 		color = { 25 76 217 }
 		country = {
 			cav_to_inf_ratio = 0.25
@@ -2372,7 +2350,6 @@ pagan = {
 	
 	dreamtime = {
 		icon = 29
-		allow_female_defenders_of_the_faith = yes
 		color = { 197 133 43 }
 		country = {
 			shock_damage_received = -0.05
@@ -2393,13 +2370,11 @@ pagan = {
 
 jewish_group = {
 
-	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 106 107 }
 
 	jewish = {
 		icon = 20
-		allow_female_defenders_of_the_faith = yes
 		color = { 0 156 231 }
 		country = {
 			tolerance_own = 2
@@ -2510,12 +2485,9 @@ jewish_group = {
 
 
 zoroastrian_group = {
-	
-	defender_of_faith = yes
 	flag_emblem_index_range = { 110 110 }
 	zoroastrian = {
 		icon = 26
-		allow_female_defenders_of_the_faith = yes
 		color = { 127 178 51 }
 		province = {
 			local_missionary_strength = -0.02

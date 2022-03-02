@@ -13,6 +13,7 @@ monarchy = {
 				negusa_nagast
 				solomonic_empire
 				#Specific:
+				chinese_warlord
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -36,7 +37,6 @@ monarchy = {
 				confucian_bureaucracy
 				musa_rule
 				mossi_federal_kingdom
-				peruvian_theocracy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -297,7 +297,6 @@ republic = {
 				council_of_the_indies_reform
 				legislative_assembly_reform
 				national_constituent_reform
-				disolve_elections_reform #############################U_U Mod Added
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {

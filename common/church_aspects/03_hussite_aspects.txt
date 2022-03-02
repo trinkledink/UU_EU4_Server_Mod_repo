@@ -10,7 +10,7 @@ punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
 		nobles_influence_modifier = -0.1
-		yearly_corruption = -0.1
+		yearly_corruption = -0.05
 	}
 }
 
@@ -25,14 +25,14 @@ bread_and_wine_aspect = {
 	cost = 100
 	modifier = {
 		tolerance_own = 1
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
 }
 
 sola_scriptura_aspect = {
 	cost = 100
 	modifier = {
-		warscore_cost_vs_other_religion = -0.15
+		warscore_cost_vs_other_religion = -0.1
 	}
 }
 
@@ -57,7 +57,6 @@ pacifism_aspect = {
 regular_defenestrations_aspect = {
 	cost = 100
 	modifier = {
-		burghers_influence_modifier = -0.1
 		harsh_treatment_cost = -0.33
 	}
 }

@@ -396,7 +396,13 @@ alerts = {
 
 	great_project_can_be_built = {
 		category = MEDIUM
-	}	
+	}
+	great_project_can_be_upgraded = {
+		category = MEDIUM
+	}
+	enemy_invasion_imminent = {
+		category = HIGH
+	}
 	merchant_idle = {
 		category = LOW
 	}
@@ -414,7 +420,10 @@ alerts = {
 	}
 	federation_cohesion_maxed_out = {
 		category = MEDIUM
-	}	
+	}
+	hostile_siege = {
+		category = HIGH
+	}
 	army_avoiding_strong_rebels = {
 		category = MEDIUM
 	}

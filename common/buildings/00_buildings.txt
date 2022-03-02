@@ -169,7 +169,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.4
+		local_manpower_modifier = 0.5
 	}
 	on_built = {
 		if = {
@@ -889,7 +889,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 0.8
+		local_manpower_modifier = 1
 	}
 	
 	on_built = {
@@ -1632,7 +1632,7 @@ ramparts = {
 		all
 	}
 	modifier = {
-		local_hostile_attrition = 1.5
+		local_hostile_attrition = 1
 		local_defensiveness = 0.15
 	}
 	onmap = no
@@ -1656,24 +1656,24 @@ soldier_households = {
 	}
 
 	modifier = {
-		local_manpower = 0.5
+		local_manpower = 0.75
 	}
 	bonus_modifier = {
-		local_manpower = 0.5
+		local_manpower = 0.75
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
-			building = impressment_offices
-			type = manpower
+			building = manufactory
+			type = production
 			value = 2
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = impressment_offices
-			type = manpower
+			building = manufactory
+			type = production
 			value = 2
 		}
 	}
@@ -1745,7 +1745,6 @@ state_house = {
 		paper
 		glass
 		gems
-		naval_supplies
 	}
 
 	build_trigger = {

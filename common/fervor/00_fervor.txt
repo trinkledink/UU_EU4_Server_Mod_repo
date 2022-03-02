@@ -52,9 +52,8 @@ fervor_war = {
 fervor_stability = {
 	cost = 5
 	effect = {
-		global_unrest = -3
-		global_autonomy = -0.05
-		global_prosperity_growth = 1
+		global_unrest = -2
+		diplomatic_reputation = 1
 	}
 	ai_will_do = {
 		factor = 1

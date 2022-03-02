@@ -26,7 +26,7 @@ encourage_warriors_of_the_faith = {
 	is_blessing = yes
 
 	modifier = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -43,8 +43,7 @@ send_monks_to_establish_monasteries = {
 	is_blessing = yes
 
 	modifier = {
-		global_missionary_strength = 0.02
-		tolerance_own = 1
+		global_missionary_strength = 0.015
 	}
 	ai_will_do = {
 		factor = 10
@@ -73,8 +72,7 @@ promote_territorial_rights = {
 	is_blessing = yes
 
 	modifier = {
-		core_creation = -0.15
-		diplomatic_annexation_cost = -0.15
+		core_creation = -0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -93,7 +91,7 @@ will_of_the_martyrs = {
 	is_blessing = yes
 
 	modifier = {
-		discipline = 0.05
+		discipline = 0.025
 	}
 	ai_will_do = {
 		factor = 15

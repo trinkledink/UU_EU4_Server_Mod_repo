@@ -308,13 +308,6 @@ fish = {
 			factor = 1.2
 			has_terrain = glacier
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
-		}
 	}
 }
 
@@ -468,13 +461,6 @@ naval_supplies = {
 		modifier = {
 			factor = 0
 			area = newfoundland_area
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
 		}
 		modifier = {
 			factor = 0.65
@@ -995,13 +981,6 @@ tea = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
-		}
 	}
 }
 
@@ -1036,13 +1015,6 @@ chinaware = {
 		modifier = {
 			factor = 0
 			NOT = { development_discounting_tribal = 8 }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
 		}
 		modifier = {
 			factor = 2.0
@@ -1097,9 +1069,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1177,13 +1151,6 @@ coffee = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
 			}
 		}
 	}
@@ -1594,13 +1561,6 @@ tropical_wood = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
-		}
 	}
 }
 
@@ -1741,13 +1701,6 @@ incense = {
 			factor = 2.0
 			FROM = {
 				has_country_flag = encourage_cash_crops_flag
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
 			}
 		}
 	}
@@ -1893,13 +1846,6 @@ gems = {
 			NOT = { has_terrain = coastline }
 			NOT = { region = australia_region }
 			continent = oceania #Pearls
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				area = molluca_area
-				area = spice_islands_area
-			}
 		}
 		modifier = {
 			factor = 1.2
