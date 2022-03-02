@@ -122,7 +122,7 @@ temple = {
 		add_development_from_building = {
 			building = temple
 			type = tax
-			value = 1
+			value = 10
 		}
 	}
 	on_destroyed = {
@@ -149,8 +149,7 @@ temple = {
 				}
 			}
 			FROM = {
-				add_papal_influence = -3
-			}
+				add_papal_influence = -5
 		}
 		remove_development_from_building = {
 			building = temple
@@ -179,13 +178,13 @@ barracks = {
 				}
 			}
 			FROM = {
-				add_manpower = 1
+				add_manpower = 5
 			}
 		}
 		add_development_from_building = {
 			building = barracks
 			type = manpower
-			value = 1
+			value = 5
 		}
 	}
 	on_destroyed = {
@@ -202,7 +201,7 @@ barracks = {
 		remove_development_from_building = {
 			building = barracks
 			type = manpower
-			value = 1
+			value = 10
 		}
 	}
 	on_obsolete = {
