@@ -396,10 +396,17 @@ alerts = {
 
 	great_project_can_be_built = {
 		category = MEDIUM
+<<<<<<< HEAD
 	}	
+=======
+	}
 	great_project_can_be_upgraded = {
 		category = MEDIUM
 	}
+	enemy_invasion_imminent = {
+		category = HIGH
+	}
+>>>>>>> main
 	merchant_idle = {
 		category = LOW
 	}
@@ -417,7 +424,14 @@ alerts = {
 	}
 	federation_cohesion_maxed_out = {
 		category = MEDIUM
+<<<<<<< HEAD
 	}	
+=======
+	}
+	hostile_siege = {
+		category = HIGH
+	}
+>>>>>>> main
 	army_avoiding_strong_rebels = {
 		category = MEDIUM
 	}
