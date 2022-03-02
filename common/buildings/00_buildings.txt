@@ -38,7 +38,7 @@ marketplace = {
 		add_development_from_building = {
 			building = marketplace
 			type = production
-			value = 10
+			value = 1
 		}
 	}
 	on_destroyed = {
