@@ -17,7 +17,7 @@ philosopher = {
 	monarch_power = ADM
 	
 	# Bonus
-	prestige = 1
+	prestige = 5
 
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
