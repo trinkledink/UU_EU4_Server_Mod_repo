@@ -718,7 +718,7 @@ AUH_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		num_accepted_cultures = 1
 	}
 	
 	trigger = {
@@ -728,7 +728,6 @@ AUH_ideas = {
 
 	imperial_administration = {
 		administrative_efficiency = 0.05
-		num_accepted_cultures = 1
 	}
 	AUH_alpine_engineering = {
 		defensiveness = 0.25
@@ -750,8 +749,8 @@ AUH_ideas = {
 		manpower_recovery_speed = 0.1
 	}
 	unter_dem_doppeladler = {
-		land_forcelimit_modifier = 0.20
-		global_manpower_modifier = 0.20
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
 	}
 }
 #CTG

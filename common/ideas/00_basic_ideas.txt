@@ -425,7 +425,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.05
+		recover_army_morale_speed = 0.15
 	}
 
 	bayonet_leaders = {
@@ -893,10 +893,10 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.5
+		land_forcelimit_modifier  = 0.4
 	}
 	mass_army = {
-		global_manpower_modifier = 0.50
+		global_manpower_modifier = 0.40
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
