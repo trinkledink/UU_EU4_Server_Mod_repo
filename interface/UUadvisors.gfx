@@ -1,0 +1,56 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_socialreformer"
+		texturefile = "gfx//interface//advisors//socialreformer.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_socialreformer_female"
+		texturefile = "gfx//interface//advisors//socialreformer_female.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_propagandist"
+		texturefile = "gfx//interface//advisors//propagandist.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_propagandist_female"
+		texturefile = "gfx//interface//advisors//propagandist_female.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_nationalhero"
+		texturefile = "gfx//interface//advisors//nationalhero.dds"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_nationalhero_female"
+		texturefile = "gfx//interface//advisors//nationalhero_female.dds"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
