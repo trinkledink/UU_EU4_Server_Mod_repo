@@ -59,6 +59,7 @@ papacy_reform = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
 		church_influence_modifier = 0.2
+		monarch_lifespan = 10.0
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"
@@ -164,9 +165,8 @@ kingdom_of_god_reform = {
 		}
 	}
 	modifiers = {
-		global_manpower_modifier = 0.1
-		prestige = 1
-		devotion = 1
+		land_morale = 0.1
+		development_cost = -0.05
 		appoint_cardinal_cost = -0.3
 		papal_influence_from_cardinals = 1.0
 	}
