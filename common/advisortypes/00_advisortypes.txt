@@ -35,7 +35,7 @@ natural_scientist = {
 	monarch_power = ADM
 	
 	# Bonus
-	production_efficiency = 0.10
+	production_efficiency = 0.20
 
 	skill_scaled_modifier = { meritocracy = 0.25 }	
 
