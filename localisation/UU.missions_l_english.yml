@@ -1,0 +1,56 @@
+﻿l_english:
+ ###############################################################
+ # Scandinavian Mission Localisation. Put in missions_l_english.yml
+ ###############################################################
+	
+ consolidate_scandinavia_title:0 "Consolidate Scandinavia"
+ consolidate_scandinavia_desc:0 "After numerous wars and political unions, shedding blood, tear and sweat, the three brother nations finally stand united. The banner of Scandinavia now flies over all territories we've come to claim as ours in right."
+ a_different_way_title:0 "A different path"
+ a_different_way_desc:0 "With the religious turmoil spreading throughout Europe, it might be best that we look back to our roots and embrace our old faith"
+ prepare_new_raids_title:0 "Prepare new raids"
+ prepare_new_raids_desc:0 "Having united the Scandinavian homeland, it is time we look westwards to our previous domains and colonies in the British Isles, We should start with a foothold on the once Norwegian islands."
+ conquer_scotland_title:0 "Conquer Scotland"
+ conquer_scotland_desc:0 "It is time to establish a proper foothold on the British Isles. With Scotland under our control, we can use it as a base for expansion to the new world in the west, and reclaiming old king Canute's throne in the south."
+ reestablish_the_danelaw_title:0 "Reestablish the Danelaw"
+ reestablish_the_danelaw_desc:0 "The lands of eastern and northern have deep roots to Scandinavia going all the way back to the great heathen army and it's conquests. As we once again occupy these lands, we should make sure that they properly reeintegrate to Scandinavian society."
+ onwards_across_the_north_route_title:0 "Across the north route"
+ onwards_across_the_north_route_desc:0 "From our base in Scotland we can set our course towards exploring the lost lands of the northern atlantic ocean."
+ settle_in_vinland_title:0 "Settle in Vinland"
+ settle_in_vinland_desc:0 "We have returned to the furthest reaches of the viking settlers. This time, we've come to stay and establish a permanent colony."
+ dublin_slave_port_title:0 "Dublin slave port"
+ dublin_slave_port_desc:0 "Dublin was originally established by our ancestors as a slave trading port. The location is ideal for further raids into the continent."
+ prepare_eastern_conquest_title:0 "Eastern conquest"
+ prepare_eastern_conquest_desc:0 "With all of Scandinavia under our controll, we should look eastwards to extend our realm."
+ into_the_russian_heartland_title:0 "Strike the heart of Russia"
+ into_the_russian_heartland_desc:0 "We should deal a fatal blow to the Russian menace that has threatened Scandinavia for centuries."
+ masters_of_the_baltic_title:0 "Masters of the Baltic"
+ masters_of_the_baltic_desc:0 "Our coast stretches from Finland in the north to kattegat in the west. Already owning half the baltic coast, no one can dispute the Scandinavian claim to Baltic hegemony."
+ establish_kievan_rus_title:0 "Old swedish trade routes"
+ establish_kievan_rus_desc:0 "When the Russian region was dominated by the Kievan Rus during the viking age, Swedish traders were widespread along the Volga."
+ shipyard_of_europe_title:0 "Shipyard of Europe"
+ shipyard_of_europe_desc:0 "As trade from Scandinavian harbours boom, Europe is slowly becoming more reliant on Scandinavian timber and expertise for their shipbuilding industries."
+ strike_the_hansa_title:0 "Strike the Hansa"
+ strike_the_hansa_desc:0 "The only real challenge to Scandinavian trade in Lübeck is the northern german Hanseatic League. If we strike them at the core, any bottleneck on trade through the Baltic will disappear."
+ secure_german_electors_title:0 "Secure Electors"
+ secure_german_electors_desc:0 "With a border and presence with Germany, meddling in Holy Roman Imperial affairs and securing the imperial title seems like a viable option.."
+ pan_germanic_emperor_title:0 "Pan-Germanic Emperor"
+ pan_germanic_emperor_desc:0 "Having secured the election to the Holy Imperial Throne, Scandinavia is ascendant into a true empire."
+ monopolise_the_fur_trade_title:0 "Monopolise the fur trade"
+ monopolise_the_fur_trade_desc:0 "If we achieve a monopoly on the fur trade, we could inflate the prices and use the wealth to develop our land."
+ 
+ ###############################################################
+ # Elbian Confederacy mission localisation
+ ###############################################################
+ 
+ UU_elbian_core_title:0 "Strengthen the core"
+ UU_elbian_core_desc:0 "After establishing our claims, we should rightfully unite the remaining saxons"
+ UU_elbian_reclaim_ancestral_lands_title:0 "Reclaim ancestral land"
+ UU_elbian_reclaim_ancestral_lands_desc:0 "We became a leading force in the Empire and united the saxons under our banner"
+ UU_natural_borders_title:0 "Our Natural Borders"
+ UU_natural_borders_desc:0 "After decades of conquest we establisht some sort of international acknowledged borders of the Elbian Confederacy. We should take our time to fortify them and enjoy the prosperity these lands give to our people."
+ elb_city_fortified:0 "Fortified City"
+ elb_integrate_brandenburg_title:0 "Integrate Brandenburg"
+ elb_integrate_brandenburg_desc:0 " "
+ elb_berlin_war_academy_title:0 "Berlin Millitary Academy"
+ elb_berlin_war_academy_desc:0 " "
+ elb_berlin_war_school:0 "The Millitary Academy of Berlin"

@@ -1,0 +1,173 @@
+﻿l_english:
+ ###############################################################
+ # Austro-Hungarian ideas
+ ###############################################################
+ 
+ AUH_ideas:0 "Austro-Hungarian Ideas"
+ AUH_ideas_start:0 "Austro-Hungarian Traditions"
+ AUH_ideas_bonus:0 "Austro-Hungarian Ambition"
+ imperial_administration:0 "Imperial Administration"
+ imperial_administration_desc:0 "The process of adopting a bureaucracy more centralized than the Holy Roman Empire has yielded a stronger nation-state that supercedes sub-national allegiences."
+ AUH_alpine_engineering:0 "Alpine Engineering"
+ AUH_alpine_engineering_desc:0 "The utilization of a standing army has made available the resources to operate and maintain remote and advanced fortifications under the direction of our most senior military engineers."
+ centralization_of_mining_rights:0 "Centralization of Mining Rights"
+ centralization_of_mining_rights_desc:0 "The regulation of mining output has allowed us to simultaneously manage production and prices, allowing for concessionary financing for government works, giving our industrialization efforts a leg up on the private competition."
+ wag_of_the_chin:0 "Wag of the Chin"
+ wag_of_the_chin_desc:0 "Bella gerant alii, tu felix Austria, nube!"
+ AUH_bulwark_of_christendom:0 "Bulwark of Christendom"
+ AUH_bulwark_of_christendom_desc:0 "Pacification of the populus begins with the homogeneity of the nation's religions. In the face of the Otto-Turk, we must be united."
+ herren_generals:0 "Herren Generals"
+ herren_generals_desc:0 "Even in peace, we find it necessary to maintain a central command of the military. The establishment of a permenant Grosse Feldgeneralstab to organize the military will maintain the organization of our forces should the need for war arrise."
+ unter_dem_doppeladler:0 "Unter Dem Doppeladler"
+ unter_dem_doppeladler_desc:0 "'Under the Double Eagle' is a march composed by Josef Franz Wagner, an Austrian military bandmaster and composer.This march is referring to the double eagle in the coat of arms of the Austro-Hungarian empire."
+ 
+ ###############################################################
+ # Scandinavian ideas
+ ###############################################################
+ 
+ # Norwegian Scandinavia
+ SCA_norway_ideas:0 "Norwegian Scandinavian Ideas"
+ SCA_norway_ideas_start:0 "Norwegian Scandinavian Traditions"
+ SCA_norway_ideas_bonus:0 "Norwegian Scandinavian Ambition"
+ the_path_of_leif_eriksson:0 "The path of Leiv Eriksson"
+ the_path_of_leif_eriksson_desc:0 "Many claim that Colombus was the first to discover the new world, but Leiv Eriksson discovered the passage over Greenland to the land he named Vinland already five houndred years earlier. We should follow in his footsteps and reclaim the lands across the seas."
+ scandinavian_timber_export:0 "Scandinavian timer export"
+ scandinavian_timber_export_desc:0 "Many European countries rely on Scandinavian timber exports for the productions of ships and buildings alike. This export has given us an expertise within shipbuilding and an excellent source of revenue."
+ legacy_of_the_vikings:0 "Legacy of the Vikings"
+ legacy_of_the_vikings_desc:0 "The blood of our forefathers - the Vikings - still runs in our veins."
+ margrete_valdemarsdatters_dream:0 "Margrete Valdemarsdatters dream"
+ margrete_valdemarsdatters_dream_desc:0 "Margrete Valdemarsdatter, the first queen of the Kalmar Union would be proud to see the united and proud nation that Scandinavia has grown to be in our time."
+ american_migration_wave:0 "American migration wave"
+ american_migration_wave_desc:0 "Scandinavia has many geographical advantages, but farmable land is not one of them. As more people are born from the stability within the Kingdom, more people look across the oceans for opportunities for a better life."
+ the_thousand_convoys:0 "The thousand ships"
+ the_thousand_convoys_desc:0 "With a coastline towards the North Sea stretching from Finnmark to Holstein, and coastlines running the entire length of the baltic, maritime activity has become a vital part of Scandinavian life."
+ lessons_of_tordenskiold:0 "Lessons of Tordenskiold"
+ lessons_of_tordenskiold_desc:0 "The Danish-Norwegian admiral Tordenskiold showed us the importance of an agile navy, as well as quality artillery."
+ 
+ #Swedish Scandinavia
+ SCA_sweden_ideas:0 "Swedish Scandinavian Ideas"
+ SCA_sweden_ideas_start:0 "Swedish Scandinavaian Traditions"
+ SCA_sweden_ideas_bonus:0 "Swedish Scandinavian Ambition"
+ straying_away_from_continental_thought:0 "Straying away from continental thought" 
+ straying_away_from_continental_thought_desc:0 "The influence of the Pope and the Vatican has slowly been dwindling in Scandinavia. It's time to develop a seperate church and philosophy."
+ riksdag:0 "Riksdag"
+ riksdag_desc:0 "Scandinavian government has a strong tie to the people. It's hard to judge our conquests when it's the explicit will of the people."
+ dominating_the_baltic_and_kattegat:0 "Dominating the Baltic sea and Kattegat" 
+ dominating_the_baltic_and_kattegat_desc:0 "Our long coastline and numerous archipelagos puts us in an excellent position to take controll of the seas bordering our heartlands."
+ swedish_steel_norwegian_silver:0 "Swedish steel, Norwegian silver"
+ swedish_steel_norwegian_silver_desc:0 "Let the Scandinavian war machine be fueld by Swedish military discipline and Norwegian silver."
+ the_carolingans:0 "The Carolingans"
+ the_carolingans_desc:0 "The leading Scandinavian military doctrine developed to preserve manpower at all costs. Our tactics now ensure that as few Scandinavian lives as possible are lost unnecessarily."
+ scandinavian_absolutism:0 "Scandinavian absolutism"
+ scandinavian_absolutism_desc:0 "Even with a democratic foundation for our government, there is no doubt that the King is the ruling figure and has an extensive court to administer the Scandinavian realm."
+ general_staff_of_scandinavia:0 "General staff of Scandinavia"
+ general_staff_of_scandinavia_desc:0 "What we lack in numbers, we make up in quality. Inspired by Prussian military organisation, the general staff of Scandinavia ensures the brightest minds are in charge of the Scandinavian forces."
+ 
+ #Danish Scandinavia
+ SCA_denmark_ideas:0 "Danish Scandinavian Ideas"
+ SCA_denmark_ideas_start:0 "Danish Scandinavian Traditions"
+ SCA_denmark_ideas_bonus:0 "Danish Scandinavian Ambition"
+ extractive_governing_policy:0 "Extractive governing policy"
+ extractive_governing_policy_desc:0 "Having governed many vassal states under our control, from Holstein to Finland, we have become experts of utilising resources from our vassals to the brim."
+ early_contract_freedom:0 "Early contract freedom"
+ early_contract_freedom_desc:0 "Contract freedom developed early in Denmark-Norway. Already in the early 1600s there was no limit on which deals merchants could make between themselves. Giving free reigns to businessmen and merchants has resulted in a boom in trade within the Scandinavian realm."
+ far-reaching_ambitions:0 "Far-reaching Ambitions"
+ far-reaching_ambitions_desc:0 "If Scandinavia is to prosper, we must take advantage of the new trade routes to the new world and India on equal footing with the other European countries."
+ dominating_the_baltic_and_kattegat:0 "Dominating the Baltic Sea and Kattegat" 
+ dominating_the_baltic_and_kattegat_desc:0 "Our long coastline and numerous archipelagos puts us in an excellent position to take controll of the seas bordering our heartlands."
+ early_nationalism:0 "Early Nationalism"
+ early_nationalism_desc:0 "From the earliest developments of Scandinavian kingdoms, there has always been a prevailing thought of Scandinavian unity. Finally, we have achieved this dream and made it reality."
+ economic_reforms:0 "Economic reforms"
+ economic_reforms_desc:0 "Following the introduction of contractual freedom, many more economic reforms have followed, making developing the Scandinavian homelands easier."
+ nordic_lions_united:0 "Nordic Lions united"
+ nordic_lions_united_desc:0 "The lion kingdoms have for a long time stood alone and independent of eachothers. But now being one state, what used to be local powers have now become one European superpower able to wrestle with the other major states around us."
+ ###############################################################
+ # Carthage ideas
+ ###############################################################
+ CTG_ideas:0 "Carthage Ideas"
+ CTG_ideas_start:0 "Carthaginian Traditions"
+ CTG_ideas_bonus:0 "Carthaginian Ambitions"
+ ctg_mediterranean_fleet:0 "Mediterrabean Fleet"
+ ctg_mediterranean_fleet_desc:0 "The Cartheginina fleet had to secure a strong trade empire across the mediterranean"
+ ctg_galley_masters:0 "Galley Masters"
+ ctg_galley_masters_desc:0 "We are masters of combat in shallow waters"
+ ctg_cartheginian_innovations:0 "Cartheginian Innovations"
+ ctg_cartheginian_innovations_desc:0 "A reformed trade empire attracts muslim scholars from all over the known world"
+ ctg_mercenary_contracts:0 "Mercenary Contracts"
+ ctg_mercenary_contracts_desc:0 "A permanent army isn't our best interests, so it is wise to keep tight bonds with reliable mercanaries"
+ ctg_mercantilism:0 "Mercantilism"
+ ctg_mercantilism_desc:0 "New Mercantilism policies to protect our new local economy"
+ ctg_spreading_civilsation:0 "Spreading Civilization"
+ ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the mediterranean"
+ ctg_fertile_lands:0 "Fertile lands"
+ ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population"
+ ^
+ ###############################################################
+ # Elbian Confederation Ideas
+ ###############################################################
+ 
+ ###############################################################
+ # Canadian/Quebecois ideas
+ ###############################################################
+ 
+ #Old Canada/Quebec ideas are commented out
+ 
+ #Canada
+ 
+ ###############################################################
+ # Colonial tags 
+ ###############################################################
+ 
+ COL_ideas:0 "Colombian Ideas"
+ COL_ideas_start:0 "Colombian Traditions"
+ COL_ideas_bonus:0 "Colombian Ambition"
+ col_federation:0 "Colombian Federation"
+ col_federation_desc:0 " "
+ col_working_spirit:0 "Working spirit"
+ col_working_spirit_desc:0 " "
+ col_drilling:0 "Army Drill"
+ col_drilling_desc:0 " "
+ col_immigrant_recruits:0 " Enlisting immigrants"
+ col_immigrant_recruits_desc:0 " "
+ col_caribbean_to_pacific:0 "From the Caribbean to the Pacific"
+ col_caribbean_to_pacific_desc:0 " "
+ col_gran_colombia:0 "Gran Colombia"
+ col_gran_colombia_desc:0 " "
+ col_proud_latin_american:0 "Proud Latin Americans"
+ col_proud_latin_american_desc:0 " "
+ 
+ BRZ_ideas:0 "Braziliean Ideas"
+ BRZ_ideas_:start:0 "Brazilean Traditions"
+ BRZ_ideas_bonus:0 "Brazilean Ambition"
+ brz_plantations:0 "Braziliean Plantations"
+ brz_plantations_desc:0 " "
+ brz_home_of_the_amazon:0 "Home of the Amazon"
+ brz_home_of_the_amazon_desc:0 " "
+ brz_migration_target:0 "Migration target"
+ brz_migration_target_desc:0 " "
+ brz_brazilian_corps:0 "Braziliean Corps"
+ brz_brazilian_corps_desc:0 " "
+ brz_multi_cultural:0 "Multi Cultural"
+ brz_multi_cultural_desc:0 " "
+ brz_brazilian_empire0 "Braziliean Empire"
+ brz_brazilian_empire_desc:0 " "
+ brz_conscription:0 "Increased Conscription"
+ brz_conscription_desc:0 " "
+ 
+ LAP_ideas:0 "La Plata Ideas"
+ LAP_ideas_:start:0 "La Plata Traditions"
+ LAP_ideas_bonus:0 "La Plata Ambition"
+ lap_rich_plains:0 "Rich Plains"
+ lap_rich_plains_desc:0 " "
+ lap_educated_immigrants:0 "Educated Immigrants"
+ lap_educated_immigrants_desc:0 " "
+ lap_european_generals:0 "European Generals"
+ lap_european_generals_desc:0 " "
+ lap_silver_river:0 "The Silver River"
+ lap_silver_river_desc:0 " "
+ lap_strong_cattle:0 "Strong Cattle"
+ lap_strong_cattle_desc:0 " "
+ lap_tango_argentino:0 "Tango Argentino"
+ lap_tango_argentino_desc:0 " "
+ lap_defensive_tactics:0 "Defensive tactics"
+ lap_defensive_tactics_desc:0 " "
