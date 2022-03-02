@@ -925,8 +925,8 @@ the_liberation_act = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	global_unrest = -1
-	years_of_nationalism = -5
+	land_attrition = -0.25
+	war_exhaustion = -0.05
 	
 	ai_will_do = {
 		factor = 1
@@ -963,8 +963,8 @@ visionary_thinkers = {
 		full_idea_group = quality_ideas
 	}	
 	
-	prestige = 0.5
-	prestige_decay = -0.01
+	technology_cost = -0.05
+	monarch_lifespan = 0.1
 	
 	ai_will_do = {
 		factor = 0.6
@@ -1320,8 +1320,7 @@ cultural_understanding = {
 		full_idea_group = spy_ideas
 	}	
 	
-	global_unrest = -1
-	rebel_support_efficiency = 1
+	rebel_support_efficiency = 4
 	
 	ai_will_do = {
 		factor = 1
