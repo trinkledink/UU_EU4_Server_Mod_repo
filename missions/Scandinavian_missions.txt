@@ -1,0 +1,885 @@
+#########################################################
+# Scandinavian Mission Tree
+#########################################################
+
+# Scandinavian Internal Missions
+
+scandinavian_missions_scandinavia = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	consolidate_scandinavia = {
+		icon = consolidate_scandinavia
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			region = scandinavia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			scandinavia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "united_scandinavia"
+				duration = 5475
+			}
+		}
+	}
+	
+	a_different_way = {
+		icon = a_different_way
+		required_missions = { consolidate_scandinavia }
+		position = 2
+		provinces_to_highlight = { }
+		
+		trigger = {
+			NOT = { PAP = { has_opinion = { who = root value = -50 } } }
+			NOT = { current_age = age_of_discovery }
+		}
+		
+		effect = {
+			change_religion = norse_pagan_reformed
+			add_country_modifier = {
+				name = "viking_heritage"
+				duration = -1
+			}
+		}
+	}
+	
+	dublin_slave_port = {
+		icon = dublin_slavery
+		required_missions = { a_different_way }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 373
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			373 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			373 = {
+				change_trade_goods = slaves
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+					}
+				else_if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 1
+					}
+				else = {
+					add_base_production = 2
+				}
+		}
+		}
+	}
+}
+
+scandinavian_missions_economic = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	monopolise_the_fur_trade = {
+		icon = exploited_fur_trade
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { }
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				trade_goods = fur
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "exploited_fur_trade"
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Scandinavian Missions West and Colonial
+
+scandinavian_missions_westwards = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	prepare_new_raids = {
+		icon = mission_rb_a_mighty_fleet
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { }
+		
+		trigger = {
+			navy_size_percentage = 1
+			num_of_admirals = 1
+			num_of_heavy_ship = 5
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eng_rb_faro_coast"
+				duration = 5475
+			}
+			253 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4364 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			369 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	sca_conquer_scotland = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_new_raids }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lowlands_area
+				province_id = 250
+				province_id = 4363
+				province_id = 4364
+				province_id = 252
+				province_id = 4110
+				province_id = 253
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			250 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4363 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4364 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			252 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4110 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			253 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lowlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			greenland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = ENG
+					valid_for_personal_unions_trigger = yes
+					ENG = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = ENG
+				}
+			}
+			if = {
+				limit = {
+					exists = GBR
+					valid_for_personal_unions_trigger = yes
+					GBR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = GBR
+				}
+			}
+			if = {
+				limit = {
+					and = {
+						GBR = {
+							valid_for_personal_unions_trigger = no
+						}
+						ENG = {
+							valid_for_personal_unions_trigger = no
+						}
+					}
+				}
+				yorkshire_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				east_midlands_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				west_midlands_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				scottish_marches_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				east_anglia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				}
+				home_counties_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				wessex_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				}
+				wales_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	reestablish_the_danelaw = {
+		icon = reestablish_the_danelaw
+		required_missions = { sca_conquer_scotland }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = scottish_marches_area
+				area = yorkshire_area
+				area = east_midlands_area
+				area = east_anglia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_anglia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			add_country_modifier = {
+				name = "reestablish_the_danelaw"
+				duration = 5475
+			}
+		}
+	}
+}	
+	
+scandinavian_missions_westwards_II = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	shipyard_of_europe = {
+		icon = mission_colonial
+		required_missions = { prepare_new_raids }
+		position = 2
+		provinces_to_highlight = { 
+			province_id = 23
+			province_id = 17
+			province_id = 12
+		}
+		
+		trigger = {
+			23 = {
+				has_building = shipyard
+			}
+			
+			17 = {
+				has_building = shipyard
+			}
+			
+			12 = {
+				has_building = shipyard
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "shipyard_of_europe"
+				duration = -1
+			}
+		}
+	}
+	
+	onwards_across_the_north_route = {
+		icon = exploring_the_northern_route
+		required_missions = { conquer_scotland }
+		position = 3
+		provinces_to_highlight { }
+		
+		trigger = {
+			greenland_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "exploring_the_northern_route"
+				duration = 5475
+			}
+			
+			1104 = {
+				change_trade_goods = ivory
+				add_base_production = 3
+				add_base_manpower = 3
+				hidden_effect = {
+					random_list = {
+						20 = {
+							change_province_name = "Nya Malmö"
+							rename_capital = "Nye Malmö"
+						}
+						20 = {
+							change_province_name = "Nye Drammen"
+							rename_capital = "Nye Drammen"
+						}
+						20 = {
+							change_province_name = "Ny Aarhus"
+							rename_capital = "Ny Aarhus"
+						}
+					}
+				}
+			}
+			1105 = {
+				change_trade_goods = ivory
+				add_base_production = 2
+				add_base_manpower = 2
+				hidden_effect = {
+					random_list = {
+						10 = {
+							change_province_name = "Nya Jokkmokk"
+							rename_capital = "Nya Jokkmokk"
+						}
+						10 = {
+							change_province_name = "Nye Tromsø"
+							rename_capital = "Nye Tromsø"
+						}
+						10 = {
+							change_province_name = "Ny Roskilde"
+							rename_capital = "Ny Roskilde"
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	settle_in_vinland = {
+		icon = leif_erikson
+		required_missions = { onwards_across_the_north_route }
+		position = 4
+		provinces_to_highlight = {
+			colonial_region = colonial_canada
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_canada
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			newfoundland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			cote_nord_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			quebec_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			lower_acadia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			labrador_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+# Scandinavian Missions Eastwards
+
+scandinavian_missions_eastwards = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	prepare_eastern_conquest = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { }
+		
+		trigger = {
+			army_size_percentage = 1
+			general = 1
+		}
+		
+		effect = {
+			1961 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				
+			}
+			
+			33 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				
+			}
+			
+			34 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				
+			}
+			
+			4124 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			32 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			add_country_modifier = {
+				name = "prepare_russian_conquest"
+				duration = 3650
+			}
+		}
+	}
+	
+	into_the_russian_heartland = {
+		icon = mission_defeat_muscovy
+		required_missions = { prepare_eastern_conquest }
+		position = 2
+		provinces_to_highlight = { }
+		
+		trigger = {
+			if = {
+				limit = {
+					exists = MOS
+				}
+				MOS = {
+					capital_scope = {
+						OR = {
+							controlled_by = ROOT
+							AND = {
+								controller = {
+									OR = {
+										is_subject_of = ROOT
+										alliance_with = ROOT
+										overlord = {
+											alliance_with = ROOT
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					295 = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "nov_defeated_muscovy"
+				duration = 7300
+			}
+			
+			295 = {
+				add_devastation = 75
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
+				
+			}
+		}
+	}
+	
+	establish_kievan_rus = {
+		icon = mission_unite_home_region
+		required_missions = { into_the_russian_heartland }
+		position = 3
+		provinces_to_highlight = { 
+			province_id = 310
+			province_id = 33
+			province_id = 306
+			province_id = 308
+		}
+	
+		trigger = {
+			310 = {
+				owned_by = ROOT
+			}
+		
+			33 = {
+				owned_by = ROOT
+				trade_share = {
+					country = root
+					share = 75
+				}
+			}
+		
+			306 = {
+				owned_by = ROOT
+			}
+			
+			308 = {
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			310 = {
+				change_culture = swedish
+				add_province_modifier = {
+					name = "swedish_trade_cities"
+				duration = -1
+				}
+			}
+		
+			33 = {
+				change_culture = swedish
+				add_province_modifier = {
+					name = "swedish_trade_cities"
+					duration = -1
+				}
+			}
+		
+			306 = {
+				change_culture = swedish
+				add_province_modifier = {
+					name = "swedish_trade_cities"
+					duration = -1
+				}
+			}
+			
+			308 = {
+				change_culture = swedish
+				add_province_modifier = {
+					name = "swedish_trade_cities"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+scandinavian_missions_eastwards_II = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	masters_of_the_baltic = {
+		icon = mission_sea_battles
+		required_missions = { prepare_eastern_conquest }
+		position = 2
+		provinces_to_highlight = { }
+		
+		trigger = {
+			navy_size_percentage = 1
+			num_of_admirals = 1
+			num_of_galley = 15
+		}
+		
+		effect = {
+			43 = {
+				add_permanent_claim = ROOT
+			}
+			38 = {
+				add_permanent_claim = ROOT
+			}
+			
+			45 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	strike_the_hansa = {
+		icon = mission_rb_hanseatic_east
+		required_missions = { masters_of_the_baltic shipyard_of_europe }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 43
+			province_id = 38
+			province_id = 45
+		}
+		
+		trigger = {
+			43 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			38 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			45 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "scandinavian_trade_dominance"
+				duration = 5475
+			}
+		}
+	}
+	
+	secure_german_electors = {
+		icon = mission_rb_control_electors
+		required_missions = { strike_the_hansa }
+		position = 4
+		
+		trigger = {
+			if = {
+				limit = {
+					num_of_electors = 3
+				}
+				OR = {
+					calc_true_if = {
+						amount = 3
+						all_elector = {
+							preferred_emperor = ROOT
+						}
+					}
+					calc_true_if = {
+						amount = 3
+						all_elector = {
+							vassal_of = ROOT
+						}
+					}
+				}
+				else = {
+					NOT = { hre_size = 1 }
+					NOT = { exists = HLR }
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eng_rb_hre_relations"
+				duration = 5475
+			}
+		}
+	}
+	
+	pan_germanic_emperor = {
+		icon = spread_the_von_wettins
+		required_missions = { secure_german_electors }
+		position = 5
+	
+		trigger = {
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				is_emperor = yes
+			}
+			else = {
+				has_final_tier_reforms_trigger = yes
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = "emperor_of_all_germanic_peoples"
+				duration = -1
+			}
+		}
+	}
+}
