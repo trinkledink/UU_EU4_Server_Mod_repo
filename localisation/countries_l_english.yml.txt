@@ -1,4 +1,0 @@
-﻿l_english:
-	SWH: "Swahili"
-	SWH_ADJ: "Swahili"
-	SWH_ADJ2: "Wahili"

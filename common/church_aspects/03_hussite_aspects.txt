@@ -10,7 +10,7 @@ punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
 		nobles_influence_modifier = -0.1
-		yearly_corruption = -0.05
+		yearly_corruption = -0.1
 	}
 }
 

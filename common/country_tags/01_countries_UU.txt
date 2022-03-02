@@ -1,2 +1,3 @@
-CAR = "countries/carthage.txt"
+CTG = "countries/Carthage.txt"
 AUH = "countries/Austriahungary.txt"
+ELB = "countries/ElbianConfederation.txt"

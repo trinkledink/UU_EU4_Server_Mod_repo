@@ -4,8 +4,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_car_flag }
-			NOT = { exists = CAR }
+			NOT = { has_country_flag = formed_ctg_flag }
+			NOT = { exists = CTG }
 			NOT = { tag = PAP }
 			NOT = { tag = MAM }
 			tag = TUN
@@ -13,24 +13,31 @@ country_decisions = {
 			technology_group = muslim
 		}
 		provinces_to_highlight = {
-			province_id = 341
+			province_id = 125
 			province_id = 4736
-			province_id = 2453
-			province_id = 338
-			province_id = 353
-			province_id = 2986
+			province_id = 4737
+			province_id = 341
+			province_id = 2454
+			province_id = 4566
+			province_id = 2455
+			province_id = 2473
 		}
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
-			owns_core_province = 341
+			owns_core_province = 125
 			owns_core_province = 4736
-			owns_core_province = 2453
-			owns_core_province = 338
-			owns_core_province = 353
-			owns_core_province = 2986
+			owns_core_province = 4737
+			owns_core_province = 341
+			owns_core_province = 2454
+			owns_core_province = 4566
+			owns_core_province = 2455
+			owns_core_province = 2473
+			341 = {
+				development = 25
+			}
 		}
 		effect = {
 			341 = {
@@ -40,8 +47,8 @@ country_decisions = {
 				change_province_name = "Carthago"
 				rename_capital = "Carthago"
 			}
-			change_tag = CAR
-			set_country_flag = formed_car_flag
+			change_tag = CTG
+			set_country_flag = formed_ctg_flag
 			swap_non_generic_missions = yes
 			add_prestige = 25
 			hidden_effect = {

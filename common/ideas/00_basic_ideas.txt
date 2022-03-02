@@ -48,7 +48,7 @@ aristocracy_ideas = {
 		free_leader_pool = 1
 	}
 	noble_resilience = {
-		yearly_army_professionalism = 0.005
+		yearly_army_professionalism = 0.01
 	}
 	
 

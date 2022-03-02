@@ -42,9 +42,9 @@
  # Elbian Confederacy mission localisation
  ###############################################################
  
- UU_elbian_core_title:0 "Strengthen the core"
+ UU_elbian_core_title:0 "Strengthen the Core"
  UU_elbian_core_desc:0 "After establishing our claims, we should rightfully unite the remaining saxons"
- UU_elbian_reclaim_ancestral_lands_title:0 "Reclaim ancestral land"
+ UU_elbian_reclaim_ancestral_lands_title:0 "Reclaim Ancestral Land"
  UU_elbian_reclaim_ancestral_lands_desc:0 "We became a leading force in the Empire and united the saxons under our banner"
  UU_natural_borders_title:0 "Our Natural Borders"
  UU_natural_borders_desc:0 "After decades of conquest we establisht some sort of international acknowledged borders of the Elbian Confederacy. We should take our time to fortify them and enjoy the prosperity these lands give to our people."
@@ -54,3 +54,18 @@
  elb_berlin_war_academy_title:0 "Berlin Millitary Academy"
  elb_berlin_war_academy_desc:0 " "
  elb_berlin_war_school:0 "The Millitary Academy of Berlin"
+ elb_hamburg_world_port_title:0 "Hamburg World Port"
+ elb_hamburg_world_port_desc:0 "We can make Hamburg our gate to the new world and contest the other european powers"
+ elb_found_universites_title:0 "Found Universities"
+ elb_found_universites_desc:0 "As a powerful court unchained by the pope, we should invest into further progressing our nation"
+ elb_weimar_classicism_title:0 "Weimar Classicism"
+ elb_weimar_classicism_desc:0 "The poets and authors from Weimar are world renown during this time!"
+ elb_cheb_gold_mining_title:0 "Cheb Gold Mining"
+ elb_cheb_gold_mining_desc:0 "With modernized mining tools we can exploit the Gold Mine in Cheb further"
+ elb_master_craftsmanship_title:0 "Master Craftsmanship"
+ elb_master_craftsmanship_desc:0 "Craftsman from all over the world flock to our country to learn our ways of handcraftsmanship"
+ elb_promote_workshops_title:0 "Promote Workshops"
+ elb_promote_workshops_desc:0 "We can enhance our nations progression by providing more urban workplaces" 
+ elb_protect_guild_rights_title:0 "Protect Guild Rights"
+ elb_protect_guild_rights_desc:0 "Leaving the City Guilds under estate leadership will make our workshops more efficient"
+ 

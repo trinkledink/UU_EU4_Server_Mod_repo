@@ -1608,6 +1608,7 @@ soldier_households = {
 		fish
 		livestock
 		wine
+		wool
 	}
 
 	modifier = {
