@@ -69,7 +69,7 @@ christian = {
 				global_religious_conversion_resistance = -0.33
 			}
 			concilatory = {
-				relation_with_heretics = 10
+				relation_with_heretics = 5
 				global_religious_conversion_resistance = 0.25
 				global_heretic_missionary_strength = -0.05
 				improve_relation_modifier = 0.25
@@ -83,7 +83,7 @@ christian = {
 						global_heretic_missionary_strength  = 0.02
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						tolerance_heretic = 2
 					}
 				}
@@ -93,7 +93,7 @@ christian = {
 						institution_spread_from_true_faith = 0.30
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						global_institution_spread = 0.10
 					}
 				}
@@ -103,7 +103,7 @@ christian = {
 						manpower_in_true_faith_provinces  = 0.1
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						global_manpower_modifier = 0.05
 					}
 				}
@@ -113,7 +113,7 @@ christian = {
 						warscore_cost_vs_other_religion  = -0.10
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 5
 						curia_powers_cost = -0.10
 					}
 				}
@@ -153,8 +153,6 @@ christian = {
 				}
 				allow = {
 					NOT = { war_with = PAP }
-					NOT = { prestige = 100 }
-					
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -185,7 +183,7 @@ christian = {
 				ai_will_do = {
 					factor = 1
 				}
-			}
+			}	
 			local_saint = {
 				cost = 100
 				potential = {
@@ -672,7 +670,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.05
 					modifier = {
 						factor = 0
 						is_at_war = no
@@ -692,7 +690,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 1
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -735,7 +733,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 0.5
+					factor = 0.01
 				}
 			}
 
@@ -746,7 +744,7 @@ christian = {
 					always = yes
 				}
 				ai_will_do = {
-					factor = 0.8
+					factor = 0.02
 					modifier = {
 						factor = 0
 						NOT = {
@@ -781,9 +779,6 @@ christian = {
 
 		color = { 178 38 76 }
 		icon = 14
-		allowed_conversion = {
-			jewish
-		}
 		country = {
 			defensiveness = 0.1
 			tolerance_own = 1
@@ -1535,6 +1530,7 @@ eastern = {
 		allow_female_defenders_of_the_faith = yes
 		country = {
 			land_morale = 0.1
+			tolerance_heathen = 1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1630,7 +1626,7 @@ dharmic = {
 		gurus = {
 			guru_nanak = {
 				trigger = {
-					always = yes
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 1000
@@ -1663,6 +1659,7 @@ dharmic = {
 				trigger = {
 					is_year = 1539
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1694,7 +1691,6 @@ dharmic = {
 					gurmukhi_script_teaching = {
 						type = ADM
 						cost = 50
-
 						technology_cost = -0.05
 					}
 					temple_langar = {
@@ -1715,6 +1711,7 @@ dharmic = {
 				trigger = {
 					is_year = 1552
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1746,7 +1743,6 @@ dharmic = {
 					dasvandh_collection = {
 						type = ADM
 						cost = 50
-
 						global_tax_modifier = 0.1
 					}
 					anand_karaj = {
@@ -1769,6 +1765,7 @@ dharmic = {
 				trigger = {
 					is_year = 1574
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1825,6 +1822,7 @@ dharmic = {
 				trigger = {
 					is_year = 1581
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1868,7 +1866,6 @@ dharmic = {
 					martyrdom = {
 						type = MIL
 						cost = 50
-
 						siege_ability = 0.10
 					}
 				}
@@ -1877,6 +1874,7 @@ dharmic = {
 				trigger = {
 					is_year = 1606
 					is_month = 6
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1918,7 +1916,7 @@ dharmic = {
 					protection_of_the_poor = {
 						type = DIP
 						cost = 50
-
+						
 						war_exhaustion = -0.03
 					}
 					miri_and_piri = {
@@ -1933,6 +1931,7 @@ dharmic = {
 				trigger = {
 					is_year = 1644
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1987,6 +1986,7 @@ dharmic = {
 				trigger = {
 					is_year = 1661
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2039,6 +2039,7 @@ dharmic = {
 				trigger = {
 					is_year = 1665
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2091,6 +2092,7 @@ dharmic = {
 				trigger = {
 					is_year = 1675
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2143,6 +2145,7 @@ dharmic = {
 				trigger = {
 					is_year = 1708
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2210,6 +2213,7 @@ pagan = {
 		color = { 127 0 0 }
 		icon = 11
 		allow_female_defenders_of_the_faith = yes
+
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
