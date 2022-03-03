@@ -1769,6 +1769,7 @@ over_governing_capacity_modifier = {
 	administrative_efficiency = -0.33
 	improve_relation_modifier = -0.5
 	min_autonomy = 50
+	yearly_corruption = 1.5
 	monthly_militarized_society = -1.0
 }
 
