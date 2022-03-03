@@ -70,6 +70,7 @@ artist = {
 		modifier = {
 			factor = 1.2
 			NOT = { stability = 0 }
+		}
 	}
 }
 
@@ -162,7 +163,8 @@ inquisitor = {
 	}
 	
 	ai_will_do = {
-		factor = 1.2
+		modifier = {
+			factor = 1.2
 			factor = 0.5
 			religious_unity = 0.95
 		}

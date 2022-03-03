@@ -10840,7 +10840,6 @@ warriors_do_not_read_books = {
 
 new_mandate_holder = {
 	imperial_mandate = 0.05
-
 	land_maintenance_modifier = -0.1
 	land_forcelimit = 20
 	manpower_recovery_speed = 0.15

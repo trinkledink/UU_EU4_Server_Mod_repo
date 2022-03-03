@@ -2077,7 +2077,6 @@ estate_nobles_nobility_primacy = {
 		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 12
 		factor = 13
 		modifier = {
 			factor = 0
@@ -2172,7 +2171,6 @@ estate_nobles_levies = {
 				}
 			}
 		}
-			factor = 2
 		modifier = {
 			factor = 1.5
 			has_idea_group = quantity_ideas
@@ -2182,10 +2180,7 @@ estate_nobles_levies = {
 			max_manpower = 200
 		}
 		modifier = {
-				estate = estate_nobles
-		}
-		}
-		modifier = {
+			factor = 0.75
 			NOT = {
 				estate_territory = {
 					estate = estate_nobles
@@ -2194,7 +2189,6 @@ estate_nobles_levies = {
 			}
 		}
 		modifier = {
-			factor = 0.5
 			factor = 0.75
 			NOT = {
 				estate_territory = {

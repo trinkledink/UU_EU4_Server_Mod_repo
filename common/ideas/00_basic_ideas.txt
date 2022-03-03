@@ -382,9 +382,6 @@ spy_ideas = {
 		factor = 0.25
 	}
 
-	ai_will_do = {
-		factor = 0.75
-	}
 }
 
 #diplomatic_ideas = {
@@ -569,7 +566,7 @@ economic_ideas = {
 	debt_and_loans = {
 		interest = -0.5
 	}
-	centralization= {
+	centralization = {
 		global_autonomy = -0.05
 	}
 	nationalistic_enthusiasm = {
@@ -1070,7 +1067,7 @@ humanist_ideas = {
 	tolerance_idea = {
 		religious_unity = 0.25
 		global_unrest = -2
-		monthly_piety = -0.1
+		monthly_piety_accelerator = -0.003
 	}
 	local_traditions = {
 		advisor_pool = 1 #UU change

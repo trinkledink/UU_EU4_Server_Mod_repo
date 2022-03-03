@@ -4,7 +4,6 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
-        crown_land_share = 0.1
         crown_land_share = 10
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -184,11 +183,12 @@ interaction = {
         }
     }
 	ai_will_do = {
+		factor = 10
 		# Only use if it will bring loyalty above 50 for all estates
 		# AI will most likely fail to complete the task
 		modifier = {
 			can_use_crown_land_interaction = seize_land
-			
+			factor = 10
 			estate_loyalty = {
 				estate = all
 				loyalty = 45.5
@@ -325,6 +325,7 @@ interaction = {
 		}
 	}
 	ai_will_do = {
+		factor = 50
 		modifier = {
 			factor = 0
 			# This check is needed to prevent collision with day-1 event theocracy.1
@@ -332,7 +333,10 @@ interaction = {
 			has_heir = no
 		}
 		modifier = {
+			factor = 0
+			# This is a hack for countries with enclaves that can be hard to get to, to kill the rebels
 			OR = {
+				tag = TEU
 				tag = COL
 				# Add more as necessary
 			}
@@ -340,7 +344,9 @@ interaction = {
 				estate_loyalty = {
 					estate = all
 					loyalty = 50
+				}
 			}
+		}
 		modifier = {
 			factor = 0.2
 			NOT = {
@@ -522,11 +528,6 @@ interaction = {
 			average_unrest = 3
 		}
 		modifier = {
-			NOT = {
-			has_country_flag = recent_land_distribution
-		modifier = {
-		}
-			}
 			factor = 1.2
 			estate_loyalty = {
 				estate = all

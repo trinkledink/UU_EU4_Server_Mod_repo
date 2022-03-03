@@ -399,6 +399,7 @@ alerts = {
 	}	
 	great_project_can_be_upgraded = {
 		category = MEDIUM
+	}
 	merchant_idle = {
 		category = LOW
 	}
