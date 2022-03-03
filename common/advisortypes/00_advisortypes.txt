@@ -35,7 +35,9 @@ natural_scientist = {
 	monarch_power = ADM
 	
 	# Bonus
+
 	innovativeness_gain = 0.25
+
 
 	skill_scaled_modifier = { meritocracy = 0.25 }	
 
@@ -44,7 +46,7 @@ natural_scientist = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
 	}
 }
 
@@ -53,7 +55,9 @@ artist = {
 	monarch_power = ADM
 	
 	# Bonus
+
 	monthly_splendor = 1
+
 
 	skill_scaled_modifier = { meritocracy = 0.25 }	
 
@@ -63,6 +67,14 @@ artist = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.2
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { stability = 0 }
+		}
 	}
 }
 
@@ -71,7 +83,9 @@ treasurer = {
 	monarch_power = ADM
 	
 	# Bonus
+
 	production_efficiency = 0.10
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }	
 
@@ -80,7 +94,7 @@ treasurer = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.5
 	}
 }
 
@@ -97,6 +111,7 @@ theologian = {
 	yearly_harmony = 0.25
 	yearly_karma_decay = 0.025
 
+
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
 	chance = {
@@ -106,6 +121,14 @@ theologian = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.5
+			unrest = -1
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 1
+		}
 	}
 }
 
@@ -123,13 +146,20 @@ master_of_mint = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
+		modifier = {
+			factor = 0.5
+			NOT = { inflation = 1 }
+		}
+
 	}
 }
 
 ######################################################
 inquisitor = {
 	monarch_power = ADM
+	allow_only_owner_religion = yes
+
 	
 	# Bonus
 	global_missionary_strength = 0.02
@@ -145,11 +175,18 @@ inquisitor = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
+		modifier = {
+			factor = 0.5
+			religious_unity = 0.95
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
 	}
 }
 
-######################################################
 
 ######################################################
 # Diplomatic Advisors
@@ -161,6 +198,7 @@ statesman = {
 	
 	# Bonus
 	diplomatic_reputation = 2
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -179,8 +217,8 @@ naval_reformer = {
 	
 	# Bonus
 	
-	naval_morale = 0.1
-	
+	naval_morale = 0.1 
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -216,6 +254,10 @@ trader = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.5
+			has_idea_group = trade_ideas
+		}
 	}
 }
 
@@ -233,7 +275,7 @@ spymaster = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
 	}
 }
 
@@ -243,7 +285,7 @@ colonial_governor = {
 	
 	# Bonus
 	naval_attrition = -0.15
-	
+
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
 	chance = {
@@ -287,6 +329,7 @@ navigator = {
 	
 	# Bonus
 	range = 0.33
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -299,7 +342,7 @@ navigator = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
 	}
 }
 
@@ -332,6 +375,7 @@ army_organiser = {
 	
 	# Bonus
 	manpower_recovery_speed = 0.10
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -340,7 +384,7 @@ army_organiser = {
 	}
 	
 	ai_will_do = {
-		factor = 1.5
+		factor = 1.3
 	}
 }
 
@@ -390,6 +434,7 @@ recruitmaster = {
 	
 	# Bonus
 	land_forcelimit_modifier = 0.10
+
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -398,7 +443,7 @@ recruitmaster = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			is_at_war = no
@@ -439,7 +484,7 @@ grand_captain = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			is_at_war = no
