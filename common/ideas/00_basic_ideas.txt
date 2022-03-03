@@ -1222,3 +1222,42 @@ naval_ideas = {
 		}
 	}
 }
+mercenary_ideas = {
+	category = MIL
+	Bonus = {
+		recover_army_morale_speed = 0.25
+	}
+	standard_payroll_system = {
+		reinforce_speed = 0.33
+		mercenary_discipline = 0.075
+	}
+	local_land_knowledge = {
+		movement_speed = 0.20
+	}
+	viable_career_option = {
+		mercenary_manpower = 0.50
+		land_forcelimit_modifier = 0.20
+	}
+	mercenary_connection_networks = {
+		trade_range_modifier = 0.33
+	}
+	trusted_partner_discounts = {
+		mercenary_cost = -0.25
+		merc_maintenance_modifier = -0.20
+	}
+	living_off_the_land = {
+		available_province_loot = 0.50
+		loot_amount = 0.20
+	}
+	prestigious_companies = {
+		prestige = 1
+		reserves_organisation = 0.25
+	}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 2
+			government = republic 
+		}
+	}
+}

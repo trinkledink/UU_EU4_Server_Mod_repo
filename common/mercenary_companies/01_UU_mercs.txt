@@ -1,0 +1,21 @@
+merc__cav_free_company = {
+    regiments_per_development = 0
+    cost_modifier = 0.75
+	cavalry_weight = 1
+    trigger = {
+        total_development = 150
+    }
+}
+merc_ideas_frontline = {
+	regiments_per_development = 0.075
+	trigger = {
+		has_idea = mercenary_connection_networks
+	}
+}
+merc_ideas_cannons = {
+	regiments_per_development = 0.075
+	artillery_weight = 1
+	trigger = {
+		has_idea = prestigious_companies
+	}
+}
