@@ -1,0 +1,62 @@
+﻿l_english:
+ 
+ ###############################################################
+ # Carthage ideas
+ ###############################################################
+ CTG_ideas:0 "Carthaginian Ideas"
+ CTG_ideas_start:0 "Carthaginian Traditions"
+ CTG_ideas_bonus:0 "Carthaginian Ambitions"
+ ctg_mediterranean_fleet:0 "Mediterranean Fleet"
+ ctg_mediterranean_fleet_desc:0 "The Cartheginina fleet had to secure a strong trade empire across the mediterranean"
+ ctg_galley_masters:0 "Galley Masters"
+ ctg_galley_masters_desc:0 "We are masters of combat in shallow waters"
+ ctg_cartheginian_innovations:0 "Cartheginian Innovations"
+ ctg_cartheginian_innovations_desc:0 "A reformed trade empire attracts muslim scholars from all over the known world"
+ ctg_mercenary_contracts:0 "Mercenary Contracts"
+ ctg_mercenary_contracts_desc:0 "A permanent army isn't our best interests, so it is wise to keep tight bonds with reliable mercanaries"
+ ctg_mercantilism:0 "Mercantilism"
+ ctg_mercantilism_desc:0 "New Mercantilism policies to protect our new local economy"
+ ctg_spreading_civilsation:0 "Spreading Civilization"
+ ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the mediterranean"
+ ctg_fertile_lands:0 "Fertile lands"
+ ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population"
+ 
+ ###############################################################
+ # Barcid ideas
+ ###############################################################
+ KOB_ideas:0 "Barcid Ideas"
+ KOB_ideas_start:0 "Barcid Traditions"
+ KOB_ideas_bonus:0 "Barcid Ambitions"
+ kob_legacy_of_hannibal:0 "Legacy of Hannibal"
+ kob_legacy_of_hannibal_desc:0 "It is not without reason that Hannibal Barcid is known as one of the strongest generals of all time. His campaigns are widely studiet in our military academies, and his blood runs through our veins."
+ kob_strong_fortifications:0 "Strong Fortifications"
+ kob_strong_fortifications_desc:0 "With new Carthaginian settlers arriving in the Kingdom of Barcid, we may find inspiration in the ancient fortified Carthaginian cities for our new establishments."
+ kob_anti_rival_sentiment:0 "Anti-rival Sentiment"
+ kob_anti_rival_sentiment_desc:0 "Our people harbour strong resentment and grudges towards our rivals and adversaries. One should not underestimate the morale of a people once brought to destruction. They've stared death in the face and would rather bring it than face it again."
+ kob_valencia_coast:0 "The Valencian Coastline"
+ kob_valencia_coast_desc:0 "We hold one of the most important coastlines for trade thorugh the Mediterranean. This puts us at an advantageous position to direct trade."
+ kob_phonecian_legacy:0 "Phonecian Legacy"
+ kob_phonecian_legacy_desc:0 "Our ancestors were a seafaring people from the other side of the Mediterranean. This accomplishment itself is a testament to our maritime prowess."
+ kob_aggressive_religious_policy:0 "The Carthaginian Inquisition"
+ kob_aggressive_religious_policy_desc:0 "Bet you really didn't expect that one."
+ kob_elephant_cavalry:0 "Elephants and Horses"
+ kob_elephant_cavalry_desc:0 "Our nation is capable of using more than just horses as a shock force. We've got a tradition of utilising elephants in our armies, even crossing the alps with them."
+ 
+ ###############################################################
+ # Mercenary Idea Group
+ ###############################################################
+ mercenary_ideas:0 "Mercenary Ideas"
+ standard_payroll_system:0 "Standard Payroll System"
+ standard_payroll_system_desc:0 "The employment of mercenenaries has been institutionalised into our national economy, leading to a standard paycheck the mercenaries can rely on."
+ viable_career_option:0 "Viable Career Option"
+ viable_career_option_desc:0 "Constant employment of mercenaries has led the life of a mercenary to be a viable career option for our people."
+ trusted_partner_discounts:0 "Trusted Partner Discounts"
+ trusted_partner_discounts_desc:0 "We have gained the favour and trust of certain contracting partners, allowing us to employ their companies' service for a cheaper penny than most other nations would."
+ living_off_the_land:0 "Living off the Land"
+ living_off_the_land_desc:0 "Mercenaries are accustomed to a life without intricate supply networks, and are experts at using the local resources to their advantage."
+ mercenary_connection_networks:0 "Mercenary Connection Networks"
+ mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without "
+ local_land_knowledge:0 "Local Land Knowledge"
+ local_land_knowledge_desc:0 "The mercenaries in our employment are experienced veterans and locals from the surrounding lands, giving us the knowledge of how to navigate these areas swiftly."
+ prestigous_companies:0 "Prestigious Companies"
+ prestigous_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with."

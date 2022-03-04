@@ -1,0 +1,27 @@
+﻿l_english:
+ ###############################################################
+ # Carthaginian Modifiers Localisation.
+ ###############################################################
+ 
+ ctg_western_mediterranean_trade_opportunities:0 "Influencing Western Trade"
+ ctg_beyond_tyng:0 "Beyond Tingis"
+ ctg_carthaginian_new_world_discovery:0 "Carthaginian New World Exploration"
+ ctg_kingdom_of_barcid:0 "Puppet Kingdom in Iberia"
+ ctg_masters_of_the_bull:0 "Masters of the Bull"
+ ctg_international_trade_network:0 "International Trade Network"
+ ctg_return_to_the_fertile_crescent:0 "Return to the Fertile Crescent"
+ ctg_tasked_with_the_local_governance:0 "Tasked with Local Governance"
+ ctg_birthplace_of_renaissance:0 "Heart of the Renaissance"
+ ctg_phoenician_phoenix:0 "Phoenician Phoenix"
+ ctg_maritime_culture:0 "Maritime Culture"
+ ctg_economic_power:0 "Economic Powerhouse"
+ ctg_recent_military_reforms:0 "Recent Military Reforms"
+ ctg_a_nation_of_hirearms:0 "Nation of Hirearms"
+ ctg_veteran_mercenary_companies:0 "Veteran Mercenary Companies"
+ ctg_mercenary_quality_standards:0 "Mercenary Quality Standards"
+ ctg_breaking_from_carthaginian_traditions:0 "Breaking from Carthaginian Traditions"
+ ctg_carthaginian_recruitment_standards:0 "Carthaginian Recruitment Standards"
+ ctg_lessons_from_the_punic_wars:0 "Lessons from the Punic Wars"
+ 
+ # Province Localisation
+ ctg_pearl_of_mediterranean:0 "Pearl of the Mediterranean"

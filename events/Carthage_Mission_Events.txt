@@ -1,0 +1,162 @@
+#Kingdom of Barcid
+country_event = {
+	id = ctg_mission_events.1
+	title = ctg_mission_events.1.t
+	desc = ctg_mission_events.1.d
+	picture = 12_Maratha_Estate_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = ctg_mission_events.1.a
+		221 = {
+			change_province_name = "Qart Hadasht"
+			rename_capital = "Qart Hadasht"
+			add_base_tax = 1
+			add_base_manpower = 1
+			add_base_production = 2
+		}
+		213 = {
+			change_province_name = "Barcino"
+			rename_capital = "Barcino"
+			add_base_tax = 2
+			add_base_manpower = 1
+			add_base_production = 2
+		}
+
+	}
+	
+	option = {
+		name = ctg_mission_events.1.b
+		trigger = { NOT = { exists = KOB } }
+		custom_tooltip = ctg_mission_events.1.b.tt
+		add_country_modifier = {
+			name = "ctg_kingdom_of_barcid"
+			duration = -1
+		}
+		
+		iberia_region = {
+			limit = {
+				country_or_non_sovereign_subject_holds = root
+				NOT = { area = upper_andalucia_area }
+				NOT = { province_id = 1749}
+			}
+			add_core = KOB
+		}
+		
+		iberia_region = {
+			limit = {
+				country_or_non_sovereign_subject_holds = root
+				NOT = { area = upper_andalucia_area }
+				NOT = { province_id = 1749}
+			}
+			remove_core = CTG
+		}
+
+		release = KOB
+		vassalize = KOB
+		KOB = {
+			change_government = monarchy
+			
+			add_opinion  = { who = ROOT modifier = opinion_puppet_kingdom }
+			reverse_add_opinion  = { who = ROOT modifier = opinion_puppet_kingdom }
+			
+			set_capital = 221
+			
+			define_ruler = {
+				name = "Hasdrubal II" 
+				dynasty = "Barcid"
+				DIP = 2
+				ADM = 4
+				MIL = 6
+			}
+			
+			if = {
+				limit = {
+					has_states_general_mechanic = yes
+				}
+				change_statists_vs_orangists = 1
+			}
+			
+			add_country_modifier = {
+				name = "ctg_tasked_with_the_local_governance"
+				duration = -1
+			}
+			
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			#trigger = { has_custom_ideas = no }
+			swap_free_idea_group = yes		#keep progress
+			
+		}
+		
+		221 = {
+			change_province_name = "Qart Hadasht"
+			rename_capital = "Qart Hadasht"
+			add_base_tax = 2
+			add_base_manpower = 4
+			add_base_production = 4
+			change_culture = catalan
+			change_religion = sunni
+		}
+		
+		213 = {
+			change_province_name = "Barcino"
+			rename_capital = "Barcino"
+			add_base_tax = 1
+			add_base_manpower = 3
+			add_base_production = 2
+			change_religion = sunni
+		}
+	}
+}
+
+#Sack of Rome
+
+country_event = {
+	id = ctg_mission_events.2
+	title = ctg_mission_events.2.t
+	desc = ctg_mission_events.2.d
+	picture = PLAGUE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = ctg_mission_events_2_a
+		
+		118 = {
+			add_devastation = 90
+			add_base_tax = -5
+			add_base_production = -5
+			add_base_manpower = -4	
+		}
+		
+		PAP = {
+			kill_ruler = yes
+		}
+		
+		set_great_project_tier_0 = {
+			type = stpeters_cathedral
+		}
+	}
+}
+
+# Army direction_pointer
+
+country_event = {
+	id = ctg_mission_events.3
+	title = ctg_mission_events.3.t
+	desc = ctg_mission_events.3.d
+	picture = LAND_MILITARY_eventPicture
+	
+	option = {
+		name = ctg_mission_events_3_a
+	}
+	
+	option = {
+		name = ctg_mission_events_3_b
+		set_country_flag = ctg_professionalising_the_army
+		swap_non_generic_missions = yes
+	}
+}

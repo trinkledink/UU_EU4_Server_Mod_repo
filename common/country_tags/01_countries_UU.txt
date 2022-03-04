@@ -1,3 +1,4 @@
 CTG = "countries/Carthage.txt"
 AUH = "countries/Austriahungary.txt"
 ELB = "countries/ElbianConfederation.txt"
+KOB = "countries/KingdomOfBarcid.txt"

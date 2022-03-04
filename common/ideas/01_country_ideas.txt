@@ -843,3 +843,101 @@ ELB_ideas = {
 		innovativeness_gain = 0.5
 	}
 }
+
+#CTG
+CTG_ideas = {
+	start = {
+		naval_morale = 0.2
+		global_trade_power = 0.2
+	}
+	
+	bonus = {
+		Discipline = 0.05
+	}
+	
+	trigger = {
+		tag = CTG
+	}
+	free = yes
+	
+	ctg_mediterranean_fleet = {
+		naval_forcelimit_modifier = 0.25
+		naval_maintenance = -0.2
+	}
+	ctg_galley_masters = {
+		galley_power = 0.25
+		own_coast_naval_combat_bonus = 1
+	}
+	ctg_cartheginian_innovations = {
+		innovativeness_gain = 0.5
+		monthly_piety = -0.005
+	}
+	ctg_mercenary_contracts = {
+		mercenary_manpower = 1
+		mercenary_discipline = 0.075
+	}
+	ctg_mercantilism = {
+		trade_efficiency = 0.2
+		mercantilism_cost = -0.5
+	}
+	ctg_spreading_civilsation = {
+		development_cost = -0.1
+		global_prosperity_growth = 1
+	}
+	ctg_fertile_lands = {
+		global_sailors_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+}
+
+#KOB
+KOB_ideas = {
+	start = {
+		cavalry_power = 0.15
+		culture_conversion_cost = -0.25
+	}
+	
+	bonus = {
+		movement_speed = 0.33
+	}
+	
+	trigger = {
+		tag = KOB
+	}
+	free = yes
+	
+	kob_aggressive_religious_policy = {
+		tolerance_heathen = -1
+		tolerance_heretic = -1
+		global_missionary_strength = 2.5
+	}
+	
+	kob_legacy_of_hannibal = {
+		leader_land_shock = 1
+		leader_land_manuever = 2
+		leader_cost = -0.05
+	}
+	
+	kob_strong_fortifications = {
+		defensiveness = 0.20
+	}
+	
+	kob_anti_rival_sentiment = {
+		land_morale = 0.10
+	}
+	
+	kob_valencia_coast = {
+		trade_efficiency = 0.10
+	}
+	
+	kob_phonecian_legacy = {
+		global_sailors_modifier = 0.33
+		global_ship_cost = -0.05
+	}
+	
+	kob_elephant_cavalry = {
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.2
+	}
+	
+}

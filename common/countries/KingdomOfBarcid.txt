@@ -1,6 +1,6 @@
 graphical_culture = muslimgfx
 
-color = { 110  120  191 }
+color = { 245 123 66 }
 
 historical_idea_groups = {
 	trade_ideas
@@ -25,9 +25,9 @@ historical_units = {
 
 monarch_names = {
 	"Mago #0" = 10
-	"Hasdrubal #0" = 15
-	"Hamilcar #0" = 15
-	"Hannibal #0" = 15
+	"Hasdrubal #0" = 30
+	"Hamilcar #0" = 20
+	"Hannibal #0" = 20
 	"Hanno #0" = 10
 	"Himilco #0" = 5
 	"Murad #0" = 5
@@ -43,7 +43,7 @@ monarch_names = {
 	"Danel #0" = 3
 	"Hiempsal #0" = 3
 	"Juba #0" = 3
-	"Massinissa #0" = 10
+	"Massinissa #0" = 5
 	"Eshmunamash #0" = 3
 	"Baalhanno #0" = 3
 	"Akbar #0" = 5
@@ -52,7 +52,6 @@ monarch_names = {
 	
 	"Dido #0" = -1
 	"Sophonisba #0" = -1
-
 }
 
 leader_names = {

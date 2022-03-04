@@ -1,10 +1,10 @@
 country_decisions = {
 
-	car_nation = {
+	ctg_nation = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_ctg_flag }
+			NOT = { was_tag = CTG }
 			NOT = { exists = CTG }
 			NOT = { tag = PAP }
 			NOT = { tag = MAM }
@@ -24,6 +24,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
+			adm_tech = 3
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
@@ -48,9 +49,9 @@ country_decisions = {
 				rename_capital = "Carthago"
 			}
 			change_tag = CTG
-			set_country_flag = formed_ctg_flag
 			swap_non_generic_missions = yes
 			add_prestige = 25
+			
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -75,6 +76,8 @@ country_decisions = {
 				add_government_reform = oligarchy_reform
 				add_republican_tradition = 30
 			}
+			
+			country_event = { id = ctg_mission_events.3 }
 		}
 	}
 }
