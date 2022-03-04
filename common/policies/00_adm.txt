@@ -1320,7 +1320,8 @@ cultural_understanding = {
 		full_idea_group = spy_ideas
 	}	
 	
-	rebel_support_efficiency = 4
+	unrest = -1
+	rebel_support_efficiency = 1
 	
 	ai_will_do = {
 		factor = 1
