@@ -1904,3 +1904,22 @@ ancestor_worship_policy = {
 		factor = 1
 	}
 }
+mercenary_resettlement_policy = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = humanist_ideas
+	}
+	
+	development_cost = -0.1
+	num_accepted_cultures = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
