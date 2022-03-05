@@ -1225,7 +1225,7 @@ naval_ideas = {
 mercenary_ideas = {
 	category = MIL
 	Bonus = {
-		recover_army_morale_speed = 0.25
+		recover_army_morale_speed = 0.15
 	}
 	standard_payroll_system = {
 		reinforce_speed = 0.33

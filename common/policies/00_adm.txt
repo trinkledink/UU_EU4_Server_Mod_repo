@@ -10,7 +10,7 @@ the_combination_act = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	yearly_army_professionalism = 0.005
+	yearly_army_professionalism = 0.01
 	ai_will_do = {
 		factor = 1
 		modifier = {

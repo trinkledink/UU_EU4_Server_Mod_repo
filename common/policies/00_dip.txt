@@ -652,8 +652,7 @@ protected_shipping_lanes = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	light_ship_cost = -0.15
-	light_ship_power = 0.15
+	global_ship_trade_power = 0.4
 
 	ai_will_do = {
 		factor = 1
