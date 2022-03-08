@@ -19,7 +19,7 @@ estate_dhimmi_piety = {
 	}
 }
 estate_burghers_elb_improved_workshops = {
-	icon = privilege_make_generous_donation
+	icon = privilege_build_jain_temple
 	loyalty = 0.1
 	influence = 0.1
 	max_absolutism = -15
