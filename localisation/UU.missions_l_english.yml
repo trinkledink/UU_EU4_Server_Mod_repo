@@ -68,4 +68,5 @@
  elb_promote_workshops_desc:0 "We can enhance our nations progression by providing more urban workplaces" 
  elb_protect_guild_rights_title:0 "Protect Guild Rights"
  elb_protect_guild_rights_desc:0 "Leaving the City Guilds under estate leadership will make our workshops more efficient"
- 
+ estate_burghers_elb_improved_workshops:0 "Improved Workshops"
+ estate_burghers_elb_improved_workshops_tooltip:0 "All Provinces with a §YWorkshop§! or §YCounting House§! will receive additional §G 20% production efficiency§!" 

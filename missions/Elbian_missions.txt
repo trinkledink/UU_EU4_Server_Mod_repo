@@ -798,10 +798,11 @@ UU_elbian_production = {
 			}
 		}
 		
-	effect = {
-		add_country_modifier = {
-			name = "elb_rapid_urbanization"
-			duration = 7300
+		effect = {
+			add_country_modifier = {
+				name = "elb_rapid_urbanization"
+				duration = 7300
+			}
 		}
 	}
 	elb_protect_guild_rights = {

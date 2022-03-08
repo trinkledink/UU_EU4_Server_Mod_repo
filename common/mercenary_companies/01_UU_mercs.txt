@@ -1,4 +1,4 @@
-merc__cav_free_company = {
+merc_cav_free_company = {
     regiments_per_development = 0
     cost_modifier = 0.75
 	cavalry_weight = 1
