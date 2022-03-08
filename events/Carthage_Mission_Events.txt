@@ -150,6 +150,8 @@ country_event = {
 	desc = ctg_mission_events.3.d
 	picture = LAND_MILITARY_eventPicture
 	
+	is_triggered_only = yes
+	
 	option = {
 		name = ctg_mission_events_3_a
 	}
