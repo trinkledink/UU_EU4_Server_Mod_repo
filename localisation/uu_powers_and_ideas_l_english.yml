@@ -58,5 +58,26 @@
  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without "
  local_land_knowledge:0 "Local Land Knowledge"
  local_land_knowledge_desc:0 "The mercenaries in our employment are experienced veterans and locals from the surrounding lands, giving us the knowledge of how to navigate these areas swiftly."
- prestigous_companies:0 "Prestigious Companies"
- prestigous_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with."
+ prestigious_companies:0 "Prestigious Companies"
+ prestigious_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with."
+
+ ###############################################################
+ # Elbian Confederation
+ ###############################################################
+ ELB_ideas:0 "Elbian Ideas"
+ ELB_ideas_start:0 "Elbian Traditions"
+ ELB_ideas_finish:0 "Elbian Ambitions"
+ elb_hus_and_luther:0 "Hus and Luther"
+ elb_hus_and_luther_desc:0 "Our Nation was home to two great reformers of the christian faith. They showed us how important it is to listen to god only and not be entangled in political intrigue with the Pope"
+ elb_der_zwinger:0 "Der Zwinger"
+ elb_der_zwinger_desc:0 "Der Zwinger is a large palace in Dresden, where grandiose feasts could be arranged to impress foreign dignitaries."
+ elb_elective_monarchy:0 "Elective Monarchy"
+ elb_elective_monarchy_desc:0 "For too long the fractious nobility of the Elbian Confederation have been a huge impediment to royal authority. From now on we will ensure that every new monarch has the full support of the nobles prior to his or her coronation. That should avoid any problems."
+ elb_saxon_circle:0 "The Saxon Circle"
+ elb_saxon_circle_desc:0 "Saxony and Prussia shared a position in the Upper Saxon circle of the Holy Roman Empire, and when the Imperial army was assembled they marched as one. This ensures some Prussian discipline rubbing off on Saxon troops."
+ elb_wagenburg:0 "Wagenburg"
+ elb_wagenburg_desc:0 "During the Hussite wars our armies relied on wagon forts, which would allow us to win battles we should have lost. Although we may not always use wagons, using infantry sharp shooters from defensive position will become the tactic of choice for our ever invincible armies."
+ elb_advisor_board:0 "Advisor Board"
+ elb_advisor_board_desc:0 "The Czech and Saxon lands are inhabited by some of the most brilliant people of our time so mainting a highly educated advisor board was always a high priority."
+ elb_university_founding:0 "University Founding"
+ elb_university_founding_desc:0 "A lot of bright minds within our realm needed more room to grow their ideas. By establishing Universities across the country we ensure that we will always be as innovative as ever"

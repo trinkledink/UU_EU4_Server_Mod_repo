@@ -1,3 +1,4 @@
+namespace = ctg_mission_events
 #Kingdom of Barcid
 country_event = {
 	id = ctg_mission_events.1
