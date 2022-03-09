@@ -1148,7 +1148,7 @@ emp_pap_slot_4 = {
 		position = 3
 		
 		trigger = {
-			609 = {
+			200 = {
 				has_great_project = {
 					type = stpeters_cathedral
 					tier = 1
