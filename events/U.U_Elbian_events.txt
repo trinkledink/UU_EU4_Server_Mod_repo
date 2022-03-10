@@ -3,7 +3,7 @@ namespace = elb_mission_events
 country_event = {
 	id = UU_elb_mission_events.1
 	title = UU_elb_mission_events.1.t
-	desc = "UU_elb_hamburg_world_port.1.d"
+	desc = "UU_elb_mission_events.1.d"
 	picture = HARBOUR_eventPicture
 	
 	is_triggered_only = yes

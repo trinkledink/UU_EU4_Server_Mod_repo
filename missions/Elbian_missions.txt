@@ -267,28 +267,28 @@ UU_elbian_conquest = {
 		}
 		effect = {
 			4141 = {							#Dithmarshen
-				add_base_manpower = 2
+				add_base_manpower = 3
 				add_province_modifier = {
 					name = "elb_city_fortified"
 					duration = -1
 				}
 			}
 			45 = {								#Lübeck
-				add_base_manpower = 2
+				add_base_manpower = 3
 				add_province_modifier = {
 					name = "elb_city_fortified"
 					duration = -1
 				}
 			}
 			69 = {								#Dortmund
-				add_base_manpower = 2
+				add_base_manpower = 3
 				add_province_modifier = {
 					name = "elb_city_fortified"
 					duration = -1
 				}				
 			}
 			4715 = {							#Rothenburg
-				add_base_manpower = 2
+				add_base_manpower = 3
 				add_province_modifier = {
 					name = "elb_city_fortified"
 					duration = -1
@@ -362,7 +362,7 @@ UU_elbian_integration = {
 				ROOT = { inherit = BRA }
 			}
 			else = {
-				add_adm_power = 100
+				add_adm_power = 200
 			}
 		}
 	}
@@ -679,6 +679,7 @@ UU_elbian_innovation = {
 			has_adm_advisor_3 = yes
 			has_dip_advisor_3 = yes
 			has_mil_advisor_3 = yes
+			NOT = {	num_of_loans = 1 }
 			4743 = {
 				has_building = university
 				development = 20
@@ -689,6 +690,30 @@ UU_elbian_innovation = {
 				name = "elb_weimar_classicism_modifier"
 				duration = 18250
 			}
+		}
+	}
+	elb_beacon_of_progress = {
+		position = 6
+		icon = mission_rb_build_furnaces
+		required_missions = { elb_protect_guild_rights elb_weimar_classicism }
+		
+		trigger = {
+			# innovativeness = 100
+			# has_institution = enlightenment
+			# num_of_owned_provinces_with = {
+				# value = 3
+				# trade_goods = coal
+				# has_building = furnace
+			# }
+		}
+		effect = {
+			capital_scope = {
+				add_base_manpower = 3
+				add_base_production = 3
+				add_base_tax = 3
+			}
+			set_country_flag = elb_beacon_of_progress_flag
+			custom_tooltip = elb_beacon_of_progress_tt
 		}
 	}
 }

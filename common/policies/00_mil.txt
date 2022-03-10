@@ -1394,24 +1394,6 @@ innovative_mercenaries_policy = {
 		factor = 1
 	}
 }
-standardised_payment_policy = {
-	monarch_power = MIL
-	
-	potential = {
-		has_idea_group = mercenary_ideas
-		has_idea_group = economic_ideas
-	}
-	allow = {
-		full_idea_group = mercenary_ideas
-		full_idea_group = economic_ideas
-	}
-	merc_maintenance_modifier = -0.15
-	mercenary_manpower = 0.25
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
 holy_orders_policy = {
 	monarch_power = MIL
 	

@@ -63,11 +63,7 @@ elb_help = {
 		naval_forcelimit = 15
 	}
 }
-elb_contesting_colonies = {
-	colonists = 1
-	range = 0.33
-	global_colonial_growth = 10
-}
+
 elb_weimar_classicism_modifier = {
 	idea_cost = -0.1
 	prestige = 2
@@ -83,6 +79,11 @@ elb_rapid_urbanization = {
 }
 estate_burghers_elb_improved_workshops_mod = {
 	local_production_efficiency = 0.2
+}
+elb_contesting_colonies = {
+	colonists = 1
+	range = 0.33
+	global_colonial_growth = 10
 }
 elb_berlin_war_school = {
 	owner = {
