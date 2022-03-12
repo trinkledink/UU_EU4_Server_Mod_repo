@@ -24,7 +24,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			adm_tech = 3
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
