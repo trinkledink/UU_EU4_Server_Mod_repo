@@ -1058,16 +1058,13 @@ humanist_ideas = {
 
 	bonus = {
 		yearly_harmony = 0.25  ###########################Used if religion uses harmony (confucianism)
-		possible_policy = 1 #UU change
-		free_adm_policy = 1 #UU change
-		free_dip_policy = 1	#UU change
-		free_mil_policy = 1 #UU change
+		free_policy = 1 #UU change
 	}
 
 	tolerance_idea = {
 		religious_unity = 0.25
 		global_unrest = -2
-		monthly_piety_accelerator = -0.003
+		monthly_piety = -0.005
 	}
 	local_traditions = {
 		advisor_pool = 1 #UU change
@@ -1117,9 +1114,11 @@ influence_ideas = {
 	
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
+		dip_tech_cost_modifier = -0.1
 	}
 	buffer_states = {
 		diplomatic_upkeep = 2
+		province_warscore_cost = -0.2
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
@@ -1127,7 +1126,7 @@ influence_ideas = {
 	}
 	postal_service = {
 		envoy_travel_time = -0.25
-		prestige_decay = -0.01
+		diplomat = 1
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
@@ -1225,10 +1224,10 @@ naval_ideas = {
 mercenary_ideas = {
 	category = MIL
 	Bonus = {
-		recover_army_morale_speed = 0.15
+		recover_army_morale_speed = 0.1
 	}
 	standard_payroll_system = {
-		reinforce_speed = 0.33
+		reinforce_speed = 0.15
 		mercenary_discipline = 0.075
 	}
 	local_land_knowledge = {
@@ -1240,6 +1239,7 @@ mercenary_ideas = {
 	}
 	mercenary_connection_networks = {
 		trade_range_modifier = 0.33
+		custom_tooltip = uu_merc_frontrow_tt
 	}
 	trusted_partner_discounts = {
 		mercenary_cost = -0.25
@@ -1252,6 +1252,7 @@ mercenary_ideas = {
 	prestigious_companies = {
 		prestige = 1
 		reserves_organisation = 0.25
+		custom_tooltip = uu_merc_backrow_tt
 	}
 	ai_will_do = {
 		factor = 0.9

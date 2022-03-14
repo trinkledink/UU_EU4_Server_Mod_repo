@@ -967,7 +967,7 @@ KOG_ideas = {
 		global_tax_modifier = 0.33
 	}
 	KOG_glory_of_rome = {
-		prestige_decay = -0.02
+		prestige_decay = -0.01
 		land_morale = 0.1
 	}
 	KOG_donation_of_constantine = {

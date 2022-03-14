@@ -1120,6 +1120,9 @@ mandala_reform = {
 		vassal_forcelimit_bonus = 1
 		governing_capacity_modifier = -0.33
 	}
+	government_abilities = {
+		iqta_mechanic
+	}
 	free_concentrate_development = yes
 }
 
