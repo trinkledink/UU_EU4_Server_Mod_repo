@@ -198,7 +198,7 @@ TUN_ideas = {
 	}
 	tun_caliphate = {
 		tolerance_own = 1
-		monthly_piety = -0.001 # was positive 
+		monthly_piety_accelarator = 0.001 # was positive 
 	}
 }
 MOR_ideas = {

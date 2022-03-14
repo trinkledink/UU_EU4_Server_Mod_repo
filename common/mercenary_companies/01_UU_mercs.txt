@@ -18,4 +18,56 @@ merc_ideas_cannons = {
 	trigger = {
 		has_idea = prestigious_companies
 	}
+	cost_modifier = 0.75
+}
+ctg_french_musketeers = {
+	regiments_per_development = 0.075
+	trigger = {
+		has_country_flag = ctg_carthaginian_musketeers_company
+	}
+	cost_modifier = 1.2
+	modifier = {
+		fire_damage = 0.15
+	}
+}
+ctg_spanish_artillery = {
+	regiments_per_development = 0.075
+	artillery_weight = 1
+	trigger = {
+		has_country_flag = ctg_carthaginian_ishpanian_company
+	}
+	cost_modifier = 0.75
+	modifier = {
+		backrow_artillery_damage = 0.15
+	}
+}
+ctg_italian_legion = {
+	regiments_per_development = 0.075
+	trigger = {
+		has_country_flag = ctg_carthaginian_legion_company
+	}
+	cost_modifier = 1.2
+	modifier = {
+		infantry_power = 0.1
+	}
+}
+ctg_phalanx_company = {
+	regiments_per_development = 0.05
+	trigger = {
+		has_country_flag = ctg_carthaginian_phalanx_company
+	}
+	cost_modifier = 1.2
+	modifier = {
+		shock_damage_received = -0.15
+	}
+}
+ctg_immortals_company = {
+	regiments_per_development = 0.05
+	trigger = {
+		has_country_flag = ctg_carthaginian_immortals_company
+	}
+	cost_modifier = 1.2
+	modifier = {
+		fire_damage_received = -0.2
+	}
 }

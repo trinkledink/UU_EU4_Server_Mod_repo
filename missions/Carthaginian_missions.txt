@@ -1408,7 +1408,7 @@ ctg_carthaginian_musketeer_mission_slot = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				is_core = ROOT
-					region = italy_region
+				region = italy_region
 				value = 10
 			}
 		}

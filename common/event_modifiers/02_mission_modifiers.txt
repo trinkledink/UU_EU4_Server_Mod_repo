@@ -63,10 +63,6 @@ elb_help = {
 		naval_forcelimit = 15
 	}
 }
-elb_rapid_urbanization = {
-	development_cost = -0.1
-	build_cost = -0.1
-}
 estate_burghers_elb_improved_workshops_mod = {
 	local_production_efficiency = 0.2
 }
@@ -91,6 +87,10 @@ elb_leading_the_league = {
 }
 elb_cheb_mine = {
 	local_gold_depletion_chance_modifier = -0.33
+}
+elb_rapid_urbanization = {
+	development_cost = -0.1
+	build_cost = -0.1
 }
 elb_berlin_war_school = {
 	owner = {
