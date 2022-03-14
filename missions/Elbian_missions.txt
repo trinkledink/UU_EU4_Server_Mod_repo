@@ -447,7 +447,7 @@ UU_elbian_innovation = {
 	}
 	has_country_shield = yes
 	
-	emp_sax_manufacturing = {
+	elb_sax_manufacturing = {
 		position = 1
 		icon = saxon_manufacturing
 		required_missions = {  }
@@ -472,7 +472,7 @@ UU_elbian_innovation = {
 		}
 	}
 	
-	emp_sax_meissen_porcelain = {
+	elb_sax_meissen_porcelain = {
 		position = 2
 		icon = porcelain_from_meissen
 		required_missions = { emp_sax_manufacturing }
@@ -732,7 +732,7 @@ UU_elbian_production = {
 	}
 	has_country_shield = yes
 	
-	emp_boh_bohemian_crystal = {
+	elb_boh_bohemian_crystal = {
 		icon = bohemian_crystal
 		position = 1
 		required_missions = { }

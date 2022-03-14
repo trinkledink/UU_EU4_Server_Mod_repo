@@ -63,13 +63,6 @@ elb_help = {
 		naval_forcelimit = 15
 	}
 }
-
-elb_weimar_classicism_modifier = {
-	idea_cost = -0.1
-	prestige = 2
-	advisor_pool = 2
-	monthly_splendor = 3
-}
 elb_cheb_mine = {
 	local_gold_depletion_chance_modifier = -0.5
 }
@@ -84,6 +77,12 @@ elb_contesting_colonies = {
 	colonists = 1
 	range = 0.33
 	global_colonial_growth = 10
+}
+elb_weimar_classicism_modifier = {
+	idea_cost = -0.1
+	prestige = 2
+	advisor_pool = 2
+	monthly_splendor = 3
 }
 elb_berlin_war_school = {
 	owner = {
