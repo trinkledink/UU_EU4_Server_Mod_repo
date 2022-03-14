@@ -101,7 +101,7 @@ theologian = {
 	monthly_fervor_increase = 0.25
 	church_power_modifier = 0.075
 	yearly_patriarch_authority = 0.0025
-	monthly_piety = 0.001
+	monthly_piety_accelarator = 0.001
 	yearly_harmony = 0.25
 	yearly_karma_decay = 0.025
 
@@ -139,6 +139,7 @@ master_of_mint = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
 			factor = 0.5
 			NOT = { inflation = 1 }
 		}
