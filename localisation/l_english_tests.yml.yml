@@ -29,3 +29,8 @@
  estate_burghers_elb_improved_workshops:0 "Improved Workshops"
  estate_burghers_elb_improved_workshops_tooltip:0 "Improves all workshops and/or counting houses by further §G20% production efficiency§!"
  estate_burghers_elb_improved_workshops_revoke_effect_tooltip:0 "Removes the extra §R20% production efficiency§! from our workshops and/or counting houses"
+ uu_merc_frontrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YInfantry§!"
+ uu_merc_backrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YArtillery§!"
+ merc_cav_free_company:0 "Free Cav Company"
+ merc_ideas_frontline:0 "Frontline Company"
+ merc_ideas_cannons:0 "Backrow Company"

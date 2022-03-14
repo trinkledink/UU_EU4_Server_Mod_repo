@@ -153,19 +153,7 @@ UU_elbian_conquest = {
 			owns_core_province = 44			#Hamburg
 		}
 		effect = {
-			every_core_province = {	
-				limit = {
-					OR = {
-						area = weser_area
-						area = lower_saxony_area
-						area = mittelmark_area
-						area = neumark_area
-						area = braunschweig_area
-					}
-				}
-				add_local_autonomy = -20
-				add_devastation = -30
-			}
+			custom_tooltip = elb_conquest_tt
 			hesse_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -207,6 +195,21 @@ UU_elbian_conquest = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ELB
+			}
+		}
+		hidden_effect = {
+			every_core_province = {	
+				limit = {
+					OR = {
+						area = weser_area
+						area = lower_saxony_area
+						area = mittelmark_area
+						area = neumark_area
+						area = braunschweig_area
+					}
+				}
+				add_local_autonomy = -20
+				add_devastation = -30
 			}
 		}
 	}
@@ -266,6 +269,7 @@ UU_elbian_conquest = {
 			is_at_war = no
 		}
 		effect = {
+			custom_tooltip = elb_conquest_tt
 			4141 = {							#Dithmarshen
 				add_base_manpower = 3
 				add_province_modifier = {
@@ -295,6 +299,8 @@ UU_elbian_conquest = {
 				}			
 			}
 			add_stability_or_adm_power = yes
+		}
+		hidden_effect = {
 			every_core_province = {	
 				limit = {
 					OR = {
@@ -698,13 +704,13 @@ UU_elbian_innovation = {
 		required_missions = { elb_protect_guild_rights elb_weimar_classicism }
 		
 		trigger = {
-			# innovativeness = 100
-			# has_institution = enlightenment
-			# num_of_owned_provinces_with = {
-				# value = 3
-				# trade_goods = coal
-				# has_building = furnace
-			# }
+			innovativeness = 100
+			has_institution = enlightenment
+			num_of_owned_provinces_with = {
+				value = 3
+				trade_goods = coal
+				has_building = furnace
+			}
 		}
 		effect = {
 			capital_scope = {
