@@ -879,10 +879,13 @@ UU_elbian_empire = {
 		required_missions = { }
 		
 		trigger = {
-			every_owned_province = {
-				NOT = { religion = catholic }
+			OR = {
+				religion = hussite
+				religion = anglican
+				religion = protestant
+				religion = reformed
 			}
-			religious_unity = 0.8
+			religious_unity = 1
 		}
 		effect = {
 			add_country_modifier = {
@@ -897,21 +900,20 @@ UU_elbian_empire = {
 		required_missions = { elb_embrace_reformation }
 		
 		trigger = {
-			if = {
-				limit = {
+			OR = {
+				AND = {
 					hre_leagues_enabled = no
-					year = 1600
+					is_year = 1600
+					is_defender_of_faith = yes
 				}
-				is_defender_of_faith = yes
-			}
-			else_if = {
-				limit = {
+				AND = {
 					is_elector = yes
+					is_league_leader = yes
 				}
-				is_league_leader = yes
-			}
-			else = {
-				in_league = protestant
+				AND = {
+					is_elector = no
+					in_league = protestant
+				}
 			}
 		}
 		effect = {

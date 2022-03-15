@@ -123,7 +123,6 @@
  ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the mediterranean"
  ctg_fertile_lands:0 "Fertile lands"
  ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population"
- ^
  ###############################################################
  # Elbian Confederation Ideas
  ###############################################################
@@ -158,10 +157,10 @@
  col_proud_latin_american:0 "Proud Latin Americans"
  col_proud_latin_american_desc:0 " "
  
- BRZ_ideas:0 "Braziliean Ideas"
- BRZ_ideas_:start:0 "Brazilean Traditions"
- BRZ_ideas_bonus:0 "Brazilean Ambition"
- brz_plantations:0 "Braziliean Plantations"
+ BRZ_ideas:0 "Brazilian Ideas"
+ BRZ_ideas_:start:0 "Brazilian Traditions"
+ BRZ_ideas_bonus:0 "Brazilian Ambition"
+ brz_plantations:0 "Brazilian Plantations"
  brz_plantations_desc:0 " "
  brz_home_of_the_amazon:0 "Home of the Amazon"
  brz_home_of_the_amazon_desc:0 " "
