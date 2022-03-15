@@ -13,14 +13,20 @@ country_decisions = {
 			technology_group = muslim
 		}
 		provinces_to_highlight = {
-			province_id = 125
-			province_id = 4736
-			province_id = 4737
-			province_id = 341
-			province_id = 2454
-			province_id = 4566
-			province_id = 2455
-			province_id = 2473
+			OR = {
+				province_id = 125
+				province_id = 4736
+				province_id = 4737
+				province_id = 341
+				province_id = 2454
+				province_id = 4566
+				province_id = 2455
+				province_id = 2473
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
 			adm_tech = 10
