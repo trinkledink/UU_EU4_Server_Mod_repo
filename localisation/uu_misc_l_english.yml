@@ -21,6 +21,8 @@
  expell_prisoners_aspect:0 "§YExpell Prisoners§!"
  force_debate_aspect:0 "§YForce Through Debate§!"
  kill_heir_aspect:0 "§YKill Heir§!"
+ pirates.4.c:0 "They are stealing our rightful raiding loot!"
+ pirates.5.c:0 "Good for her."
  UU_elb_mission_events.1.t:0 "The Hamburg World Port"
  UU_elb_mission_events.1.d:0 "The Port of Hamburg became of ever increasing importance and under our rule it reached it's peak. We now have the chance to establish colonies on our own and contest with the other colonizers or impose strict market regulations to stop the flood of cheap imports"
  UU_elb_mission_events.1.a:0 "Colonial is the way!"

@@ -25,3 +25,29 @@
  
  # Province Localisation
  ctg_pearl_of_mediterranean:0 "Pearl of the Mediterranean"
+ 
+ ###############################################################
+ # Scandinavian Modifiers Localisation.
+ ###############################################################
+ 
+ reestablish_the_danelaw:0 "Reestablish the Danelaw"
+ exploring_the_northern_route:0 "Exploring the northern route"
+ prepare_russian_conquest:0 "Prepare Russian conquest"
+ swedish_trade_cities:0 "Swedish trade city"
+ shipyard_of_europe:0 "Shipyard of Europe"
+ scandinavian_trade_dominance:0 "Scandinavian trade dominance"
+ viking_heritage:0 "Viking Heritage"
+ emperor_of_all_germanic_peoples:0 "Emperor of all Germanic Peoples"
+ exploited_fur_trade:0 "Exploited fur trade"
+ 
+ ###############################################################
+ # Elbian Modifiers Localisation.
+ ###############################################################
+ 
+ elb_ready_for_conquest:0 "Justified Conquest"
+ elb_help:0 "Hamburg World Port"
+ elb_contesting_colonies:0 "Contesting Colonies"
+ elb_weimar_classicism_modifier:0 "Weimar Classicism"
+ elb_cheb_mine:0 "Advanced Gold Mining"
+ elb_rapid_urbanization:0 "Rapid Urbanization"
+ elb_hamburg_world_port_modifier:0 "World Port"

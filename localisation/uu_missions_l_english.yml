@@ -1,6 +1,6 @@
 ﻿l_english:
  ###############################################################
- # Scandinavian Mission Localisation. Put in missions_l_english.yml
+ # Scandinavian Mission Localisation.
  ###############################################################
 	
  consolidate_scandinavia_title:0 "Consolidate Scandinavia"
@@ -39,7 +39,7 @@
  monopolise_the_fur_trade_desc:0 "If we achieve a monopoly on the fur trade, we could inflate the prices and use the wealth to develop our land."
  
  ###############################################################
- # Elbian Confederacy mission localisation
+ # Elbian Confederacy Mission Localisation
  ###############################################################
  
  UU_elbian_core_title:0 "Strengthen the Core"
