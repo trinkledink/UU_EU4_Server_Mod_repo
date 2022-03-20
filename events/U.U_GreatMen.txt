@@ -1,3 +1,6 @@
+namespace = trinkle_advisor_events
+
+
 # Social Reformer		one time 150 reformprogress
 country_event = {		
 	id = trinkle_advisor_events.1

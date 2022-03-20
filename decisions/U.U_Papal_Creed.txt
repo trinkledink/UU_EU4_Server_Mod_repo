@@ -9,12 +9,11 @@ country_decisions = {
 			ai = no
 		}
 		allow = {
-			curia_treasury_size = 500
+			curia_treasury_size = 750
 		}
 		effect = {
-			add_curia_treasury = -500
+			add_curia_treasury = -750
 			country_event = { id = UU_papal_creed.1 }
-
 		}
 		ai_will_do = {
 			factor = 1
