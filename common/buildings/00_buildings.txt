@@ -338,7 +338,7 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 100
+	cost = 50
 	time = 12
 	modifier = {
 		local_state_maintenance_modifier = -0.25
@@ -1077,7 +1077,7 @@ counting_house = {
 
 
 town_hall = {
-	cost = 200
+	cost = 100
 	time = 12
 
 	make_obsolete = courthouse

@@ -3088,47 +3088,44 @@ ASS_ideas = {
 }
 
 
-# TUS_ideas = {
-	# start = {
-		# papal_influence = 2
-		# development_cost = -0.1
-	# }
+LAN_ideas = {
+	start = {
+		papal_influence = 2
+		development_cost = -0.1
+	}
 	
-	# bonus = {
-		# discipline = 0.05
-	# }
+	bonus = {
+		discipline = 0.05
+	}
 	
-	# trigger = {
-		# OR = {
-			# tag = TUS
-			# tag = LAN #Florence
-		# }
-	# }
-	# free = yes
+	trigger = {
+		tag = LAN #Florence
+	}
+	free = yes
 	
-	# birthplace_of_the_renaissance = {
-		# idea_cost = -0.05
-		# technology_cost = -0.05
-	# }
-	# tuscan_condottieri = {
-		# merc_maintenance_modifier = -0.15
-	# }
-	# tuscan_banking = {
-		# interest = -0.5
-	# }
-	# tuscan_arts = {
-		# prestige = 1
-	# }
-	# porto_franco = {
-		# trade_efficiency = 0.15
-	# }
-	# tuscan_administrative_reforms = {
-		# production_efficiency = 0.10
-	# }
-	# tuscan_grand_duchy = {
-		# global_manpower_modifier = 0.25
- 	# }
-# }
+	birthplace_of_the_renaissance = {
+		idea_cost = -0.05
+		technology_cost = -0.05
+	}
+	tuscan_condottieri = {
+		merc_maintenance_modifier = -0.15
+	}
+	tuscan_banking = {
+		interest = -0.5
+	}
+	tuscan_arts = {
+		prestige = 1
+	}
+	porto_franco = {
+		trade_efficiency = 0.15
+	}
+	tuscan_administrative_reforms = {
+		production_efficiency = 0.10
+	}
+	tuscan_grand_duchy = {
+		global_manpower_modifier = 0.25
+ 	}
+}
 
 
 USA_ideas = {

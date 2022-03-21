@@ -173,10 +173,7 @@ TUS_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = TUS
-			tag = LAN #Florence
-		}
+		tag = TUS
 	}
 	free = yes
 	
@@ -226,7 +223,7 @@ SIC_ideas = {
 	free = yes
 	
 	sic_university_of_catania = {
-		technology_cost = -0.1				#was 0.05
+		technology_cost = -0.05				#was 0.05
 	}
 	sic_constitions_of_melfi = {
 		global_unrest = -1
