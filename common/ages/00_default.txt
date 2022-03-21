@@ -83,7 +83,12 @@ age_of_discovery = {
 		}		
 	
 		obj_two_continents = {
-			num_of_continents = 2
+			OR = {
+				num_of_continents = 2
+				151 = {
+					owned_by = ROOT
+				}
+			}
 		}
 	
 		obj_humiliate_rival = {
