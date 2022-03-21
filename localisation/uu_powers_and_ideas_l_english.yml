@@ -202,6 +202,15 @@
  LAN_ideas_start:0 "Florentine Traditions"
  LAN_ideas_bonus:0 "Florentine Ambitions"
  ###############################################################
+ # Tuscan ideas
+ ###############################################################
+ tus_birthplace_of_the_renaissance:0 "Birthplace of the Renaissance"
+ tus_birthplace_of_the_renaissance_desc:0 "Florence has long been the cultural capital of Tuscany. With the renewed interest in the classical world a clever Prince may attract the new thinkers to benefit us all."
+ tus_tuscan_condottieri:0 "Condottieri"
+ tus_tuscan_condottieri_desc:0 "The strife between city states has given rise to mercenary companies. Let us ensure they know our purse is full and encourage their presence in times of need."
+ tus_tuscan_banking:0 "Tuscan Banking"
+ tus_tuscan_banking_desc:0 "From England to Naples, all know of our bankers. Our golden Florin has financed everything from the Hundred Years War to new industries."
+ ###############################################################
  # Colonial tags 
  ###############################################################
  
