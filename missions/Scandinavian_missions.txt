@@ -5,7 +5,7 @@
 # Scandinavian Internal Missions
 
 scandinavian_missions_scandinavia = {
-	slot = 5
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -17,23 +17,34 @@ scandinavian_missions_scandinavia = {
 	consolidate_scandinavia = {
 		icon = consolidate_scandinavia
 		required_missions = { }
-		position = 1
+		position = 2
 		provinces_to_highlight = {
 			region = scandinavia_region
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+		
 		trigger = {
-			scandinavia_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = scandinavia_region
+				value = 52
 			}
 		}
+		
 		effect = {
 			add_country_modifier = {
 				name = "united_scandinavia"
 				duration = 5475
+			}
+			
+			define_general = {
+				name = "Sverre"
+				fire = 4
+				shock = 2
+				manuever = 6
+				siege = 1
 			}
 		}
 	}
@@ -41,27 +52,26 @@ scandinavian_missions_scandinavia = {
 	a_different_way = {
 		icon = a_different_way
 		required_missions = { consolidate_scandinavia }
-		position = 2
+		position = 4
 		provinces_to_highlight = { }
 		
 		trigger = {
-			NOT = { PAP = { has_opinion = { who = root value = -50 } } }
+			OR = {
+				NOT = { PAP = { has_opinion = { who = root value = -50 } } }
+				NOT = { exists = PAP }
+			}
 			NOT = { current_age = age_of_discovery }
 		}
 		
 		effect = {
 			change_religion = norse_pagan_reformed
-			add_country_modifier = {
-				name = "viking_heritage"
-				duration = -1
-			}
 		}
 	}
 	
 	dublin_slave_port = {
 		icon = dublin_slavery
 		required_missions = { a_different_way }
-		position = 3
+		position = 5
 		provinces_to_highlight = {
 			OR = {
 				province_id = 373
@@ -94,13 +104,16 @@ scandinavian_missions_scandinavia = {
 				else = {
 					add_base_production = 2
 				}
-		}
+			}
+			country_event = { id = sca_mission_events.1 }
 		}
 	}
 }
 
+# Scandinavian Missions Economic
+
 scandinavian_missions_economic = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -134,7 +147,7 @@ scandinavian_missions_economic = {
 # Scandinavian Missions West and Colonial
 
 scandinavian_missions_westwards = {
-	slot = 1
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -152,12 +165,12 @@ scandinavian_missions_westwards = {
 		trigger = {
 			navy_size_percentage = 1
 			num_of_admirals = 1
-			num_of_heavy_ship = 5
+			num_of_heavy_ship = 10
 		}
 		
 		effect = {
 			add_country_modifier = {
-				name = "eng_rb_faro_coast"
+				name = "preparing_british_conquest"
 				duration = 5475
 			}
 			253 = {
@@ -376,10 +389,43 @@ scandinavian_missions_westwards = {
 			}
 		}
 	}
+	
+	victory_of_the_norsemen = {
+		icon = victory_of_the_norsemen
+		required_missions = { reestablish_the_danelaw }
+		position = 4
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			british_isles_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "victory_of_the_norsemen"
+				duration = -1
+			}
+			
+			define_admiral = {
+				shock = 5
+				fire = 4
+				manuever = 3
+				siege = 4
+			}
+		}
+	}
 }	
 	
 scandinavian_missions_westwards_II = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -416,6 +462,14 @@ scandinavian_missions_westwards_II = {
 			add_country_modifier = {
 				name = "shipyard_of_europe"
 				duration = -1
+			}
+			
+			define_admiral = {
+				name = "Peter Wessel II Tordenskjold"
+				shock = 4
+				fire = 4
+				manuever = 6
+				siege = 3
 			}
 		}
 	}
@@ -546,10 +600,41 @@ scandinavian_missions_westwards_II = {
 	}
 }
 
+# Scandinavia Raid Mission
+
+scandinavian_missions_scandinavia_II = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SCA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	viking_heritage = {
+		icon = mission_corsairs_of_the_north_sea
+		required_missions = { a_different_way }
+		position = 5
+		provinces_to_highlight = { }
+		
+		trigger = {
+			navy_tradition = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "viking_heritage"
+				duration = -1
+			}
+		}
+	}
+}
+
 # Scandinavian Missions Eastwards
 
 scandinavian_missions_eastwards = {
-	slot = 4
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -740,10 +825,55 @@ scandinavian_missions_eastwards = {
 			}
 		}
 	}
+	
+	scandinavian_pommerania = {
+		icon = mission_hanseatic_city
+		required_missions = { strike_the_hansa }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+				area = mecklenburg_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mecklenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "swe_pommerania_conquered"
+				duration = 5475
+			}
+			
+			weser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 }
 
 scandinavian_missions_eastwards_II = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -806,6 +936,28 @@ scandinavian_missions_eastwards_II = {
 			add_country_modifier = {
 				name = "scandinavian_trade_dominance"
 				duration = 5475
+			}
+			
+			vorpommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mecklenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

@@ -193,6 +193,11 @@ spriteTypes = {
         texturefile = "gfx//interface//missions//exploited_fur_trade.dds"
     }
 	
+	spriteType = {
+        name = "victory_of_the_norsemen"
+        texturefile = "gfx//interface//missions//victory_of_the_norsemen.dds"
+    }
+	
 #Everything else
 	
 	spriteType = {
