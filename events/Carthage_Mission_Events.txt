@@ -155,10 +155,12 @@ country_event = {
 	
 	option = {
 		name = ctg_mission_events_3_a
+		custom_tooltip = ctg_mission_events_3_a.tt
 	}
 	
 	option = {
 		name = ctg_mission_events_3_b
+		custom_tooltip = ctg_mission_events_3_b.tt
 		set_country_flag = ctg_professionalising_the_army
 		swap_non_generic_missions = yes
 	}

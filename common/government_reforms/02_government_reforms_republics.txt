@@ -284,11 +284,11 @@ venice_merchants_reform = {
 		}
 	}
 	boost_income = yes
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
+	# factions = {
+		# mr_aristocrats
+		# mr_traders
+		# mr_guilds
+	# }
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -316,8 +316,8 @@ venice_merchants_reform = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		lottery_election = yes
-		election_on_death = yes
+		# lottery_election = yes
+		# election_on_death = yes
 		is_merchant_republic = yes
 	}
 	has_term_election = no

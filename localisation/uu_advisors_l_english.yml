@@ -1,17 +1,9 @@
 ﻿l_english:
- trinkle_socialreformer:0 "Great Reforms"
- trinkle_socialreformer_desc:0 "Our advisor has become increasingly popular, pushing for social, political, and economic policy that is set to propell our nation forward."
- trinkle_socialreformer_a:0 "His efforts will be admired throughout the nation"
- trinkle_socialreformer_b:0 "His reputation will reach further than our borders"
- 
- trinkle_propagandist:0 "Establish the Ministry of Propaganda"
- trinkle_propagandist_desc:0 "Our advisor has gone through great efforts to istitutionalize our ministry of propaganda. How shall we reward him?"
- trinkle_propagandist_a:0 "His efforts will be admired throughout the nation"
- trinkle_propagandist_b:0 "His reputation will reach further than our borders"
- 
- trinkle_hero:0 "Memorialization of Our National Hero"
- trinkle_hero_desc:0 "Our most beloved national hero has risen to prominence in both public and private eye. How shall we memorialize him?"
- trinkle_hero_a:0 "His efforts will be admired throughout the nation"
- trinkle_hero_b:0 "His reputation will reach further than our borders"
- 
- u_u_maybe_later:0 "Maybe later"
+socialreformer:0 "Social Reformer"
+socialreformer_desc:0 "When you base your expectations only on what you see, you blind yourself to the possibilities of a new reality."
+
+propagandist:0 "Propagandist"
+propagandist_desc:0 "Repeat a lie enough times, and it becomes the truth."
+
+nationalhero:0 "National Hero"
+nationalhero_desc:0 "'Did I ever tell you how I got the nickname the Dragon of the West?... It's more of a demonstration, really.'"

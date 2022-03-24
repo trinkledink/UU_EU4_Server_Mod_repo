@@ -208,4 +208,6 @@
  ctg_mission_events.3.t:0 "A new direction for the Carthaginian military?"
  ctg_mission_events.3.d:0 "Reforming into a national identity from the past begs the question of which values and traditions we should adopt. Historically, the Carthaginian military was composed primarily of mercenaries hired by the Carthaginian merchants. However, we could also strive towards reforming our military to a more professionalised standing army to rival the emerging armies of Europe."
  ctg_mission_events_3_a:0 "Let us stick to our roots, we shall fight with hired men."
+ ctg_mission_events_3_a.tt:0 "Keep Mercenary-Oriented Missions."  ####custom tooltip####
  ctg_mission_events_3_b:0 "It is time to break with traditions and embrace the future of warfare."
+ ctg_mission_events_3_b.tt:0 "Obtain New Standing-Army Missions." ####custom tooltip####
