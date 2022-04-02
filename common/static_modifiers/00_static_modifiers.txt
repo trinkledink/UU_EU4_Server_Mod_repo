@@ -1315,9 +1315,11 @@ maintained_forts = {
 }
 
 gov_rank_1 = {
+	governing_capacity = 50
 }
 
 gov_rank_2 = {
+	governing_capacity = 50
 }
 
 gov_rank_3 = {
