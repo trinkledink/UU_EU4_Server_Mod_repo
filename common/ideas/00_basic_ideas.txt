@@ -555,7 +555,7 @@ economic_ideas = {
 	}
 
 	bureaucracy = {
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.15
 	}
 	organised_construction = {
 		build_cost = -0.1
@@ -567,7 +567,7 @@ economic_ideas = {
 		interest = -0.5
 	}
 	centralization = {
-		global_autonomy = -0.05
+		fort_maintenance_modifier = -0.15
 	}
 	nationalistic_enthusiasm = {
 		land_maintenance_modifier = -0.05
@@ -1033,7 +1033,6 @@ administrative_ideas = {
 		state_maintenance_modifier = -0.25
 	}
 	great_works_project_adm_idea = { 		#The Great Works Project
-		build_cost = -0.1
 		great_project_upgrade_cost = -0.25
 	}
 	administrative_efficiency_idea = {
