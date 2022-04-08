@@ -259,7 +259,7 @@ innovativeness_ideas = {
 		war_exhaustion = -0.05
 	}
 	formalized_officer_corps = {
-		free_leader_pool = 1
+		leader_cost = -0.2
 	}
 
 	ai_will_do = {
