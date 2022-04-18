@@ -44,4 +44,6 @@
  desc_naval_raids_policy:0 "It is common for pirates to roam the seas around us. We could take advantage of this and have the pirates raid for us instead."
  marine_mercenaries_policy:0 "Contract Sailors Act"
  desc_marine_mercenaries_policy:0 "Hiring private sailors will greatly increase the sailors that our nation can employ."
+ enlistment_propaganda__policy:0 "Enlistment Propaganda"
+ desc_enlistment_propaganda__policy:0 "With our clout over public sentiment, it is essential that we exercise it in a way that ensures the people know for what we fight."
  
