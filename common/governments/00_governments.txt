@@ -155,6 +155,7 @@ monarchy = {
 	#Flavor
 	exclusive_reforms = {
 		iqta
+		mandala_reform
 		indian_sultanate_reform
 		mamluk_government
 		tsardom
