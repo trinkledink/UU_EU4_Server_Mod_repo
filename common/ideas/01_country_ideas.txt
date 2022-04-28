@@ -494,6 +494,48 @@ ADU_ideas = {
 		rival_border_fort_maintenance = -0.25
 	}
 }
+MUG_ideas = {
+	start = {
+		core_creation = -0.25
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		technology_cost = -0.1
+	}
+	
+	trigger = {
+		tag = MUG
+	}
+	free = yes
+	
+	mansabdari_system = {
+		discipline = 0.05
+	}
+	control_of_the_ulema = {
+		global_unrest = -2
+		governing_capacity_modifier = 0.33
+	}
+	mughal_ibadat_khana = {
+		idea_cost = -0.1
+	}
+	an_indian_padshah = {
+		all_estate_loyalty_equilibrium = 0.05
+		land_morale = 0.1
+	}
+	zabt_system = {
+		global_tax_modifier = 0.1
+		tolerance_heathen = 3
+	}
+	mughal_architecture = {
+		build_cost = -0.1
+		artillery_fire = 1
+	}
+	fatawa_e_alamgiri = {
+		stability_cost_modifier = -0.25
+		global_autonomy = -0.1
+	}
+}
 #Colonial
 CAN_ideas = {
 	start = {
