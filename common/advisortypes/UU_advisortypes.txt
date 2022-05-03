@@ -39,7 +39,7 @@ nationalhero = {
 	monarch_power = DIP
 	
 	# Bonus
-	war_exhaustion = -0.03
+	war_exhaustion = -0.05
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 

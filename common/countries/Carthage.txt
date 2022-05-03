@@ -1,6 +1,6 @@
 graphical_culture = muslimgfx
 
-color = { 64 194 99 }
+color = { 110  120  191 }
 
 historical_idea_groups = {
 	trade_ideas
@@ -14,71 +14,78 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	african_spearmen
-	niger_kongolese_tribal_warfare
-	niger_kongolese_forest_warfare
-	niger_kongolese_gunpowder_warfare
-	westernized_niger_kongolese
-	niger_kongolese_guerilla_warfare
-	african_mandelaku
-	african_tuareg_cavalry
-	african_mossi_horsemen
-	african_hussar
-	african_dragoon	
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
 }
 
 monarch_names = {
-	"Mago #0" = 5
-	"Hasdrubal #0" = 5
-	"Hamilcar #0" = 5
-	"Hanno #0" = 5
+	"Mago #0" = 10
+	"Hasdrubal #0" = 15
+	"Hamilcar #0" = 15
+	"Hannibal #0" = 15
+	"Hanno #0" = 10
 	"Himilco #0" = 5
-	"Kyabaggu #0" = 20
-	"Namuggala #0" = 20
-	"Mwanga #0" = 20
-	"Mawanda #0" = 20
-	"Kikulwe #0" = 20
-	"Kagulu #0" = 20
-	"Ndawula #0" = 20
-	"Tebandeke #0" = 20
-	"Juuko #0" = 20
-	"Kayemba #0" = 20
-	"Mutebi #0" = 20
-	"Kateregga #0" = 20
-	"Kimbugwe #0" = 20
-	"Sekamaanya #0" = 20
-	"Jemba #0" = 20
-	"Mulondo #0" = 20
-	"Nakibinge #0" = 20
-	"Kayima #0" = 20
-	"Ttembo #0" = 5
-	"Kimera #0" = 5
-	"Kato Kintu #0" = 5
+	"Murad #0" = 5
+	"Malchus #0" = 5
+	"Gisco #0" = 5
+	"Bomilcar #0" = 5
+	"Bodo #0" = 5
+	"Bostar #0" = 5
+	"Carthalo #0" = 5
+	"Gisgo #0" = 3
+	"Phameas #0" = 3
+	"Kanmi #0" = 3
+	"Danel #0" = 3
+	"Hiempsal #0" = 3
+	"Juba #0" = 3
+	"Massinissa #0" = 10
+	"Eshmunamash #0" = 3
+	"Baalhanno #0" = 3
+	"Akbar #0" = 5
+	"Aqhat #0" = 5
+	"Bodeshmun #0" = 3
 	
-	
-	"Balambi #0" = -1
-	"Bawedde #0" = -1
-	"Sikyayinza #0" = -1
-	"Nakamu #0" = -1
+	"Dido #0" = -1
+	"Sophonisba #0" = -1
+
 }
 
 leader_names = {
-	Ngonge
-	Nkima
-	Kkobe
-	Ffumbe
-	Kuria
-	Mamba
-	Ndiga
-	Ngeye
-	Lugave
-	Mbogo
-	Ngabi
-	Nsenene
-	Mpindi
+	Taher
+	Akimi
+	Adhoum
+	Hakimi
+	Naybet
+	Bassir
+	Saber
+	Badra
+	Sassi
+	Dali
 	Hannibal
+	Hamilcar
+	Hasdrubal
+	Himilco
+	Massinissa
+	Baalhanno
+	Murad
+	Phameas
+	Carthalo
+	Hiempsal
+	Juba
+	Bostar
+	Bodo
+	Malchus
 }
 
 ship_names = {
-	Nalubaale Nyanza Kyoga Semliki Bisina Katonga Mayanja Nkusi Achwa Lugogo
+	Alim Fattah Razzaq Wahhab Qahhar Ghaffar
+	Musawwir Bari Khaliq Mutakabbir Jabbar Tyn
+	Aziz Muhaymin Mu'min Quddus Malik Hepter Qarthago
+	Rahim Rahman Himilco Baal El Astarte Baalat Gebal Eshmun Melqart
+	Tyr Sidon Byblos Tingis Qarth Hastah Tetrere Marsala Diere Triere
 }

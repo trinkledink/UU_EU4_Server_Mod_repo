@@ -83,7 +83,12 @@ age_of_discovery = {
 		}		
 	
 		obj_two_continents = {
-			num_of_continents = 2
+			OR = {
+				num_of_continents = 2
+				151 = {
+					owned_by = ROOT
+				}
+			}
 		}
 	
 		obj_humiliate_rival = {
@@ -354,7 +359,7 @@ age_of_reformation = {
 		
 		ab_mercenary_discipline = {
 			modifier = {
-				mercenary_discipline = 0.10
+				mercenary_discipline = 0.05
 			}
 			ai_will_do = {
 				factor = 10

@@ -117,7 +117,7 @@ GBR_ideas = {
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.10
+		allowed_marine_fraction = 0.50
 	}
 }
 ITA_ideas = {
@@ -162,6 +162,130 @@ ITA_ideas = {
 		core_creation = -0.25
 	}
 }
+TUS_ideas = {
+	start = {
+		papal_influence = 2
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = TUS
+	}
+	free = yes
+	
+	tus_birthplace_of_the_renaissance = {
+		idea_cost = -0.1				#was 0.05
+		technology_cost = -0.05
+	}
+	tus_tuscan_condottieri = {
+		merc_maintenance_modifier = -0.15
+		mercenary_cost = -0.15		#added
+	}
+	tus_tuscan_banking = {
+		interest = -0.5
+		inflation_reduction = 0.1	#added
+	}
+	tuscan_arts = {
+		# prestige = 1
+	}
+	porto_franco = {
+		# trade_efficiency = 0.15		#effects in LAN ideas
+	}
+	tuscan_administrative_reforms = {
+		# production_efficiency = 0.10
+	}
+	tuscan_grand_duchy = {
+		# global_manpower_modifier = 0.25
+ 	}
+}
+SIC_ideas = {
+	start = {
+		land_morale = 0.15					#was 0.1
+		global_manpower_modifier = 0.2
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = TTS
+			tag = SIC
+		}
+	}
+	
+	free = yes
+	
+	sic_university_of_catania = {
+		technology_cost = -0.05				#was 0.05
+	}
+	sic_constitions_of_melfi = {
+		global_unrest = -1
+		possible_policy = 1
+	}
+	sic_noble_admirals = {
+		navy_tradition = 1
+		allowed_marine_fraction = 0.25		#added
+	}
+	sic_greater_sicily = {
+		core_creation = -0.15				#was 0.1
+	}
+	sic_trade_fleet = {
+		global_ship_trade_power = 0.2			
+	}
+	sic_grand_navy = {
+		naval_morale = 0.15
+		naval_forcelimit_modifier = 0.25	#added
+	}
+	sic_sicilian_silk = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+SPI_ideas = {
+	start = {
+		idea_cost = -0.1
+		improve_relation_modifier = 0.25
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.2			#was 0.15
+	}
+	
+	trigger = {
+		tag = SPI
+	}
+	free = yes		#will be added at load.
+	
+	spi_flexibility = {
+		diplomatic_upkeep = 1
+	}
+	spi_defensive_prowess = {
+		defensiveness = 0.25
+	}
+	the_shroud_of_turin = { #effect in SAV_ideas
+#		papal_influence = 1
+#		prestige = 0.5
+	}
+	spi_royal_sardinian_army = {
+		discipline = 0.05					#was 0.03
+		global_manpower_modifier = 0.1
+	}
+	spi_centralized_state = {
+		development_cost = -0.1				#was 0.05
+		core_creation = -0.1
+	}
+	spi_piedmontese_manufacturing = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	spi_risorgimento = {
+		ae_impact = -0.2					#was 0.1
+	}
+}
 TUN_ideas = {
 	start = {
 		may_perform_slave_raid = yes
@@ -198,7 +322,7 @@ TUN_ideas = {
 	}
 	tun_caliphate = {
 		tolerance_own = 1
-		monthly_piety = -0.001 # was positive 
+		monthly_piety_accelarator = 0.001 # was positive 
 	}
 }
 MOR_ideas = {
@@ -220,7 +344,7 @@ MOR_ideas = {
 	}
 	mor_marabouts = {
 		idea_cost = -0.1
-		monthly_piety = -0.001
+		monthly_piety_accelarator = 0.001
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
@@ -328,6 +452,46 @@ irish_ideas = { #idk why it isnt IRE_ideas, it was like this when I found it
  	}
 	ire_gallowglasses = {
 		discipline = 0.05
+	}
+}
+ADU_ideas = {
+	start = {
+		land_morale = 0.15 
+		global_ship_trade_power = 0.25 
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+    
+	trigger = {
+		tag = ADU
+	}
+	free = yes        #will be added at load.
+    
+	adu_stand_against_the_reconquista = {
+		fire_damage_received = -0.15
+	}
+	adu_taifa_adminstration = {
+		vassal_forcelimit_bonus = 1
+    }
+	adu_ahl_uhl_dhimma = {
+		tolerance_heathen = 3
+    }
+	adu_legacy_of_ibn_arabi = {
+		idea_cost = -0.1
+		monthly_piety_accelarator = 0.001
+	}
+	adu_jund_settlements = {
+		global_manpower_modifier = 0.15
+		core_creation = -0.15
+	}
+	adu_expeditionary_sentiment = {
+		colonists = 1
+	}
+	adu_al_awasim = {
+		defensiveness = 0.1
+		rival_border_fort_maintenance = -0.25
 	}
 }
 #Colonial
@@ -718,7 +882,7 @@ AUH_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		num_accepted_cultures = 1
 	}
 	
 	trigger = {
@@ -728,7 +892,6 @@ AUH_ideas = {
 
 	imperial_administration = {
 		administrative_efficiency = 0.05
-		num_accepted_cultures = 1
 	}
 	AUH_alpine_engineering = {
 		defensiveness = 0.25
@@ -750,52 +913,7 @@ AUH_ideas = {
 		manpower_recovery_speed = 0.1
 	}
 	unter_dem_doppeladler = {
-		land_forcelimit_modifier = 0.20
-		global_manpower_modifier = 0.20
-	}
-}
-#CTG
-CTG_ideas = {
-	start = {
-		naval_morale = 0.2
-		global_trade_power = 0.2
-	}
-	
-	bonus = {
-		Discipline = 0.05
-	}
-	
-	trigger = {
-		tag = CTG
-	}
-	free = yes
-	
-	ctg_mediterranean_fleet = {
-		naval_forcelimit_modifier = 0.25
-		naval_maintenance = -0.2
-	}
-	ctg_galley_masters = {
-		galley_power = 0.25
-		own_coast_naval_combat_bonus = 1
-	}
-	ctg_cartheginian_innovations = {
-		innovativeness_gain = 0.5
-		monthly_piety = -0.005
-	}
-	ctg_mercenary_contracts = {
-		mercenary_manpower = 1
-		mercenary_discipline = 0.075
-	}
-	ctg_mercantilism = {
-		trade_efficiency = 0.2
-		mercantilism_cost = -0.5
-	}
-	ctg_spreading_civilsation = {
-		development_cost = -0.1
-		global_prosperity_growth = 1
-	}
-	ctg_fertile_lands = {
-		global_sailors_modifier = 0.15
+		land_forcelimit_modifier = 0.15
 		global_manpower_modifier = 0.15
 	}
 }
@@ -842,5 +960,193 @@ ELB_ideas = {
 	elb_university_founding = {
 		technology_cost = -0.1
 		innovativeness_gain = 0.5
+	}
+}
+
+#CTG
+CTG_ideas = {
+	start = {
+		naval_morale = 0.2
+		global_trade_power = 0.2
+	}
+	
+	bonus = {
+		merchants = 1
+	}
+	
+	trigger = {
+		tag = CTG
+	}
+	free = yes
+	
+	ctg_mediterranean_fleet = {
+		naval_forcelimit_modifier = 0.25
+		naval_maintenance = -0.2
+	}
+	ctg_galley_masters = {
+		galley_power = 0.25
+		own_coast_naval_combat_bonus = 1
+	}
+	ctg_cartheginian_innovations = {
+		innovativeness_gain = 0.5
+		monthly_piety = -0.005
+	}
+	ctg_mercenary_contracts = {
+		mercenary_manpower = 1
+		mercenary_discipline = 0.075
+	}
+	ctg_mercantilism = {
+		trade_efficiency = 0.2
+		mercantilism_cost = -0.5
+	}
+	ctg_spreading_civilsation = {
+		development_cost = -0.1
+		global_prosperity_growth = 1
+	}
+	ctg_fertile_lands = {
+		global_sailors_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+}
+
+#KOB
+KOB_ideas = {
+	start = {
+		cavalry_power = 0.15
+		culture_conversion_cost = -0.25
+	}
+	
+	bonus = {
+		movement_speed = 0.33
+	}
+	
+	trigger = {
+		tag = KOB
+	}
+	free = yes
+	
+	kob_aggressive_religious_policy = {
+		tolerance_heathen = -1
+		tolerance_heretic = -1
+		global_missionary_strength = 2.5
+	}
+	
+	kob_legacy_of_hannibal = {
+		leader_land_shock = 1
+		leader_land_manuever = 2
+		leader_cost = -0.05
+	}
+	
+	kob_strong_fortifications = {
+		defensiveness = 0.20
+	}
+	
+	kob_anti_rival_sentiment = {
+		land_morale = 0.10
+	}
+	
+	kob_valencia_coast = {
+		trade_efficiency = 0.10
+	}
+	
+	kob_phonecian_legacy = {
+		global_sailors_modifier = 0.33
+		global_ship_cost = -0.05
+	}
+	
+	kob_elephant_cavalry = {
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.2
+	}
+	
+}
+
+#PAP
+PAP_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		#religious_unity = 0.25
+		technology_cost = -0.05
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = PAP
+		NOT = { has_country_flag = is_kingdom_of_god_flag }
+	}
+	free = yes		#will be added at load.
+	
+	ecclesiastical_primacy = {
+		tolerance_own = 2
+	}
+	papal_investiture_and_tithes = {
+		global_tax_modifier = 0.2
+	}
+	glory_of_rome = {
+		prestige_decay = -0.01
+		land_morale = 0.05
+	}
+	donation_of_constantine = {
+		#fabricate_claims_cost = -0.25
+		global_missionary_strength = 0.01
+		missionary_maintenance_cost = -0.1
+	}
+	centralize_the_states = {
+		production_efficiency = 0.1
+	}
+	the_vatican_museums = {
+		free_dip_policy = 1
+	}
+	holy_father = {
+		#ae_impact = -0.10
+		manpower_in_true_faith_provinces = 0.15
+	}
+}
+
+#KOG
+KOG_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		#religious_unity = 0.25
+		technology_cost = -0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = PAP
+		has_country_flag = is_kingdom_of_god_flag
+	}
+	free = yes		#will be added at load.
+	
+	KOG_ecclesiastical_primacy = {
+		tolerance_own = 4
+	}
+	KOG_papal_investiture_and_tithes = {
+		global_tax_modifier = 0.33
+	}
+	KOG_glory_of_rome = {
+		prestige_decay = -0.01
+		land_morale = 0.1
+	}
+	KOG_donation_of_constantine = {
+		#fabricate_claims_cost = -0.25
+		global_missionary_strength = 0.03
+		missionary_maintenance_cost = -0.25
+	}
+	KOG_centralize_the_states = {
+		production_efficiency = 0.1
+	}
+	KOG_the_vatican_museums = {
+		possible_policy = 1
+	}
+	KOG_holy_father = {
+		#ae_impact = -0.10
+		manpower_in_true_faith_provinces = 0.25
 	}
 }

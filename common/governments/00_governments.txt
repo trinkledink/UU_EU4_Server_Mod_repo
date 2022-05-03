@@ -13,6 +13,7 @@ monarchy = {
 				negusa_nagast
 				solomonic_empire
 				#Specific:
+				chinese_warlord
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -154,6 +155,7 @@ monarchy = {
 	#Flavor
 	exclusive_reforms = {
 		iqta
+		mandala_reform
 		indian_sultanate_reform
 		mamluk_government
 		tsardom

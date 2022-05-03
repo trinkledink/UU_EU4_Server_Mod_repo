@@ -4,6 +4,11 @@ estate_dhimmi_piety = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+		}
 	}
 	on_granted = {
 	}
@@ -11,5 +16,65 @@ estate_dhimmi_piety = {
 	}
 	benefits = {
 		monthly_piety = -0.001
+	}
+}
+estate_burghers_elb_improved_workshops = {
+	icon = privilege_build_jain_temple
+	loyalty = 0.1
+	influence = 0.1
+	max_absolutism = -15
+	is_valid = {
+		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_elb_improved_workshops }
+	}
+	can_select = {
+		always = yes
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			add_province_modifier = {
+				name = estate_burghers_elb_improved_workshops_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
+		}
+	}
+	ai_will_do = {
+		factor = 1000
 	}
 }
