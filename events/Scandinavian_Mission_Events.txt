@@ -1,0 +1,22 @@
+namespace = sca_mission_events
+
+# Slave Price Change
+
+country_event = {
+	id = sca_mission_events.1
+	title = sca_mission_events.1.t
+	desc = sca_mission_events.1.d
+	picture = 12_Maratha_Estate_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = sca_mission_events.1.a
+		change_price = {
+				trade_goods = slaves
+				value = 0.5
+				duration = -1
+		}
+	}
+}

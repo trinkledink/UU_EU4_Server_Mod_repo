@@ -284,11 +284,11 @@ venice_merchants_reform = {
 		}
 	}
 	boost_income = yes
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
+	# factions = {
+		# mr_aristocrats
+		# mr_traders
+		# mr_guilds
+	# }
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -316,8 +316,8 @@ venice_merchants_reform = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		lottery_election = yes
-		election_on_death = yes
+		# lottery_election = yes
+		# election_on_death = yes
 		is_merchant_republic = yes
 	}
 	has_term_election = no
@@ -430,13 +430,16 @@ presidential_despot_reform = {
 	modifiers = {
 		global_autonomy = -0.075
 		land_morale = 0.1
-		max_absolutism = 40
+		governing_capacity_modifier = -0.5
 	}
-
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
 	}
 	has_term_election = no
 }
@@ -454,13 +457,18 @@ military_dictatorship_reform = {
 	modifiers = {
 		global_autonomy = -0.075
 		land_morale = 0.1
+		governing_capacity_modifier = -0.5
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
 		max_absolutism = 30
 	}
 	custom_attributes = {
 		generals_become_rulers = yes
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
 	}
 }
 
@@ -1447,6 +1455,21 @@ consolidation_of_power_reform = {
 		election_cycle = 1
 	}
 }
+
+################################################## U_U Mod Added###############################################
+disolve_elections_reform = {
+	icon = "regionally_elected_commanders"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = military_dictatorship_reform
+	}
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		yearly_corruption = 0.05
+		stability_cost_modifier = -0.1
+	}
+}
+###############################################################################################################
 
 lottery_reform = {
 	icon = "paper_with_seal_3"

@@ -1,0 +1,8 @@
+# Recent Papal Creed
+recent_papal_creed = {
+}
+
+#papal election modifier
+UU_recent_papal_election = {
+}
+

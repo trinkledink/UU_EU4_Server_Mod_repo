@@ -1,0 +1,24 @@
+country_decisions = {
+	U.U_search_for_el_dorado = {
+		potential = {
+			capital_scope = {
+				continent = south_america
+			}
+			NOT = { technology_group = south_american }
+			NOT = { technology_group = andean }
+			NOT = {	has_country_modifier = is_searching_el_dorado}
+		}
+		major = yes
+		allow = {
+			is_at_war = no
+			treasury = 1000
+		}
+		effect = {
+			add_treasury = -1000
+			add_country_modifier = {
+				name = is_searching_el_dorado
+				duration = -1
+			}
+		}
+	}
+}

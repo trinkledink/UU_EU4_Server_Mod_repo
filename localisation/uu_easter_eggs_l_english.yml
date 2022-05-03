@@ -1,0 +1,5 @@
+﻿l_english:
+ uu_easter_egg_events.1.t:0 "A Dream Come True"
+ uu_easter_egg_events.1.d:0 "[From.From.From.Owner.Monarch.GetName] wakes from [From.From.From.Owner.Monarch.GetHerHis] slumber. Looking out the window, suddenly a shining light dazzles [From.From.From.Owner.Monarch.GetName], as Saint Dream appears before him. In a mighty flemish accent, the Saint speaks: I bless you and your country, let it grow and prosper and not die to an AI. [From.From.From.Owner.Monarch.GetName] passed out shortly after. As [From.From.From.Owner.Monarch.GetSheHe] wakes up, [From.From.From.Owner.Monarch.GetSheHe] does not remember much, but feel a tingling sensation of having been in the presence of something holy."
+ uu_easter_egg_events.1.a:0 "This is true"
+ uu_blessed_by_dream:0 "Blessed by Dream"

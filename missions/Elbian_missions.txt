@@ -1,0 +1,954 @@
+UU_elbian_conquest = {
+	slot = 1
+	generic = no
+	ai = no
+	potential = {
+		tag = ELB
+	}
+	has_country_shield = yes
+	
+	UU_elbian_core = {
+		position = 1
+		icon = mission_build_up_to_force_limit
+		provinces_to_highlight = {
+			OR = {
+				area = erzgebirge_area
+				area = lusatia_area
+				area = bohemia_area
+				area = silesia_area
+				area = thuringia_area
+				area = northern_saxony_area
+				area = south_saxony_area
+			}
+			AND = {
+				ROOT = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 28
+							OR = {
+								area = erzgebirge_area
+								area = lusatia_area
+								area = bohemia_area
+								area = silesia_area
+								area = thuringia_area
+								area = northern_saxony_area
+								area = south_saxony_area
+							}
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 28
+				OR = {
+					area = erzgebirge_area
+					area = lusatia_area
+					area = bohemia_area
+					area = silesia_area
+					area = thuringia_area
+					area = northern_saxony_area
+					area = south_saxony_area
+				}
+			}
+			ROOT = {
+				NOT = { average_autonomy = 20 }
+			}
+		}
+		effect = {
+			weser_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			add_country_modifier = {
+				name = "elb_ready_for_conquest"
+				duration = 7300
+			}
+			if = {
+				limit = { 	
+					BRA = { is_subject_of = ELB }
+				}
+				BRA = { add_liberty_desire = -20 } 
+				add_prestige = 20
+				add_legitimacy = 10
+			}
+			else = {
+				mittelmark_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ELB
+				}
+				
+				neumark_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ELB
+				}
+			}
+		}
+	}
+	UU_elbian_reclaim_ancestral_lands = {
+		icon = conquer_brunswick
+		position = 3
+		required_missions = { UU_elbian_core }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = weser_area
+				area = lower_saxony_area
+				area = mittelmark_area
+				area = neumark_area
+				area = braunschweig_area
+			}
+			AND = {
+				ROOT = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 12
+							OR = {
+								area = weser_area
+								area = lower_saxony_area
+								area = mittelmark_area
+								area = neumark_area
+								area = braunschweig_area
+							}
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 12
+				OR = {
+					area = weser_area
+					area = lower_saxony_area
+					area = mittelmark_area
+					area = neumark_area
+					area = braunschweig_area
+				}
+			}
+			owns_core_province = 50			#Berlin
+			owns_core_province = 57			#Brunswick
+			owns_core_province = 1758		#Hanover
+			owns_core_province = 44			#Hamburg
+		}
+		effect = {
+			custom_tooltip = elb_conquest_tt
+			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			north_westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			holstein_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			mecklenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+		}
+		hidden_effect = {
+			every_core_province = {	
+				limit = {
+					OR = {
+						area = weser_area
+						area = lower_saxony_area
+						area = mittelmark_area
+						area = neumark_area
+						area = braunschweig_area
+					}
+				}
+				add_local_autonomy = -20
+				add_devastation = -30
+			}
+		}
+	}
+	UU_natural_borders = {
+		icon = the_alpine_wall
+		position = 4
+		required_missions = { UU_elbian_reclaim_ancestral_lands }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = holstein_area
+				area = mecklenburg_area
+				area = westphalia_area
+				area = north_westphalia_area
+				area = franconia_area
+				area = upper_franconia_area
+				area = hesse_area
+			}			
+			NOT = { owned_by = root }
+		}
+		trigger = {
+			holstein_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			mecklenburg_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			westphalia_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			north_westphalia_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			franconia_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			upper_franconia_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			hesse_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			is_at_war = no
+		}
+		effect = {
+			custom_tooltip = elb_conquest_tt
+			4141 = {							#Dithmarshen
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "elb_city_fortified"
+					duration = -1
+				}
+			}
+			45 = {								#Lübeck
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "elb_city_fortified"
+					duration = -1
+				}
+			}
+			69 = {								#Dortmund
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "elb_city_fortified"
+					duration = -1
+				}				
+			}
+			4715 = {							#Rothenburg
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "elb_city_fortified"
+					duration = -1
+				}			
+			}
+			add_stability_or_adm_power = yes
+		}
+		hidden_effect = {
+			every_core_province = {	
+				limit = {
+					OR = {
+						area = holstein_area
+						area = mecklenburg_area
+						area = westphalia_area
+						area = north_westphalia_area
+						area = franconia_area
+						area = upper_franconia_area
+						area = hesse_area
+					}
+				}
+				add_local_autonomy = -20
+				add_devastation = -30
+			}
+		}
+	}
+}
+UU_elbian_integration = {
+	slot = 2
+	generic = no
+	ai = no
+	potential = {
+		tag = ELB
+	}
+	has_country_shield = yes
+	
+	elb_integrate_brandenburg = {
+		position = 2
+		icon = the_balance_of_power
+		required_missions = { UU_elbian_core }
+		
+		trigger = {
+			if = {
+				limit = {
+					BRA = { is_subject_of = ROOT }
+					NOT = { BRA = { num_of_cities = 15} }
+				}
+				legitimacy = 100
+				prestige = 50
+				BRA = {
+					has_opinion = {
+						who = ROOT
+						value = 200
+					}
+					NOT = { liberty_desire = 1 }
+				}
+			}
+			else = {
+				mittelmark_area = {
+					type = all
+					is_core  = ROOT 
+				}
+				neumark_area = {
+					type = all
+					is_core = ROOT 
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					BRA = { is_subject_of = ROOT }
+				}
+				ROOT = { inherit = BRA }
+			}
+			else = {
+				add_adm_power = 200
+			}
+		}
+	}
+	
+	elb_berlin_war_academy = {
+		position = 3
+		icon = professional_army
+		required_missions = { elb_integrate_brandenburg }
+		
+		trigger = {
+			50 = {						#Berlin
+				has_building = university
+				OR = {
+					has_building = regimental_camp 
+					has_building = conscription_center
+				}
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+			}
+		}
+		effect = {
+			50 = {
+				add_province_modifier = {
+					name = "elb_berlin_war_school"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	elb_hamburg_world_port = {
+		position = 4
+		icon = mission_heart_of_the_hansa
+		required_missions = { UU_elbian_reclaim_ancestral_lands }
+	
+		trigger = {
+			44 = {							#Hamburg
+				province_has_center_of_trade_of_level = 3
+				development = 30
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard 
+				}
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				is_prosperous = yes
+				NOT = { local_autonomy = 0.1 }
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = UU_elb_hamburg_world_port.1
+			}
+			44 = {
+				add_province_modifier = {
+					name = "elb_help"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+UU_elbian_innovation = {
+	slot = 3
+	generic = no
+	ai = no
+	potential = {
+		tag = ELB
+	}
+	has_country_shield = yes
+	
+	elb_sax_manufacturing = {
+		position = 1
+		icon = saxon_manufacturing
+		required_missions = {  }
+		provinces_to_highlight = {
+			province_id = 62
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+		}
+		trigger = {
+			owns_core_province = 62
+			num_of_owned_provinces_with = {
+				value = 3
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			62 = {
+				province_event = { id = flavor_sax.3 }
+			}
+		}
+	}
+	
+	elb_sax_meissen_porcelain = {
+		position = 2
+		icon = porcelain_from_meissen
+		required_missions = { elb_sax_manufacturing }
+		provinces_to_highlight = {
+			province_id = 61
+			OR = {
+				NOT = { is_strongest_trade_power = root }
+				NOT = { owned_by = root }
+				has_production_building_trigger = no
+			}
+		}
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = emp_sax_meissen_porcelain_trigger_tooltip
+					has_global_flag = europeans_in_china_happened
+				}
+				is_year = 1700
+			}
+			61 = {
+				owned_by = root
+				has_production_building_trigger = yes
+				development = 20
+			}
+			61 = {
+				is_strongest_trade_power = root
+			}
+			share_of_starting_income = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = bottger_happened }
+				}
+				country_event = { id = prices.3 days = 1 }
+			}
+			else = {
+				61 = {
+					add_base_production = 4
+					add_province_modifier = {
+						name = sax_meissen_development
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	elb_found_universites = {
+		position = 3
+		icon = wittenberg_university
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 59				#Wittenberg
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_courthouse_building_trigger = no
+						num_free_building_slots = 1
+					}
+				}
+				AND = {
+					province_id = 61				#Dresden
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_courthouse_building_trigger = no
+						num_free_building_slots = 1
+					}
+				}
+				AND = {
+					province_id = 266				#Prague
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_courthouse_building_trigger = no
+						num_free_building_slots = 1
+					}
+				}
+				AND = {
+					province_id = 264				#Wroclaw
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_courthouse_building_trigger = no
+						num_free_building_slots = 1
+					}
+				}
+				AND = {
+					province_id = 50				#Berlin
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { development = 15 }
+						has_courthouse_building_trigger = no
+						num_free_building_slots = 1
+					}
+				}
+			}
+		}
+		trigger = {
+			has_idea = elb_university_founding
+			59 = {
+				owned_by = root
+				development = 15
+				OR = {
+					has_courthouse_building_trigger = yes
+					is_capital = yes
+				}
+				NOT = { num_free_building_slots = 1 }
+			}
+			61 = {
+				owned_by = root
+				development = 15
+				OR = {
+					has_courthouse_building_trigger = yes
+					is_capital = yes
+				}
+				NOT = { num_free_building_slots = 1 }
+			}
+			266 = {
+				owned_by = root
+				development = 15
+				OR = {
+					has_courthouse_building_trigger = yes
+					is_capital = yes
+				}
+				NOT = { num_free_building_slots = 1 }
+			}
+			264 = {
+				owned_by = root
+				development = 15
+				OR = {
+					has_courthouse_building_trigger = yes
+					is_capital = yes
+				}
+				NOT = { num_free_building_slots = 1 }
+			}
+			50 = {
+				owned_by = root
+				development = 15
+				OR = {
+					has_courthouse_building_trigger = yes
+					is_capital = yes
+				}
+				NOT = { num_free_building_slots = 1 }
+			}
+		}
+		effect = {
+			add_innovativeness_big_effect = yes
+			59 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+			61 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+			266 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+			264 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { has_building = university }
+					}
+					add_building = university
+				}
+			}
+		}
+	}
+	elb_weimar_classicism = {
+		position = 4
+		icon = weimar_classicism
+		required_missions = { elb_found_universites }
+		
+		provinces_to_highlight = {
+			province_id = 4743				#Weimar
+			OR = {
+				NOT = { development = 20 }
+				NOT = { has_building = university }
+				NOT = { owned_by = ROOT }
+			}
+		}
+		trigger = {
+			innovativeness = 50
+			is_at_war = no
+			stability = 1
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+			NOT = {	num_of_loans = 1 }
+			4743 = {
+				has_building = university
+				development = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elb_weimar_classicism_modifier"
+				duration = 18250
+			}
+		}
+	}
+	elb_beacon_of_progress = {
+		position = 6
+		icon = mission_rb_build_furnaces
+		required_missions = { elb_protect_guild_rights elb_weimar_classicism }
+		
+		trigger = {
+			innovativeness = 100
+			has_institution = enlightenment
+			num_of_owned_provinces_with = {
+				value = 3
+				trade_goods = coal
+				has_building = furnace
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_manpower = 3
+				add_base_production = 3
+				add_base_tax = 3
+			}
+			set_country_flag = elb_beacon_of_progress_flag
+			custom_tooltip = elb_beacon_of_progress_tt
+		}
+	}
+}
+UU_elbian_production = {
+	slot = 4
+	generic = no
+	ai = no
+	potential = {
+		tag = ELB
+	}
+	has_country_shield = yes
+	
+	elb_boh_bohemian_crystal = {
+		icon = bohemian_crystal
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1771
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 20 }
+				has_production_building_trigger = no
+			}
+		}
+		trigger = {
+			1771 = {
+				owned_by = ROOT
+				development = 20
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			set_country_flag = bohemian_crystal_flag
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = bohemian_glass_flag
+					}
+				}
+				country_event = { id = prices.43 }
+			}
+			add_prestige = 20
+		}
+	}
+	elb_cheb_gold_mining = {
+		position = 2
+		icon = dominant_economy
+		required_missions = { elb_boh_bohemian_crystal }
+		
+		provinces_to_highlight = {
+			province_id = 2967						#Cheb
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 20 }
+			}
+		}
+		trigger = {
+			2967 = {
+				development = 20
+				owned_by = ROOT
+				is_prosperous = yes
+			}
+			innovativeness = 30
+		}
+		effect = {
+			2967 = {
+				add_province_modifier = {
+					name = "elb_cheb_mine"
+					duration = -1
+				}
+			}
+			add_years_of_owned_provinces_production_income = {
+				years = 3
+				trigger = {
+					trade_goods = gold
+				}
+				custom_tooltip = MONOPOLY_INCOME_GOLD_DESC
+			}
+		}
+	}
+	elb_master_craftsmanship = {
+		position = 3
+		icon = mission_jawal_silver_mine
+		required_missions = { elb_cheb_gold_mining elb_sax_meissen_porcelain }
+		
+		trigger = {
+			
+		}
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 2.5
+			}
+		}
+	}
+	elb_promote_workshops = {
+		position = 4
+		icon = imperial_capitals
+		required_missions = { elb_found_universites }
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "elb_rapid_urbanization"
+				duration = 7300
+			}
+		}
+	}
+	elb_protect_guild_rights = {
+		position = 5
+		icon = balance_the_estates
+		required_missions = { elb_promote_workshops }
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 60
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 25
+				is_prosperous = yes
+			}
+		}
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_elb_improved_workshops
+			}
+		}
+	}
+}
+
+UU_elbian_empire = {
+	slot = 5
+	generic = no
+	ai = no
+	potential = {
+		tag = ELB
+	}
+	has_country_shield = yes
+	
+	elb_embrace_reformation = {	
+		position = 1
+		icon = catholic_volunteers
+		required_missions = { }
+		
+		trigger = {
+			OR = {
+				religion = hussite
+				religion = anglican
+				religion = protestant
+				religion = reformed
+			}
+			NOT = {	
+				any_owned_province = {
+					religion = catholic 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elb_embraced_reformation"
+				duration = 7300
+			}
+		}
+	}
+	elb_lead_the_league = {
+		position = 2
+		icon = Control_Junkers
+		required_missions = { elb_embrace_reformation }
+		
+		trigger = {
+			OR = {
+				AND = {
+					hre_leagues_enabled = no
+					is_year = 1600
+					is_defender_of_faith = yes
+				}
+				AND = {
+					is_elector = yes
+					is_league_leader = yes
+				}
+				AND = {
+					is_elector = no
+					in_league = protestant
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elb_leading_the_league"
+				duration = 7300
+			}
+		}
+	}
+	elb_lead_the_empire = {
+		position = 3
+		icon = join_the_empire
+		required_missions = { elb_lead_the_league }
+		
+		trigger = {
+			OR = {
+				hre_religion_treaty = yes
+				AND = {
+					hre_religion_locked = yes
+					NOT = { hre_religion = catholic }
+				}
+			}
+			is_emperor = yes
+		}
+		effect = {
+			add_imperial_influence = 50
+			add_prestige = 50
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+	}
+}
+	

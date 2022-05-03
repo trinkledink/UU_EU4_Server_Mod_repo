@@ -183,13 +183,12 @@ interaction = {
         }
     }
 	ai_will_do = {
+		factor = 10
 		# Only use if it will bring loyalty above 50 for all estates
 		# AI will most likely fail to complete the task
-		factor = 10
 		modifier = {
-			factor = 10
 			can_use_crown_land_interaction = seize_land
-			
+			factor = 10
 			estate_loyalty = {
 				estate = all
 				loyalty = 45.5
@@ -274,7 +273,6 @@ interaction = {
 			}
 			NOT = { has_estate_privilege = estate_church_statutory_rights }
 		}
-        is_at_war = no
     }
     effect = {
         custom_tooltip = ESTATES_SEIZE_LAND_DESC

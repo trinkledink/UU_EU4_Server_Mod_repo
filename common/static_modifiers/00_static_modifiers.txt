@@ -225,7 +225,8 @@ severe_monsoon = {
 blockaded = {
 	regiment_recruit_speed = 0.2
 	ship_recruit_speed = 0.2
-	local_monthly_devastation = 0.1
+	local_monthly_devastation = 0.25
+	province_trade_power_modifier = -0.5
 }
 
 no_adjacent_controlled = {
@@ -234,6 +235,7 @@ no_adjacent_controlled = {
 
 provincial_tax_income = {
 	regiment_recruit_speed = -0.01
+	local_build_time = -0.01
 }
 
 provincial_production_size = {
@@ -592,13 +594,12 @@ positive_stability = {
 	mr_aristocrats_influence = 0.03
 	rr_jacobins_influence = 0.03
 	stability_cost_modifier = 0.50
-	monthly_fervor_increase = 1
+	monthly_fervor_increase = 1.5
 	devotion = 0.5
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
-	
-	
+	global_prosperity_growth = 0.1	
 }
 
 privateering = {
@@ -677,6 +678,7 @@ bankruptcy = {
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
+	great_project_upgrade_cost = 0.5
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
 	monthly_militarized_society = -0.5
@@ -684,7 +686,6 @@ bankruptcy = {
 	technology_cost = 0.5
 	idea_cost = 0.5
 	imperial_mandate = -0.1
-	great_project_upgrade_cost = 0.5
 }
 
 
@@ -790,7 +791,7 @@ navy_tradition = {
 positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
 	global_manpower_modifier = 0.20
-	global_tax_modifier = 0.20
+	global_missionary_strength = 0.03
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
@@ -799,7 +800,7 @@ positive_piety = { #As of 1.23 Legalism
 #For convenience, its multiplied by negative piety in code.
 negative_piety = { #As of 1.23 Mysticism
 	land_morale = 0.10
-	global_missionary_strength = 0.03
+	global_tax_modifier = 0.20
 	defensiveness = 0.20
 	brahmins_muslim_loyalty_modifier = 0.1
 	church_loyalty_modifier = -0.1
@@ -901,7 +902,6 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
 }
 
 
@@ -909,6 +909,11 @@ horde_unity = {
 devotion = {
 	papal_influence = 2
 	church_power_modifier = 0.25
+	yearly_patriarch_authority = 0.02
+	monthly_fervor_increase = 2
+	yearly_harmony	= 1
+	monthly_piety_accelerator = 0.001
+	yearly_karma_decay = 0.01
 	prestige = 2
 	global_tax_modifier = 0.50
 	church_loyalty_modifier = 0.05
@@ -970,7 +975,7 @@ militarized_society = {
 
 	discipline = 0.10
 	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.20
+	land_maintenance_modifier = 0.20
 
 }
 
@@ -1106,7 +1111,7 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.10					#increases exhaustion.
+	war_exhaustion = 0.3					#increases exhaustion.
 }
 
 uncontested_cores = {
@@ -1310,9 +1315,11 @@ maintained_forts = {
 }
 
 gov_rank_1 = {
+	governing_capacity = 50
 }
 
 gov_rank_2 = {
+	governing_capacity = 50
 }
 
 gov_rank_3 = {
@@ -1370,7 +1377,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.015
 }
 
 ##################################################################################################
@@ -1635,7 +1642,7 @@ hanafi_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	adm_tech_cost_modifier = -0.05
+	idea_cost = -0.05
 }
 
 hanbali_scholar_modifier = {
@@ -1660,6 +1667,7 @@ shafii_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	merchants = 1
+	trade_steering = 0.15
 }
 
 ismaili_scholar_modifier = {
@@ -1709,14 +1717,12 @@ janissary_regiment = {
 	reinforce_cost_modifier = 1.0
 	drill_gain_modifier = 1.0
 }
-
 cawa_regiment = {
 	shock_damage_received = -0.15
 	land_attrition = -0.25
 	reinforce_cost_modifier = 0.25
 	reinforce_speed = -0.25
 }
-
 revolutionary_guard_regiment = {
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
@@ -1761,10 +1767,10 @@ expand_administation_modifier = {
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
 	stability_cost_modifier = 1.0
-	ae_impact = 0.5
+	administrative_efficiency = -0.33
 	improve_relation_modifier = -0.5
-	core_creation = 0.2
-	advisor_cost = 1.0
+	min_autonomy = 50
+	yearly_corruption = 1.5
 	monthly_militarized_society = -1.0
 }
 

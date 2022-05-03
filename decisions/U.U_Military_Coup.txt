@@ -1,0 +1,23 @@
+country_decisions = {
+	military_coup = {
+		potential = {
+			has_reform = military_dictatorship_reform
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = recent_military_coup
+			}
+			has_reform = disolve_elections_reform
+		}
+		effect = {
+			kill_ruler = yes
+			add_mil_power = -100
+			republican_tradition = -20
+			stability = -1
+			add_country_modifier = {
+				name = recent_military_coup
+				duration = 14600 #40 years
+			}
+		}
+	}
+}

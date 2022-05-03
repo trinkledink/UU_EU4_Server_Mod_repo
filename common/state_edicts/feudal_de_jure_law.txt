@@ -1,6 +1,9 @@
 edict_feudal_de_jure_law = {
 	potential = {
-		current_age = age_of_discovery
+		OR = {
+			current_age = age_of_discovery
+			has_country_flag = feudal_de_jure_law
+		}
 	}
 	
 	allow = {
@@ -8,14 +11,13 @@ edict_feudal_de_jure_law = {
 			tooltip = edict_feudal_de_jure_law_tooltip
 			has_country_flag = feudal_de_jure_law
 		}
-		current_age = age_of_discovery
 	}
 	
 	modifier = { # OBS: Modify AI accordingly if this is changed
 		local_unrest = -5
 	}
 	
-	color = {  116 198 240  }
+	color = {  50 168 82  }
 	
 	
 	ai_will_do = {

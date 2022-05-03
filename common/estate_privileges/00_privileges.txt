@@ -9211,6 +9211,7 @@ estate_church_one_faith_one_culture = {
 	penalties = {
 		tolerance_heathen = -2
 		tolerance_heretic = -2
+		num_accepted_cultures = -1
 	}
 	benefits = {
 		global_missionary_strength = 0.01
@@ -9906,11 +9907,10 @@ estate_burghers_control_over_the_mint = {
 		}
 	}
 	penalties = {
-		all_power_cost = 0.05
 	}
 	benefits = {
 		monthly_gold_inflation_modifier = -0.75
-		gold_depletion_chance_modifier = -0.75
+		gold_depletion_chance_modifier = -0.25
 	}
 	ai_will_do = {
 		factor = 10
