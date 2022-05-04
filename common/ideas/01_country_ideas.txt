@@ -535,6 +535,45 @@ MUG_ideas = {
 		global_autonomy = -0.075
 	}
 }
+ORM_ideas = {
+	start = {
+		mercenary_manpower = 0.5
+		trade_efficiency = 0.15
+	}
+
+	bonus = {
+		merchants = 1
+		trade_range = 0.25
+	}
+	
+	trigger = {
+		tag = ORM
+	}
+	free = yes
+	
+	orm_a_vast_emporium = {
+		galley_power = 0.25
+	}
+	orm_protecting_the_islands = {
+		defensiveness = 0.2
+	}
+	orm_moqarrariya = {
+		mercenary_discipline = 0.075
+	}
+	orm_far_reaching_diplomacy = {
+		vassal_forcelimit_bonus = 0.5
+		diplomatic_reputation = 2
+	}
+	orm_secure_trading_monopoly = {
+		global_trade_power = 0.2
+	}
+	orm_develop_qeshm_and_ormuz = {
+		development_cost = -0.1
+	}
+	orm_ormuzi_navy = {
+		naval_forcelimit_modifier = 0.25
+	}
+}
 #Colonial
 CAN_ideas = {
 	start = {
