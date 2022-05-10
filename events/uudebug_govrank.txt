@@ -1,0 +1,28 @@
+namespace = uu_govrank
+
+country_event = {
+	id = uu_govrank.1
+	title = "uu_govrank.1.t"
+	desc = "uu_govrank.1.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "uu_govrank.1.a"
+		set_government_rank = 1
+	}
+	option = {
+		name = "uu_govrank.1.b"
+		set_government_rank = 2
+	}
+	option = {
+		name = "uu_govrank.1.c"
+		set_government_rank = 3
+	}
+	option = {
+		name = "uu_govrank.1.d"
+	}
+}
+
+
