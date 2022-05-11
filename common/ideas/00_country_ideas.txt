@@ -1629,43 +1629,43 @@ ARA_ideas = {
 	}
 }
 
-MUG_ideas = {
-	start = {
-		core_creation = -0.25
-		cavalry_power = 0.20
-	}
+# MUG_ideas = {
+	# start = {
+		# core_creation = -0.25
+		# cavalry_power = 0.20
+	# }
 	
-	bonus = {
-		technology_cost = -0.05
-	}
+	# bonus = {
+		# technology_cost = -0.05
+	# }
 	
-	trigger = {
-		tag = MUG
-	}
-	free = yes
+	# trigger = {
+		# tag = MUG
+	# }
+	# free = yes
 	
-	mansabdari_system = {
-		discipline = 0.05
-	}
-	control_of_the_ulema = {
-		global_unrest = -1
-	}
-	mughal_ibadat_khana = {
-		idea_cost = -0.1
-	}
-	an_indian_padshah = {
-		free_mil_policy = 1
-	}
-	zabt_system = {
-		global_tax_modifier = 0.1
-	}
-	mughal_architecture = {
-		prestige = 1
-	}
-	fatawa_e_alamgiri = {
-		stability_cost_modifier = -0.10
-	}
-}
+	# mansabdari_system = {
+		# discipline = 0.05
+	# }
+	# control_of_the_ulema = {
+		# global_unrest = -1
+	# }
+	# mughal_ibadat_khana = {
+		# idea_cost = -0.1
+	# }
+	# an_indian_padshah = {
+		# free_mil_policy = 1
+	# }
+	# zabt_system = {
+		# global_tax_modifier = 0.1
+	# }
+	# mughal_architecture = {
+		# prestige = 1
+	# }
+	# fatawa_e_alamgiri = {
+		# stability_cost_modifier = -0.10
+	# }
+# }
 
 TIM_ideas = {
 	start = {
@@ -7705,44 +7705,44 @@ ORL_ideas = {
 	}
 }
 
-ORM_ideas = {
-	start = {
-		merchants = 1
-		global_foreign_trade_power = 0.1
-	}
+# ORM_ideas = {
+	# start = {
+		# merchants = 1
+		# global_foreign_trade_power = 0.1
+	# }
 
-	bonus = {
-		sailor_maintenance_modifer = -0.1
-	}
+	# bonus = {
+		# sailor_maintenance_modifer = -0.1
+	# }
 	
-	trigger = {
-		tag = ORM
-	}
-	free = yes
+	# trigger = {
+		# tag = ORM
+	# }
+	# free = yes
 	
-	orm_a_vast_emporium = {
-		trade_efficiency = 0.1
-	}
-	orm_protecting_the_islands = {
-		defensiveness = 0.2
-	}
-	orm_moqarrariya = {
-		stability_cost_modifier = -0.1
-	}
-	orm_far_reaching_diplomacy = {
-		diplomatic_upkeep = 1
-		diplomatic_reputation = 1
-	}
-	orm_secure_trading_monopoly = {
-		global_trade_power = 0.1
-	}
-	orm_develop_qeshm_and_ormuz = {
-		development_cost = -0.1
-	}
-	orm_ormuzi_navy = {
-		naval_forcelimit_modifier = 0.25
-	}
-}
+	# orm_a_vast_emporium = {
+		# trade_efficiency = 0.1
+	# }
+	# orm_protecting_the_islands = {
+		# defensiveness = 0.2
+	# }
+	# orm_moqarrariya = {
+		# stability_cost_modifier = -0.1
+	# }
+	# orm_far_reaching_diplomacy = {
+		# diplomatic_upkeep = 1
+		# diplomatic_reputation = 1
+	# }
+	# orm_secure_trading_monopoly = {
+		# global_trade_power = 0.1
+	# }
+	# orm_develop_qeshm_and_ormuz = {
+		# development_cost = -0.1
+	# }
+	# orm_ormuzi_navy = {
+		# naval_forcelimit_modifier = 0.25
+	# }
+# }
 
 KGR_ideas = {
 	start = {
@@ -11951,7 +11951,10 @@ HSN_ideas = {
 		discipline = 0.05
 	}
 	trigger = {
-		tag = HSN
+		OR = {
+			tag = HSN
+			tag = ARB
+		}
 	}
 	free = yes
 	
@@ -11965,7 +11968,7 @@ HSN_ideas = {
 		land_morale = 0.1
 	}
 	hsn_elite_warriors = {
-		cavalry_power = 0.1
+		cavalry_power = 0.2
 	}
 	hsn_rise_of_the_eagle = {
 		core_creation = -0.15
