@@ -14657,44 +14657,44 @@ EPI_ideas = {
 }
 
 
-LOT_ideas = {
-	start = {
-		infantry_power = 0.1
-		global_manpower_modifier = 0.25
-	}
+# LOT_ideas = {
+	# start = {
+		# infantry_power = 0.1
+		# global_manpower_modifier = 0.25
+	# }
 	
-	bonus = {
-		ae_impact = -0.1
-	}
+	# bonus = {
+		# ae_impact = -0.1
+	# }
 	
-	trigger = {
-		tag = LOT
-	}
-	free = yes		#will be added at load.
+	# trigger = {
+		# tag = LOT
+	# }
+	# free = yes		#will be added at load.
 	
-	lot_legacy_of_the_carolingians = {
-		prestige_decay = -0.01
-	}
-	lot_glory_of_charlemagne = {
-		land_morale = 0.15
-	}
-	lot_dutch_cities = {
-		trade_efficiency = 0.1
-	}
-	lot_carolingian_renaissance_II = {
-		idea_cost = -0.1
-	}
-	lot_court_of_europe = {
-		prestige = 0.5
-		advisor_pool = 1
-	}
-	lot_land_of_abbeys = {
-		missionaries = 1
-	}
-	lot_european_empire = {
-		core_creation = -0.2
-	}
-}
+	# lot_legacy_of_the_carolingians = {
+		# prestige_decay = -0.01
+	# }
+	# lot_glory_of_charlemagne = {
+		# land_morale = 0.15
+	# }
+	# lot_dutch_cities = {
+		# trade_efficiency = 0.1
+	# }
+	# lot_carolingian_renaissance_II = {
+		# idea_cost = -0.1
+	# }
+	# lot_court_of_europe = {
+		# prestige = 0.5
+		# advisor_pool = 1
+	# }
+	# lot_land_of_abbeys = {
+		# missionaries = 1
+	# }
+	# lot_european_empire = {
+		# core_creation = -0.2
+	# }
+# }
 
 FKN_ideas = {
 	start = {

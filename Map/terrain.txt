@@ -803,7 +803,7 @@ categories =  {
 			
 		movement_cost = 1.15
 		supply_limit = 10
-		development_cost = 0.05
+		local_development_cost = 0.05
 		
 		terrain_override = {
 			4285 4286 404	#oman
