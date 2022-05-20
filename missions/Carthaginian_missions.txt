@@ -1340,7 +1340,7 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # I Shpanian Company
-ctg_carthaginian_musketeer_mission_slot = {
+ctg_carthaginian_ishpanian_mission_slot = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1380,7 +1380,7 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Legionary Company
-ctg_carthaginian_musketeer_mission_slot = {
+ctg_carthaginian_legionary_mission_slot = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1420,7 +1420,7 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Phalanx Company
-ctg_carthaginian_musketeer_mission_slot = {
+ctg_carthaginian_phalanx_mission_slot = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1460,7 +1460,7 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Immortals Company
-ctg_carthaginian_musketeer_mission_slot = {
+ctg_carthaginian_immortals_mission_slot = {
 	slot = 5
 	generic = no
 	ai = yes
