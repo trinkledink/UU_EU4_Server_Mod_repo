@@ -9910,7 +9910,7 @@ estate_burghers_control_over_the_mint = {
 	}
 	benefits = {
 		monthly_gold_inflation_modifier = -0.75
-		gold_depletion_chance_modifier = -0.75
+		gold_depletion_chance_modifier = -0.25
 	}
 	ai_will_do = {
 		factor = 10

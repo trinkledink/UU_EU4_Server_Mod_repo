@@ -234,6 +234,17 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
+		ab_timur_legacy = {
+			allow = {
+				tag = TIM
+			}
+			modifier = {
+				legitimacy = 5
+				vassal_income = 0.5
+				vassal_forcelimit_bonus = 1
+				reduced_liberty_desire = 50
+			}
+		}
 	}
 }
 

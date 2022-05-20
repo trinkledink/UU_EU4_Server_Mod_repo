@@ -211,3 +211,9 @@
  ctg_mission_events_3_a.tt:0 "Keep Mercenary-Oriented Missions."  ####custom tooltip####
  ctg_mission_events_3_b:0 "It is time to break with traditions and embrace the future of warfare."
  ctg_mission_events_3_b.tt:0 "Obtain New Standing-Army Missions." ####custom tooltip####
+ 
+ ########################################################################
+ # UU Papal Mission Mission Localisation. Put in missions_l_english.yml #
+ ########################################################################
+ UU_st_peters_basilica_title:0 "Cathedral of Christ's glory"
+ UU_st_peters_basilica_desc:0 "It is time that the servants of God construct a monument displaying their devotion for Christ." 

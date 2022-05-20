@@ -38,6 +38,45 @@ PRU_ideas = {
 		tolerance_heretic = 1
 	}
 }
+LOT_ideas = {
+	start = {
+		infantry_power = 0.1
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = LOT
+	}
+	free = yes		#will be added at load.
+	
+	lot_legacy_of_the_carolingians = {
+		discipline = 0.05
+		prestige_decay = -0.01
+	}
+	lot_glory_of_charlemagne = {
+		land_morale = 0.15
+	}
+	lot_dutch_cities = {
+		trade_efficiency = 0.1
+	}
+	lot_carolingian_renaissance_II = {
+		idea_cost = -0.1
+	}
+	lot_court_of_europe = {
+		prestige = 1
+		advisor_pool = 1
+	}
+	lot_land_of_abbeys = {
+		missionaries = 1
+	}
+	lot_european_empire = {
+		administrative_efficiency = 0.05
+	}
+}
 RUS_ideas = {
 	start = {
 		core_creation = -0.10
@@ -492,6 +531,86 @@ ADU_ideas = {
 	adu_al_awasim = {
 		defensiveness = 0.1
 		rival_border_fort_maintenance = -0.25
+	}
+}
+MUG_ideas = {
+	start = {
+		core_creation = -0.25
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		technology_cost = -0.1				
+	}
+	
+	trigger = {
+		tag = MUG
+	}
+	free = yes
+	
+	mansabdari_system = {
+		discipline = 0.05
+	}
+	control_of_the_ulema = {
+		global_unrest = -2
+		governing_capacity_modifier = 0.33
+	}
+	mughal_ibadat_khana = {
+		idea_cost = -0.1
+	}
+	an_indian_padshah = {
+		all_estate_loyalty_equilibrium = 0.05
+		land_morale = 0.1
+	}
+	zabt_system = {
+		global_tax_modifier = 0.1
+	}
+	mughal_architecture = {
+		build_cost = -0.1
+		artillery_fire = 1
+	}
+	fatawa_e_alamgiri = {
+		stability_cost_modifier = -0.15
+		global_autonomy = -0.075
+	}
+}
+ORM_ideas = {
+	start = {
+		mercenary_manpower = 0.5
+		trade_efficiency = 0.15
+	}
+
+	bonus = {
+		merchants = 1
+		trade_range = 0.25
+	}
+	
+	trigger = {
+		tag = ORM
+	}
+	free = yes
+	
+	orm_a_vast_emporium = {
+		galley_power = 0.25
+	}
+	orm_protecting_the_islands = {
+		defensiveness = 0.2
+	}
+	orm_moqarrariya = {
+		mercenary_discipline = 0.075
+	}
+	orm_far_reaching_diplomacy = {
+		vassal_forcelimit_bonus = 0.5
+		diplomatic_reputation = 2
+	}
+	orm_secure_trading_monopoly = {
+		global_trade_power = 0.2
+	}
+	orm_develop_qeshm_and_ormuz = {
+		development_cost = -0.1
+	}
+	orm_ormuzi_navy = {
+		naval_forcelimit_modifier = 0.25
 	}
 }
 #Colonial

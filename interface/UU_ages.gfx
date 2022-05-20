@@ -1,0 +1,5 @@
+
+	spriteType = {
+		name = "GFX_ab_timur_legacy"
+		texturefile = "gfx/interface/ages/ab_timur_legacy.dds"
+	}

@@ -1,0 +1,178 @@
+namespace = uu_government
+
+country_event = {
+	id = uu_government.1
+	title = "uu_government.1.t"
+	desc = "uu_government.1.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "uu_government.1.a"
+        country_event = {
+            id = uu_government.2
+        }
+    	change_government_to_monarchy = yes
+	}
+	option = {
+		name = "uu_government.1.b"
+        country_event = {
+            id = uu_government.3	
+        }
+        change_government = republic
+	}
+    option = {
+		name = "uu_government.1.c"
+		change_government = theocracy
+	}
+    option = {
+		name = "uu_government.1.d"
+		change_government = tribal
+	}
+    option = {
+		name = "uu_government.1.e"
+		change_government = tribal
+        add_government_reform = steppe_horde
+	}
+    option = {
+        name = "uu_government.1.f"
+    }
+}
+
+country_event = {
+	id = uu_government.2
+	title = "uu_government.2.t"
+	desc = "uu_government.2.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "uu_government.2.a"
+		change_government_to_monarchy = yes
+        add_government_reform = austrian_dual_monarchy
+	}
+    option = {
+		name = "uu_government.2.b"
+		change_government_to_monarchy = yes
+        add_government_reform = celestial_empire
+	}
+    option = {
+		name = "uu_government.2.c"
+		change_government_to_monarchy = yes
+        add_government_reform = siamese_absolutism
+	}
+    option = {
+		name = "uu_government.2.d"
+		change_government_to_monarchy = yes
+        add_government_reform = elective_monarchy
+	}
+    option = {
+		name = "uu_government.2.e"
+		change_government_to_monarchy = yes
+        add_government_reform = english_monarchy
+	}
+    option = {
+		name = "uu_government.2.f"
+		change_government_to_monarchy = yes
+        add_government_reform = feudal_theocracy
+	}
+    option = {
+		name = "uu_government.2.g"
+		change_government_to_monarchy = yes
+        add_government_reform = indep_daimyo
+	}
+    option = {
+		name = "uu_government.2.h"
+		change_government_to_monarchy = yes
+        add_government_reform = mamluk_government
+	}
+    option = {
+		name = "uu_government.2.i"
+		change_government_to_monarchy = yes
+        add_government_reform = ottoman_government
+	}
+    option = {
+		name = "uu_government.2.j"
+		change_government_to_monarchy = yes
+        add_government_reform = prussian_monarchy
+	}
+    option = {
+		name = "uu_government.2.k"
+		change_government_to_monarchy = yes
+        add_government_reform = shogunate
+	}
+    option = {
+		name = "uu_government.2.l"
+		change_government_to_monarchy = yes
+        add_government_reform = tsardom
+	}
+    option = {
+		name = "uu_government.2.m"
+		change_government_to_monarchy = yes
+        add_government_reform = parliamentary_reform
+	}
+    option = {
+		name = "uu_government.2.n"
+        country_event = {
+            id = uu_government.1
+        }
+	}
+}
+
+country_event = {
+	id = uu_government.3
+	title = "uu_government.3.t"
+	desc = "uu_government.3.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = "uu_government.3.a"
+		change_government = republic
+        add_government_reform = ambrosian_republic
+	}
+    option = {
+		name = "uu_government.3.b"
+		change_government = republic
+        add_government_reform = dutch_republic
+	}
+    option = {
+		name = "uu_government.3.c"
+		change_government = republic
+        add_government_reform = kongsi_federation
+	}
+    option = {
+		name = "uu_government.3.d"
+		change_government = republic
+        add_government_reform = military_dictatorship_reform
+	}
+    option = {
+		name = "uu_government.3.e"
+		change_government = republic
+        add_government_reform = peasants_republic
+	}
+    option = {
+		name = "uu_government.3.f"
+		change_government = republic
+        add_government_reform = pirate_republic_reform
+	}
+	option = {
+		name = "uu_government.3.g"
+		change_government = republic
+        add_government_reform = protectorate_parliament_reform
+	}
+	option = {
+		name = "uu_government.3.h"
+		change_government = republic
+        add_government_reform = cossacks_reform
+	}
+    option = {
+		name = "uu_government.3.i"
+        country_event = {
+            id = uu_government.1
+        }
+	}
+}
