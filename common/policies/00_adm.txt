@@ -1943,7 +1943,7 @@ peacetime_mercenary_recruitment = {
 		factor = 1
 	}
 }
-mercenary_resettlement_policy = {
+privatised_new_world_companies_policy = {
 	monarch_power = ADM
 	
 	potential = {
