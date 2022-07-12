@@ -8024,7 +8024,7 @@ estate_jains_exclusive_trade_rights = {
 }
 
 estate_burghers_control_over_monetary_policy = {
-	icon = privilege_give_money
+	icon = privilege_gold_mint
 	max_absolutism = -10
 	influence = 0.05
 	loyalty = 0.05
@@ -8056,7 +8056,7 @@ estate_burghers_control_over_monetary_policy = {
 }
 
 estate_vaisyas_control_over_monetary_policy = {
-	icon = privilege_give_money
+	icon = privilege_gold_mint
 	max_absolutism = -10
 	influence = 0.05
 	loyalty = 0.05
