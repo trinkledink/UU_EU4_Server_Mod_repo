@@ -1,0 +1,1517 @@
+#########################################################
+# Carthaginian Mission Tree
+#########################################################
+
+# Carthaginian Ibero-Berber Missions
+
+# The Berbers
+ctg_carthaginian_berber_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_expand_western_trade_routes = {
+		icon = mission_corsairs_of_the_north_sea
+		required_missions = {  }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = baleares_area
+				province_id = 338
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			338 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_western_mediterranean_trade_opportunities"
+				duration = 3650
+			}
+			
+			334 = {
+				if ={
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1751 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			catalonia_area = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			valencia_area = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			221 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+		
+		
+	}
+	
+	ctg_the_berber_question = {
+		icon = mission_reclaim_morocco
+		required_missions = { ctg_expand_western_trade_routes }
+		position = 2
+		
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						exists = ADU
+					}
+				}
+				
+				OR = {
+					AND = {
+						alliance_with = MOR
+						reverse_has_opinion = {
+							who = MOR
+							value = 100
+						}
+					}
+					is_rival = MOR
+					NOT = { exists = MOR }
+				}
+			}
+			
+			else = {
+				OR = {
+					AND = {
+						alliance_with = ADU
+						reverse_has_opinion = {
+							who = ADU
+							value = 100
+						}
+					}
+					is_rival = ADU
+				}
+			}
+
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_beyond_tyng"
+				duration = 3650
+			}
+		}
+	}
+	
+	ctg_plus_ultra_carthagena = {
+		icon = mission_retake_ceuta
+		required_missions = { ctg_the_berber_question }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 334 # Tangiers
+				province_id = 1749 # Cadiz
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				334 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				1749 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_carthaginian_new_world_discovery"
+				duration = 3650
+			}
+		}
+	}
+	
+	ctg_mapping_the_south = {
+		icon = mission_west_african_ports
+		required_missions = { ctg_plus_ultra_carthagena }
+		position = 4
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ctg_miss_discover_the_south
+				west_africa_coast_area = {
+					has_discovered = ROOT
+				}
+				
+				east_azbin_area = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			sahel_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				discover_country = ROOT
+			}
+			
+			niger_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				discover_country = ROOT
+			}
+			
+			guinea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				discover_country = ROOT
+			}
+		}
+	}
+}
+
+# Iberia
+ctg_carthaginian_iberian_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_reclaim_barcid_holdings = {
+		icon = mission_levantine_restoration
+		required_missions = { ctg_expand_western_trade_routes }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = catalonia_area
+				area = valencia_area
+				province_id = 221
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			221 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			aragon_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			toledo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			upper_andalucia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			lower_andalucia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_kingdom_of_barcid = {
+		icon = mission_empire
+		required_missions = { ctg_reclaim_barcid_holdings }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = aragon_area
+				area = valencia_area
+				area = catalonia_area
+				province_id = 221
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			221 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = { id = ctg_mission_events.1 }
+			custom_tooltip = ctg_kingdom_of_barcid_decision
+		}
+	}
+	
+	ctg_carthaginian_i_shpania = {
+		icon = mission_reclaim_andalucia
+		required_missions = { ctg_kingdom_of_barcid }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				region = iberia_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				country_or_non_sovereign_subject_holds = ROOT
+				region = iberia_region
+				value = 40
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_masters_of_the_bull"
+				duration = -1
+			}
+		}
+	}
+	
+	ctg_cross_atlantic_trade = {
+		icon = mission_the_triangle_trade
+		required_missions = { ctg_carthaginian_i_shpania ctg_mapping_the_south }
+		position = 5
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ctg_control_trade
+				1516 = { # Caribbean
+					trade_share = {
+						country = ROOT
+						share = 15
+					}
+				}
+		
+				1466 = { # Ivory Coast
+					trade_share = {
+						country = ROOT
+						share = 15
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_international_trade_network"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Carthaginian Internal Missions
+
+ctg_carthaginian_economic_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_an_economic_power = {
+		icon = develop_naples
+		required_missions = {  }
+		position = 1
+		
+		trigger = {
+			share_of_starting_income = 2
+			num_of_total_ports = 20
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_economic_power"
+				duration = 9125
+			}
+		}
+	}
+	
+	ctg_rebuild_the_maritime_centers = {
+		icon = mission_trade_with_cathay
+		required_missions = { ctg_an_economic_power }
+		position = 2
+		
+		trigger = {
+		AND = {
+			2954 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+			}
+			354 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+			}
+			125 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+			}
+			338 = {
+				owned_by = ROOT
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ctg_maritime_culture"
+				duration = 7300
+			}
+		}
+	}
+	
+	ctg_pearl_of_the_mediterranean = {
+		icon = africa_proconsulare
+		required_missions = { ctg_rebuild_the_maritime_centers }
+		position = 3
+		
+		trigger = {
+			341 = { # Province dev
+				owned_by = root
+				development = 40
+			}
+		}
+		
+		effect = {
+			341 = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					
+					add_center_of_trade_level = 1
+				}
+					
+				else = {
+					add_base_production = 4
+				}
+				
+				add_province_modifier = {
+					name = "ctg_pearl_of_mediterranean"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	ctg_rise_of_the_phoenix = {
+		icon = a_real_roman_empire
+		required_missions = { ctg_pearl_of_the_mediterranean ctg_roma_delenda_est }
+		position = 4
+		
+		trigger = {
+			341 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			118 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			221 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_phoenician_phoenix"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Carthaginian Eastern Missions
+
+# Eastern Mediterranean
+ctg_carthaginian_eastern_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_consolidate_italian_beachhead = {
+		icon = mission_seize_the_isles
+		required_missions = {  }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = western_sicily_area
+				area = sicily_area
+				area = corsica_sardinia_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			western_sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			
+			
+			naples_area = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			apulia_area = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			163 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			320 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+			
+			321 = {
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	ctg_eastern_trade_ports = {
+		icon = mission_early_game_buildings
+		required_missions = { ctg_consolidate_italian_beachhead }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 163
+				province_id = 320
+				province_id = 321
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT}
+		}
+		
+		trigger = {
+			163 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			320 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			321 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			delta_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			bahari_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_mediterranean_bread_basket = {
+		icon = mission_advance_to_the_arabian_sea
+		required_missions = { ctg_eastern_trade_ports }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = delta_area
+				area = bahari_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			bahari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			aleppo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			syria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			palestine_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			vostani_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+			
+			said_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_our_ancient_homeland = {
+		icon = mission_arabian_fort
+		required_missions = { ctg_mediterranean_bread_basket }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+					area = aleppo_area
+					area = syria_area
+					area = palestine_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_return_to_the_fertile_crescent"
+				duration = -1
+			}
+			add_prestige = 10
+		}
+	}
+}
+
+# Italy
+ctg_carthaginian_italian_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_push_into_italy = {
+		icon = king_of_naples
+		required_missions = { ctg_consolidate_italian_beachhead }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = naples_area 
+				area = calabria_area
+				area = apulia_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			lazio_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			central_italy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_roma_delenda_est = {
+		icon = mission_rule_italy
+		required_missions = { ctg_push_into_italy }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 118
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					exists = PAP
+				}
+				PAP = {
+					capital_scope = {
+						OR = {
+							controlled_by = ROOT
+							AND = {
+								controller = {
+									OR = {
+										is_subject_of = ROOT
+										alliance_with = ROOT
+										overlord = {
+											alliance_with = ROOT
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					118 = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		
+		effect = {
+			country_event = { id = ctg_mission_events.2 }
+			custom_tooltip = ctg_europe_hates_you
+			hidden_effect = {
+				every_known_country = {
+					limit = { religion = catholic }
+					add_opinion = { who = ROOT modifier = ctg_opinion_sack_of_rome }
+				}
+			}
+
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 40
+			}
+			add_prestige = 25
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			
+			tuscany_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_birthplace_of_the_renaissance = {
+		icon = tuscan_birthright
+		required_missions = { ctg_roma_delenda_est }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+				area = emilia_romagna_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ctg_birthplace_of_renaissance"
+				duration = 3650
+			}
+			
+			lombardy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			piedmont_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			liguria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ctg_gates_of_europe = {
+		icon = alpine_fortifications
+		required_missions = { ctg_birthplace_of_the_renaissance }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lombardy_area
+				area = piedmont_area
+				area = liguria_area
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			custom_tooltip = ctg_mountain_fortifications
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = piedmont_area
+							area = savoy_dauphine_area
+							area = provence_area
+							area = switzerland_area
+							area = romandie_area
+						}
+						has_building = fort_18th
+					}
+					add_province_modifier = {
+						name = mlo_expanded_fortifications
+						duration = 36500
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = piedmont_area
+							area = lombardy_area
+							area = liguria_area
+							area = po_valley_area
+							area = venetia_area
+						}
+					}
+					
+					if = {
+						limit = { has_building = fort_17th }
+						remove_building = fort_17th
+						add_building = fort_18th
+					}
+					
+					else_if = {
+						limit = { has_building = fort_16th }
+						remove_building = fort_16th
+						add_building = fort_17th
+					}
+					
+					else_if = {
+						limit = { has_building = fort_15th }
+						remove_building = fort_15th
+						add_building = fort_16th
+					}
+				}
+			}
+			
+			po_valley_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			venetia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+
+# Carthaginian Army Missions
+
+# Carthaginain Mercenary Missions
+
+carthaginian_mercenary_missions_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		NOT = { has_country_flag = ctg_professionalising_the_army }	#Default 
+	}
+	has_country_shield = yes
+	
+	ctg_a_nation_of_hirearms = {
+		icon = the_italian_league
+		required_missions = {  }
+		position = 5
+		
+		trigger = {
+		
+			treasury = 100
+			mil_power = 50
+		}
+		
+		effect = {
+		
+			add_treasury = -100
+			mil_power_cost = -50
+			
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			add_country_modifier = {
+				name = "ctg_a_nation_of_hirearms"
+				duration = -1
+			}
+		}
+	}
+	
+	ctg_veteran_mercenary_companies = {
+		icon = mercenary_companies
+		required_missions = { ctg_a_nation_of_hirearms }
+		position = 6
+		
+		trigger = {
+		
+			treasury = 250
+			mil_power = 100
+			NOT = { has_country_modifier = "ctg_recent_military_reforms" }
+		}
+		
+		effect = {
+		
+			add_treasury = -250
+			mil_power_cost = -100
+			
+			remove_country_modifier = ctg_a_nation_of_hirearms
+			
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			add_country_modifier = {
+				name = "ctg_veteran_mercenary_companies"
+				duration = -1
+			}
+		}
+	}
+	
+	ctg_mercenary_quality_standards = {
+		icon = swiss_mercenaries
+		required_missions = { ctg_veteran_mercenary_companies }
+		position = 7
+		
+		trigger = {
+		
+			treasury = 500
+			mil_power = 200
+			NOT = { has_country_modifier = "ctg_recent_military_reforms" }
+		}
+		
+		effect = {
+		
+			add_treasury = -500
+			mil_power_cost = -200
+			
+			remove_country_modifier = ctg_veteran_mercenary_companies
+			
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			add_country_modifier = {
+				name = "ctg_mercenary_quality_standards"
+				duration = -1
+			}
+		}
+	}
+}
+
+# Carthaginian Professional Army Missions
+
+ctg_carthaginian_professional_missions_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		has_country_flag = ctg_professionalising_the_army
+	}
+	has_country_shield = yes
+	
+	ctg_breaking_from_traditions = {
+		icon = military_self_reliance
+		required_missions = {  }
+		position = 5
+		
+		trigger = {
+			army_professionalism = 0.10
+			army_tradition = 40
+			army_size_percentage = 0.66
+			NOT = { has_country_modifier = "ctg_recent_military_reforms" }
+		}
+		
+		effect = {
+		
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			add_country_modifier = {
+				name = "ctg_breaking_from_carthaginian_traditions"
+				duration = -1
+			}
+		}
+	}
+	
+	ctg_new_recruitment_standards = {
+		icon = mission_assemble_an_army
+		required_missions = { ctg_breaking_from_traditions }
+		position = 6
+		
+		trigger = {
+			army_professionalism = 0.33
+			army_tradition = 50
+			army_size_percentage = 0.75
+			NOT = { has_country_modifier = "ctg_recent_military_reforms" }
+		}
+		
+		effect = {
+		
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			remove_country_modifier = ctg_breaking_from_carthaginian_traditions
+			
+			add_country_modifier = {
+				name = "ctg_carthaginian_recruitment_standards"
+				duration = -1
+			}
+		}
+	}
+	
+	ctg_lessons_from_the_punic_wars = {
+		icon = a_roman_empire
+		required_missions = { ctg_new_recruitment_standards }
+		position = 7
+		
+		trigger = {
+			army_professionalism = 0.50
+			army_tradition = 80
+			army_size_percentage = 1
+			NOT = { has_country_modifier = "ctg_recent_military_reforms" }
+		}
+		
+		effect = {
+		
+			add_country_modifier = {
+				name = "ctg_recent_military_reforms"
+				duration = 7300
+			}
+			
+			remove_country_modifier = ctg_carthaginian_recruitment_standards
+			
+			add_country_modifier = {
+				name = "ctg_lessons_from_the_punic_wars"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+#Custom Mercenary Companies Missions
+
+# Musketeer Company
+ctg_carthaginian_musketeer_mission_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = ctg_professionalising_the_army }
+		tag = CTG
+	}
+	has_country_shield = yes
+	
+	ctg_musketeer_company = {
+		icon = establish_the_musketeers
+		required_missions = { ctg_mercenary_quality_standards }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				region = france_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+					region = france_region
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = ctg_carthaginian_musketeers_company
+		}
+	}
+}
+
+# I Shpanian Company
+ctg_carthaginian_musketeer_mission_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		NOT = { has_country_flag = ctg_professionalising_the_army }
+	}
+	has_country_shield = yes
+	
+	ctg_ishpanian_company = {
+		icon = mission_cannons_firing
+		required_missions = { ctg_mercenary_quality_standards }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				region = iberia_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+					region = iberia_region
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = ctg_carthaginian_ishpanian_company
+		}
+	}
+}
+
+# Legionary Company
+ctg_carthaginian_musketeer_mission_slot = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		NOT = { has_country_flag = ctg_professionalising_the_army }
+	}
+	has_country_shield = yes
+	
+	ctg_legionary_company = {
+		icon = a_roman_empire
+		required_missions = { ctg_mercenary_quality_standards }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				region = italy_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = italy_region
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = ctg_carthaginian_legion_company
+		}
+	}
+}
+
+# Phalanx Company
+ctg_carthaginian_musketeer_mission_slot = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		NOT = { has_country_flag = ctg_professionalising_the_army }
+	}
+	has_country_shield = yes
+	
+	ctg_phalanx_company = {
+		icon = cross_the_pindus
+		required_missions = { ctg_mercenary_quality_standards }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				region = balkan_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+					region = balkan_region
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = ctg_carthaginian_phalanx_company
+		}
+	}
+}
+
+# Immortals Company
+ctg_carthaginian_musketeer_mission_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = CTG
+		NOT = { has_country_flag = ctg_professionalising_the_army }
+	}
+	has_country_shield = yes
+	
+	ctg_immortals_company = {
+		icon = mission_central_asian_city
+		required_missions = { ctg_mercenary_quality_standards }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+			}
+			
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+					region = persia_region
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = ctg_carthaginian_immortals_company
+		}
+	}
+}

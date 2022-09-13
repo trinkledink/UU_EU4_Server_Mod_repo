@@ -1,0 +1,344 @@
+namespace = UU_balance_events
+
+country_event = {
+	id = UU_balance_events.3
+	title = muslim_school_events.20.t
+	desc = "mjl_events.EVTDESC5"
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = muslim_school_events.20.b
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanafi_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.c
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanbali_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.dd
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = maliki_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.e
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = shafii_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.f
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.g
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = ismaili_school
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+	option = {
+		name = muslim_school_events.20.h
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = zaidi_school 
+		}
+		hidden_effect = {
+			export_to_variable = {
+				which = change_school_modifier_was_set_year
+				value = trigger_value:is_year
+			}
+			export_to_variable = {
+				which = change_school_modifier_was_set_month
+				value = trigger_value:is_month
+			}
+			set_variable = {
+				which = change_school_modifier_length
+				value = 25
+			}
+			change_variable = {
+				which = change_school_modifier_length
+				which = change_school_modifier_was_set_year
+			}
+		}
+		add_country_modifier = {
+			name = change_school_modifier
+			duration = 9125
+			hidden = yes
+		}
+		clr_country_flag = mjl_1444_change_school
+	}
+}
+country_event = {
+	id = UU_balance_events.1
+	title = UU_el_dorado_found
+	desc = "UU_balance_events.1.DESC"
+	picture = INCAN_GODS_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searching_for_el_dorado
+		capital_scope = {
+			continent = south_america
+		}
+	}
+	mean_time_to_happen = {
+		months = 600
+	}
+	immediate = {
+		every_country = {
+			limit = { 
+				has_country_modifier = is_searching_el_dorado
+			}
+			remove_country_modifier = is_searching_el_dorado
+		}
+	}
+	option = {
+		name = "UU_balance_events.1a"
+		add_prestige = 100
+		add_splendor = 50
+		random_province = {
+			Limit = {	
+				continent = south_america
+			}
+			change_trade_goods = gold
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 1
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+				add_center_of_trade_level = 1
+			}
+			else_if = {
+				limit = {
+					NOT = { province_has_center_of_trade_of_level = 1 }
+				}
+				center_of_trade = 1
+			}
+			else = {
+				add_base_production = 2
+			}
+			add_permanent_province_modifier = {
+				name = "U.U_el_dorado"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = UU_balance_events.2
+	title = UU_colombia_1
+	desc = "UU_balance_events.2.DESC"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1550
+		tag = COL
+	}
+	mean_time_to_happen = {
+		months = 150
+	}
+	immediate = {
+		ROOT = {
+			set_country_flag = colombian_events
+		}
+	}
+	option = {
+		name = "UU_balance_events.2a"
+		add_stability = -1
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 2
+			}
+		}
+	}
+}

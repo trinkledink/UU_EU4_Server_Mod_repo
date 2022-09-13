@@ -401,7 +401,7 @@ alerts = {
 		category = MEDIUM
 	}
 	enemy_invasion_imminent = {
-		category = HIGH
+		category = MEDIUM
 	}
 	merchant_idle = {
 		category = LOW
@@ -422,7 +422,7 @@ alerts = {
 		category = MEDIUM
 	}
 	hostile_siege = {
-		category = HIGH
+		category = MEDIUM
 	}
 	army_avoiding_strong_rebels = {
 		category = MEDIUM

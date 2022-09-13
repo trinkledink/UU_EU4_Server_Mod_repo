@@ -1,0 +1,134 @@
+socialreformer = {
+	monarch_power = ADM
+	
+	# Bonus
+	monthly_reform_progress = 0.15
+	
+		skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+		}
+	}	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				NOT = { has_country_flag = fin_fine_finances_flag } 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_country_flag = fin_fine_finances_flag } 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { meritocracy = 0.25 }
+	}
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+propagandist = {
+	monarch_power = DIP
+	
+	# Bonus
+	ae_impact = -0.1
+	
+		skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { meritocracy = 0.25 }
+	}
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+######################################################
+nationalhero = {
+	monarch_power = DIP
+	
+	# Bonus
+	war_exhaustion = -0.05
+	
+		skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { meritocracy = 0.25 }
+	}
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
