@@ -43,9 +43,6 @@ age_of_discovery = {
 
 		}
 		
-		
-		
-	
 		obj_5_centers_of_trade = {
 			calc_true_if = {
 				all_owned_province = {
@@ -63,8 +60,10 @@ age_of_discovery = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
 					development_discounting_tribal = 30
 				}
 			}
@@ -75,10 +74,7 @@ age_of_discovery = {
 	 			renaissance = 100
 	 		}
 		}
-		
-		
 		obj_many_vassals = {
-
 			num_of_subjects = 4
 		}		
 	
@@ -90,7 +86,6 @@ age_of_discovery = {
 				}
 			}
 		}
-	
 		obj_humiliate_rival = {
 			custom_trigger_tooltip = {
 				tooltip = obj_humiliate_rival_tooltip
@@ -99,9 +94,10 @@ age_of_discovery = {
 					has_country_flag = U.U_humiliated_rival
 				}
 			}
-		}
-	}		
-	
+
+		}		
+	}
+
 
 	
 	
@@ -129,7 +125,7 @@ age_of_discovery = {
 
 		ab_transfer_vassal_wargoal = 
 		{
-			rule = {
+			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
 			}
@@ -157,7 +153,7 @@ age_of_discovery = {
 			}
 		}
 		ab_colony_boost_development = {
-			rule = {
+			modifier = {
 				can_colony_boost_development = yes
 			}
 			ai_will_do = {
@@ -170,7 +166,7 @@ age_of_discovery = {
 		}
 		
 		ab_attack_bonus_in_capital_terrain = {
-			rule = {
+			modifier = {
 				attack_bonus_in_capital_terrain = yes
 			}
 			ai_will_do = {
@@ -235,16 +231,16 @@ age_of_discovery = {
 			}
 		}
 		ab_timur_legacy = {
-			allow = {
-				tag = TIM
-			}
-			modifier = {
-				legitimacy = 5
-				vassal_income = 0.5
-				vassal_forcelimit_bonus = 1
-				reduced_liberty_desire = 50
-			}
-		}
+            allow = {
+                tag = TIM
+            }
+            modifier = {
+                legitimacy = 5
+                vassal_income = 0.5
+                vassal_forcelimit_bonus = 1
+                reduced_liberty_desire = 50
+            }
+        }
 	}
 }
 
@@ -314,9 +310,7 @@ age_of_reformation = {
 					trade_goods = tea 
 					value = yes
 				} 
-			} 
-		
-		
+			}
 		}
 		
 		obj_unify_culture = {	
@@ -328,9 +322,7 @@ age_of_reformation = {
 		}
 	}	
 	
-	
 	abilities = {
-	
 		ab_allow_religion_enforced = {
 			effect = {
 				custom_tooltip = religion_enforced_edict
@@ -460,7 +452,7 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-	
+
 	}
 }
 
@@ -510,6 +502,7 @@ age_of_absolutism = {
 		
 		obj_emperor_of_china = {
 			army_professionalism = 0.80
+		
 		}
 		
 		obj_cultures_accepted = {
@@ -643,6 +636,18 @@ age_of_absolutism = {
 					tag = QNG
 				}
 			}
+
+			effect = {
+				if = {
+					limit = {
+						NOT = { primary_culture = manchu }
+						NOT = { primary_culture = manchu_new }
+						NOT = { has_government_attribute = allow_banners }
+					}
+					custom_tooltip = ab_manchu_banner_tt
+				}
+			}
+
 			modifier = {
 				amount_of_banners = 0.5
 			}
@@ -734,17 +739,17 @@ age_of_revolutions = {
 
 		ab_napoleonic_warfare = {
 			modifier = {
-				artillery_bonus_vs_fort = 3
+				artillery_levels_available_vs_fort = 3
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
 			}
 		}
 		
 
 		
 		ab_force_march = {
-			rule = {
+			modifier = {
 				force_march_free = yes
 			}
 			ai_will_do = {
@@ -760,11 +765,21 @@ age_of_revolutions = {
 			}
 		}
 		ab_no_distance_for_core = {
-			rule = {
+			modifier = {
 				ignore_coring_distance = yes
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
 			}
 		}
 		
@@ -773,7 +788,7 @@ age_of_revolutions = {
 				backrow_artillery_damage = 0.20
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
 			}
 		}
 		ab_same_contine_lib_desire = {
@@ -835,6 +850,7 @@ age_of_revolutions = {
 					tag = HAB
 					tag = HLR
 					tag = AUH
+
 				}
 			}
 			modifier = {

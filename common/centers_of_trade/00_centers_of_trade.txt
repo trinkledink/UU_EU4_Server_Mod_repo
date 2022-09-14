@@ -30,7 +30,7 @@ world_port = {
         local_development_cost = -0.1
         local_sailors_modifier = 1
         allowed_num_of_buildings = 1
-		local_institution_spread = 0.3
+		local_institution_spread = 0.3								
     }
     global_modifiers = {
         navy_tradition_decay = -0.002

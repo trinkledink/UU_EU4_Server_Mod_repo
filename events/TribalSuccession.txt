@@ -10,7 +10,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		always = no
+		always = no	 
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
@@ -82,10 +82,16 @@ country_event = {
 		trigger = {
 			has_regency = yes
 		}
+		if = {
+			limit = {
+				has_consort_regency = yes
+			}
+			remove_consort = yes
+		}
 		define_ruler = {
 			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_horde_unity = -25
 	}
 }

@@ -27,3 +27,5 @@ U.U_el_dorado = {
 player_uncon_diplomat_modifier = {
 	diplomats = 1
 }
+
+

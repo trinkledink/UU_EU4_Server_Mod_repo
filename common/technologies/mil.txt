@@ -706,7 +706,9 @@ technology = {
 	}
 	
 	#Light Infantry Companies
+
 	#sprite_level = 4				#UU Removed
+
 
 	land_morale			=	1.0
 

@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = TUR }
 			NOT = { exists = RUM }
 			NOT = { tag = HLR }
@@ -64,7 +68,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUM
-			swap_non_generic_missions = yes
+			restore_country_name = yes
 			RUM = {
 				if = {
 					limit = {
@@ -102,6 +106,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = formed_rum_flag
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
