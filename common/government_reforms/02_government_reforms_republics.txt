@@ -482,11 +482,11 @@ military_dictatorship_reform = {
 		global_autonomy = -0.075
 		land_morale = 0.1
 		governing_capacity_modifier = -0.5
+		max_absolutism = 30
 	}
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		militarised_society = yes
-		max_absolutism = 30
 	}
 	custom_attributes = {
 		generals_become_rulers = yes
