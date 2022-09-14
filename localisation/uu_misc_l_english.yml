@@ -11,9 +11,9 @@
  advisor_events_title:0 "Advisor Events"
  U.U_search_for_el_dorado_title:0 "Start the search for El Dorado"
  peruvian_theocarcy:0 "Peruvian Theocracy"
- u.u_el_dorado_found:0 "The Golden City"
- u.u_balance_events.1a:0 "The search is finally over."
- u.u_balance_events.1.DESC:0 "After years of conflict around the search for the legendary city of El Dorado, words has reached us from our bravest Conquistadors that the city of gold is a myth no more."
+ UU_el_dorado_found:0 "The Golden City"
+ UU_balance_events.1a:0 "The search is finally over."
+ UU_balance_events.1.DESC:0 "After years of conflict around the search for the legendary city of El Dorado, words has reached us from our bravest Conquistadors that the city of gold is a myth no more."
  U.U_el_dorado:0 "El Dorado"
  ctg_nation_title:0 "Reform Carthage"
  ctg_nation_desc:0 "It's time we lead our people into the prosperous times of our once glorious past and abandon this uncivilized pirating."
@@ -41,3 +41,5 @@
  ctg_italian_legion:0 "Italian Legion Company"
  ctg_phalanx_company:0 "Greek Phalanx Company"
  ctg_immortals_company:0 "Persian Immortals Company"
+ ab_timur_legacy:0 "Timur's Legacy"
+

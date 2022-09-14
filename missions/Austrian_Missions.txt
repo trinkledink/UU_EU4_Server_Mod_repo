@@ -100,6 +100,9 @@ hab_holy_roman_ambitions = {
 				duration = 5475 #15 years
 			}
 		}
+		ai_weight = {
+			factor = 500	#Austria should ALWAYS want to be the Emperor
+		}
 	}
 	subjugate_bohemia = {
 		icon = mission_empire
@@ -117,9 +120,6 @@ hab_holy_roman_ambitions = {
 					}
 				}
 			}
-		}
-		ai_priority = {
-			factor = 2
 		}
 		
 		provinces_to_highlight = {
@@ -174,6 +174,9 @@ hab_holy_roman_ambitions = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest (though they got the crown not through war, but marriages are a little bit too mysterious and complex for the AI)
+		}
 	}
 	recover_silesia = {
 		icon = mission_unite_home_region
@@ -181,9 +184,6 @@ hab_holy_roman_ambitions = {
 		completed_by = 1620.11.8
 		ai_weight = {
 			factor = 2
-		}
-		ai_priority = {
-			factor = 1.5
 		}
 		trigger = {
 			silesia_area = {
@@ -232,6 +232,9 @@ hab_holy_roman_ambitions = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical conquest
 		}
 	}
 	partition_poland = { #Conquer Galicia
@@ -345,6 +348,9 @@ hab_holy_roman_ambitions = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 }
 
@@ -417,6 +423,9 @@ hab_protect_the_balkans = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 	austrian_hungary = {
 		icon = mission_monarch_in_throne_room
@@ -424,7 +433,7 @@ hab_protect_the_balkans = {
 		position = 4
 		completed_by = 1490.1.1
 		ai_weight = {
-			factor = 3
+			factor = 500
 			modifier = {
 				factor = 2
 				slovakia_area = {
@@ -437,9 +446,6 @@ hab_protect_the_balkans = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-		}
-		ai_priority = {
-			factor = 2
 		}
 		
 		provinces_to_highlight = {
@@ -507,7 +513,7 @@ hab_protect_the_balkans = {
 		completed_by = 1526.8.30
 		
 		ai_weight = {
-			factor = 1
+			factor = 500
 			modifier = {
 				factor = 2
 				east_adriatic_coast_area = {
@@ -547,8 +553,8 @@ hab_protect_the_balkans = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			num_of_owned_provinces_with = { #the idea is that you integrate Hungary before making futher conquests in the Balkans
-				value = 7
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
 				OR = {
 					area = east_adriatic_coast_area
 					area = croatia_area
@@ -592,7 +598,7 @@ hab_protect_the_balkans = {
 		required_missions = { austrian_croatia }
 		completed_by = 1699.1.26
 		ai_weight = {
-			factor = 2
+			factor = 500
 			modifier = {
 				factor = 2
 				southern_transylvania_area = {
@@ -606,9 +612,7 @@ hab_protect_the_balkans = {
 				}
 			}
 		}
-		ai_priority = {
-			factor = 2
-		}
+
 		provinces_to_highlight = {
 			OR = {
 				area = southern_transylvania_area
@@ -627,6 +631,9 @@ hab_protect_the_balkans = {
 			}
 		}
 		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_orthodox_tolerance
+			}
 			wallachia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -666,7 +673,7 @@ hab_italian_ambitions = {
 		completed_by = 1797.10.17
 		
 		ai_weight = {
-			factor = 3
+			factor = 500
 			modifier = {
 				factor = 0.5
 				venetia_area = {
@@ -680,9 +687,6 @@ hab_italian_ambitions = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-		}
-		ai_priority = {
-			factor = 5
 		}
 		
 		required_missions = { austrian_croatia }

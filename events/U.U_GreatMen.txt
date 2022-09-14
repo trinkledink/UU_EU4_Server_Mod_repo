@@ -69,7 +69,7 @@ country_event = {
 		trigger = {
 			has_country_flag = elb_beacon_of_progress_flag
 		}
-		major = yes
+
 		random_owned_province = {
 			add_base_manpower = 3
 			add_base_production = 3
@@ -149,7 +149,7 @@ country_event = {
 		trigger = {
 			has_country_flag = elb_beacon_of_progress_flag
 		}
-		major = yes
+
 		random_owned_province = {
 			add_base_manpower = 3
 			add_base_production = 3
@@ -241,7 +241,7 @@ country_event = {
 		trigger = {
 			has_country_flag = elb_beacon_of_progress_flag
 		}
-		major = yes
+
 		random_owned_province = {
 			add_base_manpower = 3
 			add_base_production = 3

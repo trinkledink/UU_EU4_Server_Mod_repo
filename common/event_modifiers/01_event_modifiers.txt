@@ -23,3 +23,9 @@ U.U_el_dorado = {
 	monthly_splendor = 3
 	prestige_decay = -0.01	
 }
+#DEBUG player uncon diplomat
+player_uncon_diplomat_modifier = {
+	diplomats = 1
+}
+
+

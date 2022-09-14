@@ -70,9 +70,16 @@ country_event = {
 		change_personal_deity = surya
 	}
 
-	# Surya
+	# Buddha
 	option = {
 		name = "hindu_events.1.h"
+		trigger = {
+			OR = {
+				mission_completed = mnd_maj_candi_shrines
+				mission_completed = sun_candi_temples
+				mission_completed = mnd_khm_religion
+			}
+		}
 		change_personal_deity = buddha
 	}
 	
@@ -112,7 +119,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -1199,7 +1206,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1500
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -2149,9 +2156,9 @@ country_event = {
 		name = "hindu_events.48.a"
 		define_heir = {
 			dynasty = "Suryavansha"
-			ADM = 4
-			DIP = 4
-			MIL = 4
+			change_adm = 4
+			change_dip = 4
+			change_mil = 4
 			claim = 20
 		}
 		add_prestige = 10
@@ -2189,7 +2196,7 @@ country_event = {
 
 	option = {
 		name = "hindu_events.49.a"
-		create_general = { tradition = -30 }
+		create_general = { tradition = 0 }
 		add_prestige = 10
 	}
 

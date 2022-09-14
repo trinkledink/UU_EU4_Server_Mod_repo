@@ -1,7 +1,7 @@
-namespace = u.u_balance_events
+namespace = UU_balance_events
 
 country_event = {
-	id = u.u_balance_events.3
+	id = UU_balance_events.3
 	title = muslim_school_events.20.t
 	desc = "mjl_events.EVTDESC5"
 	picture = MYSTIC_IN_PRAYER_eventPicture
@@ -248,9 +248,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = u.u_balance_events.1
-	title = u.u_el_dorado_found
-	desc = "u.u_balance_events.1.DESC"
+	id = UU_balance_events.1
+	title = UU_el_dorado_found
+	desc = "UU_balance_events.1.DESC"
 	picture = INCAN_GODS_eventPicture
 	
 	major = yes
@@ -274,7 +274,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "u.u_balance_events.1a"
+		name = "UU_balance_events.1a"
 		add_prestige = 100
 		add_splendor = 50
 		random_province = {
@@ -306,15 +306,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = u.u_balance_events.2
-	title = u.u_colombia_1
-	desc = "u.u_balance_events.2.DESC"
+	id = UU_balance_events.2
+	title = UU_colombia_1
+	desc = "UU_balance_events.2.DESC"
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
-		year = 1550
+		is_year = 1550
 		tag = COL
 	}
 	mean_time_to_happen = {
@@ -326,7 +326,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "u.u_balance_events.2a"
+		name = "UU_balance_events.2a"
 		add_stability = -1
 		random_owned_province = {
 			spawn_rebels = {

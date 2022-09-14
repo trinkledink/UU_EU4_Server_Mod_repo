@@ -419,6 +419,7 @@
  empire_of_china_nomadic_border_events.2.db:0 "The Empire of China is lost. The general ruin of our once mighty nation has made any concerns our people once had about the nomadic border a distant memory."
  empire_of_china_nomadic_border_events.2.a:0 "It is the will of the Heavens."
  empire_of_china_nomadic_border:0 "Unguarded Nomadic Frontier"
+ empire_of_china_nomadic_border_tt:0 "Is a §YHorde§! and has §Y300§! own and non-tributary subject total development"                                                                                                                        
  eoc_nomadic_border_tooltip:0 "Total Development at least §Y300§!"
  shogunate_mechanic_explanation:0 "§MA country can take over the Shogunate, and become the overlord of all Daimyo Subjects, by taking the province of Kyoto.§!"
  wokou_pirate_stronghold_indifferent:0 "Pirate Stronghold"

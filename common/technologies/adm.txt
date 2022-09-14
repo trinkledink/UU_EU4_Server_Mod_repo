@@ -195,7 +195,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.05								 
 }
 
 technology = { #Scientific Experimentation
@@ -257,7 +257,7 @@ technology = { #University
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	development_cost_modifier = -0.1
 }
 
 technology = { #National Sovereignty
@@ -287,7 +287,7 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.05								 
 }
 
 technology = { #Absolute Rulership
@@ -319,7 +319,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.05								 
 	furnace = yes
 }
 
@@ -338,7 +338,6 @@ technology = { #The Constitution
 	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
-
 }
 
 technology = { #Measuring the World
@@ -354,7 +353,8 @@ technology = { #Measuring the World
 	}
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	development_cost_modifier = -0.1
+
 }
 
 technology = { #Bonds and Tontines
@@ -389,7 +389,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05
+	administrative_efficiency = 0.05							 
 }
 
 technology = { #Separation of Powers
@@ -422,7 +422,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1	
+	development_cost_modifier = -0.1	
 	governing_capacity = 250
 }
 

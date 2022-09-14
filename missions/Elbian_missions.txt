@@ -300,6 +300,7 @@ UU_elbian_conquest = {
 			}
 			add_stability_or_adm_power = yes
 		}
+		
 		hidden_effect = {
 			every_core_province = {	
 				limit = {

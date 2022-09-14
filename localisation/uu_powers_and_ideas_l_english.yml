@@ -271,7 +271,7 @@
  col_proud_latin_american_desc:0 " "
  
  BRZ_ideas:0 "Brazilian Ideas"
- BRZ_ideas_:start:0 "Brazilian Traditions"
+ BRZ_ideas_start:0 "Brazilian Traditions"
  BRZ_ideas_bonus:0 "Brazilian Ambition"
  brz_plantations:0 "Brazilian Plantations"
  brz_plantations_desc:0 " "
@@ -289,7 +289,7 @@
  brz_conscription_desc:0 " "
  
  LAP_ideas:0 "La Plata Ideas"
- LAP_ideas_:start:0 "La Plata Traditions"
+ LAP_ideas_start:0 "La Plata Traditions"
  LAP_ideas_bonus:0 "La Plata Ambition"
  lap_rich_plains:0 "Rich Plains"
  lap_rich_plains_desc:0 " "

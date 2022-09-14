@@ -48,47 +48,55 @@ ctg_carthaginian_berber_missions = {
 			}
 			
 			334 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
+
+				if ={
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
-			
 			1751 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 			
 			catalonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			
 			valencia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 			
 			221 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+				add_permanent_claim = ROOT
 				}
-				add_claim = ROOT
 			}
 		}
-		
-		
 	}
 	
 	ctg_the_berber_question = {
@@ -439,28 +447,25 @@ ctg_carthaginian_economic_missions = {
 		position = 2
 		
 		trigger = {
-			2954 = {
-				country = ROOT
-				province_has_center_of_trade_of_level = 2
+			AND = {
+				2954 = {
+					owned_by = ROOT
+					province_has_center_of_trade_of_level = 2
+				}
+				354 = {
+					owned_by = ROOT
+					province_has_center_of_trade_of_level = 2
+				}
+				125 = {
+					owned_by = ROOT
+					province_has_center_of_trade_of_level = 2
+				}
+				338 = {
+					owned_by = ROOT
+					province_has_center_of_trade_of_level = 2
+				}
 			}
-			
-			354 = {
-				country = ROOT
-				province_has_center_of_trade_of_level = 2
-			}
-			
-			125 = {
-				country = ROOT
-				province_has_center_of_trade_of_level = 2
-			}
-			
-			338 = {
-				country = ROOT
-				province_has_center_of_trade_of_level = 2
-			}
-			
 		}
-		
 		effect = {
 			add_country_modifier = {
 				name = "ctg_maritime_culture"
@@ -579,52 +584,65 @@ ctg_carthaginian_eastern_missions = {
 		}
 		
 		effect = {
+
 			calabria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
-			}
+				}
+			
 			
 			naples_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 			
 			apulia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 			
 			163 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 			
 			320 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 			
 			321 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
+				if = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
 				add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -783,7 +801,7 @@ ctg_carthaginian_eastern_missions = {
 				name = "ctg_return_to_the_fertile_crescent"
 				duration = -1
 			}
-			prestige = 10
+			add_prestige = 10
 		}
 	}
 }
@@ -1340,7 +1358,9 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # I Shpanian Company
-ctg_carthaginian_musketeer_mission_slot = {
+
+ctg_carthaginian_ishpanian_mission_slot = {
+
 	slot = 2
 	generic = no
 	ai = yes
@@ -1380,7 +1400,9 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Legionary Company
-ctg_carthaginian_musketeer_mission_slot = {
+
+ctg_carthaginian_legionary_mission_slot = {
+
 	slot = 3
 	generic = no
 	ai = yes
@@ -1420,7 +1442,9 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Phalanx Company
-ctg_carthaginian_musketeer_mission_slot = {
+
+ctg_carthaginian_phalanx_mission_slot = {
+
 	slot = 4
 	generic = no
 	ai = yes
@@ -1460,7 +1484,9 @@ ctg_carthaginian_musketeer_mission_slot = {
 }
 
 # Immortals Company
-ctg_carthaginian_musketeer_mission_slot = {
+
+ctg_carthaginian_immortals_mission_slot = {
+
 	slot = 5
 	generic = no
 	ai = yes

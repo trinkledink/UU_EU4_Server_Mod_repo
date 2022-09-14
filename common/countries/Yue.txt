@@ -322,11 +322,12 @@ monarch_names = {
 }
 
 leader_names = {
-	Chu Ng Cheng Chow Li Lau Kwok Yeung Wong Chin Ma Meng Ko 
-	Chan Suen Siow Yau Chow Bai Yau Tang Lo Tsui Cheung 
-	Fong Fa Gu Fei Fu Hu Mei Siet Liew Kam Ye He Lam Tu Fong Mok Ho 
-	Kong Si Pan Zuo Ding Yim Tang Luo Yuen Ruan	Ngau Zeng
-	Dong Lin Shen Choi Dai Keung Yueh Hung Chui
+	Zhu Wu Geng Shang Zheng Zhao Li Shi Liu Guo Yang Wang Qian Ma Meng Gao 
+	Chen Sun Sima Cao Xiao Qi Zu Zhou Huang Bai Qiu Tang Lu	Xu Chang 
+	Feng Deng Hua Gu Fei Fu Hu Mei Xue Liao Jin Ye He Lan Du Fang Mao Hao 
+	Kong Jiao Si Pan Zuo Ding Bao Yan Tan Han Luo Xie Yuan Qin Ruan	Niu Zeng
+	Dong Lin Shen Ouyang Su Yu Ren Chai Xia Mo Dai Jiang Yue Jia Xiong Cui
+	"Ou'yang" "Huangfu" "Dongfang" "Linghu"
 }
 
 ship_names = {

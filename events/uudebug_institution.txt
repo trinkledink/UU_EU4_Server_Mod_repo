@@ -1,0 +1,96 @@
+namespace = uu_institution
+
+country_event = {
+	id = uu_institution.1
+	title = "uu_institution.1.t"
+	desc = "uu_institution.1.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "uu_institution.1.a"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.b"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = renaissance
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.c"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = new_world_i
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.d"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = printing_press
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.e"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = global_trade
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.f"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = manufactories
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.g"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = enlightenment
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.h"
+		every_owned_province = { 
+			limit =	{ is_state_core = ROOT }
+			add_institution_embracement = {
+				which = industrialization
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "uu_institution.1.i"
+	}
+}
+
+

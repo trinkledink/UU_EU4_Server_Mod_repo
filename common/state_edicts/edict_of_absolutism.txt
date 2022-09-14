@@ -14,8 +14,7 @@ edict_of_absolutism = {
 	}
 	
 	modifier = {
-	
-		local_monthly_devastation = -1.0
+		local_monthly_devastation = -1
 	}
 	
 	color = {  135 112 9  }

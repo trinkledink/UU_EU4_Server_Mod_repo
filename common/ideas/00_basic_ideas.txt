@@ -13,6 +13,7 @@ aristocracy_ideas = {
 	bonus = {
 		leader_siege = 1
 		nobles_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -25,8 +26,7 @@ aristocracy_ideas = {
 	
 	noble_knights = {
 		cavalry_power = 0.15
-		cavalry_cost = -0.15
-		has_government_attribute = enables_aristocratic_idea_group
+		cavalry_cost = -0.20
 	}
 	
 	military_traditions = {
@@ -38,7 +38,8 @@ aristocracy_ideas = {
 		max_absolutism = 5
 	}
 	serfdom = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.15
+		development_cost = -0.05
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -80,7 +81,7 @@ plutocracy_ideas = {
 	}
 
 	tradition_of_payment = {
-		mercenary_manpower = 0.33
+		mercenary_manpower = 0.25		##UU changed because of merc ideas
 		mercenary_discipline = 0.05
 	}
 	abolished_serfdom = {
@@ -114,6 +115,7 @@ horde_gov_ideas = {
 	
 	bonus = {
 		cavalry_power = 0.25
+		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	
 	trigger = {
@@ -122,6 +124,7 @@ horde_gov_ideas = {
 	
 	horse_lords = {
 		cavalry_cost = -0.33
+		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
 		ae_impact = -0.1
@@ -163,7 +166,8 @@ theocracy_gov_ideas = {
 	}
 	servants_of_god = {
 		devotion = 1
-		legitimacy	= 0.5	
+		legitimacy = 0.5
+		development_cost = -0.05
 	}
 	by_the_grace_of_god = {
 		fire_damage_received = -0.1
@@ -182,7 +186,7 @@ theocracy_gov_ideas = {
 		global_unrest = -2
 	}
 	martyrs = {
-		manpower_in_true_faith_provinces = 0.2
+		manpower_in_true_faith_provinces = 0.20
 	}
 	ai_will_do = {
 		factor = 1.9
@@ -218,7 +222,7 @@ indigenous_ideas = {
 		land_morale = 0.10
 	}
 	indigenous_controlled_burns = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.15
 	}
 	indigenous_trade_with_foreigners = {
 		idea_cost = -0.1
@@ -261,6 +265,7 @@ innovativeness_ideas = {
 	formalized_officer_corps = {
 		leader_cost = -0.2
 	}
+
 
 	ai_will_do = {
 		factor = 0.3
@@ -313,11 +318,12 @@ religious_ideas = {
 	}
 	religious_tradition = {
 		prestige = 1
-		legitimacy = 1
+		legitimacy = 1				
 	}
 	inquisition = {
 		missionary_maintenance_cost = -0.5
-		max_absolutism = 10
+		prestige_per_development_from_conversion = 0.1
+		max_absolutism = 10		
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -337,8 +343,9 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		rebel_support_efficiency = 0.50
-		advisor_pool = 2
+		rebel_support_efficiency = 1
+		advisor_pool = 2			##UU Added
+		discovered_relations_impact = -1
 	}
 	
 	efficient_spies = {
@@ -354,28 +361,30 @@ spy_ideas = {
 	claim_fabrication = {
 		fabricate_claims_cost = -0.25
 		can_fabricate_for_vassals = yes
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.05 	##UU Added
 	}
 	
 	agent_training = {
 		diplomats = 1
-		envoy_travel_time = -0.33		
-		advisor_cost = -0.10
+		envoy_travel_time = -0.33			##UU Added
+		advisor_cost = -0.15
 	}
 
 	vetting = {
 		global_spy_defence = 0.33
-		mercantilism_cost = -0.33
+		yearly_corruption = -0.2
+
 	}
 	
 	privateers = {
-		embargo_efficiency = 0.25
+		capture_ship_chance = 0.25
 		privateer_efficiency = 0.33
 		naval_forcelimit_modifier = 0.15
 	}
-	audit_checks = {
-		yearly_corruption = -0.1
-		monthly_reform_progress = 0.15
+	
+	blackmailing = {
+		monthly_favor_modifier = 0.33
+		accept_vassalization_reasons = 15
 	}
 
 	ai_will_do = {
@@ -384,54 +393,60 @@ spy_ideas = {
 
 }
 
-#diplomatic_ideas = {
-	#category = DIP
-	#bonus = {
+
+diplomatic_ideas = {
+	category = DIP
+	bonus = {
 		#reduced_stab_impacts = yes
-	#}
+	}
+	
+	trigger = {
+		always = no
+	}
 
 	#foreign_embassies = {
-		#diplomats = 1
-#	}
-	#cabinet = {
-#		diplomatic_upkeep = 1
-#	}
-	#grand_banquets = {
-#		diplomats = 1
-#	}
-#	benign_diplomats = {
-#		improve_relation_modifier = 0.25
-#	}
-#	experienced_diplomats  = {
-	#	diplomatic_reputation = 2
-#	}
-#	flexible_negotiation = {
-#		province_warscore_cost = -0.2
-#	}
-#	diplomatic_corps = {
-#		dip_tech_cost_modifier = -0.1
-#	}
+		diplomats = 1
+	}
+	cabinet = {
+		diplomatic_upkeep = 1
+	}
+		grand_banquets = {
+		diplomats = 1
+	}
+	benign_diplomats = {
+		improve_relation_modifier = 0.25
+	}
+	experienced_diplomats  = {
+		diplomatic_reputation = 2
+	}
+	flexible_negotiation = {
+		province_warscore_cost = -0.2
+	}
+	diplomatic_corps = {
+		dip_tech_cost_modifier = -0.1
+	}
 
-	#ai_will_do = {
-#		factor = 0.67
+	ai_will_do = {
+		factor = 0.67
 
-#		modifier = {
-#			factor = 2
-	#		is_emperor = yes
-	#	}
-#		modifier = {
-	#		factor = 1.5
-	#		vassal = 2
-	#	}
-#	}
-#}
+		modifier = {
+			factor = 2
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 1.5
+			vassal = 2
+   
+		}
+	}
+}
 
 
 offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.15
+		recover_army_morale_speed = 0.1	##UU Added
 	}
 
 	bayonet_leaders = {
@@ -450,7 +465,8 @@ offensive_ideas = {
 		siege_ability = 0.20
 	}
 	grand_army = {
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.15
+		special_unit_forcelimit = 0.1
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
@@ -466,35 +482,69 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		hostile_attrition = 1.5
+		hostile_attrition = 1
+		max_hostile_attrition = 1.5		##UU increased from 1
 	}
 
 	battlefield_commisions = {
 		army_tradition_from_battle = 1.0
 	}
 	military_drill = {
-		land_morale = 0.15
+		shock_damage_received = -0.15	##UU Added
 	}
 	improved_manuever = {
-		leader_land_manuever = 1
-		drill_decay_modifier = -0.1
-	}
-	regimental_system = {
-		land_maintenance_modifier = -0.05
-		supply_limit_modifier = 0.2
+		leader_land_manuever = 2
 	}
 	defensive_mentality = {
-		defensiveness = 0.3
-		fort_maintenance_modifier = -0.1
+		defensiveness = 0.33
+		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
 	}
 	supply_trains = {
 		reinforce_speed = 0.33
-		reinforce_cost_modifier = -0.33
+		reinforce_cost_modifier = -0.33								 
 	}
 	improved_foraging = {
-		land_attrition = -0.25
+		land_morale = 0.1			##UU Added reduced from 0.15
+	}
+	regimental_system = {
+		fire_damage_received = -0.1		##UU Added
+	}
+	
+	ai_will_do = {
+		factor = 2.25
+	}
+}defensive_ideas = {
+	category = MIL
+
+	bonus = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1.5		##UU increased from 1
 	}
 
+	battlefield_commisions = {
+		army_tradition_from_battle = 1.0
+	}
+	military_drill = {
+		shock_damage_received = -0.15	##UU Added
+	}
+	improved_manuever = {
+		leader_land_manuever = 2
+	}
+	defensive_mentality = {
+		defensiveness = 0.33
+		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
+	}
+	supply_trains = {
+		reinforce_speed = 0.33
+		reinforce_cost_modifier = -0.33								 
+	}
+	improved_foraging = {
+		land_morale = 0.1			##UU Added reduced from 0.15
+	}
+	regimental_system = {
+		fire_damage_received = -0.1		##UU Added
+	}
+	
 	ai_will_do = {
 		factor = 2.25
 	}
@@ -506,6 +556,9 @@ trade_ideas = {
 
 	bonus = {
 		merchants = 1
+		burghers_loyalty_modifier = 0.1
+		jains_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 	}
 
 	shrewd_commerce_practise = {
@@ -519,6 +572,7 @@ trade_ideas = {
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
+		mercantilism_cost = -0.25
 	}
 	overseas_merchants = {
 		merchants = 1
@@ -620,22 +674,22 @@ exploration_ideas = {
 	
 	overseas_exploration = {
 		range = 0.5
-		navy_tradition = 0.5
+		navy_tradition = 0.5		##UU Added
 	}
 	land_of_opportunity = {
 		global_colonial_growth = 10
-		production_efficiency = 0.1
+		production_efficiency = 0.1	##UU Added
 	}
 	vice_roys  = {
-		global_tariffs = 0.4
+		global_tariffs = 0.40
  		envoy_travel_time = -0.20
  	}
 	free_colonies = {
-		min_autonomy_in_territories = -0.1
-		liberty_desire_from_subject_development = -0.1
+		colonist_placement_chance = 0.1
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
+		treasure_fleet_income = 0.25
 	}
 
 	ai_will_do = {
@@ -797,11 +851,11 @@ maritime_ideas = {
 
 	merchant_traditions = {
 		naval_tradition_from_trade = 1.0
-		ship_power_propagation = 0.1
+		ship_power_propagation = 0.1		##UU Added
+		trade_range_modifier = 0.25
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
-		allowed_marine_fraction = 0.1
 		allowed_marine_fraction = 0.25
 	}
 	sheltered_ports = {
@@ -810,11 +864,12 @@ maritime_ideas = {
 	}
 	grand_navy = {
 		naval_forcelimit_modifier = 0.5
-		naval_maintenance = -0.1
+		ship_power_propagation = 0.25
+		naval_maintenance_modifier  = -0.1	##UU Added
 	}
 	ships_penny = {
-		global_ship_cost = -0.15
-		ship_recruit_speed = -0.15
+		global_ship_cost = -0.1
+		ship_recruit_speed = -0.15			##UU Added
 	}
 	sea_hawks = {
 		free_leader_pool = 1
@@ -851,12 +906,7 @@ maritime_ideas = {
 
 		modifier = {
 			factor = 10
-			OR = {
-				has_reform = pirate_republic_reform
-				has_reform = pirate_kingdom
-				has_reform = war_against_the_world_government
-				has_reform = black_market_consortium_government
-			}
+			has_government_attribute = is_pirate_republic_reform
 		}
 	}
 }
@@ -874,6 +924,7 @@ quality_ideas = {
 	}
 	quality_education = {
 		army_tradition = 0.5
+		navy_tradition = 0.5
 	}
 	finest_of_horses = {
 		cavalry_power = 0.1
@@ -901,10 +952,10 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.4
+		land_forcelimit_modifier  = 0.25
 	}
 	mass_army = {
-		global_manpower_modifier = 0.40
+		global_manpower_modifier = 0.25
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -912,14 +963,14 @@ quantity_ideas = {
 	enforced_service = {
 		global_regiment_cost = -0.1
 	}
-	the_old_and_infirm = {
-		land_maintenance_modifier = -0.05
-	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
 	}
 	garrison_conscription = {
 		garrison_size = 0.25
+	}
+	the_old_and_infirm = {
+		land_maintenance_modifier = -0.05
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.1
@@ -1085,7 +1136,6 @@ humanist_ideas = {
 		improve_relation_modifier = 0.3
 		years_of_nationalism = -10
 	}
-
 	ai_will_do = {
 		factor = 0.9
 		modifier = {
@@ -1125,7 +1175,7 @@ influence_ideas = {
 	}
 	postal_service = {
 		envoy_travel_time = -0.25
-		diplomat = 1
+		diplomats = 1
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
@@ -1156,7 +1206,7 @@ naval_ideas = {
 	}
 
 	bonus = {
-		ship_durability = 0.1
+		global_naval_barrage_cost = -1
 		disengagement_chance = 0.15
 	}
 
@@ -1172,6 +1222,7 @@ naval_ideas = {
 	}
 	naval_glory = {
 		navy_tradition = 1
+		siege_blockade_progress = 1
 	}
 	press_gangs = {
 		sailors_recovery_speed = 0.25
@@ -1179,6 +1230,7 @@ naval_ideas = {
 	}
 	oak_forests_for_ships = {
 		heavy_ship_power = 0.20
+		ship_durability = 0.1
 	}
 	superior_seamanship = {
 		naval_morale = 0.1
@@ -1211,30 +1263,28 @@ naval_ideas = {
 
 		modifier = {
 			factor = 10
-			OR = {
-				has_reform = pirate_republic_reform
-				has_reform = pirate_kingdom
-				has_reform = war_against_the_world_government
-				has_reform = black_market_consortium_government
-			}
+			has_government_attribute = is_pirate_republic_reform
 		}
 	}
 }
+
+
 mercenary_ideas = {
 	category = MIL
 	Bonus = {
 		recover_army_morale_speed = 0.1
 	}
+	living_off_the_land = {
+		available_province_loot = 0.50
+		loot_amount = 0.20
+	}
 	standard_payroll_system = {
 		reinforce_speed = 0.15
 		mercenary_discipline = 0.075
 	}
-	local_land_knowledge = {
-		movement_speed = 0.20
-	}
 	viable_career_option = {
-		mercenary_manpower = 0.50
-		land_forcelimit_modifier = 0.20
+		mercenary_manpower = 0.25
+		land_forcelimit_modifier = 0.15
 	}
 	mercenary_connection_networks = {
 		trade_range_modifier = 0.33
@@ -1244,9 +1294,8 @@ mercenary_ideas = {
 		mercenary_cost = -0.25
 		merc_maintenance_modifier = -0.20
 	}
-	living_off_the_land = {
-		available_province_loot = 0.50
-		loot_amount = 0.20
+	local_land_knowledge = {
+		movement_speed = 0.20
 	}
 	prestigious_companies = {
 		prestige = 1
