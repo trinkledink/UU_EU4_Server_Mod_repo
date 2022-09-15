@@ -334,7 +334,7 @@ theologian = {
 	}
 
 	chance = {
-		factor = 1
+		factor = 1.5
 
 	}
 	
@@ -404,7 +404,7 @@ master_of_mint = {
 		modifier = { meritocracy = 0.25 }
 	}
 	chance = {
-		factor = 1
+		factor = 1.2
 	}
 	
 	ai_will_do = {

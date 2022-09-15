@@ -1262,19 +1262,6 @@ on_monarch_death = {
 	}
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = no_stab_hit_on_ruler_death
-				has_a_primary_cult_selected = yes
-			}
-			OR = {
-				government = tribal
-				government = monarchy
-			}
-		}
-		add_stability = 1
-	}
 	joan_de_trastamara_king_died_effect = yes
 	events = {
 		flavor_wal.1 # Vlad the Impaler. So that he doesn't try to usurp his father.
@@ -4722,7 +4709,6 @@ on_remove_pasha = {
 		owner = {
 			save_event_target_as = province_owner
 		}
-		remove_province_modifier = pasha_removed_modifier
 	}
 
 	area = {

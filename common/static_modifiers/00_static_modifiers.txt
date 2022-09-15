@@ -706,6 +706,7 @@ bankruptcy = {
 	technology_cost = 0.5
 	idea_cost = 0.5
 	imperial_mandate = -0.1
+	great_project_upgrade_cost = 0.5
 }
 
 
