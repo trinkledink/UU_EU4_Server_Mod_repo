@@ -63,6 +63,13 @@ elb_help = {
 		naval_forcelimit = 15
 	}
 }
+elb_berlin_war_school = {
+	owner = {
+		army_tradition = 0.25
+		leader_land_fire = 1
+		mil_tech_cost_modifier = -0.05
+	}
+}
 estate_burghers_elb_improved_workshops_mod = {
 	local_production_efficiency = 0.2
 }
@@ -92,11 +99,5 @@ elb_rapid_urbanization = {
 	development_cost = -0.1
 	build_cost = -0.1
 }
-elb_berlin_war_school = {
-	owner = {
-		army_tradition = 0.25
-		leader_land_fire = 1
-		mil_tech_cost_modifier = -0.05
-	}
-}
+
 
