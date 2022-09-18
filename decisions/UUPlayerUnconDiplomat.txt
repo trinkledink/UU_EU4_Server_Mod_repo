@@ -12,10 +12,12 @@ country_decisions = {
         allow = {
             any_known_country = {
                 ai = no   	
-                war_score_against = {
-                    who = ROOT
-                    value = -99
-                }
+                NOT = {
+			war_score_against = {
+			    who = ROOT
+			    value = -99
+			}
+		}
             }
             NOT = { has_country_modifier = player_uncon_diplomat_modifier }
         }
