@@ -196,20 +196,20 @@ UU_elbian_conquest = {
 				}
 				add_permanent_claim = ELB
 			}
-		}
-		hidden_effect = {
-			every_core_province = {	
-				limit = {
-					OR = {
-						area = weser_area
-						area = lower_saxony_area
-						area = mittelmark_area
-						area = neumark_area
-						area = braunschweig_area
+			hidden_effect = {
+				every_core_province = {	
+					limit = {
+						OR = {
+							area = weser_area
+							area = lower_saxony_area
+							area = mittelmark_area
+							area = neumark_area
+							area = braunschweig_area
+						}
 					}
+					add_local_autonomy = -20
+					add_devastation = -30
 				}
-				add_local_autonomy = -20
-				add_devastation = -30
 			}
 		}
 	}

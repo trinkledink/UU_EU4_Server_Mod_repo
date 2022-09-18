@@ -294,7 +294,6 @@ venice_merchants_reform = {
 		}
 	}
 	boost_income = yes
-	duration = 4
 	factions = {
 		mr_aristocrats
 		mr_traders
