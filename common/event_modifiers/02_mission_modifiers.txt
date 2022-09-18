@@ -59,16 +59,12 @@ elb_help = {
 	local_sailors_modifier = 1
 	local_ship_repair = 1
 	province_trade_power_value = 10
-	owner = {
-		naval_forcelimit = 15
-	}
+	naval_forcelimit = 15
 }
 elb_berlin_war_school = {
-	owner = {
-		army_tradition = 0.25
-		leader_land_fire = 1
-		mil_tech_cost_modifier = -0.05
-	}
+	army_tradition = 0.25
+	leader_land_fire = 1
+	mil_tech_cost_modifier = -0.05
 }
 estate_burghers_elb_improved_workshops_mod = {
 	local_production_efficiency = 0.2
