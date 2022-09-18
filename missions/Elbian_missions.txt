@@ -854,7 +854,10 @@ UU_elbian_production = {
 			num_of_owned_provinces_with = {
 				value = 5
 				development = 25
-				is_prosperous = yes
+				custom_trigger_tooltip = {
+					tooltip = ELB_PARADOX_SHAME_JEFFREY_BEZOS
+					is_prosperous = yes
+				}
 			}
 		}
 		effect = {
