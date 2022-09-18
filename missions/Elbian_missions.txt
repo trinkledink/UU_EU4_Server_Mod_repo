@@ -427,7 +427,7 @@ UU_elbian_integration = {
 		
 		effect = {
 			country_event = {
-				id = UU_elb_hamburg_world_port.1
+				id = UU_elb_mission_events.1
 			}
 			44 = {
 				add_province_modifier = {
