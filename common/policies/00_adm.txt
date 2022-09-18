@@ -334,8 +334,7 @@ the_spy_discovery_act = {
 	fort_maintenance_modifier = -0.10 
 	#yearly_corruption = -0.1
 	#global_spy_defence = 0.2
-
-
+	ai_will_do = {
 		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
 	}
 }
