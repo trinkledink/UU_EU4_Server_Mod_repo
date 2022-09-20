@@ -42,4 +42,18 @@
  ctg_phalanx_company:0 "Greek Phalanx Company"
  ctg_immortals_company:0 "Persian Immortals Company"
  ab_timur_legacy:0 "Timur's Legacy"
-
+ 
+ #MJL#
+ mjl_change_muslim_school_decision_tt:0 "Trigger event allowing the change of muslim school."
+ mjl_change_muslim_school_title:0 "Change School"
+ mjl_change_muslim_school_desc:0 "Change School"
+ mjl_events.EVTNAME5:0 "Change School"
+ mjl_events.EVTDESC5:0 "As a country on the verge of change we need to decide which particular religious school we should start patronizing. While there are many ways to follow God we should have a new specific guiding doctrine for our rulers to follow."
+ mjl_events.EVTOPTA5:0 "Hanafi"
+ mjl_events.EVTOPTB5:0 "Hanbali"
+ mjl_events.EVTOPTC5:0 "Maliki"
+ mjl_events.EVTOPTD5:0 "Shafii"
+ mjl_events.EVTOPTE5:0 "Jafari"
+ mjl_events.EVTOPTF5:0 "Ismaili"
+ mjl_events.EVTOPTG5:0 "Zaidi"
+ mjl_change_muslim_school_trigger_tooltip:0 "Only possible once per game."

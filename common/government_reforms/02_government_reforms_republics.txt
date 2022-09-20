@@ -517,6 +517,7 @@ revolutionary_republic_reform = {
 		global_autonomy = -0.2
 		max_revolutionary_zeal = 50
 		max_absolutism = 40
+		papal_influence = -100
 	}
 	fixed_rank = 3
 	effect = {
@@ -608,7 +609,7 @@ junior_revolutionary_republic_reform = {
 		global_autonomy = -0.2
 		max_revolutionary_zeal = 25
 		max_absolutism = 40
-
+		papal_influence = -100
 	}
 	fixed_rank = 2
 	effect = {
@@ -1923,33 +1924,6 @@ consolidation_of_power_reform = {
 		reelection_depowers_estates = yes
 	}
 }
-disolve_elections_reform = {
-	icon = "regionally_elected_commanders"
-	allow_normal_conversion = yes
-	potential = {
-		has_reform = military_dictatorship_reform
-	}
-	modifiers = {
-		all_estate_loyalty_equilibrium = 0.05
-		yearly_corruption = 0.05
-		stability_cost_modifier = -0.1
-	}
-}																								   
-
-################################################## U_U Mod Added###############################################
-disolve_elections_reform = {
-	icon = "regionally_elected_commanders"
-	allow_normal_conversion = yes
-	potential = {
-		has_reform = military_dictatorship_reform
-	}
-	modifiers = {
-		all_estate_loyalty_equilibrium = 0.05
-		yearly_corruption = 0.05
-		stability_cost_modifier = -0.1
-	}
-}
-###############################################################################################################
 
 lottery_reform = {
 	icon = "paper_with_seal_3"

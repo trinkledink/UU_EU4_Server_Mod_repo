@@ -503,7 +503,8 @@ SCA_ideas = {
 	}
 	
 	trigger = {
-		tag = SCA
+		#tag = SCA
+		always = no ##UU Added
 	}
 	free = yes
 	

@@ -1,3 +1,7 @@
+# Change Muslim School:
+change_school_modifier = {
+	# Nothing is needed here
+}
 # Buddhist help
 helped_poor = {
 }
