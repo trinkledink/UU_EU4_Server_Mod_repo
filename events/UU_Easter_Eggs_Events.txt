@@ -102,3 +102,43 @@ country_event = { #Missing Localization
         }
     }
 }
+
+country_event = { #El Dorado Delhi
+    id = uu_easter_egg_events.4
+    title = uu_easter_egg_events.4.t
+    desc = uu_easter_egg_events.desc
+    picture = GOLDEN_CITY_eventPicture
+
+    trigger = {
+        has_country_modifier = sce_search_eldorado
+    }
+    mean_time_to_happen = {
+        months = 2400
+    }
+    option = {
+        name = uu_easter_egg_events.4.a
+        if = {
+            limit = {
+                NOT = { has_discovered = 522}
+            }
+            hidden_effect = {
+                522 = {
+                    discover_country = ROOT
+                }
+            }
+            custom_tooltip = zeb_delhi_eldorado_tt
+        } else = {
+            add_prestige = 1
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.4.b
+        define_advisor = {
+            type = trader
+            cost_multiplier = 0.9
+            skill = 1
+            culture = kanauji
+            religion = hinduism
+        }
+    }        
+}
