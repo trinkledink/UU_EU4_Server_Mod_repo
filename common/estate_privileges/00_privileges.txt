@@ -2159,7 +2159,7 @@ estate_nobles_levies = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.5
 	}
 	penalties = {
 	}
