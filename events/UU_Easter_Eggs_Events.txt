@@ -126,7 +126,7 @@ country_event = { #El Dorado Delhi
                     discover_country = ROOT
                 }
             }
-            custom_tooltip = zeb_delhi_eldorado_tt
+            custom_tooltip = uu_delhi_eldorado_tt
         } else = {
             add_prestige = 1
         }
