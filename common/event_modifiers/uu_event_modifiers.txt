@@ -1,0 +1,73 @@
+# Buddhist help
+helped_poor = {
+}
+benefited_from_offerings = {
+}
+
+#advisros
+grand_captain_rejected = {
+}
+
+commandant_rejected = {
+}
+
+#canada
+totemism_resurgence = {
+	global_missionary_strength = 0.05
+}
+
+#ElDorado
+is_searching_el_dorado = {
+	global_manpower_modifier = -0.1
+	global_tax_modifier = -0.15
+}
+U.U_el_dorado = {
+	trade_goods_size = 3
+	monthly_gold_inflation_modifier = -0.9
+	monthly_splendor = 3
+	prestige_decay = -0.01	
+}
+
+# Mercenary Ideagroup Event Modifiers
+elite_mercenaries = {
+	mercenary_discipline = 0.05
+}
+
+mercenary_surge = {
+	mercenary_manpower = 0.10
+}
+
+we_fight_for_gold = {
+	merc_maintenance_modifier = -0.10
+}
+
+we_fight_for_honour = {
+	land_morale = 0.05
+}
+
+labouring_mercenaries = {
+	build_cost = -0.10
+}
+
+trade_surge = {
+	trade_efficiency = 0.05
+	trade_range_modifier = 0.25
+}
+
+savage_plunderers = {
+	merc_maintenance_modifier = 0.15
+	available_province_loot = 0.75
+	loot_amount = 1
+}
+
+lack_of_mercenaries = {
+	mercenary_manpower = -0.25
+}
+
+letting_sleeping_dogs_lie = {
+	land_morale = 0.05
+}
+
+mercenaries_running_amock = {
+	mercenary_discipline = -0.05
+}
