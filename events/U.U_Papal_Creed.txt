@@ -56,9 +56,14 @@ country_event = {
 	}
 	option = {
 		name = "UU_papal_creed.EVTOPTF"
-
 		add_country_modifier = {
 			name = "papal_legate"
 			duration = 7300
 		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTG"
+		add_stability = 1
+		add_legitimacy = -25
+	}
 }
