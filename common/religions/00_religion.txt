@@ -19,6 +19,8 @@ christian = {
 	catholic = {
 		color = { 204 204 0 }
 		icon = 1
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			reformed
 			protestant
@@ -317,6 +319,7 @@ christian = {
 		color = { 135 77 255 }
 		icon = 28
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_center_conversion = {
 			catholic
 		}
@@ -349,6 +352,7 @@ christian = {
 		color = { 244 55 9 }
 		icon = 22
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_center_conversion = {
 			catholic
 		}
@@ -384,6 +388,7 @@ christian = {
 		color = { 0 0 178 }
 		icon = 2
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			reformed
 			catholic
@@ -521,6 +526,7 @@ christian = {
 		color = { 76 76 229 }
 		icon = 3
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			protestant
 			catholic
@@ -641,6 +647,7 @@ christian = {
 		color = { 178 127 0 }
 		icon = 4
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
@@ -774,6 +781,7 @@ christian = {
 	
 	coptic = {
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
@@ -1339,6 +1347,7 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
@@ -1360,6 +1369,7 @@ muslim = {
 		color = { 0 204 0 }
 		icon = 6
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			heir_chance = 1.0
 			land_morale = 0.05
@@ -1381,6 +1391,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			heir_chance = 1.0
 			global_trade_goods_size_modifier = 0.1
@@ -1413,6 +1424,7 @@ eastern = {
 		color = { 204 76 0 }
 		icon = 24
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			vajrayana
 			mahayana
@@ -1445,6 +1457,7 @@ eastern = {
 		color = { 204 76 76 }
 		icon = 25
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			mahayana
 			buddhism #Theravada
@@ -1480,6 +1493,7 @@ eastern = {
 		color = { 204 76 127 }
 		icon = 23
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			vajrayana
 			buddhism #Theravada
@@ -1512,6 +1526,7 @@ eastern = {
 		color = { 214 229 140 }
 		icon = 9
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			tolerance_heretic = 2
 			adm_tech_cost_modifier = -0.1
@@ -1528,6 +1543,7 @@ eastern = {
 		color = { 204 0 0 }
 		icon = 10
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			land_morale = 0.1
 			tolerance_heathen = 1
@@ -1560,6 +1576,7 @@ dharmic = {
 		color = { 0 204 204 }
 		icon = 8
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			sikhism
 		}
@@ -1592,6 +1609,7 @@ dharmic = {
 		color = { 0 153 153 }
 		icon = 15
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		allowed_conversion = {
 			hinduism
 			sunni
@@ -2213,6 +2231,7 @@ pagan = {
 		color = { 127 0 0 }
 		icon = 11
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		country = {
 			tolerance_own = 1
@@ -2232,6 +2251,7 @@ pagan = {
 		color = { 127 76 76 }
 		icon = 12
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			tolerance_heathen = 2
 			diplomatic_reputation = 1
@@ -2251,6 +2271,7 @@ pagan = {
 		color = { 127 115 115 }
 		icon = 13
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
@@ -2272,6 +2293,7 @@ pagan = {
 		color = { 64 115 115 }
 		icon = 18
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			tolerance_own = 1
 			global_autonomy = -0.05
@@ -2297,6 +2319,7 @@ pagan = {
 		color = { 64 115 64 }
 		icon = 17
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			land_morale = 0.1
 			global_unrest = -2
@@ -2311,7 +2334,6 @@ pagan = {
 		}
 		
 		doom = yes
-		declare_war_in_regency = yes
 		religious_reforms = yes
 		reform_tooltip = NAHUATL_REFORM_TOOLTIP
 		
@@ -2323,6 +2345,7 @@ pagan = {
 		color = { 127 25 178 }
 		icon = 19
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		country = {
 			tolerance_own = 1
 			advisor_pool = 1
@@ -2344,6 +2367,7 @@ pagan = {
 	norse_pagan_reformed = {
 		icon = 21
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		color = { 191 191 191 }
 		country = {
 			land_forcelimit_modifier = 0.10
@@ -2365,6 +2389,7 @@ pagan = {
 	tengri_pagan_reformed = {
 		icon = 27
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		color = { 25 76 217 }
 		country = {
 			cav_to_inf_ratio = 0.25
@@ -2377,6 +2402,7 @@ pagan = {
 	dreamtime = {
 		icon = 29
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		color = { 197 133 43 }
 		country = {
 			shock_damage_received = -0.05
@@ -2404,6 +2430,7 @@ jewish_group = {
 	jewish = {
 		icon = 20
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		color = { 0 156 231 }
 		country = {
 			tolerance_own = 2
@@ -2520,6 +2547,7 @@ zoroastrian_group = {
 	zoroastrian = {
 		icon = 26
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		color = { 127 178 51 }
 		province = {
 			local_missionary_strength = -0.02
