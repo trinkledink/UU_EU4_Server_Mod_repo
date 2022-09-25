@@ -54,3 +54,18 @@
  elb_rapid_urbanization:0 "Rapid Urbanization"
  elb_hamburg_world_port_modifier:0 "World Port"
  ELB_PARADOX_SHAME_JEFFREY_BEZOS:0 "Province has §YProsperity§!"
+
+ ###############################################################
+ # Mercenary Event Modifiers Localisation.
+ ###############################################################
+ 
+ elite_mercenaries:0 "Elite Mercenaries"
+ mercenary_surge:0 "Mercenary Surge"
+ we_fight_for_gold:0 "We fight for Gold"
+ we_fight_for_honour:0 "We fight for Honour"
+ labouring_mercenaries:0 "Labouring Mercenaries"
+ trade_surge:0 "Trade Boom"
+ savage_plunderers:0 "Savage Plunderers"
+ lack_of_mercenaries:0 "Lack of Willing Men"
+ letting_sleeping_dogs_lie:0 "Letting Sleeping Dogs Lie"
+ mercenaries_running_amock:0 "Mercenaries Running Amock"
