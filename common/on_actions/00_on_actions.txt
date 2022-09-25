@@ -3628,21 +3628,21 @@ on_five_year_pulse = {
 		100 = ideagroups.1940
 		100 = ideagroups.1941
 		
-		# # Mercenary Events (7g 4b) #################### UU ADDED #########################
+		# Mercenary Events (7g 4b) #################### UU ADDED #########################
 		
-		# 100 = uuideagroups.1
-		# 100 = uuideagroups.2
-		# 100 = uuideagroups.3
-		# 100 = uuideagroups.4
-		# 100 = uuideagroups.5
-		# 100 = uuideagroups.6
-		# 100 = uuideagroups.7
-		# 100 = uuideagroups.8
-		# 100 = uuideagroups.9
-		# 100 = uuideagroups.10
-		# 100 = uuideagroups.11
+		100 = uuideagroups.1
+		100 = uuideagroups.2
+		100 = uuideagroups.3
+		100 = uuideagroups.4
+		100 = uuideagroups.5
+		100 = uuideagroups.6
+		100 = uuideagroups.7
+		100 = uuideagroups.8
+		100 = uuideagroups.9
+		100 = uuideagroups.10
+		100 = uuideagroups.11
 		
-		# 1000 = 0
+		1000 = 0
 	}
 
 	events = {
