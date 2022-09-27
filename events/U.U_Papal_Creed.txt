@@ -64,6 +64,6 @@ country_event = {
 	option = {
 		name = "UU_papal_creed.EVTOPTG"
 		add_stability = 1
-		add_legitimacy = -25
+		add_devotion = -25
 	}
 }
