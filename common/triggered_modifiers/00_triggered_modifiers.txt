@@ -405,9 +405,6 @@ submission_to_emperor = {
 	trigger = {
 		is_part_of_hre = yes
 		NOT = { tag = ITA }
-		capital_scope = {
-			is_part_of_hre = yes
-		}
 		NOT = { emperor = { alliance_with = ROOT } }
 		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
 	}

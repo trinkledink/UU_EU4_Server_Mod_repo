@@ -1326,7 +1326,7 @@ angkor_wat = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
 	}
 
 	#what to do when it's built
@@ -1341,12 +1341,12 @@ angkor_wat = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -16443,7 +16443,7 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
-			local_own_coast_naval_combat_bonus = 1
+			local_own_coast_naval_combat_bonus = 1 ##UU Changed
 		}
 		area_modifier = {
 		}
@@ -17063,7 +17063,7 @@ dujiangyan = {
 			factor = 1000
 		}
 		province_modifiers = {
-			development_cost_modifier = -0.05
+			local_development_cost_modifier = -0.05
 			local_governing_cost = -0.2
 		}
 		area_modifier = {
@@ -17081,7 +17081,7 @@ dujiangyan = {
 			factor = 2500
 		}
 		province_modifiers = {
-			development_cost_modifier = -0.1
+			local_development_cost_modifier = -0.1
 			allowed_num_of_buildings = 1
 		}
 		area_modifier = {
@@ -17104,7 +17104,7 @@ dujiangyan = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			development_cost_modifier = -0.1
+			local_development_cost_modifier = -0.1
 			allowed_num_of_buildings = 1
 			local_governing_cost = -0.4
 		}

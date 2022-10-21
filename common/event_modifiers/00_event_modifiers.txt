@@ -1456,10 +1456,10 @@ krantor_crane = {
 }
 
 adler_von_lubeck = {
-	heavy_ship_cost = -0.02
-	dip_tech_cost_modifier = -0.02
-	global_ship_recruit_speed = -0.1
-	naval_morale = 0.2
+	heavy_ship_cost = -0.15
+	dip_tech_cost_modifier = -0.1
+	number_of_cannons_flagship_modifier = 0.5
+	navy_tradition_decay = -0.01
 }
 
 south_german_organ_tradition = {
@@ -11713,7 +11713,7 @@ its_not_gold = {
 }
 
 the_rule_of_god = {
-	land_morale = 0.25
+	land_morale = 0.05
 	discipline = 0.05
 }
 
@@ -12338,7 +12338,7 @@ estate_nobles_neighbor_raids_fort = {
 	picture = "local_monthly_devastation"
 }
 
-#Province modifier
+#Province modifier	##UU Change for religious culture
 estate_church_united_faith_and_culture = {
 	religion = yes
 	local_unrest = -1
@@ -12347,7 +12347,7 @@ estate_church_united_faith_and_culture = {
 	local_manpower_modifier = 0.15
 }
 
-#Province modifier
+#Province modifier  ##UU Change for religious culture
 estate_church_false_culture = {
 	local_unrest = 3
 	local_culture_conversion_cost = 1

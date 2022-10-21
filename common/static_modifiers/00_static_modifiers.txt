@@ -237,9 +237,7 @@ no_adjacent_controlled = {
 
 provincial_tax_income = {
 	regiment_recruit_speed = -0.01
-	local_build_time = -0.01
 }
-
 
 provincial_production_size = {
 	trade_goods_size = 0.2
@@ -698,7 +696,6 @@ bankruptcy = {
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
-	great_project_upgrade_cost = 0.5
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
 	monthly_militarized_society = -0.5
@@ -948,6 +945,7 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
+	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
 }
 
 # Multiplied by current Devotion - 50
@@ -1024,7 +1022,7 @@ militarized_society = {
 
 	discipline = 0.10
 	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = 0.20
+	land_maintenance_modifier = 0.20   ##UU change
 
 }
 
@@ -1383,11 +1381,11 @@ maintained_forts = {
 }
 
 gov_rank_1 = {
-	governing_capacity = 50						
+	governing_capacity = 50					##UU Change	
 }
 
 gov_rank_2 = {
-	governing_capacity = 50						
+	governing_capacity = 50					##UU Change	
 }
 
 gov_rank_3 = {
@@ -1444,7 +1442,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.015
+	yearly_army_professionalism = 0.015	#UU change increase
 }
 
 ##################################################################################################
@@ -1784,6 +1782,7 @@ janissary_regiment = {
 	reinforce_cost_modifier = 1.0
 	drill_gain_modifier = 1.0
 }
+
 cawa_regiment = {
 	shock_damage_received = -0.15
 	land_attrition = -0.25
@@ -1818,7 +1817,7 @@ cossacks_regiment = {
 }
 
 carolean_regiment = {
-	morale_damage = 0.1
+	morale_damage = 0.05
 	drill_decay_modifier = -0.25
 }
 
@@ -1866,10 +1865,10 @@ expand_administation_modifier = {
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
 	stability_cost_modifier = 1.0
-	administrative_efficiency = -0.33
+	administrative_efficiency = -0.33  ##UU Change
 	improve_relation_modifier = -0.5
-	min_autonomy = 50
-	yearly_corruption = 1.5
+	min_autonomy = 50  ##UU Change
+	yearly_corruption = 1.5  ##UU Change
 	monthly_militarized_society = -1.0
 
 }
