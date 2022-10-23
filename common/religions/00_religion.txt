@@ -325,7 +325,7 @@ christian = {
 		}
 		country = {
 			development_cost = -0.1
-			innovativeness_gain = 0.5
+			technology_cost = -0.05
 		}
 		
 		country_as_secondary = {
