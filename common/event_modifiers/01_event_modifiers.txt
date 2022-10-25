@@ -5,6 +5,10 @@ change_school_modifier = {
 # Buddhist help
 helped_poor = {
 }
+#French Morale
+UU_french_morale = {
+	land_morale  = -0.05
+}
 benefited_from_offerings = {
 }
 #advisros
@@ -31,5 +35,6 @@ U.U_el_dorado = {
 player_uncon_diplomat_modifier = {
 	diplomats = 1
 }
+
 
 

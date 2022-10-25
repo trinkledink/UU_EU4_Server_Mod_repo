@@ -69,3 +69,9 @@
  lack_of_mercenaries:0 "Lack of Willing Men"
  letting_sleeping_dogs_lie:0 "Letting Sleeping Dogs Lie"
  mercenaries_running_amock:0 "Mercenaries Running Amock"
+ 
+ ###############################################################
+ # French Debuff
+ ###############################################################
+ 
+ UU_french_morale:0 "French Morale"
