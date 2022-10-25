@@ -1228,6 +1228,7 @@ mercenary_ideas = {
 	category = MIL
 	Bonus = {
 		recover_army_morale_speed = 0.1
+		possible_condottieri = 1
 	}
 	living_off_the_land = {
 		available_province_loot = 0.50
