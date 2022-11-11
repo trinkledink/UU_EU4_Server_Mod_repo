@@ -15205,7 +15205,8 @@ EPI_ideas = {
 
 FKN_ideas = {
 	start = {
-		ae_impact = -0.1
+		monthly_fervor_increase = 1	##UU added, removing -10% AE reduc
+		church_power_modifier = 0.1	##UU added
 		global_manpower_modifier = 0.2
 	}
 	
@@ -15230,7 +15231,7 @@ FKN_ideas = {
 		defensiveness = 0.2
 	}
 	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.10
+		infantry_power = 0.10    #UU changed from cav power
 	}
 	franconian_wine = { #in WBG_ideas
 		#production_efficiency = 0.1
