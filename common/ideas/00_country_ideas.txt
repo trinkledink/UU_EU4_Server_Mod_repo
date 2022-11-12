@@ -15205,8 +15205,7 @@ EPI_ideas = {
 
 FKN_ideas = {
 	start = {
-		monthly_fervor_increase = 1	##UU added, removing -10% AE reduc
-		church_power_modifier = 0.1	##UU added
+		prestige = 1		##UU moved
 		global_manpower_modifier = 0.2
 	}
 	
@@ -15237,7 +15236,8 @@ FKN_ideas = {
 		#production_efficiency = 0.1
 	}
 	fkn_baroque = {
-		prestige = 1
+		monthly_fervor_increase = 0.25	##UU added, removing -10% AE reduc
+		church_power_modifier = 0.1	##UU added
 	}
 	fkn_franconian_bourgeoisie = {
 		development_cost = -0.05

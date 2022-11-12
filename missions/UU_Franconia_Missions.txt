@@ -1,0 +1,1111 @@
+﻿FKN_Gen_Missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ANS
+			tag = BAM
+			tag = BYT
+			tag = COB
+			tag = NUM
+			tag = ROT
+			tag = WBG
+			tag = FKN
+		}
+	} 
+	has_country_shield  = yes
+	
+	FKN_conquer_nuremburg = {
+		icon = sources_of_trade
+		required_missions = { FKN_build_an_army }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 67
+				province_id = 4715
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					tag = ROT
+				}
+				OR = {
+					67 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else_if = {
+				limit = {
+					tag = NUM
+				}
+				OR = {
+					4715 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else = {
+				OR = {
+					67 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4715 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_conquest_of_nuremburg
+				duration = 10950
+			}
+		}
+	}
+	
+	FKN_strength_in_unity = {
+		icon = catholic_confraternity
+		required_missions = { }
+		position = 3
+		trigger = {
+			calc_true_if ={
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					
+				}
+				amount = 2
+			}
+		}
+		effect = {
+			add_dip_power = 50
+		}
+	}
+	
+	FKN_recognition_of_emperor = {
+		icon = switzerland_and_the_empire
+		required_missions = { FKN_strength_in_unity }
+		position = 4
+		provinces_to_highlight = {
+			owned_by = emperor
+		}
+		trigger = {
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+				is_emperor = yes
+				NOT = { hre_size = 1 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_imperial_diplomacy
+				duration = 7300
+			}
+			custom_tooltip = FKN_emperor_tt
+			tooltip = {
+				add_country_modifier = {
+					name = FKN_emperor_recogntion
+					duration = 10950
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = FKN_emperor_mission_taken }
+					}
+					add_country_modifier = {
+						name = FKN_emperor_recogntion
+						duration = 10950
+					}
+					set_global_flag = FKN_emperor_mission_taken
+				}
+			}
+		}
+	}
+}
+	
+FKN_Gen_Missions_3 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ANS
+			tag = BAM
+			tag = BYT
+			tag = COB
+			tag = NUM
+			tag = ROT
+			tag = WBG
+			tag = FKN
+		}
+	} 
+	has_country_shield = yes
+	
+	FKN_build_an_army = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				army_size_percentage = 0.9
+				num_of_generals = 1
+			}
+		}
+		effect = {
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = FKN_40_general
+			hidden_effect = {
+				create_general = {
+					tradition = 40
+					add_shock = 1
+				}
+			}
+		}
+	}
+	
+	FKN_conquer_wurzburg = {
+		icon = subiaco_press
+		required_missions = { FKN_build_an_army }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 66
+				province_id = 79
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					tag = WBG
+				}
+				OR = {
+					66 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else_if = {
+				limit = {
+					tag = BAM
+				}
+				OR = {
+					79 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else = {
+				OR = {
+					66 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					79 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_conquest_of_wurzburg
+				duration = 10950
+			}
+		}
+	}
+	
+	FKN_unifying_franconia = {
+		icon = influence_the_princes
+		required_missions = { FKN_conquer_wurzburg FKN_conquer_nuremburg FKN_conquer_ansbach }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = franconia_area
+				area = upper_franconia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = franconia_area
+					area = upper_franconia_area
+				}
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = FKN_every_franconian_province
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = franconian
+					}
+					add_nationalism = -10
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = franconia_area
+				}
+				add_prosperity = 50
+			}
+			random_owned_province = {
+				limit = {
+					area = upper_franconia_area
+				}
+				add_prosperity = 50
+			}
+			add_yearly_manpower = 1
+		}
+	}
+	
+	FKN_dux_francorum = {
+		icon = conquer_franconia
+		required_missions = { FKN_unifying_franconia }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = franconia_area
+				area = upper_franconia_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			tag = FKN
+			num_of_owned_provinces_with = {
+				OR = {
+					area = franconia_area
+					area = upper_franconia_area
+				}
+				value = 6
+			}
+			if = {
+				limit = {
+					government = republic
+				}
+				republican_tradition = 75
+			}
+			else = {
+				legitimacy_equivalent = 90
+			}
+		}
+		effect = {
+			change_national_focus_effect = yes
+			country_event = { id = ME_Franconia_Events.1 }
+			east_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thuringia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			80 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			83 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1760 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+FKN_Gen_Missions_4 = {
+	slot = 3
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			tag = ANS
+			tag = BAM
+			tag = BYT
+			tag = COB
+			tag = NUM
+			tag = ROT
+			tag = WBG
+			tag = FKN
+		}
+		
+	} 
+	has_country_shield = yes
+	
+	FKN_conquer_ansbach = {
+		icon = army_reforms
+		required_missions = { FKN_build_an_army }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 71
+				province_id = 4717
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					tag = BYT
+				}
+				OR = {
+					71 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else_if = {
+				limit = {
+					tag = ANS
+				}
+				OR = {
+					4717 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+			else = {
+				OR = {
+					71 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4717 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tag = FKN
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_conquest_of_ansbach
+				duration = 10950
+			}
+		}
+	}
+	
+	FKN_growing_cities = {
+		icon = purely_for_commerce
+		required_missions = { }
+		position = 3
+		trigger = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_burghers
+				value = 4
+			}
+		}
+		effect = {
+			capital_scope = {
+				area = {
+					add_province_modifier = {
+						name = FKN_selfreliant_burghers
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	
+	FKN_raubritter = {
+		icon = rein_in_the_nobles
+		required_missions = { FKN_growing_cities }
+		position = 4
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_nobles
+				value = 4
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				capital_scope = {
+					add_prosperity = 25
+				}
+			}
+			add_country_modifier = {
+				name = FKN_robber_barons_no_more
+				duration = 9125
+			}
+		}
+	}
+	
+}
+
+FKN_Missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+	} 
+	has_country_shield  = yes
+	
+	FKN_bavaria = {
+		icon = establish_a_standing_army
+		required_missions = { FKN_dux_francorum }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = east_bavaria_area
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = east_bavaria_area
+					area = lower_bavaria_area
+					area = upper_bavaria_area
+				}
+				value = 7
+			}
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 20
+			}
+			add_country_modifier = {
+				name = FKN_against_the_goliath
+				duration = 7300
+			}
+		}
+	}
+	
+	FKN_trade_center = {
+		icon = return_visby_to_the_league
+		required_missions = { }
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			any_owned_province = {
+				province_trade_power = 30
+			}
+		}
+		effect = {
+			4715 = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+				}
+				else_if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 1
+				}
+				else = {
+					add_base_production = 2
+				}
+			}
+		}
+	}
+	
+	FKN_heritage_of_kilian = {
+		icon = new_st_peters_basilica
+		required_missions = { FKN_trade_center }
+		position = 8
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_tax_building_trigger = yes }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 3
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = theologian
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 50
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+				}
+				add_province_modifier = {
+					name = FKN_monk_beer
+					duration = 9125
+				}
+			}
+		}
+	}
+
+}
+
+FKN_Missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+		
+	} 
+	has_country_shield  = yes
+	
+	FKN_west_franconia = {
+		icon = all_bases_covered
+		required_missions = { FKN_dux_francorum }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = hesse_area
+				area = palatinate_area
+				province_id = 83
+				province_id = 80
+				province_id = 1760
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = hesse_area
+					area = palatinate_area
+					province_id = 83
+					province_id = 80
+					province_id = 1760
+				}
+				value = 7
+			}
+		}
+		effect = {
+			add_accepted_culture_or_dip_power = { culture = hessian }
+			custom_tooltip = FKN_owned_provinces_within_mission_target
+			tooltip = {
+				add_province_modifier = {
+					name = FKN_west_franconia_modifier
+					duration = 7300
+				}
+			}
+			north_rhine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			alsace_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	FKN_swabia = {
+		icon = connect_further_austria
+		required_missions = { FKN_west_franconia }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = alsace_area
+				area = upper_rhineland_area
+				area = lower_swabia_area
+				area = upper_swabia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = alsace_area
+					area = upper_rhineland_area
+					area = lower_swabia_area
+					area = upper_swabia_area
+				}
+				value = 10
+			}
+		}
+		effect = {
+			70 =  {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 14600
+					power = 15
+					key = FKN_diverting_trade
+				}
+			}
+		}
+	}
+}
+	
+FKN_Missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+	} 
+	has_country_shield  = yes
+	
+	FKN_saxony = {
+		icon = electorate_of_saxony
+		required_missions = { FKN_dux_francorum }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = south_saxony_area
+				area = thuringia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = south_saxony_area
+					area = thuringia_area
+				}
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = FKN_every_saxon_province
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture = saxon
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			61 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 14600
+					power = 15
+					key = FKN_influence_in_saxony
+				}
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	FKN_westphalia = {
+		icon = westphalian_conquest
+		required_missions = { FKN_west_franconia }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = braunschweig_area
+				area = weser_area
+				area = lower_saxony_area
+				area = lower_rhineland_area
+				area = north_rhine_area
+				area = westphalia_area
+				area = north_westphalia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = braunschweig_area
+					area = weser_area
+					area = lower_saxony_area
+					area = lower_rhineland_area
+					area = north_rhine_area
+					area = westphalia_area
+					area = north_westphalia_area
+				}
+				value = 20
+			}
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		effect = {
+			country_event = { id = ME_Franconia_Events.4 }
+		}
+	}
+}
+
+FKN_Missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+		
+	} 
+	has_country_shield = yes
+	
+	FKN_capture_berlin = {
+		icon = develop_konigsberg
+		required_missions = { FKN_saxony }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 50
+			NOT = { controlled_by = ROOT }
+		}
+		trigger = {
+			50 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_german_ambition
+				duration = 10950
+			}
+		}
+	}
+}
+
+FKN_Missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+	} 
+	has_country_shield  = yes
+
+	
+	FKN_reformation = {
+		icon = victor_for_the_true_faith
+		required_missions = { }
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = FKN_protestant_enabled
+				had_global_flag = {
+					flag = reformation_started
+					days = 9125
+				}
+			}
+			religious_unity = 0.9
+		}
+		effect = {
+			custom_tooltip = FKN_if_protestant
+			tooltip = {
+				define_advisor = {
+					type = artist
+					name = "Albrecht Dürer"
+					skill = 2
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
+				if = {
+					limit = {
+						owns = 67
+					}
+					67 = {
+						add_institution_embracement = {
+							which = printing_press
+							value = 30
+						}
+					}
+				}
+				else = {
+					capital_scope = {
+						add_institution_embracement = {
+							which = printing_press
+							value = 30
+						}
+					}
+				}
+			}
+			custom_tooltip = FKN_if_catholic
+			tooltip = {
+				define_advisor = {
+					type = inquisitor
+					skill = 2
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
+				add_papal_influence = 25
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					define_advisor = {
+						type = inquisitor
+						skill = 2
+						culture = ROOT
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+					add_papal_influence = 25
+				}
+				else = {
+					define_advisor = {
+						type = artist
+						name = "Albrecht Dürer"
+						skill = 2
+						culture = ROOT
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+					if = {
+						limit = {
+							owns = 67
+						}
+						67 = {
+							add_institution_embracement = {
+								which = printing_press
+								value = 30
+							}
+						}
+					}
+					else = {
+						capital_scope = {
+							add_institution_embracement = {
+								which = printing_press
+								value = 30
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	UU_FKN_defend_the_catholic_league = {
+		icon = mission_spread_the_reformation
+		position = 8
+		required_missions = { FKN_reformation }
+		provinces_to_highlight = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+			OR = {
+				NOT = { religion = root }
+				NOT = { owner = { religion = root } }
+			}
+			NOT = {
+				root = {
+					calc_true_if = {
+						amount = 50
+						all_province = {
+							OR = {
+								region = north_german_region
+								region = south_german_region
+							}
+							religion = root
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				root = { religion = reformed }
+				root = { religion = protestant }
+				root = { religion = anglican }
+				root = { religion = hussite }
+			}
+			hre_religion_treaty = yes
+			calc_true_if = {
+				desc = fkn_defend_the_protestant_league_ct
+				amount = 50
+				all_province = {
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+					religion = root
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = fkn_defend_the_protestant_league_dt
+			set_country_flag = improved_expansionist_zealotry
+		}
+	}
+}
