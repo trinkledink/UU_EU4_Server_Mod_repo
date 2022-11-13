@@ -2,8 +2,8 @@
  # Generic Franconian Missions:
  FKN_build_an_army_title: "Fränkische Armee"
  FKN_build_an_army_desc: "Our aim is to achieve the unification of the duchies and bishoprics making up Franconia. Building up an army would help maintain our borders and expand into new lands. The future of Franconia depends on our willingness to take action, and therefore we must make sure we have enough forcess to do so!"
- FKN_conquer_nuremburg_title: "Keine Freien Städte Mehr"
- FKN_conquer_nuremburg_desc: "The city-state of Nuremburg is well defended; a great fortress makes up the exterior of the city itself. To control it will be a difficult task, that is no trick. Still, with proper execution of newly developed siege techniques, the walls of Nuremburg can be overcome, and we can use the vast fortress for our own purposes!"
+ FKN_conquer_nuremburg_title: "Take the Free City"
+ FKN_conquer_nuremburg_desc: "The city of Nuremburg is well defended; a great fortress makes up the exterior of the city itself. To control it will be a difficult task, that is no trick. Still, with proper execution of newly developed siege techniques, the walls of Nuremburg can be overcome, and we can use the vast fortress for our own purposes!"
  FKN_conquer_wurzburg_title: "Ecclesiastical Control"
  FKN_conquer_wurzburg_desc: "The Bishoprics of Wurzburg and Bamberg claim to be protected by God, but God alone will not save them from us. Their influence in Franconian politics is too big to go unchecked, so we have to make sure they are out of the picture before they become diplomatically dominant over the region."
  FKN_conquer_ansbach_title: "Subjugate the Margraves"
@@ -16,7 +16,7 @@
  FKN_strength_in_unity_desc: "In order to mend this shattered empire, we must first start on a smaller scale. By uniting with our brothers we might stand a chance at greater prospects."
  FKN_recognition_of_emperor_title: "Zustimmung des Kaisers"
  FKN_recognition_of_emperor_desc: "One cannot survive in the Empire without certain privileges. Whereas a European king answers to naught but the Lord, we are subject to an earthly power's whims. The autonomy we do enjoy is provided by the Emperor... we would do well to stay in their good graces."
- FKN_growing_cities_title: "Accodomate the Cities"
+ FKN_growing_cities_title: "Accommodate the Cities"
  FKN_growing_cities_desc: "A duchy is merely the product of its subsidiary cities. Nowhere does this hold truer than in Germany, a region of rich history and culture. The cities provide all that we need to govern; we should keep them on a short leash with a steady hand."
  FKN_raubritter_title: "Deal with the Raubritter"
  FKN_raubritter_desc: "Men of great pedigree, by nature, hold great influence within Franconia. A disloyal nobility does not bode well for a nation, and we are no exception. For the duchy to run smoothly, these important landowners must have their appetite for power sated, at least temporarily. The support of the Raubritter shall serve us well."
@@ -213,4 +213,4 @@
  ################# UU Custom Tooltip ##################
  ######################################################
  fkn_defend_the_protestant_league_ct:0 " provinces in the North Germany and South Germany regions follow the §Y[Root.Religion.GetName]§! faith."
- fkn_defend_the_protestant_league_dt:0 "The §Y[Root.GetChurchOrFallbackName]§! estate privilege §YExpansionist Zealotry§! has no longer penalties for §Y[Root.GetName]§!. Additionally, the privilege instead grants §G+15.0%§! Morale of Armies and §G-0.05§! Monthly War Exhaustion while being at war with §YHeathens§! or §YHeretics§!."
+ fkn_defend_the_protestant_league_dt:0 "The §Y[Root.GetChurchOrFallbackName]§! estate privilege §YExpansionist Zealotry§! has no longer penalties for §Y[Root.GetName]§!. Additionally, the privilege instead grants §G+10.0%§! Morale of Armies and §G-0.05§! Monthly War Exhaustion while being at war with §YHeathens§! or §YHeretics§!."

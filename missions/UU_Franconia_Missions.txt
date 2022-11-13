@@ -1,7 +1,7 @@
 ﻿FKN_Gen_Missions_2 = {
 	slot = 1
 	generic = no
-	ai = yes
+	ai = no
 	potential = {
 		OR = {
 			tag = ANS
@@ -69,79 +69,12 @@
 			}
 		}
 	}
-	
-	FKN_strength_in_unity = {
-		icon = catholic_confraternity
-		required_missions = { }
-		position = 3
-		trigger = {
-			calc_true_if ={
-				all_ally = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-					
-				}
-				amount = 2
-			}
-		}
-		effect = {
-			add_dip_power = 50
-		}
-	}
-	
-	FKN_recognition_of_emperor = {
-		icon = switzerland_and_the_empire
-		required_missions = { FKN_strength_in_unity }
-		position = 4
-		provinces_to_highlight = {
-			owned_by = emperor
-		}
-		trigger = {
-			OR = {
-				emperor = {
-					has_opinion = {
-						who = ROOT
-						value = 125
-					}
-				}
-				is_emperor = yes
-				NOT = { hre_size = 1 }
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = FKN_imperial_diplomacy
-				duration = 7300
-			}
-			custom_tooltip = FKN_emperor_tt
-			tooltip = {
-				add_country_modifier = {
-					name = FKN_emperor_recogntion
-					duration = 10950
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_global_flag = FKN_emperor_mission_taken }
-					}
-					add_country_modifier = {
-						name = FKN_emperor_recogntion
-						duration = 10950
-					}
-					set_global_flag = FKN_emperor_mission_taken
-				}
-			}
-		}
-	}
 }
 	
 FKN_Gen_Missions_3 = {
 	slot = 2
 	generic = no
-	ai = yes
+	ai = no
 	potential = {
 		OR = {
 			tag = ANS
@@ -407,7 +340,7 @@ FKN_Gen_Missions_3 = {
 FKN_Gen_Missions_4 = {
 	slot = 3
 	generic = yes
-	ai = yes
+	ai = no
 	potential = {
 		OR = {
 			tag = ANS
@@ -476,69 +409,12 @@ FKN_Gen_Missions_4 = {
 			}
 		}
 	}
-	
-	FKN_growing_cities = {
-		icon = purely_for_commerce
-		required_missions = { }
-		position = 3
-		trigger = {
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 60
-			}
-			num_of_estate_privileges = {
-				estate = estate_burghers
-				value = 4
-			}
-		}
-		effect = {
-			capital_scope = {
-				area = {
-					add_province_modifier = {
-						name = FKN_selfreliant_burghers
-						duration = 7300
-					}
-				}
-			}
-		}
-	}
-	
-	FKN_raubritter = {
-		icon = rein_in_the_nobles
-		required_missions = { FKN_growing_cities }
-		position = 4
-		trigger = {
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 60
-			}
-			num_of_estate_privileges = {
-				estate = estate_nobles
-				value = 4
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				capital_scope = {
-					add_prosperity = 25
-				}
-			}
-			add_country_modifier = {
-				name = FKN_robber_barons_no_more
-				duration = 9125
-			}
-		}
-	}
-	
 }
 
 FKN_Missions_1 = {
 	slot = 1
 	generic = no
-	ai = yes
+	ai = no
 	potential = {
 		tag = FKN
 	} 
@@ -647,13 +523,12 @@ FKN_Missions_1 = {
 			}
 		}
 	}
-
 }
 
 FKN_Missions_2 = {
 	slot = 2
 	generic = no
-	ai = yes
+	ai = no
 	potential = {
 		tag = FKN
 		
@@ -810,152 +685,11 @@ FKN_Missions_2 = {
 			}
 		}
 	}
-}
-	
-FKN_Missions_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		tag = FKN
-	} 
-	has_country_shield  = yes
-	
-	FKN_saxony = {
-		icon = electorate_of_saxony
-		required_missions = { FKN_dux_francorum }
-		position = 5
-		provinces_to_highlight = {
-			OR = {
-				area = south_saxony_area
-				area = thuringia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = south_saxony_area
-					area = thuringia_area
-				}
-				value = 5
-			}
-		}
-		effect = {
-			custom_tooltip = FKN_every_saxon_province
-			hidden_effect = {
-				every_province = {
-					limit = {
-						culture = saxon
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			61 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = 14600
-					power = 15
-					key = FKN_influence_in_saxony
-				}
-			}
-			northern_saxony_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	FKN_westphalia = {
-		icon = westphalian_conquest
-		required_missions = { FKN_west_franconia }
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				area = braunschweig_area
-				area = weser_area
-				area = lower_saxony_area
-				area = lower_rhineland_area
-				area = north_rhine_area
-				area = westphalia_area
-				area = north_westphalia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = braunschweig_area
-					area = weser_area
-					area = lower_saxony_area
-					area = lower_rhineland_area
-					area = north_rhine_area
-					area = westphalia_area
-					area = north_westphalia_area
-				}
-				value = 20
-			}
-			any_owned_province = {
-				has_port = yes
-			}
-		}
-		effect = {
-			country_event = { id = ME_Franconia_Events.4 }
-		}
-	}
-}
 
-FKN_Missions_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = FKN
-		
-	} 
-	has_country_shield = yes
-	
-	FKN_capture_berlin = {
-		icon = develop_konigsberg
-		required_missions = { FKN_saxony }
-		position = 6
-		provinces_to_highlight = {
-			province_id = 50
-			NOT = { controlled_by = ROOT }
-		}
-		trigger = {
-			50 = {
-				controlled_by = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = FKN_german_ambition
-				duration = 10950
-			}
-		}
-	}
-}
-
-FKN_Missions_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		tag = FKN
-	} 
-	has_country_shield  = yes
-
-	
 	FKN_reformation = {
 		icon = victor_for_the_true_faith
 		required_missions = { }
 		position = 7
-		provinces_to_highlight = {
-		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = FKN_protestant_enabled
@@ -1090,7 +824,10 @@ FKN_Missions_5 = {
 				root = { religion = anglican }
 				root = { religion = hussite }
 			}
-			hre_religion_treaty = yes
+			OR = {
+				hre_religion_treaty = yes
+				NOT = { hre_size = 1 }
+			}	
 			calc_true_if = {
 				desc = fkn_defend_the_protestant_league_ct
 				amount = 50
@@ -1105,7 +842,136 @@ FKN_Missions_5 = {
 		}
 		effect = {
 			custom_tooltip = fkn_defend_the_protestant_league_dt
-			set_country_flag = improved_expansionist_zealotry
+			set_country_flag = fkn_improved_expansionist_zealotry
 		}
 	}
 }
+	
+FKN_Missions_3 = {
+	slot = 3
+	generic = no
+	ai = no
+	potential = {
+		tag = FKN
+	} 
+	has_country_shield  = yes
+	
+	FKN_saxony = {
+		icon = electorate_of_saxony
+		required_missions = { FKN_dux_francorum }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = south_saxony_area
+				area = thuringia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = south_saxony_area
+					area = thuringia_area
+				}
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = FKN_every_saxon_province
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture = saxon
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			61 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 14600
+					power = 15
+					key = FKN_influence_in_saxony
+				}
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	FKN_westphalia = {
+		icon = westphalian_conquest
+		required_missions = { FKN_west_franconia }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = braunschweig_area
+				area = weser_area
+				area = lower_saxony_area
+				area = lower_rhineland_area
+				area = north_rhine_area
+				area = westphalia_area
+				area = north_westphalia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = braunschweig_area
+					area = weser_area
+					area = lower_saxony_area
+					area = lower_rhineland_area
+					area = north_rhine_area
+					area = westphalia_area
+					area = north_westphalia_area
+				}
+				value = 20
+			}
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		effect = {
+			country_event = { id = ME_Franconia_Events.4 }
+		}
+	}
+}
+
+FKN_Missions_4 = {
+	slot = 4
+	generic = no
+	ai = no
+	potential = {
+		tag = FKN
+		
+	} 
+	has_country_shield = yes
+	
+	FKN_capture_berlin = {
+		icon = develop_konigsberg
+		required_missions = { FKN_saxony }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 50
+			NOT = { controlled_by = ROOT }
+		}
+		trigger = {
+			50 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = FKN_german_ambition
+				duration = 10950
+			}
+		}
+	}
+}
+
