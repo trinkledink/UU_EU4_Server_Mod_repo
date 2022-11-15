@@ -72,9 +72,7 @@ libertas_ecclesiae = {
     }
     trigger = {
         is_papal_controller = yes
-        is_emperor = yes
     	hre_religion = catholic
-        hre_religion_locked = yes
     }
     ai_will_do = {
         factor = 0
