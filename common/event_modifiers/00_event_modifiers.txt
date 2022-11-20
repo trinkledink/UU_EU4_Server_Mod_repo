@@ -12350,7 +12350,7 @@ estate_church_united_faith_and_culture = {
 #Province modifier  ##UU Change for religious culture
 estate_church_false_culture = {
 	local_unrest = 3
-	local_culture_conversion_cost = 1
+	local_culture_conversion_cost = 0.1
 	picture = "global_unrest_opposite"
 }
 

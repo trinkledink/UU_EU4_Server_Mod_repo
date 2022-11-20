@@ -16,6 +16,7 @@ generic_swabia_missions_2 = {
 			tag = ALS
 			tag = DWT
 			tag = ULM
+			tag = BAD
 		}
 		NOT = { tag = SWA }
 	}
@@ -112,6 +113,7 @@ generic_swabia_missions_3 = {
 			tag = ALS
 			tag = DWT
 			tag = ULM
+			tag = BAD
 		}
 		NOT = { tag = SWA }
 		
@@ -307,6 +309,7 @@ generic_swabia_missions_3_unite_swabia = {
 			tag = ALS
 			tag = DWT
 			tag = ULM
+			tag = BAD
 		}
 		NOT = { tag = SWA }
 		
@@ -398,6 +401,7 @@ generic_swabia_missions_4 = {
 			tag = ALS
 			tag = DWT
 			tag = ULM
+			tag = BAD
 		}
 		NOT = { tag = SWA }
 		
