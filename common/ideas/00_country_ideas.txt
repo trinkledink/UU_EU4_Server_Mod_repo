@@ -6174,47 +6174,47 @@ TUA_ideas = {
 	}
 }
 
-POM_ideas = {
-	start = {
-		light_ship_cost = -0.2
-		land_morale = 0.1
-	}
+# POM_ideas = {
+	# start = {
+		# light_ship_cost = -0.2
+		# land_morale = 0.1
+	# }
 	
-	bonus = {
- 		global_trade_power = 0.1
-	}
+	# bonus = {
+ 		# global_trade_power = 0.1
+	# }
 	
-	trigger = {
-		OR = {
-			tag = POM
-			primary_culture = pommeranian
-		}
-	}
-	free = yes
+	# trigger = {
+		# OR = {
+			# tag = POM
+			# primary_culture = pommeranian
+		# }
+	# }
+	# free = yes
 	
-	pom_idea_1 = {
-		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
-	}
-	pom_idea_2 = {
-		merchants = 1
-	}
-	pom_idea_3 = {
-		trade_steering = 0.25
-	}
-	pom_idea_4 = {
-		tolerance_heretic = 2		
-	}
-	pom_idea_5 = {
-		merc_maintenance_modifier = -0.15
-	}
-	pom_idea_6 = {
-		trade_efficiency = 0.1
-	}
-	pom_idea_7 = {
-		naval_forcelimit_modifier = 0.25
-	}
-}
+	# pom_idea_1 = {
+		# embargo_efficiency = 0.1
+		# privateer_efficiency = 0.15
+	# }
+	# pom_idea_2 = {
+		# merchants = 1
+	# }
+	# pom_idea_3 = {
+		# trade_steering = 0.25
+	# }
+	# pom_idea_4 = {
+		# tolerance_heretic = 2		
+	# }
+	# pom_idea_5 = {
+		# merc_maintenance_modifier = -0.15
+	# }
+	# pom_idea_6 = {
+		# trade_efficiency = 0.1
+	# }
+	# pom_idea_7 = {
+		# naval_forcelimit_modifier = 0.25
+	# }
+# }
 
 KAZ_ideas = {
 	start = {
@@ -15203,47 +15203,47 @@ EPI_ideas = {
 	# }
 # }
 
-FKN_ideas = {
-	start = {
-		prestige = 1		##UU moved
-		global_manpower_modifier = 0.2
-	}
+# FKN_ideas = {
+	# start = {
+		# prestige = 1		##UU moved
+		# global_manpower_modifier = 0.2
+	# }
 	
-	bonus = {
-		discipline = 0.05
-	}
+	# bonus = {
+		# discipline = 0.05
+	# }
 	
-	trigger = {
-		tag = FKN
-	}
-	free = yes		#will be added at load.
+	# trigger = {
+		# tag = FKN
+	# }
+	# free = yes		#will be added at load.
 	
-	fkn_duchy_restored = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-	}
-	fkn_main_trading = {
-		trade_efficiency = 0.1
-	}
-	fkn_rugged_land_of_fortresses = {
-		defensiveness = 0.2
-	}
-	fkn_free_knights_of_franconia = {
-		infantry_power = 0.10    #UU changed from cav power
-	}
-	franconian_wine = { #in WBG_ideas
-		#production_efficiency = 0.1
-	}
-	fkn_baroque = {
-		monthly_fervor_increase = 0.25	##UU added, removing -10% AE reduc
-		church_power_modifier = 0.1	##UU added
-	}
-	fkn_franconian_bourgeoisie = {
-		development_cost = -0.05
-		advisor_cost = -0.1
-	}
-}
+	# fkn_duchy_restored = {
+		# legitimacy = 1
+		# devotion = 1
+		# republican_tradition = 0.3
+	# }
+	# fkn_main_trading = {
+		# trade_efficiency = 0.1
+	# }
+	# fkn_rugged_land_of_fortresses = {
+		# defensiveness = 0.2
+	# }
+	# fkn_free_knights_of_franconia = {
+		# infantry_power = 0.10    #UU changed from cav power
+	# }
+	# franconian_wine = { #in WBG_ideas
+		# #production_efficiency = 0.1
+	# }
+	# fkn_baroque = {
+		# monthly_fervor_increase = 0.25	##UU added, removing -10% AE reduc
+		# church_power_modifier = 0.1	##UU added
+	# }
+	# fkn_franconian_bourgeoisie = {
+		# development_cost = -0.05
+		# advisor_cost = -0.1
+	# }
+# }
 
 SOR_ideas = {
 	start = {
