@@ -299,25 +299,25 @@ UU_elbian_conquest = {
 				}			
 			}
 			add_stability_or_adm_power = yes
-		}
-		
-		hidden_effect = {
-			every_core_province = {	
-				limit = {
-					OR = {
-						area = holstein_area
-						area = mecklenburg_area
-						area = westphalia_area
-						area = north_westphalia_area
-						area = franconia_area
-						area = upper_franconia_area
-						area = hesse_area
+			hidden_effect = {
+				every_core_province = {	
+					limit = {
+						OR = {
+							area = holstein_area
+							area = mecklenburg_area
+							area = westphalia_area
+							area = north_westphalia_area
+							area = franconia_area
+							area = upper_franconia_area
+							area = hesse_area
+						}
 					}
+					add_local_autonomy = -20
+					add_devastation = -30
 				}
-				add_local_autonomy = -20
-				add_devastation = -30
 			}
 		}
+	
 	}
 }
 UU_elbian_integration = {
