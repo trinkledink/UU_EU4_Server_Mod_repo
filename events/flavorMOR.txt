@@ -7,45 +7,45 @@
 namespace = flavor_mor
 normal_or_historical_nations = yes
 
-#Crisis of the Maghreb (REMOVED)
-country_event = {
-	id = flavor_mor.1
-	title = flavor_mor.1.t
-	desc = flavor_mor.1.d
-	picture = FAMINE_eventPicture
+# #Crisis of the Maghreb (REMOVED)
+# country_event = {
+	# id = flavor_mor.1
+	# title = flavor_mor.1.t
+	# desc = flavor_mor.1.d
+	# picture = FAMINE_eventPicture
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	trigger = {
-		always = no #it will never happen.
-		tag = MOR
-		NOT = { is_year = 1450 }
-	}
+	# trigger = {
+		# always = no #it will never happen.
+		# tag = MOR
+		# NOT = { is_year = 1450 }
+	# }
 	
-	mean_time_to_happen = {
-		months = 300000000000 #it will never happen.
-	}
+	# mean_time_to_happen = {
+		# months = 300000000000 #it will never happen.
+	# }
 
-	option = {
-		name = flavor_mor.1.a #Let them try! We shall rise again!
-		add_country_modifier = {
-			name = "mor_crisis"
-			duration = 1825
-		}
-		every_known_country = {
-			limit = {
-				capital_scope = {
-					region = maghreb_region
-				}
-			}
-			add_country_modifier = {
-				name = "mor_crisis"
-				duration = 1825
-			}
-			country_event = { id = flavor_mor.11 }
-		}
-	}
-}
+	# option = {
+		# name = flavor_mor.1.a #Let them try! We shall rise again!
+		# add_country_modifier = {
+			# name = "mor_crisis"
+			# duration = 1825
+		# }
+		# every_known_country = {
+			# limit = {
+				# capital_scope = {
+					# region = maghreb_region
+				# }
+			# }
+			# add_country_modifier = {
+				# name = "mor_crisis"
+				# duration = 1825
+			# }
+			# country_event = { id = flavor_mor.11 }
+		# }
+	# }
+# }
 
 #Moorish Refugees
 country_event = {
