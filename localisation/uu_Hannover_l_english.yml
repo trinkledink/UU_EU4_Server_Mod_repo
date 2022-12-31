@@ -1,0 +1,25 @@
+﻿l_english:
+ ###########################################
+ ##############  MISSIONS  #################
+ ###########################################
+ 
+uu_han_pompom_title: "Hansa Trade Ascendance"
+uu_han_pompom_desc: "The Hanseatic League depended heavily on the Pomeranian cities to access Polish trade along the Oder. Let us project our power into this trade region."
+ 
+ 
+ ###########################################
+ ##############  MODIFIERS  ################
+ ###########################################
+ 
+ uu_han_hansa_cities_mod: "Hanseatic Trade Fleet"
+ uu_han_kings_of_england: "King of England"
+ uu_han_trade_fleet: "Hanseatic War Fleet"
+ 
+ 
+ ###########################################
+ ################  EVENTS  #################
+ ###########################################
+# UU_FC_1:0 "New Production Methods"
+# UU_balance_events.4.DESC:0 "With the level of production we have reached, we have run low on the number of workers. It is being proposed that we turn towards the production of more specialized goods using new methods of labor-saving production."
+# UU_balance_events.4a:0 "Produce dyes."
+

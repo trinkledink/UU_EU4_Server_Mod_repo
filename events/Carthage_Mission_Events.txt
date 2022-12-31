@@ -137,8 +137,9 @@ country_event = {
 			kill_ruler = yes
 		}
 		
-		set_great_project_tier_0 = {
+		add_great_project_tier= {
 			type = stpeters_cathedral
+			tier = -3
 		}
 	}
 }

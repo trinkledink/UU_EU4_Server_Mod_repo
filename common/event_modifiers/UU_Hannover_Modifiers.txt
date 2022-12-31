@@ -1,0 +1,14 @@
+
+uu_han_hansa_cities_mod = {
+	global_ship_cost = -0.15
+	global_ship_trade_power = 0.20
+}
+
+uu_han_kings_of_england = {
+	heavy_ship_power = 0.1
+}
+
+uu_han_trade_fleet = {
+	galley_power = 0.1
+	trade_efficiency = 0.1
+}

@@ -1,0 +1,16 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+
+uu_FC_emperor_freeest = {
+	potential = {
+		has_reform = free_city
+	}
+
+	trigger = {
+		has_reform = free_city
+		has_country_flag = uu_freeest_city_trigger
+	}
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.15
+}
+

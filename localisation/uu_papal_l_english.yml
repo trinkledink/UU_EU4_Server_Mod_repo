@@ -9,14 +9,15 @@
  UU_papal_creed.EVTOPTD:0 "The Church offers salvation even for users."
  UU_papal_creed.EVTOPTE:0 "We must all rise to serve His will."
  UU_papal_creed.EVTOPTF:0 "Announce a new saint."
+ UU_papal_creed.EVTOPTG:0 "We must extirpate reformist thought from the church."
 
  ##################  Papal Conclave Election  ########################
- UU_papal_election.EVTNAME1:0 "The Papal Conclave" 
- UU_papal_election.EVTDESC1:0 "With the passing of $MONARCHTITLE$ $MONARCH$, white smoke rises from the Vatican as the Papal conclave declares St. Peter's newest successor. Our actions in the lead up to their decision have surely influenced the outcome..." 
+ UU_papal_election.EVTNAME1:0 "The Papal Conclave"
+ UU_papal_election.EVTDESC1:0 "With the passing of $MONARCHTITLE$ $MONARCH$, white smoke rises from the Vatican as the Papal conclave declares St. Peter's newest successor. Our actions in the lead up to their decision have surely influenced the outcome..."
  UU_papal_election.1.a:0 "I hope our 'investments' paid off."
  UU_papal_election.1.b:0 "I hope our threats were taken seriously."
  UU_papal_election.1.c:0 "The Cardinals will have made the right decision on their own."
-
+ 
  
  ############~\common\event_modifiers###############
  recent_papal_creed:0 "Recent Papal Creed"

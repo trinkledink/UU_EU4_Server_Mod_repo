@@ -1,5 +1,13 @@
+# Change Muslim School:
+change_school_modifier = {
+	# Nothing is needed here
+}
 # Buddhist help
 helped_poor = {
+}
+#French Morale
+UU_french_morale = {
+	land_morale  = -0.05
 }
 benefited_from_offerings = {
 }
@@ -23,3 +31,10 @@ U.U_el_dorado = {
 	monthly_splendor = 3
 	prestige_decay = -0.01	
 }
+#DEBUG player uncon diplomat
+player_uncon_diplomat_modifier = {
+	diplomats = 1
+}
+
+
+

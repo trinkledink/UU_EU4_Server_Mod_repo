@@ -1,0 +1,28 @@
+
+RUG_island_of_opportunity = {
+	local_development_cost = -0.25
+}
+RUG_naval_supremacy = {
+	may_perform_slave_raid_on_same_religion = yes
+}
+uu_pom_competent_marines = {
+	shock_damage_received = -0.1
+	is_marine_modifier = yes
+}
+uu_pom_strong_marines = {
+	discipline = 0.05
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+POM_surrounded_by_kinsmen = {
+	improve_relation_modifier = 0.2
+}
+uu_pom_hansa_destroyed = {
+	privateer_efficiency = 0.1
+	naval_morale = 0.1
+}
+POM_university_of_greifswald = {
+	advisor_pool = 1
+	local_institution_spread = 0.3
+}
+

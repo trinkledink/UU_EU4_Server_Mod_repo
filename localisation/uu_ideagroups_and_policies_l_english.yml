@@ -1,0 +1,90 @@
+﻿l_english:
+
+ ###############################################################
+ # Ideagroup Localisation
+ ###############################################################
+ 
+ # Admin Ideas
+ independent_legal_system_adm_idea:0 "Independent Legal System"
+ independent_legal_system_adm_idea_desc:0 "With an independent legal system, stonger checks and balances greatly stabilize our nation."
+ meritocratic_court_adm_idea:0 "Meritocratic Court"
+ meritocratic_court_adm_idea_desc:0 "Doing away with nepotisim and favoritism when appointing advisors to our court will allow greater efficiency and advancement of our bureaucracy."
+ great_works_project_adm_idea:0 "Great Works Project"
+ great_works_project_adm_idea_desc:0 "It is time for us, now, to invest in ourselves through infrastructure and prove what great marvels can be born of mankind's creation."
+ 
+ ###############################################################
+ # Policies Localisation
+ ###############################################################
+ 
+ #Mercenary Policies
+ #Adm
+ mercenary_resettlement_policy:0 "Mercenary Resettlement Act"
+ desc_mercenary_resettlement_policy:0 "Tradition dictates that mercenaries are paid in gold. By paying them in land, we can integrate these foreigners and hirearms into our nation, further developing our nation."
+ peacetime_mercenary_recruitment:0 "Peacetime Mercenary Recruitment"
+ desc_peacetime_mercenary_recruitment:0 "Most nations reliant on mercenaries have made the mistake of disbanding their hired armies during peacetime. By enacting an act to keep mercenaries on standby we can avoid this mistake, and utilise the labour force for other purposes."
+ privatised_new_world_companies_policy:0 "Privatised New World Companies"
+ desc_privatised_new_world_companies_policy:0 "The connections we have made through our mercenaries provides us with an opportunity to create private New World Companies."
+ 
+ #Dip
+ indigenous_mercenaries_policy:0 "Enlistment of Indigenous Mercenaries Act"
+ desc_indigenous_mercenaries_policy:0 "Utilising the natives in our armies lets us fight better in the New World, as well as integrate the local population to our colonies."
+ influence_mercenaries_policy:0 "Incorporation of Vassal Armies"
+ desc_influence_mercenaries_policy:0 "There should be a closer connection between the armies of our vassal states and ours."
+ expanded_network_policy:0 "Expanded Trade Network"
+ desc_expanded_network_policy:0 "Mercenaries follow the winds of trade and war, and the web of connections that we have gained from our focus on a hired army has proven quite profitable."
+ 
+ #Mil
+ innovative_mercenaries_policy:0 "Private Innovators Act"
+ desc_innovative_mercenaries_policy:0 "Promoting individuals with a skill for military innovations will benefit our nations armies greatly."
+ holy_orders_policy:0 "Enlistment of Holy Orders"
+ desc_holy_orders_policy:0 "A man fighting for faith is better than a man fighting for money. Mercenaries fighting in the name of God will show greater ability than the regular hirearm."
+ improved_battlefield_knowledge_policy:0 "Commandant Bribery"
+ desc_improved_battlefield_knowledge_policy:0 "Bribing the enemy commandants will obviously give us an advantage when facing the enemy - if we have to face them at all."
+ naval_raids_policy:0 "National Privateers Act"
+ desc_naval_raids_policy:0 "It is common for pirates to roam the seas around us. We could take advantage of this and have the pirates raid for us instead."
+ marine_mercenaries_policy:0 "Contract Sailors Act"
+ desc_marine_mercenaries_policy:0 "Hiring private sailors will greatly increase the sailors that our nation can employ."
+ enlistment_propaganda_policy:0 "Enlistment Propaganda"
+ desc_enlistment_propaganda_policy:0 "With our clout over public sentiment, it is essential that we exercise it in a way that ensures the people know for what we fight."
+ 
+ ###############################################################
+ # Ideagroup Events Localisation
+ ###############################################################
+ 
+ uu_mercenary_ideas.name1:0 "Elite Mercenaries flock to our Banner"
+ uu_mercenary_ideas.desc1:0 "As our armies march and conquer, our reputation grows. The renown of our nation has spread far and wide, attracting only the best of mercenaries to the employment of our armies."
+ uu_mercenary_ideas.1.a:0 "Hire only the best!"
+ uu_mercenary_ideas.name2:0 "Regional Conflict attracts Mercenaries"
+ uu_mercenary_ideas.desc2:0 "The scent of war has attracted many a mercenary, flocking to our armies like bees to a flower on a spring day. The recent surge of new bodies willing to fight for us will aid us in this time of need."
+ uu_mercenary_ideas.2.a:0 "Get them in the ranks, and send them out as cannon fodder!"
+ uu_mercenary_ideas.name3:0 "L'esprit de l'escalier"
+ uu_mercenary_ideas.desc3:0 "When the British captive officer challenged the French Navy Officer Surcouf with the words 'you French fight for money, while we English fight for honour', Surcouf coldly replied 'Each of us fights for what he lacks the most'."
+ uu_mercenary_ideas.3.a:0 "We fight for Gold"
+ uu_mercenary_ideas.3.b:0 "We fight for Honour"
+ uu_mercenary_ideas.name4:0 "Mercenaries demand Payment"
+ uu_mercenary_ideas.desc4:0 "It appears that after recent conflicts, the men supposed to pay the hired arms all ran off with the money. Now the slightly uppity mercenaries are knocking on the door, demanding their cash in hand."
+ uu_mercenary_ideas.4.a:0 "Give them what they've earned"
+ uu_mercenary_ideas.4.b:0 "Tell them to knock on someone else's door"
+ uu_mercenary_ideas.name5:0 "Conscription during Peace?"
+ uu_mercenary_ideas.desc5:0 "As the recent wars have faded away, there is no longer any need for mercenaries. The question then arises, what shall we do with these mercenaries?"
+ uu_mercenary_ideas.5.a:0 "Put them to work labouring!"
+ uu_mercenary_ideas.name6:0 "Evolving Trade Routes"
+ uu_mercenary_ideas.desc6:0 "Recently with our integrated road networks, we have seen an increase in traders wanting to travel through our lands. This is a great benefit for our nation."
+ uu_mercenary_ideas.6.a:0 "The cash must flow."
+ uu_mercenary_ideas.name7:0 "The Scourge of the Land"
+ uu_mercenary_ideas.desc7:0 "The ongoing war, and the everincreasing economic shortages, have led our soldiers to turn ever more brutal and barbaric in their looting and plundering of enemy cities. The men are running wild in the lands of our enemies!"
+ uu_mercenary_ideas.7.a:0 "Plunder, ravage and loot everything in sight!"
+ uu_mercenary_ideas.name8:0 "Mercenary Pools Drained"
+ uu_mercenary_ideas.desc8:0 "The war exhaustion has affected not only our economy, but the number of men willing to fight for us. Anywhere we look, there are no more men willing to pick up their weapons and go to war for our cause."
+ uu_mercenary_ideas.8.a:0 "Bah! We will win this conflict on our own."
+ uu_mercenary_ideas.name9:0 "Seizing the Coffers"
+ uu_mercenary_ideas.desc9:0 "With recent victories, certain mercenaries have made themselves wealthy on the spoils of our wars. Money that was supposed to go to our coffers have instead ended up in the hands of greedy hiremen. Should we intervene and seize these riches for the crown, or let the mercenaries run away with our rightful ducats?"
+ uu_mercenary_ideas.9.a:0 "Seize them and their wealth!"
+ uu_mercenary_ideas.9.b:0 "Let Sleeping Dogs Lie"
+ uu_mercenary_ideas.name10:0 "Mercenaries Running Amock"
+ uu_mercenary_ideas.desc10:0 "Although usually quite disciplined, the recent recruits of hirearms are a rowdy bunch, and they have a reputation of going off on their own and following their own wills, instead the orders of our officers."
+ uu_mercenary_ideas.10.a:0 "You lot! Y- you come back here!"
+ uu_mercenary_ideas.name11:0 "Promotion for a Prominent Leader?"
+ uu_mercenary_ideas.desc11:0 "Recently, a certain mercenary has made a name for himself. His heroic deeds in face of great odds has made him exhalted amongst men. His skills and battle experience would be an asset for our nation."
+ uu_mercenary_ideas.11.a:0 "We need you for the administration of the army"
+ uu_mercenary_ideas.11.b:0 "We need you as a general"

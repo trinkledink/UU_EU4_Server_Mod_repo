@@ -53,7 +53,7 @@ ctg_maritime_culture = {
 ctg_economic_power = {
 	build_cost = -0.05
 	trade_efficiency = 0.20
-	morale_in_fleet_modifier = 0.10
+	naval_morale = 0.10
 }
 
 # Military Mercenary Reforms

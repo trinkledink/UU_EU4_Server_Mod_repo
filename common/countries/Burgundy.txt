@@ -3,7 +3,8 @@
 graphical_culture = westerngfx
 
 color = { 99  14  87 }
-revolutionary_colors = { 0 2 0 }
+revolutionary_colors = { 1  8  5 } #Belgium
+
 historical_score = 650
 
 historical_idea_groups = {
@@ -76,6 +77,7 @@ monarch_names = {
 	"Sébastien #0" = 0
 	"Simon #0" = 0
 
+
 	"Marie #0" = -10
 	"Geneviève #0" = -2
 	"Anne #0" = -1
@@ -128,4 +130,6 @@ army_names = {
          "Armée de l'Avallonnais" "Armée de Tonnerre"  "Armée de l'Auxonnois"
          "Armée de la Saône"      
 	 "Armée de $PROVINCE$" 
+
 }
+

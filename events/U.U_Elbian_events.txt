@@ -1,4 +1,5 @@
-namespace = elb_mission_events
+namespace = UU_elb_mission_events
+
 #Hamburg World Port
 country_event = {
 	id = UU_elb_mission_events.1

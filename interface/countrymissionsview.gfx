@@ -156,50 +156,7 @@ spriteTypes = {
 	
 #### Generic Mission Icons ####
 
-#Scandinavia
 
-	spriteType = {
-		name = "consolidate_scandinavia"
-		texturefile = "gfx//interface//missions//consolidate_scandinavia.dds"
-	}
-	
-	spriteType = {
-        name = "reestablish_the_danelaw"
-        texturefile = "gfx//interface//missions//reestablish_the_danelaw.dds"
-    }
-	
-	spriteType = {
-        name = "a_different_way"
-        texturefile = "gfx//interface//missions//a_different_way.dds"
-    }
-	
-	spriteType = {
-        name = "exploring_the_northern_route"
-        texturefile = "gfx//interface//missions//exploring_the_northern_route.dds"
-    }
-	
-	spriteType = {
-        name = "dublin_slavery"
-        texturefile = "gfx//interface//missions//dublin_slavery.dds"
-    }
-	
-	spriteType = {
-        name = "leif_erikson"
-        texturefile = "gfx//interface//missions//leif_erikson.dds"
-    }
-	
-	spriteType = {
-        name = "exploited_fur_trade"
-        texturefile = "gfx//interface//missions//exploited_fur_trade.dds"
-    }
-	
-	spriteType = {
-        name = "victory_of_the_norsemen"
-        texturefile = "gfx//interface//missions//victory_of_the_norsemen.dds"
-    }
-	
-#Everything else
-	
 	spriteType = {
 		name = "mission_alliances"
 		texturefile = "gfx//interface//missions//mission_alliances.dds"
@@ -628,4 +585,10 @@ spriteTypes = {
 		name = "mission_sw_paquime"
 		texturefile = "gfx/interface/missions/sw_paquime.dds"
 	}
+	
+	spriteType = {
+		name = "mission_unknown_mission"
+		texturefile = "gfx/interface/missions/mission_unknown_mission.dds"
+	}
+
 }

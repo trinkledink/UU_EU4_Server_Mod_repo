@@ -1,0 +1,27 @@
+country_decisions = {
+	mjl_change_muslim_school = {
+		major = no
+		potential = {
+			ai = no
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+			NOT = { has_country_flag = UU_mjl_change_school } 
+		}
+		allow = {
+			hidden_trigger = {
+				NOT = { has_country_flag = UU_mjl_change_school } 
+			}
+			custom_trigger_tooltip = {
+				tooltip = mjl_change_muslim_school_trigger_tooltip
+				#NOT = { has_country_modifier = change_school_modifier }
+			}
+			stability = 0
+		}
+		effect = {
+			custom_tooltip = mjl_change_muslim_school_decision_tt
+			set_country_flag = UU_mjl_change_school
+			add_stability = -2
+			country_event = { id = mjl_events.5 }
+		}
+	}
+}

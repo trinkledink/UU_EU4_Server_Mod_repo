@@ -110,8 +110,8 @@ the_liquor_act = {
 	allow = {
 		full_idea_group = quality_ideas
 		full_idea_group = economic_ideas
-	}	
-	
+	}		
+
 	recover_army_morale_speed = 0.15
 	reinforce_speed = 0.15
 
@@ -540,7 +540,7 @@ the_maritime_intelligencer_unit = {
 	allow = {
 		full_idea_group = naval_ideas
 		full_idea_group = aristocracy_ideas
-	}	
+	}		
 	
 	siege_blockade_progress = 1
 	global_naval_engagement_modifier = 0.1
@@ -667,7 +667,7 @@ inspirational_leaders = {
 	}	
 	
 	leader_land_shock = 1
-	leader_land_manuever = 1
+	leader_land_manuever = 1						 
 	
 	ai_will_do = {
 		factor = 1.2
@@ -846,7 +846,9 @@ noble_loyalty_act = {
 		full_idea_group = spy_ideas
 	}
 
-	cavalry_power = 0.2
+	nobles_loyalty_modifier = 0.1				  
+	cavalry_power = 0.20
+
 	
 	ai_will_do = {
 		factor = 1

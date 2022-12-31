@@ -20,3 +20,125 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Nepali Crusade
+    id = uu_easter_egg_events.2
+    title = uu_easter_egg_events.2.t
+    desc = uu_easter_egg_events.2.desc
+    picture = DHIMMI_ESTATE_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 1600
+        tag = NPL
+        NOT = {
+            exists = LIT
+        }
+        any_owned_province = {
+            culture = lithuanian
+        }
+        has_had_golden_age = yes
+        OR = {
+            has_reform = states_general_reform
+            has_reform = monastic_elections_reform
+            government = republic
+        }
+        great_power_rank = 10
+    }
+    
+    mean_time_to_happen = {
+        months = 240
+    }
+    option = {
+        name = uu_easter_egg_events.2.a
+        every_province = {
+            limit = {
+                culture = lithuanian
+            }
+            discover_country = ROOT
+            add_claim = ROOT
+        }
+        add_prestige = -1
+    }
+    option = {
+        name = uu_easter_egg_events.2.b
+    }
+}
+
+country_event = { #Missing Localization
+    id = uu_easter_egg_events.3
+    title = uu_easter_egg_events.3.t
+    desc = uu_easter_egg_events.3.desc
+    picture = OVEREXTENSION_eventPicture
+
+    trigger = {
+        NOT = { stability = 1 }
+        has_discovered = 61 #Dresden
+        has_discovered = 315 #Finnmark
+        OR = {
+            has_any_disaster = yes
+            overextension_percentage = 1.0
+        }
+    }
+    mean_time_to_happen = {
+        months = 24000
+    }
+
+    option = {
+        name = uu_easter_egg_events.3.a
+        61 = {
+            owner = {
+                add_prestige = -0.01
+            }
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.3.b
+        315 = {
+            owner = {
+                add_prestige = -0.01
+            }
+        }
+    }
+}
+
+country_event = { #El Dorado Delhi
+    id = uu_easter_egg_events.4
+    title = uu_easter_egg_events.4.t
+    desc = uu_easter_egg_events.desc
+    picture = GOLDEN_CITY_eventPicture
+
+    trigger = {
+        has_country_modifier = sce_search_eldorado
+    }
+    mean_time_to_happen = {
+        months = 2400
+    }
+    option = {
+        name = uu_easter_egg_events.4.a
+        if = {
+            limit = {
+                NOT = { has_discovered = 522}
+            }
+            hidden_effect = {
+                522 = {
+                    discover_country = ROOT
+                }
+            }
+            custom_tooltip = uu_delhi_eldorado_tt
+        } else = {
+            add_prestige = 1
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.4.b
+        define_advisor = {
+            type = trader
+            cost_multiplier = 0.9
+            skill = 1
+            culture = kanauji
+            religion = hinduism
+        }
+    }        
+}

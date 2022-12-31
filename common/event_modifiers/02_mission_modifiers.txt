@@ -4,48 +4,48 @@
 
 #Scandinavia Missions
 
-reestablish_the_danelaw = {
-	culture_conversion_cost = -0.10
-	global_autonomy = -0.03
-}
+# reestablish_the_danelaw = {
+	# culture_conversion_cost = -0.10
+	# global_autonomy = -0.03
+# }
 
-exploring_the_northern_route = {
-	range = 0.33
-	naval_attrition = -0.10
-}
+# exploring_the_northern_route = {
+	# range = 0.33
+	# naval_attrition = -0.10
+# }
 
-prepare_russian_conquest = {
-	land_attrition = -0.10
-	land_morale = 0.05
-}
+# prepare_russian_conquest = {
+	# land_attrition = -0.10
+	# land_morale = 0.05
+# }
 
-swedish_trade_cities = {
-	trade_goods_size_modifier = 0.20
-}
+# swedish_trade_cities = {
+	# trade_goods_size_modifier = 0.20
+# }
 
-shipyard_of_europe = {
-	global_ship_recruit_speed = -0.25
-	light_ship_cost = -0.10
-}
+# shipyard_of_europe = {
+	# global_ship_recruit_speed = -0.25
+	# light_ship_cost = -0.10
+# }
 
-scandinavian_trade_dominance = {
-	trade_efficiency = 0.2
-	trade_steering = 0.25
-}
+# scandinavian_trade_dominance = {
+	# trade_efficiency = 0.2
+	# trade_steering = 0.25
+# }
 
-viking_heritage = {
-	may_perform_slave_raid = yes
-	navy_tradition_decay = -0.005
-}
+# viking_heritage = {
+	# may_perform_slave_raid = yes
+	# navy_tradition_decay = -0.005
+# }
 
-emperor_of_all_germanic_peoples = {
-	num_accepted_cultures = 2
-}
+# emperor_of_all_germanic_peoples = {
+	# num_accepted_cultures = 2
+# }
 
-exploited_fur_trade = {
-	development_cost = -0.10
-	trade_efficiency = 0.05
-}
+# exploited_fur_trade = {
+	# development_cost = -0.10
+	# trade_efficiency = 0.05
+# }
 #Elbian Missions
 
 elb_ready_for_conquest = {
@@ -59,9 +59,12 @@ elb_help = {
 	local_sailors_modifier = 1
 	local_ship_repair = 1
 	province_trade_power_value = 10
-	owner = {
-		naval_forcelimit = 15
-	}
+	naval_forcelimit = 15
+}
+elb_berlin_war_school = {
+	army_tradition = 0.25
+	leader_land_fire = 1
+	mil_tech_cost_modifier = -0.05
 }
 estate_burghers_elb_improved_workshops_mod = {
 	local_production_efficiency = 0.2
@@ -92,11 +95,5 @@ elb_rapid_urbanization = {
 	development_cost = -0.1
 	build_cost = -0.1
 }
-elb_berlin_war_school = {
-	owner = {
-		army_tradition = 0.25
-		leader_land_fire = 1
-		mil_tech_cost_modifier = -0.05
-	}
-}
+
 

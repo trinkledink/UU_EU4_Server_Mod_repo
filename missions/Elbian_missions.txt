@@ -196,20 +196,20 @@ UU_elbian_conquest = {
 				}
 				add_permanent_claim = ELB
 			}
-		}
-		hidden_effect = {
-			every_core_province = {	
-				limit = {
-					OR = {
-						area = weser_area
-						area = lower_saxony_area
-						area = mittelmark_area
-						area = neumark_area
-						area = braunschweig_area
+			hidden_effect = {
+				every_core_province = {	
+					limit = {
+						OR = {
+							area = weser_area
+							area = lower_saxony_area
+							area = mittelmark_area
+							area = neumark_area
+							area = braunschweig_area
+						}
 					}
+					add_local_autonomy = -20
+					add_devastation = -30
 				}
-				add_local_autonomy = -20
-				add_devastation = -30
 			}
 		}
 	}
@@ -299,24 +299,25 @@ UU_elbian_conquest = {
 				}			
 			}
 			add_stability_or_adm_power = yes
-		}
-		hidden_effect = {
-			every_core_province = {	
-				limit = {
-					OR = {
-						area = holstein_area
-						area = mecklenburg_area
-						area = westphalia_area
-						area = north_westphalia_area
-						area = franconia_area
-						area = upper_franconia_area
-						area = hesse_area
+			hidden_effect = {
+				every_core_province = {	
+					limit = {
+						OR = {
+							area = holstein_area
+							area = mecklenburg_area
+							area = westphalia_area
+							area = north_westphalia_area
+							area = franconia_area
+							area = upper_franconia_area
+							area = hesse_area
+						}
 					}
+					add_local_autonomy = -20
+					add_devastation = -30
 				}
-				add_local_autonomy = -20
-				add_devastation = -30
 			}
 		}
+	
 	}
 }
 UU_elbian_integration = {
@@ -426,7 +427,7 @@ UU_elbian_integration = {
 		
 		effect = {
 			country_event = {
-				id = UU_elb_hamburg_world_port.1
+				id = UU_elb_mission_events.1
 			}
 			44 = {
 				add_province_modifier = {
@@ -853,7 +854,10 @@ UU_elbian_production = {
 			num_of_owned_provinces_with = {
 				value = 5
 				development = 25
-				is_prosperous = yes
+				custom_trigger_tooltip = {
+					tooltip = ELB_PARADOX_SHAME_JEFFREY_BEZOS
+					is_prosperous = yes
+				}
 			}
 		}
 		effect = {
