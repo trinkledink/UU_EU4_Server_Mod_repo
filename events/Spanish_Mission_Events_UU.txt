@@ -1,0 +1,1116 @@
+namespace = uu_spa_events
+
+country_event = { #Question of Portuguese relations
+	id = uu_spa_events.1
+	title = "uu_spa_events.1.t"
+	desc = "uu_spa_events.1.desc"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #They are friends not food
+		name = uu_spa_events.1.a
+		trigger = { 
+			NOT = { 
+				is_enemy = POR
+				is_rival = POR
+			}
+		}
+		custom_tooltip = uu_spa_portugal_frens_tt
+		set_country_flag = uu_spa_portugal_frens_flag
+		if = {
+			limit = {
+				NOT = { alliance_with = POR }
+			}
+			create_alliance = POR 
+		} else = {
+			add_stability = 1
+			add_dip_power = 100
+		}
+		POR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_good_relations
+			}
+		}
+		add_opinion = {
+			who = POR
+			modifier = opinion_good_relations
+		}
+		add_trust = {
+			who = POR
+			value = 25
+			mutual = yes
+		}
+	}
+	option = { #They are PU subjects not friends
+		name = uu_spa_events.1.b
+		if = {
+			limit = {
+				tag = SPA
+			}
+			POR = {
+				remove_historical_friend = SPA
+			}
+		} else = {
+			POR = {
+				remove_historical_friend = CAS
+			}
+		}		
+		remove_historical_friend = POR
+		add_legitimacy = -10
+		add_prestige = -25
+		add_mil_power = 100
+		add_casus_belli = {
+			type = cb_claim_throne
+			target = POR
+			months = 240
+		}
+		POR = {
+			add_opinion = {
+				who = ROOT
+				modifier = claimed_throne_on_us
+			}
+		}
+	}
+}
+
+country_event = { #Break the Berber Pirates
+	id = uu_spa_events.2
+	title = "uu_spa_events.2.t"
+	desc = "uu_spa_events.2.desc"
+	picture = FLAGSHIP_SUNK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #rekt berbers
+		name = uu_spa_events.2.a
+		add_country_modifier = {
+			name = "uu_spa_modifier_cowed_pirates"
+			duration = 5475
+		}
+	}
+}
+
+country_event = { #The Despoiling of Tenochtitlan
+	id = uu_spa_events.3
+	title = "uu_spa_events.3.t"
+	desc = "uu_spa_events.3.desc"
+	picture = AZTEC_PYRAMID_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = uu_spa_events.3.a
+		852 = {
+			set_base_tax = 3
+			set_base_production = 3
+			set_base_manpower = 1
+			add_devastation = 80
+		}
+		add_great_project_tier = {
+			type = tenochtitlan
+			tier = -3
+		}
+		if = {
+			limit = {
+				religion = catholic
+				852 = {
+					NOT = {
+						religion = catholic
+					}
+				} 
+			}
+			852 = { #Mexico City
+				change_religion = catholic
+			}
+		}
+		852 = { #Mexico City
+			change_culture = ROOT
+			add_province_modifier = {
+				name = uu_spa_modifier_building_new_capital
+				duration = 18250
+			}
+			rename_capital = "Ciudad de Mexico"
+		}
+		if = {
+			limit = {
+				any_subject_country = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+					owns = 852
+				}
+				852 = { is_capital = no }
+			}
+			every_subject_country = {
+				limit = {
+					owns = 852
+				}
+				852 = {
+					prev_move_capital_effect = yes
+				}
+			}
+		}
+	}
+	option = { 
+		name = uu_spa_events.3.b
+		852 = {
+			set_base_tax = 3
+			set_base_production = 3
+			set_base_manpower = 1
+			add_devastation = 100
+		}
+		add_great_project_tier = {
+			type = tenochtitlan
+			tier = -3
+		}
+		add_treasury = 400		
+	}	
+}
+
+country_event = { #Establish a puppet in Morocco - Spain
+	id = uu_spa_events.4
+	title = "uu_spa_events.4.t"
+	desc = "uu_spa_events.4.desc"
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes	
+
+	option = { #do it
+		name = uu_spa_events.4.a
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { exists = FEZ }
+					owns = 343
+				}
+				AND = {
+					NOT = { exists = MRK }
+					owns = 344
+				}
+				AND = {
+					NOT = { exists = SOS }
+					owns = 348
+				}
+				NOT = { exists = MOR }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = FEZ }
+				owns = 343
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = FEZ
+			}
+			343 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = FEZ
+			create_march = FEZ
+			FEZ = {
+				change_government = monarchy
+				change_religion = ROOT
+				add_country_modifier = {
+					name = uu_spa_modifier_moroccan_march
+					duration = -1
+				}
+			}
+		} else_if = {
+			limit = {
+				NOT = { exists = MRK }
+				owns = 344
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = MRK
+			}
+			344 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = MRK
+			create_march = MRK
+			MRK = {
+				change_government = monarchy
+				change_religion = ROOT
+				add_country_modifier = {
+					name = uu_spa_modifier_moroccan_march
+					duration = -1
+				}				
+			}
+		} else_if = {
+			limit = {
+				NOT = { exists = SOS }
+				owns = 348
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = SOS
+			}
+			348 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = SOS
+			create_march = SOS
+			SOS = {
+				change_government = monarchy
+				change_religion = ROOT
+				add_country_modifier = {
+					name = uu_spa_modifier_moroccan_march
+					duration = -1
+				}			
+			}
+		} else = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = MOR
+			}
+			release = MOR
+			create_march = MOR
+			MOR = {
+				change_government = monarchy
+				change_religion = ROOT
+				add_country_modifier = {
+					name = uu_spa_modifier_moroccan_march
+					duration = -1
+				}				
+			}
+		}
+	}
+	option = { #keep land for self
+		name = uu_spa_events.4.b
+		add_stability = 1
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = marrekesh_area
+					area = sus_area
+					area = algiers_area
+					culture = moroccan
+				}
+			}
+			add_province_modifier = {
+				name = "uu_spa_modifier_subjugated_morocco"
+			}
+		}
+		add_country_modifier = {
+			name = "uu_spa_modifier_moroccans_in_the_army"
+			duration = -1
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				has_country_flag = uu_spa_portugal_frens_flag
+				alliance_with = POR
+				POR = {
+					any_owned_province = {
+						OR = {
+							area = marrekesh_area
+							area = sus_area
+							area = algiers_area
+						}
+					}
+				}
+			}
+			POR = {
+				country_event = {
+					id = uu_spa_events.5
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #Establish a puppet in Morocco - Portugal
+	id = uu_spa_events.5
+	title = "uu_spa_events.5.t"
+	desc = "uu_spa_events.5.desc"
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes	
+
+	option = { #do it
+		name = uu_spa_events.5.a
+		ai_chance = { factor = 0 }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { exists = FEZ }
+					owns = 343
+				}
+				AND = {
+					NOT = { exists = MRK }
+					owns = 344
+				}
+				AND = {
+					NOT = { exists = SOS }
+					owns = 348
+				}
+				NOT = { exists = MOR }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = FEZ }
+				owns = 343
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = FEZ
+			}
+			343 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = FEZ
+			create_march = FEZ
+			FEZ = {
+				change_government = monarchy
+				change_religion = ROOT
+			}
+		} else_if = {
+			limit = {
+				NOT = { exists = MRK }
+				owns = 344
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = MRK
+			}
+			344 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = MRK
+			create_march = MRK
+			MRK = {
+				change_government = monarchy
+				change_religion = ROOT
+			}
+		} else_if = {
+			limit = {
+				NOT = { exists = SOS }
+				owns = 348
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = SOS
+			}
+			348 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			release = SOS
+			create_march = SOS
+			SOS = {
+				change_government = monarchy
+				change_religion = ROOT
+			}
+		} else = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = marrekesh_area
+						area = sus_area
+						area = algiers_area
+					}
+				}
+				add_core = MOR
+			}
+			release = MOR
+			create_march = MOR
+			MOR = {
+				change_government = monarchy
+				change_religion = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = "completing_the_reconquista"
+			duration = 3650
+		}		
+	}
+	option = { #keep land for self
+		name = uu_spa_events.5.b
+		add_stability = 1
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = marrekesh_area
+					area = sus_area
+					area = algiers_area
+					culture = moroccan
+				}
+			}
+			add_province_modifier = {
+				name = "uu_spa_modifier_subjugated_morocco"
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+			name = "completing_the_reconquista"
+			duration = 3650
+		}
+	}		
+}
+
+country_event = { #Treaty of Tordesillas - Spain
+	id = uu_spa_events.100
+	title = "uu_spa_events.100.t"
+	desc = "uu_spa_events.100.desc"
+	picture = DECLARATION_INDEPENDENCE_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Go West
+		name = uu_spa_events.100.a
+		trigger = {
+			NOT = {
+				is_subject_of = POR
+			}
+		}
+
+		set_country_flag = uu_spa_flag_west_path
+		custom_tooltip = uu_spa_unlock_missions_west_tt_a
+		if = { #trigger the event for POR if they haven't had it yet
+			limit = {
+				exists = POR
+				NOT = { 
+					POR = {
+						has_country_flag = uu_por_flag_east_path
+					}
+					POR = {
+						has_country_flag = uu_por_flag_west_path
+					}					
+				}
+			}
+			POR = {
+				country_event = {
+					id = uu_spa_events.101
+					days = 1
+				}
+			}
+		}
+	}	
+	option = { #Go East
+		name = uu_spa_events.100.b
+		trigger = {
+			NOT = {
+				is_subject_of = POR
+			}
+		}
+
+		custom_tooltip = uu_spa_unlock_missions_east_tt_a
+		set_country_flag = uu_spa_flag_east_path
+
+		ai_chance = { #ai spain will always go west
+			factor = 0 
+		}
+		if = { #trigger the event for POR if they haven't had it yet
+			limit = {
+				exists = POR
+				NOT = { 
+					POR = {
+						has_country_flag = uu_por_flag_east_path
+					}
+					POR = {
+						has_country_flag = uu_por_flag_west_path
+					}					
+				}
+			}
+			POR = {
+				country_event = {
+					id = uu_spa_events.101
+					days = 1
+				}
+			}
+		}		
+	}
+	option = { #Go West - Portugal is our overlord and chose East
+		name = uu_spa_events.100.c
+		trigger = {
+			is_subject_of = POR
+			POR = {
+				has_country_flag = uu_por_flag_east_path
+			}
+		}
+
+		custom_tooltip = uu_spa_unlock_missions_west_tt_a
+		set_country_flag = uu_spa_flag_west_path
+	}
+	option = { #Go East - Portugal is our overlord and chose West
+		name = uu_spa_events.100.d
+		trigger = {
+			is_subject_of = POR
+			POR = {
+				has_country_flag = uu_por_flag_west_path
+			}
+		}
+
+		custom_tooltip = uu_spa_unlock_missions_east_tt_a
+		set_country_flag = uu_spa_flag_east_path
+	}
+	after = {
+		hidden_effect = {
+			if = { #we agree
+				limit = {
+					OR = { 
+						AND = {
+							has_country_flag = uu_spa_flag_west_path
+							POR = {
+								has_country_flag = uu_por_flag_east_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_spa_flag_east_path
+							POR = {
+								has_country_flag = uu_por_flag_west_path
+							}
+						}					
+					}
+				}
+				country_event = { #good ending
+					id = uu_spa_events.110
+					days = 3
+				}
+				POR = {
+					country_event = { #good ending
+						id = uu_spa_events.110
+						days = 3
+					}
+				}
+			} else_if = { #we disagree
+				limit = {
+					OR = { 
+						AND = {
+							has_country_flag = uu_spa_flag_west_path
+							POR = {
+								has_country_flag = uu_por_flag_west_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_spa_flag_east_path
+							POR = {
+								has_country_flag = uu_por_flag_east_path
+							}
+						}					
+					}
+				}
+				country_event = { #bad ending
+					id = uu_spa_events.111
+					days = 3
+				}
+				POR = {
+					country_event = { #bad ending
+						id = uu_spa_events.111
+						days = 3
+					}
+				}
+			} else_if = { #there is no portugal
+				limit = {
+					NOT = { exists = POR }
+				}
+				country_event = { #lonely ending
+					id = uu_spa_events.112
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Treaty of Tordesillas - Portugal
+	id = uu_spa_events.101
+	title = "uu_spa_events.101.t"
+	desc = "uu_spa_events.101.desc"
+	picture = DECLARATION_INDEPENDENCE_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Go East
+		name = uu_spa_events.101.a
+		trigger = {
+			NOT = {
+				is_subject_of = CAS
+				is_subject_of = SPA
+			}
+		}
+
+		custom_tooltip = uu_spa_unlock_missions_east_tt_a
+		set_country_flag = uu_por_flag_east_path
+
+		if = { #trigger the event for SPA or CAS if they haven't had it yet
+			limit = {
+				exists = SPA
+				NOT = { 
+					SPA = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+					SPA = {
+						has_country_flag = uu_spa_flag_west_path
+					}					
+				}
+			}
+			SPA = {
+				country_event = {
+					id = uu_spa_events.100
+					days = 1
+				}
+			}
+		} else_if = {
+			limit = {
+				exists = CAS
+				NOT = { 
+					CAS = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+					CAS = {
+						has_country_flag = uu_spa_flag_west_path
+					}					
+				}
+			}
+			CAS = {
+				country_event = {
+					id = uu_spa_events.100
+					days = 1
+				}
+			}
+		}
+	}	
+	option = { #Go West
+		name = uu_spa_events.101.b
+		trigger = {
+			NOT = {
+				is_subject_of = CAS
+				is_subject_of = SPA
+			}
+		}		
+		custom_tooltip = uu_spa_unlock_missions_west_tt_a
+		set_country_flag = uu_por_flag_west_path
+
+		if = { #trigger the event for SPA or CAS if they haven't had it yet
+			limit = {
+				exists = SPA
+				NOT = { 
+					SPA = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+					SPA = {
+						has_country_flag = uu_por_flag_west_path
+					}					
+				}
+			}
+			SPA = {
+				country_event = {
+					id = uu_spa_events.100
+					days = 1
+				}
+			}
+		} else_if = {
+			limit = {
+				exists = CAS
+				NOT = { 
+					CAS = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+					CAS = {
+						has_country_flag = uu_por_flag_west_path
+					}					
+				}
+			}
+			CAS = {
+				country_event = {
+					id = uu_spa_events.100
+					days = 1
+				}
+			}
+		}
+		ai_chance = { #ai portugal will always go east
+			factor = 0 
+		}
+	}
+	option = { #Go East - Spain is our overlord and chose West
+		name = uu_spa_events.101.c
+		trigger = {
+			OR = {
+				AND = {
+					is_subject_of = CAS	
+					CAS = {
+						has_country_flag = uu_spa_flag_west_path
+					}
+				}
+				AND = {
+					is_subject_of = SPA
+					SPA = {
+						has_country_flag = uu_spa_flag_west_path
+					}
+				}
+			}
+		}
+	}
+	option = { #Go West - Spain is our overlord and chose East
+		name = uu_spa_events.101.d
+		trigger = {
+			OR = {
+				AND = {
+					is_subject_of = CAS	
+					CAS = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+				}
+				AND = {
+					is_subject_of = SPA
+					SPA = {
+						has_country_flag = uu_spa_flag_east_path
+					}
+				}
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			if = { #we agree, SPA edition
+				limit = {
+					exists = SPA
+					OR = { 
+						AND = {
+							has_country_flag = uu_por_flag_west_path
+							SPA = {
+								has_country_flag = uu_spa_flag_east_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_por_flag_east_path
+							SPA = {
+								has_country_flag = uu_spa_flag_west_path
+							}
+						}					
+					}
+				}
+				country_event = { #good ending
+					id = uu_spa_events.110
+					days = 3
+				}
+				SPA = {
+					country_event = { #good ending
+						id = uu_spa_events.110
+						days = 3
+					}
+				}
+			} else_if = { #we disagree, SPA edition
+				limit = {
+					exists = SPA
+					OR = { 
+						AND = {
+							has_country_flag = uu_por_flag_west_path
+							SPA = {
+								has_country_flag = uu_spa_flag_west_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_por_flag_east_path
+							SPA = {
+								has_country_flag = uu_spa_flag_east_path
+							}
+						}					
+					}
+				}
+				country_event = { #bad ending
+					id = uu_spa_events.111
+					days = 3
+				}
+				SPA = {
+					country_event = { #bad ending
+						id = uu_spa_events.111
+						days = 3
+					}
+				}
+			} else_if = { #we agree, CAS edition
+				limit = {
+					exists = CAS
+					OR = { 
+						AND = {
+							has_country_flag = uu_por_flag_west_path
+							CAS = {
+								has_country_flag = uu_spa_flag_east_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_por_flag_east_path
+							CAS = {
+								has_country_flag = uu_spa_flag_west_path
+							}
+						}					
+					}
+				}
+				country_event = { #good ending
+					id = uu_spa_events.110
+					days = 3
+				}
+				CAS = {
+					country_event = { #good ending
+						id = uu_spa_events.110
+						days = 3
+					}
+				}
+			} else_if = { #we disagree, CAS edition
+				limit = {
+					exists = CAS
+					OR = { 
+						AND = {
+							has_country_flag = uu_por_flag_west_path
+							CAS = {
+								has_country_flag = uu_spa_flag_west_path
+							}
+						}
+						AND = {
+							has_country_flag = uu_spa_flag_east_path
+							CAS = {
+								has_country_flag = uu_spa_flag_east_path
+							}
+						}					
+					}
+				}
+				country_event = { #bad ending
+					id = uu_spa_events.111
+					days = 3
+				}
+				CAS = {
+					country_event = { #bad ending
+						id = uu_spa_events.111
+						days = 3
+					}
+				}
+			} else_if = { #no spains exist
+				limit = {
+					NOT = {
+						exists = CAS 
+						exists = SPA					
+					}
+				}
+				country_event = { #lonely ending
+					id = uu_spa_events.112
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Treaty of Tordesillas - Positive Outcome
+	id = uu_spa_events.110
+	title = "uu_spa_events.110.t"
+	desc = "uu_spa_events.110.desc"
+	picture = KING_DOING_GREAT_eventPicture
+	
+	is_triggered_only = yes #triggers for both nations
+
+	option = {
+		name = uu_spa_events.110.a
+		if = {
+			limit = {
+				is_subject = no
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = uu_spa_modifier_tordesillas_success
+				duration = 7300 #20y
+			}
+		} else = {
+			add_prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_west_path
+					has_country_flag = uu_spa_flag_west_path
+				}	
+			}
+			custom_tooltip = uu_spa_unlock_missions_west_tt_b
+		} else_if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_east_path
+					has_country_flag = uu_spa_flag_east_path
+				}
+			}
+			custom_tooltip = uu_spa_unlock_missions_east_tt_b
+		}
+	}
+	after = {
+		swap_non_generic_missions = yes
+		if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_spa_tordesillas
+			}
+			complete_mission = uu_spa_tordesillas
+		} else_if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_por_tordesillas
+			}
+			complete_mission = uu_por_tordesillas
+		}
+	}
+
+}
+
+country_event = { #Treaty of Tordesillas - Negative Outcome
+	id = uu_spa_events.111
+	title = "uu_spa_events.111.t"
+	desc = "uu_spa_events.111.desc"
+	picture = BABBLING_BAFFOON_eventPicture #paradox typo
+	
+	is_triggered_only = yes #triggers for both nations
+	option = {
+		name = uu_spa_events.111.a
+		add_prestige = -10
+		add_country_modifier = {
+			name = uu_spa_modifier_tordesillas_fail
+			duration = 5475 #15y
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_west_path
+					has_country_flag = uu_spa_flag_west_path
+				}	
+			}
+			custom_tooltip = uu_spa_unlock_missions_west_tt_b
+		} else_if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_east_path
+					has_country_flag = uu_spa_flag_east_path
+				}
+				
+			}
+			custom_tooltip = uu_spa_unlock_missions_east_tt_b
+		} 
+	}
+	after = {
+		swap_non_generic_missions = yes
+		if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_spa_tordesillas
+			}
+			complete_mission = uu_spa_tordesillas
+		} else_if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_por_tordesillas
+			}
+			complete_mission = uu_por_tordesillas
+		}
+	}
+}
+
+country_event = { #Treaty of Tordesillas - Lonely Outcome
+	id = uu_spa_events.112
+	title = "uu_spa_events.112.t"
+	desc = "uu_spa_events.112.desc"
+	picture = EXPLORERS_eventPicture
+	
+	is_triggered_only = yes #only if one of the nations does not exist
+	option = {
+		name = uu_spa_events.112.a
+		add_prestige = 10
+		if = {
+			limit = {
+				is_subject = no
+			}
+			add_country_modifier = {
+				name = uu_spa_modifier_tordesillas_lonely
+				duration = 7300 #20y
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_west_path
+					has_country_flag = uu_spa_flag_west_path
+				}	
+			}
+			custom_tooltip = uu_spa_unlock_missions_west_tt_b
+		} else_if = {
+			limit = {
+				OR = {
+					has_country_flag = uu_por_flag_east_path
+					has_country_flag = uu_spa_flag_east_path
+				}
+				
+			}
+			custom_tooltip = uu_spa_unlock_missions_east_tt_b
+		} 
+	}
+	after = {
+		swap_non_generic_missions = yes
+		if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_spa_tordesillas
+			}
+			complete_mission = uu_spa_tordesillas
+		} else_if = {
+			limit = {
+				is_subject = yes
+				has_mission = uu_por_tordesillas
+			}
+			complete_mission = uu_por_tordesillas
+		}
+	}
+}

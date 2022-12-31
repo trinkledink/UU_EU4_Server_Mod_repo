@@ -1,0 +1,121 @@
+
+uu_spa_modifier_into_africa = {
+	local_defensiveness = 0.2
+    local_missionary_strength = 0.02
+}
+
+uu_spa_modifier_cowed_pirates = {
+    naval_morale = -0.1
+    global_sailors_modifier = -0.25
+}
+
+uu_spa_modifier_holy_league_victorious = {
+    trade_efficiency = 0.05
+}
+
+uu_spa_modifier_holy_league_victorious_spain = {
+    trade_efficiency = 0.1
+    global_ship_trade_power = 0.1
+    global_trade_power = 0.05
+}
+
+uu_spa_modifier_more_treasure_fleets = {
+    treasure_fleet_income = 0.25
+}
+
+uu_spa_modifier_rule_hispania = {
+    prestige = 1
+    legitimacy = 1
+    republican_tradition = 0.6
+    devotion = 1
+    global_ship_cost = -0.25
+    global_ship_recruit_speed = -0.25
+    naval_morale = 0.20
+    heavy_ship_power = 0.1
+}
+
+uu_spa_modifier_iberian_hegemon = {
+    legitimacy = 1
+    liberty_desire_from_subject_development = -0.25
+}
+
+uu_spa_modifier_building_new_capital = {
+    local_development_cost = -0.1
+    administrative_efficiency = 0.1
+}
+
+uu_spa_modifier_subjugated_morocco = {
+    local_unrest = 3
+    local_autonomy = -0.1
+    local_missionary_strength = 0.03
+    trade_goods_size_modifier = 0.15
+}
+
+uu_spa_modifier_moroccan_march = {
+    land_forcelimit_modifier = 0.2
+    land_maintenance_modifier = -0.2
+    liberty_desire = -100
+}
+
+uu_spa_modifier_moroccans_in_the_army = {
+    land_forcelimit_modifier = 0.05
+    global_manpower_modifier = 0.05
+}
+
+uu_spa_modifier_tordesillas_success = {
+    diplomatic_reputation = 1
+    local_colonist_placement_chance = 0.1
+}
+
+uu_spa_modifier_tordesillas_fail = {
+    diplomatic_reputation = -1
+    papal_influence = -0.5
+}
+
+uu_spa_modifier_tordesillas_lonely = {
+    local_colonist_placement_chance = 0.1
+}
+
+uu_spa_modifier_protectors_of_the_med = {
+    prestige_decay = -0.01
+    global_ship_cost = -0.1
+    global_ship_repair = 0.1
+}
+
+uu_spa_modifier_spanish_armada = {
+    prestige_from_naval = 1
+    naval_morale = 0.10
+}
+
+uu_spa_king_of_sicilies_modifier = {
+    prestige = 0.33
+    diplomatic_upkeep = 1
+}
+
+uu_spa_modifier_i_am_the_pope = {
+    curia_powers_cost = -0.1
+    church_loyalty_modifier = 0.25
+    church_influence_modifier = 0.2
+    tolerance_own = 1
+    tolerance_heretic = -1
+}
+
+uu_spa_in_italy_modifier = {
+    diplomatic_reputation = 2
+    accept_vassalization_reasons = 15
+    improve_relation_modifier = 0.15
+}
+
+uu_spa_catholic_monarchy_modifier = {
+    tolerance_own = 1
+    papal_influence = 1
+    relation_with_same_religion = 20
+    reasons_to_elect = 20
+    imperial_authority_value = 0.5
+    imperial_authority = 0.05
+    missionary_maintenance_cost = -0.33
+}
+
+uu_spa_modifier_moar_gold = {
+    trade_goods_size_modifier = 0.10
+} 
