@@ -1114,3 +1114,23 @@ country_event = { #Treaty of Tordesillas - Lonely Outcome
 		}
 	}
 }
+
+
+country_event = { #Placeholder event for Treaty of Tordesillas
+	id = uu_spa_events.999
+	title = "uu_spa_events.999.t"
+	desc = "uu_spa_events.999.desc"
+	picture = DECLARATION_INDEPENDENCE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = uu_spa_events.999.a
+		custom_tooltip = uu_spa_placeholder_tordesillas_tt
+		add_country_modifier = {
+			name = uu_spa_modifier_tordesillas_lonely
+			duration = 7300 #20y
+		}
+	}
+
+}

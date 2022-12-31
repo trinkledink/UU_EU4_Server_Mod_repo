@@ -112,30 +112,33 @@ uu_spain_1_colony = {
 						dip_tech = 7
 					}
 				}
-				custom_trigger_tooltip = { #if portugal passes the mission, it will unlock for you too
-					tooltip = uu_spa_tordesillas_already_signed_tt
-					OR = {
-						has_country_flag = uu_spa_flag_west_path
-						has_country_flag = uu_spa_flag_east_path
-					}
-				}
+				#custom_trigger_tooltip = { #if portugal passes the mission, it will unlock for you too
+				#	tooltip = uu_spa_tordesillas_already_signed_tt
+				#	OR = {
+				#		has_country_flag = uu_spa_flag_west_path
+				#		has_country_flag = uu_spa_flag_east_path
+				#	}
+				#}
 			}
-			is_subject = no #no weird edge cases where you are a subject yet fire the event before your overlord
+			#is_subject = no #no weird edge cases where you are a subject yet fire the event before your overlord
 			papal_influence = 50
 		}
 
 		effect = {
 			add_papal_influence = -50
-			if = { #no double firing
-				limit = {
-					NOT = {
-						has_country_flag = uu_spa_flag_west_path
-						has_country_flag = uu_spa_flag_east_path					
-					}
-				}		
-				country_event = {
-					id = uu_spa_events.100 
-				}
+			#if = { #no double firing					#todo later
+			#	limit = {
+			#		NOT = {
+			#			has_country_flag = uu_spa_flag_west_path
+			#			has_country_flag = uu_spa_flag_east_path					
+			#		}
+			#	}		
+			#	country_event = {
+			#		id = uu_spa_events.100 
+			#	}
+			#}
+			country_event = {							
+				id = uu_spa_events.999
 			}
 		}
 	}	
@@ -764,15 +767,35 @@ uu_spain_3_portugal = { #new
 
 		trigger = {
 			is_at_war = no
-			exists = POR
-			POR = {
-				is_subject = no
+			if = {
+				limit = {
+					exists = POR
+				}
+				POR = {
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT 
+					}
+				}
+				NOT = { truce_with = POR }
 			}
-			NOT = { truce_with = POR }
 		}
 		effect = {
-			country_event = {
-				id = uu_spa_events.1
+			if = {
+				limit = {
+					exists = POR
+					POR = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT 
+						}
+					} 
+				}
+				country_event = {
+					id = uu_spa_events.1
+				}
+			} else = {
+				add_prestige = 10
 			}
 		}
 	}
@@ -1195,10 +1218,7 @@ uu_spain_3_armada = {
 
 	uu_spa_rule_hispania = { #new
 		icon = mission_rb_grow_the_channel
-		required_missions = { 
-			uu_spa_secure_treasure_fleets
-			uu_spa_protectors_of_the_western_med 
-		}
+		required_missions = { uu_spa_secure_treasure_fleets }
 		position = 9
 
 		trigger = {
@@ -1421,8 +1441,15 @@ uu_spain_4_genoa = {
 
 	uu_spa_supplant_genoa = { #new
 		icon = mission_dominate_genoa
-		required_missions = { uu_spa_intervene_in_italy }
+		required_missions = { 
+			uu_spa_turk_holy_league
+			uu_spa_intervene_in_italy 
+		}
 		position = 7
+
+		provinces_to_highlight = {
+			province_id = 101
+		}
 
 		trigger = {
 			any_owned_province = {
@@ -1440,9 +1467,10 @@ uu_spain_4_genoa = {
 						area = naples_area
 						area = liguria_area
 					}
+					has_port = yes
+					higher_development_than = 101
 				}
-				has_port = yes
-				higher_development_than = 101
+				base_production = 10
 			}
 			1298 = {
 				is_strongest_trade_power = ROOT			
@@ -2257,6 +2285,7 @@ uu_spain_1_branching = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_country_flag = uu_spa_flag_west_path }
 		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
@@ -2358,6 +2387,7 @@ uu_spain_2_branching = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_country_flag = uu_spa_flag_west_path }
 		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
@@ -2455,6 +2485,7 @@ uu_spain_3_branching = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_country_flag = uu_spa_flag_west_path }
 		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
@@ -2521,7 +2552,7 @@ uu_spain_1_western_path = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = uu_spa_flag_west_path
+		#has_country_flag = uu_spa_flag_west_path				#todo later
 		#NOT = { has_country_flag = uu_spa_flag_east_path }
 	}
 	has_country_shield = yes
@@ -2609,7 +2640,7 @@ uu_spain_1_western_path = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernï¿½n Cortï¿½s"
+				name = "Hernán Cortés"
 			}
 			if = {
 				limit = {
@@ -2811,7 +2842,7 @@ uu_spain_2_western_path = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = uu_spa_flag_west_path
+		#has_country_flag = uu_spa_flag_west_path				#todo later
 		#NOT = { has_country_flag = uu_spa_flag_east_path }
 	}
 	has_country_shield = yes
@@ -3195,6 +3226,7 @@ uu_spain_2_western_path = {
 				province_id = 2837
 				province_id = 2849
 				province_id = 2848
+				province_id = 778
 				province_id = 2842
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -3216,6 +3248,7 @@ uu_spain_2_western_path = {
 						province_id = 2837
 						province_id = 2849
 						province_id = 2848
+						province_id = 778
 						province_id = 2842
 					}
 				}
@@ -3252,7 +3285,7 @@ uu_spain_3_western_path = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = uu_spa_flag_west_path
+		#has_country_flag = uu_spa_flag_west_path				#todo later
 		#NOT = { has_country_flag = uu_spa_flag_east_path }
 	}
 	has_country_shield = yes
@@ -3431,29 +3464,29 @@ uu_spain_3_western_path = {
 		}
 	}
 
-	uu_spa_christianize_america = { #todo?
-		icon = mission_establish_jesuit_missions
-		required_missions = {  } #i think no prereqs for this one
-		position = 12
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = yes
-			}
-			#add actual requirements?
-		}
-		effect = {
-			#center of reformation in new world!
-			852 = {
-				change_religion = catholic
-				add_reform_center = catholic
-				add_permanent_province_modifier = {
-					name = "religious_zeal_at_conv"
-					duration = 9000
-				}
-			}
-		}
-	}
+	#uu_spa_christianize_america = { #todo?
+	#	icon = mission_establish_jesuit_missions
+	#	required_missions = {  } #i think no prereqs for this one
+	#	position = 12
+	#	trigger = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = selectable_mission_trigger_tt
+	#			always = yes
+	#		}
+	#		#add actual requirements?
+	#	}
+	#	effect = {
+	#		#center of reformation in new world!
+	#		852 = {
+	#			change_religion = catholic
+	#			add_reform_center = catholic
+	#			add_permanent_province_modifier = {
+	#				name = "religious_zeal_at_conv"
+	#				duration = 9000
+	#			}
+	#		}
+	#	}
+	#}
 }
 
 uu_spain_1_eastern_path = {
@@ -3472,6 +3505,7 @@ uu_spain_1_eastern_path = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = uu_spa_flag_east_path
 		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
@@ -3573,6 +3607,7 @@ uu_spain_2_eastern_path = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = uu_spa_flag_east_path
 		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
@@ -3673,6 +3708,7 @@ uu_spain_3_eastern_path = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = uu_spa_flag_east_path
 		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
 	}
 	has_country_shield = yes
 
