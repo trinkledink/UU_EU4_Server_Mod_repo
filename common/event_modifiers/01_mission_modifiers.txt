@@ -4316,9 +4316,9 @@ sax_lots_of_influence = {
 
 #Austrian Missions
 
-hab_conquest_of_italy = {
-	unjustified_demands = -0.1
-	ae_impact = -0.05
+hab_conquest_of_italy = { ##uu change
+	land_morale = 0.1
+	naval_morale = 0.1
 }
 
 hab_victory_over_ottomans = {
@@ -4355,24 +4355,32 @@ hab_ascendancy_in_empire = {
 	land_forcelimit_modifier = 0.1
 }
 
-hab_empire_united_in_religion_mod_catholic = {
+hab_empire_united_in_religion_mod_catholic = {	##uu change
 	papal_influence = 1
+	imperial_authority = 0.1
+	land_morale = 0.05
 }
 
-hab_empire_united_in_religion_mod_protestant = {
+hab_empire_united_in_religion_mod_protestant = {	##uu change
 	church_power_modifier = 0.5
+	imperial_authority = 0.1
+	land_morale = 0.05
 }
 
-hab_empire_united_in_religion_mod_reformed = {
+hab_empire_united_in_religion_mod_reformed = {	##uu change
 	monthly_fervor_increase = 1
+	imperial_authority = 0.1
+	land_morale = 0.05
 }
 
-hab_empire_united_in_religion_mod_generic = {
+hab_empire_united_in_religion_mod_generic = {	##uu change
 	tolerance_own = 1
+	imperial_authority = 0.1
+	land_morale = 0.05
 }
 
-hab_empire_has_rome = {
-	imperial_authority_value = 0.1
+hab_empire_has_rome = {	##uu change
+	imperial_authority = 0.25 ##uu change
 }
 
 hab_prosperity_windfall = {

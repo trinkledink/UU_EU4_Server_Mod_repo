@@ -974,45 +974,45 @@ unified_army_command = {
 	}
 }
 
-trade_kontor_network = {
-	monarch_power = MIL
-	potential = {
-		has_idea_group = plutocracy_ideas
-		has_idea_group = trade_ideas
-	}
+# trade_kontor_network = {	##uu moved to DIP
+	# monarch_power = MIL
+	# potential = {
+		# has_idea_group = plutocracy_ideas
+		# has_idea_group = trade_ideas
+	# }
 	
-	allow = {
-		full_idea_group = plutocracy_ideas
-		full_idea_group = trade_ideas
-	}
+	# allow = {
+		# full_idea_group = plutocracy_ideas
+		# full_idea_group = trade_ideas
+	# }
 	
-	merchants = 1
-	global_regiment_cost = -0.1
+	# merchants = 1
+	# global_regiment_cost = -0.1
 
-	ai_will_do = {
-		factor = 0.6
-		modifier = {
-			factor = 0
-			NOT = { trade_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.5
-		}
-	}
-}
+	# ai_will_do = {
+		# factor = 0.6
+		# modifier = {
+			# factor = 0
+			# NOT = { trade_income_percentage = 0.1 }
+		# }			
+		# modifier = {
+			# factor = 1.5
+			# trade_income_percentage = 0.2
+		# }
+		# modifier = {
+			# factor = 1.5
+			# trade_income_percentage = 0.3
+		# }
+		# modifier = {
+			# factor = 1.5
+			# trade_income_percentage = 0.4
+		# }
+		# modifier = {
+			# factor = 1.5
+			# trade_income_percentage = 0.5
+		# }
+	# }
+# }
 
 deserteur_act = {
 	monarch_power = MIL

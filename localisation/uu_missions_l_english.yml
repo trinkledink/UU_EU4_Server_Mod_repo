@@ -217,3 +217,10 @@
  ########################################################################
  UU_st_peters_basilica_title:0 "Cathedral of Christ's glory"
  UU_st_peters_basilica_desc:0 "It is time that the servants of God construct a monument displaying their devotion for Christ." 
+ 
+ ########################################################################
+ # UU HAB Missions Localisation. #
+ ########################################################################
+ 
+ uu_emp_hab_no_one_to_threaten_us_trigger_tooltip:1 "No HRE member state:\n         §Y15§! or more provinces in §YEurope§! are owned by §Ycountry§! or its by non-tributary subjects.\n         Is NOT subject to §YAustria§!."
+ uu_emp_hab_no_one_to_threaten_us_trigger2_tooltip:1 " members of the HRE are Free Cities."
