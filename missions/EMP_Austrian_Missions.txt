@@ -140,6 +140,7 @@ emp_hab_empire_branch = {
 	
 	has_country_shield = yes
 	
+		
 	emp_hab_no_one_to_threaten_us = {
 		icon = imperial_ascendancy
 		position = 2
@@ -151,7 +152,7 @@ emp_hab_empire_branch = {
 				OR = {
 					AND = {
 						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 10
+							value = 15
 							continent = europe
 						}
 						is_part_of_hre = yes
@@ -163,25 +164,31 @@ emp_hab_empire_branch = {
 		trigger = {
 			is_emperor = yes
 			OR = {
-				hre_reform_passed = emperor_privilegia_de_non_appelando
+				calc_true_if = {
+					#desc = secure_the_imperial_crown.tooltip
+					all_elector = {
+						preferred_emperor = ROOT
+					}
+					amount = 7
+				}
 				AND = {
 					custom_trigger_tooltip = {
-						tooltip = emp_hab_no_one_to_threaten_us_trigger_tooltip
+						tooltip = uu_emp_hab_no_one_to_threaten_us_trigger_tooltip
 						NOT = {
 							any_country = {
 								NOT = { tag = root }
 								NOT = { is_subject_of = ROOT }
 								is_part_of_hre = yes
 								num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-									value = 10
+									value = 15
 									continent = europe
 								}
 							}
 						}
 					}
 					calc_true_if = {
-						desc = emp_hab_no_one_to_threaten_us_trigger2_tooltip
-						amount = 10
+						desc = uu_emp_hab_no_one_to_threaten_us_trigger2_tooltip
+						amount = 15
 						all_country = {
 							has_reform = free_city
 						}
@@ -274,21 +281,9 @@ emp_hab_empire_branch = {
 	
 	emp_hab_empire_united_in_religion = { #an empire holy
 		icon = holy_state
-		required_missions = { emp_hab_imperial_border }
+		required_missions = { emp_hab_imperial_border austrian_italian_ambition }
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					owner = { is_emperor = yes }
-					root = { is_emperor = no }
-				}
-				AND = {
-					owner = {
-						is_part_of_hre = yes
-						NOT = { religion = root }
-					}
-					hre_religion_locked = no
-				}
-			}
+			118 = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
 			is_emperor = yes
@@ -297,49 +292,19 @@ emp_hab_empire_branch = {
 					has_dlc = "Art of War"
 				}
 				OR = {
-					hre_religion_locked = yes
-					AND = {
-						custom_trigger_tooltip = {
-							tooltip = emp_bav_center_of_counter_reformation_tooltip2
-							had_global_flag = {
-								flag = reformation_started
-								days = 18250
-							}
+					PAP = {
+						alliance_with = root
+						has_opinion = {
+							who = root
+							value = 150
 						}
-						custom_trigger_tooltip = {
-							tooltip = emp_hab_empire_united_in_religion_trigger_tooltip
-							NOT = {
-								any_country = {
-									is_part_of_hre = yes
-									NOT = { religion = root }
-								}
-							}
-						}
+						is_part_of_hre = yes
 					}
-				}
-				is_all_concessions_in_council_taken = yes
-			}
-			else = {
-				OR = {
+					118 = { country_or_non_sovereign_subject_holds = root }
 					AND = {
-						custom_trigger_tooltip = {
-							tooltip = emp_bav_center_of_counter_reformation_tooltip2
-							had_global_flag = {
-								flag = reformation_started
-								days = 18250
-							}
-						}
-						custom_trigger_tooltip = {
-							tooltip = emp_hab_empire_united_in_religion_trigger_tooltip
-							NOT = {
-								any_country = {
-									is_part_of_hre = yes
-									NOT = { religion = root }
-								}
-							}
-						}
+						NOT = { religion = catholic }
+						is_emperor = yes
 					}
-					is_all_concessions_in_council_taken = yes
 				}
 			}
 		}
@@ -355,7 +320,10 @@ emp_hab_empire_branch = {
 			}
 			else_if = {
 				limit = {
-					religion = protestant
+					OR = {
+						religion = protestant
+						religion = hussite
+					}
 					has_dlc = "Common Sense"
 				}
 				add_country_modifier = {
@@ -402,16 +370,15 @@ emp_hab_empire_branch = {
 			}
 		}
 		trigger = {
-			is_emperor = yes
-			118 = {
+			italy_region = {
 				is_part_of_hre = yes
-				owner = {
-					is_part_of_hre = yes
-				}
+				type = all
 			}
+			is_emperor = yes
 		}
 		effect = {
 			add_prestige = 33
+			add_imperial_influence = 50
 			add_country_modifier = {
 				name = hab_empire_has_rome
 				duration = -1
@@ -1900,197 +1867,92 @@ emp_hab_balkans_2 = {
 }
 
 
-emp_hab_more_italy_branch = {
-	slot = 3
-	generic = no
-	ai = yes
+# emp_hab_more_italy_branch = {
+	# slot = 3
+	# generic = no
+	# ai = yes
 	
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
-	potential = {
-		has_dlc = "Emperor"
-		OR = {
-			tag = HAB
-			tag = AUH
-		}
-		NOT = { map_setup = map_setup_random }
-	}
+	# potential_on_load = {
+		# has_dlc = "Emperor"
+	# }
+	# potential = {
+		# has_dlc = "Emperor"
+		# OR = {
+			# tag = HAB
+			# tag = AUH
+		# }
+		# NOT = { map_setup = map_setup_random }
+	# }
 	
-	has_country_shield = yes
+	# has_country_shield = yes
 	
-	emp_hab_veneto_lombardy = {
-		icon = kingdom_of_lombardy
+	
+	
+	# emp_hab_naples = {
+		# icon = union_with_naples
 
-		position = 9
+		# position = 10
 		
-		ai_weight = {
-			factor = 3
-		}
-
-		required_missions = { austrian_italian_ambition }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 104
-				AND = {
-					OR = {
-						area = lombardy_area
-						area = po_valley_area
-					}
-					ROOT = {
-						NOT = {
-							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 5
-								OR = {
-									area = lombardy_area
-									area = po_valley_area
-								}
-							}
-						}
-					}
-				}
-			}
-			NOT = { country_or_non_sovereign_subject_holds = root }
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 104
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					area = lombardy_area
-					area = po_valley_area
-				}
-			}
-		}
-		effect = {
-			add_prestige = 20
-			if = {
-				limit = {
-					exists = TTS
-					valid_for_personal_unions_trigger = yes
-					TTS = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = TTS
-				}
-			}
-			else_if = {
-				limit = {
-					exists = NAP
-					valid_for_personal_unions_trigger = yes
-					NAP = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = NAP
-				}
-			}
-			else = {
-				naples_area = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
-				}
-				apulia_area = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
-				}
-				calabria_area = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
-				}
-			}
-		}
-		ai_weight = {
-			factor = 500	#Historical conquest
-			modifier = {
-				factor = 0	#Shadow Kingdom and Emperorship though
-				is_emperor = yes
-				NOT = { is_year = 1490 }
-			}
-		}
-	}
-	
-	emp_hab_naples = {
-		icon = union_with_naples
-
-		position = 10
-		
-		ai_weight = {
-			factor = 3
-		}
+		# ai_weight = {
+			# factor = 3
+		# }
 
 		
-		required_missions = { emp_hab_veneto_lombardy }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 121
-				AND = {
-					OR = {
-						area = naples_area
-						area = apulia_area
-						area = calabria_area
-					}
-					ROOT = {
-						NOT = {
-							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 8
-								OR = {
-									area = naples_area
-									area = apulia_area
-									area = calabria_area
-								}
-							}
-						}
-					}
-				}
-			}
-			NOT = { country_or_non_sovereign_subject_holds = root }
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 121
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8
-				OR = {
-					area = naples_area
-					area = apulia_area
-					area = calabria_area
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = hab_conquest_of_italy
-				duration = 7300
-			}
-			italy_region = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
-		}
-		ai_weight = {
-			factor = 500	#Historical conquest
-		}
-	}
-}
+		# required_missions = { emp_hab_veneto_lombardy }
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 121
+				# AND = {
+					# OR = {
+						# area = naples_area
+						# area = apulia_area
+						# area = calabria_area
+					# }
+					# ROOT = {
+						# NOT = {
+							# num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								# value = 8
+								# OR = {
+									# area = naples_area
+									# area = apulia_area
+									# area = calabria_area
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
+			# NOT = { country_or_non_sovereign_subject_holds = root }
+		# }
+		# trigger = {
+			# owns_or_non_sovereign_subject_of = 121
+			# num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				# value = 8
+				# OR = {
+					# area = naples_area
+					# area = apulia_area
+					# area = calabria_area
+				# }
+			# }
+		# }
+		# effect = {
+			# add_country_modifier = {
+				# name = hab_conquest_of_italy
+				# duration = 7300
+			# }
+			# italy_region = {
+				# limit = {
+					# NOT = { is_core = root }
+					# NOT = { is_permanent_claim = root }
+				# }
+				# add_permanent_claim = root
+			# }
+		# }
+		# ai_weight = {
+			# factor = 500	#Historical conquest
+		# }
+	# }
+# }
 
 
 

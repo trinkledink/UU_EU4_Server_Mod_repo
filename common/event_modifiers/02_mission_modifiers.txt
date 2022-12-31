@@ -96,4 +96,11 @@ elb_rapid_urbanization = {
 	build_cost = -0.1
 }
 
+#HAB & AUH Mission Modifiers
+
+uu_road_to_rome = {
+	papal_influence = 1
+	imperial_authority_value = 0.1
+}
+
 
