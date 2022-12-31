@@ -394,7 +394,7 @@ diplomatic_ideas = {
 		always = no
 	}
 
-	#foreign_embassies = {
+	foreign_embassies = {
 		diplomats = 1
 	}
 	cabinet = {
@@ -483,15 +483,14 @@ defensive_ideas = {
 		shock_damage_received = -0.15	##UU Added
 	}
 	improved_manuever = {
-		leader_land_manuever = 2
+		leader_land_manuever = 1
 	}
 	defensive_mentality = {
 		defensiveness = 0.33
 		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
 	}
 	supply_trains = {
-		reinforce_speed = 0.33
-		reinforce_cost_modifier = -0.33								 
+		reinforce_speed = 0.33								 
 	}
 	improved_foraging = {
 		land_morale = 0.1			##UU Added reduced from 0.15

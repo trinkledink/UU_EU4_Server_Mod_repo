@@ -335,7 +335,25 @@ theologian = {
 
 	chance = {
 		factor = 1.5
-
+		modifier = {
+			factor = 0
+			OR = {
+				owner = { religion = coptic }
+				owner = { religion = shinto }
+				owner = { religion = hinduism }
+				owner = { religion = sikhism }
+				owner = { religion = animism }
+				owner = { religion = shamanism }
+				owner = { religion = totemism }
+				owner = { religion = inti }
+				owner = { religion = nahuatl }
+				owner = { religion = mesoamerican_religion }
+				owner = { religion = norse_pagan_reformed }
+				owner = { religion = dreamtime }
+				owner = { religion = tengri_pagan_reformed }
+				owner = { religion = zoroastrian }
+			}
+		}
 	}
 	
 	ai_will_do = {
