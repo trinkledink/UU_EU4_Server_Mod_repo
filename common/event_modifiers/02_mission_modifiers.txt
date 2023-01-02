@@ -102,5 +102,65 @@ uu_road_to_rome = {
 	papal_influence = 1
 	imperial_authority_value = 0.1
 }
+#English modifiers
 
+uu_eng_french_recovery = {
+	manpower_recovery_speed = 0.25
+	interest = -1
+}
+	
+uu_eng_french_hegemony = {
+	global_manpower_modifier = 0.2
+	land_forcelimit_modifier = 0.2
+}
 
+eng_channel_dominance = {
+	placed_merchant_power = 10
+	global_ship_trade_power = 0.2
+}
+
+uu_eng_rb_clergy_placated = {
+	church_loyalty_modifier = 0.1
+	papal_influence = 2
+	church_power_modifier = 0.2
+	monthly_fervor_increase = 1
+}
+
+uu_eng_rb_fishing_grounds = {
+	trade_goods_size = 2
+}
+
+uu_eng_rb_boston_mod = {
+	global_foreign_trade_power = 0.15
+	placed_merchant_power = 5
+}
+
+uu_eng_rb_fur_trade = {
+	global_trade_goods_size_modifier = 0.2
+}
+
+uu_eng_rb_arctic_dev = {
+	local_development_cost = -0.25
+}
+
+uu_eng_rb_red_coats_mod = {
+	yearly_army_professionalism = 0.005
+	drill_gain_modifier = 0.25
+	drill_decay_modifier = -0.25
+}
+uu_monop_channel_mod = {
+	global_own_trade_power = 0.2
+}
+uu_gbr_baltic_boom = {
+	global_trade_goods_size_modifier = 0.1
+}
+uu_gbr_scandinavian_metals = {
+	global_regiment_cost = -0.1
+}
+uu_gbr_channel_cooperation = {
+	trade_steering = 0.2
+	naval_tradition_from_trade = 1
+}
+uu_gbr_channel_prosperity = {
+	trade_efficiency = 0.25
+}
