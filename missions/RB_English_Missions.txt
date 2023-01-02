@@ -1112,7 +1112,7 @@ gbr_low_countries = {
 		position = 5
 		
 		provinces_to_highlight = {
-			province = 1269
+			province_id = 1269
 		}
 		
 		trigger = {
@@ -1903,7 +1903,7 @@ eng_rb_thirteen_colonies_group = {
 		position = 8
 		
 		provinces_to_highlight = {
-			province = 968
+			province_id = 968
 		}
 		
 		trigger = {

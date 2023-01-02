@@ -659,7 +659,7 @@ eng_exploration_americas = {
 		position = 8
 		
 		provinces_to_highlight = {
-			province = 487
+			province_id = 487
 		}
 		
 		trigger = { 
