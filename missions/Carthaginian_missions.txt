@@ -593,7 +593,7 @@ ctg_carthaginian_eastern_missions = {
 					}
 				add_permanent_claim = ROOT
 				}
-			
+			}
 			
 			naples_area = {
 				if = {
