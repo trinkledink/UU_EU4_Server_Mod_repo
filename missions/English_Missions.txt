@@ -800,7 +800,7 @@ eng_indian_ocean_exploration = {
 	}
 	
 	england_discovers_australia = {
-		icon = mission_establish_high_seas_navy
+		icon = colonize_australia
 		required_missions = { england_discovers_india }
 		position = 7
 		completed_by = 1788.1.1

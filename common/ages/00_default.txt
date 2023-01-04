@@ -452,23 +452,23 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		ab_italian_renaissance_architecture = {
-			allow = {
-				OR = {
-					tag = ITA
-					AND = {
-						has_country_flag = is_kingdom_of_god_flag
-						NOT = { exists = ITA }
-					}
-				}
-			}
-			modifier = {
-				great_project_upgrade_cost = -0.5
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
+		# ab_italian_renaissance_architecture = {
+			# allow = {
+				# OR = {
+					# tag = ITA
+					# AND = {
+						# has_country_flag = is_kingdom_of_god_flag
+						# NOT = { exists = ITA }
+					# }
+				# }
+			# }
+			# modifier = {
+				# great_project_upgrade_cost = -0.5
+			# }
+			# ai_will_do = {
+				# factor = 100
+			# }
+		# }
 	}
 }
 
