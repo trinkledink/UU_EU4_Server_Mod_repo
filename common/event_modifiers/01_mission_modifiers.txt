@@ -7032,7 +7032,7 @@ pol_stable_internal_affairs_modifier = {
 }
 pol_cultural_flowering_polish_domain_modifier = {
 	advisor_cost = -0.15
-	all_power_cost = -0.05
+	#all_power_cost = -0.05
 }
 pol_splendor_polish_crown_modifier = {
 	monthly_splendor = 2 
@@ -7049,7 +7049,7 @@ pol_growing_prosperity_modifier = {
 }
 pol_golden_era_modifier = {
 	global_trade_goods_size_modifier = 0.1
-	all_power_cost = -0.05
+	#all_power_cost = -0.05
 	max_absolutism = 10 
 }
 pol_enable_2nd_manufactory_modifier = {

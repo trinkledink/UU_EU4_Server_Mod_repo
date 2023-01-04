@@ -753,7 +753,7 @@ sloboda_ukraine_area = { #4
 }
 
 yedisan_area = { #3
-	282  2406 283
+	282 2406 283
 }
 
 zaporizhia_area = { #3
