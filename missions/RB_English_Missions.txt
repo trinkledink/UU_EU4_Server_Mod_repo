@@ -425,7 +425,7 @@ eng_rb_stability = {
 				duration = 5475
 			}
 			add_ruler_modifier = {
-				name = eng_rb_clergy_placated
+				name = uu_eng_rb_clergy_placated
 			}
 			if = {
 				limit = {
@@ -825,7 +825,7 @@ eng_rb_buildings_group = {
 				num_of_times_improved = 10
 			}
 			natural_scientist = 3
-			num_of_loans = 0
+			NOT = { num_of_loans = 1 }
 			treasury = 200
 		}
 		
@@ -1212,6 +1212,9 @@ gbr_low_countries = {
 		required_missions = { eng_matter_of_the_low_countries }
 		
 		trigger = {
+			1269 = {
+				highest_value_trade_node = yes
+			}
 			OR = {
 				1269 = {
 					trade_node_value = 300
@@ -1721,19 +1724,19 @@ gbr_rb_northern_colonial = {
 		effect = {
 			369 = {
 				add_province_modifier = {
-					name = eng_rb_fishing_grounds
+					name = uu_eng_rb_fishing_grounds
 					duration = -1
 				}
 			}
 			1978 = {
 				add_province_modifier = {
-					name = eng_rb_fishing_grounds
+					name = uu_eng_rb_fishing_grounds
 					duration = -1
 				}
 			}
 			1979 = {
 				add_province_modifier = {
-					name = eng_rb_fishing_grounds
+					name = uu_eng_rb_fishing_grounds
 					duration = -1
 				}
 			}
@@ -1897,7 +1900,7 @@ eng_rb_thirteen_colonies_group = {
 		}
 	}
 	eng_develop_boston = {
-		icon = mission_rb_the_thirteen_colonies
+		icon = mission_guilds_of_barcelona
 		required_missions = { eng_rb_own_thirteen_colonies }
 		completed_by = 1701.1.1
 		position = 8

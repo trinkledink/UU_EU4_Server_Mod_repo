@@ -430,7 +430,7 @@ eng_french_conquest = {
 	}
 	
 	eng_king_of_france = {
-		icon = mission_monarch_in_throne_room
+		icon = centralize_france
 		required_missions = { eng_war_france }
 		position = 3
 		
@@ -653,7 +653,7 @@ eng_exploration_americas = {
 		}
 	}
 	eng_jamaican_port = {
-		icon = mission_iberian_conquistador
+		icon = found_batavia
 		required_missions = { english_colony_in_the_carribean }
 		completed_by = 1610.1.1
 		position = 8
