@@ -118,7 +118,7 @@ horde_gov_ideas = {
 	
 	horse_lords = {
 		cavalry_cost = -0.33
-		cav_to_inf_ratio = 0.10
+		cav_to_inf_ratio = 0.25
 	}
 	beyond_the_sun = {
 		ae_impact = -0.1
