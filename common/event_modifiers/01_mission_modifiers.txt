@@ -1652,9 +1652,10 @@ eng_channel_dominance = {
 	global_ship_trade_power = 0.2
 }
 
-eng_rb_gibraltar_mod = {
-	naval_maintenance_modifier = -0.1
-	galley_power = 0.15
+eng_rb_gibraltar_mod = {			#UUChange
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.15
+	local_own_coast_naval_combat_bonus = 1
 }
 
 eng_rb_faro_coast = {

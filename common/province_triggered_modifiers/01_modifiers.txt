@@ -1,0 +1,18 @@
+uu_gb_normandy_modifier = {
+	potential = {}
+	trigger = {
+		owner = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			owns_core_province = 167
+			owns_core_province = 168
+			owns_core_province = 1879
+			owns_core_province = 4385
+			mission_completed = eng_secure_normandy
+		}
+	}
+	land_morale = 0.1
+	nobles_loyalty_modifier = 0.05
+}
