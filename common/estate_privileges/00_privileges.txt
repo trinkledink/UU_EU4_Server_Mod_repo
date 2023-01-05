@@ -2773,9 +2773,6 @@ estate_burghers_enforced_interfaith_dialogue = {
 	can_select = {
 		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
 	}
-	penalties = {
-		church_loyalty_modifier = -0.1
-	}
 	benefits = {
 		tolerance_heathen = 2
 		tolerance_heretic = 2
