@@ -1,4 +1,5 @@
 ﻿l_english:
+
 #Main Section Missions
  uu_spa_plus_ultra_title:0 "Plus Ultra"
   uu_spa_plus_ultra_desc:0 "What lies beyond the Pillars of Hercules? Our brave explorers are ready to find out!"
@@ -58,6 +59,7 @@
   uu_spa_win_league_war_desc:0 "Having dealt with the Protestants domestically, we must now take the fight to their strongholds in Germany. We must cleanse the so-called 'Holy' Empire of the Germans and reestablish Catholicism as the one true faith in Europe."
  uu_spa_catholic_monarchy_pogchamp_title:0 "A Catholic Monarchy"
   uu_spa_catholic_monarchy_pogchamp_desc:0 "The faithful adore us. The heretics fear us. The pope has blessed us. We are truly deserving to be called the Catholic Monarchy, as no other Catholic kingdom is as pious or has done enough to fight heresy as we have."
+ 
  #Branch Missions - Hidden
  uu_spa_branch_c1r9_title:0 "[Root.GetSelectableMissionTitle]"
   uu_spa_branch_c1r9_desc:0 "[Root.GetSelectableMissionDescription]"
@@ -85,6 +87,7 @@
   uu_spa_branch_c3r11_desc:0 "[Root.GetSelectableMissionDescription]" 
  uu_spa_branch_c3r12_title:0 "[Root.GetSelectableMissionTitle]"
   uu_spa_branch_c3r12_desc:0 "[Root.GetSelectableMissionDescription]" 
+ 
  #Branch Missions - West Path
  uu_spa_caribbean_colony_title:0 "A Caribbean Colony"
   uu_spa_caribbean_colony_desc:0 "The natives on our newfound territory of Hispaniola are friendly, pleasant, and most importantly, gullible. We should claim this region as our own by planting more [Root.GetAdjective] boots on the ground."
@@ -111,6 +114,8 @@
  uu_spa_islas_filipinas_title:0 "Las Islas Filipinas"
   uu_spa_islas_filipinas_desc:0 "During our ventures into the Pacific, we have discovered a large group of islands in the East Indies north of the Moluccas yet equally rich in spices and precious gemstones. The native heathens are divided and unlikely to be able to resist a Spanish invasion. We should launch an expedition with as many men as we can spare to conquer these valuable islands."
  uu_spa_christianize_america_title:0 "New World Missions"
+  uu_spa_christianize_america_desc:0 "We must not ignore the spiritual goals of our conquest of the New World; we are here not only for profit, but for the sake of enlightening the heathen peoples who call this land home. To that end we should invite Jesuit priests to establish missions in Brazil, educating the natives in the way of God so that they will abandon their savage customs."
+ 
  #Branch Missions - East Path
  uu_spa_beyond_sahara_title:0 "Beyond the Sahara"
  uu_spa_west_african_bases_title:0 "Bases in West Africa"
@@ -138,6 +143,7 @@
  uu_spa_discovered_pacific_tt:0 "We have discovered and control a §lnatural harbour§! (Coastal Center of Trade) §Oon the other side of the new continent§!, or simply found a nautical route around."
  
  uu_spa_placeholder_tordesillas_tt:0 "§MBranching missions coming soon!§!"
+
  #Modifiers
  uu_spa_modifier_into_africa:0 "Into Africa"
  uu_spa_modifier_cowed_pirates:0 "Our Pirates Hesitant"
@@ -162,6 +168,7 @@
  uu_spa_in_italy_modifier:0 "Italian Diplomacy"
  uu_spa_catholic_monarchy_modifier:0 "The Catholic Monarchy"
  uu_spa_modifier_spanish_traders_dominant:0 "Dominance of Spanish Traders"
+ 
  #Events
  uu_spa_events.1.t:0 "The Question of Portugal"
   uu_spa_events.1.desc:0 "From our shared origins fighting back-to-back against the Moorish invaders, to the Treaty of Alcanizes in 1297, our kingdom and the Portuguese kingdom have historically been on good terms. However, as with Aragon, supporters of Portugal in our realm have been interfering with our domestic politics, with pretenders to our throne even gaining support from sympathetic Portuguese allies. As the Reconquista draws to a close, the bonds holding our kingdoms together as allies is weakening. It is now time for us to choose whether our closeness with Portugal is worth the trouble it can bring, or if our kingdoms can continue to prosper in friendship and alliance forever more."
