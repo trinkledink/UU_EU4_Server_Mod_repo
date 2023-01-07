@@ -2640,7 +2640,7 @@ uu_spain_1_western_path = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernando Cortes"
 			}
 			if = {
 				limit = {
@@ -2695,13 +2695,9 @@ uu_spain_1_western_path = {
 		}
 		effect = {
 			colonial_mexico = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
-			random_owned_province = {
+			random_province = {
 				limit = {
 					colonial_region = colonial_mexico
 					is_city = yes
@@ -2818,10 +2814,6 @@ uu_spain_1_western_path = {
 				add_base_tax = 3
 			}
 			colonial_california = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -3072,10 +3064,6 @@ uu_spain_2_western_path = {
 		effect = {
 			add_treasury = 500
 			colonial_peru = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -3257,10 +3245,6 @@ uu_spain_2_western_path = {
 
 		effect = {
 			colonial_la_plata = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
