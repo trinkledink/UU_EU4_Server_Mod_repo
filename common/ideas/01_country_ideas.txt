@@ -614,7 +614,8 @@ ORM_ideas = {
 	}
 	orm_ormuzi_navy = {
 		naval_forcelimit_modifier = 0.25
-
+	}
+}
 
 #Colonial
 CAN_ideas = {
