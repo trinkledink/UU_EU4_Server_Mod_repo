@@ -81,3 +81,22 @@
  ###############################################################
 
  uu_road_to_rome:0 "Secured Road to Rome"
+
+ ###############################################################
+ # New Estuaries
+ ###############################################################
+
+ chao_phraya_estuary_modifier:0 "Chao Phraya Estuary"
+  desc_chao_phraya_estuary_modifier:0 "Controlling the important river estuary of Chao Phraya strengthens our hold of the trade in the region."
+ fraser_estuary_modifier:0 "Fraser Estuary"
+  desc_fraser_estuary_modifier:0 "Controlling the important river estuary of the Fraser river strengthens our hold of the trade in the region."
+ liao_estuary_modifier:0 "Liao Estuary"
+  desc_liao_estuary_modifier:0 "Controlling the important river estuary of the Liao river strengthens our hold of the trade in the region."
+ huang_he_estuary_modifier:0 "Yellow River Estuary"
+  desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of the Yellow River strengthens our hold of the trade in the region."
+ orange_river_estuary_modifier:0 "Orange River Estuary"
+  desc_orange_river_estuary_modifier:0 "Controlling the important river estuary of the Orange River strengthens our hold of the trade in the region."
+ jubba_estuary_modifier:0 "Jubba-Shebelle Estuary"
+   desc_jubba_estuary_modifier:0 "Controlling the important river estuary of the Jubba river strengthens our hold of the trade in the region."
+ volta_estuary_modifier:0 "Volta Estuary"
+  desc_volta_estuary_modifier:0 "Controlling the important river estuary of the Volta river strengthens our hold of the trade in the region."

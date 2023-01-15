@@ -73,23 +73,26 @@ zambezi={
 		1184 1185 1187 1188 1189 1190 1191 2950 2951 2952 4034 4035 4036 4037 4038 4039 4040 4041 4042 4043 4044 4045 4046 4047 4048 4050 4104 4106 4108 
 	}
 }
-patagonia={
-	location=2868
-	outgoing={
-		name="laplata"
-		path={
-			1537 1536 
-		}
-		control={
-			1840.000000 159.000000 1912.000000 221.000000 
-		}
-	}
-	members={
-		2868 2876 2869 786 2873 2874 780 781 782 783 2870 2875 2863 784 787 2862 785 2867 2871 2872 
-	}
-}
+#patagonia={
+#	location=2868
+#	outgoing={
+#		name="laplata"
+#		path={
+#			1537 1536 
+#		}
+#		control={
+#			1840.000000 159.000000 1912.000000 221.000000 
+#		}
+#	}
+#	members={
+#		2868 2876 2869 786 2873 2874 780 781 782 783 2870 2875 2863 784 787 2862 785 2867 2871 2872 
+#	}
+#}
 amazonas_node={
 	location=2935
+	color = {
+		20 150 30
+	}
 	outgoing={
 		name="brazil"
 		path={
@@ -114,6 +117,9 @@ amazonas_node={
 }
 rio_grande={
 	location=2499
+	color = {
+		210 40 40
+	}
 	outgoing={
 		name="mississippi_river"
 		path={
@@ -280,24 +286,6 @@ mexico={
 			1313.000000 1105.000000 1323.000000 1142.000000 1336.000000 1183.000000 1378.000000 1226.000000 1435.000000 1236.000000 1499.000000 1202.000000 1563.000000 1197.000000 1600.000000 1177.000000 1623.000000 1171.000000 1637.000000 1165.000000 
 		}
 	}
-	outgoing={
-		name="panama"
-		path={
-			1550 1549 1548 835 
-		}
-		control={
-			1287.000000 1087.000000 1382.000000 1072.000000 1451.000000 1020.000000 1501.000000 986.000000 1537.000000 972.000000 1562.000000 994.000000 
-		}
-	}
-	outgoing={
-		name="polynesia_node"
-		path={
-			1701 1707 1716 1715 1699 1697 
-		}
-		control={
-			1186.000000 983.000000 860.000000 959.000000 651.000000 1011.000000 290.000000 1001.000000 
-		}
-	}
 	members={
 		1551 854 2617 2621 2657 851 2622 2623 2624 2643 849 2627 2645 2648 850 852 2626 2628 2644 848 2630 2631 2641 2647 844 847 2629 2646 2632 2635 2638 2649 841 842 843 2636 2653 845 2633 2650 2651 846 2634 2652 853 856 857 2615 2642 4589 4594 4587 4586 4585 4588 4591 4590 4584 4582 4598 4583 4581 4571 4570 4572 4641 4573 4575 4580 4574 4579 4576 4640 4642 4643 4645 839 
 	}
@@ -305,6 +293,9 @@ mexico={
 lhasa={
 	location=677
 	inland=yes
+	color={
+		157 187 185
+	}
 	outgoing={
 		name="lahore"
 		path={
@@ -339,6 +330,9 @@ lhasa={
 chengdu={
 	location=679
 	inland=yes
+	color = {
+		223 181 31
+	}
 	outgoing={
 		name="canton"
 		path={
@@ -427,6 +421,9 @@ gulf_of_siam={
 }
 canton={
 	location=1371
+	color = {
+		89 113 223
+	}
 	outgoing={
 		name="malacca"
 		path={
@@ -460,6 +457,9 @@ canton={
 }
 philippines={
 	location=1397
+	color = {
+		17 240 220
+	}
 	outgoing={
 		name="the_moluccas"
 		path={
@@ -506,17 +506,16 @@ polynesia_node={
 			50.000000 559.000000 5388.000000 142.000000 
 		}
 	}
-	outgoing={
-		name="panama"
-		path={
-			1736 1740 1741 1711 1708 1702 1547 1548 835 
-		}
-		control={
-			825.000000 773.000000 1190.000000 786.000000 1361.000000 765.000000 1501.000000 913.000000 1551.000000 972.000000 
-		}
-	}
 	members={
 		1107 2737 1108 2739 1106 1238 1242 1244 1989 1243 1990 1992 1240 1997 1235 1995 1996 1241 1991 1993 1994 1988 1986 1236 1987 1239 1109 1246 2738 4934 4935 4936 4937 4938 4939
+	}
+	outgoing={
+		name="mexico"
+		path={
+			1697 1699 1715 1716 1707 1701
+		}
+		control={
+		}
 	}
 	ai_will_propagate_through_trade=yes
 }
@@ -537,6 +536,9 @@ australia={
 }
 nippon={
 	location=1376
+	color = {
+		22 94 131 
+	}
 	outgoing={
 		name="hangzhou"
 		path={
@@ -552,6 +554,9 @@ nippon={
 }
 hangzhou={
 	location=684
+	color = {
+		126 87 198
+	}
 	outgoing={
 		name="xian"
 		path={
@@ -586,6 +591,9 @@ hangzhou={
 xian={
 	location=700
 	inland=yes
+	color={
+		132 15 15
+	}
 	outgoing={
 		name="beijing"
 		path={
@@ -685,6 +693,9 @@ yumen={
 }
 malacca={
 	location=1361
+	color = {
+		100 96 197
+	}
 	outgoing={
 		name="ganges_delta"
 		path={
@@ -710,6 +721,9 @@ malacca={
 }
 ganges_delta={
 	location=1343
+	color = {
+		31 69 220
+	}
 	outgoing={
 		name="comorin_cape"
 		path={
@@ -961,6 +975,9 @@ ethiopia={
 }
 gulf_of_aden={
 	location=4346
+	color={
+		205 10 10
+	}
 	outgoing={
 		name="zanzibar"
 		path={
@@ -994,6 +1011,9 @@ gulf_of_aden={
 }
 hormuz={
 	location=1334
+	color = {
+		234 233 140
+	}
 	outgoing={
 		name="basra"
 		path={
@@ -1027,6 +1047,9 @@ zanzibar={
 }
 cape_of_good_hope={
 	location=1460
+	color = {
+		204 121 68
+	}
 	outgoing={
 		name="ivory_coast"
 		path={
@@ -1042,6 +1065,9 @@ cape_of_good_hope={
 }
 basra={
 	location=1335
+	color={
+		50 105 70
+	}
 	outgoing={
 		name="aleppo"
 		path={
@@ -1067,6 +1093,9 @@ basra={
 samarkand={
 	location=454
 	inland=yes
+	color={
+		23 70 194
+	}
 	outgoing={
 		name="persia"
 		path={
@@ -1120,7 +1149,7 @@ persia={
 aleppo={
 	location=377
 	color={
-		202 150 172 
+		125 110 225
 	}
 	outgoing={
 		name="constantinople"
@@ -1170,7 +1199,7 @@ alexandria={
 	outgoing={
 		name="tunis"
 		path={
-			357 1314 1313 1305 341
+			357 356 355 354 353 2453 2473 341
 		}
 		control={
 		}
@@ -1361,12 +1390,15 @@ laplata={
 			2001.000000 329.000000 2074.000000 414.000000 2144.000000 481.000000 2213.000000 579.000000 
 		}
 	}
-	members={
-		772 773 777 778 779 790 1536 1095 2025 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2857 2858 2859 2860 2861 2865 2866 2877 2878 2879 2884 2887 
+	members={ #added patagonia
+		772 773 777 778 779 790 1536 1095 2025 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2857 2858 2859 2860 2861 2865 2866 2877 2878 2879 2884 2887      2868 2876 2869 786 2873 2874 780 781 782 783 2870 2875 2863 784 787 2862 785 2867 2871 2872 
 	}
 }
 lima={
 	location=809
+	color = {
+		150 150 12
+	}
 	outgoing={
 		name="panama"
 		path={
@@ -1382,6 +1414,9 @@ lima={
 }
 brazil={
 	location=1531
+	color = {
+		86 195 80
+	}
 	outgoing={
 		name="ivory_coast"
 		path={
@@ -1398,6 +1433,9 @@ brazil={
 timbuktu={
 	location=1132
 	inland=yes
+	color = {
+		230 190 30
+	}
 	outgoing={
 		name="safi"
 		path={
@@ -1422,6 +1460,9 @@ timbuktu={
 }
 ivory_coast={
 	location=1466
+	color = {
+		242 239 222
+	}
 	outgoing={
 		name="carribean_trade"
 		path={
@@ -1500,6 +1541,9 @@ tunis={
 }
 ragusa={
 	location=137
+	color={
+		160 82 128 
+	}
 	outgoing={
 		name="pest"
 		path={
@@ -1580,6 +1624,9 @@ pest={
 krakow={
 	location=262
 	inland=yes
+	color={
+		202 150 172 
+	}
 	outgoing={
 		name="wien"
 		path={
@@ -1733,6 +1780,22 @@ panama={
 			1586.000000 1044.000000 1607.000000 1125.000000 
 		}
 	}
+	outgoing={
+		name="mexico"
+		path={
+			1548 1549 1550 1551
+		}
+		control={
+		}
+	}
+	outgoing={
+		name="polynesia_node"
+		path={
+			1548 1547 1702 1708 1711 1736 1997 
+		}
+		control={
+		}
+	}
 	members={
 		840 2637 2640 2662 837 838 2660 2661 2663 826 835 836 2664 2819 828 2806 824 825 827 832 2817 2812 2814 2815 822 823 2816 2818 4605 4604 4607 4608 4603 4600 4601 4602 4599 4596 4595 4597 4592 4593 829 
 	}
@@ -1809,6 +1872,14 @@ james_bay={
 		}
 		control={
 			1555.000000 1776.000000 1597.660034 1711.949951 1615.000000 1653.000000 1668.000000 1664.000000 1687.000000 1684.000000 1714.000000 1707.000000 1766.000000 1727.000000 1793.000000 1730.000000 
+		}
+	}
+	outgoing={
+		name="california"
+		path={
+			1487 1005 2594 1011 2504 2020 2489 2019 2483 2482 2481
+		}
+		control={
 		}
 	}
 	members={

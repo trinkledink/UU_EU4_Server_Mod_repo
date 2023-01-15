@@ -35,6 +35,30 @@ U.U_el_dorado = {
 player_uncon_diplomat_modifier = {
 	diplomats = 1
 }
-
+#estuaries
+chao_phraya_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+fraser_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+liao_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+orange_river_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+jubba_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+volta_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
 
 
