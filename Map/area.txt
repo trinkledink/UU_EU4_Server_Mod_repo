@@ -1528,8 +1528,12 @@ kenya_area = {	#5
 	1273 1925 4053 4054 4060
 }
 
-imatong_area = {
+imatong_area = {				#UU added
 	4943 4944 4945 4942
+}
+
+urgoma_area = { 4949  4948  4947  4946 
+	
 }
 
 jubba_area = { #3

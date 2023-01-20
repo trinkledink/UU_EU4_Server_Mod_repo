@@ -1796,7 +1796,7 @@ province;red;green;blue;x;x
 1795;74;48;32;East Sahara;x
 1796;202;50;79;Central Africa;x
 1797;74;52;126;Inner Kongo;x
-1798;202;54;173;Imatong;x
+#1798;202;54;173;Imatong;x
 1799;74;56;32;Urgoma;x
 1800;203;58;79;Limpopo;x
 1801;75;60;126;Kalahari;x
@@ -4944,3 +4944,7 @@ province;red;green;blue;x;x
 4943;112;31;72;Kidepo;x
 4944;120;33;77;Garissa;x
 4945;202;54;173;East Imatong;x
+4946;74;56;32;Sibiloi;x
+4947;189;112;122;Loiyangalani;x
+4948;143;85;92;Marsabit;x
+4949;163;97;105;Urgoma;x

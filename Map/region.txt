@@ -552,6 +552,7 @@ central_africa_region = {
 		chokwe_area
 		bunyoro_area
 		imatong_area
+		urgoma_area
 	}
 	monsoon = {
 		00.10.01
