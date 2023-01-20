@@ -438,6 +438,7 @@ categories =  {
 			4795 # Mandala
 			
 			4858 4857 2735 1090
+			4943					#UU added provinces
 		}
 	}
 
@@ -542,6 +543,7 @@ categories =  {
 			860 2618
 			
 			1093
+			4945		#UU added provinces
 		}
 	}
 	
@@ -742,6 +744,7 @@ categories =  {
 			4836 2383 4829
 			
 			1092 4851 1094 4850 4846 4881
+			4942 4944	#UU added provinces
 		}		
 	}
 	

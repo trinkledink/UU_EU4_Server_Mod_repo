@@ -1064,7 +1064,7 @@ northern_greece_area = { #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
-thrace_area = { #5
+thrace_area = {  #5
 	149 151 1764 4779 4705
 }
 
@@ -1526,6 +1526,10 @@ mombasa_area = { #3
 
 kenya_area = {	#5
 	1273 1925 4053 4054 4060
+}
+
+imatong_area = {
+	4943 4944 4945 4942
 }
 
 jubba_area = { #3

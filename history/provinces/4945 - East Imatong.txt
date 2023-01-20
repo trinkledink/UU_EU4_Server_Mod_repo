@@ -1,0 +1,17 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#East Imatong
+culture = acholi
+religion = shamanism
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = glass
+native_size = 40
+native_ferocity = 3
+native_hostileness = 5
+capital = "East Imatong"
+is_city = no
+extra_cost = 10
+discovered_by = east_african
+discovered_by = central_african
