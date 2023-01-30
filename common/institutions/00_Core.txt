@@ -630,14 +630,35 @@ new_world_i = {
 		has_port = yes
 		is_island = no
 		is_state = yes
-		OR = {
-			province_has_center_of_trade_of_level = 1
-			development = 12
-			is_capital = yes
+		if = {	##UU added this if statement/condition to increase availability to leading colonizers
+			limit = {
+				owner = { 
+					any_subject_country = {
+						OR = {	
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
+			}
+			OR = {
+				province_has_center_of_trade_of_level = 2
+				development = 8
+				is_capital = yes
+			}
+		}
+		else = {
+			OR = {
+				province_has_center_of_trade_of_level = 2
+				development = 12
+				is_capital = yes
+			}
 		}
 		is_in_capital_area = yes
 		owner = { 
-			has_any_exploration_idea = yes
+			has_colonist = yes ##UU removed #has_any_exploration_idea = yes
 			#at least one province colonised or colonising, or have a subject colony
 			OR = {
 				any_owned_province = {
@@ -928,6 +949,8 @@ printing_press = {
 		OR = {
 			religion = protestant
 			religion = reformed
+			religion = hussite	##UU added
+			religion = anglican ##UU added
 			region = north_german_region
 			region = south_german_region
 		}
