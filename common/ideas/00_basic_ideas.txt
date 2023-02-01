@@ -197,21 +197,24 @@ indigenous_ideas = {
 	}
 
 	trigger = {
-		has_government_attribute = enables_natives_idea_group
+		is_tribal = yes
+		NOT = { has_reform = steppe_horde}
+		NOT = { has_reform = great_mongol_state_reform}
 	}
 
-	indigenous_bountiful_land = {
-		tribal_development_growth = 0.015
-		development_cost = -0.05
-	}
 	indigenous_irregular_warfare = {
 		hostile_attrition = 1
+		land_attrition = -0.2					#UU Change
+	}
+	indigenous_bountiful_land = {
+		tribal_development_growth = 0.015
+		development_cost = -0.1					#UU Change
 	}
 	indigenous_constitution = {
 		monthly_reform_progress_modifier = 0.25
 	}
 	indigenous_braves = {
-		land_morale = 0.10
+		infantry_power = 0.10					#UU Change
 	}
 	indigenous_controlled_burns = {
 		global_manpower_modifier = 0.15
@@ -219,12 +222,13 @@ indigenous_ideas = {
 	indigenous_trade_with_foreigners = {
 		idea_cost = -0.1
 	}
-	indigenous_treaties = {
-		province_warscore_cost = -0.2
+	indigenous_treaties = {						#UU Change
+		tolerance_of_heathens_capacity = 1
+		tolerance_heathen = 2
 	}
 
 	ai_will_do = {
-		factor = 1.0
+		factor = 100
 	}
 }
 
