@@ -3628,7 +3628,7 @@ on_five_year_pulse = {
 		100 = ideagroups.1940
 		100 = ideagroups.1941
 		
-		# Mercenary Events (7g 4b)
+		# Mercenary Events (7g 4b)	##uu added
 		
 		100 = uuideagroups.1
 		100 = uuideagroups.2

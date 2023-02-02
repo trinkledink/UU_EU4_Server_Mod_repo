@@ -90,8 +90,8 @@
  FKN_religious_peace_desc: "Whilst the Pope maintains dominion over his Catholics, he holds no authority over our Empire. Religion is simply another part of administration, to which we hold sole authority over in our lands. The rule of law and the rule of God are closer than one might think."
  FKN_ensure_loyalty_title: "Imperial Cities"
  FKN_ensure_loyalty_desc: "The two integral cities of the Empire, Frankfurt and Aachen, provide legitimacy to each Emperor upon their ascension to the office. It is important that we ensure they support our righteous reign over the Empire and its people, lest questions arise of our rule."
- UU_FKN_defend_the_catholic_league_title: "Reform the Empire"
- UU_FKN_defend_the_catholic_league_desc: "The Empire, having been faced with the truths Martin Luther and other reformers confronted the Church with, must first reform before we can spread their ideas to the rest of Europe.
+ FKN_defend_the_catholic_league_title: "Reform the Empire"
+ FKN_defend_the_catholic_league_desc: "The Empire, having been faced with the truths Martin Luther and other reformers confronted the Church with, must first reform before we can spread their ideas to the rest of Europe."
  
  # Modifiers:
  FKN_conquest_of_nuremburg: "Burghers of Franconia"
