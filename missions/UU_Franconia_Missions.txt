@@ -255,7 +255,6 @@ FKN_Gen_Missions_3 = {
 			}
 		}
 		effect = {
-			change_national_focus_effect = yes
 			country_event = { id = ME_Franconia_Events.1 }
 			east_bavaria_area = {
 				limit = {
@@ -517,13 +516,51 @@ FKN_Missions_1 = {
 		required_missions = { FKN_trade_center }
 		position = 8
 		provinces_to_highlight = {
-			owned_by = ROOT
-			NOT = { has_tax_building_trigger = yes }
+			OR = {
+				AND = {
+					owned_by = root
+					OR = {	
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+					}
+					NOT = { has_building = farm_estate }
+				}
+				AND = {
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								OR = {	
+									trade_goods = grain
+									trade_goods = livestock
+									trade_goods = wine
+								}
+							}
+						}
+					}
+					OR = {	
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+					}
+					OR = {
+						owner = { is_subject_of = ROOT }
+						any_neighbor_province = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_tax_building_trigger = yes
-				value = 3
+				value = 4 
+				has_building = farm_estate
+			}
+			trade_goods_produced_amount = {
+				trade_goods = wine
+				amount = 18
 			}
 		}
 		effect = {
@@ -543,7 +580,7 @@ FKN_Missions_1 = {
 				}
 				add_province_modifier = {
 					name = FKN_monk_beer
-					duration = 9125
+					duration = -1
 				}
 			}
 		}
@@ -814,7 +851,7 @@ FKN_Missions_2 = {
 		}
 	}
 	
-	UU_FKN_defend_the_catholic_league = {
+	FKN_defend_the_catholic_league = {
 		icon = mission_spread_the_reformation
 		position = 8
 		required_missions = { FKN_reformation }
@@ -853,9 +890,15 @@ FKN_Missions_2 = {
 				custom_trigger_tooltip = {
 						tooltip = obj_religious_league_war_on_winning_side_tooltip
 						has_country_flag = religious_league_war_on_winning_side
+					}
+				# hre_religion_treaty = yes
+				# hre_religion_locked = yes
+				calc_true_if = {
+					all_ally = {
+						religion = root
+					}
+					amount = 4
 				}
-				hre_religion_treaty = yes
-				hre_religion_locked = yes
 				NOT = { hre_size = 1 }
 			}	
 			calc_true_if = {

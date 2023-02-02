@@ -196,17 +196,6 @@ artist = {
 		factor = 1
 	}
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.2
-			NOT = { stability = 1 }
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { stability = 0 }
-		}
-	}
 }
 
 ######################################################
@@ -335,6 +324,11 @@ theologian = {
 
 	chance = {
 		factor = 1.5
+
+	}
+	
+	ai_will_do = {
+		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
@@ -353,17 +347,6 @@ theologian = {
 				owner = { religion = tengri_pagan_reformed }
 				owner = { religion = zoroastrian }
 			}
-		}
-	}
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			unrest = -1
-		}
-		modifier = {
-			unrest = 1
 		}
 	}
 }
@@ -422,11 +405,11 @@ master_of_mint = {
 		modifier = { meritocracy = 0.25 }
 	}
 	chance = {
-		factor = 1.2
+		factor = 1
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
 		modifier = {
 			factor = 0.5
 			NOT = { inflation = 1 }
@@ -437,6 +420,7 @@ master_of_mint = {
 ######################################################
 inquisitor = {
 	monarch_power = ADM
+	allow_only_owner_religion = yes
 	
 	# Bonus
 	global_missionary_strength = 0.02
@@ -541,7 +525,6 @@ statesman = {
 		modifier = { meritocracy = 0.25 }
 	}
 
-
 	chance = {
 		factor = 1
 	}
@@ -556,6 +539,7 @@ naval_reformer = {
 	monarch_power = DIP
 	
 	# Bonus
+	
 	naval_morale = 0.1 
 
 	skill_scaled_modifier = {
@@ -864,7 +848,7 @@ army_organiser = {
 	monarch_power = MIL
 	
 	# Bonus
-	manpower_recovery_speed = 0.10
+	land_forcelimit_modifier = 0.10
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -976,7 +960,7 @@ recruitmaster = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_forcelimit_modifier = 0.10
+	manpower_recovery_speed = 0.10
 
 	skill_scaled_modifier = {
 		trigger = {

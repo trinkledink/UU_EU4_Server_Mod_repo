@@ -18,7 +18,7 @@ country_event = {
 		}
 		ai_chance = { factor = 100 }
 		
-		custom_tooltip = FKN_missions_for_hre
+		#custom_tooltip = FKN_missions_for_hre
 		change_government = monarchy
 		add_country_modifier = {
 			name = FKN_duke

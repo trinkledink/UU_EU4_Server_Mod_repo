@@ -8531,6 +8531,7 @@ estate_church_for_the_faith = {
 				war_with = root
 			}
 			NOT = { has_country_flag = improved_expansionist_zealotry }
+			NOT = { has_country_flag = fkn_improved_expansionist_zealotry }
 		}
 		modifier = {
 			church_loyalty_modifier = 0.1
@@ -8554,6 +8555,21 @@ estate_church_for_the_faith = {
 	}
 	conditional_modifier = {
 		trigger = {
+			any_known_country = {
+				NOT = { religion = root }
+				war_with = root
+			}
+			has_country_flag = fkn_improved_expansionist_zealotry
+		}
+		modifier = {
+			church_loyalty_modifier = 0.1
+			land_morale = 0.1
+			war_exhaustion = -0.05
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
 			NOT = {
 				any_known_country = {
 					NOT = { religion = root }
@@ -8566,6 +8582,7 @@ estate_church_for_the_faith = {
 			NOT = { has_country_modifier = recently_force_converted_protagonist_timer }
 			NOT = { has_country_modifier = recently_annexed_other_religion_timer }
 			NOT = { has_country_flag = improved_expansionist_zealotry }
+			NOT = { has_country_flag = fkn_improved_expansionist_zealotry }
 		}
 		modifier = {
 			church_loyalty_modifier = -0.1
