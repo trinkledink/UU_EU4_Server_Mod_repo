@@ -695,7 +695,7 @@ yumen={
 malacca={
 	location=1361
 	color = {
-		100 96 197
+		75 71 175
 	}
 	outgoing={
 		name="ganges_delta"
@@ -863,6 +863,12 @@ comorin_cape={
 			3952.000000 822.000000 3895.000000 915.000000 
 		}
 	}
+	outgoing={ ##UU added
+		name="zanzibar"
+		path = {
+			1616 1453 1447
+		}
+	}
 	outgoing={
 		name="cape_of_good_hope"
 		path={
@@ -876,7 +882,7 @@ comorin_cape={
 		1340 2083 4418 4419 4420 539 540 1947 2027 4417 536 2101 4412 2100 4408 4409 572 2099 4407 574 1101 1248 1998 1999 538 2085 4414 2026 4415 4416 533 2031 4421 4422 4426 541 1949 2090 4423 4424 534 535 537 4410 4413 531 2029 2030 2032 4427 543 549 2084 2080 4425 
 	}
 }
-gujarat={
+gujarat={ ##UU No longer goes to zanzibar
 	location=504
 	color={
 		135 104 85 
@@ -897,15 +903,6 @@ gujarat={
 		}
 		control={
 			3799.000000 1035.000000 
-		}
-	}
-	outgoing={
-		name="zanzibar"
-		path={
-			1336 1452 1451 1453 1447 
-		}
-		control={
-			3839.000000 977.000000 3819.000000 933.000000 3700.000000 780.000000 3699.000000 669.000000 
 		}
 	}
 	members={
@@ -1212,6 +1209,9 @@ alexandria={
 astrakhan={
 	location=464
 	inland=yes
+	color = {
+		187 187 113
+	}
 	outgoing={
 		name="kazan"
 		path={
@@ -1315,6 +1315,9 @@ kiev={
 }
 kazan={
 	location=1082
+	color = {
+		96 131 80
+	}
 	inland=yes
 	outgoing={
 		name="novgorod"
@@ -1580,7 +1583,7 @@ ragusa={
 safi={
 	location=1110
 	color={
-		146 134 57  
+		191 110 62 
 	}
 	outgoing={
 		name="sevilla"
