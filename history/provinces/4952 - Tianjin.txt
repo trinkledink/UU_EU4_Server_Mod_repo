@@ -1,0 +1,20 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Tianjin
+add_core = MNG
+owner = MNG
+controller = MNG
+culture = chihan
+religion = confucianism
+hre = no
+base_tax = 3
+base_production = 5
+trade_goods = grain
+base_manpower = 2
+capital = "Tianjin"
+is_city = yes
+extra_cost = 10
+center_of_trade = 1
+add_core = YAN
+
+discovered_by = chinese
+discovered_by = nomad_group

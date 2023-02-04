@@ -75,7 +75,7 @@ country_event = { #Missing Localization
     trigger = {
         NOT = { stability = 1 }
         has_discovered = 61 #Dresden
-        has_discovered = 315 #Finnmark
+        has_discovered = 21 #Tromso
         OR = {
             has_any_disaster = yes
             overextension_percentage = 1.0
@@ -95,7 +95,7 @@ country_event = { #Missing Localization
     }
     option = {
         name = uu_easter_egg_events.3.b
-        315 = {
+        21 = {
             owner = {
                 add_prestige = -0.01
             }
