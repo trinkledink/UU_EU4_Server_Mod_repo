@@ -148,8 +148,13 @@ spriteTypes = {
 		name = "GFX_ab_timur_legacy"
 		texturefile = "gfx/interface/ages/ab_timur_legacy.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_ab_italian_renaissance_architecture"
+		texturefile = "gfx/interface/ages/ab_italian_renaissance_architecture.dds"
+	}
 
-	# Hacky Sprites
+	# UU Hacky Sprites
 	spriteType = {
 		name = "GFX_horizontal_scroll_drager"
 		texturefile = "gfx/interface/horizontal_scroll_drager.dds"

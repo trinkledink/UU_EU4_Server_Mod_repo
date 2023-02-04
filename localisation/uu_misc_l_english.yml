@@ -42,6 +42,7 @@
  ctg_phalanx_company:0 "Greek Phalanx Company"
  ctg_immortals_company:0 "Persian Immortals Company"
  ab_timur_legacy:0 "Timur's Legacy"
+ ab_italian_renaissance_architecture:0 "Italian Renaissance Architecture"
  
  #MJL#
  mjl_change_muslim_school_decision_tt:0 "Trigger event allowing the change of muslim school."
