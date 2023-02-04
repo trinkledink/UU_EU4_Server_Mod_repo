@@ -2929,8 +2929,8 @@ hunan_area = {   #5
 	671 672 2173 2174 4960
 }
 
-henan_area = { #4 (South Henan)
-	687 2175 2176 4970
+henan_area = {   #4 (South Henan)
+	687 2175 2176 4969
 }
 
 north_henan_area = { #4

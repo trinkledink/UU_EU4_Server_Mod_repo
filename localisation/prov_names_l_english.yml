@@ -3756,19 +3756,11 @@
  PROV4965:0 "Jiujiang"
  PROV4966:0 "Guangxin"
  PROV4967:0 "Shangrao"
+ PROV4968:0 "Zhengzhou"
+ PROV4969:0 "Shaanzhou"
 
  liaodong_area:0 "Liaodong"
  west_hubei_area:0 "West Hubei"
  south_jiangxi_area:0 "South Jiangxi"
  imatong_area:0 "Imatong"
  urgoma_area:0 "Urgoma"
-
-
-
-
-
-PROV4965:0 "Jiujiang"
-PROV4968:0 "Zhengzhou"
-PROV4969:0 "Shaanzhou"
-PROV4969:0 "Constantinoples"
-PROV4970:0 "Constantinoples"
