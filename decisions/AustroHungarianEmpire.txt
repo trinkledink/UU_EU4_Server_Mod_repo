@@ -129,35 +129,22 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			legitimacy = 100
-			OR = {
+			if = {
+				limit = { tag = HAB }
 				AND = {
-					tag = HAB
-					AND = {
-						HUN = {	is_subject_of = HAB	}
-					}	
+					HUN = {	is_subject_of = HAB	}
 					owns_core_province = 266	#Praha
 					owns_core_province = 130	#Istria
 				}
-				AND = {
-					tag = HUN
-					AND = { 
-						HAB = {	is_subject_of = HUN	}
-					}	
+			if = {
+				limit = { tag = HUN }
+				AND = { 
+					HAB = {	is_subject_of = HUN	}
 					owns_core_province = 266	#Praha
 					owns_core_province = 130	#Istria
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					tag = HAB
-					HUN = { NOT = { num_of_cities = 35 } } #Keep this number the same as below
-				}
-				AND = {
-					tag = HUN
-					HAB = { NOT = { num_of_cities = 30 } } #Keep this number the same as below
-				}
-			}
+			ai = no
 		}
 		effect = {				
 			if = {				
