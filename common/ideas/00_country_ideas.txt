@@ -16616,44 +16616,44 @@ SOM_ideas = {
 	}
 }
 
-KIT_ideas = {
-	start = {
-		prestige_decay = -0.01
-		manpower_recovery_speed = 0.15
-	}
+#KIT_ideas = {
+	#start = {
+		#prestige_decay = -0.01
+		#manpower_recovery_speed = 0.15
+	#}
 	
-	bonus = {
-		infantry_power = 0.1
-	}
+#	bonus = {
+		#infantry_power = 0.1
+	#}
 	
-	trigger = {
-		tag = KIT
-	}
-	free = yes
+	#trigger = {
+	#	tag = KIT
+	#}
+	#free = yes
 	
-	kit_legacy_of_the_gods = {
-		legitimacy = 1
-		tolerance_own = 1
-	}
-	kit_empire_of_the_light = {
-		stability_cost_modifier = -0.1
-	}
-	kit_memory_of_aksum = {
-		embracement_cost = -0.2
-	}
-	kit_lakes_dominance = {
-		unjustified_demands = -0.2
-	}
-	kit_bachwezi_earthworks = {
-		build_cost = -0.1
-	}
-	kit_nile_conquest = {
-		core_creation = -0.15
-	}
-	kit_rich_history = {
-		culture_conversion_cost = -0.25
-	}
-}
+	#kit_legacy_of_the_gods = {
+	#	legitimacy = 1
+	#	tolerance_own = 1
+	#}
+	#kit_empire_of_the_light = {
+	#	stability_cost_modifier = -0.1
+#	}
+	#kit_memory_of_aksum = {
+	#	embracement_cost = -0.2
+#	}
+	#kit_lakes_dominance = {
+	#	unjustified_demands = -0.2
+#	}
+	#kit_bachwezi_earthworks = {
+	#	build_cost = -0.1
+	#}
+	#kit_nile_conquest = {
+	#	core_creation = -0.15
+	#}
+	#kit_rich_history = {
+	#	culture_conversion_cost = -0.25
+	#}
+#}
 
 NBI_ideas = {
 	start = {

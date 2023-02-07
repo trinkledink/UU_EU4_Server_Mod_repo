@@ -1358,3 +1358,47 @@ FKN_ideas = {
 		advisor_cost = -0.1
 	}
 }
+KIT_ideas = {
+	start = {
+		max_hostile_attrition = 1
+		hostile_attrition = 2
+	}
+	
+	bonus = {
+		military_tactics = 0.1
+	}
+	
+	trigger = {
+		tag = KIT
+	}
+	free = yes
+	
+	kit_legacy_of_the_gods = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		tolerance_own = 1
+	}
+	kit_empire_of_the_light = {
+		development_cost = -0.1
+	}
+	kit_memory_of_aksum = {
+		reform_progress_growth = 0.15
+		embracement_cost = -0.2
+	}
+	kit_riches_of_the_rawenzori = {
+		global_trade_goods_size_modifier = 0.1
+		artillery_power = 0.1
+	}
+	kit_bachwezi_earthworks = {
+		build_cost = -0.1
+		defensiveness = 0.25
+	}
+	kit_nile_trade = {
+		global_own_trade_power = 0.3
+		mercantilism_cost = -0.5
+	}
+	kit_rich_history = {
+		discipline = 0.05
+	}
+}
