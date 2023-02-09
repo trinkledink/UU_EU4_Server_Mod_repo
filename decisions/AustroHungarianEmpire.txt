@@ -136,15 +136,25 @@ country_decisions = {
 					owns_core_province = 266	#Praha
 					owns_core_province = 130	#Istria
 				}
+			}
 			if = {
 				limit = { tag = HUN }
-				AND = { 
+				AND = {
 					HAB = {	is_subject_of = HUN	}
 					owns_core_province = 266	#Praha
 					owns_core_province = 130	#Istria
 				}
 			}
-			ai = no
+			OR = {
+				AND = {
+					tag = HAB
+					HUN = { NOT = { num_of_cities = 35 } } #Keep this number the same as below
+				}
+				AND = {
+					tag = HUN
+					HAB = { NOT = { num_of_cities = 30 } } #Keep this number the same as below
+				}
+			}
 		}
 		effect = {				
 			if = {				

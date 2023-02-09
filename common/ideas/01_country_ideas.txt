@@ -1031,7 +1031,7 @@ AUH_ideas = {
 		global_missionary_strength = 0.02
 	}
 	herren_generals = {
-		land_maintenance_modifier = -0.25#1
+		land_maintenance_modifier = -0.1
 		manpower_recovery_speed = 0.2#1
 	}
 	unter_dem_doppeladler = {
