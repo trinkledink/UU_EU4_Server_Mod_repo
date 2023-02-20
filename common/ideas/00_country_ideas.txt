@@ -16842,8 +16842,8 @@ FU2_ideas = {
 	}
 	
 	trigger = {
-		tag = HSA
-		has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag
+		# tag = HSA #Hansa no longer a tag change
+		has_country_flag = formed_hsa_flag
 	}
 	free = yes 
 	

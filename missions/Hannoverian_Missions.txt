@@ -11,6 +11,7 @@ hannoverian_group_1 = {
 			tag = HAN
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}
 	has_country_shield = yes
 	
@@ -333,6 +334,7 @@ hannoverian_group_2 = {
 	potential = {
 		tag = HAN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}
 	has_country_shield = yes
 	
@@ -588,6 +590,7 @@ hannoverian_group_3 = {
 			tag = HAN
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}
 	has_country_shield = yes
 	
@@ -653,6 +656,7 @@ hannoverian_group_4 = {
 	potential = {
 		tag = HAN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}
 	has_country_shield = yes
 	

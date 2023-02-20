@@ -11,6 +11,7 @@ POM_GEN_missions_1 = {
 			tag = WOL
 			tag = STE
 		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}	
 	has_country_shield = yes
 
@@ -234,6 +235,7 @@ POM_GEN_missions_2 = {
 			tag = WOL
 			tag = STE
 		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}	
 	has_country_shield = yes
 
@@ -425,6 +427,7 @@ POM_GEN_missions_3 = {
 			tag = WOL
 			tag = STE
 		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
 	}	
 	has_country_shield = yes
 

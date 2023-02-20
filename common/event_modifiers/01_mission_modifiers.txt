@@ -7432,8 +7432,8 @@ hsa_lubeck_law_modifier = {
 	local_autonomy = -0.05
 }
 hsa_secured_pomeranian_coast_modifier = {
-	embargo_efficiency =  0.5
-	light_ship_cost = -0.05
+	embargo_efficiency = 0.25
+	light_ship_cost = -0.10
 }
 hsa_republican_modus_operandi_modifier = {
 	advisor_cost = -0.2 

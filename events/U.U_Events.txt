@@ -415,3 +415,23 @@ country_event = {	##Free Cities Free City estates mission event##
 		}
 	}
 }
+country_event = { #Hanseatic League rename to Hansa if they want to
+	id = UU_balance_events.6
+	title = UU_balance_events.6.t
+	desc = UU_balance_events.6.desc
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UU_balance_events.6.a
+		override_country_name = UUHSA2
+	}
+	option = {
+		name = UU_balance_events.6.b
+		override_country_name = UUHSA
+	}
+	option = {
+		name = UU_balance_events.6.c
+	}
+}
