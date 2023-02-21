@@ -1402,3 +1402,88 @@ KIT_ideas = {
 		discipline = 0.05
 	}
 }
+
+
+BTS_ideas = { #Betsimisaraka
+	start = {  
+		global_sailors_modifier = 0.2
+		sunk_ship_morale_hit_recieved = -0.2
+	}
+  
+	bonus = {
+		sailor_maintenance_modifer = -0.1
+	}
+  
+	trigger = {
+		tag = BTS
+	}
+	free = yes
+  
+	bts_people_of_the_coast = {
+		global_ship_trade_power = 0.15
+		range = 0.20 #Both new, was garrison size
+	}
+	bts_madagascar_jungles = { #completely new
+		global_ship_cost = -0.05
+		production_efficiency = 0.1
+	}
+	bts_indivisable_many = {
+		land_morale = 0.1 #new
+		naval_morale = 0.1 #new
+	}
+	bts_gifts_and_hostages = {
+		advisor_cost = -0.1 #new
+		development_cost = -0.1 #new, previously just autonomy
+	}
+	bts_european_pirate_settlements = {
+		heavy_ship_power = 0.1 #new
+		capture_ship_chance = 0.33 #from 0.2
+	}
+	bts_royal_justice = {
+		global_unrest = -2 #was legitimacy
+	}
+	bts_european_diplomacy = {
+		diplomatic_reputation = 1
+		trade_efficiency = 0.20 #new
+	}
+}
+MIR_ideas = { #Imerina
+	start = {  
+		global_unrest = -1
+		manpower_recovery_speed = 0.2 #was 0.1
+	}
+  
+	bonus = {
+		infantry_power = 0.10
+	}
+  
+	trigger = {
+		tag = MIR
+	}
+	free = yes
+	
+	mir_unify_inlands = {
+		core_creation = -0.1
+		shock_damage = 0.1 #new
+	}
+	mir_twelve_sampys = {
+		land_morale = 0.1
+	}
+	mir_intensive_rice_cultivation = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	mir_fortify_highlands = {
+		defensiveness = 0.15
+	}
+	mir_reform_the_nobility = {
+		global_tax_modifier = 0.1
+		global_autonomy = -0.05 #moved from earlier
+	}
+	mir_unified_legal_system = {
+		stability_cost_modifier = -0.15 #was 0.1
+	}
+	mir_foloalinday = {
+		infantry_cost = -0.2
+	}
+}
+

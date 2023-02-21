@@ -186,101 +186,31 @@
  economic_reforms_desc:0 "Following the introduction of contractual freedom, many more economic reforms have followed, making developing the Scandinavian homelands easier."
  nordic_lions_united:0 "Nordic Lions united"
  nordic_lions_united_desc:0 "The lion kingdoms have for a long time stood alone and independent of eachothers. But now being one state, what used to be local powers have now become one European superpower able to wrestle with the other major states around us."
- 
- ###############################################################
- # Canadian/Quebecois ideas
- ###############################################################
- CAN_ideas:0 "Canadian Ideas"
- CAN_ideas_start:0 "Canadian Traditions"
- CAN_ideas_bonus:0 "Canadian Ambition"
- the_hudson_bay_company:0 "The Hudson Bay Company"
- the_hudson_bay_company_desc:0 "The Hudson Bay Company is perhaps the most important aspect of our history. Our roots lie in a mercantile tradition and we should continue to support this by encouraging people to become merchants."
- can_loyalist_bastion:0 "A Loyalist Bastion"
- can_loyalist_bastion_desc:0 "After the American Revolution, many families still loyal to the crown immigrated north into Canada. With them, came expertise and skilled labour. As a country with strong ties to its motherland, we will welcome these persecuted ones with open arms and put them to good use."
- can_the_metis:0 "The Métis"
- can_the_metis_desc:0 "The Métis are communities descended from both the First Nations and European colonists. Though often marginalized by the government, they have developed a unique identity and maintain a strong cultural heritage."
- the_quebec_act:0 "The Quebec Act"
- the_quebec_act_desc:0 "The Quebec Act granted great religious freedoms to the Roman Catholics brought into our nation by the conquest of Quebec. We are a model of religious tolerance in our New World."
- can_from_sea_to_sea:0 "From Sea to Sea"
- can_from_sea_to_sea_desc:0 "'A mari usque ad mare' is the official motto of Canada, representing how our nation stretches from the Atlantic Ocean to the Pacific Ocean. The vast interior of Canada must only be colonized by hardy Canadian settlers who have the strength to withstand the elements."
- can_colonial_militias:0 "Colonial Militias"
- can_colonial_militias_desc:0 "At the outset the War of 1812, we stood almost alone against American aggression. Local militias were raised in large numbers in defence of our homeland, repulsing invasions with great success until soldiers arrived from the motherland."
- can_indigenous_marksmen:0 "Indigenous Marksmen"
- can_indigenous_marksmen_desc:0 "Since pre-Confederation, indigenous soldiers were among the finest shooters in the Canadian Army, playing pivotal roles during many battles in the Seven Years' War and the War of 1812. This affords us a unique combat advantage not found anywhere else in the world."
- 
- #Quebec
 
- QUE_ideas:0 "Québécois Ideas"
- QUE_ideas_start:0 "Québécois Traditions"
- QUE_ideas_bonus:0 "Québécois Ambition"
- coureurs_des_bois:0 "Coureurs des Bois"
- coureurs_des_bois_desc:0 "Coureurs des bois are legendary here and abroad for their ability to travel vast distances into the heartland of the continent and deal with the natives to obtain more furs. While they do compete with the official voyageurs, they allow more of our land's precious furs to reach the market and be sold."
- the_seigneurial_system:0 "The Seigneurial System"
- the_seigneurial_system_desc:0 "Our nation's land system has been dominated by seigneurs since the earliest settlement here by our forefathers. Running a feudal-like system, they have become ingrained in our nation's policies and allow us to extract more taxes from the people. "
- que_european_city_planning:0 "European City Planning"
- que_european_city_planning_desc:0 "Québec, as one of the oldest colonial settlements, resembles more a European city than an American one. Using tried-and-true city planning methods, we can learn from examples and build great cities without the need for wasteful urban sprawl."
- fortifications_of_quebec:0 "Fortifications of Québec"
- fortifications_of_quebec_desc:0 "The ramparts of Québec were constructed in the late 17th century, effectively transforming the capital into a citadel, with the enceinte composed of 11 redoubts and joined by palisades. The city is now the only walled city in North America north of Mexico."
- college_of_quebec:0 "The College of Quebec"
- college_of_quebec_desc:0 "The college in Quebec was the first to be established in the New World outside of Mexico. The tradition of learning safeguarded here allow our nation to be at the forefront of technological progress. "
- que_voltigeurs:0 "CanadianVoltigeurs"
- que_voltigeurs_desc:0 "Voltigeurs were elite light infantry units in Napoléon's Grande Armée, and the Canadian Voltigeurs draw their name from this legacy. Raised in Lower Canada (Quebec), the predominantly-Francophone militia unit successfully repelled attacks during the War of 1812 at the Battle of the Chateauguay and the Second Battle of Lacolle Mills. Their legacy today is revered throughout Canada and Quebec."
- jesuit_missions:0 "Jesuit Missions"
- jesuit_missions_desc:0 "The various religious orders, but the Jesuits especially have made it their job to bring the true faith to the heathens around us. We view it as our duty, being a nation of the faithful, to ensure that they have every opportunity to carry out their work successfully."
- 
- CAN_ideas:0 "Canadian Ideas"
- CAN_ideas_start:0 "Canadian Traditions"
- CAN_ideas_bonus:0 "Canadian Ambition"
- the_hudson_bay_company:0 "The Hudson Bay Company"
- the_hudson_bay_company_desc:0 "The Hudson Bay Company is perhaps the most important aspect of our history. Our roots lie in a mercantile tradition and we should continue to support this by encouraging people to become merchants."
- can_loyalist_bastion:0 "A Loyalist Bastion"
- can_loyalist_bastion_desc:0 "After the American Revolution, many families still loyal to the crown immigrated north into Canada. With them, came expertise and skilled labour. As a country with strong ties to its motherland, we will welcome these persecuted ones with open arms and put them to good use."
- can_the_metis:0 "The Métis"
- can_the_metis_desc:0 "The Métis are communities descended from both the First Nations and European colonists. Though often marginalized by the government, they have developed a unique identity and maintain a strong cultural heritage."
- the_quebec_act:0 "The Quebec Act"
- the_quebec_act_desc:0 "The Quebec Act granted great religious freedoms to the Roman Catholics brought into our nation by the conquest of Quebec. We are a model of religious tolerance in our New World."
- can_from_sea_to_sea:0 "From Sea to Sea"
- can_from_sea_to_sea_desc:0 "'A mari usque ad mare' is the official motto of Canada, representing how our nation stretches from the Atlantic Ocean to the Pacific Ocean. The vast interior of Canada must only be colonized by hardy Canadian settlers who have the strength to withstand the elements."
- can_colonial_militias:0 "Colonial Militias"
- can_colonial_militias_desc:0 "At the outset the War of 1812, we stood almost alone against American aggression. Local militias were raised in large numbers in defence of our homeland, repulsing invasions with great success until soldiers arrived from the motherland."
- can_indigenous_marksmen:0 "Indigenous Marksmen"
- can_indigenous_marksmen_desc:0 "Since pre-Confederation, indigenous soldiers were among the finest shooters in the Canadian Army, playing pivotal roles during many battles in the Seven Years' War and the War of 1812. This affords us a unique combat advantage not found anywhere else in the world."
- 
- #QUEBEC
- 
- QUE_ideas:0 "Québécois Ideas"
- QUE_ideas_start:0 "Québécois Traditions"
- QUE_ideas_bonus:0 "Québécois Ambition"
- coureurs_des_bois:0 "Coureurs des Bois"
- coureurs_des_bois_desc:0 "Coureurs des bois are legendary here and abroad for their ability to travel vast distances into the heartland of the continent and deal with the natives to obtain more furs. While they do compete with the official voyageurs, they allow more of our land's precious furs to reach the market and be sold."
- the_seigneurial_system:0 "The Seigneurial System"
- the_seigneurial_system_desc:0 "Our nation's land system has been dominated by seigneurs since the earliest settlement here by our forefathers. Running a feudal-like system, they have become ingrained in our nation's policies and allow us to extract more taxes from the people. "
- que_european_city_planning:0 "European City Planning"
- que_european_city_planning_desc:0 "Québec, as one of the oldest colonial settlements, resembles more a European city than an American one. Using tried-and-true city planning methods, we can learn from examples and build great cities without the need for wasteful urban sprawl."
- fortifications_of_quebec:0 "Fortifications of Québec"
- fortifications_of_quebec_desc:0 "The ramparts of Québec were constructed in the late 17th century, effectively transforming the capital into a citadel, with the enceinte composed of 11 redoubts and joined by palisades. The city is now the only walled city in North America north of Mexico."
- college_of_quebec:0 "The College of Quebec"
- college_of_quebec_desc:0 "The college in Quebec was the first to be established in the New World outside of Mexico. The tradition of learning safeguarded here allow our nation to be at the forefront of technological progress. "
- que_voltigeurs:0 "Canadian Voltigeurs"
- que_voltigeurs_desc:0 "Voltigeurs were elite light infantry units in Napoléon's Grande Armée, and the Canadian Voltigeurs draw their name from this legacy. Raised in Lower Canada (Quebec), the predominantly-Francophone militia unit successfully repelled attacks during the War of 1812 at the Battle of the Chateauguay and the Second Battle of Lacolle Mills. Their legacy today is revered throughout Canada and Quebec."
- jesuit_missions:0 "Jesuit Missions"
- jesuit_missions_desc:0 "The various religious orders, but the Jesuits especially have made it their job to bring the true faith to the heathens around us. We view it as our duty, being a nation of the faithful, to ensure that they have every opportunity to carry out their work successfully."
- 
  ###############################################################
  # Florence ideas
  ###############################################################
+
  LAN_ideas:0 "Florentine Ideas"
  LAN_ideas_start:0 "Florentine Traditions"
  LAN_ideas_bonus:0 "Florentine Ambitions"
+
  ###############################################################
  # Tuscan ideas
  ###############################################################
+
  tus_birthplace_of_the_renaissance:0 "Birthplace of the Renaissance"
  tus_birthplace_of_the_renaissance_desc:0 "Florence has long been the cultural capital of Tuscany. With the renewed interest in the classical world a clever Prince may attract the new thinkers to benefit us all."
  tus_tuscan_condottieri:0 "Condottieri"
  tus_tuscan_condottieri_desc:0 "The strife between city states has given rise to mercenary companies. Let us ensure they know our purse is full and encourage their presence in times of need."
  tus_tuscan_banking:0 "Tuscan Banking"
  tus_tuscan_banking_desc:0 "From England to Naples, all know of our bankers. Our golden Florin has financed everything from the Hundred Years War to new industries."
+ 
+ ###############################################################
+ # Betsimisaraka idea
+ ###############################################################
+ bts_madagascar_jungles:0 "Madagascar Jungles"
+ bts_madagascar_jungles_desc:0 "The eastern coast of Madagascar features a lowland tropical rainforest populated with species found nowhere else. While not all of the trees might be suitable for shipbuilding, furnishing a ship requires all manner of wooden supplies, and the proximity of our shipyards to these resources certainly makes it easier to make our ships seaworthy."
  ###############################################################
  # Colonial tags 
  ###############################################################
@@ -290,11 +220,11 @@
  COL_ideas_bonus:0 "Colombian Ambition"
  col_federation:0 "Colombian Federation"
  col_federation_desc:0 " "
- col_working_spirit:0 "Working spirit"
+ col_working_spirit:0 "Working Spirit"
  col_working_spirit_desc:0 " "
  col_drilling:0 "Army Drill"
  col_drilling_desc:0 " "
- col_immigrant_recruits:0 " Enlisting immigrants"
+ col_immigrant_recruits:0 " Enlisting Immigrants"
  col_immigrant_recruits_desc:0 " "
  col_caribbean_to_pacific:0 "From the Caribbean to the Pacific"
  col_caribbean_to_pacific_desc:0 " "
@@ -316,7 +246,7 @@
  brz_brazilian_corps_desc:0 " "
  brz_multi_cultural:0 "Multi Cultural"
  brz_multi_cultural_desc:0 " "
- brz_brazilian_empire:0 "Braziliean Empire"
+ brz_brazilian_empire:0 "Brazilian Empire"
  brz_brazilian_empire_desc:0 " "
  brz_conscription:0 "Increased Conscription"
  brz_conscription_desc:0 " "
@@ -338,3 +268,41 @@
  lap_tango_argentino_desc:0 " "
  lap_defensive_tactics:0 "Defensive tactics"
  lap_defensive_tactics_desc:0 " "
+
+ CAN_ideas:0 "Canadian Ideas"
+ CAN_ideas_start:0 "Canadian Traditions"
+ CAN_ideas_bonus:0 "Canadian Ambition"
+ can_hudson_bay_company:0 "The Hudson Bay Company"
+ can_hudson_bay_company_desc:0 "The Hudson Bay Company is perhaps the most important aspect of our history. Our roots lie in a mercantile tradition and we should continue to support this by encouraging people to become merchants."
+ can_loyalist_bastion:0 "A Loyalist Bastion"
+ can_loyalist_bastion_desc:0 "After the American Revolution, many families still loyal to the crown immigrated north into Canada. With them, came expertise and skilled labour. As a country with strong ties to its motherland, we will welcome these persecuted ones with open arms and put them to good use."
+ can_the_metis:0 "The Métis"
+ can_the_metis_desc:0 "The Métis are communities descended from both the First Nations and European colonists. Though often marginalized by the government, they have developed a unique identity and maintain a strong cultural heritage."
+ can_quebec_act:0 "The Quebec Act"
+ can_quebec_act_desc:0 "The Quebec Act granted great religious freedoms to the Roman Catholics brought into our nation by the conquest of Quebec. We are a model of religious tolerance in our New World."
+ can_from_sea_to_sea:0 "From Sea to Sea"
+ can_from_sea_to_sea_desc:0 "'A mari usque ad mare' is the official motto of Canada, representing how our nation stretches from the Atlantic Ocean to the Pacific Ocean. The vast interior of Canada must only be colonized by hardy Canadian settlers who have the strength to withstand the elements."
+ can_colonial_militias:0 "Colonial Militias"
+ can_colonial_militias_desc:0 "At the outset the War of 1812, we stood almost alone against American aggression. Local militias were raised in large numbers in defence of our homeland, repulsing invasions with great success until soldiers arrived from the motherland."
+ can_indigenous_marksmen:0 "Indigenous Marksmen"
+ can_indigenous_marksmen_desc:0 "Since pre-Confederation, indigenous soldiers were among the finest shooters in the Canadian Army, playing pivotal roles during many battles in the Seven Years' War and the War of 1812. This affords us a unique combat advantage not found anywhere else in the world."
+ 
+ QUE_ideas:0 "Québécois Ideas"
+ QUE_ideas_start:0 "Québécois Traditions"
+ QUE_ideas_bonus:0 "Québécois Ambition"
+ que_coureurs_des_bois:0 "Coureurs des Bois"
+ que_coureurs_des_bois_desc:0 "Coureurs des bois are legendary here and abroad for their ability to travel vast distances into the heartland of the continent and deal with the natives to obtain more furs. While they do compete with the official voyageurs, they allow more of our land's precious furs to reach the market and be sold."
+ que_seigneurial_system:0 "The Seigneurial System"
+ que_seigneurial_system_desc:0 "Our nation's land system has been dominated by seigneurs since the earliest settlement here by our forefathers. Running a feudal-like system, they have become ingrained in our nation's policies and allow us to extract more taxes from the people. "
+ que_european_city_planning:0 "European City Planning"
+ que_european_city_planning_desc:0 "Québec, as one of the oldest colonial settlements, resembles more a European city than an American one. Using tried-and-true city planning methods, we can learn from examples and build great cities without the need for wasteful urban sprawl."
+ que_fortifications_of_quebec:0 "Fortifications of Québec"
+ que_fortifications_of_quebec_desc:0 "The ramparts of Québec were constructed in the late 17th century, effectively transforming the capital into a citadel, with the enceinte composed of 11 redoubts and joined by palisades. The city is now the only walled city in North America north of Mexico."
+ que_college_of_quebec:0 "The College of Quebec"
+ que_college_of_quebec_desc:0 "The college in Quebec was the first to be established in the New World outside of Mexico. The tradition of learning safeguarded here allow our nation to be at the forefront of technological progress. "
+ que_voltigeurs:0 "Canadian Voltigeurs"
+ que_voltigeurs_desc:0 "Voltigeurs were elite light infantry units in Napoléon's Grande Armée, and the Canadian Voltigeurs draw their name from this legacy. Raised in Lower Canada (Quebec), the predominantly-Francophone militia unit successfully repelled attacks during the War of 1812 at the Battle of the Chateauguay and the Second Battle of Lacolle Mills. Their legacy today is revered throughout Canada and Quebec."
+ que_jesuit_missions:0 "Jesuit Missions"
+ que_jesuit_missions_desc:0 "The various religious orders, but the Jesuits especially have made it their job to bring the true faith to the heathens around us. We view it as our duty, being a nation of the faithful, to ensure that they have every opportunity to carry out their work successfully."
+ 
+

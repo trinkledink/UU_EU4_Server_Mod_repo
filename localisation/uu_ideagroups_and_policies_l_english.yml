@@ -6,7 +6,7 @@
  
  # Admin Ideas
  independent_legal_system_adm_idea:0 "Independent Legal System"
- independent_legal_system_adm_idea_desc:0 "With an independent legal system, stonger checks and balances greatly stabilize our nation."
+ independent_legal_system_adm_idea_desc:0 "With an independent legal system, stronger checks and balances greatly stabilize our nation."
  meritocratic_court_adm_idea:0 "Meritocratic Court"
  meritocratic_court_adm_idea_desc:0 "Doing away with nepotisim and favoritism when appointing advisors to our court will allow greater efficiency and advancement of our bureaucracy."
  great_works_project_adm_idea:0 "Great Works Project"
@@ -81,7 +81,7 @@
  uu_mercenary_ideas.desc9:0 "With recent victories, certain mercenaries have made themselves wealthy on the spoils of our wars. Money that was supposed to go to our coffers have instead ended up in the hands of greedy hiremen. Should we intervene and seize these riches for the crown, or let the mercenaries run away with our rightful ducats?"
  uu_mercenary_ideas.9.a:0 "Seize them and their wealth!"
  uu_mercenary_ideas.9.b:0 "Let Sleeping Dogs Lie"
- uu_mercenary_ideas.name10:0 "Mercenaries Running Amock"
+ uu_mercenary_ideas.name10:0 "Mercenaries Running Amok"
  uu_mercenary_ideas.desc10:0 "Although usually quite disciplined, the recent recruits of hirearms are a rowdy bunch, and they have a reputation of going off on their own and following their own wills, instead the orders of our officers."
  uu_mercenary_ideas.10.a:0 "You lot! Y- you come back here!"
  uu_mercenary_ideas.name11:0 "Promotion for a Prominent Leader?"

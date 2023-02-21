@@ -8866,83 +8866,83 @@ ANT_ideas = {
 	}
 }
 
-BTS_ideas = {
-	start = {  
-		global_sailors_modifier = 0.2
-		sunk_ship_morale_hit_recieved = -0.2
-	}
-  
-	bonus = {
-		sailor_maintenance_modifer = -0.1
-	}
-  
-	trigger = {
-		tag = BTS
-	}
-	free = yes
-  
-	bts_people_of_the_coast = {
-		garrison_size = 0.2
-	}
-	malagasy_pirate_ports = {
-		#Also used in Malagasy Ideas.
-		embargo_efficiency = 0.1
-		privateer_efficiency = 0.15
-	}
-	bts_indivisable_many = {
-		global_unrest = -1
-	}
-	bts_gifts_and_hostages = {
-		global_autonomy = -0.05
-	}
-	bts_european_pirate_settlements = {
-		capture_ship_chance = 0.2
-	}
-	bts_royal_justice = {
-		legitimacy = 1
-	}
-	bts_european_diplomacy = {
-		diplomatic_reputation = 1
-	}
-}
+#BTS_ideas = {
+#	start = {  
+#		global_sailors_modifier = 0.2
+#		sunk_ship_morale_hit_recieved = -0.2
+#	}
+#  
+#	bonus = {
+#		sailor_maintenance_modifer = -0.1
+#	}
+# 
+#	trigger = {
+#		tag = BTS
+#	}
+#	free = yes
+# 
+#	bts_people_of_the_coast = {
+#		garrison_size = 0.2
+#	}
+#	malagasy_pirate_ports = {
+#		#Also used in Malagasy Ideas.
+#		embargo_efficiency = 0.1
+#		privateer_efficiency = 0.15
+#	}
+#	bts_indivisable_many = {
+#		global_unrest = -1
+#	}
+#	bts_gifts_and_hostages = {
+#		global_autonomy = -0.05
+#	}
+#	bts_european_pirate_settlements = {
+#		capture_ship_chance = 0.2
+#	}
+#	bts_royal_justice = {
+#		legitimacy = 1
+#	}
+#	bts_european_diplomacy = {
+#		diplomatic_reputation = 1
+#	}
+#}
 
-MIR_ideas = {
-	start = {  
-		global_unrest = -1
-		manpower_recovery_speed = 0.1
-	}
-  
-	bonus = {
-		infantry_power = 0.10
-	}
-  
-	trigger = {
-		tag = MIR
-	}
-	free = yes
-	
-	mir_unify_inlands = {
-		global_autonomy = -0.05
-	}
-	mir_twelve_sampys = {
-		land_morale = 0.1
-	}
-	mir_intensive_rice_cultivation = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	mir_fortify_highlands = {
-		defensiveness = 0.15
-	}
-	mir_reform_the_nobility = {
-		global_tax_modifier = 0.1
-	}
-	mir_unified_legal_system = {
-		stability_cost_modifier = -0.1
-	}
-	mir_foloalinday = {
-		infantry_cost = -0.2
-	}
-}
+#MIR_ideas = {
+#	start = {  
+#		global_unrest = -1
+#		manpower_recovery_speed = 0.1
+#	}
+# 
+#	bonus = {
+#		infantry_power = 0.10
+#	}
+# 
+#	trigger = {
+#		tag = MIR
+#	}
+#	free = yes
+#	
+#	mir_unify_inlands = {
+#		global_autonomy = -0.05
+#	}
+#	mir_twelve_sampys = {
+#		land_morale = 0.1
+#	}
+#	mir_intensive_rice_cultivation = {
+#		global_trade_goods_size_modifier = 0.1
+#	}
+#	mir_fortify_highlands = {
+#		defensiveness = 0.15
+#	}
+#	mir_reform_the_nobility = {
+#		global_tax_modifier = 0.1
+#	}
+#	mir_unified_legal_system = {
+#		stability_cost_modifier = -0.1
+#	}
+#	mir_foloalinday = {
+#		infantry_cost = -0.2
+#	}
+#}
 
 TBK_ideas = {
 	start = {  

@@ -2318,9 +2318,9 @@ malagasy_ideas = {
 		legitimacy = 1
 	}
 	malagasy_pirate_ports = {
-		#Effects from BTS Ideas
-		#embargo_efficiency = 0.1
-		#privateer_efficiency = 0.15
+		#Effects were removed from BTS Ideas so they are here now
+		embargo_efficiency = 0.1
+		privateer_efficiency = 0.15
 	}
 	malagasy_raid_warfare = {
 		global_manpower_modifier = 0.1
