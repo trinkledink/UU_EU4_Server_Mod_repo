@@ -670,7 +670,7 @@ manchuria_region = {
 		jilin_area
 		central_jilin_area
 		ilan_hala_area
-		liaoning_area
+		#liaoning_area #moved to N. China
 		ningguta_area
 		central_heilongjiang_area
 		sakhalin_area
@@ -888,6 +888,8 @@ south_china_region = {
 		south_jiangsu_area
 		hunan_area
 		guangxi_area
+		south_jiangxi_area #NEW
+		west_hubei_area #NEW
 	}
 	monsoon = {
 		00.05.01
@@ -919,6 +921,8 @@ north_china_region = {
 		west_gansu_area
 		jiangsu_area
 		anhui_area
+		liaodong_area #NEW
+		liaoning_area #moved 
 	}
 }
 
