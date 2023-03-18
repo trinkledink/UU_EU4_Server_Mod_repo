@@ -1126,7 +1126,7 @@
  PROV1125:0 "Kong"
  PROV1126:0 "Ivory Coast"
  PROV1127:0 "Tuat"
- PROV1128:0 "Taudeni"
+ PROV1128:0 "Taghaza" #Was Taudeni, but Taudeni only replaced Taghaza late 1500s post Moroccan invasion
  PROV1129:0 "Azawad"
  PROV1130:0 "Tadmekka"
  PROV1131:0 "Massina"
@@ -2240,11 +2240,11 @@
  PROV2240:0 "Galam"
  PROV2241:0 "Beafada"
  PROV2242:0 "Karou"
- PROV2243:0 "Termes"
+ PROV2243:0 "Awdaghust" #Changed to more famous city, was Termes
  PROV2244:0 "Tagant"
  PROV2245:0 "Wagadu"
- PROV2246:0 "Baghena"
- PROV2247:0 "Hodh"
+ PROV2246:0 "Koumbi Saleh" #Changed to more famous city, was Baghena
+ PROV2247:0 "Walata" #Changed to more famous city, was Hodh
  PROV2248:0 "Do"
  PROV2249:0 "Sibiridugu"
  PROV2250:0 "Bendugu"
@@ -2265,7 +2265,7 @@
  PROV2265:0 "Liptako"
  PROV2266:0 "Bilanga"
  PROV2267:0 "Tenkodogo"
- PROV2268:0 "Aribanda"
+ PROV2268:0 "Kukiya" #Changed to city more significant to Songhai, was Aribanda
  PROV2269:0 "Zarmaganda"
  PROV2270:0 "Dallol"
  PROV2271:0 "Azawagh"

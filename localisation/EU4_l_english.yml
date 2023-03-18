@@ -2089,8 +2089,8 @@
  desc_don_estuary_modifier:0 "Controlling the important river estuary of Don strengthens our hold of the trade in the region."
  yangtze_estuary_modifier:0 "Yangtze Estuary"
  desc_yangtze_estuary_modifier:0 "Controlling the important river estuary of Yangtze strengthens our hold of the trade in the region."
- huang_he_estuary_modifier:0 "Huang He Estuary"
- desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of Huang He strengthens our hold of the trade in the region."
+ huang_he_estuary_modifier:0 "Yellow River Estuary" #Changed
+ desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of the Yellow RIver strengthens our hold of the trade in the region."
  ganges_estuary_modifier:0 "Ganges Estuary"
  desc_ganges_estuary_modifier:0 "Controlling one of the important mouths of the Ganges strengthens our hold of the trade in the region."
  indus_estuary_modifier:0 "Indus Estuary"
