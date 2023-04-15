@@ -442,6 +442,8 @@ niger_region = {
 		manding_area
 		tekrur_area
 		jenne_area
+		yamoussoukro_area
+		guinea_area
 	}
 	monsoon = {
 		00.06.01
@@ -473,7 +475,6 @@ sahel_region = {
 		kanem_area
 		bornu_area
 		azbin_area
-		kurdufan_area
 		western_sahara_area
 		dendi_area
 		baghena_area
@@ -505,6 +506,9 @@ horn_of_africa_region = {
 		damot_area
 		aussa_area
 		shewa_area
+		new_sudan_area #new
+		kurdufan_area #moved 
+		new_darfur_area
 	}
 }
 
@@ -551,8 +555,9 @@ central_africa_region = {
 		rwanda_area
 		chokwe_area
 		bunyoro_area
-		imatong_area
-		urgoma_area
+		imatong_area #new 
+		urgoma_area #new 
+		western_rift_area #new
 	}
 	monsoon = {
 		00.10.01
@@ -609,6 +614,7 @@ south_africa_region = {
 		butua_area
 		limpopo_area
 		transvaal_area
+		kalahari_area
 	}
 	monsoon = {
 		00.11.01

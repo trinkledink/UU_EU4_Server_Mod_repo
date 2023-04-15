@@ -207,10 +207,34 @@
  tus_tuscan_banking_desc:0 "From England to Naples, all know of our bankers. Our golden Florin has financed everything from the Hundred Years War to new industries."
  
  ###############################################################
- # Betsimisaraka idea
+ # Betsimisaraka ideas
  ###############################################################
+ 
  bts_madagascar_jungles:0 "Madagascar Jungles"
  bts_madagascar_jungles_desc:0 "The eastern coast of Madagascar features a lowland tropical rainforest populated with species found nowhere else. While not all of the trees might be suitable for shipbuilding, furnishing a ship requires all manner of wooden supplies, and the proximity of our shipyards to these resources certainly makes it easier to make our ships seaworthy."
+ 
+ ###############################################################
+ # Fulo ideas
+ ###############################################################
+
+ FUL_ideas:0 "Great Fulo Ideas"
+ FUL_ideas_start:0 "Great Fulo Traditions"
+ FUL_ideas_bonus:0 "Great Fulo Ambition"
+ ful_first_muslims:0 "First Muslims"
+ ful_first_muslims_desc:0 "The Fulani people were among the first peoples in the Sahel to embrace Islam. This is a point of pride for our people in a time of increasing islamization in the region."
+ ful_first_mansa:0 "The First Mansa"
+ ful_first_mansa_desc:0 "Our people were originally nomadic, avoiding confrontation where possible. When Tenguella became our ruler and became our first mansa, he transformed our nomadic tribesmen into a powerful army that forged the basis for an empire. His following grew so large that he gained the epithet 'Great Fulo'."
+ ful_cavalry:0 "Fulani Cavalry"
+ ful_cavalry_desc:0 "In response to growing escalation with the Mali Empire, our first mansa Tenguella focused on building a strong cavalry force. This would ultimately prove extremely effective on the battlefield." 
+ ful_conqueror_jolof:0 "Conquerors of Jolof"
+ ful_conqueror_jolof_desc:0 "One of the first major accomplishments of the new army of Great Fulo was the collapsing of the Jolof Empire. Integrating these various bickering chiefdoms into our empire has taught us much on how to administrate a large empire of varied cultures."
+ ful_islamic_diplomacy:0 "Islamic Diplomacy"
+ ful_islamic_diplomacy_desc:0 "We have joined the ranks of the powerful great Muslim states of sub-saharan Africa. This puts us at odds with the local heathens and slowly encroaching Christian colonizers, but makes us more sympathetic to other large Islamic empires. This puts us in a strong diplomatic position to gain favour with other Muslim states."
+ ful_conquest_gold:0 "Attacks on the Gold Mines"
+ ful_conquest_gold_desc:0 "Our second king Koli Tenguella launched several attacks to seize the northern Mali goldfields. Though he proved ultimately unsuccessful, we should recognize the economic importance of these fields and eventually hope to conquer the goldfields for good." 
+ ful_fulani_jihad:0 "The Fulani Jihads"
+ ful_fulani_jihads_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
+
  ###############################################################
  # Colonial tags 
  ###############################################################

@@ -17,5 +17,25 @@
  uu_easter_egg_events.4.a:0 "Isn't that... just Delhi?"
  uu_easter_egg_events.4.b:0 "Maybe the real India was the friends we made along the way"
  uu_delhi_eldorado_tt:0 "The City of Gold will be §Yadded to our maps.§!"
- 
+
+ uu_easter_egg_events.5.t:0 "A Hedgehog"
+ uu_easter_egg_events.5.desc:0 "While on a walk one day you found a hedgehog stuck in a fence."
+ uu_easter_egg_events.5.a:0 "Bring it home to the palace."
+ uu_easter_egg_events.5.b:0 "Leave it to die."
+ uu_easter_egg_events.5.c:0 "Simply get it out of the fence and move on."  
+ uu_hedgehog_consequences_tt:0 "§YThis choice could have unintended consequences!§!"
+
+ uu_easter_egg_events.6.t:0 "The Hedgehog: Consequences"
+ uu_easter_egg_events.6.desc:0 "Turns out the hedgehog you brought back was pretty well educated."
+ uu_easter_egg_events.6.a:0 "Well, how about that"
+
+ uu_easter_egg_events.7.t:0 "The Hedgehog: Consequences"
+ uu_easter_egg_events.7.desc:0 "Turns out the hedgehog that you left to die had a son, who swore revenge and has infiltrated the castle, ready to avenge his father."
+ uu_easter_egg_events.7.a:0 "Draw your sword."
+ uu_hedgehog_fight_tt:0 "§YYou prepare to do battle with the intruder.§!"
+ uu_easter_egg_events.7.b:0 "I made a mistake, and I'm sorry. Please forgive me."
+ uu_hedgehog_spare_tt:0 "§JThe hedgehog spares you and helps you grow as a person.§!"
+
+
+
  #TEU:0 "Tectonic Order"

@@ -1,0 +1,3 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Albertine Rift
+discovered_by = central_african

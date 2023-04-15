@@ -383,6 +383,7 @@ republic = {
 				republican_authoritarianism_reform
 				nepotism_reform
 				republicanism_reform
+				hanseatic_city_reform #new
 				democratic_values_reform
 				aristocratic_values_reform
 				religious_values_reform
@@ -409,7 +410,7 @@ republic = {
 				council_of_the_indies_reform
 				legislative_assembly_reform
 				national_constituent_reform
-				disolve_elections_reform #############################U_U Mod Added
+				disolve_elections_reform #new
 				national_assembly_reform
 			}
 		}
@@ -624,6 +625,8 @@ tribal = {
 				tribal_despotism
 				tribal_kingdom
 				siberian_tribe
+				not_siberian_tribe #new
+				tribal_tradekingdom #new
 				gond_kingdom
 				great_mongol_state_reform
 				stateless_society
@@ -665,7 +668,7 @@ tribal = {
 				tribe_becomes_horde_reform
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
-				tribe_settle_the_land_reform
+				tribe_settle_the_land_reform #new
 			}
 		}
 	}

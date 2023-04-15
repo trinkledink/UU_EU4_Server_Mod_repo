@@ -58,3 +58,11 @@
  mjl_events.EVTOPTF5:0 "Ismaili"
  mjl_events.EVTOPTG5:0 "Zaidi"
  mjl_change_muslim_school_trigger_tooltip:0 "Only possible once per game."
+
+ #Governments until they get moved, if they get moved 
+ tribal_tradekingdom:0 "Trading Kingdom"
+ tribal_tradekingdom_desc:0 "A state centered around a city important to local trade routes."
+ hanseatic_city_reform:0 "Hanseatic City"
+ hanseatic_city_reform_desc:0 "This Republic embraces its historical connections to the Hanseatic League and its mercantile philosophy. Our nation tries to emulate Hanseatic systems of republicanism in the hopes that they will gather great wealth as the Hansa did."
+ UU_MAI:0 "Mai" #King of Kanem Bornu
+ UU_CALIPHATE:0 "Caliphate" #For Sokoto

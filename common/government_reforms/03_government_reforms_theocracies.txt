@@ -455,7 +455,7 @@ papacy_reform = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
 		church_influence_modifier = 0.2
-		monarch_lifespan = 10.0				 
+		monarch_lifespan = 10.0	#10x (1000%) Ruler lifespan.			 
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"

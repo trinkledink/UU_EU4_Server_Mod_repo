@@ -130,6 +130,11 @@ tribal_despotism = {
 	modifiers = {
 		core_creation = -0.1
 	}
+
+	government_abilities = { #kekw
+		cossacks_mechanic
+	}
+
 	legacy_equivalent = tribal_despotism_legacy
 	ai = {
 		factor = 1
@@ -143,10 +148,35 @@ tribal_kingdom = {
 	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
 		vassal_income = 0.2
+		reform_progress_growth = 0.25
 	}
 	ai = {
 		factor = 1
 	}
+}
+
+tribal_tradekingdom = {
+	icon = "native_settle_down_reform"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			capital_scope = {
+				province_has_center_of_trade_of_level = 1
+			}
+			primary_culture = hausa
+		}
+	}
+	modifiers = {
+		global_trade_power = 0.1
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+		reform_progress_growth = 0.25
+	}
+	ai = {
+		factor = 1
+	}
+
 }
 
 polynesian_tribe = {
@@ -212,6 +242,30 @@ siberian_tribe = {
 		factor = 1
 	}
 }
+not_siberian_tribe = {
+	icon = "fist_in_air"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = not_siberian_tribe
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+	native_mechanic = no
+	allow_migration = yes
+	lock_level_when_selected = yes
+	
+	government_abilities = { #kekw
+		cossacks_mechanic
+	}
+	
+	modifiers = {
+		stability_cost_modifier = -0.33
+		global_institution_spread = -0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
 stateless_society = {
 	icon = "fist_in_air"
 	allow_normal_conversion = no
@@ -250,6 +304,11 @@ gond_kingdom = {
 	modifiers = {
 		defensiveness = 0.2
 	}
+
+	government_abilities = { #kekw
+		cossacks_mechanic
+	}
+
 }
 
 sacred_kingdom = {
@@ -397,6 +456,10 @@ great_man = {
 		production_efficiency = 0.1
 	}
 
+	government_abilities = { #kekw
+		cossacks_mechanic
+	}
+
 	ai = {
 		factor = 1
 	}
@@ -453,6 +516,7 @@ feudal_tribe = {
 	modifiers = {
 		vassal_income = 0.1
 		global_tax_modifier = 0.1
+		reform_progress_growth = 0.25
 	}
 
 	conditional = {

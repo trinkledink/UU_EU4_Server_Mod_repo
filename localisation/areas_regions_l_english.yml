@@ -1017,9 +1017,9 @@
  west_africa_coast_area:0 "West African Coast"
  west_africa_coast_area_name:0 "Gold Coast"
  west_africa_coast_area_adj:0 "Golden"
- guinea_coast_area:0 "Guinea"
- guinea_coast_area_name:0 "Guinea"
- guinea_coast_area_adj:0 "Guinean"
+ guinea_coast_area:0 "Guinea Coast" #changed because new guinea state added
+ guinea_coast_area_name:0 "Sierra Leone"
+ guinea_coast_area_adj:0 "Guinea Coast"
  south_atlantic_islands_area:0 "South Atlantic Islands"
  south_atlantic_islands_area_name:0 "Tristan da Cunha"
  south_atlantic_islands_area_adj:0 "Tristan da Cunhan"
