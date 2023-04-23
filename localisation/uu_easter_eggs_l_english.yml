@@ -36,6 +36,9 @@
  uu_easter_egg_events.7.b:0 "I made a mistake, and I'm sorry. Please forgive me."
  uu_hedgehog_spare_tt:0 "§JThe hedgehog spares you and helps you grow as a person.§!"
 
-
-
+ uu_easter_egg_events.8.t:0 "The Ripper: Gruesome Murders"
+ uu_easter_egg_events.8.desc:0 "The newspaper reports a series of horrific murders in [ripper_prov.GetName]. According to the article, the police are powerless to stop the murderer who they dub the [ripper_prov.GetCapitalName] Ripper."
+ uu_easter_egg_events.8.a:0 "We must bring the killer to justice."
+ uu_ripper_tt:0 "- Adds §Y'The Ripper: Murderer at Large'§! to the Journal of §Y[Root.GetName].§!\n\n[ripper_prov.GetName] gets '§YThe Ripper: Gruesome Murders§!' until §Y02 January, 1821§!, giving the following effects:\n§R+20%§! Radicals from Standard of Living decreases"
+ uu_easter_egg_events.8.b:0 "Seems like something a certain political figure of ours would do."
  #TEU:0 "Tectonic Order"

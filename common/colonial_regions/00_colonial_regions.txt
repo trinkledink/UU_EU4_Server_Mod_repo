@@ -1,4 +1,4 @@
-## UU Mainly just moved provinces so there are mostly no split states between colonial regions
+## UU Mainly just moved provinces so there are mostly no split states between colonial regions.
 
 # Alaska
 colonial_alaska = {
@@ -35,7 +35,10 @@ colonial_alaska = {
 	# Specific
 	names = {
 		trigger = {
-			primary_culture = russian
+			OR = {
+				primary_culture = russian
+				primary_culture = russian_new
+			}
 		}
 		name = "COLONIAL_ALASKA_Alyeska"
 	}
@@ -111,11 +114,24 @@ colonial_canada = {
 		993 990 994 986 985 984 995 996 997 981 980 983 982 1813 2012 2015 2568 2569 2570
 		2571 2572 2573 2574 2575 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
 		2589 2590 2591 2592 2593 2594 2595 2596 2597 2670 2671
-		4890 4891 4892 4893 4894 4895 4896 4897 4919 4920
-		2599 2600 2601 2603 2602 2004 2017 2018 2598 2005
+		4890 4891 4892 4893 4894 4895 4896 4897 4919 4920 
+		2005 2598 2599 2600 2601 2603 2602 2004 2017 2018 
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			primary_culture = english
+			any_owned_province = {
+				OR = {
+					area = lower_acadia_area
+					area = upper_acadia_area
+					area = st_john_valley_area
+				}
+			}
+		}
+		name = "COLONIAL_CANADA_Acadia"
+	}
 	names = {
 		trigger = {
 			OR = {
@@ -130,9 +146,10 @@ colonial_canada = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 		}
-		name = "COLONIAL_CANADA_Acadia"
+		name = "COLONIAL_CANADA_Acadie"
 	}
 	names = {
 		trigger = {
@@ -148,7 +165,7 @@ colonial_canada = {
 				alliance_with = SCO
 			}
 		}
-		name = "COLONIAL_CANADA_Nouvelle_�cosse"
+		name = "COLONIAL_CANADA_NouvelleEcosse"
 	}
 	names = {
 		trigger = {
@@ -161,6 +178,10 @@ colonial_canada = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				primary_culture = english
+			}
+			any_owned_province = {
+				area = newfoundland_area
 			}
 		}
 		name = "COLONIAL_CANADA_Newfoundland"
@@ -168,8 +189,24 @@ colonial_canada = {
 	names = {
 		trigger = {
 			OR = {
-				tag = GBR
-				tag = ENG
+				tag = FRA
+				culture_group = french
+				primary_culture = anglois
+			}
+			any_owned_province = {
+				area = newfoundland_area
+			}
+		}
+		name = "COLONIAL_CANADA_TerreNeuve"
+	}
+
+	names = {
+		trigger = {
+			any_owned_province = {
+				area = cote_nord_area
+				area = notre_dame_mountains_area
+				area = trois_rivieres_area
+				area = lower_canada_area
 			}
 		}
 		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
@@ -179,6 +216,7 @@ colonial_canada = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				primary_culture = english
 			}
 		}
 		name = "COLONIAL_CANADA_Laurentia"
@@ -188,6 +226,7 @@ colonial_canada = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				primary_culture = english
 			}
 		}
 		name = "COLONIAL_CANADA_Borealia"
@@ -197,6 +236,7 @@ colonial_canada = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				primary_culture = english
 			}
 			SCO = {
 				exists = no
@@ -218,13 +258,21 @@ colonial_canada = {
 	}
 	names = {
 		trigger = {
-			tag = SCO
+			OR = {
+				tag = SCO
+				primary_culture = scottish
+				primary_culture = highland_scottish
+			}
 		}
 		name = "COLONIAL_CANADA_Nova_Scotia"
 	}
 	names = {
 		trigger = {
-			tag = SCO
+			OR = {
+				tag = SCO
+				primary_culture = scottish
+				primary_culture = highland_scottish
+			}
 		}
 		name = "COLONIAL_CANADA_Nouvelle_Ecosse"
 	}
@@ -257,21 +305,7 @@ colonial_canada = {
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
 	}
-	names = {
-		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Newfoundland"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Labrador"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Nova_Scotia"
-	}
-	names = {
-		name = "COLONIAL_CANADA_Acadia"
-	}
+
 	names = {
 		name = "COLONIAL_CANADA_Laurentia"
 	}
@@ -285,9 +319,20 @@ colonial_canada = {
 		name = "PROV1010"
 	}
 	names = {
+		trigger = {
+			any_owned_province = {
+				area = james_bay_area
+				area = hudson_bay_area
+			}
+		}
 		name = "COLONIAL_CANADA_Hudson_Bay"
 	}
 	names = {
+		trigger = {
+			any_owned_province = {
+				region = hudson_bay_region
+			}
+		}
 		name = "COLONIAL_CANADA_Ruperts_Land"
 	}
 }
@@ -354,9 +399,16 @@ colonial_eastern_america = {
 	}
 	names = {
 		trigger = {
+			tag = AVE
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Plantagenia"
+	}
+	names = {
+		trigger = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 			owns = 90 # Vlaanderen
 		}
@@ -367,6 +419,7 @@ colonial_eastern_america = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 		}
 		name = "COLONIAL_EASTERN_AMERICA_Floride"
@@ -488,6 +541,7 @@ colonial_louisiana = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 		}
 		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
@@ -497,6 +551,7 @@ colonial_louisiana = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 		}
 		name = "COLONIAL_LOUISIANA_Manitounie"
@@ -506,6 +561,7 @@ colonial_louisiana = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 			OR = {
 				owns = 915 # Illinois
@@ -650,7 +706,7 @@ colonial_california = {
 		2493
 		4638 4637 4636 4635 4634
 		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
-		878 879 2492 2494 
+		878 2494 879 2492
 	}
 
 	# Specific
@@ -659,8 +715,8 @@ colonial_california = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				culture_group = british
 			}
-			culture_group = british
 		}
 		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
 	}
@@ -669,10 +725,16 @@ colonial_california = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				culture_group = british
 			}
-			culture_group = british
 		}
 		name = "COLONIAL_CALIFORNIA_New_Albion"
+	}
+	names = {
+		trigger = {
+			primary_culture = anglois
+		}
+		name = "COLONIAL_CALIFORNIA_Nouvelle_Albion"
 	}
 	# Generic
 	names = {
@@ -727,13 +789,13 @@ colonial_mexico = {
 
 	provinces = {
 		863 864 859 860 861 855 856 858 857 854 851 853 849 850 848 847 844
-		852 846 845 843 842 841 840 839 882 885 881 884 888
+		852 846 845 843 842 841 840 839 882 885 881 880 884 888
 		883 886 887 2495 2496 2497 2498 2499 2500 2614 2615 2617 2618 2619
 		2621 2622 2623 2624 2626 2627 2628 2629 2630 2631 2632 2633 2634 2635 2636 2637 2638 2640
 		2641 2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 2652 2653 2657 2662
 		2665 2666 2667 2668 2669
 		4632 4631 4630 4628 4629 4627 4606 4644 4646 4648 4647 4645 4643 4642 4578 4640 4576 4579 4580 4575 4574 4573 4641 4572 4571 4570 4581 4583 4598 4582 4584 4585 4586 4587 4594 4589 4588 4590 4591 4593
-		4909 4910 4911 880
+		4909 4910 4911
 	}
 
 	# Specific
@@ -782,12 +844,6 @@ colonial_mexico = {
 			owns = 843 # Belize
 		}
 		name = "PROV843"
-	}
-	names = {
-		trigger = {
-			owns = 837 # Nicaragua
-		}
-		name = "PROV837"
 	}
 	names = {
 		trigger = {
@@ -948,7 +1004,7 @@ colonial_colombia = {
 		741 742 830 831 834 2803 2805 2807 2808 2809 2810 2811 2813 2939 #Venezuela
 		2931 743 744 745 2937 2804 746 #Guyana
 		4592 4597 4595 4596 4599 4600 4601 4602 4610 4603 4614 4611 4609 4612 4613 4608 4607 4617 4605 4604 4615 4616 # new for 1.28
-		837 2661
+		2661 837
 	}
 
 	# Specific
@@ -966,6 +1022,12 @@ colonial_colombia = {
 	# Generic
 	names = {
 		name = "COLONIAL_COLOMBIA_Root_Culture_GetName_Colombia"
+	}
+	names = {
+		trigger = {
+			owns = 837 # Nicaragua
+		}
+		name = "PROV837"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
@@ -1080,9 +1142,22 @@ colonial_la_plata = {
 	# Specific
 	names = {
 		trigger = {
-			culture_group = british
+			OR = {
+				culture_group = british
+				primary_culture = anglois
+				culture_group = french
+			}
 		}
 		name = "COLONIAL_LA_PLATA_Argentine"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = CAS 
+				tag = SPA
+			}
+		}
+		name = "COLONIAL_LA_PLATA_Rio_de_la_Plata"
 	}
 	names = {
 		trigger = {
@@ -1095,6 +1170,12 @@ colonial_la_plata = {
 			tag = POR
 		}
 		name = "COLONIAL_LA_PLATA_Transplatina"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_LA_PLATA_Argentina"
 	}
 	# Generic
 	names = {
@@ -1201,6 +1282,7 @@ colonial_brazil = {
 				tag = MOR
 				tag = GRA
 				tag = ALG
+				tag = ADU
 			}
 			religion_group = muslim
 		}
@@ -1267,6 +1349,7 @@ colonial_australia = {
 			OR = {
 				tag = FRA
 				culture_group = french
+				primary_culture = anglois
 			}
 		}
 		name = "COLONIAL_AUSTRALIA_Terre_Australe"

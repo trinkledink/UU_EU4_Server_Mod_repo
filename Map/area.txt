@@ -410,7 +410,7 @@ upper_andalucia_area = { #4
 
 castille_area = { #5
 	color = { 58 58 207 }
-	215 217 2755 4551 4789
+	217 2755 4551 4789
 }
 
 toledo_area = { #5
@@ -418,7 +418,7 @@ toledo_area = { #5
 }
 
 asturias_area = { #4
-	 207 1745 4552 1746
+	1745 4552 1746 215
 }
 
 galicia_area = { #4
@@ -435,7 +435,7 @@ basque_country = { #3
 
 leon_area = { #3
 	color = { 243 235 28 }
-	208 216 4553 
+	208 216 4553 207 
 }
 
 extremadura_area = {
@@ -644,8 +644,9 @@ northern_norway = { #3
 	10 20 21
 }
 
-eastern_norway = {   #4
-	17 22 4143 4144 4950
+eastern_norway = { #4
+	17 22 4143 4144 
+	4950 # UU
 }
 
 western_norway = { #4
@@ -752,11 +753,11 @@ sloboda_ukraine_area = { #4
 	291 298 299 2408
 }
 
-yedisan_area = { #3
+yedisan_area = { #3 #UU swapped a province
 	282 2406 283
 }
 
-zaporizhia_area = { #3
+zaporizhia_area = { #3 #UU swapped a province
 	1974 2411 2412
 }
 
@@ -1064,7 +1065,7 @@ northern_greece_area = { #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
-thrace_area = {  #5
+thrace_area = { #5
 	149 151 1764 4779 4705
 }
 
@@ -1561,20 +1562,23 @@ buha_area = { #5
 	4070 4071 4072 4076 4077
 }
 
-buzinza_area = { #4
-	4059 4061 4063 4054
+buzinza_area = { #3
+	4059 4061 4063 
+	4054 #UU moved
 }
 
-luba_area = { #5
-	4097 4099 4105 4109 4976
+luba_area = { #4
+	4097 4099 4105 4109 
+	4976 #UU
 }
 
 katanga_area = { #5
 	4098 4100 4101 4102 4103
 }
 
-zambia_area = { 5002  5001  #3
+zambia_area = { #3
 	4104 4106 4108
+	5002 5001 #UU
 }
 
 chokwe_area = { #3
@@ -2759,11 +2763,11 @@ jilin_area = { #4 (South Jilin Area)
 	730 2110 2188 4201 2111
 }
  
-liaoning_area = {   #3
+liaoning_area = {   #3 (North Liaodong)
 	726 2112 4957
 }
 
-liaodong_area = {  #5
+liaodong_area = {  # UU New
 	704 2113 4652 4958 4956
 }
 
@@ -2858,8 +2862,9 @@ ngari_area = { #3
 	2128 4516 4520
 } #new!!
 
-hebei_area = {   #4 (North Hebei)
-	703 1816 2136 4194 4952
+hebei_area = { #4 (North Hebei)
+	703 1816 2136 4194 
+	4952 #UU
 }
 
 south_hebei_area = { #4
@@ -2894,16 +2899,18 @@ jiangxi_area = {   #4 (North Jiangxi)
 	683 2151 4967 4965 
 }
 
-south_jiangxi_area = {
+south_jiangxi_area = { # UU new
 	670 1833 4966
 }
 
-fujian_area = { 4953  #4
+fujian_area = {  #4
 	669 1829 2152 2153
+	4953 #UU
 }
 
-taiwan_area = {   #4
-	738 2154 2155 4954
+taiwan_area = { #3
+	738 2154 2155
+	4954 #UU
 }
 
 guangdong_area = { #5
@@ -2926,8 +2933,9 @@ yun_gui_borderland_area = { #5
 	660 661 2165 2166 2167
 }
 
-sichuan_area = {  #5
-	679 680 4212 4964 4963
+sichuan_area = { #3
+	679 680 4212 
+	4964 4963 #UU
 }
 
 chuannan_area = { #4
@@ -2939,31 +2947,35 @@ chuanbei_area = { #3
 }
 
 huguang_area = {   #4 (east hubei)
-	 682 2172 4197 4962
+	682 2172 4197 4962
 }
 
-west_hubei_area = {  #3
+west_hubei_area = {  #3 UU new
 	681 4961 2171
 }
 
 hunan_area = {   #5
-	671 672 2173 2174 4960
+	671 672 2173 2174 
+	4960 #UU
 }
 
 henan_area = {   #4 (South Henan)
-	687 2175 2176 4969
+	687 2175 2176 
+	4969 #UU
 }
 
 north_henan_area = { #4
-	688 692 1836 4968
+	688 692 1836 
+	4968 #UU
 }
 
 shanxi_area = { #5
 	693 694 697 2177 2178
 }
 
-shaanxi_area = { #5
-	689 700 2179 4198 4959
+shaanxi_area = { #4
+	689 700 2179 4198 
+	4959 #UU
 }
 
 gansu_area = { #5 (East Gansu)

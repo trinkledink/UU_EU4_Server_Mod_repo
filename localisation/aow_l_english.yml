@@ -1,4 +1,5 @@
-﻿l_english:
+﻿##UU changed trade node names
+l_english:
  LOCAL_AUTONOMY_EFFECTS:0 "The current local autonomy has the following effects on $NAME$:\n$EFFECT$"
  NO_LOCAL_AUTONOMY_EFFECTS:0 "There are no current local autonomy effects in $NAME$."
  LOCAL_AUTONOMY_DECREASE_EFFECT:0 "If $NAME$ has an unrest value of §Y0.0%§! the local autonomy can be decreased.\n\n"
@@ -219,7 +220,7 @@
  saxony:0 "Leipzig" #Changed
  rheinland:0 "Rhineland" #changed
  ethiopia:0 "Ethiopia"
- patagonia:0 "Patagonia" #RIPBOZO
+ #patagonia:0 "Patagonia" #RIPBOZO
  ohio:0 "Ohio"
  amazonas_node:0 "Amazonas"
  rio_grande:0 "Rio Grande"
@@ -1077,7 +1078,7 @@
  flavor_vij.19.d:0 "An ambassador of Shah Rukh in faraway Samarkand arrived today in our capital. While the Timurid had traveled far and seen many great things on his way to our great city he appeared very impressed by what he found here. His knowledge of the world outside of India as well as the observations he could share regarding the lands of our direct neighbors will be very useful to us."
  flavor_vij.19.a:0 "Ok."
  flavor_vij.20.t:0 "The Chalukya Imperial Capital"
- flavor_vij.20.d:0 "Though they are long gone, the Chalukya Empire which stretched from the Deccan to the Tamil kingdoms remains a powerful memory. As our own empire has expanded and advanced, the poets and chroniclers write as though Vijayanagar were the Chalukya Empire reborn. Now that we have seized the ancient Chakulya capital of Kalyana, located not far from the former Bahmani capital of Bidar, we have an opportunity to relocate the court to the northern city so that we can fully claim the Chalukya legacy as our own.\n\nThe traditional capital at Vijayangar, The City of Victory, yet remains a great and prestigious city however, and allows us to forge an imperial legacy of our own."
+ flavor_vij.20.d:0 "Though they are long gone, the Chalukya Empire which stretched from the Deccan to the Tamil kingdoms remains a powerful memory. As our own empire has expanded and advanced, the poets and chroniclers write as though Vijayanagar were the Chalukya Empire reborn. Now that we have seized the ancient Chalukya capital of Kalyana, located not far from the former Bahmani capital of Bidar, we have an opportunity to relocate the court to the northern city so that we can fully claim the Chalukya legacy as our own.\n\nThe traditional capital at Vijayangar, The City of Victory, yet remains a great and prestigious city however, and allows us to forge an imperial legacy of our own."
  flavor_vij.20.a:0 "The City of Victory will remain our capital."
  flavor_vij.20.b:0 "We will claim the Chalukya legacy, move the capital to Kalyana!"
  flavor_vij.20.c:0 "Leave the capital in its present location."
@@ -1106,10 +1107,10 @@
  yucatan_region:0 "Yucatan"
  st_lawrence_region:0 "St Lawrence Basin"
  columbia_region:0 "Columbia Basin"
- not_siberian_tribe:0 "Native Council" #This is deprecated anyway. Borrowing this for Africa - Zeb 
- not_siberian_tribe_desc:0 "One or more clans headed by an elder with a council of other leaders to help him make decisions related to their respective areas."
- not_siberian_tribe_ruler:0 "Chief"
- not_siberian_tribe_ruler_female:0 "Chief"
+ siberian_native_council:0 "Siberian Clan Council"
+ siberian_native_council_desc:0 "One or more clans headed by an elder with a council of other leaders to help him make decisions related to their respective areas."
+ siberian_native_council_ruler:0 "Chief"
+ siberian_native_council_ruler_female:0 "Chief"
  goths:0 "Gothic"
  evenks:0 "Evenki"
  yukagyr:0 "Yukaghir"

@@ -2151,7 +2151,7 @@
  PROV2151:0 "Poyang"
  PROV2152:0 "Jianning"
  PROV2153:0 "Tingzhou"
- PROV2154:0 "Kelang"
+ PROV2154:1 "Tamsui"
  PROV2155:0 "Middag"
  PROV2156:0 "Chaochow"
  PROV2157:0 "Waichow"
@@ -3791,19 +3791,6 @@
  PROV5000:0 "Hwange"
  PROV5001:0 "Kariba"
  PROV5002:0 "Kafue"
-
- liaodong_area:0 "Liaodong"
- west_hubei_area:0 "West Hubei"
- south_jiangxi_area:0 "South Jiangxi"
- imatong_area:0 "Imatong"
- urgoma_area:0 "Urgoma"
- western_rift_area:0 "Western Rift"
- yamoussoukro_area:0 "Yamoussoukro"
- guinea_area:0 "Guinea"
- new_sudan_area:0 "White Nile"
- new_darfur_area:0 "Darfur"
- kalahari_area:0 "Kalahari"
-
 
 
 

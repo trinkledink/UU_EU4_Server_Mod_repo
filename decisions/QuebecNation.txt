@@ -7,7 +7,6 @@ country_decisions = {
 			is_nomad = no
 			is_random_new_world = no			
 			was_never_end_game_tag_trigger = yes
-			ai = no
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			OR = {
@@ -42,6 +41,11 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
+			#colonial_region = colonial_canada
+			#OR = {
+				#NOT = { owned_by = ROOT }
+				#is_city = no
+			#}
 			OR = {
 				AND = {
 					colonial_region = colonial_canada
@@ -69,13 +73,6 @@ country_decisions = {
 				is_city = no
 			}
 		}
-		#provinces_to_highlight = {
-			#colonial_region = colonial_canada
-			#OR = {
-				#NOT = { owned_by = ROOT }
-				#is_city = no
-			#}
-		#}
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
@@ -102,9 +99,11 @@ country_decisions = {
 						NOT = { is_former_colonial_nation = yes }
 					}
 					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
 				}
 			}
 			change_tag = QUE
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }
@@ -117,6 +116,13 @@ country_decisions = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+				}
+				change_primary_culture = quebecois
 			}
 			colonial_canada = {
 				limit = {

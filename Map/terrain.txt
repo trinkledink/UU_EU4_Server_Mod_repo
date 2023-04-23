@@ -48,7 +48,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.45
+		local_development_cost = 0.45 #UU change
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -117,7 +117,7 @@ categories =  {
 			
 			262 264 4126 4173 4240 #Central Europe
 			
-			4194 4195 4196 4197 4212 4213 4952 #Greater China
+			4194 4195 4196 4197 4212 4213 #Greater China
 			1020 1021 1028 1030 #Japan
 			735 2745 #Korea
 			
@@ -132,7 +132,7 @@ categories =  {
 
 			2774 2775 2794 2796 #South Somalia
 
-			4962 4965 4968 4969 #UU
+			4962 4965 4968 4969 4952 #UU
 		}		
 	}
 	
@@ -172,7 +172,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.15
+		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 		
@@ -313,7 +313,7 @@ categories =  {
 		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
-		local_development_cost = 0.3
+		local_development_cost = 0.3 #UU change
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 		
@@ -323,7 +323,7 @@ categories =  {
 			158 1952 #Hungary
 			4236 #Slovakia
 			974 975 976 977 2003 2020 2480 2481 2486 2609 2610 2612 2613 936  #North America
-			2154 4954 #East Asia
+			2154  #East Asia
 			808 814 2825 #South America
 			452 2073 #Tibet
 			1078
@@ -370,7 +370,7 @@ categories =  {
 			4653 4655 4656 4680 4679
 			# 1.30
 			4750 4754
-			4963 #UU
+			4963 4954 #UU
 		}
 	}
 
@@ -454,7 +454,7 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 1
-		local_development_cost = 0.3
+		local_development_cost = 0.3 #UU change
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
 		
@@ -498,7 +498,7 @@ categories =  {
 
 		movement_cost = 1.3
 		defence = 1
-		local_development_cost = 0.2
+		local_development_cost = 0.2 #UU change
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 
@@ -677,7 +677,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.15
+		local_development_cost = 0.15 #UU change
 		nation_designer_cost_multiplier = 0.9	
 
 		terrain_override = {
@@ -727,7 +727,7 @@ categories =  {
 
 		supply_limit = 6
 		movement_cost = 1.00
-		local_development_cost = 0.1
+		local_development_cost = 0.1 #UU change
 		nation_designer_cost_multiplier = 0.95	
 		
 		terrain_override = {
@@ -805,11 +805,10 @@ categories =  {
 			
 			# 1.29
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683
-			4985 4990 4991 4992 4996
+			4985 4990 4991 4992 4996 #UU added
 			
 		}	
 	}	
-
 }
 	
 ##################################################################
