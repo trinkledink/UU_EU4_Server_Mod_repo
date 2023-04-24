@@ -1,4 +1,0 @@
-
-uu_FC_imperial_diplomacy = {
-	ae_impact = -0.1
-}

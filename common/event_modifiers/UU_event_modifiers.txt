@@ -1,3 +1,7 @@
+# Change Muslim School:
+change_school_modifier = {
+	# Nothing is needed here
+}
 # Buddhist help
 helped_poor = {
 }
@@ -66,4 +70,65 @@ letting_sleeping_dogs_lie = {
 
 mercenaries_running_amock = {
 	mercenary_discipline = -0.05
+}
+
+
+#DEBUG player uncon diplomat
+player_uncon_diplomat_modifier = {
+	diplomats = 1
+}
+#estuaries
+chao_phraya_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+fraser_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+liao_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+orange_river_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+jubba_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+volta_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+# Recent Papal Creed
+recent_papal_creed = {
+}
+
+#papal election modifier
+UU_recent_papal_election = {
+}
+#easter egg
+uu_blessed_by_dream = {
+	prestige = 1
+}
+
+#Elbian
+elb_eroding_czech_identity = {
+	legitimacy = -2
+	stability_cost_modifier = 0.15
+	relation_with_same_culture_group = -20
+	relation_with_same_culture = -30
+}
+elb_czech_supremacy_1 = {
+	local_unrest = 3
+	local_missionary_strength = 0.02
+	local_culture_conversion_cost = -0.25
+	local_manpower_modifier = -0.1
+}
+elb_czech_supremacy_2 = {
+	local_unrest = -2
+	development_cost = -0.05
+	local_manpower_modifier = 0.1
 }
