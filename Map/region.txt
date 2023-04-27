@@ -897,6 +897,7 @@ south_china_region = {
 		guangxi_area
 		south_jiangxi_area #new
 		west_hubei_area #new
+		guangzhou_area #new
 	}
 	monsoon = {
 		00.05.01

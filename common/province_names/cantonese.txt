@@ -239,3 +239,6 @@
 4960 = "Pohing" #Baoqing
 4962 = "Dak-on" #De'an
 4963 = "Kwaichow" #Cuizhou
+5003 = "Meichow" #Meizhou
+5004 = "Namtau" #Nantou
+5005 = "Kongmun" #Jiangmen, Xinhui

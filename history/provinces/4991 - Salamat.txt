@@ -12,4 +12,6 @@ native_ferocity = 7
 native_hostileness = 5
 capital = "Salamat"
 is_city = no
+discovered_by = YAO 
+discovered_by = WAD 
 

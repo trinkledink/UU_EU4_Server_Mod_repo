@@ -52,6 +52,16 @@ colonial_alaska = {
 		}
 		name = "COLONIAL_ALASKA_Pacifico_Norte"
 	}
+	names = {  #Moved
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+				culture_group = british
+			}
+		}
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
+	}
 	# Generic
 	names = {
 		trigger = {
@@ -69,6 +79,9 @@ colonial_alaska = {
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = { #Moved
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
 	}
 	names = {
 		name = "COLONIAL_ALASKA_Aleutia"
@@ -427,6 +440,16 @@ colonial_eastern_america = {
 	names = {
 		trigger = {
 			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_NewNetherland"
+	}
+	names = {
+		trigger = {
+			OR = {
 				tag = SPA
 				tag = CAS
 				tag = ARA
@@ -718,16 +741,6 @@ colonial_california = {
 				culture_group = british
 			}
 		}
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-				culture_group = british
-			}
-		}
 		name = "COLONIAL_CALIFORNIA_New_Albion"
 	}
 	names = {
@@ -743,9 +756,6 @@ colonial_california = {
 	names = {
 		trigger = { owns = 2481 } # Klamath
 		name = "COLONIAL_CALIFORNIA_Oregon"
-	}
-	names = {
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
 	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
@@ -1331,8 +1341,20 @@ colonial_australia = {
 				tag = ENG
 				tag = GBR
 			}
+			any_owned_province = {
+				region = australia_region
+			}
 		}
-		name = "COLONIAL_AUSTRALIA_Australia"
+		name = "COLONIAL_AUSTRALIA_NewSouthWales"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_NewZealand"
 	}
 	names = {
 		trigger = {
@@ -1361,8 +1383,21 @@ colonial_australia = {
 				tag = HOL
 				primary_culture = dutch
 			}
+			any_owned_province = {
+				region = australia_region
+			}
 		}
 		name = "COLONIAL_AUSTRALIA_New_Holland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Nieuw_Zeeland"
 	}
 	names = {
 		trigger = {

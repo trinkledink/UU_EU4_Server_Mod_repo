@@ -34,7 +34,8 @@ cossacks_mechanic = {
 			effect = {
 				random_rival_country = {
 					limit = {
-						is_neighbor_of = root
+						is_neighbor_of = ROOT
+						NOT = { truce_with = ROOT }
 					}
 					save_event_target_as = source_country
 				}
@@ -52,36 +53,39 @@ cossacks_mechanic = {
 					}
 				}
 				random_owned_province = {
-					limit = {
-						OR = {
-							not = { religion = event_target:source_country }
-							AND = {
-								not = { 
-									event_target:source_country = {
-										accepted_culture = prev
-									}
-								}
-								not = { culture = event_target:source_country }
-							}
-						}
-					}
 					add_random_development = 3
 				}
 				event_target:source_country = {
 					random_owned_province = {
 						limit = {
 							base_tax = 2
-							base_production = 2
-							base_manpower = 2
 						}
 						add_base_tax = -1
+						add_devastation = 2
+					}
+					random_owned_province = {
+						limit = {
+							base_production = 2
+						}
 						add_base_production = -1
+						add_devastation = 2
+					}
+					random_owned_province = {
+						limit = {
+							base_manpower = 2
+						}
 						add_base_manpower = -1
+						add_devastation = 2
 					}
 					add_country_modifier = {
-						name = serfs_recieved_by_cossacks
+						name = uu_cossack_stole_dev
 						duration = 3650
 					}
+				}
+				reverse_add_casus_belli = {
+					target = event_target:source_country
+					type = cb_insult
+					months = 36
 				}
 			}
 			cooldown_years = 0
@@ -128,7 +132,7 @@ cossacks_mechanic = {
 			}
 			effect = { 
 				create_unit_forcelimit_percentage = {
-					type = infantry
+					type = cavalry
 					special_unit_category = cossacks
 					force_limit_percentage = 0.2
 				}

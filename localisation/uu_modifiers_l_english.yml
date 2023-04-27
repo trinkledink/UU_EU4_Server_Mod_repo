@@ -27,7 +27,7 @@
  ctg_pearl_of_mediterranean:0 "Pearl of the Mediterranean"
  
  ###############################################################
- # Scandinavian Modifiers Localisation.
+ # Scandinavian Modifiers Localisation. (Unused?)
  ###############################################################
  
  reestablish_the_danelaw:0 "Reestablish the Danelaw"
@@ -47,6 +47,8 @@
  ###############################################################
  
  elb_ready_for_conquest:0 "Justified Conquest"
+ elb_berlin_war_school:0 "The Military Academy of Berlin"
+ elb_city_fortified:0 "Fortified City"
  elb_help:0 "Hamburg World Port"
  elb_contesting_colonies:0 "Contesting Colonies"
  elb_weimar_classicism_modifier:0 "Weimar Classicism"
@@ -54,6 +56,71 @@
  elb_rapid_urbanization:0 "Rapid Urbanization"
  elb_hamburg_world_port_modifier:0 "World Port"
  ELB_PARADOX_SHAME_JEFFREY_BEZOS:0 "Province has §YProsperity§!"
+ elb_eroding_czech_identity:0 "Eroding Czech Identity"
+ elb_czech_supremacy_1:0 "Czech National Supremacy"
+ elb_czech_supremacy_2:0 "Czech National Supremacy"
+ 
+ ###############################################################
+ # Spanish Modifiers Localisation.
+ ###############################################################
+ 
+ uu_spa_modifier_into_africa:0 "Into Africa"
+ uu_spa_modifier_cowed_pirates:0 "Our Pirates Hesitant"
+ uu_spa_modifier_holy_league_victorious:0 "The Holy League Victorious"
+ uu_spa_modifier_holy_league_victorious_spain:0 "The Holy League Victorious - Spain"
+ uu_spa_modifier_more_treasure_fleets:0 "Secured Treasure Fleet Routes"
+ uu_spa_modifier_moar_gold:0 "Gold Shipments Secured"
+ uu_spa_modifier_rule_hispania:0 "Rule Hispania"
+ uu_spa_modifier_iberian_hegemon:0 "Spain United"
+ uu_spa_modifier_building_new_capital:0 "Building a New Capital"
+ uu_spa_modifier_subjugated_morocco:0 "Integrating Moroccans"
+ uu_spa_modifier_moroccan_march:0 "Spanish Puppet March"
+ uu_spa_modifier_moroccans_in_the_army:0 "Moroccans in the Army"
+ uu_spa_modifier_tordesillas_success:0 "The Treaty of Tordesillas - A Deal Successfully Struck"
+ uu_spa_modifier_tordesillas_fail:0 "The Treaty of Tordesillas - Negotiations Broken Down"
+ uu_spa_modifier_tordesillas_lonely:0 "The Treaty of Tordesillas - Papal Sanction Acquired"
+ uu_spa_modifier_spanish_armada:0 "Great Armada"
+ uu_spa_modifier_protectors_of_the_med:0 "Protectors of the Mediterranean"
+ uu_spa_king_of_sicilies_modifier:0 "King of the Sicilies"
+ desc_uu_spa_king_of_sicilies_modifier:0 "With our acquisition of the Kingdom of Sicily, we now have a solid foothold (boothold?) in Italy."
+ uu_spa_modifier_i_am_the_pope:0 "Influence within the Curia"
+ uu_spa_in_italy_modifier:0 "Italian Diplomacy"
+ uu_spa_catholic_monarchy_modifier:0 "The Catholic Monarchy"
+ uu_spa_modifier_spanish_traders_dominant:0 "Dominance of Spanish Traders"
+ 
+ ###############################################################
+ # Austrian Mission Modifiers
+ ###############################################################
+
+ uu_road_to_rome:0 "Secured Road to Rome"
+ 
+ ###############################################################
+ # Hanover Mission Modifiers
+ ###############################################################
+
+ uu_han_hansa_cities_mod:0 "Hanseatic Trade Fleet"
+ uu_han_kings_of_england:0 "King of England"
+ uu_han_trade_fleet:0 "Hanseatic War Fleet"
+
+ ###############################################################
+ # New Estuaries
+ ###############################################################
+
+ chao_phraya_estuary_modifier:0 "Chao Phraya Estuary"
+  desc_chao_phraya_estuary_modifier:0 "Controlling the important river estuary of Chao Phraya strengthens our hold of the trade in the region."
+ fraser_estuary_modifier:0 "Fraser Estuary"
+  desc_fraser_estuary_modifier:0 "Controlling the important river estuary of the Fraser river strengthens our hold of the trade in the region."
+ liao_estuary_modifier:0 "Liao Estuary"
+  desc_liao_estuary_modifier:0 "Controlling the important river estuary of the Liao river strengthens our hold of the trade in the region."
+ huang_he_estuary_modifier:0 "Yellow River Estuary" #Cloned from other file
+  desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of the Yellow River strengthens our hold of the trade in the region."
+ orange_river_estuary_modifier:0 "Orange River Estuary"
+  desc_orange_river_estuary_modifier:0 "Controlling the important river estuary of the Orange River strengthens our hold of the trade in the region."
+ jubba_estuary_modifier:0 "Jubba-Shebelle Estuary"
+   desc_jubba_estuary_modifier:0 "Controlling the important river estuary of the Jubba river strengthens our hold of the trade in the region."
+ volta_estuary_modifier:0 "Volta Estuary"
+  desc_volta_estuary_modifier:0 "Controlling the important river estuary of the Volta river strengthens our hold of the trade in the region."
+
 
  ###############################################################
  # Mercenary Event Modifiers Localisation.
@@ -75,28 +142,27 @@
  ###############################################################
  
  UU_french_morale:0 "French Morale"
- 
- ###############################################################
- # Austrian Mission Modifiers
- ###############################################################
-
- uu_road_to_rome:0 "Secured Road to Rome"
 
  ###############################################################
- # New Estuaries
+ # UU Buddhism Karma Decisions
+ ###############################################################
+  
+ helped_poor:0 "Helped the Poor"
+ benefited_from_offerings:0 "Benefitted from Temple Offerings"
+
+ ###############################################################
+ # UU Cossack Raid
  ###############################################################
 
- chao_phraya_estuary_modifier:0 "Chao Phraya Estuary"
-  desc_chao_phraya_estuary_modifier:0 "Controlling the important river estuary of Chao Phraya strengthens our hold of the trade in the region."
- fraser_estuary_modifier:0 "Fraser Estuary"
-  desc_fraser_estuary_modifier:0 "Controlling the important river estuary of the Fraser river strengthens our hold of the trade in the region."
- liao_estuary_modifier:0 "Liao Estuary"
-  desc_liao_estuary_modifier:0 "Controlling the important river estuary of the Liao river strengthens our hold of the trade in the region."
- huang_he_estuary_modifier:0 "Yellow River Estuary"
-  desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of the Yellow River strengthens our hold of the trade in the region."
- orange_river_estuary_modifier:0 "Orange River Estuary"
-  desc_orange_river_estuary_modifier:0 "Controlling the important river estuary of the Orange River strengthens our hold of the trade in the region."
- jubba_estuary_modifier:0 "Jubba-Shebelle Estuary"
-   desc_jubba_estuary_modifier:0 "Controlling the important river estuary of the Jubba river strengthens our hold of the trade in the region."
- volta_estuary_modifier:0 "Volta Estuary"
-  desc_volta_estuary_modifier:0 "Controlling the important river estuary of the Volta river strengthens our hold of the trade in the region."
+ uu_cossack_stole_dev:0 "Raided by Neighbour"
+
+ ###############################################################
+ # African Mission Modifiers
+ ###############################################################
+ uukbo_dynastic_struggle_modifier:0 "Idrisid-Dawudid Dynastic Struggle"
+ uukbo_fighting syncretism:0 "Fighting Syncretism"
+ uukbo_strong_government:0 "Robust Government"
+ uukbo_thriving_empire:0 "A Thriving Empire"
+ uukbo_khalifa_mod:0 "Ruler Proclaimed as Khalifa"
+ UUKBO_FIGHTING_NOBILITY:0 "Fighting Nobility"
+ uukbo_colonist:0 "Into the Sahara"

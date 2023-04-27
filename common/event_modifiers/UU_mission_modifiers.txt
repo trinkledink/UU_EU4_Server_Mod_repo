@@ -717,14 +717,17 @@ uukbo_thriving_empire = {
 	global_trade_goods_size_modifier = 0.1
 	stability_cost_modifier = -0.2
 }
-uukbo_khalifa = {
+uukbo_khalifa_mod = {
 	prestige_decay = -0.025
 	stability_cost_modifier = -0.2
 	land_morale = 0.10
 }
-
 uukbo_fighting_syncretism = {
 	global_heretic_missionary_strength = 0.025
 	tolerance_heathen = -5
 	global_unrest = 3
+}
+uukbo_colonist = {
+	colonists = 1
+	can_colony_boost_development = yes
 }

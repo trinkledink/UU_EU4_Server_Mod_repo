@@ -5,6 +5,7 @@ uu_gb_normandy_modifier = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				tag = AVE
 			}
 			owns_core_province = 167
 			owns_core_province = 168

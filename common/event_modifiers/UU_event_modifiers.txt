@@ -132,3 +132,9 @@ elb_czech_supremacy_2 = {
 	development_cost = -0.05
 	local_manpower_modifier = 0.1
 }
+
+#cossack 
+uu_cossack_stole_dev = {
+	global_tax_modifier = -0.2
+	prestige = -1
+}

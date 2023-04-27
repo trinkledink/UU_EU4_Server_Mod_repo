@@ -1662,9 +1662,9 @@
  guangdong_area:0 "East Guangdong"
  guangdong_area_name:0 "Guangdong"
  guangdong_area_adj:0 "Guangdongian"
- west_guangdong_area:0 "West Guangdong"
- west_guangdong_area_name:0 "Limchow"
- west_guangdong_area_adj:0 "Limchowian"
+ west_guangdong_area:0 "Hainan" #Changed
+ west_guangdong_area_name:0 "Hainan"
+ west_guangdong_area_adj:0 "Hainanese"
  guangxi_area:0 "Guangxi"
  guangxi_area_name:0 "Guangxi"
  guangxi_area_adj:0 "Guangxian"
@@ -2854,6 +2854,7 @@
  new_sudan_area:0 "White Nile"
  new_darfur_area:0 "Darfur"
  kalahari_area:0 "Kalahari"
+ guangzhou_area:0 "Pearl Delta"
 
  cameroon_node:0 "Cameroon"
  TRADE_COMPANY_CAMEROON:0 "Cameroon Charter"

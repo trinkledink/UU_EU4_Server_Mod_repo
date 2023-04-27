@@ -72,12 +72,30 @@ workshop = {
 			type = production
 			value = 1
 		}
-	}
+		if = { #Should handle elb estate priv being weird again
+			limit = {
+				owner = {
+					has_estate_privilege = estate_burghers_elb_improved_workshops
+				}
+				NOT = { has_province_modifier = estate_burghers_elb_improved_workshops_mod }
+			}
+			add_province_modifier = {
+				name = estate_burghers_elb_improved_workshops_mod
+				duration = -1
+			}
+		}
+	} 
 	on_destroyed = {
 		remove_development_from_building = {
 			building = workshop
 			type = production
 			value = 1
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
 		}
 	}
 	on_obsolete = {
@@ -1301,12 +1319,30 @@ counting_house = {
 			value = 2
 			upgrade_value = 1
 		}
+		if = { #Should handle elb estate priv being weird again
+			limit = {
+				owner = {
+					has_estate_privilege = estate_burghers_elb_improved_workshops
+				}
+				NOT = { has_province_modifier = estate_burghers_elb_improved_workshops_mod }
+			}
+			add_province_modifier = {
+				name = estate_burghers_elb_improved_workshops_mod
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = counting_house
 			type = production
 			value = 2
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
 		}
 	}
 	on_obsolete = {

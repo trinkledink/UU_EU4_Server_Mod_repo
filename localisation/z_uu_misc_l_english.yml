@@ -1,0 +1,52 @@
+﻿l_english:
+ #El Dorado Event
+ UU_el_dorado_found:0 "The Golden City"
+ UU_balance_events.1a:0 "The search is finally over."
+ UU_balance_events.1.DESC:0 "After years of conflict around the search for the legendary city of El Dorado, words has reached us from our bravest Conquistadors that the city of gold is a myth no more."
+ U.U_el_dorado:0 "El Dorado"
+ #Estate Privileges
+ estate_dhimmi_piety:0 "Promote Religious Exchange"
+ #Merc Companies
+ uu_merc_frontrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YInfantry§!"
+ uu_merc_backrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YArtillery§!"
+ merc_cav_free_company:0 "Free Cav Company"
+ merc_ideas_frontline:0 "Frontline Company"
+ merc_ideas_cannons:0 "Backrow Company"
+ ctg_french_musketeers:0 "French Musketeers Company"
+ ctg_spanish_artillery:0 "Spanish Artillery Company"
+ ctg_italian_legion:0 "Italian Legion Company"
+ ctg_phalanx_company:0 "Greek Phalanx Company"
+ ctg_immortals_company:0 "Persian Immortals Company"
+ #Age Abilities
+ ab_timur_legacy:0 "Timur's Legacy"
+ ab_italian_renaissance_architecture:0 "Italian Renaissance Architecture"
+ #Governments until they get moved, if they get moved 
+ tribal_tradekingdom:0 "Trading Kingdom"
+ tribal_tradekingdom_desc:0 "A state centered around a city important to local trade routes."
+ hanseatic_city_reform:0 "Hanseatic City"
+ hanseatic_city_reform_desc:0 "This Republic embraces its historical connections to the Hanseatic League and its mercantile philosophy. Our nation tries to emulate Hanseatic systems of republicanism in the hopes that they will gather great wealth as the Hansa did."
+ not_siberian_tribe:0 "Native Council"
+ not_siberian_tribe_desc:0 "One or more clans headed by an elder with a council of other leaders to help him make decisions related to their respective areas."
+ UU_MAI:0 "Mai" #King of Kanem Bornu
+ UU_CALIPHATE:0 "Caliphate" #For Sokoto
+ #Colonial Names
+ COLONIAL_CANADA_NouvelleEcosse:0 "Nouvelle-Écosse"
+ COLONIAL_CANADA_Acadie:0 "Acadie"
+ COLONIAL_CANADA_TerreNeuve:0 "Terre-Neuve"
+ COLONIAL_EASTERN_AMERICA_Plantagenia:0 "Plantagenia"
+ COLONIAL_EASTERN_AMERICA_NewNetherland:0 "Nieuw Nederland"
+ COLONIAL_CALIFORNIA_Nouvelle_Albion:0 "Nouvelle-Albion"
+ COLONIAL_LA_PLATA_Rio_de_la_Plata:0 "Río de la Plata"
+ COLONIAL_AUSTRALIA_NewSouthWales:0 "New South Wales"
+ COLONIAL_AUSTRALIA_NewZealand:0 "New Zealand"
+ COLONIAL_AUSTRALIA_Nieuw_Zeeland:0 "Nova Zeelandia"
+ #Cultures
+ czech_newer:0 "Elbian" #Germanic group clone
+ zhuang:0 "Cuengh" #Indigenous name
+ zhuang_new:0 "Zhuang" #Sinicized name
+ #Unused?
+ peruvian_theocarcy:0 "Peruvian Theocracy"
+ gain_armytradition_aspect:0 "§YImprove Royal Army Staff§!"
+ expell_prisoners_aspect:0 "§YExpell Prisoners§!"
+ force_debate_aspect:0 "§YForce Through Debate§!"
+ kill_heir_aspect:0 "§YKill Heir§!"

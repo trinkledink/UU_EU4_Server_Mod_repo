@@ -223,7 +223,19 @@
 2161 = "Lien-chu" #Limchow
 2162 = "Ngo-chu" #Ngchow
 2164 = "Namnen" #Namning
-
 2153 = "Tin-chu" #Tingzhou
+
+#UU
+4952 = "Tinzun" #Tianjin
+4953 = "Hamun" #Xiamen
+4956 = "Leoisun" #Lushun
+4957 = "Liuyeung" #Liaoyang
+4958 = "Sanhoi" #Shanhai Pass
+4960 = "Pohing" #Baoqing
+4962 = "Dak-on" #De'an
+4963 = "Kwaichow" #Cuizhou
+5003 = "Moi-chu" #Meizhou
+5004 = "Namtau" #Nantou
+5005 = "Kongmun" #Jiangmen, Xinhui
 
 

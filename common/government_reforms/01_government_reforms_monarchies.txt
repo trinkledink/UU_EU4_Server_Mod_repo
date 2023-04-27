@@ -1596,12 +1596,14 @@ bohemian_elective_kingdom_reform = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
+			primary_culture = czech_newer
 		}
 	}
 	nation_designer_trigger = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
+			primary_culture = czech_newer
 		}
 	}
 	valid_for_nation_designer = yes
