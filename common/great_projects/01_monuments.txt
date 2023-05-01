@@ -18463,7 +18463,7 @@ grand_canal_3 = {
 }
 
 grand_canal_4 = {
-	start = 1821 #Nanjing
+	start = 685 #Yangzhou
 	date = 1427.01.09
 	time = { months = 0	}
 	build_cost = 0

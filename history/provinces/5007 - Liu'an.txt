@@ -1,0 +1,16 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Liu'an
+add_core = MNG
+owner = MNG
+controller = MNG
+culture = zhongyuan
+religion = confucianism
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = grain
+base_manpower = 1
+capital = "Liu'an"
+is_city = yes
+discovered_by = eastern
+discovered_by = nomad_group

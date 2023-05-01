@@ -7133,10 +7133,10 @@
  st_basil_cathedral:0 "Saint Basil Cathedral"
  orthodox_icon_events_bonuses_tt:0 "Flavor events related to §YOrthodox Icons§! will yield supplementary bonuses"
  #
- grand_canal_1:0 "Hangzhou Grand Canal"
- grand_canal_2:0 "Suzhou Grand Canal"
- grand_canal_3:0 "Zhenjiang Grand Canal"
- grand_canal_4:0 "Nanjing Grand Canal"
+ grand_canal_1:0 "Grand Canal: Hangzhou"
+ grand_canal_2:0 "Grand Canal: Suzhou"
+ grand_canal_3:0 "Grand Canal: Zhenjiang"
+ grand_canal_4:0 "Grand Canal: Yangzhou"
  #
  imperial_city_kyoto:0 "Imperial City of Kyoto"
  
@@ -7161,7 +7161,7 @@
  galleon_ship:0 "Bonus from Galleon"
  galleass_ship:0 "Bonus from Galleass"
  caravel_ship:0 "Bonus from Caravel"
- voc_indiamen_ship:0 "Bonus from VOC Indiamen"
+ voc_indiamen_ship:0 "Bonus from Transport Light Ship"
  
  
  

@@ -2857,6 +2857,7 @@
  guangzhou_area:0 "Pearl Delta"
 
  cameroon_node:0 "Cameroon"
+ trade_company_cameroon:0 "Cameroon Charter"
  TRADE_COMPANY_CAMEROON:0 "Cameroon Charter"
  TRADE_COMPANY_CAMEROON_Root_Culture_GetName:0 "[Root.Culture.GetName] Cameroon Company"
  TRADE_COMPANY_CAMEROON_Africa_Trade_Company:0 "Cameroon Trade Company"

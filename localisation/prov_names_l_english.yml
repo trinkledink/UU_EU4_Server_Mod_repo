@@ -2175,7 +2175,7 @@
  PROV2175:0 "Runing"
  PROV2176:0 "Shangqiu"
  PROV2177:0 "Ningwu"
- PROV2178:0 "Lu'an"
+ PROV2178:0 "Lu'an" 
  PROV2179:0 "Yan'an"
  PROV2180:0 "Tianshui"
  PROV2181:0 "Pingliang"
@@ -3794,3 +3794,5 @@
  PROV5003:0 "Meizhou"
  PROV5004:0 "Nantou"
  PROV5005:0 "Xinhui"
+ PROV5006:0 "Tongzhou"
+ PROV5007:0 "Liu'an" #Technically pronounced Lu'an because of literary reasons, but there's already a Lu'an and Luzhou in the game

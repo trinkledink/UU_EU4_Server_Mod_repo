@@ -1039,6 +1039,7 @@ weser_area = { #4
 
 holstein_area = { #3
 	13 1775 4141 
+	45 #UU moved 
 }
 
 lower_saxony_area = { #4
@@ -1046,7 +1047,7 @@ lower_saxony_area = { #4
 }
 
 mecklenburg_area = { #5
-	45 46 2996 4749 4786
+	46 2996 4749 4786
 }
 
 ########################################
@@ -2879,12 +2880,14 @@ jiangsu_area = { #3
 	2141 2142 4196
 }
 
-south_jiangsu_area = { #4
+south_jiangsu_area = {  #4
 	685 1821 1822 2145
+	5006 #UU
 }
 
 anhui_area = { #3 (North Anhui)
 	1838 2143 2144
+	5007 #UU
 }
 
 south_anhui_area = { #3
@@ -2914,7 +2917,8 @@ taiwan_area = { #3
 }
 
 guangdong_area = { #5
-	2156 2157 2158 5003
+	2156 2157 2158
+	5003 #UU
 }
 
 guangzhou_area = {  #UU

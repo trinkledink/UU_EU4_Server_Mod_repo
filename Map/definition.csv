@@ -4983,13 +4983,13 @@ province;red;green;blue;x;x
 4982;56;209;194;Yamoussoukro;x
 4983;15;186;251;Comoe;x
 4984;28;33;238;Abengourou;x
-4985;46;165;153;UUa;x
-4987;155;150;55;UUc;x
-4988;71;168;43;UUd;x
-4989;15;196;24;UUe;x
+4985;46;165;153;Abyei;x
 4986;239;172;16;Drakkensberg Mountains;x
-4990;48;91;163;Chari;x
-4991;63;158;52;Guera;x
+4987;155;150;55;North Sudd;x
+4988;71;168;43;South Sudd;x
+4989;15;196;24;Bandingilo;x
+4990;48;91;163;Guera;x
+4991;63;158;52;Salamat;x
 4992;107;145;66;Nyala;x
 4993;73;103;3;Karas;x
 4994;14;102;4;Kgalagadi;x
@@ -5004,3 +5004,5 @@ province;red;green;blue;x;x
 5003;199;65;125;Meizhou;x
 5004;151;34;116;Nantou;x
 5005;126;18;167;Xinhui;x
+5006;218;209;37;Tongzhou;x
+5007;123;217;38;Liu'an;x
