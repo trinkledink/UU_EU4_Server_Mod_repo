@@ -536,6 +536,13 @@ POM_university_of_greifswald = {
 	advisor_pool = 1
 	local_institution_spread = 0.3
 }
+POM_gdansk = {
+	center_of_trade_upgrade_cost = -0.1
+} #yeah I know it's global but shrug
+POM_legacy_of_eric_modifier = {
+	diplomatic_reputation = 1
+	prestige = 1
+}
 swa_prepared_army = {
 	land_maintenance_modifier = -0.1
 	army_tradition = 0.5
