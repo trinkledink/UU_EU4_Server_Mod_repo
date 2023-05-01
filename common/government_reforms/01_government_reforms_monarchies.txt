@@ -5410,6 +5410,19 @@ meritocratic_focus_reform = {
 		burghers_loyalty_modifier = 0.05
 		vaisyas_non_muslim_influence_modifier = 0.1
 	}
+	effect = {
+		if = {
+			limit = { has_country_flag = uukbo_meritocratic_admin_flag }
+			add_country_modifier = uukbo_meritocratic_admin_mod
+			remove_country_modifier = uukbo_dynastic_admin_mod
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = { has_country_modifier = uukbo_meritocratic_admin_mod }
+			remove_country_modifier = uukbo_meritocratic_admin_mod
+		}
+	}
 	ai = {
 		factor = 1
 		modifier = {
@@ -5493,6 +5506,20 @@ dyanstic_administration_reform = {
 		all_estate_influence_modifier = -0.1
 		monarch_admin_power = 1
 		advisor_pool = 1
+	}
+	effect = {
+		if = {
+			limit = { has_country_flag = uukbo_dynastic_admin_flag }
+			add_country_modifier = uukbo_dynastic_admin_mod
+			remove_country_modifier = uukbo_meritocratic_admin_mod
+		}
+
+	}
+	removed_effect = {
+		if = {
+			limit = { has_country_modifier = uukbo_dynastic_admin_mod }
+			remove_country_modifier = uukbo_dynastic_admin_mod
+		}
 	}
 	ai = {
 		factor = 1

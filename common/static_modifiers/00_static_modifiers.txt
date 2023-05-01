@@ -602,6 +602,9 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+	
+	has_voc_indiamen = yes
+	allowed_voc_indiamen_fraction = 2
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -2035,8 +2038,8 @@ caravel_ship = {
 }
 
 voc_indiamen_ship = {
-	number_of_cannons_modifier = 0.33
-	ship_trade_power_modifier = 0.2
+	#number_of_cannons_modifier = 0.33
+	#ship_trade_power_modifier = 0.2
 	can_transport_units = yes
 }
 

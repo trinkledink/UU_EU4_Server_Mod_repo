@@ -384,7 +384,7 @@ technology = {
 	enable = north_american_hussar
 	enable = central_american_hussar
 	enable = south_american_hussar
-	enable = polish_hussar	
+	#enable = polish_hussar	#moved to tech 18
 	enable = muscovite_caracolle	
 	enable = zaporoghian_cossack	
 	enable = topchis_artillery	
@@ -499,6 +499,7 @@ technology = {
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
 	enable = pacific_swarm_cav
+	enable = polish_hussar #moved from t14
 	
 	combat_width = 2
 }

@@ -32,9 +32,8 @@ cossacks_mechanic = {
 				has_neighbor = yes
 			}
 			effect = {
-				random_rival_country = {
+				random_neighbor_country = {
 					limit = {
-						is_neighbor_of = ROOT
 						NOT = { truce_with = ROOT }
 					}
 					save_event_target_as = source_country

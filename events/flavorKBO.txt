@@ -12,7 +12,7 @@ normal_or_historical_nations = yes
 country_event = {
 	id = flavor_kbo.1
 	title = flavor_kbo.1.t
-	desc = flavor_kbo.1.d
+	desc = flavor_kbo.1.duu
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	mean_time_to_happen = {
@@ -33,6 +33,7 @@ country_event = {
 			name = uukbo_dynastic_struggle_modifier
 			duration = -1
 		}
+		set_estate_privilege = estate_nobles_royal_court_tasks
 	}
 }
 
@@ -51,23 +52,89 @@ country_event = {
 		name = flavor_kbo.6.a	#Reform both the economy and the army.
 		ai_chance = { factor = 1 }
 		add_mil_power = 50
-		add_dip_power = 50
+		custom_tooltip = uukbo_five_janissary
+		hidden_effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						controlled_by = ROOT 
+						has_siege = no
+					}
+				}
+				capital_scope = {
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+				}
+			} else = {
+				random_owned_province = {
+					limit = {
+						controlled_by = ROOT 
+						has_siege = no
+					}
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+				}
+			}	
+		}
+		add_adm_power = 50
+		change_government_reform_progress = 50
 	}
 	
 	option = {
 		name = flavor_kbo.6.b	#Focus on the Army.
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 10 }
 		add_army_tradition = 25
 		add_mil_power = 75
-		add_dip_power = 25
+		custom_tooltip = uukbo_eight_janissary
+		hidden_effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						controlled_by = ROOT 
+						has_siege = no
+					}
+				}
+				capital_scope = {
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+				}
+			} else = {
+				random_owned_province = {
+					limit = {
+						controlled_by = ROOT 
+						has_siege = no
+					}
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+					janissary_infantry = ROOT
+				}
+			}	
+		}
 	}
 	
 	option = {
 		name = flavor_kbo.6.c	#Focus on the Economy.
 		ai_chance = { factor = 1 }
 		add_years_of_income = 0.15
-		add_mil_power = 25
-		add_dip_power = 75
+		add_adm_power = 75
+		change_government_reform_progress = 75
 	}
 }
 
@@ -206,5 +273,58 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = flavor_kbo.9
+	title = flavor_kbo.9.t
+	desc = flavor_kbo.9.d
+	picture = FAILED_REVOLUTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_kbo.9.a
+		set_country_flag = uukbo_dynastic_admin_flag
+		custom_tooltip = uukbo_dynastic_admin_tt
+	}
+	option = {
+		name = flavor_kbo.9.b
+		set_country_flag = uukbo_meritocratic_admin_flag
+		custom_tooltip = uukbo_meritocratic_admin_tt
+	}
+}
+
+country_event = {
+	id = flavor_kbo.10
+	title = flavor_kbo.10.t
+	desc = flavor_kbo.10.d
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_kbo.10.a
+		override_country_name = UUKANEM
+	}
+	option = {
+		name = flavor_kbo.10.b
+	}
+}
+
+country_event = {
+	id = flavor_kbo.11
+	title = flavor_kbo.11.t
+	desc = flavor_kbo.11.d
+	picture = TUAREG_OTTOMAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #reform army to have muslim inf
+		name = flavor_kbo.11.a
+		add_prestige = 10
+		set_country_flag = uukbo_can_use_muslim_inf
+		custom_tooltip = uukbo_enable_muslim_inf_tt
 	}
 }

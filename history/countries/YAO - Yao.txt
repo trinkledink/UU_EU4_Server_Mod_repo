@@ -19,8 +19,8 @@ religious_school = maliki_school
 		dip = 2
 		adm = 1
 		mil = 4
-		add_ruler_personality = inspiring_leader_personality
 	}
+	add_ruler_personality = inspiring_leader_personality
 } 
 
 1465.1.1 = {

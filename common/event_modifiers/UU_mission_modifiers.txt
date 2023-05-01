@@ -705,6 +705,7 @@ uukbo_dynastic_struggle_modifier = {
 	land_morale = -0.10
 	all_power_cost = 0.1
 	monarch_lifespan = -0.5
+	yearly_corruption = 0.15
 }
 
 uukbo_strong_government = {
@@ -718,8 +719,7 @@ uukbo_thriving_empire = {
 	stability_cost_modifier = -0.2
 }
 uukbo_khalifa_mod = {
-	prestige_decay = -0.025
-	stability_cost_modifier = -0.2
+	stability_cost_modifier = -0.15
 	land_morale = 0.10
 }
 uukbo_fighting_syncretism = {
@@ -729,5 +729,53 @@ uukbo_fighting_syncretism = {
 }
 uukbo_colonist = {
 	colonists = 1
-	can_colony_boost_development = yes
+	range = -0.5
+	auto_explore_adjacent_to_colony = yes
+	colony_development_boost = 1
+}
+uukbo_reforming_army_temp_mod = {
+	infantry_power = -0.75
+	infantry_cost = 0.5
+	mil_tech_cost_modifier = -0.2
+}
+uukbo_ethiopia_merchant = {
+	merchants = 1
+	placed_merchant_power = 10
+}
+uukbo_ports_mod = {
+	allowed_num_of_buildings = 1
+	local_institution_spread = 0.25
+	local_sailors_modifier = 0.25
+}
+uukbo_islamic_embassies = {
+	diplomatic_reputation = 2
+	monarch_diplomatic_power = 1
+	institution_growth = 12
+}
+uukbo_artillery_gaming = {
+	backrow_artillery_damage = 0.20
+	fire_damage = 0.10
+}
+uukbo_fortified_fezzan = {
+	allowed_num_of_manufactories = 1
+	province_trade_power_modifier = 0.1
+}
+uukbo_sahel_hegemon_mod = {
+	governing_capacity_modifier = 0.2
+	administrative_efficiency = 0.05
+	discipline = 0.05
+}
+uukbo_dynastic_admin_mod = {
+	advisor_pool = 1
+	country_admin_power = 1
+}
+uukbo_meritocratic_admin_mod = {
+	yearly_corruption = -0.1
+	advisor_cost = -0.1
+	burghers_loyalty_modifier = 0.05
+}
+uukbo_mossi_cavalry = {
+	num_accepted_cultures = 1
+	can_recruit_cossacks = yes
+	special_unit_forcelimit = 0.1
 }
