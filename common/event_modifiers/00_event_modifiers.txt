@@ -4662,7 +4662,7 @@ kbo_gazargamu = {
 kbo_religious_orthodoxy = { #UU Changed
 	tolerance_own = 1.5
 	tolerance_heathen = -1.5
-	global_missionary_strength = 2.5
+	global_missionary_strength = 0.025
 	church_loyalty_modifier = 0.1
 	religion = yes
 }

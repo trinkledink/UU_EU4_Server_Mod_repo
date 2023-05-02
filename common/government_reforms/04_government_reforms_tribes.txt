@@ -6,7 +6,7 @@ tribe_mechanic = {
 	heir = yes
 	queen = yes
 	custom_attributes = {
-		has_government_attribute = enables_natives_idea_group
+		enables_natives_idea_group = yes
 	}
 }
 

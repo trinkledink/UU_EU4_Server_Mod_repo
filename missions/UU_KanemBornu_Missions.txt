@@ -8,7 +8,7 @@ uukbo_free_1 = {
     has_country_shield = yes 
 
     uukbo_counter_the_nobility = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_noble_council
 		required_missions = { }
 		position = 1
         trigger = {
@@ -33,7 +33,7 @@ uukbo_free_1 = {
         }
     }
     uukbo_reign_in_the_kingmakers = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_have_two_subjects
 		required_missions = { uukbo_counter_the_nobility }
 		position = 2
         trigger = {
@@ -59,7 +59,7 @@ uukbo_free_1 = {
         }
     }
     uukbo_reform_bureaucracy = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_taula_de_canvi
 		required_missions = { uukbo_reign_in_the_kingmakers }
 		position = 3
         trigger = {
@@ -74,9 +74,9 @@ uukbo_free_1 = {
             }
         }
         effect = {
-            add_mil_power = 50
-            add_adm_power = 50
-            add_dip_power = 50
+            add_mil_power = 40
+            add_adm_power = 40
+            add_dip_power = 40
             add_country_modifier = {
                 name = uukbo_strong_government
                 duration = 7300 #20y
@@ -84,7 +84,7 @@ uukbo_free_1 = {
         }
     }
     uukbo_trans_saharan_entrepots = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_conquer_timbuktu
 		required_missions = { }
 		position = 4
         trigger = {
@@ -120,7 +120,7 @@ uukbo_free_1 = {
         }
     }
     uukbo_trade_dominance = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_trade_in_gold_coast
 		required_missions = { uukbo_trans_saharan_entrepots }
 		position = 5
         provinces_to_highlight = {
@@ -260,7 +260,7 @@ uukbo_gated_1 = {
     has_country_shield = yes
 
     uukbo_secure_eastern_route = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_traverse_the_sahara
 		required_missions = { uukbo_trade_dominance }
 		position = 6
         provinces_to_highlight = {
@@ -293,7 +293,7 @@ uukbo_gated_1 = {
 		}
 	}
     uukbo_control_mossi = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_kon_conquer_ksj
 		required_missions = { uukbo_conquer_hausa }
 		position = 7
         provinces_to_highlight = {
@@ -343,7 +343,7 @@ uukbo_free_2 = {
     has_country_shield = yes
 
     uukbo_permanent_capital = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_sw_against_the_desert
 		required_missions = { }
 		position = 1
         trigger = {
@@ -370,7 +370,7 @@ uukbo_free_2 = {
         }
     }
     uukbo_develop_ngazargamu = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_conquer_50_development
 		required_missions = { uukbo_permanent_capital }
 		position = 2
         trigger = {
@@ -382,10 +382,14 @@ uukbo_free_2 = {
         }
         effect = {
             set_country_flag = kbo_gazargamu
+            add_country_modifier = {
+                name = uukbo_imperial_capital
+                duration = -1
+            }
         }
     }
     uukbo_prosperity_in_bornu = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_war_chest
 		required_missions = { uukbo_develop_ngazargamu }
 		position = 3
         trigger = {
@@ -401,9 +405,9 @@ uukbo_free_2 = {
             }
         }
         effect = {
-            add_mil_power = 30
-            add_adm_power = 30
-            add_dip_power = 30
+            add_mil_power = 40
+            add_adm_power = 40
+            add_dip_power = 40
             bornu_area = {
                 add_base_tax = 1
                 add_base_production = 1
@@ -416,7 +420,7 @@ uukbo_free_2 = {
         }
     } 
     uukbo_end_dynastic_struggle = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_monarch_in_throne_room
 		required_missions = { 
             uukbo_reform_bureaucracy
             uukbo_prosperity_in_bornu 
@@ -442,7 +446,7 @@ uukbo_free_2 = {
         }
     }
     uukbo_restore_empire = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_empire
 		required_missions = { 
             uukbo_hajj
             uukbo_end_dynastic_struggle
@@ -548,7 +552,7 @@ uukbo_gated_2 = {
     has_country_shield = yes
 
     uukbo_conquer_hausa = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_son_own_develop_clothes_and_salt
 		required_missions = { 
             uukbo_restore_empire 
             uukbo_trade_dominance
@@ -602,7 +606,7 @@ uukbo_gated_2 = {
 		}
 	}
     uukbo_reach_the_coast = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_caribbean_cn
 		required_missions = { uukbo_conquer_hausa }
 		position = 7
 		trigger = {
@@ -619,9 +623,6 @@ uukbo_gated_2 = {
             custom_tooltip = uukbo_ports_tt
             tooltip = {
                 2290 = {
-                    limit = {
-                        has_port = yes 
-                    }
                     add_base_tax = 1
                     add_base_production = 2
                     add_province_modifier = { #1
@@ -830,7 +831,7 @@ uukbo_gated_2 = {
 		}
 	}
     uukbo_drive_out_colonizers = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_disrupt_portuguese_trade
 		required_missions = { uukbo_reach_the_coast }
 		position = 8
 		trigger = {
@@ -884,7 +885,7 @@ uukbo_free_3 = {
     has_country_shield = yes
 
     uukbo_combat_syncretism = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_mal_jihad_upon_own_population
 		required_missions = { }
 		position = 1
         trigger = {
@@ -922,7 +923,7 @@ uukbo_free_3 = {
         }
     } 
     uukbo_enforce_islamic_orthodoxy = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_into_persia_1
 		required_missions = { uukbo_combat_syncretism }
 		position = 2
         trigger = {
@@ -958,7 +959,7 @@ uukbo_free_3 = {
         }
     }
     uukbo_khalifa = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_mosque
 		required_missions = { uukbo_enforce_islamic_orthodoxy }
 		position = 3
         trigger = {
@@ -978,9 +979,9 @@ uukbo_free_3 = {
             }
         }
         effect = {
-            add_mil_power = 50
-            add_adm_power = 50
-            add_dip_power = 50
+            add_mil_power = 40
+            add_adm_power = 40
+            add_dip_power = 40
     		add_prestige = 15
             add_legitimacy = 15
             add_country_modifier = {
@@ -990,7 +991,7 @@ uukbo_free_3 = {
         }
     }
     uukbo_hajj = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_into_arabia
 		required_missions = { 
             uukbo_khalifa 
             uukbo_reconquer_kanem
@@ -1077,7 +1078,7 @@ uukbo_gated_3 = {
     has_country_shield = yes
 
     uukbo_islamic_learning = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_fatimid_caliphate
 		required_missions = { uukbo_hajj }
 		position = 5
 		trigger = {
@@ -1107,7 +1108,7 @@ uukbo_gated_3 = {
 		}
 	}
     uukbo_university_of_sankore = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_invade_mali
 		required_missions = { 
             uukbo_islamic_learning 
             uukbo_conquer_tuareg
@@ -1151,7 +1152,7 @@ uukbo_free_4 = {
     has_country_shield = yes
 
     uukbo_defeat_bilala = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_invade_kanem
 		required_missions = { }
 		position = 1
         trigger = {
@@ -1169,7 +1170,7 @@ uukbo_free_4 = {
     }
 
     uukbo_reconquer_kanem = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_mal_fighting_musa
 		required_missions = { uukbo_defeat_bilala }
 		position = 3
         provinces_to_highlight = {
@@ -1218,7 +1219,7 @@ uukbo_free_4 = {
         }
     }
     uukbo_military_reform = {
-        icon = mission_mal_west_african_great_power
+        icon = mission_levantine_restoration
 		required_missions = { uukbo_hajj }
 		position = 5
         trigger = {
@@ -1316,7 +1317,7 @@ uukbo_gated_4 = {
     has_country_shield = yes
 
     uukbo_conquer_tuareg = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_conquer_air
 		required_missions = { uukbo_military_reform }
 		position = 6
 		trigger = {
@@ -1370,7 +1371,7 @@ uukbo_gated_4 = {
 		}   
 	}  
     uukbo_conquer_mali = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_the_songhai_campaign
 		required_missions = { uukbo_conquer_tuareg }
 		position = 7
         provinces_to_highlight = {
@@ -1527,7 +1528,7 @@ uukbo_gated_5 = {
     has_country_shield = yes
 
     uukbo_gunpowder_empire = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_cannons_firing
 		required_missions = { uukbo_military_reform }
 		position = 6
 		trigger = {
@@ -1543,7 +1544,7 @@ uukbo_gated_5 = {
 		}
 	}
     uukbo_contact_maghreb = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_pacify_the_berbers
 		required_missions = { uukbo_conquer_tuareg }
 		position = 7
 		trigger = {
@@ -1570,7 +1571,7 @@ uukbo_gated_5 = {
 		}
 	}
     uukbo_fezzan_corridor = {
-		icon = mission_mal_west_african_great_power
+		icon = mission_mal_riches_of_trade
 		required_missions = { uukbo_contact_maghreb }
 		position = 8
 		trigger = {

@@ -163,8 +163,9 @@ province_event = {
 				set_government_rank = 2
 				add_government_reform = tribal_federation
 				add_government_power = {
-					government_mechanic = tribal_federation_mechanic
-					amount = 75
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 75
 				}
 				define_ruler = {
 					name = "Tenguella"
@@ -258,6 +259,7 @@ province_event = {
 				add_government_reform = tribal_federation
 				add_government_power = {
 					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
 					value = 75
 				}
 				define_ruler = {
