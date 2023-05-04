@@ -758,16 +758,16 @@ fort_16th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-		  }
-									
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
 	}
 
 	onmap = yes
@@ -1966,7 +1966,7 @@ farm_estate = {
 		}
 	}
 	on_destroyed = {
-		add_dev_from_building = {
+		remove_development_from_building = {
 			building = manufactory
 			type = production
 			value = 1 
@@ -2078,6 +2078,39 @@ ramparts = {
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
+	on_built = {
+		add_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1 
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nobles_development_of_castles
+				}
+				NOT = { has_province_modifier = estate_nobles_development_of_castles_ramparts_mod }
+			}
+			add_province_modifier = {
+				name = estate_nobles_development_of_castles_ramparts_mod
+				duration = -1
+			}
+		}
+	}
+	
+	on_destroyed = {
+		remove_dev_from_building = {
+			building = manufactory 
+			type = manpower 
+			value = 1
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+		}
+	}
 	ai_will_do = {
 		factor = 1
 	}

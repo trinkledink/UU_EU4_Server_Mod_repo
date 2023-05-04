@@ -8510,7 +8510,7 @@ ORL_ideas = {
 		idea_cost = -0.1
 	}
 	french_language_in_all_courts = {
-		#See French Ideas
+		diplomatic_upkeep = 1
 	}
 }
 

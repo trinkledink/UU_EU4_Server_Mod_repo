@@ -4654,7 +4654,7 @@ ful_fulani_wars = {
 }
 
 #Kanem Borno
-kbo_gazargamu = {
+kbo_gazargamu = { #UU Changed
 	legitimacy = 0.5
 	local_defensiveness = 0.25
 }
@@ -13524,7 +13524,7 @@ acts_of_taxation_parliament = {
 	global_tariffs = 0.15
 }
 act_of_representation_parliament = {
-	liberty_desire = -10
+	reduced_liberty_desire = 10 
 }
 
 imperial_religious_unity_act_modifier = {
