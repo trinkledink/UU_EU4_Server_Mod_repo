@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 21  96  178 } #NO GREEN TLEMCEN
+color = { 21  98  168 } #NO GREEN TLEMCEN
 #color = { 40 110 140 }
 #color = { 154 168 121 } 
 revolutionary_colors = { 0  13  0 }

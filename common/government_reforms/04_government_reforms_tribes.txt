@@ -6,7 +6,7 @@ tribe_mechanic = {
 	heir = yes
 	queen = yes
 	custom_attributes = {
-		enables_natives_idea_group = yes
+		enables_natives_idea_group = yes #UU Change
 	}
 }
 
@@ -242,6 +242,7 @@ siberian_tribe = {
 		factor = 1
 	}
 }
+
 not_siberian_tribe = {
 	icon = "fist_in_air"
 	allow_normal_conversion = no

@@ -2245,9 +2245,8 @@ NAP_ideas = {
 	
 	# trigger = {
 		# OR = {
-			# #tag = TTS
-			# #tag = SIC
-			# always = no ##UU Added
+			#tag = TTS
+			#tag = SIC
 		# }
 	# }
 	
@@ -11386,7 +11385,7 @@ TKD_ideas = {
 	}
 	tkd_twentyfour_generals = {
 		free_leader_pool = 1
-		yearly_army_professionalism = 0.02
+		yearly_army_professionalism = 0.0025
 	}
 	tkd_koyo_gunkan = {
 		army_tradition = 0.5
@@ -12993,11 +12992,8 @@ HDR_ideas = {
 #		discipline = 0.05
 #	}
 #	trigger = {
-#		OR = {
-#			tag = HSN
-#			tag = ARB
-#		}
-#	}
+#		tag = HSN
+# 	}
 #	free = yes
 #	
 #	hsn_citadels_and_fortesses = {
@@ -13738,13 +13734,15 @@ ORD_ideas = {
 	# }
 	
 	# bonus = {
-		# legitimacy = 1
-		# republican_tradition = 0.3
+		#legitimacy = 1
+		#devotion = 1
+		#republican_tradition = 0.3
+		#meritocracy = 1
+		#horde_unity = 1
 	# }
 	
 	# trigger = {
-		# #tag = IRE
-		# always = no ##UU Added
+		#tag = IRE
 	# }
 	# free = yes
 	
@@ -15036,7 +15034,7 @@ SYN_ideas = {
 
 # MOR_ideas = {
 	# start = {
-		# may_perform_slave_raid = yes
+		# naval_attrition = -0.25
 		# naval_forcelimit_modifier = 0.25
 	# }
 	# bonus = {
@@ -15075,7 +15073,7 @@ SYN_ideas = {
 
 # TUN_ideas = {
 	# start = {
-		# may_perform_slave_raid = yes
+		# naval_attrition = -0.25
 		# galley_power = 0.2		
 	# }
 	# bonus = {
@@ -15460,8 +15458,7 @@ ASU_ideas = {
 	# }
     
 	# trigger = {
-		# #tag = ADU
-		# always = no ##UU Added
+		# tag = ADU
 	# }
 	# free = yes        #will be added at load.
     

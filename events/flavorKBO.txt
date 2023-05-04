@@ -168,7 +168,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 90 #shortened by a lot 
+		months = 210
 	}
 	
 	option = {
@@ -218,8 +218,7 @@ country_event = {
 					size = 3
 				}
 			}
-		}
-		if = {
+		} else_if = {
 			limit = {
 				OR = {
 					AND = {
@@ -245,8 +244,7 @@ country_event = {
 					size = 2
 				}
 			}
-		}
-		if = {
+		} else_if = {
 			limit = {
 				OR = {
 					AND = {
