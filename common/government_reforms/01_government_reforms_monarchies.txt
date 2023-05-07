@@ -6230,6 +6230,20 @@ become_a_republic_reform = {
 				}
 			}
 		}
+		if = { #Ottomans -> Turkey
+			limit = {
+				tag = TUR 
+				NOT = { 
+					has_country_flag = unified_islam #otherwise would be The Caliphate
+					has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+				}
+				OR = {
+					government = republic 
+					government = theocracy 
+				}
+			}
+			override_country_name = TURKEY_STRING
+		}
 	}
 	ai = {
 		factor = 0
@@ -6267,6 +6281,20 @@ install_theocratic_government_reform = {
 					id = flavor_gbr.20
 				}
 			}
+		}
+		if = { #Ottomans -> Turkey
+			limit = {
+				tag = TUR 
+				NOT = { 
+					has_country_flag = unified_islam #otherwise would be The Caliphate
+					has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+				}
+				OR = {
+					government = republic 
+					government = theocracy 
+				}
+			}
+			override_country_name = TURKEY_STRING
 		}
 	}
 	ai = {

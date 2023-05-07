@@ -12,5 +12,5 @@ trade_goods = salt
 base_manpower = 3
 capital = "Nantong"
 is_city = yes
-discovered_by = eastern
+discovered_by = chinese
 discovered_by = nomad_group

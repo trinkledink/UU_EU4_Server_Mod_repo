@@ -1,0 +1,33 @@
+papal_cost = {
+	if = {
+		limit = {
+			tag = PAP
+			curia_treasury_size = 300
+		}
+	add_curia_treasury = -300
+	}
+	if = {
+		limit = {
+			NOT = { tag = PAP }
+		}
+	add_papal_influence = -50
+	}
+}
+
+uu_special_color_effect = {
+	if = { #Green Portugal
+		limit = {
+			tag = POR 
+			government = republic
+		}
+		change_country_color = { color = { 11 82 43 } }
+	} else_if = { #North Sea Empire from Norse events
+		limit = { 
+			has_country_flag = renamed_to_north_sea_empire 
+		}
+		change_country_color = { color = { 202 245 251 } }
+	} else = {
+		restore_country_color = yes
+	}
+}
+

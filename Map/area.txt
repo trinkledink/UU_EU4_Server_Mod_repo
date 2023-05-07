@@ -3458,6 +3458,7 @@ upper_missouri_area = { #5
 
 badlands_area = { #3
     1809 2504 2505
+	2506 #UU Moved
 }
 
 llano_estacado_area = { #5
@@ -3485,7 +3486,7 @@ columbia_river_area = { #4
 }
 
 snake_river_area = { #5
-    2019 2020 2489 2490 2506
+    2019 2020 2489 2490
 }
 
 salish_sea_area = { #3
