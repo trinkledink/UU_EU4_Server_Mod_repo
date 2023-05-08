@@ -349,6 +349,7 @@ uukbo_free_2 = {
         trigger = {
             years_of_income = 1
             1157 = {
+                owned_by = ROOT
                 fort_level = 3
             }
         }
@@ -375,6 +376,7 @@ uukbo_free_2 = {
 		position = 2
         trigger = {
             1157 = {
+                owned_by = ROOT
                 num_of_times_improved_by_owner = 5
                 development = 12
                 has_building = marketplace
