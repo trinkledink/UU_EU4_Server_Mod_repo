@@ -6230,19 +6230,9 @@ become_a_republic_reform = {
 				}
 			}
 		}
-		if = { #Ottomans -> Turkey
-			limit = {
-				tag = TUR 
-				NOT = { 
-					has_country_flag = unified_islam #otherwise would be The Caliphate
-					has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
-				}
-				OR = {
-					government = republic 
-					government = theocracy 
-				}
-			}
-			override_country_name = TURKEY_STRING
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {
@@ -6262,14 +6252,14 @@ install_theocratic_government_reform = {
 		NOT = { is_lesser_in_union = yes }
 		if = {
 			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
-		stability = 2
-	}
+			stability = 2
+		}
 	}
 	effect = {
 		set_country_flag = populists_in_government
 		if = {
 			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
-		add_stability = -3
+			add_stability = -3
 		}
 		change_government = theocracy
 		if = {
@@ -6282,19 +6272,9 @@ install_theocratic_government_reform = {
 				}
 			}
 		}
-		if = { #Ottomans -> Turkey
-			limit = {
-				tag = TUR 
-				NOT = { 
-					has_country_flag = unified_islam #otherwise would be The Caliphate
-					has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
-				}
-				OR = {
-					government = republic 
-					government = theocracy 
-				}
-			}
-			override_country_name = TURKEY_STRING
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {
@@ -6383,6 +6363,10 @@ become_rev_republic_reform = {
 			limit = { has_country_flag = had_states_general_mechanic }
 			country_event = { id = dutch_republic.33 }
 			clr_country_flag = had_states_general_mechanic
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {

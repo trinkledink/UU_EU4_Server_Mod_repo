@@ -133,60 +133,60 @@ country_event = {
 
 # Conscripting Mercenaries in Peace
 
-country_event = {
-	id = uuideagroups.5
-	title = "uu_mercenary_ideas.name5"
-	desc = "uu_mercenary_ideas.desc5"
-	picture = FARMING_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = mercenary_ideas
-		NOT = {	has_country_modifier =  "labouring_mercenaries" }
-		is_at_war = no
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = "uu_mercenary_ideas.5.a"
-		add_country_modifier = {
-			name = "labouring_mercenaries"
-			duration = 1825
-		}
-	}
-}
+#country_event = { #Commented out because vanilla events
+#	id = uuideagroups.5
+#	title = "uu_mercenary_ideas.name5"
+#	desc = "uu_mercenary_ideas.desc5"
+#	picture = FARMING_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_idea_group = mercenary_ideas
+#		NOT = {	has_country_modifier =  "labouring_mercenaries" }
+#		is_at_war = no
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = "uu_mercenary_ideas.5.a"
+#		add_country_modifier = {
+#			name = "labouring_mercenaries"
+#			duration = 1825
+#		}
+#	}
+#}
 
 # Evolving Trade Routes
 
-country_event = {
-	id = uuideagroups.6
-	title = "uu_mercenary_ideas.name6"
-	desc = "uu_mercenary_ideas.desc6"
-	picture = CITY_DEVELOPMENT_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = mercenary_ideas
-		NOT = {	has_country_modifier =  "trade_surge" }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = "uu_mercenary_ideas.6.a"
-		add_country_modifier = {
-			name = "trade_surge"
-			duration = 1825
-		}
-	}
-}
+#country_event = { #Commented out because vanilla events
+#	id = uuideagroups.6
+#	title = "uu_mercenary_ideas.name6"
+#	desc = "uu_mercenary_ideas.desc6"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_idea_group = mercenary_ideas
+#		NOT = {	has_country_modifier =  "trade_surge" }
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = "uu_mercenary_ideas.6.a"
+#		add_country_modifier = {
+#			name = "trade_surge"
+#			duration = 1825
+#		}
+#	}
+#}
 
 # The scourge of the land
 
@@ -313,38 +313,42 @@ country_event = {
 
 # Prominent Leader becomes Advisor
 
-country_event = {
-	id = uuideagroups.11
-	title = "uu_mercenary_ideas.name11"
-	desc = "uu_mercenary_ideas.desc11"
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = mercenary_ideas
-	}
+#country_event = { #Commented out because vanilla events
+#	id = uuideagroups.11
+#	title = "uu_mercenary_ideas.name11"
+#	desc = "uu_mercenary_ideas.desc11"
+#	picture = ADVISOR_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_idea_group = mercenary_ideas
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = "uu_mercenary_ideas.11.a"
+#		define_advisor = {
+#			type = commandant
+#			#scaled_skill = yes   ###UU this does not work HEDIN hedin Hedin !!
+#			discount = yes
+#		}
+#	}
+#	
+#	option = {
+#		name = "uu_mercenary_ideas.11.b"
+#		define_general = {
+#			shock = 3
+#			fire = 3
+#			manuever = 2
+#			siege = 2
+#		}
+#	}
+#}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = "uu_mercenary_ideas.11.a"
-		define_advisor = {
-			type = commandant
-			#scaled_skill = yes   ###UU this does not work HEDIN hedin Hedin !!
-			discount = yes
-		}
-	}
-	
-	option = {
-		name = "uu_mercenary_ideas.11.b"
-		define_general = {
-			shock = 3
-			fire = 3
-			manuever = 2
-			siege = 2
-		}
-	}
-}
+######################################################################
+# General Staff Idea Group Events
+######################################################################

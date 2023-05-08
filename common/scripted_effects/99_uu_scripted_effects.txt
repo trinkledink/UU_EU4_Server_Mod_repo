@@ -4,17 +4,17 @@ papal_cost = {
 			tag = PAP
 			curia_treasury_size = 300
 		}
-	add_curia_treasury = -300
+		add_curia_treasury = -300
 	}
 	if = {
 		limit = {
 			NOT = { tag = PAP }
 		}
-	add_papal_influence = -50
+		add_papal_influence = -50
 	}
 }
 
-uu_special_color_effect = {
+uu_special_color_effect = { #Applies specific colours to nations depending on gov't. or otherwise
 	if = { #Green Portugal
 		limit = {
 			tag = POR 
@@ -29,5 +29,42 @@ uu_special_color_effect = {
 	} else = {
 		restore_country_color = yes
 	}
+	every_subject_country = {
+		limit = {
+			has_country_flag = uu_overlord_colour
+		}
+		change_country_color = { country = overlord }
+	}
 }
 
+uu_special_name_effect = { #Applies specific names to nations depending on gov't. or otherwise
+	if = { #Ottomans -> Turkey
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			OR = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		override_country_name = TURKEY_STRING
+	} else_if = {
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			NOT = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		restore_country_name = yes
+	}
+}

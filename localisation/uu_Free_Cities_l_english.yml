@@ -3,25 +3,25 @@
  ##############  MISSIONS  #################
  ###########################################
  
- uu_fc_tt: "[Root.uu_fc_tt] If we are the §YFirst Free City§! to complete the mission:"
- uu_freeest_tt: " Gain access to the §YFree-est City§! country modifier, granting §G+1 Diplomatic Reputation§! and §G-15% Diplomatic Annexation Cost§! for as long as we remain a Free City."
+ uu_fc_tt:0 "[Root.uu_fc_tt] If we are the §YFirst Free City§! to complete the mission:"
+ uu_freeest_tt:0 " Gain access to the §YFree-est City§! country modifier, granting §G+1 Diplomatic Reputation§! and §G-15% Diplomatic Annexation Cost§! for as long as we remain a Free City."
  
- uu_FC_empire_title: "Imperial Diplomacy"
- uu_FC_empire_desc: "We must set our city above all others in the eyes of the Emperor in order to secure future imperial favor over the other Cities."
- uu_FC_trade_title: "Dominate Imperial Trade"
- uu_FC_trade_desc: "A focus on dominating trade will secure our infamy over all other Free Cities."
- uu_FC_development_title: "Emerald of the Empire"
- uu_FC_development_desc: "To establish our economic dominance, we must become the lead producer of goods within the empire."
- uu_FC_estates_title: "The Great Game"
- uu_FC_estates_desc: "The interests of various estates dilute our authority. If we are to become a beacon of progress among Free Cities, we must align their interests with ours."
+ uu_FC_empire_title:0 "Imperial Diplomacy"
+ uu_FC_empire_desc:0 "We must set our city above all others in the eyes of the Emperor in order to secure future imperial favor over the other Cities."
+ uu_FC_trade_title:0 "Dominate Imperial Trade"
+ uu_FC_trade_desc:0 "A focus on dominating trade will secure our infamy over all other Free Cities."
+ uu_FC_development_title:0 "Emerald of the Empire"
+ uu_FC_development_desc:0 "To establish our economic dominance, we must become the lead producer of goods within the empire."
+ uu_FC_estates_title:0 "The Great Game"
+ uu_FC_estates_desc:0 "The interests of various estates dilute our authority. If we are to become a beacon of progress among Free Cities, we must align their interests with ours."
  
  
  ###########################################
  ##############  MODIFIERS  ################
  ###########################################
  
- uu_FC_imperial_diplomacy: "Imperial Recognition"
- uu_FC_emperor_freeest: "The Freeest City"
+ uu_FC_imperial_diplomacy:0 "Imperial Recognition"
+ uu_FC_emperor_freeest:0 "The Freeest City"
  
  
  ###########################################

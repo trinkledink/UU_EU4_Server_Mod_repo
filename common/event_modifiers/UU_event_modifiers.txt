@@ -42,6 +42,7 @@ we_fight_for_gold = {
 }
 
 we_fight_for_honour = {
+	is_mercenary_modifier = yes
 	land_morale = 0.05
 }
 
@@ -65,6 +66,7 @@ lack_of_mercenaries = {
 }
 
 letting_sleeping_dogs_lie = {
+	is_mercenary_modifier = yes
 	land_morale = 0.05
 }
 

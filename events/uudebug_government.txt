@@ -13,7 +13,7 @@ country_event = {
         country_event = {
             id = uu_government.2
         }
-    	change_government_to_monarchy = yes
+    	change_government = monarchy
 	}
 	option = {
 		name = "uu_government.1.b"
@@ -38,6 +38,12 @@ country_event = {
     option = {
         name = "uu_government.1.f"
     }
+	after = {
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
+	}
 }
 
 country_event = {
@@ -174,5 +180,27 @@ country_event = {
         country_event = {
             id = uu_government.1
         }
+	}
+}
+
+country_event = { #hidden band-aid bugfixer so republics PU'd via event become monarchies 
+	id = uu_government.999
+	hidden = yes
+	trigger = {
+		is_lesser_in_union = yes
+		NOT = { government = monarchy }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		change_government = monarchy
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
+	}
+	option = {
+		
 	}
 }

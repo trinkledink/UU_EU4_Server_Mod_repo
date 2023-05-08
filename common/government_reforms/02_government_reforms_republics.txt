@@ -3862,6 +3862,10 @@ seize_executive_power_reform = {
 			country_event = { id = dutch_republic.33 }
 			clr_country_flag = had_states_general_mechanic
 		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
 	}
 	ai = {
 		factor = 0
@@ -3890,6 +3894,10 @@ proclaim_divine_guidance_reform = {
 					id = flavor_gbr.20
 				}
 			}
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {
@@ -4060,6 +4068,10 @@ become_rev_empire_reform = {
 					}
 				}
 			}
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 		add_government_reform = revolutionary_empire_reform
 		if = {

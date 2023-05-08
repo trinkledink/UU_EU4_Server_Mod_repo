@@ -673,6 +673,8 @@ on_war_lost = {
             is_lesser_in_union = yes
 		}
 		change_government_to_monarchy = yes
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
     }
 	if = {
 		limit = {
@@ -712,7 +714,7 @@ on_separate_war_lost = {
 # country
 # root = winning country, from = loser country
 on_battle_won_country = {
-	#on_battle_ended_effect = yes
+	on_battle_ended_effect = yes
 	on_battle_won_country_effect = yes
 	if = {
 		limit = {
@@ -745,7 +747,7 @@ on_battle_won_country = {
 # country
 # root = loser country, from = winner country
 on_battle_lost_country = {
-	#on_battle_ended_effect = yes
+	on_battle_ended_effect = yes
 	battle_cult_spreading_effect = yes #Scripted effect for fetishist cult mechanics.
 	random_events = {
 		90 = 0
@@ -816,6 +818,9 @@ on_battle_won_unit = {
 	if = {
 		limit = {
 			general_with_name = "Damarwulan"
+			unit_owner = {
+				has_country_flag = maj_damarwulan
+			}
 		}
 		unit_owner = {
 			change_variable = {
@@ -1577,6 +1582,12 @@ on_successive_emperor = {
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
+	if = {
+		limit = {
+			has_government_attribute = has_ruler_election
+		}
+		set_country_flag = has_internal_election_first
+	}
 	events = {
 		900
 	}
@@ -1733,7 +1744,8 @@ on_hre_religion_white_peace = {
 
 # When a non-native changes government type
 on_government_change = {
-	uu_special_color_effect = yes #Applies specific colours to nations depending on gov't. or otherwise
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
 	clr_country_flag = pirate_mutineer_council
 	clr_country_flag = caretaker_revolutionary_government
 	if = {
@@ -1874,6 +1886,8 @@ on_mandate_of_heaven_gained = {
 			}
 		}
 		change_government_to_monarchy = yes
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
 	}
 	add_government_reform = celestial_empire
 	set_mandate = 60
@@ -1992,6 +2006,8 @@ on_embrace_revolution = {
 	if = {
 		limit = { NOT = { government = republic } }
 		change_government = republic
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
 	}
 	if = {
 		limit = { 
@@ -3813,19 +3829,29 @@ on_five_year_pulse = {
 		100 = ideagroups.2016
 		100 = ideagroups.2017
 
-		#Mercenary Events (7g 4b)	##uu added
+		#Mercenary Ideas Events	##uu added
 		100 = uuideagroups.1
 		100 = uuideagroups.2
 		100 = uuideagroups.3
 		100 = uuideagroups.4
-		100 = uuideagroups.5
-		100 = uuideagroups.6
+		#100 = uuideagroups.5
+		#100 = uuideagroups.6
 		100 = uuideagroups.7
 		100 = uuideagroups.8
 		100 = uuideagroups.9
 		100 = uuideagroups.10
-		100 = uuideagroups.11
-		
+		#100 = uuideagroups.11
+
+		#Vanilla Mercenary Events		9 (6g 3b)
+		100 = ideagroups.2020
+		100 = ideagroups.2021
+		100 = ideagroups.1603
+		100 = ideagroups.1604
+		100 = ideagroups.1610
+		100 = ideagroups.2025
+		100 = ideagroups.2026
+		100 = ideagroups.2027
+		100 = ideagroups.2028
 		
 		1000 = 0
 	}
@@ -4933,7 +4959,7 @@ on_banner_raised = {
 	owner = { 
 		if = { 
 			limit = { has_country_flag = refund_partial_corruption_on_banner_recruited_flag }
-			add_corruption = -0.1
+			add_corruption = -0.04
 		}
 	}
 }
@@ -5136,16 +5162,6 @@ on_dependency_lost = {
 		}
 		remove_country_modifier = rus_grand_duke_of_finland
 	}
-	FROM = { #UU Restores country colour unless an override exists
-		if = {
-			limit = { 
-				has_country_flag = uu_recolorsubjects 
-				is_free_or_tributary_trigger = yes 
-			}
-			uu_special_color_effect = yes
-			clr_country_flag = uu_recolorsubjects
-		}
-	}
 	FROM = {
 		if = {
 			limit = { has_country_modifier = revoked_war_rights }
@@ -5156,7 +5172,6 @@ on_dependency_lost = {
 
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
-	uu_special_color_effect = yes #Applies specific colours to nations depending on gov't. or otherwise
 	on_religion_change_estate_privileges_effect = yes
 	if = {
 		limit = {
@@ -5178,26 +5193,12 @@ on_create_vassal = {
 		add_government_reform = papacy_reform
 		adopt_reform_progress = FROM
 	}
-	if = { #Ottomans -> Turkey
-		limit = {
-			ROOT = {
-				tag = TUR 
-				NOT = { 
-					has_country_flag = unified_islam #otherwise would be The Caliphate
-					has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
-				}
-				OR = {
-					government = republic 
-					government = theocracy 
-				}
-			}
-		}
-		override_country_name = TURKEY_STRING
-	}
 	if = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
 	}
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
 }
 
 # ROOT = Country establishing it
@@ -5320,6 +5321,8 @@ on_country_released = {
 		limit = { NOT = { is_year = 1445 } }
 		set_country_flag = released_in_1444
 	}
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
 }
 
 # ROOT = province, FROM = country
@@ -5505,6 +5508,8 @@ on_country_creation = {
 		change_government = theocracy
 		add_government_reform = papacy_reform
 	}
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
 }
 
 on_federation_leader_change = {

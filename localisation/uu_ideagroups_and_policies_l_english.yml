@@ -1,22 +1,66 @@
 ﻿l_english:
-
  ###############################################################
- # Ideagroup Localisation
+ # New Idea Group Ideas
  ###############################################################
- 
  # Admin Ideas
  independent_legal_system_adm_idea:0 "Independent Legal System"
  independent_legal_system_adm_idea_desc:0 "With an independent legal system, stronger checks and balances greatly stabilize our nation."
- meritocratic_court_adm_idea:0 "Meritocratic Court"
- meritocratic_court_adm_idea_desc:0 "Doing away with nepotisim and favoritism when appointing advisors to our court will allow greater efficiency and advancement of our bureaucracy."
+ #meritocratic_court_adm_idea:0 "Meritocratic Court"
+ #meritocratic_court_adm_idea_desc:0 "Doing away with nepotisim and favoritism when appointing advisors to our court will allow greater efficiency and advancement of our bureaucracy."
  great_works_project_adm_idea:0 "Great Works Project"
  great_works_project_adm_idea_desc:0 "It is time for us, now, to invest in ourselves through infrastructure and prove what great marvels can be born of mankind's creation."
+ #Mercenary Ideas
+ mercenary_ideas:0 "Mercenary Ideas"
+ living_off_the_land:0 "Living off the Land"
+  living_off_the_land_desc:0 "Mercenaries are accustomed to a life without intricate supply networks, and are experts at using the local resources to their advantage."
+ standard_payroll_system:0 "Standard Payroll System"
+  standard_payroll_system_desc:0 "The employment of mercenaries has been institutionalised into our national economy, leading to a standard paycheck the mercenaries can rely on."
+ viable_career_option:0 "Viable Career Option"
+  viable_career_option_desc:0 "Constant employment of mercenaries has led the life of a mercenary to be a viable career option for our people."
+ mercenary_connection_networks:0 "Mercenary Connection Networks"
+  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without.\n§YUnlocks a unique Mercenary Company consisting of only Infantry.§!"
+ trusted_partner_discounts:0 "Trusted Partner Discounts"
+  trusted_partner_discounts_desc:0 "We have gained the favour and trust of certain contracting partners, allowing us to employ their companies' service for a cheaper price than most other nations would."
+ local_land_knowledge:0 "Local Land Knowledge"
+  local_land_knowledge_desc:0 "The mercenaries in our employment are experienced veterans and locals from the surrounding lands, giving us the knowledge of how to navigate these areas swiftly."
+ prestigious_companies:0 "Prestigious Companies"
+  prestigious_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with.\n§YUnlocks a unique Mercenary Company consisting of only Artillery.§!"
+ #General Staff Ideas
+ general_staff_ideas:0 "General Staff Ideas"
+ general_staff_fire:0 "Firearms Training"
+  general_staff_fire_desc:0 "Our officers should learn to recognize that every firearm or cannon is different and will thus know best how to exploit their strengths in the field."
+ general_staff_siege:0 "Architecture Studies"
+  general_staff_siege_desc:0 "By studying existing fortifications, we will learn where their weak points are likely to be, and thus where to aim our cannons."
+ military_organization:0 "Military Organization"
+  military_organization_desc:0 "The structure of the command of our military will be officially codified and standardized, making it easier for us to manage larger armies."
+ uu_seasoned_veterans:0 "Seasoned Veterans"
+  uu_seasoned_veterans_desc:0 "Employing seasoned veterans in non-combat roles of our army will facilitate the transmission of military knowledge across generations."
+ #Economic Ideas 
+ uu_national_bank:0 "National Bank"
+  uu_national_bank_desc:0 "By establishing a central authority for financial matters, we will have better control over our nation's economy.\n§YThe "National Bank" event may fire, giving us a one-time bonus to make our economy healthier.§!\nInflation Reduction from Loan Repayment:§G -0.05§!"
+ advanced_production_methods:0 "Advanced Production Methods"
+  advanced_production_methods_desc:0 "By using the latest available means of producing goods from our factories, we can increase the output of each building."
+ #Infrastructure Ideas 
+ encourage_development_idea:0 "Encourage Development Policies"
+  encourage_development_idea_desc:0 "We will find a way to incentivize our territories to improve their own infrastructure in a way that suits them, but on the national level instead of simply by a state edict as lesser nations might do."
+ modular_administration:0 "Flexible Administration"
+  modular_administration_desc:0 "By structuring our administration in such a way that the process of expanding it is standardized, it will be easier for us to accomodate the growing pains of a developing nation."
+ uu_efficient_mining:0 "Regulated Gold Mining"
+  uu_efficient_mining_desc:0 "We will refine every aspect of metal mining within our domain, to regulate its presence in our market."
+ uu_bureau_of_cartography:0 "Bureau of Cartography"
+  uu_bureau_of_cartography_desc:0 "Creating a reference archive for charts and maps of our lands will make it less costly for us to manage our empire."
+ #Offensive Ideas
+ invasion_logistics:0 "Invasion Logistics"
+  invasion_logistics_desc:0 "Behind every successful invasion is solid logistics. By developing comprehensive logistics plans beforehand, our soldiers will be able to perform operations with higher efficiency."
+ #Quantity Ideas
+ expanded_dockyard_crews:0 "Expanded Dockyard Crews"
+  expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."
  
+
  ###############################################################
  # Policies Localisation
  ###############################################################
  
- #Mercenary Policies
  #Adm
  mercenary_resettlement_policy:0 "Mercenary Resettlement Act"
  desc_mercenary_resettlement_policy:0 "Tradition dictates that mercenaries are paid in gold. By paying them in land, we can integrate these foreigners and hirearms into our nation, further developing our nation."
@@ -24,6 +68,8 @@
  desc_peacetime_mercenary_recruitment:0 "Most nations reliant on mercenaries have made the mistake of disbanding their hired armies during peacetime. By enacting an act to keep mercenaries on standby we can avoid this mistake, and utilise the labour force for other purposes."
  privatised_new_world_companies_policy:0 "Privatised New World Companies"
  desc_privatised_new_world_companies_policy:0 "The connections we have made through our mercenaries provides us with an opportunity to create private New World Companies."
+ eco_genstaff_policy:0 "Soldiers as Labourers"
+ desc_eco_genstaff_policy:0 "Our off-duty soldiers, instead of losing their edge at home or causing trouble, will be sent to assist local construction efforts to maintain their physicality and save on hiring costs."
  
  #Dip
  indigenous_mercenaries_policy:0 "Enlistment of Indigenous Mercenaries Act"
@@ -46,7 +92,18 @@
  desc_marine_mercenaries_policy:0 "Hiring private sailors will greatly increase the sailors that our nation can employ."
  enlistment_propaganda_policy:0 "Enlistment Propaganda"
  desc_enlistment_propaganda_policy:0 "With our clout over public sentiment, it is essential that we exercise it in a way that ensures the people know for what we fight."
- 
+ boarding_parties_policy:0 "Boarding Parties Act"
+ desc_enlistment_propaganda_policy:0 "By placing some of our feared shock troops aboard our ships, our admirals can afford to be less scared of boarding parties and engage in more aggressive maneuvers."
+ maritime_genstaff_policy:0 "Armed Merchant Marine Act"
+ desc_maritime_genstaff_policy:0 " "
+ expansion_genstaff_policy:0 "Auftragstaktik"
+ desc_expansion_genstaff_policy:0 "As our armies go further afield, delivering information in a timely manner from headquarters becomes nearly impossible. Commanding officers must be able to decide independently on the best way to achieve defined objectives, and be trained in that way."
+ humanist_genstaff_policy:0 "Military Atheism Act"
+ desc_humanist_genstaff_policy:0 "Meritocracy triumphs faith. Soldiers will be allowed to command our armies regardless of their faith."
+ admin_genstaff_policy:0 "After-Action Reports"
+ desc_admin_genstaff_policy:0 "Require each commander after an operation to write an in-depth report of the successes and failures of the day. This valuable information must be shared and leanred from to prevent our armies from repeating mistakes."
+ military_academies_act:0 "Military Academies Act"
+ desc_military_academies_act:0 "Let the nobility of our realm use their wealth to finance new universities of military study for the scions of their house. The expertise and insight from these learned noble sons will benefit the army as a whole."
  ###############################################################
  # Ideagroup Events Localisation
  ###############################################################

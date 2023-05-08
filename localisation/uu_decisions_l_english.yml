@@ -54,5 +54,10 @@
   UU_balance_events.6.a:0 "Let's shorten our name (Hansa)"
   UU_balance_events.6.b:0 "Keep current name (Hanseatic League)."
   UU_balance_events.6.c:0 "Keep current name (if your name is neither, for some reason)"
+ #Subjects Decisions
+ uu_recolorsubjects_title:0 "Change Subjects to your Map Colour"
+  uu_recolorsubjects_desc:0 "Changes all vassals, marches, and client states to your map colour. Does not affect daimyos, appanages, eyalets, tributaries, junior partners, etc. \n§RWARNING: This may cause problems when subjects occupy provinces with your map colour.§!"
+ uu_restore_color_title:0 "Restore our Map Colour"
+  uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
 
  

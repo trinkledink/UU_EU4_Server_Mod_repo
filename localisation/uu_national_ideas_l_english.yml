@@ -1,29 +1,30 @@
 ﻿l_english:
- 
  ###############################################################
  # Carthage ideas
  ###############################################################
+
  CTG_ideas:0 "Carthaginian Ideas"
  CTG_ideas_start:0 "Carthaginian Traditions"
  CTG_ideas_bonus:0 "Carthaginian Ambitions"
  ctg_mediterranean_fleet:0 "Mediterranean Fleet"
- ctg_mediterranean_fleet_desc:0 "The Carthaginian fleet had to secure a strong trade empire across the Mediterranean"
+ ctg_mediterranean_fleet_desc:0 "The Carthaginian fleet had to secure a strong trade empire across the Mediterranean."
  ctg_galley_masters:0 "Galley Masters"
- ctg_galley_masters_desc:0 "We are masters of combat in shallow waters"
+ ctg_galley_masters_desc:0 "We are masters of combat in shallow waters."
  ctg_cartheginian_innovations:0 "Carthaginian Innovations"
- ctg_cartheginian_innovations_desc:0 "A reformed trade empire attracts muslim scholars from all over the known world"
+ ctg_cartheginian_innovations_desc:0 "A reformed trade empire attracts muslim scholars from all over the known world."
  ctg_mercenary_contracts:0 "Mercenary Contracts"
- ctg_mercenary_contracts_desc:0 "A permanent army isn't our best interests, so it is wise to keep tight bonds with reliable mercenaries"
+ ctg_mercenary_contracts_desc:0 "A permanent army isn't our best interests, so it is wise to keep tight bonds with reliable mercenaries."
  ctg_mercantilism:0 "Mercantilism"
- ctg_mercantilism_desc:0 "New Mercantilism policies to protect our new local economy"
+ ctg_mercantilism_desc:0 "New Mercantilism policies to protect our new local economy."
  ctg_spreading_civilsation:0 "Spreading Civilization"
- ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the Mediterranean"
+ ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the Mediterranean."
  ctg_fertile_lands:0 "Fertile lands"
- ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population"
+ ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population."
  
  ###############################################################
  # Barcid ideas
  ###############################################################
+
  KOB_ideas:0 "Barcid Ideas"
  KOB_ideas_start:0 "Barcid Traditions"
  KOB_ideas_bonus:0 "Barcid Ambitions"
@@ -41,29 +42,11 @@
  kob_aggressive_religious_policy_desc:0 "Bet you really didn't expect that one."
  kob_elephant_cavalry:0 "Elephants and Horses"
  kob_elephant_cavalry_desc:0 "Our nation is capable of using more than just horses as a shock force. We've got a tradition of utilising elephants in our armies, even crossing the alps with them."
- 
- ###############################################################
- # Mercenary Idea Group
- ###############################################################
- mercenary_ideas:0 "Mercenary Ideas"
- standard_payroll_system:0 "Standard Payroll System"
- standard_payroll_system_desc:0 "The employment of mercenenaries has been institutionalised into our national economy, leading to a standard paycheck the mercenaries can rely on."
- viable_career_option:0 "Viable Career Option"
- viable_career_option_desc:0 "Constant employment of mercenaries has led the life of a mercenary to be a viable career option for our people."
- trusted_partner_discounts:0 "Trusted Partner Discounts"
- trusted_partner_discounts_desc:0 "We have gained the favour and trust of certain contracting partners, allowing us to employ their companies' service for a cheaper penny than most other nations would."
- living_off_the_land:0 "Living off the Land"
- living_off_the_land_desc:0 "Mercenaries are accustomed to a life without intricate supply networks, and are experts at using the local resources to their advantage."
- mercenary_connection_networks:0 "Mercenary Connection Networks"
- mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without "
- local_land_knowledge:0 "Local Land Knowledge"
- local_land_knowledge_desc:0 "The mercenaries in our employment are experienced veterans and locals from the surrounding lands, giving us the knowledge of how to navigate these areas swiftly."
- prestigious_companies:0 "Prestigious Companies"
- prestigious_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with."
 
  ###############################################################
- # Elbian Confederation
+ # Elbian Confederation ideas
  ###############################################################
+ 
  ELB_ideas:0 "Elbian Ideas"
  ELB_ideas_start:0 "Elbian Traditions"
  ELB_ideas_finish:0 "Elbian Ambitions"
@@ -105,7 +88,7 @@
  unter_dem_doppeladler_desc:0 "'Under the Double Eagle' is a march composed by Josef Franz Wagner, an Austrian military bandmaster and composer.This march is referring to the double eagle in the coat of arms of the Austro-Hungarian empire."
 
  ###############################################################
- # Kingdom of God National Ideas 
+ # Kingdom of God ideas 
  ###############################################################
  
  KOG_ideas:0 "Kingdom of God Ideas"
@@ -236,7 +219,7 @@
  ful_fulani_jihads_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
 
  ###############################################################
- # Colonial tags 
+ # Colonial tags ideas
  ###############################################################
  
  COL_ideas:0 "Colombian Ideas"

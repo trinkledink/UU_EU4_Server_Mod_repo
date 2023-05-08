@@ -1295,6 +1295,10 @@ hereditary_religious_leadership_reform = {
 			}
 		}
 		add_government_reform = feudal_theocracy
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
 	}
 	ai = {
 		factor = 0
@@ -1328,6 +1332,10 @@ crown_leader_reform = {
 				}
 			}
 		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
 	}
 	ai = {
 		factor = 0
@@ -1354,6 +1362,10 @@ proclaim_republic_reform = {
 					id = flavor_gbr.20
 				}
 			}
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {

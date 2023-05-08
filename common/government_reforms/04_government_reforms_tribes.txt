@@ -773,6 +773,10 @@ tribe_becomes_monarchy_reform = {
 				}
 			}
 		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
+		}
 	}
 	ai = {
 		factor = 1
@@ -872,6 +876,10 @@ tribe_becomes_republic_reform = {
 					id = flavor_gbr.20
 				}
 			}
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 		if = {
 			limit = {
@@ -998,6 +1006,10 @@ tribe_becomes_theocracy_reform = {
 					id = flavor_gbr.20
 				}
 			}
+		}
+		hidden_effect = {
+			uu_special_color_effect = yes
+			uu_special_name_effect = yes
 		}
 	}
 	ai = {

@@ -7,8 +7,6 @@
  #Estate Privileges
  estate_dhimmi_piety:0 "Promote Religious Exchange"
  #Merc Companies
- uu_merc_frontrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YInfantry§!"
- uu_merc_backrow_tt:0 "Unlocks a new §GMercenary Company§! consisting of only §YArtillery§!"
  merc_cav_free_company:0 "Free Cav Company"
  merc_ideas_frontline:0 "Frontline Company"
  merc_ideas_cannons:0 "Backrow Company"

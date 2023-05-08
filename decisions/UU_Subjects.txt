@@ -1,0 +1,89 @@
+country_decisions = {
+    uu_recolorsubjects = {
+        color = { 232 48 2 }
+
+        potential = {
+            ai = no 
+            any_subject_country = { 
+                OR = {
+                    is_march = yes
+                    is_vassal = yes
+                }
+                NOT = { is_subject_of_type = daimyo_vassal }
+                NOT = { is_subject_of_type = appanage }
+                NOT = { has_country_flag = uu_overlord_colour }
+            }
+        }
+
+        allow = {
+            any_subject_country = { 
+                OR = {
+                    is_march = yes
+                    is_vassal = yes
+                }
+                NOT = { is_subject_of_type = daimyo_vassal }
+                NOT = { is_subject_of_type = appanage }
+                NOT = { has_country_flag = uu_overlord_colour }
+            }
+        }
+
+        effect = {
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        OR = {
+                            is_march = yes
+                            is_vassal = yes
+                        }
+                        NOT = { is_subject_of_type = daimyo_vassal }
+                        NOT = { is_subject_of_type = appanage }
+                        NOT = { has_country_flag = uu_overlord_colour }
+                    }
+                    change_country_color = { country = overlord }
+                    set_country_flag = uu_overlord_colour
+                }
+            }
+        }
+    }
+    uu_restore_color = {
+        color = { 232 48 2 }
+
+        potential = {
+            has_country_flag = uu_overlord_colour
+            OR = { #either a player nation, or fulfils the 'allow' conditions.
+                ai = no 
+                AND = {
+                    is_march = no
+                    is_vassal = no
+                }
+                is_subject_of_type = daimyo_vassal
+                is_subject_of_type = appanage
+            }
+        }
+
+        allow = {
+            OR = {
+                AND = {
+                    is_march = no
+                    is_vassal = no
+                }
+                is_subject_of_type = daimyo_vassal
+                is_subject_of_type = appanage
+            }  
+        }
+
+        effect = {
+            tooltip = {
+                restore_country_color = yes
+            }
+            hidden_effect = {
+                clr_country_flag = uu_overlord_colour
+                uu_special_color_effect = yes
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
