@@ -12,6 +12,9 @@ grand_captain_rejected = {
 }
 commandant_rejected = {
 }
+trinkle_hero_rejected = {
+}
+
 #canada
 totemism_resurgence = {
 	global_missionary_strength = 0.05
@@ -101,6 +104,10 @@ genstaff_panic_event = {
 
 genstaff_veterans_event = {
 	mil_tech_cost_modifier  = 0.125
+}
+
+genstaff_siegeleader_event = {
+
 }
 
 #DEBUG player uncon diplomat

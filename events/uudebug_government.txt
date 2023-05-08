@@ -185,6 +185,9 @@ country_event = {
 
 country_event = { #hidden band-aid bugfixer so republics PU'd via event become monarchies 
 	id = uu_government.999
+	title = uu_government.999.t 
+	desc = uu_government.999.d
+	
 	hidden = yes
 	trigger = {
 		is_lesser_in_union = yes
@@ -201,6 +204,6 @@ country_event = { #hidden band-aid bugfixer so republics PU'd via event become m
 		}
 	}
 	option = {
-		
+		name = uu_government.999.a
 	}
 }

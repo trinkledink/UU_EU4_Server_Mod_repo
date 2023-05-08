@@ -151,10 +151,10 @@ country_event = { #Hedgehog 1
 
     trigger = {
         capital_scope = {
-            region = north_german_region
-            NOT = { has_country_flag = uu_easter_egg_had_hedgehog_flag }
-            NOT = { num_of_ruler_traits = { amount = 3 }}
+            region = north_german_region 
         }
+        NOT = { has_country_flag = uu_easter_egg_had_hedgehog_flag }
+        NOT = { num_of_ruler_traits = { amount = 3 }}
     }
     mean_time_to_happen = {
         months = 4800
