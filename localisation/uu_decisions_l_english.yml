@@ -23,7 +23,7 @@
  #Buddhism Karma Decisions
  help_poor_title:0 "Help the Poor"
  help_poor_desc:0 "It is time we spent our resources to help those less fortunate"
- benefit_from_offerings_title:0 "Benefit from temple offerings"
+ benefit_from_offerings_title:0 "Benefit From Temple Offerings"
  benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
  #Advisor Event Checker
  advisor_events_title:0 "Advisor Events"
@@ -57,6 +57,7 @@
  #Subjects Decisions
  uu_recolorsubjects_title:0 "Change Subjects to your Map Colour"
   uu_recolorsubjects_desc:0 "Changes all vassals, marches, and client states to your map colour. Does not affect daimyos, appanages, eyalets, tributaries, junior partners, etc. \n§RWARNING: This may cause problems when subjects occupy provinces with your map colour.§!"
+  uu_overlord_colour_tt:0 "Do NOT have [Root.GetName]'s map colour"
  uu_restore_color_title:0 "Restore our Map Colour"
   uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
 

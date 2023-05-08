@@ -702,24 +702,23 @@ defensive_ideas = {
 	improved_body_armor = {
 		shock_damage_received = -0.1
 	}
+	defensive_mentality = {
+		garrison_size = 0.2
+		war_exhaustion_cost = -0.5
+	}
 	until_the_last_man = {
 		morale_damage_received = -0.1
 	}
-	defensive_mentality = {
-		defensiveness = 0.33
-		war_exhaustion_cost = -0.5
-	}
 	ditch_defense = {
 		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
-		garrison_size = 0.2
-	}
-	relentless_charge = {
-		garrison_damage = 0.2 #nerfed 
+		defensiveness = 0.33
 	}
 	terrain_defence  = {
 		fire_damage_received = -0.1
 	}
-	
+	relentless_charge = {
+		garrison_damage = 0.2 #nerfed 
+	}	
 	#until_the_last_man = {
 	#	morale_damage_received = -0.1
 	#}

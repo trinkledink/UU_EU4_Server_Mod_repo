@@ -143,3 +143,11 @@ uu_cossack_stole_dev = {
 	global_tax_modifier = -0.2
 	prestige = -1
 }
+
+#mali 
+uu_decline_of_mali = {
+	caravan_power = -0.33
+	stability_cost_modifier = 0.15
+	global_autonomy = 0.05
+	global_unrest = 1
+}

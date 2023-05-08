@@ -11,7 +11,10 @@ country_decisions = {
                 }
                 NOT = { is_subject_of_type = daimyo_vassal }
                 NOT = { is_subject_of_type = appanage }
-                NOT = { has_country_flag = uu_overlord_colour }
+                custom_trigger_tooltip = {
+                    tooltip = uu_overlord_colour_tt
+                    NOT = { has_country_flag = uu_overlord_colour }
+                }
             }
         }
 

@@ -7,6 +7,38 @@
 namespace = flavor_mal
 normal_or_historical_nations = yes
 
+country_event = { #UU added. Clone of disaster event for Mali mini-tags
+	id = flavor_mal.0
+	title = flavor_mal.9.t
+	desc = flavor_mal.9.d
+	picture = MALI_DECLINE_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = KBU 
+			tag = NIA 
+			tag = SOF 
+		}
+		NOT = { is_year = 1500 }
+	}
+
+	option = {
+		name = flavor_mal.0.a
+		add_stability = -1
+		add_country_modifier = {
+			name = uu_decline_of_mali
+			duration = -1
+		}
+		custom_tooltip = uu_can_form_mali_tt
+		set_country_flag = has_country_flag = uu_can_form_mali_flag	
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
 # Malian Authority Under Threat
 country_event = {
 	id = flavor_mal.1
@@ -58,7 +90,7 @@ country_event = {
 ########################################
 
 # Rise of Fulo
-province_event = {
+province_event = { ##UU modified
 	id = flavor_mal.2
 	title = flavor_mal.2.t
 	desc = flavor_mal.2.d
