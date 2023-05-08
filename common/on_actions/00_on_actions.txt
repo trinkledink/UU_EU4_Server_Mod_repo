@@ -3835,13 +3835,13 @@ on_five_year_pulse = {
 		100 = uuideagroups.2
 		100 = uuideagroups.3
 		100 = uuideagroups.4
-		#100 = uuideagroups.5
-		#100 = uuideagroups.6
+		#	100 = uuideagroups.5
+		#	100 = uuideagroups.6
 		100 = uuideagroups.7
 		100 = uuideagroups.8
 		100 = uuideagroups.9
 		100 = uuideagroups.10
-		#100 = uuideagroups.11
+		#	100 = uuideagroups.11
 
 		#Vanilla Mercenary Events		9 (6g 3b)
 		100 = ideagroups.2020
@@ -3853,7 +3853,18 @@ on_five_year_pulse = {
 		100 = ideagroups.2026
 		100 = ideagroups.2027
 		100 = ideagroups.2028
-		
+
+		#General Staff Ideas Events 	9 (6g 3b) 
+		100 = uuideagroups.20
+		100 = uuideagroups.21
+		100 = uuideagroups.22
+		100 = uuideagroups.23
+		100 = uuideagroups.24
+		100 = uuideagroups.25
+		100 = uuideagroups.26
+		100 = uuideagroups.27
+		100 = uuideagroups.28
+
 		1000 = 0
 	}
 

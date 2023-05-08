@@ -828,6 +828,9 @@ general_staff_ideas = { #UU new
 		yearly_army_professionalism = 0.01
 	}
 
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 

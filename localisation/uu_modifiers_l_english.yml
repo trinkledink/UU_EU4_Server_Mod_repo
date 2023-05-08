@@ -135,7 +135,19 @@
  savage_plunderers:0 "Savage Plunderers"
  lack_of_mercenaries:0 "Lack of Willing Men"
  letting_sleeping_dogs_lie:0 "Letting Sleeping Dogs Lie"
- mercenaries_running_amock:0 "Mercenaries Running Amock"
+ mercenaries_running_amock:0 "Mercenaries Running Amok"
+
+ ###############################################################
+ # General Staff Ideagroup Event Modifiers Localisation.
+ ###############################################################
+
+ genstaff_fire_event:0 "First-class Fire Tactics"
+ genstaff_shock_event:0 "First-Class Shock Tactics"
+ genstaff_maneuver_event:0 "First-Class Maneuver Tactics"
+ genstaff_stresstest_event:0 "Trustworthy Leadership"
+ genstaff_exceptional_admiralty_event:0 "Golden Age of Admiralty"
+ genstaff_panic_event:0 "Leadership Catastrophe"
+ genstaff_veterans_event:0 "Outdated Old Guard"
  
  ###############################################################
  # French Debuff
@@ -177,3 +189,4 @@
  uukbo_dynastic_admin_mod:0 "Enhanced Dynastic Administration"
  uukbo_meritocratic_admin_mod:0 "Enhanced Meritocratic Administration"
  uukbo_mossi_cavalry:0 "Mossi Cavalry"
+ uukbo_imperial_capital:0 "An Imperial Capital"

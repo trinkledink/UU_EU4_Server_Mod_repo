@@ -352,3 +352,307 @@ country_event = {
 ######################################################################
 # General Staff Idea Group Events
 ######################################################################
+
+country_event = { #Class of [GetYear]
+	id = uuideagroups.20
+	title = "uuideagroups.20.t"
+	desc = "uuideagroups.20.d"
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		NOT = {	
+			has_country_modifier = genstaff_fire_event 
+			has_country_modifier = genstaff_shock_event 
+			has_country_modifier = genstaff_maneuver_event 
+		}
+		employed_advisor = {
+			category = MIL
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.20.a"
+		add_prestige = 5
+		random_list = {
+			1 = {
+				add_country_modifier = {
+					name = genstaff_fire_event
+					duration = 1825
+				}
+			}
+			1 = {
+				add_country_modifier = {
+					name = genstaff_shock_event
+					duration = 1825
+				}
+			}
+			1 = {
+				add_country_modifier = {
+					name = genstaff_maneuver_event
+					duration = 1825
+				}
+			}
+		}		
+		
+	}
+}
+
+country_event = { #Siege Leader
+	id = uuideagroups.21
+	title = "uuideagroups.21.t"
+	desc = "uuideagroups.21.d"
+	picture = SWORD_OF_OSMAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		NOT = {	
+			has_country_modifier = genstaff_siegeleader_event
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = genstaff_siegeleader_event
+			duration = 10950 #30y, rare event
+			hidden = yes
+		}
+	}
+
+	option = {
+		name = "uuideagroups.21.a"
+		create_general = {
+			tradition = 20 
+			add_siege = 4
+		}	
+	}
+	option = {
+		name = "uuideagroups.21.b"	
+		create_general = {
+			tradition = 60
+		}	
+	}
+}
+
+country_event = { #System Stresstest Successful
+	id = uuideagroups.22
+	title = "uuideagroups.22.t"
+	desc = "uuideagroups.22.d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		is_at_war = yes
+		NOT = {	
+			has_country_modifier = genstaff_stresstest_event
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.22.a"
+		add_country_modifier = {
+			name = genstaff_stresstest_event
+			duration = 3650
+		}
+	}
+}
+
+country_event = { #AT and AP event
+	id = uuideagroups.23
+	title = "uuideagroups.23.t"
+	desc = "uuideagroups.23.d"
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.23.a"
+		add_army_professionalism = 0.01
+		add_army_tradition = 5
+	}
+}
+
+country_event = { #Advisor
+	id = uuideagroups.24
+	title = "uuideagroups.24.t"
+	desc = "uuideagroups.24.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.24.a"
+		add_meritocracy_effect = yes
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=quartermaster
+			advisor_type_if_not_state=quartermaster
+			scaled_skill = yes
+			discount=yes
+		}
+	}
+}
+
+country_event = { #Exceptional Admiralty 
+	id = uuideagroups.25
+	title = "uuideagroups.25.t"
+	desc = "uuideagroups.25.d"
+	picture = PORT_BLOCKADED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		navy_tradition = 80
+		num_of_heavy_ship = 3
+		NOT = { has_country_modifier = genstaff_exceptional_admiralty_event }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.25.a"
+		add_dip_power = 20
+		add_country_modifier = {
+			name = genstaff_exceptional_admiralty_event
+			duration = 3650
+		}
+	}
+}
+
+country_event = { #System failure
+	id = uuideagroups.26
+	title = "uuideagroups.26.t"
+	desc = "uuideagroups.26.d"
+	picture = SOLDIERS_FREEZING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		is_at_war = yes
+		NOT = {	
+			has_country_modifier = genstaff_panic_event
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.26.a"
+		add_country_modifier = {
+			name = genstaff_panic_event
+			duration = 730
+		}
+	}
+}
+
+country_event = { #Veterans dragging us down
+	id = uuideagroups.27
+	title = "uuideagroups.27.t"
+	desc = "uuideagroups.27.d"
+	picture = BABBLING_BAFFOON_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		NOT = {	
+			has_country_modifier = genstaff_veterans_event
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.27.a"
+		add_country_modifier = {
+			name = genstaff_veterans_event
+			duration = 3650
+		}
+	}
+	option = {
+		name = "uuideagroups.27.b"
+		add_stability = -1
+		add_army_tradition = -15
+	}
+}
+
+country_event = { #Betrayal 
+	id = uuideagroups.28
+	title = "uuideagroups.28.t"
+	desc = "uuideagroups.28.d"
+	picture = REFUGEES_ESCAPING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = general_staff_ideas
+		NOT = {	
+			has_country_modifier = genstaff_veterans_event
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "uuideagroups.28.a"
+		add_army_tradition = -10
+		if = {
+			limit = {
+				any_known_country = {
+					is_enemy = ROOT
+				}
+			}	
+			random_rival_country = {
+				add_army_tradition = 10
+			}
+		} else = {
+			random_known_country = {
+				add_army_tradition = 10
+			}
+		}
+	}
+}

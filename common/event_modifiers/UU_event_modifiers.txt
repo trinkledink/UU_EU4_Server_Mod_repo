@@ -74,6 +74,34 @@ mercenaries_running_amock = {
 	mercenary_discipline = -0.05
 }
 
+#GenStaff Ideagroup Event Modifiers 
+
+genstaff_fire_event = {
+	leader_land_fire = 1
+}
+genstaff_shock_event = {
+	leader_land_shock = 1
+}
+genstaff_maneuver_event = {
+	leader_land_manuever = 1
+}
+
+genstaff_stresstest_event = {
+	morale_damage_received = -0.1
+}
+
+genstaff_exceptional_admiralty_event = {
+	max_admiral_fire = 1
+	max_admiral_shock = 1
+}
+
+genstaff_panic_event = {
+	morale_damage_received = 0.1
+}
+
+genstaff_veterans_event = {
+	mil_tech_cost_modifier  = 0.125
+}
 
 #DEBUG player uncon diplomat
 player_uncon_diplomat_modifier = {
