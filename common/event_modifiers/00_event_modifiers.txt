@@ -12184,15 +12184,14 @@ joan_of_arc_beatified = {
 	tolerance_own = 1
 }
 
-sisters_takeover = { #no nerfing jeanne
+sisters_takeover = {
 	may_recruit_female_generals = yes
+	global_manpower_modifier = 0.2
 	female_advisor_chance = 1.0
 	church_privilege_slots = 1
 	church_loyalty_modifier = 0.05
 	tolerance_own = 1
 	tolerance_heretic = -3
-	fire_damage = 0.1
-	discipline = 0.05
 }
 
 # Mandala Modifiers
