@@ -1,5 +1,5 @@
 military_academies_act = {
-	monarch_power = MIL #UU change
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = aristocracy_ideas
@@ -10,7 +10,7 @@ military_academies_act = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	yearly_army_professionalism = 0.05 #UU change
+	yearly_army_professionalism = 0.005 #UU change
 	innovativeness_gain = 0.5 #UU change
 
 	effect = {}
