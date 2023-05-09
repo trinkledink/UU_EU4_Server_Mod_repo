@@ -35,6 +35,8 @@
   military_organization_desc:0 "The structure of the command of our military will be officially codified and standardized, making it easier for us to manage larger armies."
  uu_seasoned_veterans:0 "Seasoned Veterans"
   uu_seasoned_veterans_desc:0 "Employing seasoned veterans in non-combat roles of our army will facilitate the transmission of military knowledge across generations."
+ battlefield_teachings:0 "Battlefield Teachings"
+  battlefield_teachings_desc:0 "By observing every battle very carefully we are quick to learn from mistakes both we and our enemies make. Additionally it will make us able to adapt to new potential strategies much faster"
  #Economic Ideas 
  uu_national_bank:0 "National Bank"
   uu_national_bank_desc:0 "By establishing a central authority for financial matters, we will have better control over our nation's economy.\n§YThe "National Bank" event may fire, giving us a one-time bonus to make our economy healthier.§!\nInflation Reduction from Loan Repayment:§G -0.05§!"

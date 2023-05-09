@@ -11,7 +11,7 @@ aristocracy_ideas = { #Aristocratic Ideas
 	category = MIL
 
 	bonus = {
-		prestige_from_land = 1.0
+		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
@@ -27,7 +27,7 @@ aristocracy_ideas = { #Aristocratic Ideas
 	}
 	
 	military_traditions = {
-		mil_tech_cost_modifier  = -0.1
+		prestige_from_land = 1.0
 	}
 	local_nobility = {
 		global_autonomy = -0.05
@@ -42,8 +42,10 @@ aristocracy_ideas = { #Aristocratic Ideas
 		navy_tradition_decay = -0.01
 	}
 	international_nobility = {
-		drill_gain_modifier = 0.15
-		drill_decay_modifier = -0.15
+		nobles_privilege_slots = 1
+		rajputs_privilege_slots = 1
+		maratha_privilege_slots = 1
+		loyalty_change_on_revoked = 0.1
 	}
 	noble_resilience = {
 		cavalry_power = 0.15
@@ -470,12 +472,12 @@ spy_ideas = {
 
 	bonus = {
 		rebel_support_efficiency = 1
-		can_transfer_vassal_wargoal = yes			##UU Moved
 		discovered_relations_impact = -1
 	}
 	
 	claim_fabrication = {
 		can_claim_states = yes
+		can_transfer_vassal_wargoal = yes
 		can_fabricate_for_vassals = yes ##UU Added
 	}
 
@@ -487,7 +489,7 @@ spy_ideas = {
 	efficient_spies = {
 		spy_offence = 0.5
 		siege_ability = 0.1
-		fabricate_claims_cost = -0.25  ##UU Added
+		spy_action_cost_modifier = -0.25  ##UU Added
 	}	
 	
 	agent_training = {
@@ -586,8 +588,8 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		land_attrition = -0.15
-		movement_speed_onto_off_boat_modifier = 0.66
+		recover_army_morale_speed = 0.1
+		regiment_disembark_speed  = 0.66
 	}
 
 	invasion_logistics = { #UU
@@ -595,16 +597,15 @@ offensive_ideas = {
 		landing_penalty = -1
 	}
 	superior_firepower = {
-		morale_damage = 0.15
-		fire_damage = 0.1
+		fire_damage = 0.1		
 	}
 	glory_on_the_battlefield = {
-		artillery_barrage_cost = -0.25
+		morale_damage = 0.15
 		warscore_from_battles_modifier = 0.15
 	}
 	supply_trains = {
-		reinforce_speed = 0.33
-		transport_attrition = -0.33								 
+		transport_attrition = -0.33		
+		may_build_supply_depot = yes						 
 	}
 	engineer_corps = {
 		siege_ability = 0.20
@@ -615,7 +616,7 @@ offensive_ideas = {
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
-		recover_army_morale_speed = 0.15
+		artillery_barrage_cost = -0.25	
 	}
 	#glorious_arms = {
 	#	prestige_from_land = 1.0
@@ -693,14 +694,15 @@ defensive_ideas = {
 
 	bonus = {
 		hostile_attrition = 1
-		max_hostile_attrition = 1.5		##UU increased from 1
+		max_hostile_attrition = 2		##UU increased from 1
 	}
 
 	battlefield_commisions = {
-		army_tradition_from_battle = 0.5
+		global_garrison_growth = 0.33
+		may_refill_garrison = yes
 	}
 	improved_body_armor = {
-		shock_damage_received = -0.1
+		shock_damage_received = -0.15
 	}
 	defensive_mentality = {
 		garrison_size = 0.2
@@ -714,10 +716,10 @@ defensive_ideas = {
 		defensiveness = 0.33
 	}
 	terrain_defence  = {
-		fire_damage_received = -0.1
+		reinforce_speed = 0.33
 	}
 	relentless_charge = {
-		garrison_damage = 0.2 #nerfed 
+		garrison_damage = 0.25 #nerfed 
 	}	
 	#until_the_last_man = {
 	#	morale_damage_received = -0.1
@@ -797,28 +799,27 @@ general_staff_ideas = { #UU new
 	category = MIL 
 
 	bonus = {
+		leader_siege = 1
 		max_general_fire = 1
-		max_admiral_maneuver = 1
+		max_general_shock = 1
 	}
 	general_staff_fire = {
 		leader_land_fire = 1
-		leader_naval_fire = 1
-	}
-	shock_tactics = {
-		leader_land_shock = 1
-		leader_naval_shock = 1
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
 		leader_naval_manuever = 1
 	}
-	general_staff_siege = {
-		leader_siege = 1
-		#naval leader siege modifier does not exist.
+	shock_tactics = {
+		leader_land_shock = 1
+	}
+	battlefield_teachings = {
+		army_tradition_from_battle = 0.5
+		mil_tech_cost_modifier = -0.1
 	}
 	military_organization = {
 		land_forcelimit_modifier = 0.15
-		naval_forcelimit_modifier = 0.15
+		regiment_manpower_usage = -0.1
 	}
 	uu_seasoned_veterans = {
 		army_tradition_decay = -0.01
@@ -1569,7 +1570,6 @@ administrative_ideas = {
 	}
 
 	independent_legal_system_adm_idea = {	#Independent Legal System
-		stability_cost_modifier = -0.20
 		global_autonomy = -0.05
 	}
 	adaptability = {
@@ -1577,9 +1577,9 @@ administrative_ideas = {
 	}
 	administrative_council = {
 		adm_advisor_cost = -0.25 
+		monarch_admin_power = 1
 	}
 	bookkeeping = {
-		global_prosperity_growth = 0.03
 		state_maintenance_modifier = -0.25
 	}
 	great_works_project_adm_idea = { 		#The Great Works Project
@@ -1706,7 +1706,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		unjustified_demands = -0.5
+		vassal_manpower_bonus = 0.33
 	}
 
 	tribute_system = {
@@ -1721,7 +1721,7 @@ influence_ideas = {
 	
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
-		dip_tech_cost_modifier = -0.1
+		annexation_relations_impact = -0.5
 	}
 	buffer_states = {
 		diplomatic_upkeep = 2
@@ -1852,6 +1852,7 @@ court_ideas = {
 	}
 	dynamic_court = {
 		advisor_pool = 1
+		chance_to_inherit = 0.5
 	}
 	respected_authority = {
 		all_estate_possible_privileges = 1
