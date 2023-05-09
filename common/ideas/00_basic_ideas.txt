@@ -43,7 +43,7 @@ aristocracy_ideas = { #Aristocratic Ideas
 	}
 	international_nobility = {
 		nobles_privilege_slots = 1
-		rajputs_privilege_slots = 1
+		rajput_privilege_slots = 1
 		maratha_privilege_slots = 1
 		loyalty_change_on_revoked = 0.1
 	}
