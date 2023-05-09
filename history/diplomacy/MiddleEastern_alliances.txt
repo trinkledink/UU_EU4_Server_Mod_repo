@@ -115,14 +115,6 @@ vassal = {
 	end_date = 1830.1.1
 }
 
-# The Timurids - Khorasan (Ab� Sa'id)
-union = {
-	first = TIM
-	second = KHO
-	start_date = 1461.1.1
-	end_date = 1469.8.27
-}
-
 #Ardalan
 vassal = {
 	first = QOM
@@ -205,26 +197,11 @@ vassal = {
 	end_date = 1446.1.1
 }
 
-#Sistan
-vassal = {
-	first = TIM
-	second = SIS
-	start_date = 1444.1.1 #1383 
-	end_date = 1449.2.1 #Khorasan
-}
-
 vassal = {
 	first = KHO
 	second = SIS
 	start_date = 1449.2.1
 	end_date = 1461.1.1 #Timurids
-}
-
-vassal = {
-	first = TIM
-	second = SIS
-	start_date = 1461.1.1
-	end_date = 1469.2.4 #Nominally and intermittantly still vassal
 }
 
 vassal = {

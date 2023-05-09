@@ -536,7 +536,7 @@ spy_ideas = {
 diplomatic_ideas = { #UU removed
 	category = DIP
 	bonus = {
-		#reduced_stab_impacts = yes
+		reduced_stab_impacts = yes
 	}
 	
 	trigger = {
@@ -549,7 +549,7 @@ diplomatic_ideas = { #UU removed
 	cabinet = {
 		diplomatic_upkeep = 1
 	}
-		grand_banquets = {
+	grand_banquets = {
 		diplomats = 1
 	}
 	benign_diplomats = {
