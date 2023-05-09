@@ -101,6 +101,61 @@
  uu_han_hansa_cities_mod:0 "Hanseatic Trade Fleet"
  uu_han_kings_of_england:0 "King of England"
  uu_han_trade_fleet:0 "Hanseatic War Fleet"
+ 
+ ###############################################################
+ # Pomerania Mission Modifiers
+ ###############################################################
+
+ POM_kirche:0 "Pommersche Evangelische Kirche"
+ POM_unity_with_rome:0 "Unity with Rome"
+ STE_resisting_the_eagle:0 "Resisting the Eagle"
+ STE_wheat_war_resolved:0 "Wheat War Resolved"
+ POM_uniting_pomerania:0 "To Unite Pomerania"
+ POM_the_great:0 "The Great"
+ POM_surrounded_by_kinsmen:0 "Surrounded by Kinsmen"
+ POM_imperial_prince:0 "Imperial Prince"
+ POM_independence_mandated:0 "Independence Mandated"
+ WOL_golden_priveleges_modifier:0 "Golden Privileges"
+ POM_university_of_greifswald:0 "University of Greifswald"
+ POM_great_minds:0 "The Great Minds"
+ WOL_supporting_cities:0 "Supporting the Burghers"
+ POM_similar_customs:0 "Similar Customs"
+ POM_uniting_with_piasts:0 "Uniting with Piasts"
+ POM_Boguslaw:0 "Boguslaw"
+ POM_gdansk:0 "Growth of Local Port"
+ RUG_island_of_opportunity:0 "Island of Opportunity"
+ RUG_naval_supremacy:0 "Naval Supremacy"
+ POM_legacy_of_eric_modifier:0 "Claims on Scandinavia"
+ uu_pom_competent_marines:0 "Competent Marines"
+ uu_pom_strong_marines:0 "Baltic Marines"
+ uu_pom_hansa_destroyed:0 "Hanseatic Fleet"
+ POM_supporting_merchants:0 "Supported Cities" 
+
+ ###############################################################
+ # African Mission Modifiers
+ ###############################################################
+
+ uukbo_dynastic_struggle_modifier:0 "Idrisid-Dawudid Dynastic Struggle"
+ uukbo_fighting_syncretism:0 "Fighting Syncretism"
+ uukbo_strong_government:0 "Robust Government"
+ uukbo_thriving_empire:0 "A Thriving Empire"
+ uukbo_khalifa_mod:0 "Ruler Proclaimed as Khalifa"
+ UUKBO_FIGHTING_NOBILITY:0 "Fighting Nobility"
+ uukbo_colonist:0 "Into the Sahara"
+ uukbo_trade_modifier:0 "Trans-Saharan Trade Monopoly"
+ uukbo_ethiopia_merchant:0 "Control of the Eastern Routes"
+ uukbo_reforming_army_temp_mod:0 "Learning New Infantry Tactics"
+ uukbo_ports_mod:0 "Burgeoning Naval Industry"
+ uukbo_islamic_embassies:0 "Islamic Embassies"
+ uukbo_artillery_gaming:0 "African Gunpowder Empire"
+ uukbo_fortified_fezzan:0 "Fezzan Corridor Fortifications"
+ uukbo_sahel_hegemon_mod:0 "Sahelian Hegemon"
+ uukbo_dynastic_admin_mod:0 "Enhanced Dynastic Administration"
+ uukbo_meritocratic_admin_mod:0 "Enhanced Meritocratic Administration"
+ uukbo_mossi_cavalry:0 "Mossi Cavalry"
+ uukbo_imperial_capital:0 "An Imperial Capital"
+
+ uu_fulani_jihad_mod:0 "Fulani Jihad"
 
  ###############################################################
  # New Estuaries
@@ -167,26 +222,3 @@
  ###############################################################
 
  uu_cossack_stole_dev:0 "Raided by Neighbour"
-
- ###############################################################
- # African Mission Modifiers
- ###############################################################
- uukbo_dynastic_struggle_modifier:0 "Idrisid-Dawudid Dynastic Struggle"
- uukbo_fighting_syncretism:0 "Fighting Syncretism"
- uukbo_strong_government:0 "Robust Government"
- uukbo_thriving_empire:0 "A Thriving Empire"
- uukbo_khalifa_mod:0 "Ruler Proclaimed as Khalifa"
- UUKBO_FIGHTING_NOBILITY:0 "Fighting Nobility"
- uukbo_colonist:0 "Into the Sahara"
- uukbo_trade_modifier:0 "Trans-Saharan Trade Monopoly"
- uukbo_ethiopia_merchant:0 "Control of the Eastern Routes"
- uukbo_reforming_army_temp_mod:0 "Learning New Infantry Tactics"
- uukbo_ports_mod:0 "Burgeoning Naval Industry"
- uukbo_islamic_embassies:0 "Islamic Embassies"
- uukbo_artillery_gaming:0 "African Gunpowder Empire"
- uukbo_fortified_fezzan:0 "Fezzan Corridor Fortifications"
- uukbo_sahel_hegemon_mod:0 "Sahelian Hegemon"
- uukbo_dynastic_admin_mod:0 "Enhanced Dynastic Administration"
- uukbo_meritocratic_admin_mod:0 "Enhanced Meritocratic Administration"
- uukbo_mossi_cavalry:0 "Mossi Cavalry"
- uukbo_imperial_capital:0 "An Imperial Capital"

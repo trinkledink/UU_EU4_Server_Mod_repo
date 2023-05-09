@@ -186,3 +186,10 @@ uu_decline_of_mali = {
 	global_autonomy = 0.05
 	global_unrest = 1
 }
+
+#Sokoto
+uu_fulani_jihad_mod = {
+	land_morale = 0.15
+	manpower_recovery_speed = 0.15
+	war_exhaustion = -0.1
+}

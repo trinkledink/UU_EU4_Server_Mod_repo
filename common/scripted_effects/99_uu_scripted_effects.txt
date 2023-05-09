@@ -15,17 +15,23 @@ papal_cost = {
 }
 
 uu_special_color_effect = { #Applies specific colours to nations depending on gov't. or otherwise
-	if = { #Green Portugal
+	if = {
 		limit = {
 			tag = POR 
 			government = republic
 		}
-		change_country_color = { color = { 11 82 43 } }
-	} else_if = { #North Sea Empire from Norse events
+		change_country_color = { color = { 11 82 43 } } 		#Green Portugal
+	} else_if = {
+		limit = {
+			tag = SPA 
+			government = republic
+		}
+		change_country_color = { color = { 240 120 0 } }  		#Orange Spain
+	} else_if = {
 		limit = { 
 			has_country_flag = renamed_to_north_sea_empire 
 		}
-		change_country_color = { color = { 202 245 251 } }
+		change_country_color = { color = { 202 245 251 } } 		#North Sea Empire from Norse events
 	} else = {
 		restore_country_color = yes
 	}

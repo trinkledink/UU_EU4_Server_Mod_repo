@@ -1277,7 +1277,7 @@ colonial_brazil = {
 		trigger = {
 			tag = POR
 		}
-		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+		name = "COLONIAL_BRAZIL_TerraDoBrasil"
 	}
 	names = {
 		trigger = {
