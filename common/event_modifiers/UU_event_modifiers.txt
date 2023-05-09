@@ -193,3 +193,12 @@ uu_fulani_jihad_mod = {
 	manpower_recovery_speed = 0.15
 	war_exhaustion = -0.1
 }
+#cults 
+uu_shaman_vision_quest = {
+	
+}
+#kitara
+
+uu_kitara_colonies = {
+	colony_development_boost = 1
+}

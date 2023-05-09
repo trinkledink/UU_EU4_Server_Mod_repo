@@ -1449,7 +1449,7 @@ passport_to_merchants_policy = {
 		full_idea_group = trade_ideas
 	}
 	
-	mercantilism_cost = -0.2
+	caravan_power = 0.33
 	global_own_trade_power = 0.1
 
 	effect = {}

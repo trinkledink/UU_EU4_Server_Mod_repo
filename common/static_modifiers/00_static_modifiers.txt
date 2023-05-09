@@ -472,7 +472,7 @@ slaves_raided = {
 # Multiplied with positive religious tolerance
 tolerance = {
 	local_unrest = -1
-	local_culture_conversion_cost = -0.05 #UU
+	#local_culture_conversion_cost = -0.05 #UU
 }
 
 # Multiplied with negative religious tolerance
@@ -2169,6 +2169,7 @@ diplomatic_reputation = {
 }
 
 tolerance_own = {
+	culture_conversion_time = -0.05 #uu added
 }
 
 tolerance_heretic = {

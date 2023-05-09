@@ -219,6 +219,16 @@
  ful_fulani_jihads_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
 
  ###############################################################
+ # Kitara
+ ###############################################################
+ 
+ kit_riches_of_the_rawenzori:0 "Riches of the Rawenzori"
+  kit_riches_of_the_rawenzori_desc:0 "The Rawenzori Mountains hold vast amount of the resources that have not been properly prospected until now. The high quality metals allow for excellent military goods"
+ kit_nile_trade:0 "The Nile Trade"
+  kit_nile_trade_desc:0 "We are at the source of the Nile, one of the most important trade lines of africa. With rapid urbanization among the great lakes and more and more wares being shipped downstream this puts us in an excellent position to control trade"
+   
+ 
+ ###############################################################
  # Colonial tags ideas
  ###############################################################
  

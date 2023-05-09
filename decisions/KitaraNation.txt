@@ -86,10 +86,16 @@ country_decisions = {
 			add_accepted_culture = ganda
 			add_accepted_culture = masaba
 			add_accepted_culture = rwandan
-			add_splendor = 800
+			add_country_modifier = {
+				name = uu_kitara_colonies
+				duration = 7300
+			}
 			set_country_flag = formed_kitara_flag
 			create_colony_mission_reward = {
 				province = 4059
+			}
+			create_colony_mission_reward = {
+				province = 4054
 			}
 			create_colony_mission_reward = {
 				province = 4077

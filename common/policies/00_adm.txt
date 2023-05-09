@@ -870,8 +870,8 @@ overseas_dominions = {
 		full_idea_group = expansion_ideas
 	}	
 	
-	reduced_liberty_desire = 15
-	global_tariffs = 0.3 #UU change
+	vassal_manpower_bonus = 0.15
+	global_tariffs = 0.25 #UU change
 	
 	effect = {}
 	removed_effect = {}
@@ -2118,8 +2118,8 @@ zealous_court_act = {
 		full_idea_group = religious_ideas 
 	}
 	
-	warscore_cost_vs_other_religion = -0.05
-	tolerance_own = 1 
+	warscore_cost_vs_other_religion = -0.1
+	max_absolutism_effect = 0.2
 
 	effect = {}
 	removed_effect = {}
