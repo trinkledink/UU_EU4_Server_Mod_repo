@@ -6,6 +6,9 @@
  U.U_el_dorado:0 "El Dorado"
  #Estate Privileges
  estate_dhimmi_piety:0 "Promote Religious Exchange"
+ estate_church_sok_fulani_jihad:0 "§JProclaim Jihad§!"
+ estate_church_sok_fulani_jihad_desc:0 "There are still many realms of unbelievers, and kingdoms where monarchs call themselves Muslims yet raise the flag of a worldly kingdom above the banner of Islam. These unbelievers will not triumph over our state."
+ estate_church_sok_fulani_jihad_tt:0 "§G+25%§! Manpower Recovery Speed when at war with non-Muslims."
  #Merc Companies
  merc_cav_free_company:0 "Free Cav Company"
  merc_ideas_frontline:0 "Frontline Company"

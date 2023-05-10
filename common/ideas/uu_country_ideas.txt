@@ -38,7 +38,6 @@ PRU_ideas = {
 		tolerance_heretic = 1
 	}
 }
-
 LOT_ideas = {
 	start = {
 		infantry_power = 0.1
@@ -78,7 +77,6 @@ LOT_ideas = {
 		administrative_efficiency = 0.05
 	}
 }
-
 RUS_ideas = {
 	start = {
 		core_creation = -0.10
@@ -309,8 +307,8 @@ SPI_ideas = {
 		defensiveness = 0.25
 	}
 	the_shroud_of_turin = { #effect in SAV_ideas
-#		papal_influence = 1
-#		prestige = 0.5
+		#papal_influence = 1
+		#prestige = 0.5
 	}
 	spi_royal_sardinian_army = {
 		discipline = 0.05					#was 0.03
@@ -329,7 +327,7 @@ SPI_ideas = {
 }
 TUN_ideas = {
 	start = {
-		may_perform_slave_raid = yes
+		naval_attrition = -0.25
 		naval_forcelimit_modifier = 0.25	
 	}
 	bonus = {
@@ -368,7 +366,7 @@ TUN_ideas = {
 }
 MOR_ideas = {
 	start = {
-		may_perform_slave_raid = yes
+		naval_attrition = -0.25
 		naval_forcelimit_modifier = 0.25
 	}
 	bonus = {
@@ -451,7 +449,6 @@ KON_ideas = {
 		discipline = 0.05
 	}
 }
-
 irish_ideas = { #idk why it isnt IRE_ideas, it was like this when I found it
 	start = {
 		land_morale = 0.1
@@ -535,7 +532,6 @@ ADU_ideas = {
 		rival_border_fort_maintenance = -0.25
 	}
 }
-
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
@@ -654,249 +650,6 @@ SIA_ideas = { #preserved from 1.34
 	}
 }
 
-#Colonial
-CAN_ideas = {
-	start = {
-		naval_forcelimit_modifier = 0.25
-		land_attrition = -0.15
-	}
-	bonus = {
-		legitimacy = 1
-		republican_tradition = 0.3
-	}
-	trigger = {
-		tag = CAN
-	}
-	free = yes
-	
-	can_hudson_bay_company = {
-		merchants = 1
-		global_trade_power = 0.15
-	}
-	can_loyalist_bastion = {
-		army_tradition_decay = -0.01
-	}
-	can_the_metis = {
-		diplomatic_reputation = 1
-		native_assimilation = 0.50
-	}
-	can_quebec_act = {
-		num_accepted_cultures = 1
-		religious_unity = 0.30
-	}
-	can_from_sea_to_sea = {
-		global_colonial_growth = 25	
-	}
-	can_colonial_militias = {
-		global_manpower_modifier = 0.15
-		land_morale = 0.10
-	}
-	can_indigenous_marksmen = {
-		fire_damage = 0.10
-	}
-}
-
-QUE_ideas = {
-	start = {
-		land_morale = 0.10
-		tolerance_own = 2
-	}
-	
-	bonus = {
-		diplomatic_upkeep = 1
-	}
-	
-	trigger = {
-		tag = QUE
-	}
-	free = yes
-	
-		
-	que_coureurs_des_bois = {
-		production_efficiency = 0.1
-	}	
-	que_seigneurial_system = {
-		global_tax_modifier = 0.15
-		nobles_loyalty_modifier = 0.1
-	}
-	que_european_city_planning = {
-		build_cost = -0.1
-	}
-	que_fortifications_of_quebec = {
-		defensiveness = 0.25
-		garrison_size = 0.20
-	}
-	que_college_of_quebec = {
-		idea_cost = -0.1
-	}
-	que_voltigeurs = {
-		discipline = 0.05
-		infantry_cost = -0.15
-	}
-	que_jesuit_missions = {
-		global_missionary_strength = 0.02
-	}
-}
-COL_ideas = {
-	start = {
-		cav_to_inf_ratio = 0.3
-		cavalry_power = 0.20
-	}
-	
-	bonus = {
-		cavalry_shock = 1
-	}	
-
-	trigger = {
-		tag = COL
-	}
-	free = yes
-	
-	col_federation = {
-		republican_tradition = 0.3
-	}
-	col_working_spirit = {
-		production_efficiency = 0.1
-	}
-	col_drilling = {
-		discipline = 0.05
-	}
-	col_immigrant_recruits = {
-		global_regiment_cost = -0.15
-	}
-	col_caribbean_to_pacific = {
-		movement_speed = 0.2
-	}
-	col_gran_colombia = {
-		core_creation = -0.25
-	}
-	col_proud_latin_american = {
-		land_morale = 0.1
-	}
-}
-
-BRZ_ideas = {
-	start = {
-		colonists = 1
-		global_colonial_growth = 20
-	}
-	
-	bonus = {
-		global_trade_goods_size_modifier = 0.15
-	}	
-
-	trigger = {
-		tag = BRZ
-	}
-	free = yes
-	
-	brz_plantations = {
-		build_cost = -0.15
-	}
-	brz_home_of_the_amazon = {
-		land_attrition = -0.5
-	}
-	brz_migration_target = {
-		global_manpower_modifier = 0.33
-	}
-	brz_brazilian_corps = {
-		infantry_power = 0.1
-		shock_damage_received = -0.15
-	}
-	brz_multi_cultural = {
-		num_accepted_cultures = 1
-	}
-	brz_brazilian_empire = {
-		governing_capacity_modifier = 0.15 
-	}
-	brz_conscription = {
-		land_forcelimit_modifier = 0.25
-	}
-}
-
-LAP_ideas = {
-	start = {
-		global_tax_modifier = 0.15
-		stability_cost_modifier = -0.2
-	}
-	
-	bonus = {
-		development_cost = -0.1
-	}	
-
-	trigger = {
-		tag = LAP
-	}
-	free = yes
-	
-	lap_rich_plains = {
-		colonist_placement_chance = 0.05
-	}
-	lap_educated_immigrants = {
-		global_institution_spread = 0.2
-		global_unrest = -2
-	}
-	lap_european_generals = {
-		army_tradition = 0.5
-		leader_land_manuever = 2
-	}
-	lap_silver_river = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	lap_strong_cattle = {
-		land_morale = 0.1
-		global_supply_limit_modifier = 0.2	
-	}
-	lap_tango_argentino = {
-		prestige = 1
-	}
-	lap_defensive_tactics = {
-		fire_damage_received = -0.1
-	}
-}
-PEU_ideas = {
-	start = {
-		global_missionary_strength = 0.02
-		war_exhaustion = -0.05
-	}
-	
-	bonus = {
-		devotion = 0.5
-	}	
-
-	trigger = {
-		tag = PEU
-	}
-	free = yes
-	
-	peu_influencal_church = {
-		church_loyalty_modifier = 0.1
-		monthly_reform_progress_modifier = 0.1
-	}
-	peu_andean_forts = {
-		defensiveness = 0.2
-		hostile_attrition = 1
-	}
-	peu_terrace_farming = {
-		development_cost = -0.15
-	}
-	peu_inca_gold = {
-		global_trade_goods_size_modifier = 0.1
-		inflation_reduction = 0.1
-	}
-	peu_servants_of_god = {
-		global_tax_modifier = 0.1
-		manpower_in_true_faith_provinces = 0.25
-	}
-	peu_papal_relations = {
-		tolerance_own = 2
-		papal_influence = 2
-	}
-	peu_cultural_control = {
-		culture_conversion_cost = -0.15
-		discipline = 0.05
-	}
-}
 #Scandinavia
 SCA_norway_ideas = {
 	start = {
@@ -944,7 +697,6 @@ SCA_norway_ideas = {
 		movement_speed_in_fleet_modifier = 0.20
 	}
 }
-
 SCA_sweden_ideas = {
 	start = {
 		discipline = 0.05
@@ -988,7 +740,6 @@ SCA_sweden_ideas = {
 		yearly_absolutism = 1
 	}
 }
-
 SCA_denmark_ideas = {
 	start = {
 		development_cost = -0.10
@@ -1033,8 +784,8 @@ SCA_denmark_ideas = {
 		legitimacy = 0.5
 	}
 }
-#AUH
-AUH_ideas = {
+
+AUH_ideas = { #Austria-Hungary
 	start = {
 		land_morale = 0.10
 		global_autonomy = -0.05
@@ -1076,9 +827,7 @@ AUH_ideas = {
 		manpower_in_accepted_culture_provinces = 0.33#25
 	}
 }
-
-#HSN/ARB
-HSN_ideas = {
+HSN_ideas = { #Hisn Kayfa + Arabia
 	start = {
 		shock_damage_received = -0.1
 		global_tax_modifier = 0.1
@@ -1116,9 +865,7 @@ HSN_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 } 
-
-#ELB
-ELB_ideas = {
+ELB_ideas = { #Elbian
 	start = {
 		advisor_cost = -0.15
 		development_cost = -0.1
@@ -1161,9 +908,7 @@ ELB_ideas = {
 		innovativeness_gain = 0.5
 	}
 }
-
-#CTG
-CTG_ideas = {
+CTG_ideas = { #Carthage
 	start = {
 		naval_morale = 0.2
 		global_trade_power = 0.2
@@ -1207,9 +952,7 @@ CTG_ideas = {
 		global_manpower_modifier = 0.15
 	}
 }
-
-#KOB
-KOB_ideas = {
+KOB_ideas = { #Barcid
 	start = {
 		cavalry_power = 0.15
 		culture_conversion_cost = -0.25
@@ -1256,12 +999,9 @@ KOB_ideas = {
 	kob_elephant_cavalry = {
 		cavalry_cost = -0.10
 		cav_to_inf_ratio = 0.2
-	}
-	
+	}	
 }
-
-#PAP
-PAP_ideas = {
+PAP_ideas = { #Papal State
 	start = {
 		diplomatic_reputation = 1
 		#religious_unity = 0.25
@@ -1304,9 +1044,7 @@ PAP_ideas = {
 		manpower_in_true_faith_provinces = 0.15
 	}
 }
-
-#KOG
-KOG_ideas = {
+KOG_ideas = { #Kingdom of God
 	start = {
 		diplomatic_reputation = 1
 		#religious_unity = 0.25
@@ -1349,8 +1087,7 @@ KOG_ideas = {
 		manpower_in_true_faith_provinces = 0.25
 	}
 }
-#POM
-POM_ideas = {
+POM_ideas = { #Pomerania
 	start = {
 		light_ship_cost = -0.2
 		land_morale = 0.1
@@ -1393,8 +1130,7 @@ POM_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 }
-#FKN
-FKN_ideas = {
+FKN_ideas = { #Franconia
 	start = {
 		prestige = 1		##UU moved
 		global_manpower_modifier = 0.2
@@ -1479,8 +1215,6 @@ KIT_ideas = { #Kitara
 		discipline = 0.05
 	}
 }
-
-
 BTS_ideas = { #Betsimisaraka
 	start = {  
 		global_sailors_modifier = 0.2
@@ -1601,4 +1335,297 @@ FUL_ideas = { #Fulo
 		global_missionary_strength = 0.02
 	}
 }
+SOK_ideas = { #Sokoto + Massina
+	start = {
+		global_regiment_cost = -0.1
+		prestige_from_land = 0.5
+	}
 
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		OR = {
+			tag = SOK
+			tag = ZAF 
+			has_country_flag = fulani_jihad_state
+		}
+	}
+
+	free = yes		#will be added at load.
+
+	wandering_scholars = {
+		missionaries = 1
+		church_influence_modifier = 0.1
+	}
+
+	sok_unrighteous_kings = { 
+		warscore_cost_vs_other_religion = -0.2
+	}
+
+	sok_african_caliphate = {
+		monthly_piety_accelerator = 0.001
+		land_morale = 0.1
+	}
+
+	sok_six_hundred_madrasahs = { 
+		global_heathen_missionary_strength = 0.03
+		church_loyalty_modifier = 0.15
+	}
+
+	sok_jihad_as_reform = {
+		idea_cost = -0.1
+		reform_progress_growth = 0.15
+	}
+
+	community_of_the_faithful = {
+		num_accepted_cultures = 2
+	}
+	
+	sok_fulani_jihad = {
+		church_privilege_slots = 2
+	}	
+}
+
+
+#Colonial
+CAN_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.25
+		land_attrition = -0.15
+	}
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = CAN
+	}
+	free = yes
+	
+	can_hudson_bay_company = {
+		merchants = 1
+		global_trade_power = 0.15
+	}
+	can_loyalist_bastion = {
+		army_tradition_decay = -0.01
+	}
+	can_the_metis = {
+		diplomatic_reputation = 1
+		native_assimilation = 0.50
+	}
+	can_quebec_act = {
+		num_accepted_cultures = 1
+		religious_unity = 0.30
+	}
+	can_from_sea_to_sea = {
+		global_colonial_growth = 25	
+	}
+	can_colonial_militias = {
+		global_manpower_modifier = 0.15
+		land_morale = 0.10
+	}
+	can_indigenous_marksmen = {
+		fire_damage = 0.10
+	}
+}
+QUE_ideas = {
+	start = {
+		land_morale = 0.10
+		tolerance_own = 2
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = QUE
+	}
+	free = yes
+	
+		
+	que_coureurs_des_bois = {
+		production_efficiency = 0.1
+	}	
+	que_seigneurial_system = {
+		global_tax_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+	}
+	que_european_city_planning = {
+		build_cost = -0.1
+	}
+	que_fortifications_of_quebec = {
+		defensiveness = 0.25
+		garrison_size = 0.20
+	}
+	que_college_of_quebec = {
+		idea_cost = -0.1
+	}
+	que_voltigeurs = {
+		discipline = 0.05
+		infantry_cost = -0.15
+	}
+	que_jesuit_missions = {
+		global_missionary_strength = 0.02
+	}
+}
+COL_ideas = {
+	start = {
+		cav_to_inf_ratio = 0.3
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		cavalry_shock = 1
+	}	
+
+	trigger = {
+		tag = COL
+	}
+	free = yes
+	
+	col_federation = {
+		republican_tradition = 0.3
+	}
+	col_working_spirit = {
+		production_efficiency = 0.1
+	}
+	col_drilling = {
+		discipline = 0.05
+	}
+	col_immigrant_recruits = {
+		global_regiment_cost = -0.15
+	}
+	col_caribbean_to_pacific = {
+		movement_speed = 0.2
+	}
+	col_gran_colombia = {
+		core_creation = -0.25
+	}
+	col_proud_latin_american = {
+		land_morale = 0.1
+	}
+}
+BRZ_ideas = {
+	start = {
+		colonists = 1
+		global_colonial_growth = 20
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}	
+
+	trigger = {
+		tag = BRZ
+	}
+	free = yes
+	
+	brz_plantations = {
+		build_cost = -0.15
+	}
+	brz_home_of_the_amazon = {
+		land_attrition = -0.5
+	}
+	brz_migration_target = {
+		global_manpower_modifier = 0.33
+	}
+	brz_brazilian_corps = {
+		infantry_power = 0.1
+		shock_damage_received = -0.15
+	}
+	brz_multi_cultural = {
+		num_accepted_cultures = 1
+	}
+	brz_brazilian_empire = {
+		governing_capacity_modifier = 0.15 
+	}
+	brz_conscription = {
+		land_forcelimit_modifier = 0.25
+	}
+}
+LAP_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		stability_cost_modifier = -0.2
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}	
+
+	trigger = {
+		tag = LAP
+	}
+	free = yes
+	
+	lap_rich_plains = {
+		colonist_placement_chance = 0.05
+	}
+	lap_educated_immigrants = {
+		global_institution_spread = 0.2
+		global_unrest = -2
+	}
+	lap_european_generals = {
+		army_tradition = 0.5
+		leader_land_manuever = 2
+	}
+	lap_silver_river = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	lap_strong_cattle = {
+		land_morale = 0.1
+		global_supply_limit_modifier = 0.2	
+	}
+	lap_tango_argentino = {
+		prestige = 1
+	}
+	lap_defensive_tactics = {
+		fire_damage_received = -0.1
+	}
+}
+PEU_ideas = {
+	start = {
+		global_missionary_strength = 0.02
+		war_exhaustion = -0.05
+	}
+	
+	bonus = {
+		devotion = 0.5
+	}	
+
+	trigger = {
+		tag = PEU
+	}
+	free = yes
+	
+	peu_influencal_church = {
+		church_loyalty_modifier = 0.1
+		monthly_reform_progress_modifier = 0.1
+	}
+	peu_andean_forts = {
+		defensiveness = 0.2
+		hostile_attrition = 1
+	}
+	peu_terrace_farming = {
+		development_cost = -0.15
+	}
+	peu_inca_gold = {
+		global_trade_goods_size_modifier = 0.1
+		inflation_reduction = 0.1
+	}
+	peu_servants_of_god = {
+		global_tax_modifier = 0.1
+		manpower_in_true_faith_provinces = 0.25
+	}
+	peu_papal_relations = {
+		tolerance_own = 2
+		papal_influence = 2
+	}
+	peu_cultural_control = {
+		culture_conversion_cost = -0.15
+		discipline = 0.05
+	}
+}

@@ -80,3 +80,51 @@ estate_burghers_elb_improved_workshops = {
 		factor = 1000
 	}
 }
+
+estate_church_sok_fulani_jihad = {
+	icon = privilege_cawa_offensive_fighters
+	max_absolutism = 5 #positive value.
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.15
+	is_valid = {
+		has_idea = sok_fulani_jihad
+		religion_group = muslim 
+	}
+	can_select = {
+		OR = {
+			has_idea = sok_fulani_jihad
+			religion_group = muslim
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_church_sok_fulani_jihad_tt
+	}
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	modifier_by_land_ownership = {
+		manpower_in_true_faith_provinces = 0.75
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				NOT = { religion_group = root }
+				war_with = root
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.25
+		}
+	}
+	penalties = {
+		relation_with_heathens = -75
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

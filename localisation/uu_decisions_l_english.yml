@@ -60,5 +60,7 @@
   uu_overlord_colour_tt:0 "Do NOT have [Root.GetName]'s map colour"
  uu_restore_color_title:0 "Restore our Map Colour"
   uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
+ uu_restore_color_overlord_title:0 "Restore Subjects' Map Colours"
+  uu_restore_color_overlord_desc:0 "Changes all subjects back to their original map colours, unless an override exists."
 
  

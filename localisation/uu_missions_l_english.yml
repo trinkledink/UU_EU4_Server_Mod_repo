@@ -125,7 +125,7 @@
  uu_elbification_stop_tt:0 "§YWe will put measures in place to preserve the Czech culture.§!" 
 
  #Estate Privilege
- estate_burghers_elb_improved_workshops:0 "Improved Workshops"
+ estate_burghers_elb_improved_workshops:0 "§OElbian Improved Workshops§!"
  estate_burghers_elb_improved_workshops_desc:0 "Allow use of innovative tools for our workshops" 
  estate_burghers_elb_improved_workshops_mod:0 "Improved Workshops"
  estate_burghers_elb_improved_workshops_tooltip:0 "All Provinces with a §YWorkshop§! or §YCounting House§! will receive additional §G20% production efficiency§!" 
@@ -139,7 +139,7 @@
  ctg_expand_western_trade_routes_title:0 "Expand Trade Westwards"
   ctg_expand_western_trade_routes_desc:0 "Controlling the Baleares and western trade centers puts us in an advantageous position for expanding our economical and political sphere westwards."
  ctg_the_berber_question_title:0 "The Berber Question"
-  ctg_the_berber_question_desc:0 "Carthage is safe on the waters and the narrow passes east, but the question remainds how we should deal with our western neighbours sharing our African coastline."
+  ctg_the_berber_question_desc:0 "Carthage is safe on the waters and the narrow passes to the east, but the question remainds how we should deal with our western neighbours sharing our African coastline."
  ctg_plus_ultra_carthagena_title:0 "Plus Ultra Carthagena"
   ctg_plus_ultra_carthagena_desc:0 "A new continent has been discovered! The tales of these faraway foreign lands intrigue our great men and merchants alike. We should conquer a port in the West to pave the way for new discoveries."
  ctg_mapping_the_south_title:0 "Mapping the South"

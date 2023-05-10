@@ -219,7 +219,7 @@
  ful_fulani_jihads_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
 
  ###############################################################
- # Kitara
+ # Kitara ideas
  ###############################################################
  
  kit_riches_of_the_rawenzori:0 "Riches of the Rawenzori"
@@ -227,7 +227,24 @@
  kit_nile_trade:0 "The Nile Trade"
   kit_nile_trade_desc:0 "We are at the source of the Nile, one of the most important trade lines of africa. With rapid urbanization among the great lakes and more and more wares being shipped downstream this puts us in an excellent position to control trade"
    
- 
+ ###############################################################
+ # Sokoto ideas
+ ###############################################################
+
+ SOK_ideas:0 "Fulani Jihad State Ideas"
+ SOK_ideas_start:0 "Jihad State Traditions"
+ SOK_ideas_bonus:0 "Fulani Jihad Ambition"
+ sok_unrighteous_kings:0 "Unrighteous Kings"
+ sok_unrighteous_kings_desc:0 "'The government of a country is the government of its king without question. If the king is a Muslim, his land is Muslim; if he is an unbeliever, his land is a land of unbelievers. In these circumstances, anyone must leave it for another country.'\n - Usman dan Fodio, 1st Caliph of Sokoto"
+ sok_african_caliphate:0 "Commander of the Faithful"
+ sok_african_caliphate_desc:0 "The followers of Usman dan Fodio, founder of the Sokoto Caliphate, gave him this Arabic title, which he passed down to his successors as well."
+ sok_six_hundred_madrasahs:0 "Six Hundred Madrasas of Seku Amadu"
+ sok_six_hundred_madrasahs_desc:0 "To further the spread of Islam in our nation, we will build mosques and madrasas in every city."
+ sok_jihad_as_reform:0 "Jihad as Reform"
+ sok_jihad_as_reform_desc:0 "The primary purpose of the Fulani jihads was to spread Islam in defiance of the heathen kings who sought to ban it, but a secondary reason for the uprising was to enact social change. Reforms were created to counter problems such as goods shortages; increase literacy; and defending against the encroaching colonizers from beyond Africa."
+ sok_fulani_jihad:0 "Fulani Revolution"
+ sok_fulani_jihad_desc:0 "We must not forget why we established this nation in the first place. Though we have thrown off the shackles of the corrupt Muslim aristocracies and heathen rulers before us, there are still many realms of unbelievers, and kingdoms where monarchs call themselves Muslims yet raise the flag of a worldly kingdom above the banner of Islam. These unbelievers will not triumph over our state.\n§YUnlocks a unique estate privilege for the Ulema.§!"
+
  ###############################################################
  # Colonial tags ideas
  ###############################################################

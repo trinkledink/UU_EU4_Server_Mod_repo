@@ -11,10 +11,7 @@ country_decisions = {
                 }
                 NOT = { is_subject_of_type = daimyo_vassal }
                 NOT = { is_subject_of_type = appanage }
-                custom_trigger_tooltip = {
-                    tooltip = uu_overlord_colour_tt
-                    NOT = { has_country_flag = uu_overlord_colour }
-                }
+                NOT = { has_country_flag = uu_overlord_colour }
             }
         }
 
@@ -26,11 +23,15 @@ country_decisions = {
                 }
                 NOT = { is_subject_of_type = daimyo_vassal }
                 NOT = { is_subject_of_type = appanage }
-                NOT = { has_country_flag = uu_overlord_colour }
+                custom_trigger_tooltip = {
+                    tooltip = uu_overlord_colour_tt
+                    NOT = { has_country_flag = uu_overlord_colour }
+                }
             }
         }
 
         effect = {
+            custom_tooltip = uu_recolorsubjects_desc
             hidden_effect = {
                 every_subject_country = {
                     limit = {
@@ -87,6 +88,36 @@ country_decisions = {
 
         ai_will_do = {
             factor = 1
+        }
+    }
+
+    uu_restore_color_overlord = {
+        color = { 232 48 2 }
+
+        potential = {
+            ai = no 
+            any_subject_nation = {
+                has_country_flag = uu_overlord_colour
+            }
+        }
+
+        allow = {
+            any_subject_nation = {
+                has_country_flag = uu_overlord_colour
+            }
+        }
+
+        effect = {
+            custom_tooltip = uu_restore_color_overlord_desc
+            hidden_effect = {
+                every_subject_nation = {
+                    limit = { has_country_flag = uu_overlord_colour }
+                    hidden_effect = {
+                        clr_country_flag = uu_overlord_colour
+                        uu_special_color_effect = yes
+                    }
+                }
+            }
         }
     }
 }

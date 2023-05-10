@@ -17,6 +17,7 @@ country_event = {
 		remove_country_modifier = "usury_forgiven"
 		remove_country_modifier = "papal_sanction_for_holy_war"
 		remove_country_modifier = "papal_legate"
+		set_country_flag = uu_papal_creed_flag
 	}
 	
 	option = {
@@ -65,5 +66,9 @@ country_event = {
 		name = "UU_papal_creed.EVTOPTG"
 		add_stability = 1
 		add_devotion = -25
+	}
+
+	after = {
+		clr_country_flag = uu_papal_creed_flag
 	}
 }

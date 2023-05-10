@@ -55,6 +55,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			stability = 2
 			futa_jallon_area = {
 				is_core = ROOT
 				owned_by = ROOT
