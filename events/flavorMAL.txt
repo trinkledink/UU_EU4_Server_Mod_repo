@@ -3502,6 +3502,6 @@ country_event = { #Pink Mali
 		change_country_color = { color = { 255 55 185 } }
 	}
 	option = {	#nah
-		name = flavor_mal.69.a
+		name = flavor_mal.69.b
 	}
 }
