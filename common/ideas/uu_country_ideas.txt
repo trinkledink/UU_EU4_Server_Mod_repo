@@ -581,7 +581,7 @@ ORM_ideas = {
 
 	bonus = {
 		merchants = 1
-		trade_range = 0.25
+		trade_range_modifier = 0.25
 	}
 	
 	trigger = {
