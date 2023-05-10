@@ -125,7 +125,7 @@
  uu_elbification_stop_tt:0 "§YWe will put measures in place to preserve the Czech culture.§!" 
 
  #Estate Privilege
- estate_burghers_elb_improved_workshops:0 "§OElbian Improved Workshops§!"
+ estate_burghers_elb_improved_workshops:0 "§OImproved Workshops§!"
  estate_burghers_elb_improved_workshops_desc:0 "Allow use of innovative tools for our workshops" 
  estate_burghers_elb_improved_workshops_mod:0 "Improved Workshops"
  estate_burghers_elb_improved_workshops_tooltip:0 "All Provinces with a §YWorkshop§! or §YCounting House§! will receive additional §G20% production efficiency§!" 

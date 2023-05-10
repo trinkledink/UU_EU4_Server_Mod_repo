@@ -35,6 +35,7 @@ world_port = {
     global_modifiers = {
         navy_tradition_decay = -0.002
 		global_foreign_trade_power = 0.03
+        allowed_marine_fraction = 0.02
     }
 }
 

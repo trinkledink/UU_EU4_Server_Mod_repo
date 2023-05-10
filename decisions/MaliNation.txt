@@ -42,8 +42,11 @@ country_decisions = {
 				area = manding_area
 				area = massina_area
 				area = baghena_area
-				area = niger_bend_area
-				area = jenne_area
+				area = jolof_area
+				province_id = 1134
+				province_id = 1132
+				province_id = 1133
+				province_id = 1128
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -76,15 +79,28 @@ country_decisions = {
 				owned_by = ROOT
 				type = all
 			}
-			niger_bend_area = {
+			jolof_area = {
 				is_core = ROOT
 				owned_by = ROOT
 				type = all
 			}
-			jenne_area = {
+			1134 = { #Jenne
 				is_core = ROOT
 				owned_by = ROOT
-				type = all
+			}
+			1132 = { #Timbuktu
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			OR = {
+				1128 = { #Taghaza
+					is_core = ROOT
+					owned_by = ROOT
+				}
+				1133 = { #Gao
+					is_core = ROOT
+					owned_by = ROOT
+				}
 			}
 			#religion = sunni
 		}
