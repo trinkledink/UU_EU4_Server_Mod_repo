@@ -115,6 +115,17 @@ country_decisions = {
 				limit = { has_dlc = "Origins" }
 				swap_non_generic_missions = yes
 			}
+			hidden_effect = { #Pink Mali
+				if = {
+					limit = {
+						was_tag = KBU 
+						ai = no
+					}
+					country_event = {
+						id = flavor_mal.69
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

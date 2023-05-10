@@ -153,7 +153,65 @@ sokoto_caliphate = {
 
 	trigger = {
 		tag = SOK 
-		religion = sunni 
+		religion_group = muslim
+		has_reform = feudal_theocracy
+	}
+}
+
+generic_africa_caliphate = {
+	rank = {
+		1 = IMAMATE
+		2 = IMAMATE
+		3 = UU_CALIPHATE
+	}
+
+	
+	ruler_male = {
+		1 = UU_ALMAMI
+		2 = UU_ALMAMI
+		3 = CALIPH
+	}
+
+	ruler_female = {
+		1 = IMAM_fem
+		2 = IMAM_fem
+		3 = CALIPHA
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = guinea_region
+				region = niger_region
+				region = sahel_region
+			}
+		}
+		NOT = { tag = SOK }
+		religion_group = muslim
 		has_reform = feudal_theocracy
 	}
 }

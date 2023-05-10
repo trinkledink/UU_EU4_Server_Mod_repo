@@ -30,10 +30,7 @@
  not_siberian_tribe_desc:0 "One or more clans headed by an elder with a council of other leaders to help him make decisions related to their respective areas."
  UU_MAI:0 "Mai" #King of Kanem Bornu
  UU_CALIPHATE:0 "Caliphate" #For Sokoto
- #Mali stuff 
- uu_decline_of_mali:0 "Decline of Mali"
- flavor_mal.0.a:0 "We will restore Mali to its former glory."
- uu_can_form_mali_tt:0 "§YThis modifier will be removed upon forming Mali.§!"
+ UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies
  #Colonial Names
  COLONIAL_CANADA_NouvelleEcosse:0 "Nouvelle-Écosse"
  COLONIAL_CANADA_Acadie:0 "Acadie"

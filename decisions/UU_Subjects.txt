@@ -96,13 +96,13 @@ country_decisions = {
 
         potential = {
             ai = no 
-            any_subject_nation = {
+            any_subject_country = {
                 has_country_flag = uu_overlord_colour
             }
         }
 
         allow = {
-            any_subject_nation = {
+            any_subject_country = {
                 has_country_flag = uu_overlord_colour
             }
         }
@@ -110,7 +110,7 @@ country_decisions = {
         effect = {
             custom_tooltip = uu_restore_color_overlord_desc
             hidden_effect = {
-                every_subject_nation = {
+                every_subject_country = {
                     limit = { has_country_flag = uu_overlord_colour }
                     hidden_effect = {
                         clr_country_flag = uu_overlord_colour

@@ -9,8 +9,8 @@ normal_or_historical_nations = yes
 
 country_event = { #UU added. Clone of disaster event for Mali mini-tags
 	id = flavor_mal.0
-	title = flavor_mal.9.t
-	desc = flavor_mal.9.d
+	title = flavor_mal.0.t
+	desc = flavor_mal.0.d
 	picture = MALI_DECLINE_eventPicture
 
 	is_triggered_only = yes
@@ -3485,5 +3485,23 @@ country_event = {
 				type = kaaba
 			}
 		}
+	}
+}
+
+
+country_event = { #Pink Mali
+	id = flavor_mal.69
+	title = flavor_mal.69.t
+	desc = flavor_mal.69.desc
+	picture = MALI_RULER_eventPicture
+	is_triggered_only = yes
+
+	option = {	#yea
+		name = flavor_mal.69.a
+		set_country_flag = uu_pink_mali_flag
+		change_country_color = { color = { 255 55 185 } }
+	}
+	option = {	#nah
+		name = flavor_mal.69.a
 	}
 }
