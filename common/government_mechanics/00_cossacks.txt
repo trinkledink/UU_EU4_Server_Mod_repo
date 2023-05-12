@@ -127,17 +127,17 @@ cossacks_mechanic = {
 				create_unit_forcelimit_percentage = {
 					type = cavalry
 					special_unit_category = cossacks
-					force_limit_percentage = 0.2
+					force_limit_percentage = 0.1
 				}
 				add_war_exhaustion = -2
 			}
 			cooldown_years = 0
 			ai_chance = {
 				factor = 1
-				modifier = {
-					factor = 100
-					needs_regiment_type = cossacks
-				}
+				#modifier = {
+				#	factor = 100
+				#	needs_regiment_type = cossacks
+				#}
 				modifier = {
 					factor = 100
 					is_at_war = yes
