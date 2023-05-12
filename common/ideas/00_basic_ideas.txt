@@ -215,20 +215,22 @@ theocracy_gov_ideas = { #Divine Ideas
 	}
 	by_the_grace_of_god = {
 		fire_damage_received = -0.1
+		war_taxes_cost_modifier = -1
 	}
 	friends_in_high_places = {
 		leader_cost = -0.15 
-		war_exhaustion_cost = -0.33
+		max_absolutism = 5
 	}
 	flesh_is_weak = {
 		land_morale = 0.15
 	}
 	alpha_and_omega = {
-		enforce_religion_cost = -0.3
 		culture_conversion_cost = -0.1
+		culture_conversion_time = -0.25
 	}
 	conviction_of_sin = {
 		global_unrest = -2
+		enforce_religion_cost = -0.5
 	}
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.25

@@ -134,6 +134,19 @@ colonial_canada = {
 	# Specific
 	names = {
 		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+				primary_culture = english
+			}
+			any_owned_province = {
+				area = newfoundland_area
+			}
+		}
+		name = "COLONIAL_CANADA_Newfoundland"
+	}
+	names = {
+		trigger = {
 			primary_culture = english
 			any_owned_province = {
 				OR = {
@@ -185,19 +198,6 @@ colonial_canada = {
 			tag = BRU
 		}
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-				primary_culture = english
-			}
-			any_owned_province = {
-				area = newfoundland_area
-			}
-		}
-		name = "COLONIAL_CANADA_Newfoundland"
 	}
 	names = {
 		trigger = {

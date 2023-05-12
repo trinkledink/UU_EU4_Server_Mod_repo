@@ -31,6 +31,9 @@ uukbo_free_1 = {
                 duration = 5475 #15y
             }
         }
+        ai_weight = {
+            factor = 75
+        }
     }
     uukbo_reign_in_the_kingmakers = {
         icon = mission_have_two_subjects
@@ -55,7 +58,9 @@ uukbo_free_1 = {
                 name = kbo_death_to_kingmakers
                 duration = -1
             }
-
+        }
+        ai_weight = {
+            factor = 250
         }
     }
     uukbo_reform_bureaucracy = {
@@ -237,7 +242,7 @@ uukbo_lock_1 = {
 	}
     uukbo_lock_c1r7 = {
 		icon = mission_locked_mission
-		required_missions = { uukbo_conquer_hausa }
+		required_missions = { uukbo_lock_c2r6 }
 		position = 7
 		trigger = {
 			custom_trigger_tooltip = {
@@ -368,6 +373,9 @@ uukbo_free_2 = {
                     duration = 7300
                 }
             }
+        }
+        ai_weight = {
+            factor = 200
         }
     }
     uukbo_develop_ngazargamu = {
@@ -923,6 +931,9 @@ uukbo_free_3 = {
                 loyalty = -30
             }
         }
+        ai_weight = {
+            factor = 75
+        }
     } 
     uukbo_enforce_islamic_orthodoxy = {
         icon = mission_into_persia_1
@@ -959,6 +970,9 @@ uukbo_free_3 = {
                 duration = -1
             }
         }
+        ai_weight = {
+            factor = 200
+        }
     }
     uukbo_khalifa = {
         icon = mission_mosque
@@ -990,6 +1004,9 @@ uukbo_free_3 = {
                 name = uukbo_khalifa_mod
                 duration = -1
             }
+        }
+        ai_weight = {
+            factor = 200
         }
     }
     uukbo_hajj = {
@@ -1169,6 +1186,9 @@ uukbo_free_4 = {
             add_army_tradition = 20
             create_general = { tradition = 60 }
         }
+        ai_weight = {
+            factor = 400
+        }
     }
 
     uukbo_reconquer_kanem = {
@@ -1218,6 +1238,12 @@ uukbo_free_4 = {
             2288 = {
                 change_culture = ROOT
             }
+            2286 = {
+                change_culture = ROOT
+            }
+        }
+        ai_weight = {
+            factor = 400
         }
     }
     uukbo_military_reform = {
