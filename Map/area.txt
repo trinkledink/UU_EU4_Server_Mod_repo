@@ -1602,7 +1602,7 @@ kasai_area = { #5
 	4083 4087 4091 4092 4093
 }
 
-sankuru_area = { #3
+sankuru_area = {  #3
 	4089 4090 4096
 }
 
@@ -1877,7 +1877,7 @@ kanem_area = { #5
     1158 1159 2286 2287 2288
 }
 
-adamawa_plateau_area = { #4
+adamawa_plateau_area = { 5008  #4
     1161 1162 1249 2285
 }
 
@@ -1897,7 +1897,7 @@ atacora_oueme_area = { #5
     1140 1143 2291 2292 2295
 }
 
-gulf_of_guinea_area = { #4
+gulf_of_guinea_area = { 5009  #4
     1151 1163 1164 1165
 }
 
@@ -1931,6 +1931,14 @@ coastal_kongo = { #5
 
 kongo_area = { #5
 	798 1169 1170 1901 2949
+}
+
+central_congo_area = { 	#UU
+	5010 5011 5012 5015
+}
+
+tshuapa_area = { #UU
+	5013 5014 5016
 }
 
 angola_namibia_area = { #5

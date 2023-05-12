@@ -385,6 +385,7 @@ fur = {
 				has_terrain = farmlands
 				has_terrain = mountain
 				continent = south_america
+				continent = africa 			#UU addition
 				region = carribeans_region
 				region = south_africa_region
 				region = australia_region

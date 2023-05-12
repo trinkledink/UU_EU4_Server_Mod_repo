@@ -15,6 +15,12 @@
  #SON Formation
  songhai_nation_title:0 "Unite the Songhai"
  songhai_nation_desc:0 "The Songhai people have been under foreign domination for too long. It is time to become a strong kingdom in our own right, and forge our own Empire to span the Sahel!"
+ #African Caliphate Formations
+ uu_sokoto_nation_title:0 "Establish the Sokoto Caliphate"
+ uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ uu_kick_out_fulani_scholar_title:0 "Ban the Fulani Preachers"
+ uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
+ uu_allow_sokoto_decision_tt:0 "Has the country modifier '§YFulani Preacher Accepted§!' from the event '§YFulani Preachers§!', which fires in the early 1500s."
  #Military Dictatorship
  disolve_elections_reform:0 "Dissolve National Elections"
  disolve_elections_reform_desc:0 "The continuation of elections in the republic only dilutes our hold on power." 
@@ -27,13 +33,13 @@
  benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
  #Advisor Event Checker
  advisor_events_title:0 "Advisor Events"
- advisor_events_desc:0 "Events triggered by your advisors this game"
+ advisor_events_desc:0 "Events triggered by your Level 3+ advisors this game, as well as some other important ones."
  #El Dorado Search
  U.U_search_for_el_dorado_title:0 "Start the search for El Dorado"
  U.U_search_for_el_dorado_desc:0 "We may invest some of our money and troops and maybe find the legendary city of El Dorado"
  is_searching_el_dorado:0 "Is searching for El Dorado"
  #MJL Change Muslim School
- mjl_change_muslim_school_decision_tt:0 "Trigger event allowing the change of muslim school."
+ mjl_change_muslim_school_decision_tt:0 "Change the Muslim school that our country follows."
  mjl_change_muslim_school_title:0 "Change School"
  mjl_change_muslim_school_desc:0 "Change School"
  mjl_events.EVTNAME5:0 "Change School"

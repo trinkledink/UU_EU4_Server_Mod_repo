@@ -1858,8 +1858,8 @@ dutch_republic = {
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
 		max_absolutism = 10
-		has_voc_indiamen = yes
-		allowed_voc_indiamen_fraction = 0.2
+		#has_voc_indiamen = yes
+		#allowed_voc_indiamen_fraction = 0.2
 	}
 
 	removed_effect = {

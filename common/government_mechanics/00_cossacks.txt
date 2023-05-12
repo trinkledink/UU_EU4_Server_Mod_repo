@@ -9,17 +9,17 @@ cossacks_mechanic = {
 		cossacks_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 3
+			base_monthly_growth = 1
 		}
 		cossacks_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 3
+			base_monthly_growth = 1
 		}
 		cossacks_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 3
+			base_monthly_growth = 1
 		}
 	}
 	
@@ -30,26 +30,20 @@ cossacks_mechanic = {
 			cost = 100
 			trigger = {
 				has_neighbor = yes
+				any_neighbor_country = { 
+					NOT = { truce_with = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 			effect = {
 				random_neighbor_country = {
 					limit = {
 						NOT = { truce_with = ROOT }
+						NOT = { overlord_of = ROOT }
+						NOT = { is_subject_of = ROOT }
 					}
 					save_event_target_as = source_country
-				}
-				if = {
-					limit = {
-						#use NOT here because changing the scopt to a non-existent country will fail anyway, giving us the check we want
-						NOT = {
-							event_target:source_country = {
-								exists = yes
-							}
-						}
-					}
-					random_neighbor_country = {
-						save_event_target_as = source_country
-					}
 				}
 				random_owned_province = {
 					add_random_development = 3

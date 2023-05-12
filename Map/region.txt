@@ -548,7 +548,7 @@ central_africa_region = {
 		katanga_area
 		zambia_area
 		luba_area
-		sankuru_area
+		#sankuru_area #UU moved
 		tanzania_area
 		kenya_area
 		buzinza_area
@@ -578,6 +578,9 @@ kongo_region = {
 		matamba_area
 		lower_kasai
 		kasai_area
+		sankuru_area #uu moved here
+		tshuapa_area #new 
+		central_congo_area #new 
 	}
 	monsoon = {
 		00.02.01

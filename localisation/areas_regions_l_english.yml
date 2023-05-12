@@ -2855,6 +2855,8 @@
  new_darfur_area:0 "Darfur"
  kalahari_area:0 "Kalahari"
  guangzhou_area:0 "Pearl Delta"
+ central_congo_area:0 "Central Congo Basin"
+ tshuapa_area:0 "Tshuapa"
 
  cameroon_node:0 "Cameroon"
  trade_company_cameroon:0 "Cameroon Charter"

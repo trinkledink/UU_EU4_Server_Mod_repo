@@ -715,7 +715,7 @@ defensive_ideas = {
 		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
 		defensiveness = 0.33
 	}
-	terrain_defence  = {
+	supply_trains = {
 		reinforce_speed = 0.33
 	}
 	relentless_charge = {

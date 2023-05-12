@@ -1659,8 +1659,8 @@ stadthalter_monarchy_reform = {
 		heavy_ship_power = 0.1
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
-		has_voc_indiamen = yes
-		allowed_voc_indiamen_fraction = 0.2
+		#has_voc_indiamen = yes
+		#allowed_voc_indiamen_fraction = 0.2
 		no_stability_loss_on_monarch_death = yes
 	}
 
@@ -3352,10 +3352,12 @@ musa_rule = {
 			have_had_reform = musa_rule
 		}
 	}
-	modifiers = {
+	modifiers = { #buffed
 		advisor_pool = 1
-		stability_cost_modifier = -0.05
+		stability_cost_modifier = -0.1
 		legitimacy = 0.5
+		heir_chance = 0.5
+		vassal_income = 0.15
 	}
 
 	ai = {
@@ -3427,15 +3429,15 @@ polish_elective_monarchy = {
 		custom_attributes = {
 			has_polish_election = yes
 			locked_government_type = yes
-	}
+		}
 	}
 
 	conditional = {
 		allow = { NOT = { has_dlc = "Res Publica" } }
-	custom_attributes = {
-		locked_government_type = yes
+		custom_attributes = {
+			locked_government_type = yes
+		}
 	}
-}
 	conditional = {
 		allow = {
 			OR = {
