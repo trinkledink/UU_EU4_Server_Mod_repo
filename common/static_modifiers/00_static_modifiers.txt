@@ -311,7 +311,7 @@ patriarch_authority_global = {
 pasha_state = {
 	local_governing_cost = -0.2
 	min_local_autonomy = 20
-	state_maintenance_modifier = -0.33
+	local_state_maintenance_modifier = -0.33
 	local_autonomy = -0.1
 	local_tolerance_of_heathens = 10
 }
@@ -472,7 +472,6 @@ slaves_raided = {
 # Multiplied with positive religious tolerance
 tolerance = {
 	local_unrest = -1
-	#local_culture_conversion_cost = -0.05 #UU
 }
 
 # Multiplied with negative religious tolerance
@@ -1492,6 +1491,11 @@ same_religion_subject_bonus_mod = {
 	production_efficiency = 0.15
 }
 
+eyalet_modifier = {
+	global_manpower = -5
+	land_forcelimit	= -5
+}
+
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
@@ -2034,7 +2038,7 @@ galleass_ship = {
 caravel_ship = {
 	movement_speed_in_fleet_modifier = 1 
 	naval_attrition = -0.25
-	global_ship_trade_power = 0.33
+	ship_trade_power_modifier = 0.33
 }
 
 voc_indiamen_ship = {
@@ -2104,8 +2108,8 @@ expand_administation_modifier = {
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
 	stability_cost_modifier = 1.0
+	ae_impact = 0.5
 	improve_relation_modifier = -0.5
-	administrative_efficiency = -0.33  ##UU Change
 	min_autonomy = 50  ##UU Change
 	yearly_corruption = 1.5  ##UU Change
 	monthly_militarized_society = -1.0
@@ -2113,7 +2117,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_1 = -1
 	monthly_prussian_militarized_society_2 = -1
 	monthly_prussian_militarized_society_3 = -1
-	#administrative_efficiency = -0.5
+	administrative_efficiency = -0.33  ##UU Change
 	monthly_ottoman_decadence = 2
 }
 

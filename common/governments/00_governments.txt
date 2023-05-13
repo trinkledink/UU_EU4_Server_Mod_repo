@@ -616,7 +616,6 @@ republic = {
 				council_of_the_indies_reform
 				legislative_assembly_reform
 				national_constituent_reform
-				disolve_elections_reform #new
 				national_assembly_reform
 			}
 		}

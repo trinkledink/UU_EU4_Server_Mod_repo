@@ -3,21 +3,21 @@ country_decisions = {
 		potential = {
 			has_reform = military_dictatorship_reform
 		}
-		# allow = {
-			# NOT = {
-				# has_country_modifier = recent_military_coup
-			# }
-			# has_reform = disolve_elections_reform
-		# }
+		allow = {
+			OR = {
+				NOT = { adm = 3 }
+				NOT = { dip = 3 }
+				NOT = { mil = 3 }
+			}
+		}
 		effect = {
 			kill_ruler = yes
 			add_mil_power = -50
 			add_republican_tradition = -20
 			add_stability = -1
-			# add_country_modifier = {
-				# name = recent_military_coup
-				# duration = 14600 #40 years
-			# }
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }
