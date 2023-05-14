@@ -797,10 +797,11 @@ chaplains_of_the_fleet = {
 	}
 }
 
-multilingual_diplomats = {
+multilingual_diplomats = { #unused
 	monarch_power = DIP
 	
 	potential = {
+		always = no
 		has_idea_group = humanist_ideas
 		has_idea_group = diplomatic_ideas
 	}
@@ -1237,6 +1238,7 @@ black_chamber_act = {
 diplomatic_defence_act = { #unused
 	monarch_power = DIP
 	potential = {
+		always = no
 		has_idea_group = diplomatic_ideas
 		has_idea_group = defensive_ideas
 	}
@@ -1582,6 +1584,7 @@ appeal_to_old_powers_policy = { #unused
 	monarch_power = DIP
 	
 	potential = {
+		always = no
 		has_idea_group = indigenous_ideas
 		has_idea_group = diplomatic_ideas
 	}
@@ -1726,6 +1729,7 @@ the_smooth_integration_act = { #unused
 	monarch_power = DIP
 	
 	potential = {
+		always = no
 		has_idea_group = infrastructure_ideas
 		has_idea_group = diplomatic_ideas 
 	}

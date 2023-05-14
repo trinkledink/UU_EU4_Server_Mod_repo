@@ -467,6 +467,7 @@ local_army_organisation = {
 underhanded_diplomacy_act = { #unused
 	monarch_power = MIL
 	potential = {
+		always = no
 		has_idea_group = diplomatic_ideas
 		has_idea_group = offensive_ideas
 	}
@@ -519,6 +520,7 @@ the_tenures_abolition_act = { #unused
 	monarch_power = MIL
 
 	potential = {
+		always = no
 		has_idea_group = diplomatic_ideas
 		has_idea_group = aristocracy_ideas
 	}

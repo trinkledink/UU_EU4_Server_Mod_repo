@@ -641,6 +641,7 @@ the_education_act = {
 policy_of_calculate_delay = { #unused
 	monarch_power = ADM
 	potential = {
+		always = no
 		has_idea_group = religious_ideas
 		has_idea_group = diplomatic_ideas
 	}
@@ -1210,6 +1211,7 @@ the_dissolution_act = { #unused
 	monarch_power = ADM
 
 	potential = {
+		always = no
 		has_idea_group = diplomatic_ideas
 		has_idea_group = economic_ideas
 	}
