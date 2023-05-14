@@ -3659,10 +3659,10 @@ province_event = {
 				limit = { is_eligible_for_trade_good = { trade_goods = copper } }
 				calculate_trade_goods_price = { trade_goods = copper }
 			}
-			if = { 
-				limit = { is_eligible_for_trade_good = { trade_goods = gold } }
-				calculate_trade_goods_price = { trade_goods = gold }
-			}
+			#if = { 
+			#	limit = { is_eligible_for_trade_good = { trade_goods = gold } }
+			#	calculate_trade_goods_price = { trade_goods = gold }
+			#}
 			if = { 
 				limit = { is_eligible_for_trade_good = { trade_goods = iron } }
 				calculate_trade_goods_price = { trade_goods = iron }
@@ -3843,15 +3843,15 @@ province_event = {
 			factor = 0
 		}
 	}
-	#gold
-	option = {
-		name = flavor_gbr.200.gold
-		trigger = { is_eligible_for_trade_good = { trade_goods = gold } }
-		purchase_trade_goods = { trade_goods = gold }
-		ai_chance = {
-			factor = 0
-		}
-	}
+	#gold UU REMOVED
+	#option = { 
+	#	name = flavor_gbr.200.gold
+	#	trigger = { is_eligible_for_trade_good = { trade_goods = gold } }
+	#	purchase_trade_goods = { trade_goods = gold }
+	#	ai_chance = {
+	#		factor = 0
+	#	}
+	#}
 	#iron
 	option = {
 		name = flavor_gbr.200.iron

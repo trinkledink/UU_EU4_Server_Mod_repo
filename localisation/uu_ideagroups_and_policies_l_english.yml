@@ -10,7 +10,7 @@
  great_works_project_adm_idea:0 "Great Works Project"
  great_works_project_adm_idea_desc:0 "It is time for us, now, to invest in ourselves through infrastructure and prove what great marvels can be born of mankind's creation."
  #Mercenary Ideas
- mercenary_ideas:0 "Mercenary Ideas"
+ mercenary_ideas:0 "Mercenary Ideas" #duplicate from vanilla since 1.35.
  living_off_the_land:0 "Living off the Land"
   living_off_the_land_desc:0 "Mercenaries are accustomed to a life without intricate supply networks, and are experts at using the local resources to their advantage."
  standard_payroll_system:0 "Standard Payroll System"
@@ -27,6 +27,7 @@
   prestigious_companies_desc:0 "The companies in our employment have gained fame and renown, they are an established fighting force that other nations do not want to mess with.\n§YUnlocks a unique Mercenary Company consisting of only Artillery.§!"
  #General Staff Ideas
  general_staff_ideas:0 "General Staff Ideas"
+ general_staff_ideas_bonus:0 "Full General Staff Ideas"
  general_staff_fire:0 "Firearms Training"
   general_staff_fire_desc:0 "Our officers should learn to recognize that every firearm or cannon is different and will thus know best how to exploit their strengths in the field."
  general_staff_siege:0 "Architecture Studies"
@@ -54,6 +55,8 @@
  #Offensive Ideas
  invasion_logistics:0 "Invasion Logistics"
   invasion_logistics_desc:0 "Behind every successful invasion is solid logistics. By developing comprehensive logistics plans beforehand, our soldiers will be able to perform operations with higher efficiency."
+ sufficient_preparations:0 "Adequate Provisions"
+  sufficient_preparations_desc:0 "Our troops fight best when they are well-fed. Even if it creates extra expenses, we must stock our ships and camps with enough supplies to keep our troops from going hungry."
  #Quantity Ideas
  expanded_dockyard_crews:0 "Expanded Dockyard Crews"
   expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."

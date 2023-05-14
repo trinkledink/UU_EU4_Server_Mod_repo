@@ -2418,7 +2418,8 @@ swedish_military_reforms = {
 
 swedish_mercenary_core = {
 	merc_maintenance_modifier = -0.1
-	mercenary_manpower = 0.5
+	mercenary_manpower = 0.33 #uu changed
+	trade_range_modifier = 0.25 #uu changed
 }
 
 swedish_naval_reforms = {
@@ -4172,8 +4173,9 @@ diplo_fuax_pas = {
 	diplomatic_reputation = -1
 }
 
-mercenaries_to_the_standard = {
-	mercenary_manpower = 0.5
+mercenaries_to_the_standard = { #uu changed
+	mercenary_manpower = 0.25
+	trade_range_modifier = 0.25
 }
 
 for_freedom = {
@@ -4258,8 +4260,9 @@ trust_from_mercs = {
 	merc_maintenance_modifier = -0.10
 }
 
-glut_of_mercs = {
-	mercenary_manpower = 0.5
+glut_of_mercs = { #uu changed
+	mercenary_manpower = 0.25
+	trade_range_modifier = 0.25 
 }
 
 generous_terms = {

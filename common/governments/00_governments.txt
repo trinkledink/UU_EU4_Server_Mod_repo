@@ -926,6 +926,7 @@ tribal = {
 				matrilineal_system
 				feudal_tribe
 				great_man
+				not_siberian_tribe
 			}
 		}
 		tribal_cultural_values = {

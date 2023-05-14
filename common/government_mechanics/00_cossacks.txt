@@ -46,7 +46,9 @@ cossacks_mechanic = {
 					save_event_target_as = source_country
 				}
 				random_owned_province = {
-					add_random_development = 3
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 				event_target:source_country = {
 					random_owned_province = {

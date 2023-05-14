@@ -950,9 +950,9 @@ country_event = {
 		add_country_modifier = {
 			name = "mercenaries_to_the_standard"
 			duration = 3650
-			hidden = yes
+			#hidden = yes #just increases trade range in uu
 		}
-		custom_tooltip = generic_more_mercs_available_tt
+		#custom_tooltip = generic_more_mercs_available_tt
 	}
 }
 
@@ -10551,11 +10551,11 @@ country_event = {
 	option = {
 		name = ideagroups.1604.a
 		add_country_modifier = {
-			name = "glut_of_mercs"
+			name = "glut_of_mercs" #just increases trade range in uu
 			duration = 3650
-			hidden = yes
+		#	hidden = yes
 		}
-		custom_tooltip = generic_more_mercs_available_tt
+		#custom_tooltip = generic_more_mercs_available_tt
 	}
 }
 
