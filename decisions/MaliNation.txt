@@ -106,6 +106,7 @@ country_decisions = {
 		}
 		effect = {
 			remove_country_modifier = uu_decline_of_mali
+			clr_country_flag = uu_can_form_mali_flag
 			change_tag = MAL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {

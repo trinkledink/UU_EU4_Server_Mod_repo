@@ -1239,13 +1239,14 @@ diplomatic_defence_act = { #unused
 	monarch_power = DIP
 	potential = {
 		always = no
-		has_idea_group = diplomatic_ideas
-		has_idea_group = defensive_ideas
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = defensive_ideas
 	}
 	
 	allow = {
-		full_idea_group = diplomatic_ideas
-		full_idea_group = defensive_ideas
+		always = no
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = defensive_ideas
 	}
 
 	diplomats = 1
@@ -1585,13 +1586,14 @@ appeal_to_old_powers_policy = { #unused
 	
 	potential = {
 		always = no
-		has_idea_group = indigenous_ideas
-		has_idea_group = diplomatic_ideas
+		#has_idea_group = indigenous_ideas
+		#has_idea_group = diplomatic_ideas
 	}
 	
 	allow = {
-		full_idea_group = indigenous_ideas
-		full_idea_group = diplomatic_ideas
+		always = no
+		#has_idea_group = indigenous_ideas
+		#has_idea_group = diplomatic_ideas
 	}
 	
 	diplomatic_reputation = 1
@@ -1730,13 +1732,14 @@ the_smooth_integration_act = { #unused
 	
 	potential = {
 		always = no
-		has_idea_group = infrastructure_ideas
-		has_idea_group = diplomatic_ideas 
+		#has_idea_group = infrastructure_ideas
+		#has_idea_group = diplomatic_ideas 
 	}
 	
 	allow = {
-		full_idea_group = infrastructure_ideas
-		full_idea_group = diplomatic_ideas 
+		always = no
+		#has_idea_group = infrastructure_ideas
+		#has_idea_group = diplomatic_ideas 
 	}
 	
 	diplomatic_reputation = 1 

@@ -279,9 +279,9 @@ stateless_society = {
 		land_morale = 0.15
 	}
 	ai = {
-		factor = 1
+		factor = 0.1 #please no
 		modifier = {
-			factor = -1
+			factor = 0
 			num_of_cities = 2
 		}
 	}

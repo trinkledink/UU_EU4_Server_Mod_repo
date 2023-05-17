@@ -468,13 +468,14 @@ underhanded_diplomacy_act = { #unused
 	monarch_power = MIL
 	potential = {
 		always = no
-		has_idea_group = diplomatic_ideas
-		has_idea_group = offensive_ideas
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = offensive_ideas
 	}
 	
 	allow = {
-		full_idea_group = diplomatic_ideas
-		full_idea_group = offensive_ideas
+		always = no
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = offensive_ideas
 	}
 	
 	spy_offence = 0.33
@@ -521,13 +522,14 @@ the_tenures_abolition_act = { #unused
 
 	potential = {
 		always = no
-		has_idea_group = diplomatic_ideas
-		has_idea_group = aristocracy_ideas
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = aristocracy_ideas
 	}
 	
 	allow = {
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
+		always = no
+		#has_idea_group = diplomatic_ideas
+		#has_idea_group = aristocracy_ideas
 	}
 
 	army_tradition = 0.5

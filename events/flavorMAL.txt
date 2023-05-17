@@ -21,11 +21,13 @@ country_event = { #UU added. Clone of disaster event for Mali mini-tags
 			tag = NIA 
 			tag = SOF 
 		}
+		NOT = { has_country_flag = uu_had_decline_of_mali_evt }
 		NOT = { is_year = 1500 }
 	}
 
 	immediate = {
 		set_country_flag = uu_can_form_mali_flag
+		set_country_flag = uu_had_decline_of_mali_evt
 	}
 
 	option = {
