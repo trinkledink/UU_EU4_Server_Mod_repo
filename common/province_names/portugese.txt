@@ -118,3 +118,5 @@
 
 1164 = "Rio Benito"
 5009 = "Camarões"
+1205 = "Mogadíscio"
+529 = "Bombaim"

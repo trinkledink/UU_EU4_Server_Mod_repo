@@ -62,6 +62,8 @@
  uu_recolorsubjects_title:0 "Change Subjects to your Map Colour"
   uu_recolorsubjects_desc:0 "Changes all vassals, marches, and client states to your map colour. Does not affect daimyos, appanages, eyalets, tributaries, junior partners, etc. \n§RWARNING: This may cause problems when subjects occupy provinces with your map colour.§!"
   uu_overlord_colour_tt:0 "Do NOT have [Root.GetName]'s map colour"
+ uu_fra_recolorsubjects_title:0 "Recolour Appanages" 
+  uu_fra_recolorsubjects_desc:0 "Changes the map colours of Appanage subjects to a shade of blue similar to the French one."
  uu_restore_color_title:0 "Restore our Map Colour"
   uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
  uu_restore_color_overlord_title:0 "Restore Subjects' Map Colours"

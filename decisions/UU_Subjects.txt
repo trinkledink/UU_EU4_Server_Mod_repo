@@ -49,6 +49,61 @@ country_decisions = {
             }
         }
     }
+    uu_fra_recolorsubjects = {
+        color = { 20 50 210 }
+
+        potential = {
+            ai = no
+            tag = FRA 
+            any_subject_country = { 
+               is_subject_of_type = appanage
+                NOT = { has_country_flag = uu_overlord_colour }
+            }
+        }
+
+        allow = {
+            tag = FRA
+            any_subject_country = { 
+                is_subject_of_type = appanage
+                custom_trigger_tooltip = {
+                    tooltip = uu_overlord_colour_tt
+                    NOT = { has_country_flag = uu_overlord_colour }
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = uu_recolorsubjects_desc
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        is_subject_of_type = appanage
+                        NOT = { has_country_flag = uu_overlord_colour }
+                    }
+                    if = {
+                        limit = { tag = ORL }
+                        change_country_color = { color = { 80 50 180 } }
+                    } else_if = {
+                        limit = { tag = AMG }
+                        change_country_color = { color = { 70 90 235 } } 
+                    } else_if = {
+                        limit = { tag = BOU }
+                        change_country_color = { color = { 10 80 190 } } 
+                    } else_if = {
+                        limit = { tag = AUV }
+                        change_country_color = { color = { 70 60 150 } } 
+                    } else_if = {
+                        limit = { tag = FOI }
+                        change_country_color = { color = { 30 50 160 } } 
+                    } else_if = {
+                        limit = { tag = ALE }
+                        change_country_color = { color = { 70 50 210 } } 
+                    }
+                    set_country_flag = uu_overlord_colour
+                }
+            }
+        }
+    }
     uu_restore_color = {
         color = { 232 48 2 }
 
@@ -61,7 +116,6 @@ country_decisions = {
                     is_vassal = no
                 }
                 is_subject_of_type = daimyo_vassal
-                is_subject_of_type = appanage
             }
         }
 
@@ -72,7 +126,6 @@ country_decisions = {
                     is_vassal = no
                 }
                 is_subject_of_type = daimyo_vassal
-                is_subject_of_type = appanage
             }  
         }
 
