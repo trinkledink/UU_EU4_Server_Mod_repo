@@ -725,9 +725,9 @@
  jubba_area:0 "Jubba"
  jubba_area_name:0 "Jubba"
  jubba_area_adj:0 "Jubban"
- tanzania_area:0 "Tanzania"
- tanzania_area_name:0 "Tanzania"
- tanzania_area_adj:0 "Tanzanian"
+ tanzania_area:0 "Tanganyika" #Tanzania makes no sense without Zanzibar
+ tanzania_area_name:0 "Tanganyika"
+ tanzania_area_adj:0 "Tanganyikan"
  buha_area:0 "Buha"
  buha_area_name:0 "Buha"
  buha_area_adj:0 "Buhan"
