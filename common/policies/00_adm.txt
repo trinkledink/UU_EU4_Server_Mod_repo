@@ -305,9 +305,8 @@ public_welfare_act = {
 		full_idea_group = economic_ideas
 	}
 
-	global_monthly_devastation = -0.1
-	land_maintenance_modifier = -0.1
-
+	development_cost_in_primary_culture = -0.1
+	stability_cost_modifier = -0.25
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
