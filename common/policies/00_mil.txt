@@ -1609,7 +1609,7 @@ enlistment_propaganda_policy = {
 }
 
 universal_serfdom_act = { 
-	monarch_power = MIL
+	monarch_power = dip #UU change
 	
 	potential = {
 		has_idea_group = court_ideas
