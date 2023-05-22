@@ -21,6 +21,8 @@
   NIA_ADJ:0 "Niani"
  SOF:0 "Bambara"
   SOF_ADJ:0 "Bambara"
+ ZAF:0 "Massina"
+  ZAF_ADJ:0 "Massina" 
  UUKANEM:0 "Kanem"
   UUKANEM_ADJ:0 "Kanem"
  KBI:0 "Kebbi"
@@ -37,5 +39,5 @@
   DRA_ADJ:0 "Daura"
  AVE:0 "Dual Monarchy" #Duplicate 
   AVE_ADJ:0 "Anglo-French"
- #UUFOUTATORO:0 "Fouta Toro"
-  #UUFOUTATORO_ADJ:0 "Fouta Toro"
+ UUFOUTATORO:0 "Fouta Tooro"
+  UUFOUTATORO_ADJ:0 "Fouta Tooro"

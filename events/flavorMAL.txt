@@ -201,63 +201,61 @@ province_event = { ##UU modified
 			}
 			cede_province = FUL
 		}
-		hidden_effect = {
-			FUL = {
-				set_government_rank = 2
-				add_government_reform = tribal_federation
-				add_government_power = {
-					mechanic_type = tribal_federation_mechanic
-					power_type = tribal_allegiance
-					value = 75
-				}
-				define_ruler = {
-					name = "Tenguella"
-					dynasty = "Denianke"
-					change_adm = 2
-					change_dip = 1
-					change_mil = 4
-					religion = sunni 
-					culture = fulani
-					claim = 100
-					age = 30
-				}
-				add_ruler_personality = inspiring_leader_personality
-				add_ruler_personality = legendary_conqueror_personality
-				define_ruler_to_general = {
-					fire = 4
-					shock = 5
-					manuever = 5
-					siege = 2
-				}
-				define_heir = {
-					name = "Koli Tenguella"
-					dynasty = "Denianke"
-					change_mil = 4
-					religion = sunni 
-					culture = fulani
-					claim = 100
-					age = 15
-				}
-				add_heir_personality = conqueror_personality
-				if = {
-					limit = {
-						has_dlc = "Rights of Man" 
-					}
-					add_ruler_personality_ancestor = { key = conqueror }
-				}
-				adopt_reform_progress = ROOT
-				capital_scope = {
-					add_base_tax = 3
-					add_base_production = 2
-					add_base_manpower = 3
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				add_manpower = 10
-				add_treasury = 500
+		FUL = {
+			set_government_rank = 2
+			add_government_reform = tribal_federation
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 75
 			}
+			define_ruler = {
+				name = "Tenguella"
+				dynasty = "Denianke"
+				change_adm = 2
+				change_dip = 1
+				change_mil = 4
+				religion = sunni 
+				culture = fulani
+				claim = 100
+				age = 30
+			}
+			add_ruler_personality = inspiring_leader_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 4
+				shock = 5
+				manuever = 5
+				siege = 2
+			}
+			define_heir = {
+				name = "Koli Tenguella"
+				dynasty = "Denianke"
+				change_mil = 4
+				religion = sunni 
+				culture = fulani
+				claim = 100
+				age = 15
+			}
+			add_heir_personality = conqueror_personality
+			if = {
+				limit = {
+					has_dlc = "Rights of Man" 
+				}
+				add_ruler_personality_ancestor = { key = conqueror }
+			}
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 2
+				add_base_manpower = 3
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+			add_manpower = 10
+			add_treasury = 500
 		}
 	}
 	
@@ -296,64 +294,62 @@ province_event = { ##UU modified
 			}
 			cede_province = FUL
 		}
-		hidden_effect = {
-			FUL = {
-				set_government_rank = 2
-				add_government_reform = tribal_federation
-				add_government_power = {
-					mechanic_type = tribal_federation_mechanic
-					power_type = tribal_allegiance
-					value = 75
-				}
-				define_ruler = {
-					name = "Tenguella"
-					dynasty = "Denianke"
-					change_adm = 2
-					change_dip = 1
-					change_mil = 4
-					religion = sunni 
-					culture = fulani
-					claim = 100
-					min_age = 20
-					max_age = 40
-				}
-				add_ruler_personality = inspiring_leader_personality
-				add_ruler_personality = conqueror_personality
-				define_ruler_to_general = {
-					fire = 4
-					shock = 5
-					manuever = 5
-					siege = 2
-				}
-				define_heir = {
-					name = "Koli Tenguella"
-					dynasty = "Denianke"
-					change_mil = 4
-					religion = sunni 
-					culture = fulani
-					claim = 100
-					age = 15
-				}
-				add_heir_personality = conqueror_personality
-				if = {
-					limit = {
-						has_dlc = "Rights of Man" 
-					}
-					add_ruler_personality_ancestor = { key = conqueror }
-				}
-				adopt_reform_progress = ROOT
-				capital_scope = {
-					add_base_tax = 3
-					add_base_production = 2
-					add_base_manpower = 3
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				add_manpower = 10
-				add_treasury = 500
+		FUL = {
+			set_government_rank = 2
+			add_government_reform = tribal_federation
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 75
 			}
+			define_ruler = {
+				name = "Tenguella"
+				dynasty = "Denianke"
+				change_adm = 2
+				change_dip = 1
+				change_mil = 4
+				religion = sunni 
+				culture = fulani
+				claim = 100
+				min_age = 20
+				max_age = 40
+			}
+			add_ruler_personality = inspiring_leader_personality
+			add_ruler_personality = conqueror_personality
+			define_ruler_to_general = {
+				fire = 4
+				shock = 5
+				manuever = 5
+				siege = 2
+			}
+			define_heir = {
+				name = "Koli Tenguella"
+				dynasty = "Denianke"
+				change_mil = 4
+				religion = sunni 
+				culture = fulani
+				claim = 100
+				age = 15
+			}
+			add_heir_personality = conqueror_personality
+			if = {
+				limit = {
+					has_dlc = "Rights of Man" 
+				}
+				add_ruler_personality_ancestor = { key = conqueror }
+			}
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 2
+				add_base_manpower = 3
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+			add_manpower = 10
+			add_treasury = 500
 		}
 		owner = {
 			switch_tag = FUL

@@ -73,7 +73,7 @@ country_decisions = {
         }
 
         effect = {
-            custom_tooltip = uu_recolorsubjects_desc
+            custom_tooltip = uu_fra_recolorsubjects_desc
             hidden_effect = {
                 every_subject_country = {
                     limit = {
@@ -82,22 +82,22 @@ country_decisions = {
                     }
                     if = {
                         limit = { tag = ORL }
-                        change_country_color = { color = { 80 50 180 } }
+                        change_country_color = { color = { 70 50 190 } }
                     } else_if = {
                         limit = { tag = AMG }
-                        change_country_color = { color = { 70 90 235 } } 
+                        change_country_color = { color = { 70 90 230 } } 
                     } else_if = {
                         limit = { tag = BOU }
-                        change_country_color = { color = { 10 80 190 } } 
+                        change_country_color = { color = { 10 70 205 } } 
                     } else_if = {
                         limit = { tag = AUV }
-                        change_country_color = { color = { 70 60 150 } } 
+                        change_country_color = { color = { 70 60 170 } } 
                     } else_if = {
                         limit = { tag = FOI }
-                        change_country_color = { color = { 30 50 160 } } 
+                        change_country_color = { color = { 30 50 175 } } 
                     } else_if = {
                         limit = { tag = ALE }
-                        change_country_color = { color = { 70 50 210 } } 
+                        change_country_color = { color = { 70 50 220 } } 
                     }
                     set_country_flag = uu_overlord_colour
                 }
