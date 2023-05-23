@@ -109,6 +109,7 @@ tribal_federation = {
 
 	modifiers = {
 		years_of_nationalism = -5
+		cav_to_inf_ratio = 0.2
 	}
 
 	conditional = {
