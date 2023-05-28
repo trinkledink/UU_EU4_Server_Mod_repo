@@ -5064,12 +5064,30 @@ on_center_of_trade_upgrade = {
 		limit = { owner = { has_country_flag = enable_upgrading_centers_of_trade_dev } }
 		add_base_production = 1 
 	}
+	if = {
+		limit = { 
+			province_has_center_of_trade_of_level = 3
+			owner = { has_idea = free_cities }
+		 }
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+	}
 }
 
 on_center_of_trade_downgrade = {
 	if = {
 		limit = { owner = { has_country_flag = enable_upgrading_centers_of_trade_dev } }
 		add_base_production = -1 
+	}
+	if = {
+		limit = { 
+			province_has_center_of_trade_of_level = 2
+			owner = { has_idea = free_cities }
+		 }
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
 	}
 }
 

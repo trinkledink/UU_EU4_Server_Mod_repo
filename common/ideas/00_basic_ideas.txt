@@ -91,7 +91,6 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		global_institution_spread = 0.20
 		republican_tradition = 0.2
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
@@ -101,25 +100,25 @@ plutocracy_ideas = {
 		has_government_attribute = enables_plutocratic_idea_group
 	}
 
-	tradition_of_payment = {
-		mercenary_manpower = 0.25		##UU changed because of merc ideas
-		mercenary_discipline = 0.05
+	bill_of_rights = {
+		global_unrest = -2
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
-	}
-	bill_of_rights = {
-		global_unrest = -2
 	}
 	free_merchants = {
 		merchants = 1
 		caravan_power = 0.25
 	}
+	uu_armed_merchant_fleet = {
+		light_ship_power = 0.2	
+		naval_morale_damage_received = -0.15
+	}
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	free_cities = {
-		fire_damage = 0.1
+	uu_free_cities = {
+		monthly_reform_progress = 0.1
 	}
 	emancipation = {
 		artillery_cost = -0.1
@@ -958,8 +957,9 @@ economic_ideas = {
 		build_time = -0.25
 	}
 
-	bureaucracy = {
+	uu_minting_regulations = {
 		global_tax_modifier = 0.15
+		global_tax_income = 24
 	}
 	uu_national_bank = {
 		inflation_reduction = 0.1

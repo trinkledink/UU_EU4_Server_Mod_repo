@@ -39,6 +39,8 @@
  battlefield_teachings:0 "Battlefield Teachings"
   battlefield_teachings_desc:0 "By observing every battle very carefully we are quick to learn from mistakes both we and our enemies make. Additionally it will make us able to adapt to new potential strategies much faster"
  #Economic Ideas 
+ uu_minting_regulations:0 "Minting Regulations"
+  uu_minting_regulations_desc:0 "Each state entity can always make some amount of money by coining the used currency and adding it to the local economy, by observing the economic growth of our nation we can more efficiently use this minting method"
  uu_national_bank:0 "National Bank"
   uu_national_bank_desc:0 "By establishing a central authority for financial matters, we will have better control over our nation's economy.\n§YThe "National Bank" event may fire, giving us a one-time bonus to make our economy healthier.§!\nInflation Reduction from Loan Repayment:§G -0.05§!"
  advanced_production_methods:0 "Advanced Production Methods"
@@ -60,8 +62,11 @@
  #Quantity Ideas
  expanded_dockyard_crews:0 "Expanded Dockyard Crews"
   expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."
- 
-
+ #plutocratic ideas
+ uu_free_cities:0 "Free Cities"
+  uu_free_cities_desc:0 "Granting autonomy to the larger cities in our realm will not only lower administrative burdens on our end but also empower these cities to put their own interest first\n§YUpgrading Centers of Trade to the third level will now increase the Development of that Province by 1 in each category§!" 
+ uu_armed_merchant_fleet:0 "Armed Merchant Fleet"
+  uu_armed_merchant_fleet_desc:0 "Pirates and unexpected conflict may arise anytime, it is important that we prepare our Merchant fleets for the worst things to come"
  ###############################################################
  # Policies Localisation
  ###############################################################
