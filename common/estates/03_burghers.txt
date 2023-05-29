@@ -250,6 +250,8 @@ estate_burghers = {
 	color = { 35 35 150 }
 
 	privileges = {
+		estate_burghers_elb_improved_workshops	#UU
+		#estate_burghers_pluto_weapons			#UU
 		estate_burghers_land_rights
 		estate_burghers_land_of_commerce
 		estate_burghers_admirals
@@ -291,7 +293,6 @@ estate_burghers = {
 		estate_burghers_financial_demand
 		estate_burghers_sindicat_remensa_privilege
 		estate_burghers_promote_burgher_bookkeeping
-		estate_burghers_elb_improved_workshops
 	}
 
 	agendas = {

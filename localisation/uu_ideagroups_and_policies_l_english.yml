@@ -62,11 +62,16 @@
  #Quantity Ideas
  expanded_dockyard_crews:0 "Expanded Dockyard Crews"
   expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."
- #plutocratic ideas
+ #Plutocratic ideas
  uu_free_cities:0 "Free Cities"
-  uu_free_cities_desc:0 "Granting autonomy to the larger cities in our realm will not only lower administrative burdens on our end but also empower these cities to put their own interest first\n§YUpgrading Centers of Trade to the third level will now increase the Development of that Province by 1 in each category§!" 
+  uu_free_cities_desc:0 "Granting autonomy to the larger cities in our realm will not only lower administrative burdens on our end but also empower these cities to put their own interest first.\n§YUpgrading/Downgrading Centers of Trade to Level 3 will now increase/decrease the Development of that Province by 1 in each category.§!" 
  uu_armed_merchant_fleet:0 "Armed Merchant Fleet"
-  uu_armed_merchant_fleet_desc:0 "Pirates and unexpected conflict may arise anytime, it is important that we prepare our Merchant fleets for the worst things to come"
+  uu_armed_merchant_fleet_desc:0 "Pirates and unexpected conflict may arise anytime, it is important that we prepare our Merchant fleets for the worst things to come."
+ uu_empower_guilds:0 "Empower the Guilds"
+  uu_empower_guilds_desc:0 "The guilds are the heart of our industry, leading the way for advanced craftsmanship in our nation. We must not let these organizations be restricted by aristocrats or other outdated hierarchies, the guilds must be allowed to flourish with greater autonomy for our industry to prosper."
+ uu_private_arms_industries:0 "Expand Private Arms Industries"
+  uu_private_arms_industries_desc:0 "We must outsource more of our weapons production to independent arms industries, who can use their profits to innovate and create better weapons. Profit is the best motivator for many of these individuals, and we can utilize this to improve our army quality." #\n§YUnlocks a unique estate privilege for the Merchant Guilds which enhances the effectiveness of our Weapons Manufactories.§!"
+
  ###############################################################
  # Policies Localisation
  ###############################################################

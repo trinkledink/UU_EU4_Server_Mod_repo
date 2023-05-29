@@ -1,28 +1,27 @@
-country_decisions = {
-
-	uu_sokoto_nation = { #Forming it without a civil war is supposed to be quite difficult, and the church must be pretty powerful 
+country_decisions = { #unfinished
+	uu_macina_nation = {
 		major = yes
 		potential = {
-			NOT = { tag = ZAF }
+			NOT = { tag = SOK }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			OR = {
 				ai = no 
 				AND = {
 					ai = yes 
-					tag = HAU
+					tag = SOF #Segu
 				}
 			}
 			OR = {
 				culture_group = mande
 				culture_group = sahelian
 			}
-			NOT = { has_country_flag = formed_sokoto_flag }
+			NOT = { has_country_flag = formed_macina_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = SOK }
+			NOT = { exists = ZAF }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -34,10 +33,11 @@ country_decisions = {
 			OR = {
 				religion = sunni
 				has_country_modifier = uu_fulani_preacher_accepted
-			}	
+			}
+			NOT = { owns = 1148 } #Sokoto prioritized	
 		}
 		provinces_to_highlight = {
-			province_id = 1148
+			province_id = 1131
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -77,8 +77,8 @@ country_decisions = {
 					influence = 40
 				}
 			}
-			owns_core_province = 1148 	#Gobir
-			1148 = { 					#Gobir
+			owns_core_province = 1131 	#Massina
+			1131 = { 					#Gobir
 				is_state = yes
 			}
 			dominant_religion = sunni
@@ -93,63 +93,50 @@ country_decisions = {
 			}
 		}
 		effect = {
-			remove_country_modifier = uu_fulani_preacher_accepted
-			set_global_flag = uu_sokoto_happened_flag
-			set_country_flag = formed_sokoto_flag
-			1148 = {
-				move_capital_effect = yes
+			change_tag = ZAF
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
-			change_tag = SOK
-			on_change_tag_effect = yes
-			add_stability = -3
+			set_capital = 1131
+			1131 = {
+				change_province_name = "Hamdullahi"
+				rename_capital = "Hamdullahi"
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_piety = 0.25
 			if = {
 				limit = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				change_government = monarchy
+				change_government_to_monarchy = yes
 			}
 			if = {
 				limit = { is_revolutionary = no }
 				add_government_reform = feudal_theocracy
 			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
 			if = {
-				limit = {
-					has_custom_ideas = no
-					NOT = { has_idea_group = SOK_ideas }
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			swap_non_generic_missions = yes
-			define_ruler = {
-				name = "Usman dan Fodio"
-				dynasty = "Torodbe"
-				adm = 5
-				dip = 5
-				mil = 5
-				min_age = 40
-				max_age = 55
-				claim = 100
-				religion = sunni 
-				culture = fulani
-			}
-			add_ruler_personality = scholar_personality
-			add_ruler_personality = inspiring_leader_personality
-			add_ruler_personality = zealot_personality
-			change_primary_culture = fulani 
-			add_accepted_culture = hausa
+			set_global_flag = uu_massina_happened_flag
+			set_country_flag = formed_macina_flag
 		}
-		ai_importance = 400 #The countries that qualify will hate the holder of Sokoto.
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0 
-				NOT = { is_year = 1800 }
-			}
 		}
+		ai_importance = 400 #
 	}
+	
 }

@@ -17,10 +17,12 @@
  songhai_nation_desc:0 "The Songhai people have been under foreign domination for too long. It is time to become a strong kingdom in our own right, and forge our own Empire to span the Sahel!"
  #African Caliphate Formations
  uu_sokoto_nation_title:0 "Establish the Sokoto Caliphate"
- uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a Caliphate to rule over the Hausa cities, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
  uu_kick_out_fulani_scholar_title:0 "Ban the Fulani Preachers"
  uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
  uu_allow_sokoto_decision_tt:0 "Has the country modifier '§YFulani Preacher Accepted§!' from the event '§YFulani Preachers§!', which fires in the early 1500s."
+ uu_macina_nation_title:0 "Establish the Massina Caliphate"
+ uu_macina_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate based in the Massina, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
  #Military Dictatorship
  military_coup_title:0 "Military Coup"
  military_coup_desc:0 "Only the strong can lead. Our current ruler is too weak."

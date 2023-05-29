@@ -102,9 +102,10 @@ plutocracy_ideas = {
 
 	bill_of_rights = {
 		global_unrest = -2
+		land_morale = 0.10
 	}
 	abolished_serfdom = {
-		land_morale = 0.10
+		manpower_recovery_speed = 0.15
 	}
 	free_merchants = {
 		merchants = 1
@@ -114,15 +115,18 @@ plutocracy_ideas = {
 		light_ship_power = 0.2	
 		naval_morale_damage_received = -0.15
 	}
-	free_subjects = {
+	uu_empower_guilds = {
 		global_trade_goods_size_modifier = 0.1
+		burghers_privilege_slots = 1
+		vaisyas_privilege_slots = 1
+		mr_guilds_influence = 0.025
 	}
-	uu_free_cities = {
+	uu_free_cities = { #Gain 1/1/1 dev on upgrading CoT to Lv3
 		monthly_reform_progress = 0.1
 	}
-	emancipation = {
+	uu_private_arms_industries = { #Unlocks Estate Privilege
 		artillery_cost = -0.1
-		artillery_power = 0.1
+		artillery_power = 0.15
 	}
 
 	ai_will_do = {

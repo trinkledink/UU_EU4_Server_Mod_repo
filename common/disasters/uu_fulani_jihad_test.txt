@@ -1,0 +1,157 @@
+uu_fulani_jihad_disaster = {
+	potential = {
+		has_estate = estate_cossacks
+		estate_influence = {
+			estate = estate_cossacks
+			influence = 80
+		}
+		OR = {
+			NOT = { has_country_flag = cossack_estate_triggered }
+			had_country_flag = {
+				flag = cossack_estate_triggered
+				days = 365
+			}
+		}
+		NOT = { has_disaster = tur_disaster_ottoman_power_struggle }
+	}
+
+
+	can_start = {
+		has_any_disaster = no
+		estate_influence = {
+			estate = estate_cossacks
+			influence = 50
+		}
+		is_at_war = no
+		OR = {
+			AND = {
+				owns = 1148
+				custom_trigger_tooltip = {
+					tooltip = uu_sokoto_happened_tt
+					NOT = { has_global_flag = uu_sokoto_happened_flag }
+				}
+				NOT = { exists = SOK }
+			}
+			AND = {
+				owns = 1131
+				custom_trigger_tooltip = {
+					tooltip = uu_massina_happened_tt
+					NOT = { has_global_flag = uu_massina_happened_flag }
+				}
+				NOT = { exists = ZAF }
+			}
+			AND = {
+				owns = 2237 
+				custom_trigger_tooltip = {
+					tooltip = uu_futatoro_happened_tt
+					NOT = { has_global_flag = uu_futatoro_happened_flag }
+				}
+				NOT = { exists = FUL }
+			}
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { num_of_cities = 2 } 
+			AND = {
+				OR = {
+					NOT = { owns = 1148 } #Gobir
+					has_global_flag = uu_sokoto_happened_flag
+					exists = SOK
+				}
+				OR = {
+					NOT = { owns = 1131 } #Massina
+					has_global_flag = uu_massina_happened_flag
+					exists = ZAF
+				}
+				OR = {
+					NOT = { owns = 2237 } #Tekrur
+					has_global_flag = uu_futatoro_happened_flag
+					exists = FUL
+				}
+			}
+		}
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 6
+			has_country_modifier = uu_fulani_preacher_rejected
+		}
+
+		modifier = {
+			factor = -8
+			stability = 3
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 0 }
+		}
+
+		modifier = {
+			factor = -4
+			religious_unity = 0.95
+		}
+		modifier = {
+			factor = 3
+			NOT = { religious_unity = 0.7 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { religious_unity = 0.5 }
+		}
+		
+		modifier = {
+			factor = 4
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			religion_group = muslim 
+		}
+		modifier = {
+			factor = 4
+			estate_influence = {
+				estate = estate_church
+				influence = 50
+			}
+			NOT = { religion_group = muslim }  
+		}
+		
+		modifier = {
+			factor = 2
+			is_in_deficit = yes
+		}
+	}
+	
+	can_end = {
+		always = yes
+	}
+
+	on_start = uufulojihad.0
+	
+	on_start_effect = {
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+			}
+			custom_tooltip = estate_cossacks_disaster_tooltip_cossacks
+		}
+		else = {
+			custom_tooltip = estate_cossacks_disaster_tooltip
+		}
+	}
+	
+	on_monthly = {
+	}
+}
+

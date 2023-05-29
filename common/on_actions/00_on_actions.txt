@@ -1,8 +1,9 @@
 #When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
 
 # country
-on_startup = { 
-	 change_variable = {
+on_startup = {
+	ZAF = { override_country_name = UUMASSINA } 
+	change_variable = {
         which = dev_adm_clicks
         value = 0
     }
@@ -1071,6 +1072,8 @@ on_siege_lost_country = {
 on_siege_won_province = {
 	events = {
 		synthetic_dawn.4
+		uufulojihad.100
+		uufulojihad.101
 	}
 	if = {
 		limit = {
@@ -5067,7 +5070,7 @@ on_center_of_trade_upgrade = {
 	if = {
 		limit = { 
 			province_has_center_of_trade_of_level = 3
-			owner = { has_idea = free_cities }
+			owner = { has_idea = uu_free_cities }
 		 }
 		add_base_tax = 1
 		add_base_production = 1
@@ -5083,8 +5086,8 @@ on_center_of_trade_downgrade = {
 	if = {
 		limit = { 
 			province_has_center_of_trade_of_level = 2
-			owner = { has_idea = free_cities }
-		 }
+			owner = { has_idea = uu_free_cities }
+		}
 		add_base_tax = -1
 		add_base_production = -1
 		add_base_manpower = -1

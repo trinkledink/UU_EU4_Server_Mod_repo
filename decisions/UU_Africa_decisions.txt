@@ -163,4 +163,33 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+
+    uu_kick_out_fulani_scholar = {
+		major = yes
+		
+		potential = {
+			has_country_modifier = uu_fulani_preacher_accepted
+		}
+		allow = {
+			has_country_modifier = uu_fulani_preacher_accepted
+			stability = 0
+		}
+		effect = {
+			add_stability = -1 
+			remove_accepted_culture = fulani
+			remove_country_modifier = uu_fulani_preacher_accepted
+            custom_tooltip = uu_crush_sokoto
+			add_country_modifier = {
+				name = uu_fulani_preacher_rejected
+				duration = -1
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 1800 }
+			}
+		}
+	}
 }

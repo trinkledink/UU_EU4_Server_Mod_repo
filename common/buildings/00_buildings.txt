@@ -1801,6 +1801,16 @@ weapons = {
 			type = manpower 
 			value = 1 
 		}
+		if = {
+			limit = {
+				OR = {
+					owner = { has_estate_privilege = estate_burghers_pluto_weapons }
+					owner = { has_estate_privilege = estate_vaisyas_pluto_weapons }
+				}
+				NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
+			}
+			add_province_triggered_modifier = uu_better_weapons_manus_priv_mod
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1812,6 +1822,12 @@ weapons = {
 			building = manufactory 
 			type = manpower 
 			value = 1
+		}
+		if = {
+			limit = {
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_triggered_modifier = uu_better_weapons_manus_priv_mod
 		}
 	}
 	on_obsolete = {

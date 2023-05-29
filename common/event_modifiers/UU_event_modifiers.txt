@@ -188,17 +188,27 @@ uu_decline_of_mali = {
 }
 
 #Sokoto
+uu_fulani_preacher_accepted = {
+	monthly_piety = 0.002
+	num_accepted_cultures = 1
+	global_unrest = 1
+}
+uu_fulani_preacher_rejected = {
+	global_unrest = -1.5
+	global_rebel_suppression_efficiency = 0.25
+}
 uu_fulani_jihad_mod = {
 	land_morale = 0.15
 	manpower_recovery_speed = 0.15
 	war_exhaustion = -0.1
 }
+
 #cults 
 uu_shaman_vision_quest = {
 	
 }
-#kitara
 
+#kitara
 uu_kitara_colonies = {
 	colony_development_boost = 1
 }
