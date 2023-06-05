@@ -275,3 +275,29 @@ country_event = {
     }
 
 }
+
+country_event = { 
+    id = uu_easter_egg_events.9
+    title = uu_easter_egg_events.9.t
+    desc = uu_easter_egg_events.9.desc
+    picture = MERCHANTS_TALKING_eventPicture
+    
+    mean_time_to_happen = {
+        months = 6000
+    }
+
+    trigger = {
+        is_at_war = no
+    }
+
+    option = {
+        name = uu_easter_egg_events.9.a
+        custom_tooltip = uu_easter_egg_events.9.tt
+    }
+
+    option = {
+        name = uu_easter_egg_events.9.b
+        custom_tooltip = uu_easter_egg_events.9.tt2
+    }
+
+}

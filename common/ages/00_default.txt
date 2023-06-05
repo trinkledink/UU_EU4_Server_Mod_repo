@@ -397,8 +397,7 @@ age_of_reformation = {
 			}
 		}
 
-	
-		ab_spain_tercio = {
+		ab_spain_shock_tactics = {
 			allow = {
 				OR = {
 					tag = SPA

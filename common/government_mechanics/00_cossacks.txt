@@ -9,17 +9,17 @@ cossacks_mechanic = {
 		cossacks_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 1
+			base_monthly_growth = 0.75
 		}
 		cossacks_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 1
+			base_monthly_growth = 0.75
 		}
 		cossacks_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 1
+			base_monthly_growth = 0.75
 		}
 	}
 	
@@ -34,6 +34,7 @@ cossacks_mechanic = {
 					NOT = { truce_with = ROOT }
 					NOT = { overlord_of = ROOT }
 					NOT = { is_subject_of = ROOT }
+					total_development = 3
 				}
 			}
 			effect = {

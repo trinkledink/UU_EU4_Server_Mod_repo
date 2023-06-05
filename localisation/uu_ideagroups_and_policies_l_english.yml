@@ -70,7 +70,7 @@
  uu_empower_guilds:0 "Empower the Guilds"
   uu_empower_guilds_desc:0 "The guilds are the heart of our industry, leading the way for advanced craftsmanship in our nation. We must not let these organizations be restricted by aristocrats or other outdated hierarchies, the guilds must be allowed to flourish with greater autonomy for our industry to prosper."
  uu_private_arms_industries:0 "Expand Private Arms Industries"
-  uu_private_arms_industries_desc:0 "We must outsource more of our weapons production to independent arms industries, who can use their profits to innovate and create better weapons. Profit is the best motivator for many of these individuals, and we can utilize this to improve our army quality." #\n§YUnlocks a unique estate privilege for the Merchant Guilds which enhances the effectiveness of our Weapons Manufactories.§!"
+  uu_private_arms_industries_desc:0 "We must outsource more of our weapons production to independent arms industries, who can use their profits to innovate and create better weapons. Profit is the best motivator for many of these individuals, and we can utilize this to improve our army quality." # \n§YUnlocks a unique estate privilege for the Merchant Guilds which enhances the effectiveness of our Weapons Manufactories.§!
 
  ###############################################################
  # Policies Localisation

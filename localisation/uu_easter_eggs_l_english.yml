@@ -41,4 +41,11 @@
  uu_easter_egg_events.8.a:0 "We must bring the killer to justice."
  uu_ripper_tt:0 "- Adds §Y'The Ripper: Murderer at Large'§! to the Journal of §Y[Root.GetName].§!\n\n[ripper_prov.GetName] gets '§YThe Ripper: Gruesome Murders§!' until §Y02 January, 1821§!, giving the following effects:\n§R+20%§! Radicals from Standard of Living decreases"
  uu_easter_egg_events.8.b:0 "Seems like something a certain political figure of ours would do."
+
+ uu_easter_egg_events.9.t:0 "No one wants to mod"
+ uu_easter_egg_events.9.desc:0 "With the generous liberties we have granted our modders, we have ended up with a situation where people simply don't want to do honest modding anymore."
+ uu_easter_egg_events.9.a:0 "This was not quite the plan"
+ uu_easter_egg_events.9.tt:0 "The next mod patch is delayed by another 6 months."
+ uu_easter_egg_events.9.b:0 "Modding is hard ok"
+ uu_easter_egg_events.9.tt2:0 "The next mod patch is delayed by another 180 days."
  #TEU:0 "Tectonic Order"
