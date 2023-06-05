@@ -26,4 +26,5 @@
  u_u_maybe_later:0 "Maybe later"
  
  ##################  KoG Flag  ########################
- is_kingdom_of_god_flag:0 "Is Kingdom of God"
+ is_kingdom_of_god_tt:0 "Has declared the §YKingdom of God§!"
+ #is_kingdom_of_god_flag:0 "Is Kingdom of God"

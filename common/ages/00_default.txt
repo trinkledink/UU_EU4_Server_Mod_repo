@@ -462,7 +462,10 @@ age_of_reformation = {
 				OR = {
 					tag = ITA
 					AND = {
-						has_country_flag = is_kingdom_of_god_flag
+						custom_trigger_tooltip = {
+							tooltip = is_kingdom_of_god_tt
+							has_country_flag = is_kingdom_of_god_flag
+						}
 						NOT = { exists = ITA }
 					}
 				}
