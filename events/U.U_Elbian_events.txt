@@ -39,14 +39,23 @@ country_event = { #Czech gets German culture
 	trigger = {
 		tag = ELB
 		was_tag = BOH
-		primary_culture = czech
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new #man this new russia stuff really makes life hard sometimes
+		}
 		stability = -1
-		any_owned_province = {
-			culture = czech
+		OR = {
+			any_owned_province = {
+				culture = czech
+			}
+			any_owned_province = {
+				culture = czech_new
+			}
 		}
 		num_of_owned_provinces_with = {
 			value = 20
 			NOT = { culture_group = west_slavic }
+			NOT = { culture_group = slavic }
 		}
 	}
 
@@ -100,24 +109,30 @@ country_event = { #Czech gets German culture
 				}
 				change_culture = czech_newer 
 			}
-		random_owned_province = {
-			limit = {
-				culture_group = germanic
-				any_neighbor_province = { 
-					culture = czech_newer
+			every_owned_province = {
+				limit = {
+					culture = czech_new
 				}
+				change_culture = czech_newer 
 			}
-			change_culture = czech_newer 
-		}
-		random_owned_province = {
-			limit = {
-				culture_group = germanic
-				any_neighbor_province = { 
-					culture = czech_newer
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
 				}
+				change_culture = czech_newer 
 			}
-			change_culture = czech_newer 
-		}
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
+				}
+				change_culture = czech_newer 
+			}
 			if = {
 				limit = {
 					ruler_culture = czech
@@ -184,7 +199,10 @@ country_event = { #Czech gets German culture
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -193,7 +211,10 @@ country_event = { #Czech gets German culture
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -202,7 +223,10 @@ country_event = { #Czech gets German culture
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -219,6 +243,7 @@ country_event = { #Czech gets German culture
 			every_owned_province = {
 				limit = {
 					NOT = { culture_group = west_slavic }
+					NOT = { culture_group = slavic }
 				}
 				add_province_modifier = { 
 					name = elb_czech_supremacy_1
@@ -227,7 +252,10 @@ country_event = { #Czech gets German culture
 			}
 			every_owned_province = {
 				limit = {
-					culture = czech
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
 				}
 				add_province_modifier = { 
 					name = elb_czech_supremacy_2
@@ -254,10 +282,14 @@ country_event = { #Non-Czech version of previous
 		NOT = {
 			was_tag = BOH
 			primary_culture = czech
+			primary_culture = czech_new
 		}
 		stability = 1
 		any_owned_province = {
-			culture = czech
+			OR = {
+				culture = czech
+				culture = czech_new
+			}
 		}
 		erzgebirge_area = {
 			is_core = ROOT
@@ -277,7 +309,10 @@ country_event = { #Non-Czech version of previous
 		custom_tooltip = uu_elb_again_tt
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -286,7 +321,10 @@ country_event = { #Non-Czech version of previous
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -303,7 +341,10 @@ country_event = { #Non-Czech version of previous
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
@@ -320,7 +361,10 @@ country_event = { #Non-Czech version of previous
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					culture = czech
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
 				}
 				add_province_modifier = { 
 					name = elb_czech_supremacy_2
@@ -338,7 +382,8 @@ country_event = { #Periodic Conversion event
 	desc = {
 		trigger = {
 			NOT = {
-				primary_culture = czech 
+				primary_culture = czech
+				primary_culture = czech_new 
 				primary_culture = czech_newer
 			}
 		}
@@ -347,7 +392,8 @@ country_event = { #Periodic Conversion event
 	desc = {
 		trigger = {
 			OR = {
-				primary_culture = czech 
+				primary_culture = czech
+				primary_culture = czech_new 
 				primary_culture = czech_newer
 			}
 		}
@@ -363,7 +409,10 @@ country_event = { #Periodic Conversion event
 		tag = ELB
 		has_country_flag = uu_elbification_start_flag
 		any_owned_province = {
-			culture = czech
+			OR = {
+				culture = czech
+				culture = czech_new
+			}
 		}
 	}
 	option = { #Ok
@@ -372,6 +421,7 @@ country_event = { #Periodic Conversion event
 			limit = {
 				OR = {
 					primary_culture = czech
+					primary_culture = czech_new
 					primary_culture = czech_newer
 				}
 			}
@@ -382,7 +432,10 @@ country_event = { #Periodic Conversion event
 		} else = {
 			random_owned_province = {
 				limit = {
-					culture = czech
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
 				}
 				spawn_rebels = {
 					type = nationalist_rebels
@@ -393,7 +446,10 @@ country_event = { #Periodic Conversion event
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -402,7 +458,10 @@ country_event = { #Periodic Conversion event
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -411,7 +470,10 @@ country_event = { #Periodic Conversion event
 		}
 		random_owned_province = {
 			limit = {
-				culture = czech
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
 				any_neighbor_province = { 
 					culture_group = germanic
 				}
@@ -424,6 +486,7 @@ country_event = { #Periodic Conversion event
 		trigger = {
 			OR = {
 				primary_culture = czech
+				primary_culture = czech_new
 				primary_culture = czech_newer
 			}
 		}
@@ -433,6 +496,7 @@ country_event = { #Periodic Conversion event
 			every_owned_province = {
 				limit = {
 					NOT = { culture_group = west_slavic }
+					NOT = { culture_group = slavic }
 				}
 				add_province_modifier = { 
 					name = elb_czech_supremacy_1
@@ -441,7 +505,10 @@ country_event = { #Periodic Conversion event
 			}
 			every_owned_province = {
 				limit = {
-					culture = czech
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
 				}
 				add_province_modifier = { 
 					name = elb_czech_supremacy_2

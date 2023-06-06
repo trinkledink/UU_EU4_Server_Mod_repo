@@ -62,6 +62,18 @@ colonial_alaska = {
 		}
 		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
 	}
+	names = {
+		trigger = {
+			culture_group = japanese_g
+		}
+		name = "COLONIAL_ALASKA_Hokkaigan" #DOD inspired, "North Coast"
+	}
+	names = {
+		trigger = {
+			culture_group = east_asian
+		}
+		name = "COLONIAL_ALASKA_Root_GetName_Fusang" #Mythological land east of China, mentioned in Shan Hai Jing
+	}
 	# Generic
 	names = {
 		trigger = {
@@ -414,7 +426,7 @@ colonial_eastern_america = {
 		trigger = {
 			tag = AVE
 		}
-		name = "COLONIAL_EASTERN_AMERICA_Plantagenia"
+		name = "COLONIAL_EASTERN_AMERICA_Plantagenia" #DOD reference, since this whole tag is basically a DOD reference
 	}
 	names = {
 		trigger = {
@@ -423,7 +435,9 @@ colonial_eastern_america = {
 				culture_group = french
 				primary_culture = anglois
 			}
-			owns = 90 # Vlaanderen
+			any_owned_province = {
+				area = flanders_area
+			}
 		}
 		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
 	}
@@ -748,6 +762,20 @@ colonial_california = {
 			primary_culture = anglois
 		}
 		name = "COLONIAL_CALIFORNIA_Nouvelle_Albion"
+	}
+	names = {
+		trigger = {
+			culture_group = east_asian
+			owns = 4637
+		}
+		name = "COLONIAL_CALIFORNIA_Qingqiu" #DOD inspired, "Green Hills" from Shan Hai Jing
+	}
+	names = {
+		trigger = {
+			culture_group = japanese_g
+			owns = 4637
+		}
+		name = "COLONIAL_CALIFORNIA_Kinkoku" #Made this one up. "Gold Kingdom"
 	}
 	# Generic
 	names = {
@@ -1267,6 +1295,20 @@ colonial_brazil = {
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			tag = FRA
+			any_owned_province = {
+				OR = {
+					area = amapa_area
+					area = amazon_area
+					area = grao_para_area
+					area = maranhao_area
+				}
+			}
+		}
+		name = "COLONIAL_BRAZIL_France_Equinoxiale"
+	}
 	names = {
 		trigger = {
 			tag = FRA
