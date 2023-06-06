@@ -1,61 +1,61 @@
 country_decisions = {
-    uu_unite_madagascar = {
-        potential = {
-            OR = {
-                tag = BTS
-                tag = SKA
-                tag = MIR
-                tag = ANT
-                tag = MFY
-            }
-        }
-        provinces_to_highlight = {
-            OR = {
-                area = madagascar_highlands_area
-                area = betsimasaraka_area
-                area = sakalava_area
-                area = southern_madagascar
-            }
-        }
-        allow = {
-            madagascar_highlands_area = {
-                type = all
-                is_core = ROOT
-                owned_by = ROOT
-            }
-            betsimasaraka_area = {
-                type = all
-                is_core = ROOT
-                owned_by = ROOT
-            }
-            sakalava_area = {
-                type = all
-                is_core = ROOT
-                owned_by = ROOT
-            }
-            southern_madagascar = {
-                type = all
-                is_core = ROOT
-                owned_by = ROOT
-            }
-        }
-        effect = {
-            add_prestige = 25
-            capital_scope = {
-                add_base_tax = 3
-                add_base_production = 3
-                add_base_manpower = 3
-            }
-            add_country_modifier = {
-                name = "centralization_modifier"
-                duration = 7300
-            }
-            set_government_rank = 2
-            create_colony_mission_reward = {
-                province = 4020
-            }
-        }
-    }
+    #uu_unite_madagascar = {
+       # potential = {
+        #    OR = {
+         #       tag = BTS
+          #      tag = SKA
+          #      tag = MIR
+        #        tag = ANT
+        #        tag = MFY
+       #     }
+     #   }
+      #  provinces_to_highlight = {
+      #      OR = {
+       #         area = madagascar_highlands_area
+       #         area = betsimasaraka_area
+       #         area = sakalava_area
+       #         area = southern_madagascar
+       #     }
+       # }
+       # allow = {
+        #    madagascar_highlands_area = {
+        #        type = all
+        #        is_core = ROOT
+        #        owned_by = ROOT
+        #    }
+       #     betsimasaraka_area = {
+          #      type = all
+            #    is_core = ROOT
+            #    owned_by = ROOT
+         #   }
+          #  sakalava_area = {
+           #     type = all
+           #     is_core = ROOT
+          #      owned_by = ROOT
+          #  }
+         #   southern_madagascar = {
+          #      type = all
+          #      is_core = ROOT
+          #      owned_by = ROOT
+       #     }
+      #  }
+      #  effect = {
+        #    add_prestige = 25
+       #     capital_scope = {
+       #         add_base_tax = 3
+        #        add_base_production = 3
+        #        add_base_manpower = 3
+       #     }
+       #     add_country_modifier = {
+       #         name = "centralization_modifier"
+       #         duration = 7300
+       #     }
+       #     set_government_rank = 2
+        #    create_colony_mission_reward = {
+        #        province = 4020
+       #     }
+      #  }
+   # }
 
     songhai_nation = {
 		major = yes
