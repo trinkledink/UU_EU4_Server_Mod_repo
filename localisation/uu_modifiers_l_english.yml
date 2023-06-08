@@ -101,6 +101,13 @@
  uu_han_hansa_cities_mod:0 "Hanseatic Trade Fleet"
  uu_han_kings_of_england:0 "King of England"
  uu_han_trade_fleet:0 "Hanseatic War Fleet"
+
+ ###############################################################
+ # Free Cities Mission Modifiers
+ ###############################################################
+
+ uu_FC_imperial_diplomacy:0 "Imperial Recognition"
+ uu_FC_emperor_freeest:0 "The Freeest City"
  
  ###############################################################
  # Pomerania Mission Modifiers

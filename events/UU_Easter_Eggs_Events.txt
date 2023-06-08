@@ -301,3 +301,53 @@ country_event = {
     }
 
 }
+
+country_event = {
+    id = uu_easter_egg_events.10
+    title = uu_easter_egg_events.10.t
+    desc = uu_easter_egg_events.10.desc 
+    picture = TEMPORAL_RIFT_eventPicture
+
+    mean_time_to_happen = {
+        months = 4000
+    }
+    major = yes
+    fire_only_once = yes 
+
+    trigger = {
+        tag = PRU 
+        is_at_war = no 
+        num_of_cities = 30
+    }
+
+    option = {
+        name = uu_easter_egg_events.10.a
+        custom_tooltip = uu_easter_egg_events.10.tt
+        hidden_effect = {
+            change_country_color = { color = { 252 233 58 } } #Navarra
+            country_event = {
+                id = uu_easter_egg_events.11
+                days = 14
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = uu_easter_egg_events.11
+    title = uu_easter_egg_events.11.t
+    desc = uu_easter_egg_events.11.desc 
+    picture = TEMPORAL_RIFT_eventPicture
+
+    is_triggered_only = yes 
+    hidden = yes
+
+    immediate = {
+        restore_country_color = yes
+    }
+   
+    option = {
+        name = uu_easter_egg_events.11.a
+    }
+}

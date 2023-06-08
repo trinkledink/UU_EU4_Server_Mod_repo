@@ -48,4 +48,13 @@
  uu_easter_egg_events.9.tt:0 "The next mod patch is delayed by another 6 months."
  uu_easter_egg_events.9.b:0 "Modding is hard ok"
  uu_easter_egg_events.9.tt2:0 "The next mod patch is delayed by another 180 days."
+
+ uu_easter_egg_events.10.t:0 "Yellow Prussia Jumpscare"
+ uu_easter_egg_events.10.desc:0 "pissmas came early this year"
+ uu_easter_egg_events.10.a:0 "what"
+ uu_easter_egg_events.10.tt:0 "Original colour will be restored in 14 days."
+ uu_easter_egg_events.11.t:0 "Hidden Event"
+ uu_easter_egg_events.11.desc:0 "Hidden Event"
+ uu_easter_egg_events.11.a:0 "Hidden Event"
+
  #TEU:0 "Tectonic Order"
