@@ -2863,3 +2863,8 @@
  TRADE_COMPANY_CAMEROON:0 "Cameroon Charter"
  TRADE_COMPANY_CAMEROON_Root_Culture_GetName:0 "[Root.Culture.GetName] Cameroon Company"
  TRADE_COMPANY_CAMEROON_Africa_Trade_Company:0 "Cameroon Trade Company"
+
+ naples_node:0 "Naples"
+ trade_company_naples:0 "South Italian Charter"
+ TRADE_COMPANY_NAPLES:0 "South Italian Charter"
+ TRADE_COMPANY_NAPLES_Root_Culture_GetName:0 "[Root.Culture.GetName] South Italian Company"

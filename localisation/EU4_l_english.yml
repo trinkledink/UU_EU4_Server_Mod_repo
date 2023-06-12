@@ -2243,11 +2243,11 @@
  persia:0 "Persia"
  novgorod:0 "Novgorod"
  north_sea:0 "North Sea"
- bordeaux:0 "Bordeaux"
+ bordeaux:0 "Nantes" #Changed
  sevilla:0 "Seville" #Changed
  genua:0 "Genoa"
  crimea:0 "Crimea"
- kiev:0 "Kiev"
+ kiev:0 "Kyiv"
  kazan:0 "Kazan"
  astrakhan:0 "Astrakhan"
  krakow:0 "Krakow"
