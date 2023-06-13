@@ -114,6 +114,7 @@ country_decisions = {
                 AND = {
                     is_march = no
                     is_vassal = no
+                    NOT = { is_subject_of_type = appanage }
                 }
                 is_subject_of_type = daimyo_vassal
             }
