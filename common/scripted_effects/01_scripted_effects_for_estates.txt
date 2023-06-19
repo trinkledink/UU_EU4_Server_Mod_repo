@@ -435,29 +435,6 @@ reduce_estate_rajput_loyalty_effect = {
 on_religion_change_estate_privileges_effect = {
 	if = {
 		limit = {
-			any_country = {
-				root = {
-					force_converted_by = prev
-					religion = prev
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				root = {
-					force_converted_by = prev
-					religion = prev
-				}
-			}
-			add_country_modifier = {
-				name = recently_force_converted_protagonist_timer
-				duration = 5475
-				hidden = yes
-			}
-		}
-	}
-	if = {
-		limit = {
 			OR = {
 				AND = {
 					NOT = { has_estate_privilege = estate_dhimmi_guaranteed_autonomy }
@@ -5824,5 +5801,19 @@ scaling_with_loyalty_privilege_tooltip = {
 			duration = -1
 			desc = UNTIL_REVOKED
 		}
+	}
+}
+
+block_estate_removing_reforms = {
+	custom_tooltip = block_estate_removing_reforms_tt
+	hidden_effect = {
+		set_country_flag = block_$estate$_removing_reform
+	}
+}
+
+unblock_estate_removing_reforms = {
+	custom_tooltip = unblock_estate_removing_reforms_tt
+	hidden_effect = {
+		clr_country_flag = block_$estate$_removing_reform
 	}
 }
