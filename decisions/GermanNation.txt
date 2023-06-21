@@ -26,17 +26,7 @@ country_decisions = {
 					adm_tech = 20
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
-				}
-			}
-			OR = {
-				culture_group = germanic
-				tag = ELB
-			}
+			culture_group = germanic
 			NOT = { primary_culture = dutch }
 			is_colonial_nation = no
 			OR = {
@@ -193,6 +183,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GER
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			if = {
 				limit = {

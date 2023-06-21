@@ -62,7 +62,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = DEC }
 			is_at_war = no
-			adm_tech = 15
+			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			owns_core_province = 1948 #Bidar
 			owns_core_province = 542 #Hyderabad
@@ -79,6 +79,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = DEC
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_rank = 3

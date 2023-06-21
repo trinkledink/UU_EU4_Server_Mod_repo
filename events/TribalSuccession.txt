@@ -10,7 +10,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		always = no	 
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
@@ -24,6 +23,14 @@ country_event = {
 		OR = {
 			NOT = { tag = CRI }
 			has_global_flag = death_of_haji_giray
+		}
+		OR = {
+			NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
+			NOT = {
+				heir_total_stats = {
+					stats = 12
+				}
+			}
 		}
 	}
 	

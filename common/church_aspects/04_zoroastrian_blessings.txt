@@ -2,7 +2,6 @@ blessing_yasna = {
 	is_blessing = yes
 
 	modifier = {
-		yearly_corruption = -0.1						  
 		yearly_corruption = -0.05
 	}
 	ai_will_do = {
@@ -74,7 +73,6 @@ blessing_dakhma = {
 	is_blessing = yes
 
 	modifier = {
-		build_time = -0.1				   
 		build_cost = -0.10
 	}
 	ai_will_do = {

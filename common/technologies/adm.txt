@@ -4,6 +4,7 @@ monarch_power = ADM
 ahead_of_time = {
 	production_efficiency = 0.2
 	yearly_corruption = -0.05
+	monthly_russian_modernization = 0.05
 }
 
 # Pre-era techs
@@ -195,7 +196,6 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
 }
 
 technology = { #Scientific Experimentation
@@ -235,7 +235,7 @@ technology = { #Metallurgy
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	town_hall = yes
+	
 	mills = yes
 	production_efficiency 	=	0.02
 
@@ -287,7 +287,6 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
-	administrative_efficiency = 0.05								 
 }
 
 technology = { #Absolute Rulership
@@ -319,7 +318,6 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
 	furnace = yes
 }
 
@@ -338,6 +336,8 @@ technology = { #The Constitution
 	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
+
+	town_hall = yes
 }
 
 technology = { #Measuring the World
@@ -388,7 +388,6 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
-		administrative_efficiency = 0.05							 
 }
 
 technology = { #Separation of Powers

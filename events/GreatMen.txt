@@ -58,21 +58,6 @@ country_event = {
 		add_prestige = 50
 		set_country_flag = philosopher
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = philosopher
-	}
 }
 
 # Natural Scientist
@@ -141,21 +126,6 @@ country_event = {
 			name = "scientific_evolution"
 			duration = 2190
 		}
-		set_country_flag = natural_scientist
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = natural_scientist
 	}
 }
@@ -229,21 +199,6 @@ country_event = {
 		}
 		set_country_flag = army_reformer
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = army_reformer
-	}
 }
 
 # Naval reformer
@@ -312,21 +267,6 @@ country_event = {
 			name = "naval_investment"
 			duration = 2190
 		}
-		set_country_flag = naval_reformer
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = naval_reformer
 	}
 }
@@ -401,21 +341,6 @@ country_event = {
 		}
 		set_country_flag = artist
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = artist
-	}
 }
 
 
@@ -486,21 +411,6 @@ country_event = {
 			name = "trading_investment"
 			duration = 2190
 		}
-		set_country_flag = treasurer
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = treasurer
 	}
 }
@@ -575,21 +485,6 @@ country_event = {
 		}		
 		set_country_flag = theologian
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = theologian
-	}
 }
 
 
@@ -660,21 +555,6 @@ country_event = {
 			name = "government_investment"
 			duration = 2190
 		}
-		set_country_flag = statesman
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = statesman
 	}
 }
@@ -749,21 +629,6 @@ country_event = {
 		}
 		set_country_flag = colonial_governor
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = colonial_governor
-	}
 }
 
 
@@ -835,21 +700,6 @@ country_event = {
 		}
 		set_country_flag = spymaster		
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = spymaster
-	}
 }
 
 
@@ -915,21 +765,6 @@ country_event = {
 		add_dip_power = 50
 		set_country_flag = diplomat
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = diplomat
-	}
 }
 
 # Trader
@@ -993,21 +828,6 @@ country_event = {
 		add_meritocracy_effect = yes
 		add_prestige = 50
 		add_dip_power = 25
-		set_country_flag = trader
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = trader
 	}
 }
@@ -1081,21 +901,6 @@ country_event = {
 		}
 		set_country_flag = master_of_mint
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = master_of_mint
-	}
 }
 
 
@@ -1167,21 +972,6 @@ country_event = {
 		}
 		set_country_flag = navigator
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = navigator
-	}
 }
 
 
@@ -1195,7 +985,6 @@ country_event = {
 	trigger = {
 		grand_captain = 3
 		NOT = { has_country_flag = grand_captain }
-		NOT = { has_country_modifier = grand_captain_rejected }
 	}
 	
 	mean_time_to_happen = {
@@ -1252,28 +1041,6 @@ country_event = {
 			name = "grand_captain_boost"
 			duration = 2190
 		}
-		set_country_flag = grand_captain
-	}
-	
-	option = {
-		name = "u_u_maybe_later"
-		add_country_modifier = {
-			name = "grand_captain_rejected"
-			duration = 2190
-		}
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = grand_captain
 	}
 }
@@ -1347,21 +1114,6 @@ country_event = {
 		}
 		set_country_flag = army_organiser
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = army_organiser
-	}
 }
 
 
@@ -1375,7 +1127,6 @@ country_event = {
 	trigger = {
 		commandant = 3
 		NOT = { has_country_flag = commandant }
-		NOT = { has_country_modifier = commandant_rejected }
 	}
 	
 	mean_time_to_happen = {
@@ -1433,29 +1184,6 @@ country_event = {
 			name = "commandant_boost"
 			duration = 2190
 		}
-		set_country_flag = commandant
-	}
-	
-	option = {
-		name = "u_u_maybe_later"
-		add_country_modifier = {
-			name = "commandant_rejected"
-			duration = 2190
-		}
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = commandant
 	}
 }
@@ -1529,21 +1257,6 @@ country_event = {
 		}
 		set_country_flag = quartermaster
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = quartermaster
-	}
 }
 
 
@@ -1613,21 +1326,6 @@ country_event = {
 			name = "recruitmaster_boost"
 			duration = 2190
 		}
-		set_country_flag = recruitmaster
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = recruitmaster
 	}
 }
@@ -1701,21 +1399,6 @@ country_event = {
 		}
 		set_country_flag = fortification_expert
 	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-		set_country_flag = fortification_expert
-	}
 }
 
 
@@ -1786,21 +1469,6 @@ country_event = {
 			name = "inquisitor_boost"
 			duration = 2190
 		}
-		set_country_flag = inquisitor
-	}
-	
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
-		 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 		set_country_flag = inquisitor
 	}
 }

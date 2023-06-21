@@ -56,7 +56,7 @@ age_of_discovery = {
 					controlled_by = owner
 					is_core = ROOT
 				}
-				amount = 3
+				amount = 5
 			}
 		}
 		obj_30_development_city = {
@@ -78,29 +78,31 @@ age_of_discovery = {
 	 		}
 		}
 		
+		obj_two_unions = {
+			allow = {
+				religion_group = christian
+			}
+			personal_union  = 2
+		}
+		
 		obj_many_vassals = {
-			vassal = 4
+			allow = {
+				NOT = { religion_group = christian }
+			}
+			vassal = 5
 		}		
 	
 		obj_two_continents = {
 			num_of_continents = 2
-			151 = {
-				owned_by = ROOT
 		}
-		}
+	
 		obj_humiliate_rival = {
 			custom_trigger_tooltip = {
 				tooltip = obj_humiliate_rival_tooltip
-				OR = {
-					has_country_flag = humiliated_rival
-					has_country_flag = U.U_humiliated_rival
-				}
+				has_country_flag = humiliated_rival
 			}
-		}		
-	}
-
-	
-	
+		}
+	}		
 	
 	abilities = {
 		ab_allow_feudal_de_jure_law = {
@@ -123,8 +125,7 @@ age_of_discovery = {
 		}
 		
 
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_transfer_vassal_wargoal = {
 			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
@@ -146,7 +147,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
-				cav_to_inf_ratio = 0.5
+				cav_to_inf_ratio = 0.2
 			}
 			ai_will_do = {
 				factor = 10
@@ -154,7 +155,7 @@ age_of_discovery = {
 		}
 		ab_colony_boost_development = {
 			modifier = {
-				can_colony_boost_development = yes
+				colony_development_boost = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -167,7 +168,7 @@ age_of_discovery = {
 		
 		ab_attack_bonus_in_capital_terrain = {
 			modifier = {
-				attack_bonus_in_capital_terrain = yes
+				attack_bonus_in_capital_terrain = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -179,7 +180,7 @@ age_of_discovery = {
 				tag = TUR
 			}
 			modifier = {
-				siege_ability = 0.33
+				leader_siege = 1 
 			}
 			ai_will_do = {
 				factor = 100
@@ -230,17 +231,6 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
-		ab_timur_legacy = {
-            allow = {
-                tag = TIM
-            }
-            modifier = {
-                legitimacy = 5
-                vassal_income = 0.5
-                vassal_forcelimit_bonus = 1
-                reduced_liberty_desire = 50
-            }
-        }
 	}
 }
 
@@ -257,11 +247,11 @@ age_of_reformation = {
 	
 	objectives = {
 		obj_christian_convert = {
-			custom_trigger_tooltip = {
-				tooltip = obj_christian_convert_tooltip
-				has_country_flag = age_change_religion_absolutism
-					   
-					  
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = hussite
 			}
 		}
 		
@@ -280,7 +270,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			colony = 3
+			colony = 5
 		}
 		
 		obj_force_converted = {
@@ -308,10 +298,6 @@ age_of_reformation = {
 					trade_goods = silk
 					value = yes
 				}
-				trading_bonus = {
-					trade_goods = tea 
-					value = yes
-				} 
 			}
 		
 		
@@ -319,14 +305,12 @@ age_of_reformation = {
 		
 		obj_unify_culture = {	
 			is_subject = no
-			OR = {
-				has_unified_culture_group = yes
-				num_accepted_cultures = 3
-			}
+			has_unified_culture_group = yes
 		}
 	}	
 	
-	abilities = {
+	
+	abilities = {	
 		ab_allow_religion_enforced = {
 			effect = {
 				custom_tooltip = religion_enforced_edict
@@ -337,7 +321,6 @@ age_of_reformation = {
 			}
 		}
 	
-
 		ab_siege_blockades = {
 			modifier = {
 				siege_blockade_progress = 1
@@ -350,6 +333,7 @@ age_of_reformation = {
 							num_of_ports = 5
 					}
 				}
+
 			}
 		}
 
@@ -399,19 +383,12 @@ age_of_reformation = {
 			}
 		}
 
-	
-		ab_spain_tercio = {
+		ab_spain_shock_tactics = {
 			allow = {
-				OR = {
-					tag = SPA
-					AND = {
-						tag = ADU
-						NOT = { exists = SPA }
-					}
-				}
+				tag = SPA
 			}
 			modifier = {
-				shock_damage_received = -0.3
+				leader_land_shock = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -422,7 +399,7 @@ age_of_reformation = {
 				tag = MUG
 			}
 			modifier = {
-				artillery_cost = -0.5
+				artillery_power = 0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -434,6 +411,10 @@ age_of_reformation = {
 				OR = {
 					tag = PLC
 					tag = POL
+					custom_trigger_tooltip = {
+						tooltip = enable_this_ability_tt
+						has_country_flag = unlock_polish_ability_flag
+					}
 				}
 			}
 			modifier = {
@@ -444,17 +425,18 @@ age_of_reformation = {
 			}
 		}
 		
-		ab_persia_reinforce = {
+		ab_persia_development = {
 			allow = {
 				tag = PER
 			}
 			modifier = {
-				reinforce_cost_modifier = -0.3
+				development_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
+	
 	}
 }
 
@@ -479,19 +461,21 @@ age_of_absolutism = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
 		war_exhaustion = -1
 	}
-	
-	
-	
+		
 	objectives = {
 		obj_3_trade_companies = {
 			num_of_trade_companies = 3
 		}
 		
 		obj_universities = {
-			university = 5
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 5 
+			}
 		}
 	
 		obj_large_forcelimit = {
@@ -501,9 +485,10 @@ age_of_absolutism = {
 		obj_90_absolutism = {
 			absolutism = 90
 		}
+		
 		obj_emperor_of_china = {
-			army_professionalism = 0.80
-						
+			is_emperor_of_china = yes
+			imperial_mandate = 50
 		}
 		
 		obj_cultures_accepted = {
@@ -519,9 +504,6 @@ age_of_absolutism = {
 		}
 	}	
 	
-	
-	
-	
 	abilities = {
 	
 		ab_allow_edict_of_absolutism = {
@@ -536,7 +518,7 @@ age_of_absolutism = {
 
 		ab_rival_change = {
 			modifier = {
-				rival_change_cost = -1.0
+				rival_change_cost = -0.5
 			}
 			ai_will_do = {
 				factor = 0
@@ -545,7 +527,7 @@ age_of_absolutism = {
 
 		ab_rival_border_fort = {
 			modifier = {
-				fort_maintenance_modifier = -0.33
+				rival_border_fort_maintenance = -1.0
 			}
 			ai_will_do = {
 				factor = 10
@@ -555,7 +537,7 @@ age_of_absolutism = {
 
 		ab_autonomy = {
 			modifier = {
-				max_absolutism = 30
+				autonomy_change_time = -0.5
 			}
 			ai_will_do = {
 				factor = 10
@@ -592,24 +574,23 @@ age_of_absolutism = {
 		}
 	
 	
-		ab_france_fire_damage = {
+		ab_french_absolutism = {
 			allow = {
 				tag = FRA
 			}
 			modifier = {
-				fire_damage = 0.2
+				max_absolutism_effect = 0.3
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_dutch_anti_corruption = {
+		ab_dutch_trade = {
 			allow = {
 				tag = NED
 			}
 			modifier = {
-				global_trade_power = 0.20
-				trade_steering = 0.20
+				trade_steering = 0.33
 			}
 			ai_will_do = {
 				factor = 100
@@ -674,10 +655,10 @@ age_of_revolutions = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
 		war_exhaustion = -1
-	}
-	
+	}	
 	
 	objectives = {
 		obj_parliament = {
@@ -718,7 +699,6 @@ age_of_revolutions = {
 	}
 
 	abilities = {
-
 		ab_allow_anti_revolutionary_zeal = {
 			modifier = {
 				liberty_desire_from_subject_development = -0.33
@@ -744,9 +724,7 @@ age_of_revolutions = {
 				factor = 15
 			}
 		}
-		
 
-		
 		ab_force_march = {
 			modifier = {
 				force_march_free = yes
@@ -823,10 +801,13 @@ age_of_revolutions = {
 		}
 		ab_gbr_fleet = {
 			allow = {
-				tag = GBR
+				OR = {
+					tag = AVE
+					tag = GBR
+				}
 			}
 			modifier = {
-				naval_maintenance_modifier = -0.33
+				max_admiral_fire = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -837,13 +818,13 @@ age_of_revolutions = {
 				tag = RUS
 			}
 			modifier = {
-				governing_capacity_modifier = 0.33
-			}
+				min_autonomy_in_territories = -0.1
+			}	
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_austria_rep = {
+		ab_austrian_morale = {
 			allow = {
 				OR = {
 					tag = HAB
@@ -851,7 +832,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				diplomatic_reputation = 5
+				morale_damage_received = -0.2
 			}
 			ai_will_do = {
 				factor = 100

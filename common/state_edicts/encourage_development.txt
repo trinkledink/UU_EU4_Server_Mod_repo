@@ -1,69 +1,21 @@
 edict_encourage_development = {
 	potential = {
-		always = yes
-		NOT = {has_country_flag = edict_of_absolutism}		#we support "potential" if modders want to have lots and just show some.
+		always = yes		#we support "potential" if modders want to have lots and just show some.
 	}
 	
 	allow = {
-		NOT = {has_country_flag = edict_of_absolutism}
+		always = yes
 	}
 	
 	modifier = {
-		local_monthly_devastation = -0.33
+		local_development_cost = -0.1
 	}
 	
 	color = {  244 184 12  }
 	
 	
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0
-			AND = {
-				has_state_edict = edict_encourage_development
-				all_province_in_state = {
-					NOT = {
-						devastation = 1
-					}	
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			has_state_edict = edict_encourage_development
-		}
-		modifier = {
-			factor = 0
-			
-			AND = {
-				NOT = { has_state_edict = edict_encourage_development }
-				all_province_in_state = {
-					NOT = {
-						devastation = 2
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = { has_state_edict = edict_encourage_development }
-				all_province_in_state = {
-					devastation = 5
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = { has_state_edict = edict_encourage_development }
-				any_province_in_state = {
-					devastation = 10
-				}
-			}
-		}
+		factor = 0
 	}
 	
 }

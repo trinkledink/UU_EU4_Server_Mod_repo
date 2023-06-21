@@ -102,19 +102,6 @@ country_event = {
 		remove_advisor_by_category = ADM
 		add_prestige = -5
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # Anatomical Theatre
@@ -206,19 +193,6 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # Promising Inventor
@@ -231,12 +205,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Rule Britannia"
 		any_neighbor_country = {
-			OR = {
-				adm_tech = ROOT
-				dip_tech = ROOT
-				mil_tech = ROOT
-			}
-			num_of_cities = ROOT
+			tech_difference = 1
 		}
 	}
 	
@@ -246,12 +215,7 @@ country_event = {
 		hidden_effect = {
 			random_neighbor_country = {
 				limit = {
-					OR = {
-						adm_tech = ROOT
-						dip_tech = ROOT
-						mil_tech = ROOT
-					}
-					num_of_cities = ROOT
+					tech_difference = 1
 				}
 				save_event_target_as = inventor_country
 			}
@@ -311,19 +275,6 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 	after = {
 		clear_saved_name = inventor
 	}
@@ -336,7 +287,7 @@ country_event = {
 	title = "innovativeness_events.5.t"
 	desc = "innovativeness_events.5.d"
 	picture = ROYAL_SOCIETY_eventPicture
-	
+	goto = poor_province
 	trigger = {
 		has_dlc = "Rule Britannia"
 		innovativeness = 1
@@ -396,19 +347,6 @@ country_event = {
 		reduce_estate_church_loyalty_effect = yes
 		add_prestige = -5
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # [Root.GetRoyalOrState] Patronage
@@ -449,19 +387,6 @@ country_event = {
 			factor = 40
 		}
 		add_prestige = -5
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 	}
 }
 
@@ -526,19 +451,6 @@ country_event = {
 		}
 		add_stability_or_adm_power = yes
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # Dissenting Academies
@@ -580,19 +492,6 @@ country_event = {
 	option = {
 		name = "innovativeness_events.8.b" # enforce religious unity
 		reduce_innovativeness_small_effect = yes
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 	}
 }
 
@@ -644,19 +543,6 @@ country_event = {
 			duration = 3650
 		}
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 	after = {
 		clear_saved_name = scientist
 	}
@@ -699,19 +585,6 @@ country_event = {
 		add_prestige = 10
 		increase_legitimacy_small_effect = yes
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 	after = {
 		clear_saved_name = mathematician
 	}
@@ -750,19 +623,6 @@ country_event = {
 	option = {
 		name = "innovativeness_events.11.b"
 		add_prestige = -5
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 	}
 }
 
@@ -814,19 +674,6 @@ country_event = {
 			duration = 3650
 		}
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # New Scientific Instruments
@@ -850,19 +697,6 @@ country_event = {
 	option = {
 		name = "innovativeness_events.13.a"
 		add_innovativeness_small_effect = yes
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 	}
 }
 
@@ -907,19 +741,6 @@ country_event = {
 		name = "innovativeness_events.14.b"
 		add_mercantilism = 1
 	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
-	}
 }
 
 # Cabinet of Curiosities
@@ -963,18 +784,5 @@ country_event = {
 			}
 			add_building = temple
 		}
-	}
-	option = {
-		name = "elb_beacon_of_progress_option"
-		trigger = {
-			has_country_flag = elb_beacon_of_progress_flag
-		}
- 
-		random_owned_province = {
-			add_base_manpower = 3
-			add_base_production = 3
-			add_base_tax = 3
-		}
-		goto = ROOT
 	}
 }

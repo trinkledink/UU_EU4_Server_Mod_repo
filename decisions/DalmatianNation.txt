@@ -53,6 +53,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = DAL }
+			NOT = { num_of_cities = 11 }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -62,6 +63,7 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = DAL
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
