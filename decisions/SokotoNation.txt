@@ -101,12 +101,12 @@ country_decisions = {
 			}
 			change_tag = SOK
 			on_change_tag_effect = yes
-			add_stability = -3
 			if = {
 				limit = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
+				add_stability = -3
 				change_government = monarchy
 			}
 			if = {
@@ -124,6 +124,12 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_piety = 0.25
 			swap_non_generic_missions = yes
 			define_ruler = {
 				name = "Usman dan Fodio"

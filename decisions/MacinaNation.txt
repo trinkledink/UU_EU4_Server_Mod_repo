@@ -93,16 +93,39 @@ country_decisions = { #unfinished
 			}
 		}
 		effect = {
+			remove_country_modifier = uu_fulani_preacher_accepted
+			set_global_flag = uu_massina_happened_flag
+			set_country_flag = formed_macina_flag
+			1131 = {
+				move_capital_effect = yes
+				change_province_name = "Hamdullahi"
+				rename_capital = "Hamdullahi"
+			}
 			change_tag = ZAF
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				add_stability = -3
+				change_government = monarchy
+			}
+			if = {
+				limit = { is_revolutionary = no }
+				add_government_reform = feudal_theocracy
+			}
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			set_capital = 1131
-			1131 = {
-				change_province_name = "Hamdullahi"
-				rename_capital = "Hamdullahi"
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = SOK_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -110,33 +133,17 @@ country_decisions = { #unfinished
 			}
 			add_prestige = 25
 			add_piety = 0.25
-			if = {
-				limit = {
-					NOT = { government = monarchy }
-					is_revolutionary = no
-				}
-				change_government_to_monarchy = yes
-			}
-			if = {
-				limit = { is_revolutionary = no }
-				add_government_reform = feudal_theocracy
-			}
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
-			}
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			set_global_flag = uu_massina_happened_flag
-			set_country_flag = formed_macina_flag
+			change_primary_culture = fulani 
+			add_accepted_culture = bambara
 		}
+		ai_importance = 400
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 1800 }
+			}
 		}
-		ai_importance = 400 #
 	}
 	
 }
