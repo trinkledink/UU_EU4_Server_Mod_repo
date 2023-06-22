@@ -2086,7 +2086,7 @@ white_sea={
 		}
 	}
 	outgoing={
-		name="white_sea"
+		name="novgorod"
 		path={
 			1652 309 1261   
 		}
