@@ -1785,7 +1785,7 @@ inspiring_leader_personality = {
 	chance = {
 	}
 	
-	land_morale = 0.1
+	land_morale = 0.1 #UU Change
 	nation_designer_cost = 5
 } #1 better
 martial_educator_personality = {
@@ -3460,7 +3460,7 @@ legendary_conqueror_personality = {
 	years_of_nationalism = -5
 	
 	nation_designer_cost = 10
-
+	
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.75
 	building_budget_multiplier = 0.2

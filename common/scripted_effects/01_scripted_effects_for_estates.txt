@@ -3573,7 +3573,7 @@ seize_land_estate_effect = {
 # estate = what estate
 # Will give the estate 1% land
 give_estate_land_share_small = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 1
 	}
@@ -3582,7 +3582,7 @@ give_estate_land_share_small = {
 # estate = what estate
 # Will give the estate 2% land
 give_estate_land_share_medium = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 2
 	}
@@ -3591,7 +3591,7 @@ give_estate_land_share_medium = {
 # estate = what estate
 # Will give the estate 3% land
 give_estate_land_share_large = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 3
 	}
@@ -3600,7 +3600,7 @@ give_estate_land_share_large = {
 # estate = what estate
 # Will give the estate 5% land
 give_estate_land_share_massive = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 5
 	}
@@ -3609,14 +3609,14 @@ give_estate_land_share_massive = {
 # estate = what estate
 # Will give the estate 10% land
 give_estate_land_share_gigantic = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 10
 	}
 }
 
 give_estate_land_share_init = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = 20
 	}
@@ -3625,7 +3625,7 @@ give_estate_land_share_init = {
 # estate = what estate
 # Will take the 1% land from estate
 take_estate_land_share_small = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = -1
 	}
@@ -3634,7 +3634,7 @@ take_estate_land_share_small = {
 # estate = what estate
 # Will take away 2% land from estate
 take_estate_land_share_medium = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = -2
 	}
@@ -3643,7 +3643,7 @@ take_estate_land_share_medium = {
 # estate = what estate
 # Will take the 3% land from estate
 take_estate_land_share_large = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = -3
 	}
@@ -3652,7 +3652,7 @@ take_estate_land_share_large = {
 # estate = what estate
 # Will take the 5% land from estate
 take_estate_land_share_massive = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = -5.002		##UU change
 	}
@@ -3661,7 +3661,7 @@ take_estate_land_share_massive = {
 # estate = what estate
 # Will take the 10% land from estate
 take_estate_land_share_gigantic = {
-	 change_estate_land_share = {
+	change_estate_land_share = {
 		estate = $estate$
 		share = -10
 	}

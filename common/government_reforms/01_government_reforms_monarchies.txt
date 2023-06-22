@@ -748,15 +748,15 @@ elective_monarchy = {
 		custom_attributes = {
 			has_polish_election = yes
 			locked_government_type = yes
-	}
+		}
 	}
 
 	conditional = {
 		allow = { NOT = { has_dlc = "Res Publica" } }
-	custom_attributes = {
-		locked_government_type = yes
+		custom_attributes = {
+			locked_government_type = yes
+		}
 	}
-}
 }
 
 iqta = {
@@ -797,6 +797,7 @@ english_monarchy = {
 			have_had_reform = english_monarchy
 			tag = ENG
 			was_tag = ENG
+			tag = GBR
 		}
 	}
 	lock_level_when_selected = yes
@@ -804,7 +805,7 @@ english_monarchy = {
 	nation_designer_cost = 15
 	nation_designer_trigger = {
 		OR = {
-		has_dlc = "Common Sense"
+			has_dlc = "Common Sense"
 			has_dlc = "Domination"
 		}
 	}
@@ -1660,7 +1661,7 @@ stadthalter_monarchy_reform = {
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
 		#has_voc_indiamen = yes
-		#allowed_voc_indiamen_fraction = 0.2
+		#allowed_voc_indiamen_fraction = 0.2 		#UU these are now available to everyone
 		no_stability_loss_on_monarch_death = yes
 	}
 
@@ -2239,8 +2240,8 @@ prussian_monarchy_base = {
 				OR = {
 					has_reform = prussian_monarchy_base
 					have_had_reform = prussian_monarchy_base
-				have_had_reform = prussian_republic_reform
-				have_had_reform = prussian_theocratic_reform
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
 					is_hegemon_of_type = military_hegemon
 					development_in_provinces = {
 						value = 500
@@ -2252,10 +2253,10 @@ prussian_monarchy_base = {
 				is_playing_custom_nation = yes
 				OR = {
 					has_reform = prussian_monarchy_base
-				have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy
 					have_had_reform = prussian_monarchy_base
-				have_had_reform = prussian_republic_reform
-				have_had_reform = prussian_theocratic_reform
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
 				}
 			}
 			has_unlocked_government_reform = {
@@ -2353,7 +2354,7 @@ principality = {
 	nation_designer_cost = 5
 	nation_designer_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		religion = orthodox
@@ -2387,7 +2388,7 @@ tsardom = {
 	potential = {
 		religion = orthodox
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		NOT = { primary_culture = ruthenian }
@@ -2414,7 +2415,7 @@ tsardom = {
 
 	nation_designer_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		NOT = { primary_culture = ruthenian }
@@ -2922,7 +2923,7 @@ mandala_reform = {
 		vassal_forcelimit_bonus = 1
 	}
 	free_concentrate_development = yes
-	}
+}
 
 nayankara_reform = {
 	icon = "nayankara_system"
@@ -3611,7 +3612,7 @@ livonian_naval_monarchy = {
 		development_cost = -0.1
 		allowed_marine_fraction = 0.5
 		monarch_diplomatic_power = 2
-		burghers_loyalty_modifier = 0.1
+		burghers_loyalty_modifier = 0.1		
 	}
 	
 	removed_effect = {
@@ -4332,6 +4333,7 @@ quash_noble_power_reform = {
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
+		#parliament_effect_duration = -2
 	}
 	ai = {
 		factor = 1
@@ -4790,6 +4792,7 @@ separation_of_boyars_from_court_reform = {
 	modifiers = {
 		yearly_government_power = 1.25
 		nobles_influence_modifier = -0.1
+		global_tax_modifier = 0.05
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
@@ -5832,7 +5835,7 @@ legislative_sejm = {
 	potential = {
 		OR = {
 			has_reform = polish_elective_monarchy
-		has_reform = elective_monarchy
+			has_reform = elective_monarchy
 		}
 		has_dlc = "Res Publica"
 	}
@@ -5840,8 +5843,8 @@ legislative_sejm = {
 	trigger = {
 		OR = {
 			has_reform = polish_elective_monarchy
-		has_reform = elective_monarchy
-	}
+			has_reform = elective_monarchy
+		}
 	}
 	
 	modifiers = {
@@ -5862,7 +5865,7 @@ integrated_sejmiks = {
 	potential = {
 		OR = {
 			has_reform = polish_elective_monarchy
-		has_reform = elective_monarchy
+			has_reform = elective_monarchy
 		}
 		has_dlc = "Res Publica"
 	}
@@ -5870,7 +5873,7 @@ integrated_sejmiks = {
 	trigger = {
 		OR = {
 			has_reform = polish_elective_monarchy
-		has_reform = elective_monarchy
+			has_reform = elective_monarchy
 		}
 	}
 	
@@ -6443,6 +6446,7 @@ qng_grand_council_reform = {
 absolute_shogunate_reform = {
 	icon = "absolute_shogunate_reform"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			AND = {
@@ -6471,6 +6475,7 @@ absolute_shogunate_reform = {
 japanese_divine_empire = {
 	icon = "japanese_divine_empire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = { 
 			AND = {
@@ -6483,29 +6488,29 @@ japanese_divine_empire = {
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}
-	trigger = { 
-		if = { 
-			limit = { has_estate = estate_nobles }
-			num_of_estate_privileges = {
-				estate = estate_nobles 
-				value = 6 
-			}
-		}
-		if = { 
-			limit = { has_estate = estate_burghers }
-			num_of_estate_privileges = {
-				estate = estate_burghers 
-				value = 6 
-			}
-		}
-		if = { 
-			limit = { has_estate = estate_church }
-			num_of_estate_privileges = {
-				estate = estate_church 
-				value = 6 
-			}
-		}
-	}
+	#trigger = {
+	#	if = { 
+	#		limit = { has_estate = estate_nobles }
+	#		num_of_estate_privileges = {
+	#			estate = estate_nobles 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_burghers }
+	#		num_of_estate_privileges = {
+	#			estate = estate_burghers 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_church }
+	#		num_of_estate_privileges = {
+	#			estate = estate_church 
+	#			value = 6 
+	#		}
+	#	}
+	#}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	nation_designer_trigger = {

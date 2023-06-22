@@ -360,7 +360,10 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = english
+				OR = {
+					culture = anglois
+					culture = english
+				}
 				province_is_or_accepts_culture = yes
 			}
 		}	
@@ -373,7 +376,10 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = english
+				OR = {
+					culture = anglois
+					culture = english
+				}
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -542,7 +548,7 @@ tower_of_london = {
 			}
 			AND = {
 				OR = {
-				culture_group = british
+					culture_group = british
 					culture = anglois
 				}
 				province_is_or_accepts_culture = yes
@@ -569,7 +575,7 @@ tower_of_london = {
 			}
 			AND = {
 				OR = {
-				culture_group = british
+					culture_group = british
 					culture = anglois
 				}
 				province_is_or_accepts_culture = yes
@@ -1998,7 +2004,7 @@ kremlin = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		province_is_or_accepts_culture = yes
@@ -2017,7 +2023,7 @@ kremlin = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		province_is_or_accepts_culture = yes
@@ -2026,7 +2032,7 @@ kremlin = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 		province_is_or_accepts_culture = yes
@@ -3994,7 +4000,7 @@ shwedagon_pagoda = {
 
 the_great_wall_of_china = {
 	# province it starts in
-	start = 4958
+	start = 4958 #UU moved
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1368.01.01 #Ming dynasty
@@ -6295,7 +6301,7 @@ temple_of_confucius = {
 		OR = { 
 			province_is_or_accepts_religion = {
 				religion = confucianism
-			}
+			}	
 			has_owner_harmonized_religion = yes
 		}
 	}
@@ -6305,7 +6311,7 @@ temple_of_confucius = {
 		OR = { 
 			province_is_or_accepts_religion = {
 				religion = confucianism
-			}
+			}	
 			has_owner_harmonized_religion = yes
 		}
 	}
@@ -9533,6 +9539,7 @@ potosi = {
 						alliance_with = MNG 
 						overlord = { alliance_with = MNG }
 						any_ally = { is_emperor_of_china = yes }
+						is_subject_of = MNG
 					}
 				}
 				MNG = { 
@@ -9584,6 +9591,7 @@ potosi = {
 						alliance_with = MNG 
 						overlord = { alliance_with = MNG }
 						any_ally = { is_emperor_of_china = yes }
+						is_subject_of = MNG
 					}
 				}
 				MNG = { 
@@ -9635,6 +9643,7 @@ potosi = {
 						alliance_with = MNG 
 						overlord = { alliance_with = MNG }
 						any_ally = { is_emperor_of_china = yes }
+						is_subject_of = MNG
 					}
 				}
 				MNG = { 
@@ -10964,8 +10973,8 @@ brandenburg_gate = {
 		country_modifiers = {
 			monthly_militarized_society = 0.01
 			monthly_prussian_militarized_society_1 = 0.01
-			monthly_prussian_militarized_society_2 = 0.02
-			monthly_prussian_militarized_society_3 = 0.03
+			monthly_prussian_militarized_society_2 = 0.01
+			monthly_prussian_militarized_society_3 = 0.01
 			prestige_from_land = 0.5			
 		}
 		on_upgraded = {
@@ -10987,9 +10996,9 @@ brandenburg_gate = {
 			monthly_militarized_society = 0.02	
 			prestige_from_land = 1
 			army_tradition_from_battle = 0.25
-			monthly_prussian_militarized_society_1 = 0.04
-			monthly_prussian_militarized_society_2 = 0.05
-			monthly_prussian_militarized_society_3 = 0.06
+			monthly_prussian_militarized_society_1 = 0.02
+			monthly_prussian_militarized_society_2 = 0.02
+			monthly_prussian_militarized_society_3 = 0.02
 		}
 		on_upgraded = {
 		}
@@ -11010,9 +11019,9 @@ brandenburg_gate = {
 			monthly_militarized_society = 0.05
 			prestige_from_land = 1.5
 			army_tradition_from_battle = 0.5
-			monthly_prussian_militarized_society_1 = 0.07
-			monthly_prussian_militarized_society_2 = 0.08
-			monthly_prussian_militarized_society_3 = 0.09
+			monthly_prussian_militarized_society_1 = 0.05
+			monthly_prussian_militarized_society_2 = 0.05
+			monthly_prussian_militarized_society_3 = 0.05
 		}
 		conditional_modifier = {
 			trigger = { owner = { mission_completed = emp_brapru_the_balance_of_power } }
@@ -12570,14 +12579,14 @@ gyeongbok_palace = {
 		OR = {
 			AND = {
 				OR = {
-			culture = korean_new
-			culture = korean
-		}
-		province_is_or_accepts_culture = yes
+					culture = korean_new
+					culture = korean
+				}
+				province_is_or_accepts_culture = yes
 				OR = { 
-		province_is_or_accepts_religion = {
-			religion = confucianism
-		}	
+					province_is_or_accepts_religion = {
+						religion = confucianism
+					}	
 					has_owner_harmonized_religion = yes
 				}	
 			}
@@ -12600,14 +12609,14 @@ gyeongbok_palace = {
 		OR = {
 			AND = {
 				OR = {
-			culture = korean_new
-			culture = korean
-		}
-		province_is_or_accepts_culture = yes
+					culture = korean_new
+					culture = korean
+				}
+				province_is_or_accepts_culture = yes
 				OR = { 
-		province_is_or_accepts_religion = {
-			religion = confucianism
-		}	
+					province_is_or_accepts_religion = {
+						religion = confucianism
+					}	
 					has_owner_harmonized_religion = yes
 				}	
 			}
@@ -12624,14 +12633,14 @@ gyeongbok_palace = {
 		OR = {
 			AND = {
 				OR = {
-			culture = korean_new
-			culture = korean
-		}
-		province_is_or_accepts_culture = yes
+					culture = korean_new
+					culture = korean
+				}
+				province_is_or_accepts_culture = yes
 				OR = { 
-		province_is_or_accepts_religion = {
-			religion = confucianism
-		}	
+					province_is_or_accepts_religion = {
+						religion = confucianism
+					}	
 					has_owner_harmonized_religion = yes
 				}	
 			}

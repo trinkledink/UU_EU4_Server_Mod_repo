@@ -61,7 +61,7 @@ province_event = {
 					limit = {
 						OR = {
 							has_reform = daimyo
-						#	has_reform = indep_daimyo
+							has_reform = indep_daimyo
 						}
 					}
 					add_core = 1020
@@ -170,7 +170,7 @@ province_event = {
 						NOT = { war_with = event_target:new_shogunate }
 					}
 					country_event = { id = japan.2 }
-				}	
+				}
 			}
 			#Case - new owner is not the new shogun, previous one is dead -> all former daimyos become independent daimyo
 			if = {

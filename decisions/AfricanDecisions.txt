@@ -114,7 +114,7 @@ country_decisions = {
 		}
 	}
 
-	send_the_shaman_to_a_foreign_country = {
+	send_the_shaman_to_a_foreign_country = {	#UU Changed
 		potential = {
 			religion = shamanism
 			has_dlc = "Rights of Man"

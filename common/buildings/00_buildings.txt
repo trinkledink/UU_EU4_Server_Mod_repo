@@ -174,7 +174,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.4
+		local_manpower_modifier = 0.5
 	}
 	on_built = {
 		if = {
@@ -418,12 +418,13 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 50
+	cost = 100
 	time = 12
 	modifier = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
+		allowed_num_of_buildings = 1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -1080,7 +1081,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 0.8
+		local_manpower_modifier = 1
 	}
 	
 	on_built = {
@@ -1129,7 +1130,7 @@ training_fields = {
 		}
 		update_improved_military_buildings_modifier = {
 			building = training_fields
-	}
+		}
 		if = {
 			limit = {
 				FROM = {
@@ -1359,7 +1360,7 @@ counting_house = {
 
 
 town_hall = {
-	cost = 100
+	cost = 200
 	time = 12
 
 	make_obsolete = courthouse
@@ -1368,6 +1369,7 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
+		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -1983,9 +1985,9 @@ farm_estate = {
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 1 
+			building = manufactory 
+			type = production 
+			value = 2 
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2090,10 +2092,11 @@ ramparts = {
 		local_hostile_attrition = 1.5
 		max_attrition = 1.5
 		local_defensiveness = 0.15
+		local_defender_dice_roll_bonus = 1
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
-
+	
 	on_built = {
 		add_dev_from_building = {
 			building = manufactory 
@@ -2145,10 +2148,10 @@ soldier_households = {
 	}
 
 	modifier = {
-		local_manpower = 0.5
+		local_manpower = 0.75
 	}
 	bonus_modifier = {
-		local_manpower = 0.5
+		local_manpower = 0.75
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way

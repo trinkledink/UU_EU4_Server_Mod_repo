@@ -1517,7 +1517,7 @@ country_event = {
 	}
 }
 
-# Holy Empire of Britannia - Easter Egg 
+# Holy Empire of Britannia - Easter Egg
 country_event = {
 	id = flavor_gbr.21
 	title = flavor_gbr.21.t
@@ -3659,7 +3659,7 @@ province_event = {
 				limit = { is_eligible_for_trade_good = { trade_goods = copper } }
 				calculate_trade_goods_price = { trade_goods = copper }
 			}
-			#if = { 
+			#if = { #UU straight up removed
 			#	limit = { is_eligible_for_trade_good = { trade_goods = gold } }
 			#	calculate_trade_goods_price = { trade_goods = gold }
 			#}

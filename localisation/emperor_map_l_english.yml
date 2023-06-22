@@ -1,4 +1,4 @@
-﻿#Changed name of Valencia node
+#Changed name of Valencia node
 l_english:
  # French Provinces
  PROV4694:0 "Foix"
@@ -318,7 +318,7 @@ l_english:
  PGA:0 "Perugia"
  PGA_ADJ:0 "Perugian"
  # New Trade Nodes
- pest:0 "Danubia"
+ pest:0 "Danubia" #Changed
  valencia:0 "Toulouse" #Changed
  PROV4781:0 "Transvaal"
  PROV_ADJ4781:0 "Transvaal"

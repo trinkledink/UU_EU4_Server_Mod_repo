@@ -746,7 +746,7 @@
  select_primary_cult_jewish_cult_tt:0 "§YMazdayasna§! becomes our §YPrimary Cult§!.\nOther cults become unavailable, but we will not suffer a loss of Stability on the death of our [Root.Monarch.GetTitle]. Additionally, the modifiers of the Mazdayasna are strengthened.[Root.GetHeirPrimaryCultFeature]"
  select_primary_cult_zoroastrian_cult_tt:0 "§YHaymanot§! becomes our §YPrimary Cult§!.\nOther cults become unavailable, but we will not suffer a loss of Stability on the death of our [Root.Monarch.GetTitle]. Additionally, the modifiers of the Haymanot are strengthened.[Root.GetHeirPrimaryCultFeature]"
  empty_text:0 ""
- primary_cults_for_heirs_tt:0 "\n§Your heir will always select our Primary Cult as their own cult.§!"
+ primary_cults_for_heirs_tt:0 "\n§YOur heir will always select our Primary Cult as their own cult.§!"
  has_a_primary_cult_selected_tt:0 "Has a §YPrimary Cult§! selected."
  unlock_privilege_estate_church_one_faith_one_culture_tt:0 "Enables the [Root.GetClergyName] privilege '§YReligious Culture§!'"
  increase_same_religion_opinion_tt:0 "Every country which has the opinion modifier '§YSame Religion§!' will have their opinion of [Root.GetName] increased by additional §G+25§!."

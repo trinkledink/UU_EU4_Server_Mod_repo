@@ -30,7 +30,7 @@ kiel_canal = {
 			is_subject = no			
 			OR = { 
 				mission_completed = emp_brapru_kiel_canal
-				adm_tech = 15
+				adm_tech = 15 #UU Change
 			}
 		}
 	}
@@ -210,7 +210,7 @@ suez_canal = {
 			owns_or_vassal_of = 4316
 			owns_or_vassal_of = 2315
 			is_subject = no
-			adm_tech = 15
+			adm_tech = 15 #UU Change
 		}
 	}
 
@@ -388,7 +388,7 @@ panama_canal = {
 		FROM = {
 			owns_or_vassal_of = 835
 			is_subject = no
-			adm_tech = 15
+			adm_tech = 15 #UU Change
 		}
 	}
 

@@ -5092,7 +5092,10 @@ remove_dev_from_building = {
 add_dev_from_building = {
 	if = {
 		limit = {
-			FROM = { has_idea = smithian_economics } #base game bug
+			OR = {
+				FROM = { has_idea = smithian_economics } #possible base game bug, this condition added as a fallback
+				FROM = { full_idea_group = economic_ideas }
+			}
 			NOT = { gained_dev_from_eco_building = { building = $building$ } }
 		}
 		add_base_$type$ = $value$

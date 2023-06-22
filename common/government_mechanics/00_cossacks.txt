@@ -105,11 +105,11 @@ cossacks_mechanic = {
 			ai_chance = {
 				factor = 1
 				modifier = {
-					factor = 20
+					factor = 10
 					is_at_war = yes
 				}
 				modifier = {
-					factor = 100
+					factor = 10
 					is_in_important_war = yes
 				}
 			}
@@ -137,20 +137,6 @@ cossacks_mechanic = {
 			cooldown_years = 0
 			ai_chance = {
 				factor = 1
-				#modifier = {
-				#	factor = 100
-				#	needs_regiment_type = cossacks
-				#}
-				modifier = {
-					factor = 100
-					is_at_war = yes
-					NOT = { army_size_percentage = 0.8 }
-				}
-				modifier = {
-					factor = 100
-					is_in_important_war = yes
-					NOT = { army_size_percentage = 1 }
-				}
 				modifier = {
 					factor = 0
 					is_at_war = no
@@ -162,6 +148,20 @@ cossacks_mechanic = {
 				modifier = {
 					factor = 0
 					is_bankrupt = yes
+				}
+				modifier = {
+					factor = 10
+					needs_regiment_type = cossacks
+				}
+				modifier = {
+					factor = 10
+					is_at_war = yes
+					NOT = { army_size_percentage = 0.8 }
+				}
+				modifier = {
+					factor = 10
+					is_in_important_war = yes
+					NOT = { army_size_percentage = 1 }
 				}
 			}
 		}

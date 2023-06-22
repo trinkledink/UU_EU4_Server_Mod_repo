@@ -1,4 +1,4 @@
-﻿#Changed some trade company names
+#Changed some trade company names
 l_english:
  # Country formation decisions
  TTS:0 "Two Sicilies"
@@ -3200,7 +3200,7 @@ l_english:
  trade_company_saxony:0 "Saxon Charter"
  TRADE_COMPANY_SAXONY_Root_Culture_GetName:0 "[Root.Culture.GetName] Saxony Company"
  TRADE_COMPANY_SAXONY_European_Trade_Company:0 "Saxony Trade Company"
- trade_company_wien:0 "Austrian Charter"
+ trade_company_wien:0 "Austrian Charter" #Unused
  TRADE_COMPANY_WIEN_Root_Culture_GetName:0 "[Root.Culture.GetName] Austria Company"
  TRADE_COMPANY_WIEN_European_Trade_Company:0 "Austria Trade Company"
  trade_company_venice:0 "Adriatic Charter"
@@ -3209,9 +3209,9 @@ l_english:
  trade_company_krakow:0 "Polish Charter"
  TRADE_COMPANY_KRAKOW_Root_Culture_GetName:0 "[Root.Culture.GetName] Poland Company"
  TRADE_COMPANY_KRAKOW_European_Trade_Company:0 "Poland Trade Company"
- trade_company_pest:0 "Carpathian Charter"
- TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Carpathia Company"
- TRADE_COMPANY_PEST_European_Trade_Company:0 "Carpathia Trade Company"
+ trade_company_pest:0 "Danubian Charter"
+ TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danube Company"
+ TRADE_COMPANY_PEST_European_Trade_Company:0 "Danube Trade Company"
  trade_company_ragusa:0 "Balkan Charter"
  TRADE_COMPANY_RAGUSA_Root_Culture_GetName:0 "[Root.Culture.GetName] Balkan Company"
  TRADE_COMPANY_RAGUSA_European_Trade_Company:0 "Balkan Trade Company"

@@ -543,10 +543,11 @@ presidential_despot_reform = {	##UU Changed
 			militarization_mechanic
 		}
 	}
+
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 	has_term_election = no
 }
@@ -577,8 +578,8 @@ military_dictatorship_reform = {	##UU Changed
 	custom_attributes = {
 		generals_become_rulers = yes
 		locked_government_type = yes
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 }
 
@@ -1022,7 +1023,7 @@ veche_republic = {
 	legacy_equivalent = veche_republic_legacy
 	nation_designer_trigger = {
 		OR = {
-		culture_group = east_slavic
+			culture_group = east_slavic
 			culture_group = slavic
 		}
 	}
@@ -1082,9 +1083,9 @@ veche_republic = {
 		can_use_trade_post = yes
 	}
 	conditional = {
-		allow = {
+		allow = { 
 			OR = {
-			has_dlc = "Third Rome"
+				has_dlc = "Third Rome" 
 				has_dlc = "Domination"
 			}
 		}
@@ -1159,6 +1160,56 @@ great_veche_republic = {
 		}
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Third Rome" 
+			NOT = { has_dlc = "Domination" }
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			russian_mechanic
+			russian_modernization_mechanic
+		}
+	}
+	duration = 6
+}
+
+great_russian_republic_reform = {
+	icon = "organized_military_staff"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = great_russian_republic_reform
+			have_had_reform = great_russian_republic_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = great_russian_republic_reform
+			}
+		}
+	}
+	fixed_rank = 3
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	modifiers = {
+		global_manpower_modifier = 0.2
+		merchants = 2
+		governing_capacity = 350
+		yearly_absolutism = 0.5
+		global_autonomy = -0.05
+		embracement_cost = -0.5
+		max_absolutism = 50
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 	conditional = {
 		allow = {
@@ -1279,7 +1330,7 @@ american_republic = {
 	conditional = {
 		allow = {
 			OR = {
-			has_dlc = "Common Sense"
+				has_dlc = "Common Sense"
 				has_dlc = "Domination"
 			}
 		}
@@ -1330,7 +1381,7 @@ federal_republic = {
 	conditional = {
 		allow = {
 			OR = {
-			has_dlc = "Common Sense"
+				has_dlc = "Common Sense"
 				has_dlc = "Domination"
 			}
 		}
@@ -1859,7 +1910,7 @@ dutch_republic = {
 		reduced_liberty_desire_on_other_continent = 10
 		max_absolutism = 10
 		#has_voc_indiamen = yes
-		#allowed_voc_indiamen_fraction = 0.2
+		#allowed_voc_indiamen_fraction = 0.2  UU made these units available to everyone
 	}
 
 	removed_effect = {
@@ -1956,7 +2007,7 @@ cossacks_reform = {
 		cavalry_cost = -0.2
 		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
-		special_unit_forcelimit = 0.25
+		allowed_cossack_fraction = 0.25
 	}
 
 	conditional = {
@@ -3789,7 +3840,7 @@ pirate_representation_reform = {
 				crown_stronger_than_estate = { estate = estate_nobles }
 				has_reform = pirate_representation_reform
 			}
-		}	
+		}
 	}
 	modifiers = {
 		republican_tradition = 0.5

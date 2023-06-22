@@ -200,7 +200,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -292,7 +292,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.75
 			war_score = 50
@@ -373,7 +373,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -453,7 +453,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -550,7 +550,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -753,7 +753,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.8
 			num_of_royal_marriages = 3
@@ -861,7 +861,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 250
+		months = 500
 		modifier = {
 			factor = 0.75
 			NOT = { war_score = -15 }
@@ -1206,7 +1206,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1500
+		months = 1200
 		modifier = {
 			factor = 0.9
 			stability = 2
@@ -1651,7 +1651,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.5
 			all_neighbor_country = {
@@ -2001,7 +2001,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 700
+		months = 1400
 		modifier = {
 			factor = 0.75
 			temple = 3
@@ -2145,7 +2145,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 90
+		months = 180
 	}
 
 	immediate = {

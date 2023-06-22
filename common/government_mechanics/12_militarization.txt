@@ -13,7 +13,7 @@ militarization_mechanic = {
 				modifier = {
 					discipline = 0.10
 					manpower_recovery_speed = 0.20
-					land_maintenance_modifier = 0.20
+					land_maintenance_modifier = 0.20 #UU Change
 					monthly_militarized_society = -0.5
 				}
 			}
@@ -47,15 +47,23 @@ militarization_mechanic = {
 			ai_chance = {
 				factor = 10
 				modifier = {
-					factor = 10
-					not = {
-						has_government_power = {
-							mechanic_type = militarization_mechanic
-							power_type = militarized_society
-							value = 90
-						}
+					factor = 0
+					has_government_power = {
+						mechanic_type = militarization_mechanic
+						power_type = militarized_society
+						value = 90
 					}
-					mil_power_cost = 500
+				}
+				modifier = {
+					factor = 0
+					neighbors_tech_discount = 0.05
+				}
+				modifier = {
+					factor = 0
+					not = { mil_power_cost = 500 }
+				}
+				modifier = {
+					factor = 10
 					is_at_war = yes
 				}
 			}
