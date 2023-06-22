@@ -442,6 +442,8 @@ niger_region = {
 		manding_area
 		tekrur_area
 		jenne_area
+		yamoussoukro_area #new 
+		guinea_area #new
 	}
 	monsoon = {
 		00.06.01
@@ -473,7 +475,7 @@ sahel_region = {
 		kanem_area
 		bornu_area
 		azbin_area
-		kurdufan_area
+		#kurdufan_area #moved to Horn
 		western_sahara_area
 		dendi_area
 		baghena_area
@@ -505,6 +507,9 @@ horn_of_africa_region = {
 		damot_area
 		aussa_area
 		shewa_area
+		new_sudan_area #new
+		kurdufan_area #moved to here
+		new_darfur_area #new
 	}
 }
 
@@ -543,7 +548,7 @@ central_africa_region = {
 		katanga_area
 		zambia_area
 		luba_area
-		sankuru_area
+		#sankuru_area #UU moved
 		tanzania_area
 		kenya_area
 		buzinza_area
@@ -551,6 +556,9 @@ central_africa_region = {
 		rwanda_area
 		chokwe_area
 		bunyoro_area
+		imatong_area #new 
+		urgoma_area #new 
+		western_rift_area #new
 	}
 	monsoon = {
 		00.10.01
@@ -570,6 +578,9 @@ kongo_region = {
 		matamba_area
 		lower_kasai
 		kasai_area
+		sankuru_area #uu moved here
+		tshuapa_area #new 
+		central_congo_area #new 
 	}
 	monsoon = {
 		00.02.01
@@ -607,6 +618,7 @@ south_africa_region = {
 		butua_area
 		limpopo_area
 		transvaal_area
+		kalahari_area #new
 	}
 	monsoon = {
 		00.11.01
@@ -668,7 +680,7 @@ manchuria_region = {
 		jilin_area
 		central_jilin_area
 		ilan_hala_area
-		liaoning_area
+		#liaoning_area #moved to N. China
 		ningguta_area
 		central_heilongjiang_area
 		sakhalin_area
@@ -886,6 +898,9 @@ south_china_region = {
 		south_jiangsu_area
 		hunan_area
 		guangxi_area
+		south_jiangxi_area #new
+		west_hubei_area #new
+		guangzhou_area #new
 	}
 	monsoon = {
 		00.05.01
@@ -917,6 +932,8 @@ north_china_region = {
 		west_gansu_area
 		jiangsu_area
 		anhui_area
+		liaodong_area #new
+		liaoning_area #moved 
 	}
 }
 

@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 148  30  70 }
+color = { 99  14  87 }
 revolutionary_colors = { 1  8  5 } #Belgium
 
 historical_score = 650

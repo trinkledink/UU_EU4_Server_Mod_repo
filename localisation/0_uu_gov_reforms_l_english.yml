@@ -1,0 +1,14 @@
+﻿l_english:
+ tribe_settle_the_land_reform:0 "Settle the Land"
+  tribe_settle_the_land_reform_desc:0 "After establishing a somewhat central government over the tribes in our area, we can direct the sttlement of our people more efficiently."
+ tribal_tradekingdom:0 "Trading Kingdom"
+  tribal_tradekingdom_desc:0 "A state centered around a city important to local trade routes."
+ hanseatic_city_reform:0 "Hanseatic City"
+  hanseatic_city_reform_desc:0 "This Republic embraces its historical connections to the Hanseatic League and its mercantile philosophy. Our nation tries to emulate Hanseatic systems of republicanism in the hopes that they will gather great wealth as the Hansa did."
+ not_siberian_tribe:0 "Native Council"
+  not_siberian_tribe_desc:0 "One or more clans headed by an elder with a council of other leaders to help him make decisions related to their respective areas."
+ 
+ #Government Names
+ UU_MAI:0 "Mai" #King of Kanem Bornu
+ UU_CALIPHATE:0 "Caliphate" #For Sokoto
+ UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies

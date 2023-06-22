@@ -1,0 +1,30 @@
+﻿l_english: 
+ UU_declare_a_papal_creed_title:0 "Declare a Papal Creed"
+ UU_declare_a_papal_creed_desc:0 "Access the papal interactions which are not normally available to the Papal States. These can be activated at any time, but only one modifier can be active at once."
+ UU_papal_creed.EVTNAME1:0 "A New Papal Creed"
+ UU_papal_creed.EVTDESC1:0 "The people eagerly await direction from our communion with God. It is time to announce to the masses God's will and how best to serve Him."
+ UU_papal_creed.EVTOPTA:0 "Christ was a carpenter, let us complete His work on Earth."
+ UU_papal_creed.EVTOPTB:0 "Donate artifacts to the armies. We fight for God and glory!"
+ UU_papal_creed.EVTOPTC:0 "We will mediate the conflicts of man."
+ UU_papal_creed.EVTOPTD:0 "The Church offers salvation even for users."
+ UU_papal_creed.EVTOPTE:0 "We must all rise to serve His will."
+ UU_papal_creed.EVTOPTF:0 "Announce a new saint."
+ UU_papal_creed.EVTOPTG:0 "We must extirpate reformist thought from the church."
+
+ ##################  Papal Conclave Election  ########################
+ UU_papal_election.EVTNAME1:0 "The Papal Conclave"
+ UU_papal_election.EVTDESC1:0 "With the passing of $MONARCHTITLE$ $MONARCH$, white smoke rises from the Vatican as the Papal conclave declares St. Peter's newest successor. Our actions in the lead up to their decision have surely influenced the outcome..."
+ UU_papal_election.1.a:0 "I hope our 'investments' paid off."
+ UU_papal_election.1.b:0 "I hope our threats were taken seriously."
+ UU_papal_election.1.c:0 "The Cardinals will have made the right decision on their own."
+ 
+ 
+ ############~\common\event_modifiers###############
+ recent_papal_creed:0 "Recent Papal Creed"
+ ###################################################
+ 
+ u_u_maybe_later:0 "Maybe later"
+ 
+ ##################  KoG Flag  ########################
+ is_kingdom_of_god_tt:0 "Has declared the §YKingdom of God§!"
+ #is_kingdom_of_god_flag:0 "Is Kingdom of God"

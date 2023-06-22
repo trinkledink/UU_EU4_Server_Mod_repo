@@ -1,0 +1,74 @@
+﻿l_english:
+ #ELB Formation
+ elbian_nation_title:0 "Form the Elbian Confederation"
+ elbian_nation_desc:0 "The Czechs and Saxons have grown ever closer through their similar understanding of religion and culture. It is time to properly align our interests and confederate into a single state."
+ elbian_nation_diplomatically_title:0 "Form the Elbian Confederation Diplomatically"
+ elbian_nation_diplomatically_desc:0 "The Czechs and Saxons have grown ever closer through their similar understanding of religion and culture. It is time to properly align our interests and confederate into a single state."
+ #AUH Formation
+ form_austrohungarian_empire_title:0 "Form Austro-Hungarian Empire"
+ form_austrohungarian_empire_desc:0 "Abandon the Empire in favor of our own Imperial ascendance."
+ form_austrohungarian_empire_diplomatically_title:0 "Form Austro-Hungarian Empire Diplomatically"
+ form_austrohungarian_empire_diplomatically_desc:0 "Abandon the Empire in favor of our own Imperial ascendance."
+ #CTG Formation
+ ctg_nation_title:0 "Reform Carthage"
+ ctg_nation_desc:0 "It's time we lead our people into the prosperous times of our once glorious past and abandon this uncivilized pirating."
+ #SON Formation
+ songhai_nation_title:0 "Unite the Songhai"
+ songhai_nation_desc:0 "The Songhai people have been under foreign domination for too long. It is time to become a strong kingdom in our own right, and forge our own Empire to span the Sahel!"
+ #African Caliphate Formations
+ uu_sokoto_nation_title:0 "Establish the Sokoto Caliphate"
+ uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a Caliphate to rule over the Hausa cities, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ uu_kick_out_fulani_scholar_title:0 "Ban the Fulani Preachers"
+ uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
+ uu_allow_sokoto_decision_tt:0 "Has the country modifier '§YFulani Preacher Accepted§!' from the event '§YFulani Preachers§!', which fires in the early 1500s."
+ uu_macina_nation_title:0 "Establish the Massina Caliphate"
+ uu_macina_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate based in the Massina, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ #Military Dictatorship
+ military_coup_title:0 "Military Coup"
+ military_coup_desc:0 "Only the strong can lead. Our current ruler is too weak."
+ #Buddhism Karma Decisions
+ help_poor_title:0 "Help the Poor"
+ help_poor_desc:0 "It is time we spent our resources to help those less fortunate"
+ benefit_from_offerings_title:0 "Benefit From Temple Offerings"
+ benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
+ #Advisor Event Checker
+ advisor_events_title:0 "Advisor Events"
+ advisor_events_desc:0 "Events triggered by your Level 3+ advisors this game, as well as some other important ones."
+ #El Dorado Search
+ U.U_search_for_el_dorado_title:0 "Start the search for El Dorado"
+ U.U_search_for_el_dorado_desc:0 "We may invest some of our money and troops and maybe find the legendary city of El Dorado"
+ is_searching_el_dorado:0 "Is searching for El Dorado"
+ #MJL Change Muslim School
+ mjl_change_muslim_school_decision_tt:0 "Change the Muslim school that our country follows."
+ mjl_change_muslim_school_title:0 "Change School"
+ mjl_change_muslim_school_desc:0 "Change School"
+ mjl_events.EVTNAME5:0 "Change School"
+ mjl_events.EVTDESC5:0 "As a country on the verge of change we need to decide which particular religious school we should start patronizing. While there are many ways to follow God we should have a new specific guiding doctrine for our rulers to follow."
+ mjl_events.EVTOPTA5:0 "Hanafi"
+ mjl_events.EVTOPTB5:0 "Hanbali"
+ mjl_events.EVTOPTC5:0 "Maliki"
+ mjl_events.EVTOPTD5:0 "Shafi'i"
+ mjl_events.EVTOPTE5:0 "Jafari"
+ mjl_events.EVTOPTF5:0 "Ismaili"
+ mjl_events.EVTOPTG5:0 "Zaidi"
+ mjl_change_muslim_school_trigger_tooltip:0 "Only possible once per game."
+ #UU Hansa Cosmetic Rename
+ uuhsa_rename_decision_title:0 "Change Country Name to just 'Hansa'"
+  uuhsa_rename_decision_desc:0 "If you think 'Hanseatic League' is too long?"
+ UU_balance_events.6.t:0 "Change Country Name to just 'Hansa'"
+  UU_balance_events.6.desc:0 "Exactly what it says on the tin. You only get to make this choice once because the guys don't want to file all the paperwork again"
+  UU_balance_events.6.a:0 "Let's shorten our name (Hansa)"
+  UU_balance_events.6.b:0 "Keep current name (Hanseatic League)."
+  UU_balance_events.6.c:0 "Keep current name (if your name is neither, for some reason)"
+ #Subjects Decisions
+ uu_recolorsubjects_title:0 "Change Subjects to your Map Colour"
+  uu_recolorsubjects_desc:0 "Changes all vassals, marches, and client states to your map colour. Does not affect daimyos, appanages, eyalets, tributaries, junior partners, etc. \n§RWARNING: This may cause problems when subjects occupy provinces with your map colour.§!"
+  uu_overlord_colour_tt:0 "Do NOT have [Root.GetName]'s map colour"
+ uu_fra_recolorsubjects_title:0 "Recolour Appanages" 
+  uu_fra_recolorsubjects_desc:0 "Changes the map colours of Appanage subjects to a shade of blue similar to the French one."
+ uu_restore_color_title:0 "Restore our Map Colour"
+  uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
+ uu_restore_color_overlord_title:0 "Restore Subjects' Map Colours"
+  uu_restore_color_overlord_desc:0 "Changes all subjects back to their original map colours, unless an override exists."
+
+ 

@@ -1,4 +1,4 @@
-#Changed some trade company names
+﻿#Changed some trade company names
 l_english:
  # Country formation decisions
  TTS:0 "Two Sicilies"
@@ -3182,7 +3182,7 @@ l_english:
  trade_company_timbuktu:0 "West African Charter"
  TRADE_COMPANY_TIMBUKTU_Root_Culture_GetName:0 "[Root.Culture.GetName] West Africa Company"
  TRADE_COMPANY_TIMBUKTU_African_Trade_Company:0 "West Africa Trade Company"
- trade_company_valencia:0 "Occitan Charter"
+ trade_company_valencia:0 "Occitanian Charter"
  TRADE_COMPANY_VALENCIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Occitania Company"
  TRADE_COMPANY_VALENCIA_European_Trade_Company:0 "Occitania Trade Company"
  trade_company_champagne:0 "Burgundian Charter"
@@ -3203,9 +3203,9 @@ l_english:
  trade_company_wien:0 "Austrian Charter" #Unused
  TRADE_COMPANY_WIEN_Root_Culture_GetName:0 "[Root.Culture.GetName] Austria Company"
  TRADE_COMPANY_WIEN_European_Trade_Company:0 "Austria Trade Company"
- trade_company_venice:0 "Adriatic Charter"
- TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Adriatic Company"
- TRADE_COMPANY_VENICE_European_Trade_Company:0 "Adriatic Trade Company"
+ trade_company_venice:0 "Venetian Charter"
+ TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Venetia Company"
+ TRADE_COMPANY_VENICE_European_Trade_Company:0 "Venetia Trade Company"
  trade_company_krakow:0 "Polish Charter"
  TRADE_COMPANY_KRAKOW_Root_Culture_GetName:0 "[Root.Culture.GetName] Poland Company"
  TRADE_COMPANY_KRAKOW_European_Trade_Company:0 "Poland Trade Company"

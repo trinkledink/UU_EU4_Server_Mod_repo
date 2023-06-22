@@ -401,11 +401,6 @@ interaction = {
 				id = estate_privileges_and_agendas_events.7
 			}
 		}
-		else = {
-			country_event = {
-				id = estate_privileges_and_agendas_events.7
-			}
-		}
 		if = {
 			limit = {
 				has_government_attribute = seizing_land_takes_karma

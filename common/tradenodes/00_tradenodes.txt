@@ -914,7 +914,7 @@ malacca={
 	}
 	ai_will_propagate_through_trade=yes
 }
-ganges_delta={
+ganges_delta={ #Bengal
 	location=1343
 	color = {
 		51 79 170
@@ -1034,7 +1034,7 @@ deccan={
 		526 2056 2057 2093 4461 550 551 2092 4458 4460 532 2033 4428 2028 4438 4444 542 2037 4436 4439 527 4434 4453 569 1948 2035 4435 546 548 2050 4442 4443 1946 2034 4431 544 545 4432 4433 4437 
 	}
 }
-comorin_cape={
+comorin_cape={ #Coromandel
 	location=1340
 	color={
 		13 255 179 
@@ -1106,7 +1106,7 @@ gujarat={ ##UU No longer goes to zanzibar
 ethiopia={
 	location=2772
 	color = {
-		56  120  191
+		56 120 191
 	}
 	inland=yes
 	outgoing={
@@ -1140,7 +1140,6 @@ ethiopia={
 		1217 1218 1222 1228 2756 2757 2758 2759 2760 2761 2762 2763 2772 2791 2778 2785 2797 2766 2767 2769 2770 2771 2779 2780 2781 1224 1213 1223 1214 1216 1221 2800 2801 2802 1229 1225 1226 1227 1220 1207 1208 1210 2798 2799 1219 2776 4033 4158 2777 4051 4052 
 	}
 }
-
 gulf_of_aden={
 	location=4346
 	color={
@@ -2167,7 +2166,7 @@ champagne={
 	location=186
 	color={
 		#193 26 14
-		145  20  70 
+		145 20 70 
 	}
 	inland=yes
 	outgoing={
