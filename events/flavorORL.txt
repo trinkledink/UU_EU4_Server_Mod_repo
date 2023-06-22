@@ -1,5 +1,6 @@
 ########################################
 # Major Flavor Events                  #
+# UU decreased MTTH of Jeanne event chain
 ########################################
 
 namespace = flavor_orl

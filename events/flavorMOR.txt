@@ -2,6 +2,7 @@
 # Flavor Events for Morocco
 #
 # Scripted by Henrik Lohmander
+# UU Removed crisis of the maghreb
 ###########################################
 
 namespace = flavor_mor
