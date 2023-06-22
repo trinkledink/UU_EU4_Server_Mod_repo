@@ -1,0 +1,87 @@
+namespace = UU_papal_election
+
+
+country_event = {
+	id = UU_papal_election.1
+	title = "UU_papal_election.EVTNAME1"
+	desc = "UU_papal_election.EVTDESC1"
+	picture = PRINCE_BISHOP_RESIGN_eventPicture
+	
+	
+	trigger = {
+		tag = PAP
+		NOT = { has_country_modifier = UU_recent_papal_election }
+	}
+	mean_time_to_happen = {
+		months = 96 # base mtth is 8 years
+	
+		modifier = {		# Age 40-49: mtth = 12yrs; 95% of the time will happen by 18yrs
+			factor = 1.5
+			AND = {
+				ruler_age = 40
+				NOT = { ruler_age = 50 }
+			}
+		}					# Age 50-54: mtth =  8.0yrs; 95% of the time will happen by 12yrs
+		modifier = {		# Age 55-59: mtth =  6.4yrs; 95% of the time will happen by  9yrs
+			factor = 0.8
+			AND = {
+				ruler_age = 55
+				NOT = { ruler_age = 60 }
+			}
+		}
+		modifier = {		# Age 60+  : mtth = 4.8yrs; 95% of the time will happen by  7yrs
+			factor = 0.6
+			ruler_age = 60
+		}
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = UU_recent_papal_election
+			duration = 365	#always get atleast 1 year with each pope
+			hidden = yes
+		}
+		hidden_effect = {
+			define_exiled_ruler = {
+				exiled_as = pope_candidate_a_@ROOT
+				male = yes
+				min_age = 45
+				max_age = 70
+				option = 0
+			}
+			define_exiled_ruler = {
+				exiled_as = pope_candidate_b_@ROOT
+				male = yes
+				min_age = 45
+				max_age = 70
+				option = 1
+			}
+			define_exiled_ruler = {
+				exiled_as = pope_candidate_c_@ROOT
+				male = yes
+				min_age = 45
+				max_age = 70
+
+				option = 2
+			}
+		}
+	}
+	after = {
+		clear_exiled_ruler = pope_candidate_a_@ROOT
+		clear_exiled_ruler = pope_candidate_b_@ROOT
+		clear_exiled_ruler = pope_candidate_c_@ROOT
+	}
+
+
+	option = {
+		name = UU_papal_election.1.a
+		set_ruler = pope_candidate_a_@ROOT
+	}
+	option = {
+		name = UU_papal_election.1.b
+		set_ruler = pope_candidate_b_@ROOT
+	}
+	option = {
+		name = UU_papal_election.1.c
+		set_ruler = pope_candidate_c_@ROOT
+	}
+}
