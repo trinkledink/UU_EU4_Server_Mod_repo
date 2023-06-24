@@ -1173,7 +1173,7 @@ FKN_ideas = { #Franconia
 }
 KIT_ideas = { #Kitara
 	start = {
-		max_hostile_attrition = 1
+		max_hostile_attrition = 2
 		hostile_attrition = 2
 	}
 	

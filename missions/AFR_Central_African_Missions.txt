@@ -26,14 +26,23 @@ central_africa_military_missions = {
 			army_size_percentage = 1
 			has_mil_advisor = yes
 		}
-		effect = {
+		effect = {								#UU changed
 			capital_scope = {
 				area = { 
 					limit = {
 						NOT = { is_core = ROOT }
+					}
+					add_core = ROOT 
+				}
+			}
+			home_trade_node_effect_scope = {
+				every_trade_node_member_province = {
+					limit = {
+						is_city = yes
+						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
-					add_claim = ROOT 
+					add_permanent_claim = ROOT 
 				}
 			}
 			add_army_tradition = 10

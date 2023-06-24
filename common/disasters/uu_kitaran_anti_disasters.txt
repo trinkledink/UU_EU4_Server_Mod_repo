@@ -1,0 +1,90 @@
+uu_great_lakes_renaissance = {
+	potential = {
+		tag = KIT
+		is_free_or_tributary_trigger = yes
+		#NOT = { has_country_flag = had_great_lakes_renaissance }
+	}
+
+
+
+	can_start = {
+		has_institution = renaissance
+		has_any_disaster = no
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+			at_war = yes
+		}
+	}
+	
+	ended_by_country_breaking_to_rebels = yes
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			legitimacy = 90 
+		}
+		modifier = {
+			factor = 1
+			adm = 4
+		}
+		modifier = {
+			factor = 1
+			dip = 4
+		}
+		modifier = {
+			factor = 1
+			mil = 4
+		}
+		modifier = {
+			factor = 0.5
+			stability = 2 
+		}
+		modifier = {
+			factor = 0.5
+			stability = 3
+		}		
+	}
+	
+	can_end = {
+		had_country_flag = { flag = had_great_lakes_renaissance days = 9125 }
+	}
+	
+
+
+
+	modifier = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+		stability_cost_modifier = -0.1
+	}	
+	
+	
+	on_start = uu_kitara.1
+	on_end = uu_kitara.2
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			# 100 = war_of_the_roses.2		
+			# 100 = war_of_the_roses.3		
+			# 100 = war_of_the_roses.4
+			# 100 = war_of_the_roses.5
+			# #6 is triggere from on battle	
+			# 100 = war_of_the_roses.7
+			# 100 = war_of_the_roses.8	
+			# 100 = war_of_the_roses.9
+			#10 & 11 is triggered from siege won
+			#12 % 13 triggers for other nations, and fires 14.
+			#101 & 102 are endings for rebel victory.
+		}
+	}
+}
+
