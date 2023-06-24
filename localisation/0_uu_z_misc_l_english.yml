@@ -75,8 +75,8 @@
 
  #Cultures
  czech_newer:0 "Elbian" #Germanic group clone of Czech
- zhuang:0 "Cuengh" #Indigenous name
- zhuang_new:0 "Zhuang" #Sinicized name
+ #zhuang:0 "Cuengh" #Duplicated here. Indigenous name 
+ #zhuang_new:0 "Zhuang" #Duplicated here. Sinicized name
  turkic:0 "Oghuz" #New Turkic culture group
  #Unused?
  peruvian_theocarcy:0 "Peruvian Theocracy"

@@ -16,7 +16,7 @@
  korean_new:1 "Sino-Korean"
  tibetan_new:1 "Sino-Tibetan"
  altaic_new:0 "Sino-Altaic"
- zhuang_new:0 "Sino-Zhuang"
+ zhuang_new:0 "Zhuang" #UU Change
  # Manchu missions
  mch_great_wall_title:0 "Bypass the Great Wall"
  mch_great_wall_desc:0 "The Chinese Emperor foolishly believes that a wall can protect him from his enemies. A direct assault would be risky, but there are other ways to bypass a wall..."

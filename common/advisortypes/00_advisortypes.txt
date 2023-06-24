@@ -369,13 +369,8 @@ theologian = {
 	}
 	
 	# Bonus
-	papal_influence = 1
-	monthly_fervor_increase = 0.25
-	church_power_modifier = 0.075
-	yearly_patriarch_authority = 0.0025
-	monthly_piety = 0.001
-	yearly_harmony = 0.25
-	yearly_karma_decay = 0.025
+	global_unrest = -2
+
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -436,6 +431,43 @@ theologian = {
 		modifier = { global_heretic_missionary_strength = 0.01 }
 	}
 
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_papacy = yes } }
+		modifier = { papal_influence = 0.2 } # +1 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_church_aspects = yes } }
+		modifier = { church_power_modifier = 0.02 } # +10% at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_fervor = yes } }
+		modifier = { monthly_fervor_increase = 0.1 } # +0.5 monthly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_patriarch_authority = yes } }
+		modifier = { yearly_patriarch_authority = 0.001 } # +0.5% yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_piety = yes } }
+		modifier = { monthly_piety_accelerator = 0.0005 } # 0.25 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { religion = confucianism } }
+		modifier = { yearly_harmony = 0.05 } # +0.25 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_karma = yes } }
+		modifier = { yearly_karma_decay = 0.01 } # 5% yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_doom = yes } }
+		modifier = { yearly_doom_reduction = 0.2 } # -1 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_authority = yes } }
+		modifier = { yearly_authority = 0.03 } # +0.15 yearly at lv.5
+	}
+
 	chance = {
 		factor = 1.5
 
@@ -443,25 +475,6 @@ theologian = {
 	
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				owner = { religion = coptic }
-				owner = { religion = shinto }
-				owner = { religion = hinduism }
-				owner = { religion = sikhism }
-				owner = { religion = animism }
-				owner = { religion = shamanism }
-				owner = { religion = totemism }
-				owner = { religion = inti }
-				owner = { religion = nahuatl }
-				owner = { religion = mesoamerican_religion }
-				owner = { religion = norse_pagan_reformed }
-				owner = { religion = dreamtime }
-				owner = { religion = tengri_pagan_reformed }
-				owner = { religion = zoroastrian }
-			}
-		}
 	}
 }
 

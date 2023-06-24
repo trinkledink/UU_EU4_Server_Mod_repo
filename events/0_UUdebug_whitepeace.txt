@@ -1,0 +1,68 @@
+namespace = uu_whitepeace
+
+country_event = {
+	id = uu_whitepeace.1
+	title = "uu_whitepeace.1.t"
+	desc = "uu_whitepeace.1.desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_war_enemy_country = {
+				limit = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject = no
+					}
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+						}
+						is_in_war = {
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+						}
+						is_in_war = {
+							defender_leader = THIS
+						}											
+					}
+				}
+				save_event_target_as = uu_peacetarget
+			}			
+		}
+	}
+
+	option = {
+		name = "uu_whitepeace.1.a"
+		trigger = {
+			is_at_war = yes
+		}
+		event_target:uu_peacetarget = {
+			white_peace = ROOT
+		}		
+	}
+	option = {
+		name = "uu_whitepeace.1.b"
+		trigger = {
+			is_at_war = yes
+		}		
+		country_event = {
+			id = uu_whitepeace.1
+		}
+	}	
+	option = {
+		trigger = {
+			is_at_war = no
+		}
+		name = "uu_whitepeace.1.c"
+	}
+	option = {
+		name = "uu_whitepeace.1.z"
+	}	
+}
+
+

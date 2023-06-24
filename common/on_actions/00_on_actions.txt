@@ -2,7 +2,6 @@
 
 # country
 on_startup = {
-	ZAF = { override_country_name = UUMASSINA } 
 	change_variable = {
         which = dev_adm_clicks
         value = 0

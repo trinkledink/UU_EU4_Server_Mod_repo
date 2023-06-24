@@ -1,0 +1,19 @@
+namespace = uu_diplomat
+
+country_event = {
+   id = uu_diplomat.1
+   title = uu_diplomat.1.t
+   desc = uu_diplomat.1.desc
+   picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+    major = yes
+	
+	option = {
+		name = "uu_diplomat.1.a"
+		add_country_modifier = {
+			name = player_uncon_diplomat_modifier
+            duration = 1
+		}		
+	}
+}

@@ -7,8 +7,6 @@
   CTG_ADJ:0 "Carthaginian"
  KOB:0 "Kingdom of Barcid"
   KOB_ADJ:0 "Barcid"
- RZI:0 "Rozwi" #Duplicate 
-  RZI_ADJ:0 "Rozwi"
  UUHSA:0 "Hanseatic League"
   UUHSA_ADJ:0 "Hanseatic"
  UUHSA2:0 "Hansa"
@@ -37,9 +35,5 @@
   ZAM_ADJ:0 "Zamfara"
  DRA:0 "Daura"
   DRA_ADJ:0 "Daura"
- AVE:0 "Dual Monarchy" #Duplicate 
-  AVE_ADJ:0 "Anglo-French"
  UUFOUTATORO:0 "Fouta Tooro"
   UUFOUTATORO_ADJ:0 "Fouta Tooro"
- UUMASSINA:0 "Massina"
-  UUMASSINA_ADJ:0 "Massina"
