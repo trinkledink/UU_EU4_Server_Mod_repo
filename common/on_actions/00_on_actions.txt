@@ -18,6 +18,14 @@ on_startup = {
         which = dev_sum_clicks
         value = 0
     }
+	change_variable = {
+        which = uu_disinherit_counter_var
+        value = 0
+    }
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 0
+    }
 	if = {
 		limit = {
 			current_age = age_of_discovery
@@ -1403,6 +1411,10 @@ on_heir_death = {
 	on_heir_disinherited_or_death_effect = yes
 	ladislaus_postumus_heir_died_effect = yes
 	joan_de_trastamara_heir_died_effect = yes
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 1
+    }
 }
 
 # country
@@ -2097,6 +2109,18 @@ on_adm_development = {
 		add_local_autonomy = -5
 		add_prosperity = 1
 	}
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_adm_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 # province
@@ -2114,6 +2138,18 @@ on_dip_development = {
 		add_nationalism = -3
 		add_local_autonomy = -5
 		add_prosperity = 1
+	}
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_dip_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
 	}
 
 }
@@ -2135,7 +2171,18 @@ on_mil_development = {
 		add_local_autonomy = -5
 		add_prosperity = 1
 	}
-
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_mil_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 on_overextension_pulse = {
@@ -6104,4 +6151,12 @@ on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
 
 on_heir_disinherited = {
 	on_heir_disinherited_or_death_effect = yes
+	change_variable = {
+        which = uu_disinherit_counter_var
+        value = 1
+    }
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 1
+    }
 }

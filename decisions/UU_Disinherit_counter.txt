@@ -1,0 +1,23 @@
+Country_decisions = { 
+	uu_disinherit_counter_decision = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { 
+				government = republic 
+				government = native
+			}
+		}
+		ai_will_do = { #should be redundant
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = uu_disinherit_counter_tooltip
+				always = no
+			}
+		}
+		effect = {
+		}
+	}
+}

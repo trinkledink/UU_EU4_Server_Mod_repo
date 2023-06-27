@@ -2092,7 +2092,7 @@ ramparts = {
 		local_hostile_attrition = 1.5
 		max_attrition = 1.5
 		local_defensiveness = 0.15
-		local_defender_dice_roll_bonus = 1
+		garrison_damage = 0.25
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2326,6 +2326,11 @@ state_house = {
 			building = state_house
 			type = tax
 			value = 2
+		}
+		add_dev_from_building = { #uu
+			building = state_house 
+			type = tax 
+			value = 1 
 		}
 	}
 	on_destroyed = {

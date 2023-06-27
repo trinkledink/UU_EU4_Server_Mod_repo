@@ -57,4 +57,13 @@
  uu_easter_egg_events.11.desc:0 "Hidden Event"
  uu_easter_egg_events.11.a:0 "Hidden Event"
 
+ uu_easter_egg_events.12.t:0 "Morocconomics"
+ uu_easter_egg_events.12.desc:0 "Two of our most trusted advisors, $MASTER_OF_MINT$ and $TRADER$, have been talking a lot recently. Plotting, some say. Drafting plans for [Root.GetName]'s future, others say. Whatever they are discussing, it's clearly controversial enough to warrant some secrecy.\n\nFinally, they approach [Root.Monarch.GetTitle] [Root.Monarch.GetName] to present the results. The thick stack of papers contains plans for, apparently, exploiting the burghers estate to milk them for more loans than intended. Radical, some would say.\n'Necessary,' $MASTER_OF_MINT$ says.\n'Morocconomics,' says $TRADER$.\n\nWhat does [Root.Monarch.GetName] say about this?"
+ uu_easter_egg_events.12.a:0 "MOROCCONOMICS"
+ uu_easter_egg_events.12.b:0 "Get out of there, both of you!"
+
+ uu_easter_egg_events.13.t:0 "Renovation of Malbork Castle"
+ uu_easter_egg_events.13.desc:0 "Our focus on our national marine corps has led to searches to find a suitable headquarters for them. The castle in Malbork, situated on a lagoon in Prussia, has recently become a very popular vacation spot for off-duty marines and has led to many seeking to repurpose parts of the structure into a permanent marine facility, with rich veterans volunteering to cover all costs."
+ uu_easter_egg_events.13.a:0 "We shall renovate Malbork Castle."
+ uu_marienburg:0 "Renovated Marineburg Castle"
  #TEU:0 "Tectonic Order"

@@ -150,6 +150,10 @@ UU_recent_papal_election = {
 uu_blessed_by_dream = {
 	prestige = 1
 }
+uu_marienburg = {
+	allowed_marine_fraction = 0.1
+	local_sailors_modifier = 0.25
+}
 #France 
 UU_french_morale = {
 	land_morale = -0.05

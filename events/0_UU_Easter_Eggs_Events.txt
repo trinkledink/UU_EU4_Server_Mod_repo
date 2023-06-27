@@ -309,7 +309,7 @@ country_event = {
     picture = TEMPORAL_RIFT_eventPicture
 
     mean_time_to_happen = {
-        months = 4000
+        months = 3600
     }
     major = yes
     fire_only_once = yes 
@@ -349,5 +349,104 @@ country_event = {
    
     option = {
         name = uu_easter_egg_events.11.a
+    }
+}
+
+country_event = { #Morocconomics
+    id = uu_easter_egg_events.12
+    title = uu_easter_egg_events.12.t
+    desc = uu_easter_egg_events.12.desc 
+    picture = MERCHANTS_TALKING_eventPicture
+
+    mean_time_to_happen = {
+        months = 240
+    }
+    fire_only_once = yes 
+    trigger = {
+        OR = {
+            tag = MOR 
+            was_tag = MOR 
+            primary_culture = moroccan
+        }
+        has_estate_loan = yes
+        num_of_loans = 8
+        advisor = trader
+		advisor = master_of_mint
+    }
+   
+    option = {
+        name = uu_easter_egg_events.12.a
+        add_prestige = -10
+        add_mercantilism = 5
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.12.b
+        reduce_meritocracy_effect = yes
+		remove_advisor = master_of_mint
+		remove_advisor = trader
+		add_adm_power = 2
+		add_dip_power = 2
+    }
+}
+
+country_event = { #Renovation of Marineburg
+    id = uu_easter_egg_events.13
+    title = uu_easter_egg_events.13.t
+    desc = uu_easter_egg_events.13.desc 
+    picture = GREAT_BUILDING_eventPicture
+
+    mean_time_to_happen = {
+        months = 240
+    }
+    fire_only_once = yes 
+    trigger = {
+        is_at_war = no
+        owns_core_province = 1841
+        1841 = {
+            has_great_project = {
+                type = malbork_castle
+                tier = 3
+            }
+        }
+        has_idea_group = naval_ideas 
+        has_idea_group = maritime_ideas
+        num_of_marines = 30
+    }
+   
+    option = {
+        name = uu_easter_egg_events.13.a
+        add_prestige = 10
+        1841 = {
+            add_province_modifier = { 
+                name = uu_marienburg
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            1841 = {
+                change_province_name = "Marineburg"
+                rename_capital = "Marineburg"
+            } 
+        }
     }
 }
