@@ -125,21 +125,24 @@ country_event = {
 	
 	option = {
 		name = ctg_mission_events_2_a
-		
-		118 = {
-			add_devastation = 90
-			add_base_tax = -5
-			add_base_production = -5
-			add_base_manpower = -4	
-		}
-		
+
 		PAP = {
 			kill_ruler = yes
 		}
 		
-		add_great_project_tier= {
-			type = stpeters_cathedral
-			tier = -3
+		if = {
+			limit = {
+				118 = { is_capital_of = PAP } #Rome
+				118 = {
+					add_devastation = 90
+					add_base_tax = -5
+					add_base_production = -5
+					add_base_manpower = -4	
+					destroy_great_project = {
+						type = stpeters_cathedral
+					}
+				}
+			}
 		}
 	}
 }

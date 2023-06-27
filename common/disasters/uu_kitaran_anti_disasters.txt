@@ -18,7 +18,7 @@ uu_great_lakes_renaissance = {
 	can_stop = { 
 		OR = {
 			has_any_disaster = yes
-			at_war = yes
+			is_at_war = yes
 		}
 	}
 	
