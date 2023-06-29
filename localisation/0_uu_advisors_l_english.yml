@@ -1,11 +1,14 @@
 ﻿l_english:
 socialreformer:0 "Social Reformer"
 socialreformer_desc:0 "When you base your expectations only on what you see, you blind yourself to the possibilities of a new reality."
+social_reformer_flag:0 "Social Reformer" #for the advisor decision
 
 propagandist:0 "Propagandist"
 propagandist_desc:0 "Repeat a lie enough times, and it becomes the truth."
+propagandist_flag:0 "Social Reformer" #for the advisor decision
 
 nationalhero:0 "National Hero"
 nationalhero_desc:0 "'Did I ever tell you how I got the nickname the Dragon of the West?... It's more of a demonstration, really.'"
+national_hero_flag:0 "National Hero" #for the advisor decision
 
 u_u_maybe_later:0 "Maybe later"

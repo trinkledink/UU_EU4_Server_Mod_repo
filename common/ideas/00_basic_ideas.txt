@@ -594,22 +594,21 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
-		regiment_disembark_speed  = 0.66
 	}
 
 	invasion_logistics = { #UU
 		movement_speed = 0.1
-		landing_penalty = -1
 	}
-	superior_firepower = {
-		fire_damage = 0.1		
+	uu_landing_craft = { #UU
+		landing_penalty = -1
+		regiment_disembark_speed  = 0.66		
 	}
 	glory_on_the_battlefield = {
 		morale_damage = 0.15
 		warscore_from_battles_modifier = 0.15
 	}
-	sufficient_preparations = {
-		transport_attrition = -0.33		
+	sufficient_preparations = { #UU
+		transport_attrition = -0.33	
 		may_build_supply_depot = yes						 
 	}
 	engineer_corps = {

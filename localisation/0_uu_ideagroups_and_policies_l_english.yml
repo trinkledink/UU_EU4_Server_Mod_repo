@@ -59,6 +59,8 @@
   invasion_logistics_desc:0 "Behind every successful invasion is solid logistics. By developing comprehensive logistics plans beforehand, our soldiers will be able to perform operations with higher efficiency."
  sufficient_preparations:0 "Adequate Provisions"
   sufficient_preparations_desc:0 "Our troops fight best when they are well-fed. Even if it creates extra expenses, we must stock our ships and camps with enough supplies to keep our troops from going hungry."
+ uu_landing_craft:0 "Amphibious Operations"
+  uu_landing_craft_desc:0 "Why limit your offensive to the land when a precision attack from the sea can be just as deadly? Developing a military that can threaten opponents from any angle will give us that much more of an edge over unprepared foes."
  #Quantity Ideas
  expanded_dockyard_crews:0 "Expanded Dockyard Crews"
   expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."
