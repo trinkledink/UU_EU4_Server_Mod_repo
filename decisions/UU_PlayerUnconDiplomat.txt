@@ -2,7 +2,7 @@ country_decisions = {
     player_uncon_diplomat = {
     
         color = { 201  19  70 }
-
+        major = yes
         potential = {
             ai = no
             is_at_war = yes

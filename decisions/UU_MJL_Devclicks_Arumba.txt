@@ -1,5 +1,6 @@
-Country_decisions = { 
-dev_sum_clicks_decision = {
+country_decisions = { 
+	dev_sum_clicks_decision = {
+		color = { 60 120 60 }
 		major = yes
 		potential = {
 			always = yes

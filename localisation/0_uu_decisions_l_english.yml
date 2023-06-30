@@ -27,12 +27,13 @@
  military_coup_title:0 "Military Coup"
  military_coup_desc:0 "Only the strong can lead. Our current ruler is too weak."
  #Buddhism Karma Decisions
- help_poor_title:0 "Help the Poor"
+ help_poor_title:0 "(§Y+Karma§!) Help the Poor"
  help_poor_desc:0 "It is time we spent our resources to help those less fortunate"
- benefit_from_offerings_title:0 "Benefit From Temple Offerings"
+ benefit_from_offerings_title:0 "(§Y-Karma§!) Benefit From Temple Offerings"
  benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
+ uu_buddhist_decision_tooltip:0 "This decision can only be taken once every §Y10§! years."
  #Advisor Event Checker
- advisor_events_title:0 "Advisor Events"
+ advisor_events_title:0 "Country Significant Events Tracker"
  advisor_events_desc:0 "Events triggered by your Level 3+ advisors this game, as well as some other important ones."
  radical_mercantilist_reforms:0 "Radical Reforms" #localizing the country flag so it shows up properly in the decision
  #El Dorado Search
@@ -40,19 +41,11 @@
  U.U_search_for_el_dorado_desc:0 "We may invest some of our money and troops and maybe find the legendary city of El Dorado"
  is_searching_el_dorado:0 "Is searching for El Dorado"
  #MJL Change Muslim School
- mjl_change_muslim_school_decision_tt:0 "Change the Muslim school that our country follows."
- mjl_change_muslim_school_title:0 "Change School"
- mjl_change_muslim_school_desc:0 "Change School"
- mjl_events.EVTNAME5:0 "Change School"
+ mjl_change_muslim_school_decision_tt:0 "Change the Islamic school, or Maddhab, that our country follows. §YOnly possible once per game.§!"
+ mjl_change_muslim_school_title:0 "Change Islamic School"
+ mjl_change_muslim_school_desc:0 "§YChanging Islamic chools is only possible once per game!§!\n"
  mjl_events.EVTDESC5:0 "As a country on the verge of change we need to decide which particular religious school we should start patronizing. While there are many ways to follow God we should have a new specific guiding doctrine for our rulers to follow."
- mjl_events.EVTOPTA5:0 "Hanafi"
- mjl_events.EVTOPTB5:0 "Hanbali"
- mjl_events.EVTOPTC5:0 "Maliki"
- mjl_events.EVTOPTD5:0 "Shafi'i"
- mjl_events.EVTOPTE5:0 "Jafari"
- mjl_events.EVTOPTF5:0 "Ismaili"
- mjl_events.EVTOPTG5:0 "Zaidi"
- mjl_change_muslim_school_trigger_tooltip:0 "Only possible once per game."
+ uu_muslim_school_tt:0 "§YThis decision can only be taken once per game.§!"
  #UU Hansa Cosmetic Rename
  uuhsa_rename_decision_title:0 "Change Country Name to just 'Hansa'"
   uuhsa_rename_decision_desc:0 "If you think 'Hanseatic League' is too long?"

@@ -1,7 +1,7 @@
 country_decisions = {
     uu_recolorsubjects = {
         color = { 232 48 2 }
-
+        major = yes
         potential = {
             ai = no 
             any_subject_country = { 
@@ -51,7 +51,7 @@ country_decisions = {
     }
     uu_fra_recolorsubjects = {
         color = { 20 50 210 }
-
+        major = yes
         potential = {
             ai = no
             tag = FRA 
@@ -98,6 +98,8 @@ country_decisions = {
                     } else_if = {
                         limit = { tag = ALE }
                         change_country_color = { color = { 70 50 220 } } 
+                    } else = { #should not be possible, but whatever
+                        change_country_color = { color = { 85 50 210 }
                     }
                     set_country_flag = uu_overlord_colour
                 }

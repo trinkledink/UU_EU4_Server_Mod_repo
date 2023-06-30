@@ -9079,14 +9079,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = { #UU added - A sneaky way to bypass adding this to every formation decision. Sorry @formables with no unique ideas.
-		hidden_effect = {
-			every_subject_country = {
-				limit = {
-					has_country_flag = uu_overlord_colour
-				}
-				change_country_color = { country = overlord }
-			}
-		}
+		hidden_effect = { uu_special_color_effect = yes }
 	}
 
 	option = {

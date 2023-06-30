@@ -112,30 +112,6 @@ country_event = {
 			group = muslim
 			school = hanafi_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.c
@@ -146,30 +122,6 @@ country_event = {
 			group = muslim
 			school = hanbali_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.dd
@@ -180,30 +132,6 @@ country_event = {
 			group = muslim
 			school = maliki_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.e
@@ -214,30 +142,6 @@ country_event = {
 			group = muslim
 			school = shafii_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.f
@@ -248,30 +152,6 @@ country_event = {
 			group = muslim
 			school = jafari_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.g
@@ -282,30 +162,6 @@ country_event = {
 			group = muslim
 			school = ismaili_school
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 	option = {
 		name = muslim_school_events.20.h
@@ -316,30 +172,6 @@ country_event = {
 			group = muslim
 			school = zaidi_school 
 		}
-		hidden_effect = {
-			export_to_variable = {
-				which = change_school_modifier_was_set_year
-				value = trigger_value:is_year
-			}
-			export_to_variable = {
-				which = change_school_modifier_was_set_month
-				value = trigger_value:is_month
-			}
-			set_variable = {
-				which = change_school_modifier_length
-				value = 25
-			}
-			change_variable = {
-				which = change_school_modifier_length
-				which = change_school_modifier_was_set_year
-			}
-		}
-		add_country_modifier = {
-			name = change_school_modifier
-			duration = 9125
-			hidden = yes
-		}
-		clr_country_flag = mjl_1444_change_school
 	}
 }
 country_event = {	##Free Cities Free City New Production Methods mission event##

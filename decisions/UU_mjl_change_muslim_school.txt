@@ -1,6 +1,7 @@
 country_decisions = {
 	mjl_change_muslim_school = {
-		major = no
+		color = { 60 175 60 }
+		major = yes
 		potential = {
 			ai = no
 			has_dlc = "Cradle of Civilization"
@@ -8,20 +9,20 @@ country_decisions = {
 			NOT = { has_country_flag = UU_mjl_change_school } 
 		}
 		allow = {
-			hidden_trigger = {
-				NOT = { has_country_flag = UU_mjl_change_school } 
-			}
-			custom_trigger_tooltip = {
-				tooltip = mjl_change_muslim_school_trigger_tooltip
-				#NOT = { has_country_modifier = change_school_modifier }
-			}
 			stability = 0
+			custom_trigger_tooltip = {
+				tooltip = uu_muslim_school_tt
+				always = yes
+			}
 		}
 		effect = {
 			custom_tooltip = mjl_change_muslim_school_decision_tt
 			set_country_flag = UU_mjl_change_school
 			add_stability = -2
-			country_event = { id = mjl_events.5 }
+			country_event = { id = UU_balance_events.3 }
+		}
+		ai_will_do = { #Should be redundant
+			factor = 0
 		}
 	}
 }

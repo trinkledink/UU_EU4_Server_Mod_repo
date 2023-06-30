@@ -1,5 +1,6 @@
 Country_decisions = { 
 	uu_disinherit_counter_decision = {
+		color = { 60 120 60 }
 		major = yes
 		potential = {
 			ai = no

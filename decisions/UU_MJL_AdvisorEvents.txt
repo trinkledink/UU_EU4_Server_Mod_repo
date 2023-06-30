@@ -1,9 +1,10 @@
 country_decisions = {
 	advisor_events = {
+		color = { 60 120 60 }
+		major = yes
 		potential = { 
 			always = yes
 		}
-		major = yes
 		allow = {
 			has_country_flag = philosopher
 			has_country_flag = natural_scientist

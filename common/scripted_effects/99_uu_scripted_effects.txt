@@ -20,13 +20,19 @@ uu_special_color_effect = { #Applies specific colours to nations depending on go
 			tag = POR 
 			government = republic
 		}
-		change_country_color = { color = { 11 82 43 } } 		#Green Portugal
+		change_country_color = { color = { 11 82 43 } } 		#Green Republic Portugal
 	} else_if = {
 		limit = {
 			tag = SPA 
 			government = republic
 		}
-		change_country_color = { color = { 240 120 0 } }  		#Orange Spain
+		change_country_color = { color = { 240 120 0 } }  		#Orange Republic Spain
+	} else_if = {
+		limit = { 
+			tag = GER 
+			government = monarchy
+		}
+		change_country_color = { color = { 143 137 129 } } 		#Grey Monarchy Germany 
 	} else_if = {
 		limit = { 
 			has_country_flag = renamed_to_north_sea_empire 
