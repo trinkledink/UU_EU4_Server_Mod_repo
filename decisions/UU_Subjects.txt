@@ -99,7 +99,7 @@ country_decisions = {
                         limit = { tag = ALE }
                         change_country_color = { color = { 70 50 220 } } 
                     } else = { #should not be possible, but whatever
-                        change_country_color = { color = { 85 50 210 }
+                        change_country_color = { color = { 85 50 210 } }
                     }
                     set_country_flag = uu_overlord_colour
                 }
