@@ -10,12 +10,12 @@ country_decisions = {
 			}
 		}
 		allow = {	
+			is_at_war = no
+			years_of_income = 0.20
 			custom_trigger_tooltip = {
 				tooltip = uu_buddhist_decision_tooltip
 				NOT = { has_country_modifier = helped_poor }
-			}
-			is_at_war = no
-			years_of_income = 0.20		
+			}		
 		}
 		effect = {
 			add_years_of_income	= -0.2
@@ -48,11 +48,11 @@ country_decisions = {
 			}
 		}
 		allow = {	
+			is_at_war = no
 			custom_trigger_tooltip = {
 				tooltip = uu_buddhist_decision_tooltip
 				NOT = { has_country_modifier = benefited_from_offerings }
-			}
-			is_at_war = no	
+			}	
 		}
 		effect = {
 			add_years_of_income	= 0.15
