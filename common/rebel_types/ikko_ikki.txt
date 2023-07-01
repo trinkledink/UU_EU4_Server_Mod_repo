@@ -150,6 +150,10 @@ ikko_ikki_rebels = {
 			}
 			change_government = theocracy
 			add_government_reform = ikko_ikki_reform
+			hidden_effect = {
+				uu_special_color_effect = yes
+				uu_special_name_effect = yes
+			}
 		}
 	}
 }

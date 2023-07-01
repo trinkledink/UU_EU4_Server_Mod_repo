@@ -1076,6 +1076,10 @@ tribe_remain_tribal_reform = {
 
 tribe_settle_the_land_reform = {
     icon = native_land_tradition_reform
+	potential = {
+		NOT = { has_reform = steppe_horde }
+		NOT = { has_reform = great_mongol_state_reform }
+	}
     modifiers = {
         colonists = 2
         global_colonial_growth = 25

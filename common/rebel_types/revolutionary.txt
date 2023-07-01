@@ -211,6 +211,10 @@ revolutionary_rebels = {
 				}
 			}
 			hidden_effect = {
+				uu_special_color_effect = yes
+				#uu_special_name_effect = yes
+			}
+			hidden_effect = {
 				country_event = { id = revolution.10 } #Generic
 				country_event = { id = revolution.15 } #France (non-monarchy)
 				country_event = { id = flavor_rus.2000 } #Russia

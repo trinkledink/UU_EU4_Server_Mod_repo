@@ -333,6 +333,10 @@ pretender_rebels = {
 				}
 			}
 			change_government = REB
+			hidden_effect = {
+				uu_special_color_effect = yes
+				uu_special_name_effect = yes
+			}
 			#set_legacy_government = despotic_monarchy
 		}
 		if = {

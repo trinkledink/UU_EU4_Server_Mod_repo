@@ -95,31 +95,7 @@ country_event = {
     }
 
     after = {
-        if = {
-            limit = {
-                has_leader = "Jean Bureau"
-            }
-            kill_leader = { type = "Jean Bureau" }
-        }
-        if = {
-            limit = {
-                has_leader = "Jean Bureau"
-            }
-            kill_leader = { type = "Jean Bureau" }
-        }
-        if = {
-            limit = {
-                has_leader = "Jean Bureau"
-            }
-            kill_leader = { type = "Jean Bureau" }
-        }
-        if = {
-            limit = {
-                has_leader = "Jean Bureau"
-            }
-            kill_leader = { type = "Jean Bureau" }
-        }
-        if = { #In case there are impostor Jean Bureaux
+        while = { #No Jeans
             limit = {
                 has_leader = "Jean Bureau"
             }

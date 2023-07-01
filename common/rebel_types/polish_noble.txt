@@ -168,6 +168,10 @@ polish_noble_rebels = {
 		if = {
 			limit = { NOT = { government = monarchy } }
 			change_government_to_monarchy = yes
+			hidden_effect = {
+				uu_special_color_effect = yes
+				uu_special_name_effect = yes
+			}
 			#set_legacy_government = feudal_monarchy
 		}
 		if = {
