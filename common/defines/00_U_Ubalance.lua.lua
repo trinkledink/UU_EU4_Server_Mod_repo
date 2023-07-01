@@ -1,7 +1,7 @@
 -- Format for overwriting define values:
 --
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
-
+-- Reminder to modder to delete the common\defines.lua in the mod folder
  NDefines.NDiplomacy.ABANDON_UNION_PRESTIGE = 0
  NDefines.NMilitary.DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.64
  NDefines.NMilitary.DEFAULT_WARGOAL_WARSCORE_BONUS = 8
@@ -10,6 +10,7 @@
  NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.1
  NDefines.NMilitary.BACK_LINE_REINFORCE_SPEED = 6
  -- NDefines.NMilitary.SLACKEN_MANPOWER_INCREASE = 1.5 RIP in 1.35
+ NDefines.NMilitary.CAVALRY_SPEED = 1.1 -- Infantry and Artillery are 0.7 speed 
  NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -200
  NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12
  NDefines.NDiplomacy.STABHIT_FOR_BREAKING_ALLIANCE_IN_WAR = 0
@@ -25,3 +26,6 @@
  NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40
  NDefines.NEconomy.CONVERSION_ZEAL_DURATION = 5475
  NDefines.NEconomy.CARAVAN_POWER_MAX = 25
+
+ NDefines.NGraphics.CITY_SPRAWL_AMOUNT = 5
+ NDefines.NFrontend.CAMERA_MIN_HEIGHT = 35.0

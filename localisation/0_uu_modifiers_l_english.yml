@@ -234,3 +234,17 @@
  ###############################################################
 
  uu_cossack_stole_dev:0 "Raided by Neighbour"
+
+ ###############################################################
+ # UU Cav Triggered Modifier
+ ###############################################################
+
+ uu_cav_fl_trigmod:0 "Over Maximum Cavalry Fraction"
+ uu_95_cti_tt:0 "Over §Y95%§! of your army, excluding artillery, is cavalry."
+ uu_90_cti_tt:0 "Over §Y90%§! of your army, excluding artillery, is cavalry."
+ uu_85_cti_tt:0 "Over §Y85%§! of your army, excluding artillery, is cavalry."
+ uu_80_cti_tt:0 "Over §Y80%§! of your army, excluding artillery, is cavalry."
+ uu_75_cti_tt:0 "Over §Y75%§! of your army, excluding artillery, is cavalry."
+ uu_70_cti_tt:0 "Over §Y70%§! of your army, excluding artillery, is cavalry."
+ uu_60_cti_tt:0 "Over §Y60%§! of your army, excluding artillery, is cavalry."
+ uu_50_cti_tt:0 "Over §Y50%§! of your army, excluding artillery, is cavalry."

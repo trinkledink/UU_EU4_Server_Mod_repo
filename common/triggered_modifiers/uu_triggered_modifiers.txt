@@ -14,3 +14,240 @@ uu_FC_emperor_freeest = {
 	diplomatic_annexation_cost = -0.15
 }
 
+#cav time 
+
+uu_cav_fl_trigmod = {
+	potential = {
+		num_of_cavalry = 1
+		NOT = { 								#Having 100% C/I ratio disables this modifier
+			has_global_modifier_value = {
+				which = cav_to_inf_ratio
+				value = 1.5
+			}
+		}
+	}
+
+	trigger = {
+		if = { 									#95% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.45
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_95_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 19
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#90% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.4
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_90_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 9
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#85% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.35
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_85_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 17
+				}
+				divide_variable = {
+					which = uu_num_inf_var
+					value = 3
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#80% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.3
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_80_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 4
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#75% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.25
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_75_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 3
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#70% C/I ratio
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.2
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_70_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 7
+				}
+				divide_variable = {
+					which = uu_num_inf_var
+					value = 3
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#60% C/I ratio, 65% doesn't exist
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1.1
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_60_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				divide_variable = {
+					which = uu_num_cav_var
+					value = 3
+				}
+				divide_variable = {
+					which = uu_num_inf_var
+					value = 2
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		} else_if = {							#50% C/I ratio, 55% doesn't exist
+			limit = {
+				has_global_modifier_value = {
+					which = cav_to_inf_ratio
+					value = 1
+				}
+			}
+			variable_arithmetic_trigger = {
+				custom_tooltip = uu_50_cti_tt
+				export_to_variable = {
+					variable_name = uu_num_cav_var
+					value = trigger_value:num_of_cavalry
+				}
+				export_to_variable = {
+					variable_name = uu_num_inf_var
+					value = trigger_value:num_of_infantry
+				}
+				check_variable = {
+					which = uu_num_cav_var
+					which = uu_num_inf_var
+				}
+			}
+		}
+	}
+
+	cavalry_power = -0.5
+	cavalry_cost = 0.25
+}
+
