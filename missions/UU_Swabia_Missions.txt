@@ -817,10 +817,10 @@ SWA_missions_4 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = RHN_bavaria_modifier
-				duration = 9125
-			}
+			#add_country_modifier = { #No idea what this even is
+			#	name = RHN_bavaria_modifier
+			#	duration = 9125
+			#}
 			franconia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

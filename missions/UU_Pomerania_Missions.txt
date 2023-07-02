@@ -512,7 +512,7 @@ POM_GEN_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = BRA_prussian_unity
+				name = POM_prussian_unity
 				duration = -1
 			}
 			add_accepted_culture_or_dip_power = { culture = prussian }

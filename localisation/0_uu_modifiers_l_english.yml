@@ -136,7 +136,8 @@
  uu_pom_competent_marines:0 "Competent Marines"
  uu_pom_strong_marines:0 "Baltic Marines"
  uu_pom_hansa_destroyed:0 "Hanseatic Fleet"
- POM_supporting_merchants:0 "Supported Cities" 
+ POM_supporting_merchants:0 "Supported Cities"
+ POM_prussian_unity:0 "Integrating the Prussians" 
 
  ###############################################################
  # African Mission Modifiers
