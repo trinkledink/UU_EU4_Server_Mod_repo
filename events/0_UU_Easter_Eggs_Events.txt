@@ -452,3 +452,21 @@ country_event = { #Renovation of Marineburg
         }
     }
 }
+
+country_event = { #Imperium of God 
+    id = uu_easter_egg_events.14
+    title = uu_easter_egg_events.14.t
+    desc = uu_easter_egg_events.14.desc 
+    picture = PRAYING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = uu_easter_egg_events.14.a
+        add_prestige = 200
+        add_adm_power = 200
+        add_dip_power = 200
+        add_mil_power = 200
+        override_country_name = IMPERIUM_OF_GOD        
+    }
+}

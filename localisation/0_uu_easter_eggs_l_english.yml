@@ -67,3 +67,11 @@
  uu_easter_egg_events.13.a:0 "We shall renovate Malbork Castle."
  uu_marienburg:0 "Renovated Marineburg Castle"
  #TEU:0 "Tectonic Order"
+ 
+ uu_easter_egg_events.14.t:0 "Romans 8:31"
+ uu_easter_egg_events.14.desc:0 "From the moment [Root.Monarch.GetTitle] [Root.Monarch.GetName] understood the weakness of his flesh, it disgusted him. He craved the strength and certainty of the Lord Jesus. He aspired to the purity of divine salvation. The people of the earth clung to their flesh, as though it would not decay and fail them. However, [Root.Monarch.GetTitle] [Root.Monarch.GetName] knew that one day the crude biomass they called their 'temple' would wither, and they would beg my kind to save you. But [Root.Monarch.GetTitle] [Root.Monarch.GetName] had already been saved, for he knew that the Christ is immortal… Even in death, [Root.Monarch.GetTitle] [Root.Monarch.GetName] would serve the Messiah. And now, standing atop Europe on the laurels of his new Empire: Rome Reborn, the First and Last Christian Dominion on Earth, he knew that he was only here because God had willed it so. And from this day onwards, he thought to himself, none would stand in the way of the Kingdom of God."
+ uu_easter_egg_events.14.a:0 "No Imperium of Man could evern match the Imperium of God."
+ IMPERIUM_OF_GOD:0 "Imperium of God"
+ IMPERIUM_OF_GOD_ADJ:0 "Papal"
+ uu_restore_roman_empire_kog:0 "(§M5§!)@ROM Restore the Roman Empire"
+ uu_restore_roman_empire_kog_desc:0 "Not since the Romans in the second century has one empire commanded the entirety of the Mediterranean and beyond. If we claim this land, we can scoff at whatever pretenders may claim in Constantinople or the Holy Roman Empire and proclaim ourselves the true successors of Rome."
