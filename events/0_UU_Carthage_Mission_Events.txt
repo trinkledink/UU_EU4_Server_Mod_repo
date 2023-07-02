@@ -133,14 +133,14 @@ country_event = {
 		if = {
 			limit = {
 				118 = { is_capital_of = PAP } #Rome
-				118 = {
-					add_devastation = 90
-					add_base_tax = -5
-					add_base_production = -5
-					add_base_manpower = -4	
-					destroy_great_project = {
-						type = stpeters_cathedral
-					}
+			}
+			118 = {
+				add_devastation = 90
+				add_base_tax = -5
+				add_base_production = -5
+				add_base_manpower = -4	
+				destroy_great_project = {
+					type = stpeters_cathedral
 				}
 			}
 		}
