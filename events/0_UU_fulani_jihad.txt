@@ -10,66 +10,29 @@ country_event = { #Disaster event that triggers one of the following 3 events
 	is_triggered_only = yes 	#mald moment 
 
 	immediate = {
-		if = {
+		if = {														#First prio is Sokoto
 			limit = {
-				capital_scope = {
-					OR = {
-						area = katsina_area
-						area = hausa_area
-						area = zazzau_area
-						area = lower_niger_area
-						area = adamawa_plateau_area
-						area = kanem_area
-						area = bornu_area
-						area = darfur_central_sahara_area
-						area = azbin_area
-						area = east_azbin_area
-						area = gulf_of_guinea_area
-						area = benin_area
-						area = atacora_oueme_area
-						area = sao_tome_area
-					}
-				}
+				owns = 1148		#Gobir
 				NOT = { has_global_flag = uu_sokoto_happened_flag }
+				NOT = { exists = SOK }
 			}
 			country_event = {
 				id = uufulojihad.1
 			}
-		} else_if = {
+		} else_if = {												#Second prio is Massina
 			limit = {
-				capital_scope = {
-					OR = {
-						area = western_sahara_area
-						area = niger_bend_area
-						area = dendi_area
-						area = upper_volta_area
-						area = lower_volta_area
-						area = west_africa_coast_area
-						area = kong_area
-						area = guinea_area
-						area = guinea_coast_area
-						area = yamoussoukro_area
-						area = manding_area
-						area = baghena_area
-						area = jenne_area
-					}
-				}
+				owns = 1131		#Massina
 				NOT = { has_global_flag = uu_massina_happened_flag }
+				NOT = { exists = ZAF }
 			}
 			country_event = {
 				id = uufulojihad.2
 			}
-		} else_if = {
+		} else_if = {												#Third prio is Futatoro
 			limit = {
-				capital_scope = {
-					OR = {
-						area = tekrur_area
-						area = futa_jallon_area
-						area = jolof_area
-						area = cap_verde_area
-					}
-				}
+				owns = 2237		#Tekrur 
 				NOT = { has_global_flag = uu_futatoro_happened_flag }
+				NOT = { exists = FUL }
 			}
 			country_event = {
 				id = uufulojihad.3
@@ -77,7 +40,7 @@ country_event = { #Disaster event that triggers one of the following 3 events
 		} #if none of these are valid, the disaster should cancel.
 	}
 	option = {
-		name = uufulojihad.0.1
+		name = uufulojihad.0.a
 	}
 }
 
@@ -327,8 +290,7 @@ country_event = { #Sokoto
 				}
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 			}
 		}
@@ -420,8 +382,7 @@ country_event = { #Sokoto
 				add_treasury = 800
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 				random_owned_province = {
 					limit = {
@@ -717,8 +678,7 @@ country_event = { #Massina
 				}
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 			}
 		}
@@ -810,8 +770,7 @@ country_event = { #Massina
 				add_treasury = 800
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 				random_owned_province = {
 					limit = {
@@ -1105,8 +1064,7 @@ country_event = { #Fulo
 				}
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 			}
 		}
@@ -1199,8 +1157,7 @@ country_event = { #Fulo
 				add_treasury = 800
 				country_event = {
 					id = uufulojihad.99
-					days = 10
-					random = 2
+					days = 30
 				}
 				random_owned_province = {
 					limit = {
@@ -1477,6 +1434,8 @@ country_event = { #giving troops
 		name = uufulojihad.99.a
 	}
 }
+
+# Note: idek why these next two events give so many errors, they work perfectly fine
 
 province_event = { #Theocrats take a province
 	id = uufulojihad.100
