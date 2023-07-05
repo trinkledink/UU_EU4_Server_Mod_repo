@@ -10,7 +10,7 @@ urbanization_state_edict = {
 	}
 	
 	modifier = {
-		trade_goods_size_modifier = 0.33
+		trade_goods_size_modifier = 0.20
 	}
 	
 	color = { 255 255 128 }
