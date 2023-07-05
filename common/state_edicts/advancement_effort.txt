@@ -11,7 +11,7 @@ edict_advancement_effort = {
 		local_institution_spread = 0.33
 	}
 	
-	color = { 50 100 192 }
+	color = { 50 173 192 }
 	
 	
 	ai_will_do = {
