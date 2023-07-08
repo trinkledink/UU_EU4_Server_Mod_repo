@@ -159,7 +159,10 @@ country_decisions = {
 
         allow = {
             any_subject_country = {
-                has_country_flag = uu_overlord_colour
+                custom_trigger_tooltip = {
+                    tooltip = uu_overlord_colour_tt_2
+                    has_country_flag = uu_overlord_colour
+                }
             }
         }
 

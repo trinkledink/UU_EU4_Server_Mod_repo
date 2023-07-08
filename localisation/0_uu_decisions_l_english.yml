@@ -64,6 +64,7 @@
   uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
  uu_restore_color_overlord_title:0 "Restore Subjects' Map Colours"
   uu_restore_color_overlord_desc:0 "Changes all subjects back to their original map colours, unless an override exists."
+  uu_overlord_colour_tt_2:0 "Has [Root.GetName]'s map colour"
  #Disinherit Counter
  uu_disinherit_counter_decision_title:0 "Disinherit Counter"
  uu_disinherit_counter_decision_desc:0 "For all the Journey_iis out there who have been forsaken by RNG"

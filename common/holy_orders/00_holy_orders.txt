@@ -377,7 +377,9 @@ calatrava_order = {
         add_base_manpower = -1
     }
     modifier = {
-		local_defender_dice_roll_bonus = 1 
+		#local_defender_dice_roll_bonus = 1 #UU
+        local_regiment_cost = -0.25
+        regiment_recruit_speed = -0.25
     }
     ai_priority = {
         factor = 2

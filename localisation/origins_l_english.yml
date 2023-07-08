@@ -828,8 +828,8 @@
  allows_every_time_invite_of_jafari_school:0 "Allows to invite a Scholar from the §YJafari School§! without diplomatic relations."
  allows_every_time_invite_of_zaidi_school:0 "Allows to invite a Scholar from the §YZaidi School§! without diplomatic relations."
  hanafi_school_bonus_tt:0 "Idea Cost: §G-5.0%§!" #UU Change
- hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!"
- maliki_school_bonus_tt:0 "Development Cost: §G-10.0%§!"
+ hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!\nMaximum Absolutism: §G+10%§!"
+ maliki_school_bonus_tt:0 "Reform Progress Growth: §G+20.0%§!"
  shafii_school_bonus_tt:0 "Merchants: §G+1§!\nTrade Steering: §G+15.0%§!" #UU change
  ismaili_school_bonus_tt:0 "Yearly Legitimacy: §G+1.00§!"
  jafari_school_bonus_tt:0 "Shock Damage: §G+10.0%§!"

@@ -935,7 +935,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_hanafi"
 
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			idea_cost = -0.05
+			idea_cost = -0.05 #UU
 		}
 		hanbali_school = {
 			potential_invite_scholar = {
@@ -1008,6 +1008,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_hanbali"
 
 			ae_impact = -0.1
+			max_absolutism = 10 #UU
 		}
 		maliki_school = {
 			potential_invite_scholar = {
@@ -1079,7 +1080,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_maliki"
 
-			development_cost = -0.1
+			reform_progress_growth = 0.2
 		}
 		shafii_school = {
 			potential_invite_scholar = {
@@ -1227,7 +1228,7 @@ muslim = {
 
 			horde_unity = 1
 			legitimacy = 1
-			republican_tradition = 0.2
+			republican_tradition = 0.5
 			devotion = 1
 		}
 		jafari_school = {
