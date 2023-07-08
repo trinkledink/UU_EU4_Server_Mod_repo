@@ -3254,7 +3254,10 @@ on_force_conversion_effect = {
 			value = 1
 		}
 		if = {
-			limit = { has_government_attribute = gain_monarch_power_from_force_converting }
+			limit = { 
+				has_government_attribute = gain_monarch_power_from_force_converting
+				NOT = { overlord_of = ROOT }  #UU changed
+			}
 			export_to_variable = {
 				variable_name = root_development
 				value = total_development
@@ -3271,9 +3274,11 @@ on_force_conversion_effect = {
 					which = root_development
 					value = 1
 				}
-				add_adm_power = 1
-				add_dip_power = 1
-				add_mil_power = 1
+				random_list = {
+					1 = { add_adm_power = 1 }
+					1 = { add_dip_power = 1 }
+					1 = { add_mil_power = 1 }
+				}
 			}
 		}
 		if = {
