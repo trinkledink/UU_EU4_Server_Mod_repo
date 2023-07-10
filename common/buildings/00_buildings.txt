@@ -174,7 +174,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.4
 	}
 	on_built = {
 		if = {
@@ -418,13 +418,12 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 100
+	cost = 50
 	time = 12
 	modifier = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
-		allowed_num_of_buildings = 1
 	}
 	on_built = {
 		add_development_from_building = {
@@ -1081,7 +1080,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 0.8
 	}
 	
 	on_built = {
@@ -1360,7 +1359,7 @@ counting_house = {
 
 
 town_hall = {
-	cost = 200
+	cost = 100
 	time = 12
 
 	make_obsolete = courthouse
@@ -1369,7 +1368,6 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
-		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
@@ -2148,10 +2146,10 @@ soldier_households = {
 	}
 
 	modifier = {
-		local_manpower = 0.75
+		local_manpower = 0.5
 	}
 	bonus_modifier = {
-		local_manpower = 0.75
+		local_manpower = 0.5
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
