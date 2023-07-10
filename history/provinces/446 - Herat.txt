@@ -1,17 +1,17 @@
 #446 - Herat
 
-owner = KHO
-controller = KHO
+owner = TIM
+controller = TIM
 culture = khorasani
 religion = sunni
 capital = "Herat"
 trade_goods = paper
 hre = no
-base_tax = 5
-base_production = 5
-base_manpower = 3
+base_tax = 7 #UU buffed
+base_production = 6
+base_manpower = 5
 is_city = yes
-add_core = KHO
+add_core = TIM
 fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
@@ -23,10 +23,10 @@ center_of_trade = 2
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO
 	controller = KHO
-	remove_core = KHO
+	remove_core = TIM
 }
 1458.6.28 = { controller = QAR }
-1458.12.22 = { controller = KHO owner = KHO add_core = KHO } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
+1458.12.22 = { controller = TIM owner = TIM add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
 1460.1.1 = { unrest = 5 } # Besieged by Timurid Transox rebels
 1465.1.1 = { unrest = 0 }
 1469.8.27 = { controller = KHO owner = KHO remove_core = KHO }#Death of Abu Said, Timurid lands split again

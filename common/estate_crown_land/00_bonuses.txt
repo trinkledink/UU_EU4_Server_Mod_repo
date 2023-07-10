@@ -90,6 +90,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.6
         global_autonomy = -0.01
+        administrative_efficiency = 0.05 #UU
     }
 }
 
@@ -102,6 +103,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.7
         global_autonomy = -0.02
+        administrative_efficiency = 0.05 #UU
     }
 }
 
@@ -114,6 +116,7 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.8
         global_autonomy = -0.025
+        administrative_efficiency = 0.05 #UU
     }
 }
 
@@ -126,5 +129,6 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 1
         global_autonomy = -0.05
+        administrative_efficiency = 0.05 #UU
     }
 }

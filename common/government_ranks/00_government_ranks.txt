@@ -1,7 +1,11 @@
 
+1 = {
+	governing_capacity = 50 #UU added
+}
+
 2 = {
 	diplomats = 1
-	governing_capacity = 200
+	governing_capacity = 250 #UU increase
 	global_autonomy = -0.025
 }
 

@@ -8,6 +8,18 @@
  uu_respawn.102.t:0 "The Death of Lord Bureau"
   uu_respawn.102.desc:0 "After a long and storied career, the great French hero Jean Bureau has finally passed away just shy of his seventy-fifth birthday. He served [Root.GetName] for many years, winning numerous sieges and battles, being ennobled and knighted in 1461, and even supposedly cheating death. Historians will surely remember him as one of the greatest French military leaders of the modern era." 
   uu_respawn.102.a:0 "Adieu."
+ 
+ #Timurids
+ opinion_timurid_rival_claimant:0 "Rival Timurid Claimant"
+ uu_flavor_tim.0.d:0 "The aging ruler of the Timurid Empire, Shah Rukh, has been ill since the beginning of 1444. In his absence his wife, Goharshad, had taken over the daily rule of the empire but this sign of weakness has set wheels in motion among Shah Rukh's sons and grandsons who rule the Timurid provinces.\n\nIn the north, Shah Rukh's eldest son Ulugh Beg, a famous astronomer and skilled mathematician, governs the whole of Transoxiana. This territory is the largest of the Timurid holdings, including Timur's old capital of Samarkand.\n\nIn the west rule the sons of Shah Rukh's third son Baysonqor. Both Babur of Khorasan and Muhammad of Ajam are opportunistic and ambitious potential claimants. Muhammad already boldly flaunts the authority of Shah Rukh, accepting taxes and tokens of loyalty from a much larger region than his assigned governorate, drawing the ire of Shah Rukh.\n\nIn the east, the sons of Shah Rukh's fourth son Soyurghatmish control the highlands of Afghanistan.\n\nIn the southeast the province of Fars is ruled by a regent on behalf of the young Abdallah, inherited from his late father Ibrahim second son of Shah Rukh.\n\nShah Rukh is clearly an old man, and it seems all but inevitable that a second Timurid civil war occurs on his death. Shah Rukh himself secured the empire by eliminating his rival claimants, and every Timurid heir knows that if they are to keep the empire intact, their task is the same."
+ uu_tim_flavor_4_tt:0 "§YShah Rukh is likely to die within two years, which will mean the Timurid subjects will likely forsake their loyalty to Herat.§!"
+ flavor_tim.2.aa:0 "Time to gather our strength."
+ flavor_tim.2.ab:0 "We must move for Herat at once."
+ flavor_tim.2.ab.tt:0 "§Y[Root.Monarch.GetName] is openly announcing their claim to the Timurid throne. Any other potential claimants will likely also move to secure the capital, and thus it is very likely that §Roccupying Herat will lead to immediate war with the other claimants.§!"
+ flavor_tim.1000.t:0 "[uuheratevt.Monarch.GetName] Seizes Herat!"
+ flavor_tim.1000.d:0 "It seems our relative [uuheratevt.Monarch.GetName] of [uuheratevt.GetName] has captured the city of Herat and declared himself the rightful heir of the Timurid Empire. While we knew it was inevitable that we would come into conflict with them over this issue, it is clear that unless we choose to defy him here, the strength of our claim would be greatly weakened."
+ flavor_tim.1000.a:0 "Family or not, the empire is mine!"
+ flavor_tim.1000.b:0 "It is simply not the right time."
 
  #DEBUG EVENTS
  uudebug.1.t:0 "Universalis Union Secret Debug Suite"

@@ -59,6 +59,15 @@ on_startup = {
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 		flavor_mos.1 #Event regarding the Tatar Yoke
 		flavor_mal.0 #UU event for decline of Mali
+		flavor_tim.0 #Timurid event
+	}
+	if = {
+		limit = { 
+			tag = TIM 
+			exists = QOM
+			has_ruler = "Shah Rukh"
+		}
+		country_event = { id = flavor_tim.0 } #Timurid event 
 	}
 	if = {
 		limit = {

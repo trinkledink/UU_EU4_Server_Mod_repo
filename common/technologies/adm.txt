@@ -288,7 +288,7 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
-	administrative_efficiency = 0.05								 
+	administrative_efficiency = 0.1								 
 }
 
 technology = { #Absolute Rulership
@@ -320,7 +320,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
+	administrative_efficiency = 0.1								 
 	furnace = yes
 }
 
@@ -389,7 +389,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05							 
+	administrative_efficiency = 0.1							 
 }
 
 technology = { #Separation of Powers

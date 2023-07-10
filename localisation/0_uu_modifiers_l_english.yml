@@ -235,3 +235,18 @@
  ###############################################################
 
  uu_cossack_stole_dev:0 "Raided by Neighbour"
+
+ ###############################################################
+ # UU Timurids
+ ###############################################################
+ 
+ uu_tim_declared_for_herat_mod:0 "Declared for the Timurid Throne"
+ uu_tim_controls_herat_tmod:0 "Control of the Timurid Capital"
+ uu_tim_controls_herat_tmod_desc:0 "We have control over Herat, the capital of the Timurid realm. This affords us a great number of benefits when it comes to enforcing our claim on Timur's Empire."
+
+ ###############################################################
+ # Absolutism
+ ###############################################################
+ 
+ uu_high_absolutism_tmod:0 "Absolute Rule"
+ uu_high_absolutism_tmod_desc:0 "The ruler of our nation essentially controls all aspects of the government, and no institution in the country is powerful enough to defy the ruler in a meaningful way."

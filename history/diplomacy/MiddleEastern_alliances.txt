@@ -1,6 +1,63 @@
 #Shah Rokhs Empire
 
-#deleted 
+#Ulugh Beg, son of Shah Rukh
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = TRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Muhammad bin Baysonqor
+#Shah Rukh/Goharshad has already decided to move against him in late 1444.
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = QOM
+	start_date = 1444.1.1
+	end_date = 1446.1.1 #Shah Rokh falls ill in 1444, Muhammad sees his chance and rebels on the invitation of the Isfahan city council in 1446.
+}
+#Sons of Soyurghatmish
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = AFG
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Abdallah bin Ibrahim, the Child ruler.
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = FRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Babur bin Baysonqor
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = KHO
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Sistan
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = SIS
+	start_date = 1444.1.1 #1383 
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Jahan Shah, installed with the help of Shah Rukh. Apparently also adopted by Shah Rukh's wife
+dependency = {
+	subject_type = "tributary_state"
+	first = TIM
+	second = QAR
+	start_date = 1444.1.1 #1383 
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+
 
 #End of Timurid Princes
 

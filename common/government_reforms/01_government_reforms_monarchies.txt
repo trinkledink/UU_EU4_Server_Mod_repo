@@ -15,6 +15,41 @@ monarchy_mechanic = {
 
 #Feudalism vs Autocracy:
 
+uu_timurid_monarchy = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	potential = {
+		tag = TIM
+	}
+	raze_province = yes #heheheha
+	maintain_dynasty = yes
+	modifiers = {
+		unjustified_demands = -0.25
+		harsh_treatment_cost = -0.25
+		global_rebel_suppression_efficiency = 0.25
+		core_creation = -0.1
+		land_forcelimit = 5
+	}
+	custom_attributes = {
+		winning_battles_increases_legitimacy = yes
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+}
+
 feudalism_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes

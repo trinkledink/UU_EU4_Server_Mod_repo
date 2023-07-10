@@ -1,7 +1,7 @@
 #2220 - Bam
 
-owner = ORM
-controller = ORM
+owner = KHO
+controller = KHO
 culture = baluchi
 religion = shiite
 capital = "Bam"
@@ -13,7 +13,7 @@ base_manpower = 1
 is_city = yes
 add_core = BAL
 add_core = SIS
-add_core = ORM
+add_core = KHO
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

@@ -1,7 +1,7 @@
 #4345 - Saidabad
 
-owner = FRS
-controller = FRS
+owner = KHO
+controller = KHO
 culture = persian
 religion = shiite
 capital = "Saidabad"
@@ -13,6 +13,7 @@ base_manpower = 1
 is_city = yes
 add_core = KRM
 add_core = FRS
+add_core = KHO
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

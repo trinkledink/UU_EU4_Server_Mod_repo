@@ -197,7 +197,7 @@ revolution = {
 
 	# Values at 100 Revolutionary Zeal
 	zeal_modifiers = {
-		administrative_efficiency = 0.3
+		governing_capacity_modifier = 0.25 #UU
 		allowed_rev_guard_fraction = 0.2
 		discipline = 0.05
 	}

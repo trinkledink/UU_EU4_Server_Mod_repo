@@ -68,7 +68,21 @@ country_decisions = {
 			NOT = { is_year = 1490 }
 		}
 		effect = {
-			add_stability = -2
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = QOM
+							tag = KHO
+							tag = FRS
+							tag = YZD
+							tag = AFG
+							tag = TRS
+						}
+					}
+				}
+				add_stability = -2
+			}
 			custom_tooltip = tooltip_about_timurid_empire
 			define_ruler = {
 				dynasty = "Timurid"
@@ -132,17 +146,20 @@ country_decisions = {
 				primary_culture = turkmeni
 			}
 			religion_group = muslim
-			dynasty = "Timurid"
+			dynasty = "Timurid"	
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 429
 				province_id = 2213
 				province_id = 2218
-				province_id = 454
-				province_id = 446
 				province_id = 451
 				province_id = 445
+				province_id = 2214
+				province_id = 446
+				province_id = 454
+				province_id = 450 
+				province_id = 2221 
+				province_id = 429 
 				province_id = 428
 			}
 			OR = {
@@ -156,30 +173,39 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 446	# Herat
 			owns_core_province = 454	# Samarkand
-			454 = {						# Samarkand
-				is_state = yes
+			calc_true_if = {
+				owns_core_province = 2213	# Qom
+				owns_core_province = 2218	# Shiraz
+				owns_core_province = 451	# Kabul
+				owns_core_province = 445	# Merv
+				owns_core_province = 2214 	# Golestan /Astarabad
+				amount = 3
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 30
+				is_city = yes
 			}
 			OR = {
 				AND = {
-					owns_core_province = 429	# Isfahan
-					owns_core_province = 2213	# Qom
-					owns_core_province = 2218	# Shiraz
+					owns_core_province = 450	# Balkh
+					owns_core_province = 2221	# Mashhad
 				}
 				AND = {
-					owns_core_province = 451	# Kabul
-					owns_core_province = 445	# Merv
+					owns_core_province = 429	# Isfahan
 					owns_core_province = 428	# Teheran/Rayy
 				}
 			}
 		}
 		effect = {
-			454 = {
-				move_capital_effect = yes
-			}
 			change_tag = TIM
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government = monarchy } }
+				change_government = monarchy
+			}
+			add_government_reform = uu_timurid_monarchy
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -190,12 +216,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = centralization_modifier
 				duration = 3650
-			}
-			if = {
-				limit = {
-					NOT = { primary_culture = uzbehk }
-				}
-				change_primary_culture = uzbehk
 			}
 			persia_region = {
 				limit = {

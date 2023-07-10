@@ -1301,9 +1301,9 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.3
-	discipline = 0.05
-	core_decay_on_your_own = -0.5
+	governing_capacity_modifier = 0.25
+	discipline = 0.1
+	yearly_government_power = 2
 	monthly_ottoman_decadence = -0.5
 }
 
@@ -1506,11 +1506,9 @@ maintained_forts = {
 }
 
 gov_rank_1 = {
-	governing_capacity = 50					##UU Change	
 }
 
 gov_rank_2 = {
-	governing_capacity = 50					##UU Change	
 }
 
 gov_rank_3 = {
@@ -2158,8 +2156,8 @@ expanded_infrastructure = {
 	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
-	local_governing_cost = 0.1
+	local_governing_cost_increase = 10 		#UU 
+	local_governing_cost = 0.25			 	#UU
 	local_great_project_upgrade_cost = -0.05
 }
 

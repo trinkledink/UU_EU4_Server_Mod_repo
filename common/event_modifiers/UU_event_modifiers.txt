@@ -212,3 +212,10 @@ uu_shaman_vision_quest = {
 uu_kitara_colonies = {
 	colony_development_boost = 1
 }
+
+#timurids
+uu_tim_declared_for_herat_mod = {
+	core_creation = -0.1
+	manpower_recovery_speed = 0.15
+	global_regiment_cost = -0.1
+}

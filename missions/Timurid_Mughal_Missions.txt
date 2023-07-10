@@ -76,10 +76,7 @@ tim_reconquest_persia = {
 						}
 					}
 				}
-				OR = {
-					war_with = KHO
-					is_subject = no
-				}
+				is_subject = no
 			}
 			else_if = {
 				limit = {

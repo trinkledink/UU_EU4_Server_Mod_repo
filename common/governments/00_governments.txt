@@ -39,7 +39,6 @@ monarchy = {
 				confucian_bureaucracy
 				musa_rule
 				mossi_federal_kingdom
-				#peruvian_theocracy			#commented out for now
 				kalmar_union
 				danish_archkingdom
 				norwegian_parliamentary_monarchy
@@ -109,6 +108,7 @@ monarchy = {
 				courts_of_navarra
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
+				uu_timurid_monarchy #new
 			}
 		}
 		hereditary_vs_nobility = {
