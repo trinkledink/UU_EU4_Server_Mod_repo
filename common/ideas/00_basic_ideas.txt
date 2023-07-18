@@ -316,12 +316,12 @@ innovativeness_ideas = { #Innovative Ideas
 	bonus = {
 		monthly_splendor = 2
 	}
-
-	patron_of_art  = {
-		prestige_decay = -0.01
-	}
+	
 	empiricism = {
 		innovativeness_gain = 0.5
+	}
+	patron_of_art  = {
+		prestige_decay = -0.01
 	}
 	scientific_revolution = {
 		technology_cost = -0.1

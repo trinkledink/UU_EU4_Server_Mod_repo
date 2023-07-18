@@ -1,9 +1,7 @@
 edict_religion_enforced = {
 	potential = {
-		OR = {
-			current_age = age_of_reformation
-			has_country_flag = religion_enforced_edict
-		}	
+		current_age = age_of_reformation
+		has_country_flag = religion_enforced_edict
 	}
 	
 	allow = {
