@@ -777,48 +777,48 @@ daimyo_ideas = {
 	}
 }
 
-BAV_ideas = {
-	start = {
-		cavalry_power = 0.15			##UU changed from 0.1
-		heir_chance = 0.5
-	}
-	
-	bonus = {
-		development_cost = -0.1
-	}
-	
-	trigger = {
-		primary_culture = bavarian
-	}
-	free = yes
-	
-	everlating_succeession = {
-		legitimacy = 1
-		devotion = 1					##UU added
-		republican_tradition = 0.3		##UU added
-		meritocracy = 1
-		horde_unity = 1
-	}
-	bavarian_purity_law = {
-		production_efficiency = 0.1
-	}
-	bavarian_state_orchestra = {
-		prestige = 1
-	}
-	geistlicher_rat = {
-		global_heretic_missionary_strength = 0.03
-		papal_influence_from_cardinals = 0.5	##UU changed from +1 PI
-	}
-	brewmaster_general = {
-		global_tax_modifier = 0.2 #UU changed from 0.1
-	}
-	professional_army = {
-		discipline = 0.05
-	}
-	royal_order_of_st_george = {
-		army_tradition_decay = -0.01 ##UU changed from 0.5 yearly AT
-	}
-}
+#BAV_ideas = {
+#	start = {
+#		cavalry_power = 0.1
+#		heir_chance = 0.5
+#	}
+#	
+#	bonus = {
+#		development_cost = -0.1
+#	}
+#	
+#	trigger = {
+#		primary_culture = bavarian
+#	}
+#	free = yes
+#	
+#	everlating_succeession = {
+#		legitimacy = 1
+#		devotion = 1
+#		republican_tradition = 0.3
+#		meritocracy = 1
+#		horde_unity = 1
+#	}
+#	bavarian_purity_law = {
+#		production_efficiency = 0.1
+#	}
+#	bavarian_state_orchestra = {
+#		prestige = 1
+#	}
+#	geistlicher_rat = {
+#		global_heretic_missionary_strength = 0.03
+#		papal_influence = 1
+#	}
+#	brewmaster_general = {
+#		global_tax_modifier = 0.1
+#	}
+#	professional_army = {
+#		discipline = 0.05
+#	}
+#	royal_order_of_st_george = {
+#		army_tradition = 0.5
+#	}
+#}
 
 swabian_ideas = {
 	start = {

@@ -49,7 +49,7 @@
  
  ELB_ideas:0 "Elbian Ideas"
  ELB_ideas_start:0 "Elbian Traditions"
- ELB_ideas_finish:0 "Elbian Ambitions"
+ ELB_ideas_bonus:0 "Elbian Ambitions"
  elb_hus_and_luther:0 "Hus and Luther"
  elb_hus_and_luther_desc:0 "Our Nation was home to two great reformers of the christian faith. They showed us how important it is to listen to god only and not be entangled in political intrigue with the Pope"
  elb_der_zwinger:0 "Der Zwinger"
@@ -80,12 +80,12 @@
  centralization_of_mining_rights_desc:0 "The regulation of mining output has allowed us to simultaneously manage production and prices, allowing for concessionary financing for government works, giving our industrialization efforts a leg up on the private competition."
  wag_of_the_chin:0 "Wag of the Chin"
  wag_of_the_chin_desc:0 "Bella gerant alii, tu felix Austria, nube!"
- AUH_bulwark_of_christendom:0 "Bulwark of Christendom"
- AUH_bulwark_of_christendom_desc:0 "Pacification of the populus begins with the homogeneity of the nation's religions. In the face of the Otto-Turk, we must be united."
- herren_generals:0 "Herren Generals"
- herren_generals_desc:0 "Even in peace, we find it necessary to maintain a central command of the military. The establishment of a permenant Grosse Feldgeneralstab to organize the military will maintain the organization of our forces should the need for war arrise."
- unter_dem_doppeladler:0 "Unter Dem Doppeladler"
- unter_dem_doppeladler_desc:0 "'Under the Double Eagle' is a march composed by Josef Franz Wagner, an Austrian military bandmaster and composer.This march is referring to the double eagle in the coat of arms of the Austro-Hungarian empire."
+ #AUH_bulwark_of_christendom:0 "Bulwark of Christendom"
+ #AUH_bulwark_of_christendom_desc:0 "Pacification of the populus begins with the homogeneity of the nation's religions. In the face of the Otto-Turk, we must be united."
+ herren_generals:0 "Multinational Army"
+ herren_generals_desc:0 "As our Empire expands to include more and more non-Germans, we will organize our army into regiments of people who all speak (mostly) the same language, to increase cohesion at least within individual regiments."
+ #unter_dem_doppeladler:0 "Unter Dem Doppeladler"
+ #unter_dem_doppeladler_desc:0 "'Under the Double Eagle' is a march composed by Josef Franz Wagner, an Austrian military bandmaster and composer.This march is referring to the double eagle in the coat of arms of the Austro-Hungarian empire."
 
  ###############################################################
  # Kingdom of God ideas 
@@ -216,7 +216,7 @@
  ful_conquest_gold:0 "Attacks on the Gold Mines"
  ful_conquest_gold_desc:0 "Our second king Koli Tenguella launched several attacks to seize the northern Mali goldfields. Though he proved ultimately unsuccessful, we should recognize the economic importance of these fields and eventually hope to conquer the goldfields for good." 
  ful_fulani_jihad:0 "The Fulani Jihads"
- ful_fulani_jihads_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
+ ful_fulani_jihad_desc:0 "The Fulani people were the backbone of the Islamic revolutions of the 18th and 19th centuries, overthrowing many empires and establishing several new Muslim states across West Africa. The success of the Fulani movement inspired many other Muslim leaders to start their own jihads."
 
  ###############################################################
  # Kitara ideas
