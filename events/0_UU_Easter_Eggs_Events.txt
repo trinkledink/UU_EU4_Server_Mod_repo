@@ -82,7 +82,7 @@ country_event = { #Missing Localization
         }
     }
     mean_time_to_happen = {
-        months = 1200
+        months = 480
     }
 
     option = {
@@ -252,7 +252,7 @@ country_event = { #The Ripper
     picture = ASSASSINATION_eventPicture
     goto = ripper_prov
     mean_time_to_happen = {
-        months = 6000
+        months = 9000
     }
 
     trigger = {
@@ -283,7 +283,7 @@ country_event = { #No one wants to mod
     picture = MERCHANTS_TALKING_eventPicture
     
     mean_time_to_happen = {
-        months = 6000
+        months = 9000
     }
 
     trigger = {

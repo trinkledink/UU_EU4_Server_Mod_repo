@@ -263,13 +263,22 @@ country_decisions = {
 		effect = {
 			set_country_flag = uu_is_imperium_of_god_flag
 			tooltip = {
-				change_tag = ROM
+				override_country_name = IMPERIUM_OF_GOD
 			}
 			hidden_effect = {
 				change_country_color = { country = ROM }
 			}
 			country_event = { id = uu_easter_egg_events.14 }
 			change_primary_culture = roman
+			custom_tooltip = roman_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = roman
+				}
+			}
 			custom_tooltip = restore_roman_empire_tt
 			hidden_effect = {
 				every_owned_province = {
