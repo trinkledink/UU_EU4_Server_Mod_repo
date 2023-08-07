@@ -29,6 +29,7 @@
 2275 = "Ténéré"
 2932 = "Ouaddaï"
 5009 = "Cameroun"
+2277 = "Kaouar"
 
 
 #India

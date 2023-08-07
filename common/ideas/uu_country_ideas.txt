@@ -619,43 +619,43 @@ ORM_ideas = {
 		merchants = 1
 	}
 }
-SIA_ideas = { #legacy from 1.34 in case we need it 
-	start = {
-		land_morale = 0.1
-		global_manpower_modifier = 0.3
-	}
-	bonus = {
-		discipline = 0.05
-	}
-	trigger = {
-		#tag = SIA
-	}
-	free = yes
-	sia_royal_poets = {
-		prestige = 0.5
-		idea_cost = -0.1
-	}
-	sia_advanced_elephant_warfare = {
-		cavalry_power = 0.15
-		cavalry_fire = 1
-	}
-	sia_experienced_ambassadors = {
-		diplomatic_reputation = 2
-	}
-	sia_encourage_immigration = {
-		development_cost = -0.1
-	}
-	sia_integrating_the_realm = {
-		diplomatic_annexation_cost = -0.2
-	}
-	sia_education_reform = {
-		technology_cost = -0.1
-	}
-	sia_royal_absolutism = {
-		yearly_absolutism = 1
-		legitimacy = 1
-	}
-}
+#SIA_ideas = { #legacy from 1.34 in case we need it 
+#	start = {
+#		land_morale = 0.1
+#		global_manpower_modifier = 0.3
+#	}
+#	bonus = {
+#		discipline = 0.05
+#	}
+#	trigger = {
+#		tag = SIA
+#	}
+#	free = yes
+#	sia_royal_poets = {
+#		prestige = 0.5
+#		idea_cost = -0.1
+#	}
+#	sia_advanced_elephant_warfare = {
+#		cavalry_power = 0.15
+#		cavalry_fire = 1
+#	}
+#	sia_experienced_ambassadors = {
+#		diplomatic_reputation = 2
+#	}
+#	sia_encourage_immigration = {
+#		development_cost = -0.1
+#	}
+#	sia_integrating_the_realm = {
+#		diplomatic_annexation_cost = -0.2
+#	}
+#	sia_education_reform = {
+#		technology_cost = -0.1
+#	}
+#	sia_royal_absolutism = {
+#		yearly_absolutism = 1
+#		legitimacy = 1
+#	}
+#}
 
 #Scandinavia
 SCA_norway_ideas = {
