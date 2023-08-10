@@ -1,5 +1,5 @@
 #changed from vanilla
-PRU_ideas = {
+PRU_ideas = { #Prussia
 	start = {
 		army_tradition = 0.5
 		ae_impact = -0.10
@@ -39,7 +39,7 @@ PRU_ideas = {
 		tolerance_heretic = 1
 	}
 }
-LOT_ideas = {
+LOT_ideas = { #Lotharingia
 	start = {
 		infantry_power = 0.1
 		global_manpower_modifier = 0.25
@@ -78,7 +78,7 @@ LOT_ideas = {
 		administrative_efficiency = 0.05		#Was -20% CCR
 	}
 }
-RUS_ideas = {
+RUS_ideas = { #Russia
 	start = {
 		core_creation = -0.10
 		global_manpower_modifier = 0.33
@@ -124,7 +124,7 @@ RUS_ideas = {
 		fire_damage_received = -0.1
 	}
 }
-GBR_ideas = {
+GBR_ideas = { #Great Britain
 	start = {
 		naval_morale = 0.20
 		heavy_ship_power = 0.15
@@ -165,7 +165,7 @@ GBR_ideas = {
 		allowed_marine_fraction = 0.50
 	}
 }
-ITA_ideas = {
+ITA_ideas = { #Italy
 	start = {
 		global_trade_power = 0.20
 		improve_relation_modifier = 0.50
@@ -207,7 +207,7 @@ ITA_ideas = {
 		core_creation = -0.25
 	}
 }
-TUS_ideas = {
+TUS_ideas = { #Tuscany
 	start = {
 		papal_influence = 2
 		development_cost = -0.1
@@ -247,7 +247,7 @@ TUS_ideas = {
 		# global_manpower_modifier = 0.25	#effects in LAN ideas
  	}
 }
-SIC_ideas = {
+SIC_ideas = { #Sicily/ies
 	start = {
 		land_morale = 0.15					#Was 10%
 		global_manpower_modifier = 0.2
@@ -291,7 +291,7 @@ SIC_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 }
-SPI_ideas = {
+SPI_ideas = { #Sardinia-Piedmont
 	start = {
 		idea_cost = -0.1
 		improve_relation_modifier = 0.25
@@ -331,7 +331,7 @@ SPI_ideas = {
 		ae_impact = -0.2					#Was 10%
 	}
 }
-TUN_ideas = {
+TUN_ideas = { #Tunis 
 	start = {
 		naval_forcelimit_modifier = 0.25		#Moved from Ambition
 		galley_power = 0.2
@@ -370,7 +370,7 @@ TUN_ideas = {
 		monthly_piety_accelerator = 0.001 		#Changed from +piety
 	}
 }
-MOR_ideas = {
+MOR_ideas = { #Morocco 
 	start = {
 		naval_attrition = -0.25
 		naval_forcelimit_modifier = 0.25
@@ -408,7 +408,7 @@ MOR_ideas = {
 		global_autonomy = -0.05
 	}
 }
-KON_ideas = {
+KON_ideas = { #Kongo
 	start = {
 		trade_efficiency = 0.1
 		land_attrition = -0.20
@@ -455,7 +455,7 @@ KON_ideas = {
 		discipline = 0.05
 	}
 }
-irish_ideas = { 
+irish_ideas = { #idk why it isnt IRE_ideas, it was like this when I found it
 	start = {
 		land_morale = 0.1
 		trade_efficiency = 0.1
@@ -498,7 +498,7 @@ irish_ideas = {
 		discipline = 0.05
 	}
 }
-ADU_ideas = {
+ADU_ideas = { #Andalusia
 	start = {
 		land_morale = 0.15 
 		global_ship_trade_power = 0.25 
@@ -538,7 +538,7 @@ ADU_ideas = {
 		rival_border_fort_maintenance = -0.25
 	}
 }
-MUG_ideas = {
+MUG_ideas = { #Mughals
 	start = {
 		core_creation = -0.25
 		cavalry_power = 0.20
@@ -580,7 +580,7 @@ MUG_ideas = {
 		global_autonomy = -0.075				#Added
 	}
 }
-ORM_ideas = {
+ORM_ideas = { #Hormuz
 	start = {
 		mercenary_manpower = 0.5
 		trade_efficiency = 0.15
@@ -619,43 +619,6 @@ ORM_ideas = {
 		merchants = 1
 	}
 }
-#SIA_ideas = { #legacy from 1.34 in case we need it 
-#	start = {
-#		land_morale = 0.1
-#		global_manpower_modifier = 0.3
-#	}
-#	bonus = {
-#		discipline = 0.05
-#	}
-#	trigger = {
-#		tag = SIA
-#	}
-#	free = yes
-#	sia_royal_poets = {
-#		prestige = 0.5
-#		idea_cost = -0.1
-#	}
-#	sia_advanced_elephant_warfare = {
-#		cavalry_power = 0.15
-#		cavalry_fire = 1
-#	}
-#	sia_experienced_ambassadors = {
-#		diplomatic_reputation = 2
-#	}
-#	sia_encourage_immigration = {
-#		development_cost = -0.1
-#	}
-#	sia_integrating_the_realm = {
-#		diplomatic_annexation_cost = -0.2
-#	}
-#	sia_education_reform = {
-#		technology_cost = -0.1
-#	}
-#	sia_royal_absolutism = {
-#		yearly_absolutism = 1
-#		legitimacy = 1
-#	}
-#}
 
 #Scandinavia
 SCA_norway_ideas = {
@@ -791,7 +754,7 @@ SCA_denmark_ideas = {
 	}
 }
 
-HAB_ideas = {
+HAB_ideas = { #Austria
 	start = {
 		land_morale = 0.10
 		improve_relation_modifier = 0.3
@@ -916,7 +879,7 @@ HSN_ideas = { #Hisn Kayfa + Arabia
 		global_trade_goods_size_modifier = 0.1
 	}
 } 
-ELB_ideas = { #Elbian
+ELB_ideas = { #Elbian Confederation
 	start = {
 		advisor_cost = -0.15
 		development_cost = -0.1
@@ -1477,7 +1440,7 @@ SOK_ideas = { #Sokoto + Massina
 }
 
 #Colonial
-CAN_ideas = {
+CAN_ideas = { #Canada
 	start = {
 		naval_forcelimit_modifier = 0.25
 		land_attrition = -0.15
@@ -1517,7 +1480,7 @@ CAN_ideas = {
 		fire_damage = 0.10
 	}
 }
-QUE_ideas = {
+QUE_ideas = { #Quebec
 	start = {
 		land_morale = 0.10
 		tolerance_own = 2
@@ -1558,7 +1521,7 @@ QUE_ideas = {
 		global_missionary_strength = 0.02
 	}
 }
-COL_ideas = {
+COL_ideas = { #Colombia
 	start = {
 		cav_to_inf_ratio = 0.3
 		cavalry_power = 0.20
@@ -1595,7 +1558,7 @@ COL_ideas = {
 		land_morale = 0.1
 	}
 }
-BRZ_ideas = {
+BRZ_ideas = { #Brazil
 	start = {
 		colonists = 1
 		global_colonial_growth = 20
@@ -1633,7 +1596,7 @@ BRZ_ideas = {
 		land_forcelimit_modifier = 0.25
 	}
 }
-LAP_ideas = {
+LAP_ideas = { #La Plata
 	start = {
 		global_tax_modifier = 0.15
 		stability_cost_modifier = -0.2
@@ -1673,7 +1636,7 @@ LAP_ideas = {
 		fire_damage_received = -0.1
 	}
 }
-PEU_ideas = {
+PEU_ideas = { #Peru
 	start = {
 		global_missionary_strength = 0.02
 		war_exhaustion = -0.05
@@ -1716,3 +1679,41 @@ PEU_ideas = {
 		discipline = 0.05
 	}
 }
+
+#SIA_ideas = { #legacy from 1.34 in case we need it 
+#	start = {
+#		land_morale = 0.1
+#		global_manpower_modifier = 0.3
+#	}
+#	bonus = {
+#		discipline = 0.05
+#	}
+#	trigger = {
+#		tag = SIA
+#	}
+#	free = yes
+#	sia_royal_poets = {
+#		prestige = 0.5
+#		idea_cost = -0.1
+#	}
+#	sia_advanced_elephant_warfare = {
+#		cavalry_power = 0.15
+#		cavalry_fire = 1
+#	}
+#	sia_experienced_ambassadors = {
+#		diplomatic_reputation = 2
+#	}
+#	sia_encourage_immigration = {
+#		development_cost = -0.1
+#	}
+#	sia_integrating_the_realm = {
+#		diplomatic_annexation_cost = -0.2
+#	}
+#	sia_education_reform = {
+#		technology_cost = -0.1
+#	}
+#	sia_royal_absolutism = {
+#		yearly_absolutism = 1
+#		legitimacy = 1
+#	}
+#}
