@@ -5558,7 +5558,7 @@
  flavor_gbr.122.a:0 "Uncertain times are ahead..."
  flavor_gbr.122.a.tt:0 "The Religion of every new §Y[Root.Monarch.GetTitle]§! and §YHeir§! has now a §Y50.0%§! chance to be of a §YHeretic§! religion as long this modifier is active.\nRulers can assume a §YReligious Position§! towards the Reformation which will affect future events."
  flavor_gbr.199.t:0 "Pax Britannica"
- flavor_gbr.199.t.a:0 "Pax Angevina"
+ flavor_gbr.199.t.a:0 "Pax Andecavina" #UU Better Latin
  flavor_gbr.199.t.b:0 "[Root.GetPaxBritannica]"
  flavor_gbr.199.desc.a:0 "Our country has reached a size, prosperity and stability never seen before. Our glorious rule has brought unprecedented wealth to the population, and all over the world people respect our authority. The saying that 'the sun never sets on the British Empire' is not an allegory but an actual undeniable fact.\n\nIn this time of peace and prosperity, people have started to compare our [Root.Monarch.GetTitle] [Root.Monarch.GetName] to the likes of the greatest rulers of the past, and specially Caesar Augustus. His establishment of the Roman Empire and the peace and prosperity it brought are being paralleled to the rule of [Root.Monarch.GetName] and the prosperity [Root.Monarch.GetSheHe] [Root.Monarch.GetHerselfHimself] has brought us.\n\nWe enjoy a true Pax Britannica."
  flavor_gbr.199.desc.b:0 "Our country has reached a size, prosperity and stability never seen before. Our glorious rule has brought unprecedented wealth to the population, and all over Europe people respect our authority. The joining of England and France has proved more successful even than what we had expected.\n\nIn this time of peace and prosperity, people have started to compare our [Root.Monarch.GetTitle] [Root.Monarch.GetName] to the likes of the greatest rulers of the past, and specially Caesar Augustus. His establishment of the Roman Empire and the peace and prosperity it brought are being paralleled to the rule of [Root.Monarch.GetName] and the prosperity [Root.Monarch.GetSheHe] [Root.Monarch.GetHerselfHimself] has brought us.\n\nWe enjoy a true Pax Angevin."
@@ -5731,7 +5731,7 @@
  eng_order_of_chivalry:0 "Order of Chivalry"
  eng_jousting_tournaments:0 "Jousting Tournaments"
  gbr_pax_britannica:0 "Pax Britannica"
- ave_pax_angevina:0 "Pax Angevina"
+ ave_pax_angevina:0 "Pax Andecavina" #UU Better Latin
  trade_protectorate_subject_modifier:0 "Trade Protectorate"
  trade_protectorate_low_development_subject_modifier:0 "Weak Trade Protectorate"
  trade_protectorate_overlord_modifier:0 "Trade Protectorate"

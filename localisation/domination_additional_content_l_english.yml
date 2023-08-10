@@ -36,7 +36,7 @@
  desc_eng_order_of_chivalry:1 "The Order of Chivalry is a society with its inspirational roots in the Catholic military orders of the crusades. However, the [Root.GetAdjective] Order is of courtly nature and is nowadays more of a status symbol for the nobility which values honor and chivalry."
  desc_eng_jousting_tournaments:1 "Once a martial exercise, the improvements of armor and jousting tactics made jousting to an entertaining spectacle for the common man.\n§YLasts until the end of the Age of Discovery.§!"
  desc_gbr_pax_britannica:1 "Wherever the eye meets the map they see the great extend of Britannia. An empire second to none, our people enjoy freedom, security and stability. Truly a Pax Britannica."
- desc_ave_pax_angevina:1 "Wherever the eye meets the map they see the great extend of the Angevin Empire. An empire second to none, our people enjoy freedom, security and stability. Truly a Pax Angevina."
+ desc_ave_pax_angevina:1 "Wherever the eye meets the map they see the great extend of the Angevin Empire. An empire second to none, our people enjoy freedom, security and stability. Truly a Pax Andecavina." #UU Better Latin
  desc_jap_firearm_production_modifier:1 "We are producing a steady supply of firearms, which also serves to boost our economy."
  desc_fra_reintegration_of_burgundian_lands_modifier:1 "The reintegration of the Burgundian crown into our domain is sure to yield great administrative advances."
  desc_fra_victory_germany_modifier:1 "We are triumphant in our efforts to crush our Germanic foes!"

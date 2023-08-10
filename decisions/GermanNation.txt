@@ -28,7 +28,7 @@ country_decisions = {
 			}
 			OR = {
 				culture_group = germanic
-				tag = ELB #remove this when ELB can assimilate into germanic group
+				#tag = ELB #removed since ELB can assimilate into germanic group
 			}
 			NOT = { primary_culture = dutch }
 			is_colonial_nation = no
