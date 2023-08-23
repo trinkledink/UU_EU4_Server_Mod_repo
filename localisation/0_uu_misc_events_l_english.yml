@@ -15,7 +15,7 @@
  uu_tim_flavor_4_tt:0 "§YShah Rukh is likely to die within two years, which will mean the Timurid subjects will likely forsake their loyalty to Herat.§!"
  flavor_tim.2.aa:0 "Time to gather our strength."
  flavor_tim.2.ab:0 "We must move for Herat at once."
- flavor_tim.2.ab.tt:0 "§Y[Root.Monarch.GetName] is openly announcing their claim to the Timurid throne. Any other potential claimants will likely also move to secure the capital, and thus it is very likely that §Roccupying Herat will lead to immediate war with the other claimants.§!"
+ flavor_tim.2.ab.tt:0 "§Y[Root.Monarch.GetName] is openly announcing their claim to the Timurid throne. Any other potential claimants will likely also move to secure the capital, and thus it is very likely that §!§Roccupying Herat will lead to immediate war with the other claimants.§!"
  flavor_tim.1000.t:0 "[uuheratevt.Monarch.GetName] Seizes Herat!"
  flavor_tim.1000.d:0 "It seems our relative [uuheratevt.Monarch.GetName] of [uuheratevt.GetName] has captured the city of Herat and declared himself the rightful heir of the Timurid Empire. While we knew it was inevitable that we would come into conflict with them over this issue, it is clear that unless we choose to defy him here, the strength of our claim would be greatly weakened."
  flavor_tim.1000.a:0 "Family or not, the empire is mine!"

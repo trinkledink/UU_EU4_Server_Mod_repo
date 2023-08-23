@@ -114,13 +114,13 @@ country_event = {
 		name = "flavor_tim.2.aa" # My time has come!
 		trigger = { dynasty = Timurid }
 		add_stability = 1
+		add_yearly_manpower = 1.25
 		if = {
 			limit = {
 				is_subject_of_type_with_overlord = { who = TIM type = tributary_state }
 			}
 			grant_independence = yes
 		}
-		add_yearly_manpower = 0.5
 		ai_chance = {
 			factor = 0
 		}
@@ -129,18 +129,19 @@ country_event = {
 		name = "flavor_tim.2.ab" # We must march to Herat
 		trigger = { dynasty = Timurid }
 		custom_tooltip = flavor_tim.2.ab.tt
-		add_country_modifier = {
-			name = uu_tim_declared_for_herat_mod
-			duration = 7300
-		}
+		
 		add_stability = 1
+		add_adm_power = 50
 		if = {
 			limit = {
 				is_subject_of_type_with_overlord = { who = TIM type = tributary_state }
 			}
 			grant_independence = yes
 		}
-		add_adm_power = 50
+		add_country_modifier = {
+			name = uu_tim_declared_for_herat_mod
+			duration = 7300
+		}
 		declare_war_with_cb = {
 			who = TIM
 			casus_belli = cb_conquest
