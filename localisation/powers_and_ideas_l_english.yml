@@ -6368,7 +6368,7 @@
  hin_persianate_court:0 "Persianate Courtly Culture"
  hin_persianate_court_desc:0 "Persian language and courtly customs have become the most politically and scholarly in the Muslim world. Our own nation has enthusiastically adopted these customs, and in doing so we have attracted many skilled and educated Persian-speaking advisors whose services to our administration cannot be understated."
  hin_sufism:0 "Patronize Sufi Missionaries"
- hin_sufism_desc:0 "Muslim princes across the world compete to attract the wisest Sufi teachers. As our renown has grown, more of these Sufis have joined us. Towns are founded where they settle, often in previously inhospitable regions, and the local people are inspired to convert to Islam by the wisdom of the Sufis."
+ hin_sufism_desc:0 "Muslim princes across the world compete to attract the wisest Sufi teachers. As our renown has grown, more of these Sufis have joined us." #Towns are founded where they settle, often in previously inhospitable regions, and the local people are inspired to convert to Islam by the wisdom of the Sufis. #Commented out this section
  RJP_ideas:0 "Rajputana ideas"
  RJP_ideas_start:0 "Rajputana Traditions"
  RJP_ideas_bonus:0 "Rajputana Ambition"

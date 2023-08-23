@@ -190,3 +190,9 @@
 4201 = {"Kenshu" "Kenshu"}
 4652 = {"Kaijo" "Kaijo"}
 4653 = {"Morin" "Morin"}
+
+4952 = {"Tenshin" "Tenshin"} #Tianjin
+4956 = {"Ryojun" "Ryojun"} #Port Arthur
+4957 = {"Ryouyou" "Ryouyou"} #Liaoyang
+4958 = {"Sankaikan" "Sankaikan"} #Shanhaiguan
+
