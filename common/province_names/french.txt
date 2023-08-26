@@ -7,6 +7,10 @@
 382 = "Damas"
 410 = "Bagdad"
 236 = "Londres"
+2974 = "Looz"
+92 = "Bruxelles"
+4838 = "La Haye"
+
 #West Africa
 1114 = "Gabou"
 1117 = "Fouta-Djalon"

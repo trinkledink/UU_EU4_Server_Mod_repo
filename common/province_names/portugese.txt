@@ -120,3 +120,5 @@
 5009 = "Camarões"
 1205 = "Mogadíscio"
 529 = "Bombaim"
+2258 = "Cabo Corso"
+1119 = "Costa da Pimenta"

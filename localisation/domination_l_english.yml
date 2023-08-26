@@ -3590,7 +3590,7 @@
  ###CASUS BELLI###
  cb_external_perfectionism:0 "External Perfectionism"
  cb_external_perfectionism_desc:0 "We have reached perfection. It is our duty to spread this state to the less fortunate civilizations."
- cb_ottoman_subjugation_war:0 "Ottoman Campaign of Conquest"
+ cb_ottoman_subjugation_war:0 "Establish Eyalet" #UU Change because Rum can also have this CB, not just Ottomans
  cb_ottoman_subjugation_war_desc:0 "Their territory is our rightful claim. They shall serve us as our loyal Eyalet!"
  cb_triggered_independence_war:0 "Independence"
  cb_triggered_independence_war_desc:0 "We deserve independence."
@@ -3603,8 +3603,8 @@
  CANNOT_ANNEX:0 "A modifier of your subject is preventing its annexation."
  fabricate_ottoman_invasion_cb:0 "Justify Invasion"
  fabricate_ottoman_invasion_cb_title:0 "Justify Invasion"
- fabricate_ottoman_invasion_cb_desc:1 "Justify Invasion will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YOttoman Campaign of Conquest§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into an §YEyalet§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y5 years§!.\n\n§YEyalets can be turned into Core Eyalets which can be annexed for 6 £dip£ per development.§!"
- fabricate_ottoman_invasion_cb_tooltip:0 "Justify an invasion against the target country and gain the 'Ottoman Campaign of Conquest' casus belli against them."
+ fabricate_ottoman_invasion_cb_desc:1 "Justify Invasion will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YEstablish Eyalet§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into an §YEyalet§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y5 years§!.\n\n§YEyalets can be turned into Core Eyalets which can be annexed for 6 £dip£ per development.§!"
+ fabricate_ottoman_invasion_cb_tooltip:0 "Justify an invasion against the target country and gain the 'Establish Eyalet' casus belli against them."
  reign_in_eyalet:0 "Rein in Eyalet"
  reign_in_eyalet_title:0 "Rein in Eyalet"
  reign_in_eyalet_desc:1 "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Eyalet§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Eyalets can be annexed for 6 £dip£ per development.§!"
@@ -3700,7 +3700,7 @@
  FROM_IS_REBELLIOUS_TT:0 "§R- §Y[From.GetName]§! has over §Y50%§! Liberty Desire.§!"
  FROM_HAS_LESS_THAN_ROOT_TECHNOLOGY:0 "§R- §Y[From.GetName]§! is not at least on the same technology level as §Y[Root.GetName]§!.§!"
  ROOT_HAS_LESS_THAN_ROOT_TECHNOLOGY:0 "§R- §Y[Root.GetName]§! is not at least on the same technology level as §Y[From.GetName]§!.§!"
- HAS_OTTOMAN_INVASION_CB_ALREADY_TT:0 "§R- §Y[Root.GetName]§! already has an §YOttoman Campaign of Conquest§! casus belli against §Y[From.GetName]§!.§!"
+ HAS_OTTOMAN_INVASION_CB_ALREADY_TT:0 "§R- §Y[Root.GetName]§! already has an §YEstablish Eyalet§! casus belli against §Y[From.GetName]§!.§!"
  CANNOT_DO_ACTION_TO_SUBJECTS_TT:0 "§R- §Y[From.GetName]§! is a subject.§!"
  FROM_MUST_OWE_10_FAVORS_DEFENSIVE_WAR_TT:0 "§R- §Y[From.GetName]§! does not owe §Y10§! favors to §Y[Root.GetName]§! (reduced from §Y20§! due to defensive war).§!"
  FROM_MUST_OWE_20_FAVORS_TT:0 "§R- §Y[From.GetName]§! does not owe §Y20§! favors to §Y[Root.GetName]§!.§!"

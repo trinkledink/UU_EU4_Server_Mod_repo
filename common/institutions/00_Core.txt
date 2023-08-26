@@ -104,7 +104,7 @@ feudalism = {
 					technology_group = north_american
 					technology_group = south_american
 					#technology_group = sub_saharan
-					#technology_group = aboriginal_tech
+					technology_group = aboriginal_tech
 				}
 			}
 			AND = {

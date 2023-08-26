@@ -140,7 +140,7 @@
   ctg_expand_western_trade_routes_desc:0 "Controlling the Baleares and western trade centers puts us in an advantageous position for expanding our economical and political sphere westwards."
  ctg_the_berber_question_title:0 "The Berber Question"
   ctg_the_berber_question_desc:0 "Carthage is safe on the waters and the narrow passes to the east, but the question remainds how we should deal with our western neighbours sharing our African coastline."
- ctg_plus_ultra_carthagena_title:0 "Plus Ultra Carthagena"
+ ctg_plus_ultra_carthagena_title:0 "Plus Ultra Cartagena"
   ctg_plus_ultra_carthagena_desc:0 "A new continent has been discovered! The tales of these faraway foreign lands intrigue our great men and merchants alike. We should conquer a port in the West to pave the way for new discoveries."
  ctg_mapping_the_south_title:0 "Mapping the South"
   ctg_mapping_the_south_desc:0 "Little is known in Carthage about our sub-saharan neighbours. We should send expeditions and seek to establish contact with the locals. Perhaps they will be willing to share their maps with us."
@@ -157,7 +157,7 @@
  
  #Eastern Expansion
  ctg_consolidate_italian_beachhead_title:0 "Consolidate the Islands"
-  ctg_consolidate_italian_beachhead_desc:0 "If we wish to push further into the Italian Penincula, we should first consolidate our holdings on Sicily and the surrounding islands, as potential operational bases for further campaigns."
+  ctg_consolidate_italian_beachhead_desc:0 "If we wish to push further into the Italian Peninsula, we should first consolidate our holdings on Sicily and the surrounding islands, as potential operational bases for further campaigns."
  ctg_eastern_trade_ports_title:0 "Replace the Italians"
   ctg_eastern_trade_ports_desc:0 "The merchant republics of Venice and Genoa have dominated the trade between the Levant and Europe, since the times of the Crusades. If we seize the islands that lie between, we would be the masters of trade in the eastern Mediterranean."
  ctg_mediterranean_bread_basket_title:0 "Mediterranean Bread Basket"
