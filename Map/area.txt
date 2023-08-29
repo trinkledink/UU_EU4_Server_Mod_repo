@@ -943,6 +943,7 @@ upper_franconia_area = { #4
 
 upper_swabia_area = { #4 (East Swabia)
 	68 1868 4711 1872
+	4710 #Bregenz moved 
 }
 
 northern_saxony_area = { #4 (Saxe-Altmark)
@@ -972,7 +973,7 @@ hinter_pommern_area = { #3
 }
 
 tirol_area = { #5
-	73 110 1768 4710 4758
+	73 110 1768 4758
 }
 
 austria_proper_area = { #5
