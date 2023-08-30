@@ -22,5 +22,8 @@ trigger = {
             tag = NED   #meme
             NOT = { num_of_transport = 1 }
         }
+        NOT = {
+            has_dlc = "Domination" #fallback
+        }
     }
 }
