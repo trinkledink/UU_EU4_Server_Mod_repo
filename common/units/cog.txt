@@ -10,20 +10,3 @@ sail_speed = 6
 sailors = 50
 
 sprite_level = 1
-
-trigger = {
-    OR = {
-        ai = yes 
-        AND = {
-            primary_culture = dutch     #meme
-            NOT = { num_of_transport = 1 }
-        }
-        AND = {
-            tag = NED   #meme
-            NOT = { num_of_transport = 1 }
-        }
-        NOT = {
-            has_dlc = "Domination" #fallback
-        }
-    }
-}
