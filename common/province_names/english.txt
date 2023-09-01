@@ -1,28 +1,3 @@
-#NEW 
-295 = "Moscow"
-118 = "Rome"
-116 = "Florence"
-112 = "Venice"
-121 = "Naples"
-1744 = "Antwerp"
-4383 = "The Hague"
-227 = "Lisbon"
-67 = "Nuremberg"
-65 = "Munich"
-85 = "Cologne"
-257 = "Warsaw"
-4815 = { "Singapore" "Singapore" }
-384 = "Medina"
-385 = "Mecca"
-1205 = "Mogadishu"
-4891 = "Pictou"
-4956 = "Port Arthur" #China
-4813 = { "Penang" "Butterworth" } #Malaysia
-529 = "Bombay"
-561 = "Calcutta" #from Bengal events
-1639 = "Madras" #Chennai 
-540 = "Pondicherry"
-
 356 = "Benghazi"
 357 = "Derna"
 358 = {"Alexandria" "Alexandria" }
@@ -95,10 +70,10 @@
 969 = { "Bennington" "Bennington" }
 970 = { "New Hampshire" "Portsmouth" }
 973 = { "Vancouver" "Vancouver" }
-980 = { "Avalon" "St. John's"}
+980 = "Avalon"
 981 = "Cape Ray"
 982 = "Cape Breton"
-983 = {"Prince Edward Isl." "Charlottetown"}
+983 = "Prince Edward Isl."
 984 = "Fundy"
 985 = { "Moncton" "Moncton" }
 986 = "Gaspe"
@@ -172,9 +147,9 @@
 2563 = { "Vermont" "Montpelier" }
 2564 = "White Mountains"
 2566 = "Castine"
-2568 = { "Cape Sable" "Yarmouth" }
+2568 = "Cape Sable"
 2569 = { "Halifax" "Halifax" }
-2570 = "Saint John"
+2570 = "St. John"
 2572 = "Campbelton"
 2574 = "Nain"
 2577 = "Seven Islands"
@@ -196,7 +171,7 @@
 2670 = { "Toronto" "York" }
 2671 = "Ronde"
 4872 = { "Buffalo" "Buffalo" } 
-4890 = { "Ottawa" "Bytown" } #Bytown was the old name for Ottawa
+4890 = "Ottawa"
 
 #Ireland
 4379 = "King's County"

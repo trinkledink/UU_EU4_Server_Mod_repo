@@ -46,14 +46,14 @@ estate_dhimmi = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		technology_cost = -0.1
+		idea_cost = -0.1
 		tolerance_heathen = 2
 	}
 	country_modifier_neutral = {
 		tolerance_heathen = 2
 	}	
 	country_modifier_angry = {
-		technology_cost = 0.1
+		idea_cost = 0.1
 		tolerance_heathen = -1
 		global_unrest = 2
 	}
