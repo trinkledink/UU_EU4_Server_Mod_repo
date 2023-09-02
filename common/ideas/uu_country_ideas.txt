@@ -145,6 +145,7 @@ GBR_ideas = { #Great Britain
 	}
 	city_upon_a_hill = {
 		global_colonial_growth = 20
+		global_tariffs = 0.15
 	}
 	british_merchant_navy = {
 		drill_gain_modifier = 0.25
@@ -152,6 +153,7 @@ GBR_ideas = { #Great Britain
 	}
 	gbr_the_royal_society = {
 		technology_cost = -0.1
+		num_of_parliament_issues = 1
 	}
 	reform_of_comission_buying = {
 		discipline = 0.05
