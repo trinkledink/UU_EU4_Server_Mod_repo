@@ -1440,7 +1440,8 @@ BHA_ideas = { #Bharat
 		state_maintenance_modifier = -0.15
 	}
 	bonus = {
-		manpower_in_true_faith_provinces = 0.2
+		#years_of_nationalism = -5						#Removed
+		manpower_in_true_faith_provinces = 0.2			#Added
 	}
 	
 	trigger = {
@@ -1449,12 +1450,12 @@ BHA_ideas = { #Bharat
 	free = yes
 
 	bha_modernized_war_elephants = {		
-		#cavalry_power = 0.15 					#Removed
-		development_cost = -0.1 				#Added for parity with HIN
+		#cavalry_power = 0.15 							#Removed
+		development_cost = -0.1 						#Added for parity with HIN
 	}
 	bha_united_india = {
 		num_accepted_cultures = 2
-		manpower_in_accepted_culture_provinces = 0.2
+		manpower_in_accepted_culture_provinces = 0.2	#Added
 	}
 	bha_sanskrit_golden_age = {
 		technology_cost = -0.05

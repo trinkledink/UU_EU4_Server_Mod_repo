@@ -1,3 +1,29 @@
+#NEW 
+295 = "Moscow"
+118 = "Rome"
+116 = "Florence"
+112 = "Venice"
+121 = "Naples"
+1744 = "Antwerp"
+4383 = "The Hague"
+227 = "Lisbon"
+67 = "Nuremberg"
+65 = "Munich"
+85 = "Cologne"
+257 = "Warsaw"
+4815 = { "Singapore" "Singapore" }
+384 = "Medina"
+385 = "Mecca"
+1205 = "Mogadishu"
+4891 = "Pictou"
+4956 = "Port Arthur" #China
+4813 = { "Penang" "Butterworth" } #Malaysia
+529 = "Bombay"
+561 = "Calcutta" #from Bengal events
+1639 = "Madras" #Chennai 
+540 = "Pondicherry"
+546 = "Dacca"
+
 356 = "Benghazi"
 357 = "Derna"
 358 = {"Alexandria" "Alexandria" }
