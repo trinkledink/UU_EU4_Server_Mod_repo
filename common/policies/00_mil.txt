@@ -487,7 +487,7 @@ underhanded_diplomacy_act = { #unused
 		factor = 0.6
 	}
 }
-underhanded_diplomacy_act = { 
+enlistment_propaganda_act = { 
 	monarch_power = MIL
 	potential = {
 		has_idea_group = spy_ideas

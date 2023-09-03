@@ -97,6 +97,8 @@
  desc_expanded_network_policy:0 "Mercenaries follow the winds of trade and war, and the web of connections that we have gained from our focus on a hired army has proven quite profitable."
  
  #Mil
+ enlistment_propaganda_act:0 "Enlistment Propaganda"
+ desc_enlistment_propaganda_act:0 "By carefully filtering information about our military prestige, we might increase the amount of volunteers aswell as increase the overall morale"
  innovative_mercenaries_policy:0 "Private Innovators Act"
  desc_innovative_mercenaries_policy:0 "Promoting individuals with a skill for military innovations will benefit our nations armies greatly."
  holy_orders_policy:0 "Enlistment of Holy Orders"
