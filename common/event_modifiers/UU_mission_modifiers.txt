@@ -734,7 +734,7 @@ uukbo_khalifa_mod = {
 	land_morale = 0.10
 }
 uukbo_fighting_syncretism = {
-	global_heretic_missionary_strength = 0.025
+	global_heathen_missionary_strength = 0.025
 	tolerance_heathen = -5
 	global_unrest = 3
 }
