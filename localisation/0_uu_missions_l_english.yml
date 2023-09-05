@@ -111,6 +111,7 @@
   UU_elb_mission_events.3.d:0 "For centuries, the Kingdom of Bohemia was a non-German kingdom in a German Empire. Their distinct identity was a source of national pride, and to that end the Czechs successfully managed to defy assimilation and preserve their unique culture, despite extensive dealings with the Germans. That being said, our recent confederation of the Bohemian lands into not just a union of two kingdoms, but a unified centralized state of equals, means that the two cultures have begun to intermingle and blend in a way they never have before. The question now arises with increasing frequency whether now is the time to finally begin the process of assimilating, to finally bring the lands of Bohemia into the German fold. However, with the vast German majority sure to cause more influence on the Czechs than vice versa, this risks alienating many traditional Czechs who will see this as the first step towards the final death of Czech independence."
   UU_elb_mission_events.3.a:0 "Give this natural assimilation our official support."
   UU_elb_mission_events.3.b:0 "Let the Czechs keep their identity, for the good of the nation."
+  UU_elb_mission_events.3.c:0 "The times are changing. We are a new nation, and we will create a new national identity."
  UU_elb_mission_events.4.t:0 "The Assimilation of the Czechs"
   UU_elb_mission_events.4.da:0 "As time passes and the Czechs integrate into our nation with tacit government support, the censuses increasingly show more regions identifying closer to Germanic than Slavic peoples."
   UU_elb_mission_events.4.db:0 "As time passes and the Czechs continue to adopt more Germanic cultural traditions, the censuses increasingly show more regions identifying closer to Germanic than Slavic peoples."
@@ -118,7 +119,7 @@
   UU_elb_mission_events.4.b:0 "This was a bad idea. Stop this while we still can."
  
  #Custom Tooltips
- uu_elbified_tt:0 "We will adopt a new primary culture in the §YGermanic§! culture group.\nCulture in all owned §YCzech§! provinces will become §YElbian§!."
+ uu_elbified_tt:0 "We will adopt a new primary culture in the §YGermanic§! culture group.\nCulture in all owned §YCzech§! and §YSaxon§! provinces will become §YElbian§!."
  uu_elb_again_tt:0 "§OOur Czech provinces will slowly assimilate into a new German culture for as long as we have any remaining Czech provinces.§!"
  uu_elb_national_supremacy_tt:0 "Every owned province of §YCzech§! culture gets '§YCzech National Supremacy§!' for §Y40 years§!, giving the following effects:\nLocal Unrest:§G -2.00§!\nDevelopment Cost:§G -5.0%§!\nLocal Manpower Modifier:§G +10.0%§!\n\nEvery owned province §RNOT§! in the §YWest Slavic§! culture group gets '§YCzech National Supremacy§!' for §Y40 years§!, giving the following effects:\nLocal Unrest:§R +3.00§!\nLocal Missionary Strength:§G +2.0%§!\nLocal Manpower Modifier:§R -10.0%§!\nCulture Conversion Cost:§G -25.0%§!"
  uu_elb_national_supremacy_2_tt:0 "Every owned province of §YCzech§! culture gets '§YCzech National Supremacy§!' for §Y40 years§!, giving the following effects:\nLocal Unrest:§G -2.00§!\nDevelopment Cost:§G -5.0%§!\nLocal Manpower Modifier:§G +10.0%§!"
