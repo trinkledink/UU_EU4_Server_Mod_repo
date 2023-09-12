@@ -1955,3 +1955,68 @@ infrastructure_ideas = {
 		}
 	}
 }
+subject_vassal_ideas = {			#UU added for influence buff
+	category = ADM
+	trigger = {
+		is_valid_for_subject_vassal_ideas = yes
+	}
+	bonus = {
+		global_allowed_num_of_buildings = 1
+	}
+	uu_decent_deving = {
+		development_cost = -0.25	#Keep in mind this only conteracts the dev cost penalty from being a subject and doesnt affect the overlord deving a province in the subject
+	}
+	uu_better_mana_managment_adm = {
+		country_admin_power = 1
+	}
+	uu_better_mana_managment_dip = {
+		country_diplomatic_power = 1
+	}
+	uu_better_mana_managment_mil = {
+		country_military_power = 1
+	}
+	uu_good_taxation = {
+		global_tax_income = 36
+	}
+	uu_funded_construction = {
+		build_cost = -0.25
+		build_time = -0.25
+	}
+	uu_friends_in_high_places = {
+		caravan_power = 0.5
+		global_trade_power = 0.25
+	}
+}	
+subject_march_ideas = {
+	category = MIL
+	trigger = {
+		is_valid_for_subject_march_ideas = yes
+	}
+	bonus = {
+		discipline = 0.1
+	}
+	uu_improved_fortifications = {
+		fort_maintenance_modifier = -0.5
+		defensiveness = 0.25
+	}
+	uu_proud_march = {
+		land_morale = 0.15
+	}
+	uu_army_logistics = {
+		global_regiment_cost = -0.33
+	}
+	uu_spacious_barracks = {
+		global_manpower = 15
+		manpower_recovery_speed = 0.2
+	}
+	uu_literal_flamethrowers = {
+		global_attacker_dice_roll_bonus = 10
+	}
+	uu_annoying_carpet_sieging = {
+		movement_speed = 0.15
+		siege_ability = 0.3
+	}
+	uu_pulling_your_weight = {
+		land_forcelimit = 10
+	}
+}
