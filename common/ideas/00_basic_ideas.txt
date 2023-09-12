@@ -1960,6 +1960,7 @@ subject_vassal_ideas = {			#UU added for influence buff
 	trigger = {
 		is_valid_for_subject_vassal_ideas = yes
 	}
+	ai_will_do = { factor = 100 }
 	bonus = {
 		global_allowed_num_of_buildings = 1
 	}
@@ -1992,6 +1993,7 @@ subject_march_ideas = {
 	trigger = {
 		is_valid_for_subject_march_ideas = yes
 	}
+	ai_will_do = { factor = 100 }
 	bonus = {
 		discipline = 0.1
 	}
