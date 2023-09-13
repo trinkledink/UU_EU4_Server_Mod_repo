@@ -203,7 +203,8 @@ theocracy_gov_ideas = { #Divine Ideas
 	category = MIL
 	
 	bonus = {
-		global_heretic_missionary_strength = 0.02
+		church_privilege_slots = 1
+		brahmins_hindu_privilege_slots = 1
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
@@ -420,7 +421,7 @@ religious_ideas = {
 		yearly_patriarch_authority = 0.005
 	}
 	religious_tradition = {
-		reverse_relation_with_same_religion = 25	
+		reverse_relation_with_same_religion = 25
 		culture_conversion_cost = -0.25	
 	}
 	inquisition = {
@@ -1744,6 +1745,7 @@ influence_ideas = {
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
+		monarch_power_tribute = 1
 	}
 
 	ai_will_do = {
@@ -1988,7 +1990,7 @@ subject_vassal_ideas = {			#UU added for influence buff
 		global_trade_power = 0.25
 	}
 }	
-subject_march_ideas = {
+subject_march_ideas = {				#UU added for influence buff
 	category = MIL
 	trigger = {
 		is_valid_for_subject_march_ideas = yes
