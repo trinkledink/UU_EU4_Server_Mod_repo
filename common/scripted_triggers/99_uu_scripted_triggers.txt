@@ -412,3 +412,13 @@ can_form_large_colonial_trigger = { #Large Colonial Tags
         tag = MEX #Mexico
     }
 }
+is_valid_for_subject_vassal_ideas = {
+    is_vassal = yes
+    ai = yes
+    overlord = { full_idea_group = influence_ideas }
+}
+is_valid_for_subject_vassal_ideas = {
+    is_march = yes
+    ai = yes
+    overlord = { full_idea_group = influence_ideas }
+}
