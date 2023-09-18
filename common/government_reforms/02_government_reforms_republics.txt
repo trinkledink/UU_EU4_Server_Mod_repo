@@ -1851,7 +1851,7 @@ dutch_republic = {
 	royal_marriage = yes
 
 	modifiers = {
-		heavy_ship_power = 0.1
+		light_ship_power = 0.33
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
 		max_absolutism = 10

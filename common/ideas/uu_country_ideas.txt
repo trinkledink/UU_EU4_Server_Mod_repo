@@ -167,6 +167,52 @@ GBR_ideas = { #Great Britain
 		allowed_marine_fraction = 0.50
 	}
 }
+NED_ideas = { #Netherlands
+    start = {
+        global_sailors_modifier = 0.33
+        naval_forcelimit_modifier = 0.25
+    }
+    
+    bonus = {
+        dip_tech_cost_modifier = -0.2
+    }
+
+    trigger = {
+        OR = {
+            tag = NED
+            tag = HOL
+        }
+    }
+    free = yes        #will be added at load.
+    
+    amsterdam_wisselbank = {
+        mercantilism_cost = -0.2
+        trade_efficiency=0.1
+    }
+    dutch_trading_spirit = {
+        merchants = 1
+		colonist_placement_chance = 0.1
+    }
+    de_staten_general = {
+		candidate_random_bonus = 2
+    }
+    instructie_voor_de_admiraliteiten = {
+        sailors_recovery_speed = 0.33
+        allowed_marine_fraction = 0.50
+    }
+    embrace_humanism = {
+        tolerance_heretic = 3
+        monthly_fervor_increase = 2
+    }
+    Dutch_courage = {
+        land_morale = 0.1
+        naval_morale = 0.1
+    }
+    platoon_fire = {
+        fire_damage = 0.15
+        siege_ability = 0.2
+    }
+}
 ITA_ideas = { #Italy
 	start = {
 		global_trade_power = 0.20
