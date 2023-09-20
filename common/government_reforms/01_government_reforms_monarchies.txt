@@ -1692,7 +1692,7 @@ stadthalter_monarchy_reform = {
 	nation_designer_cost = 40
 
 	modifiers = {
-		heavy_ship_power = 0.1
+		light_ship_power = 0.33
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
 		#has_voc_indiamen = yes
