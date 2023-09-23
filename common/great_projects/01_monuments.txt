@@ -11789,6 +11789,14 @@ dutch_polders = {
 			global_trade_goods_size_modifier = 0.05
 			burghers_loyalty_modifier = 0.05
 		}
+		conditional_modifier = {
+			trigger = {
+				owner = { has_idea = embrace_humanism }
+			}
+			modifier = {
+				development_cost = -0.025
+			}
+		}
 		on_upgraded = {
 		}
 	}
@@ -11810,6 +11818,14 @@ dutch_polders = {
 			global_trade_goods_size_modifier = 0.05
 			burghers_loyalty_modifier = 0.1
 		}
+		conditional_modifier = {
+			trigger = {
+				owner = { has_idea = embrace_humanism }
+			}
+			modifier = {
+				development_cost = -0.05
+			}
+		}
 		on_upgraded = {
 		}
 	}
@@ -11830,6 +11846,14 @@ dutch_polders = {
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1
 			burghers_loyalty_modifier = 0.15
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = { has_idea = embrace_humanism }
+			}
+			modifier = {
+				development_cost = -0.1
+			}
 		}
 		on_upgraded = {
 		}

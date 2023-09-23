@@ -3653,7 +3653,7 @@
  lands_for_the_monasteries_reform:0 "Grant Land to the Monasteries"
  lands_for_the_monasteries_reform_desc:0 "The monasteries of the Orthodox faith are sacred ground, exempted from taxes and granted total autonomy. Granting land to the monasteries will please the patriarchy at an ignorable cost."
  mechanic_selling_titles_increases_pa_yes:1 "Selling Titles increases Patriarch Authority by §G5%§!"
- mechanic_free_religious_culture_yes:1 "The Estate Privilege '§YReligious Culture§!' no longer increases §YClergy§! influence"
+ mechanic_free_religious_culture_yes:1 "The Estate Privilege '§YReligious Culture§!' no longer increases §YClergy§! influence or decreases §YMax Absolutism§!"
  mechanic_on_church_built_clergy_loyalty_yes:1 "Construcing Churches and Cathedrals increases §YClergy§! loyalty by §G+2%§! and §G+5%§! respectively"
  focus_of_the_patriarchy_reform:0 "Support Monastic Schools"
  focus_of_the_patriarchy_reform_desc:0 "The monasteries of the state are famed as centers of learning and art. At each monastic school reside a number of religious scholars, experts within fields such as church history, exegesis of the Holy Scripture, reading, grammar, poetry, music, calligraphy and painting."

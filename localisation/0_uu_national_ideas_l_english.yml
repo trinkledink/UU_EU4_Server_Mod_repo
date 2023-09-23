@@ -244,7 +244,14 @@
  sok_jihad_as_reform_desc:0 "The primary purpose of the Fulani jihads was to spread Islam in defiance of the heathen kings who sought to ban it, but a secondary reason for the uprising was to enact social change. Reforms were created to counter problems such as goods shortages; increase literacy; and defending against the encroaching colonizers from beyond Africa."
  sok_fulani_jihad:0 "Fulani Revolution"
  sok_fulani_jihad_desc:0 "We must not forget why we established this nation in the first place. Though we have thrown off the shackles of the corrupt Muslim aristocracies and heathen rulers before us, there are still many realms of unbelievers, and kingdoms where monarchs call themselves Muslims yet raise the flag of a worldly kingdom above the banner of Islam. These unbelievers will not triumph over our state.\n§YUnlocks a unique estate privilege for the Ulema.§!"
-
+ 
+ ###############################################################
+ # Dutch ideas
+ ###############################################################
+ de_staten_general:0 "De Staaten General"
+  de_staten_general_desc:0 "Establishing a meritocratic system to chose our rulers will make them more capable than the average monarch"
+ Dutch_courage:0 "Dutch Courage"
+  Dutch_courage_desc:0 "How could such a small nation ever achieve anything on the global scale? Well that's how."
  ###############################################################
  # Colonial tags ideas
  ###############################################################
