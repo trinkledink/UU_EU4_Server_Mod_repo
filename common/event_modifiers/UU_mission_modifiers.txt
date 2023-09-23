@@ -759,13 +759,13 @@ uukbo_ports_mod = {
 	local_sailors_modifier = 0.25
 }
 uukbo_islamic_embassies = {
-	diplomatic_reputation = 2
+	diplomatic_reputation = 1.5
 	monarch_diplomatic_power = 1
-	institution_growth = 12
+	institution_growth = 10
 }
 uukbo_artillery_gaming = {
-	backrow_artillery_damage = 0.20
-	fire_damage = 0.10
+	backrow_artillery_damage = 0.10
+	fire_damage = 0.05
 }
 uukbo_fortified_fezzan = {
 	allowed_num_of_manufactories = 1

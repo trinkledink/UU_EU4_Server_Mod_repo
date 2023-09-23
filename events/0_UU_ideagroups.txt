@@ -436,7 +436,8 @@ country_event = { #Siege Leader
 		create_general = {
 			tradition = 20 
 			add_siege = 4
-		}	
+		}
+		custom_tooltip = uuideagroups.21.a.tt
 	}
 	option = {
 		name = "uuideagroups.21.b"	
