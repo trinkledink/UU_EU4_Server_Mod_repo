@@ -194,7 +194,7 @@ NED_ideas = { #Netherlands
 		colonist_placement_chance = 0.1
     }
     de_staten_general = {
-		candidate_random_bonus = 2
+		candidate_random_bonus = 1
     }
     instructie_voor_de_admiraliteiten = {
         sailors_recovery_speed = 0.33
@@ -1229,7 +1229,7 @@ FKN_ideas = { #Franconia
 }
 BAV_ideas = { #Bavaria + its minors
 	start = {
-		infantry_power = 0.1					#Changed from 0.1 CCA
+		cavalry_power = 0.15					#Changed from 0.1 CCA
 		heir_chance = 0.5
 	}
 	
