@@ -992,15 +992,15 @@ CTG_ideas = { #Carthage
 	}
 	ctg_cartheginian_innovations = {
 		innovativeness_gain = 0.5
-		monthly_piety = -0.005
+		monthly_piety_accelerator = 0.002
 	}
 	ctg_mercenary_contracts = {
-		mercenary_manpower = 1
+		mercenary_manpower = 0.5
 		mercenary_discipline = 0.075
 	}
 	ctg_mercantilism = {
 		trade_efficiency = 0.2
-		mercantilism_cost = -0.5
+		mercantilism_cost = -0.25
 	}
 	ctg_spreading_civilsation = {
 		development_cost = -0.1
