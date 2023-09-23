@@ -1191,6 +1191,30 @@ separate_clergy_from_state_affairs_reform = {
 		factor = 1
 	}
 }
+uu_religious_festivities_reform = {		#UU added
+	icon = "royal_court"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+	}
+	trigger = {
+		full_idea_group = religious_ideas
+		NOT = { full_idea_group = humanist_ideas }
+	}
+	modifiers = {
+		church_privilege_slots = 1
+		brahmins_hindu_privilege_slots = 1
+		culture_conversion_cost = -0.15
+		development_cost_in_primary_culture = -0.05
+	}
+	custom_attributes = {
+		free_religious_culture = yes
+	}
+}
 
 #Revolutionary
 cult_of_reason_reform = {

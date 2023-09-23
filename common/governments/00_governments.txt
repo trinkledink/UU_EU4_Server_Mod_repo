@@ -204,6 +204,8 @@ monarchy = {
 				head_of_the_patriarchy_reform
 				anglican_state_church_reform
 				english_conciliarism_reform
+				#UU added
+				uu_religious_festivities_reform
 			}
 		}
 		military_doctrines = {

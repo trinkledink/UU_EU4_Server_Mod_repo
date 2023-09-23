@@ -1865,6 +1865,7 @@ estate_church_one_faith_one_culture = {
 		trigger = { has_government_attribute = free_religious_culture }
 		modifier = {
 			church_influence_modifier = -0.2
+			max_absolutism = 5
 		}
 	}
 	conditional_modifier = {
