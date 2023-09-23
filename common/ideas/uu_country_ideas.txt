@@ -204,7 +204,7 @@ NED_ideas = { #Netherlands
         tolerance_heretic = 3
         monthly_fervor_increase = 2
     }
-    Dutch_courage = {
+    uu_dutch_courage = {
         land_morale = 0.1
         naval_morale = 0.1
     }

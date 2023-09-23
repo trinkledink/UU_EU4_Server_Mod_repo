@@ -250,8 +250,8 @@
  ###############################################################
  de_staten_general:0 "De Staaten General"
   de_staten_general_desc:0 "Establishing a meritocratic system to chose our rulers will make them more capable than the average monarch"
- Dutch_courage:0 "Dutch Courage"
-  Dutch_courage_desc:0 "How could such a small nation ever achieve anything on the global scale? Well that's how."
+ uu_dutch_courage:0 "Dutch Courage"
+  uu_dutch_courage_desc:0 "How could such a small nation ever achieve anything on the global scale? Well that's how."
  ###############################################################
  # Colonial tags ideas
  ###############################################################

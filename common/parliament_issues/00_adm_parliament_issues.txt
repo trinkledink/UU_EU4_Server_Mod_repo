@@ -298,8 +298,9 @@ development_of_infrastructure = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 2
-			has_idea_group = economic_ideas
+			factor = 3
+			#has_idea_group = economic_ideas
+			has_idea_group = infrastructure_ideas
 		}
 	}
 
