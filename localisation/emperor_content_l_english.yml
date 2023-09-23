@@ -3171,7 +3171,7 @@ l_english:
  TRADE_COMPANY_ENGLISH_CHANNEL_Root_Culture_GetName:0 "[Root.Culture.GetName] Narrow Sea Company"
  TRADE_COMPANY_ENGLISH_CHANNEL_European_Trade_Company:0 "Narrow Sea Trade Company"
  trade_company_bordeaux:0 "Loire Charter"
- TRADE_COMPANY_BORDEAUX_Root_Culture_GetName:0 "[Root.Culture.GetName] Loire Company"
+ TRADE_COMPANY_BORDEAUX_Root_Culture_GetName:0 "[Root.Culture.GetName] Loire Company" #Changed
  TRADE_COMPANY_BORDEAUX_European_Trade_Company:0 "Loire Trade Company"
  trade_company_sevilla:0 "Iberian Charter"
  TRADE_COMPANY_SEVILLA_Root_Culture_GetName:0 "[Root.Culture.GetName] Iberia Company"
@@ -3183,12 +3183,12 @@ l_english:
  TRADE_COMPANY_TIMBUKTU_Root_Culture_GetName:0 "[Root.Culture.GetName] West Africa Company"
  TRADE_COMPANY_TIMBUKTU_African_Trade_Company:0 "West Africa Trade Company"
  trade_company_valencia:0 "Occitanian Charter"
- TRADE_COMPANY_VALENCIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Occitania Company"
+ TRADE_COMPANY_VALENCIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Occitania Company" #Changed
  TRADE_COMPANY_VALENCIA_European_Trade_Company:0 "Occitania Trade Company"
  trade_company_champagne:0 "Burgundian Charter"
  TRADE_COMPANY_CHAMPAGNE_Root_Culture_GetName:0 "[Root.Culture.GetName] Burgundy Company"
  TRADE_COMPANY_CHAMPAGNE_European_Trade_Company:0 "Burgundy Trade Company"
- trade_company_genua:0 "Ligurian Charter"
+ trade_company_genua:0 "Ligurian Charter" #Unused
  TRADE_COMPANY_GENUA_Root_Culture_GetName:0 "[Root.Culture.GetName] Liguria Company"
  TRADE_COMPANY_GENUA_European_Trade_Company:0 "Liguria Trade Company"
  trade_company_tunis:0 "Barbary Coast Charter"
@@ -3204,14 +3204,14 @@ l_english:
  TRADE_COMPANY_WIEN_Root_Culture_GetName:0 "[Root.Culture.GetName] Austria Company"
  TRADE_COMPANY_WIEN_European_Trade_Company:0 "Austria Trade Company"
  trade_company_venice:0 "Venetian Charter"
- TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Venetia Company"
- TRADE_COMPANY_VENICE_European_Trade_Company:0 "Venetia Trade Company"
+ TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Po Valley Company" #Changed
+ TRADE_COMPANY_VENICE_European_Trade_Company:0 "Po Valley Trade Company"
  trade_company_krakow:0 "Polish Charter"
  TRADE_COMPANY_KRAKOW_Root_Culture_GetName:0 "[Root.Culture.GetName] Poland Company"
  TRADE_COMPANY_KRAKOW_European_Trade_Company:0 "Poland Trade Company"
  trade_company_pest:0 "Danubian Charter"
- TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danube Company"
- TRADE_COMPANY_PEST_European_Trade_Company:0 "Danube Trade Company"
+ TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danubia Company" #Changed
+ TRADE_COMPANY_PEST_European_Trade_Company:0 "Danubia Trade Company"
  trade_company_ragusa:0 "Balkan Charter"
  TRADE_COMPANY_RAGUSA_Root_Culture_GetName:0 "[Root.Culture.GetName] Balkan Company"
  TRADE_COMPANY_RAGUSA_European_Trade_Company:0 "Balkan Trade Company"

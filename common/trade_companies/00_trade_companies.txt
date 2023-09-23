@@ -16,7 +16,7 @@ trade_company_naples = {
 	color = { 120 60 180 }
 
 	provinces = {
-		119 120 2977 118 2976 4731 4732 121 2983 4734 1933 2985 4733 122 124 126 2982 125 4736 4737 123 1934 2984 1303 1304
+		119 120 2977 118 2976 4731 4732 121 2983 4734 1933 2985 4733 122 124 126 2982 125 4736 4737 123 1934 2984 1303 1304 127 1247 4735 2986 2980 115 116 117 2978
 	}
 	names = {
 		name = "TRADE_COMPANY_NAPLES_Root_Culture_GetName"
@@ -626,22 +626,22 @@ trade_company_champagne = {
 	}
 }
 
-trade_company_genua = {
-	color = { 200 225 56 }
-	
-	provinces = {
-		1298 115 116 117 2978 2980 101 102 2992 103 1875 2981 127 1247 2986 201 202 2991 4696 4727 4735
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_GENUA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_GENUA_European_Trade_Company"
-	}
-}
+#trade_company_genua = {
+#	color = { 200 225 56 }
+#	
+#	provinces = {
+#		1298 115 116 117 2978 2980 101 102 2992 103 1875 2981 127 1247 2986 201 202 2991 4696 4727 4735
+#	}
+#	
+#	# Specific
+#	# Generic
+#	names = {
+#		name = "TRADE_COMPANY_GENUA_Root_Culture_GetName"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_GENUA_European_Trade_Company"
+#	}
+#}
 
 trade_company_tunis = {
 	color = { 146 134 57 }
@@ -720,7 +720,7 @@ trade_company_venice = {
 	color = { 54 167 156 }
 	
 	provinces = {
-		105 106 107 108 109 111 112 113 114 129 130 1308 1769 1774 4729 4730 4738 4739 4751
+		105 106 107 108 109 111 112 113 114 129 130 1308 1769 1774 4729 4730 4738 4739 4751 1298 101 102 2992 103 1875 2981 201 202 2991 4696 4727
 		104 1862 2979 4728 4740 
 	}
 	

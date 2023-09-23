@@ -1652,8 +1652,7 @@ is_trade_node_province = { #This is basically unused but I'm updating it anyway
 			province_id = 186 #Champagne
 			province_id = 196 #Toulouse 
 			province_id = 172 #Nantes
-			province_id = 121 #UU Naples 
-			province_id = 1298 #Genoa 
+			province_id = 121 #UU Naples  
 			province_id = 1308 #Venice
 			province_id = 1269 #English Channel
 		}
