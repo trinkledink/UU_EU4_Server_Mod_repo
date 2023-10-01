@@ -15,15 +15,15 @@ hessian_militarization_mechanic = {
 				modifier = {
 					mercenary_discipline = 0.10
 					mercenary_manpower = 0.25
-					monthly_hessian_militarization = -1 	#UU change
+					monthly_hessian_militarization = -0.5
 				}
 			}
-			#reverse_scaled_modifier = {					#UU change
-			#	modifier = {
-			#		merc_maintenance_modifier = -0.1
-			#	}
-			#}
-			is_good = yes #what?
+			reverse_scaled_modifier = {
+				modifier = {
+					merc_maintenance_modifier = -0.1
+				}
+			}
+			is_good = yes
 		}
 	}
 	
