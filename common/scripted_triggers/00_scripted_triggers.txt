@@ -600,6 +600,9 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = GZI }
 				NOT = { tag = RZI }
 				NOT = { tag = SCA }
+				#UU
+				NOT = { tag = KBO }
+				NOT = { was_tag = KBO }
 			}
 		}
 	}

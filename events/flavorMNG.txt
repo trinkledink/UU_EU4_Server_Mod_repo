@@ -2063,51 +2063,8 @@ country_event = { #Yellow River Dykes
 		else = { add_adm_power = 100 } 
 		
 		hidden_effect = { 
-			2142 = { 
-				add_province_modifier = {
-					name = mng_yellow_river_dykes_modifier
-					duration = -1 
-				}
-				if = { 
-					limit = { has_dlc = "Mandate of Heaven" } 
-					add_prosperity = 100 
-				}
-				else = { add_base_tax = 1 } 
-			}
-			4196 = { 
-				add_province_modifier = {
-					name = mng_yellow_river_dykes_modifier
-					duration = -1 
-				}
-				if = { 
-					limit = { has_dlc = "Mandate of Heaven" } 
-					add_prosperity = 100 
-				}
-				else = { add_base_tax = 1 } 
-			}
-			2141 = { 
-				add_province_modifier = {
-					name = mng_yellow_river_dykes_modifier
-					duration = -1 
-				}
-				if = { 
-					limit = { has_dlc = "Mandate of Heaven" } 
-					add_prosperity = 100 
-				}
-				else = { add_base_tax = 1 } 
-			}
-			688 = { 
-				add_province_modifier = {
-					name = mng_yellow_river_dykes_modifier
-					duration = -1 
-				}
-				if = { 
-					limit = { has_dlc = "Mandate of Heaven" } 
-					add_prosperity = 100 
-				}
-				else = { add_base_tax = 1 } 
-			}
-			1836 = { 
+			every_owned_province = {
+				limit = { is_yellow_river_province_trigger = yes } #UU 
 				add_province_modifier = {
 					name = mng_yellow_river_dykes_modifier
 					duration = -1 

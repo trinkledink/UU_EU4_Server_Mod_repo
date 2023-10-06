@@ -603,3 +603,16 @@ break_alliance = {
 		on_alliance_broken_effect = yes
 	}
 }
+
+##UU 
+
+sharemap ={
+    condition = {
+        potential = {
+            always = yes
+        }
+		allow = {
+			always = yes
+		}
+    }
+}

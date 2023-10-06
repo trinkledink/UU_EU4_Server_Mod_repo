@@ -1067,7 +1067,7 @@ ming_missions_2 = {
 			if = {
 				limit = { has_dlc = "Leviathan" }
 				OR = {
-					698 = {
+					4958 = {
 						OR = {
 							has_great_project = {
 								type = the_great_wall_of_china
@@ -1134,7 +1134,7 @@ ming_missions_2 = {
 		effect = {
 			custom_tooltip = mng_less_than_3_with_leviathan_tt
 			tooltip = {
-				698 = { 
+				4958 = { 
 					add_great_project_tier = {
 						type = the_great_wall_of_china 
 						tier = 1 
@@ -1164,7 +1164,7 @@ ming_missions_2 = {
 							}
 						}
 					}
-					698 = {
+					4958 = {
 						add_great_project_tier = {
 							type = the_great_wall_of_china 
 							tier = 1 
@@ -1179,7 +1179,7 @@ ming_missions_2 = {
 					add_army_tradition = 15
 				}
 				else = {
-					698 = {
+					4958 = {
 						if = { 
 							limit = { country_or_non_sovereign_subject_holds = ROOT }
 							add_province_modifier = {
@@ -4063,13 +4063,7 @@ ming_missions_3_b = {
 		required_missions = { } 
 		position = 5
 		provinces_to_highlight = { 
-			OR = {
-				province_id = 2142
-				province_id = 4196
-				province_id = 2141
-				province_id = 688
-				province_id = 1836
-			}
+			is_yellow_river_province_trigger = yes 
 			OR = { 
 				NOT = { controlled_by = ROOT }
 				devastation = 1
@@ -4078,14 +4072,6 @@ ming_missions_3_b = {
 		}
 		
 		trigger = {
-			2142 = { 
-				num_of_times_improved = 3 
-				owned_by = ROOT 
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					NOT = { devastation = 1 } 
-				}
-			}
 			4196 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
@@ -4094,7 +4080,23 @@ ming_missions_3_b = {
 					NOT = { devastation = 1 } 
 				}
 			}
+			2142 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}	
 			2141 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			2176 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
 				if = {
@@ -4110,7 +4112,39 @@ ming_missions_3_b = {
 					NOT = { devastation = 1 } 
 				}
 			}
+			692 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			4968 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
 			1836 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			694 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			700 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
 				if = {
@@ -5414,7 +5448,7 @@ ming_missions_4_b = {
 				province_id = 684 
 				province_id = 1822 
 				province_id = 2145 
-				province_id = 1821
+				province_id = 685
 			}
 			OR = { 
 				NOT = { num_of_buildings_in_province = 3 }
@@ -5516,7 +5550,7 @@ ming_missions_4_b = {
 			}
 			if = { 
 				limit = { has_dlc = "Leviathan" }
-				1821 = { 
+				685 = { 
 					OR = { 
 						has_great_project = {
 							type = grand_canal_4
@@ -5531,16 +5565,16 @@ ming_missions_4_b = {
 				}
 			}
 			else = { 
-				1821 = { num_of_times_improved = 5 }
+				685 = { num_of_times_improved = 5 }
 			} 
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
-				1821 = {
+				685 = {
 					NOT = { devastation = 1 } 
 				}
 			}
 			else = { 
-				1821 = {
+				685 = {
 					NOT = { local_autonomy_above_min = 5 } 
 				}
 			}
