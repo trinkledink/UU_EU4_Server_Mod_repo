@@ -33,6 +33,7 @@ kiel_canal = {
 				adm_tech = 15 #UU Change
 			}
 		}
+		NOT = { has_global_flag = uu_closed_kiel_canal }
 	}
 	
 	#what to do when it's built
@@ -51,6 +52,7 @@ kiel_canal = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		NOT = { has_global_flag = uu_closed_kiel_canal }
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -212,6 +214,7 @@ suez_canal = {
 			is_subject = no
 			adm_tech = 15 #UU Change
 		}
+		NOT = { has_global_flag = uu_closed_suez_canal }
 	}
 
 	#what to do when it's built
@@ -230,6 +233,7 @@ suez_canal = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		NOT = { has_global_flag = uu_closed_suez_canal }
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -390,6 +394,7 @@ panama_canal = {
 			is_subject = no
 			adm_tech = 15 #UU Change
 		}
+		NOT = { has_global_flag = uu_closed_panama_canal }
 	}
 
 	#what to do when it's built
@@ -408,6 +413,7 @@ panama_canal = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		NOT = { has_global_flag = uu_closed_panama_canal }
 	}
 	
 	#can our country keep it or is it destroyed when we get hold of it?

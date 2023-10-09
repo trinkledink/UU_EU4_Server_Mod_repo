@@ -4034,7 +4034,7 @@ the_great_wall_of_china = {
 				value = 5
 				region = north_china_region
 				NOT = { has_terrain = farmlands }
-				has_building = fort_15th
+				has_fort_building_trigger = yes
 			}
 		}
 	}
@@ -4056,7 +4056,7 @@ the_great_wall_of_china = {
 				value = 5
 				region = north_china_region
 				NOT = { has_terrain = farmlands }
-				has_building = fort_15th
+				has_fort_building_trigger = yes
 			}
 		}
 	}
@@ -4068,7 +4068,7 @@ the_great_wall_of_china = {
 				value = 5
 				region = north_china_region
 				NOT = { has_terrain = farmlands }
-				has_building = fort_15th
+				has_fort_building_trigger = yes
 			}
 		}
 	}

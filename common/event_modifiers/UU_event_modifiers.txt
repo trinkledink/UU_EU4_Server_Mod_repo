@@ -219,3 +219,10 @@ uu_tim_declared_for_herat_mod = {
 	manpower_recovery_speed = 0.15
 	global_regiment_cost = -0.1
 }
+
+#Canal 
+uu_closed_canal_mod = {
+	province_trade_power_value = 0.01
+	province_trade_power_modifier = -0.5
+	picture = "great_project_upgrade_cost_opposite"
+}

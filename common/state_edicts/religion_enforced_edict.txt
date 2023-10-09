@@ -12,7 +12,7 @@ edict_religion_enforced = {
 	}
 	
 	modifier = {
-		local_religious_conversion_resistance = 1.0
+		local_religious_conversion_resistance = 9.99 # +999%
 	}
 	
 	color = {  42 125 138  }
