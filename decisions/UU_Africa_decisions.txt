@@ -1,5 +1,6 @@
 country_decisions = {
     uu_unite_madagascar = {
+        major = yes
         potential = {
             OR = {
                 tag = BTS
