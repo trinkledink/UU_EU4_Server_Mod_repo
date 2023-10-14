@@ -2487,13 +2487,7 @@ korean_missions_eoc_3 = {
 		required_missions = { } 
 		position = 9
 		provinces_to_highlight = { 
-			OR = {
-				province_id = 2142
-				province_id = 4196
-				province_id = 2141
-				province_id = 688
-				province_id = 1836
-			}
+			is_yellow_river_province_trigger = yes 
 			OR = { 
 				NOT = { controlled_by = ROOT }
 				devastation = 1
@@ -2502,14 +2496,6 @@ korean_missions_eoc_3 = {
 		}
 		
 		trigger = {
-			2142 = { 
-				num_of_times_improved = 3 
-				owned_by = ROOT 
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					NOT = { devastation = 1 } 
-				}
-			}
 			4196 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
@@ -2518,7 +2504,23 @@ korean_missions_eoc_3 = {
 					NOT = { devastation = 1 } 
 				}
 			}
+			2142 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}	
 			2141 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			2176 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
 				if = {
@@ -2534,7 +2536,39 @@ korean_missions_eoc_3 = {
 					NOT = { devastation = 1 } 
 				}
 			}
+			692 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			4968 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
 			1836 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			694 = { 
+				num_of_times_improved = 3 
+				owned_by = ROOT 
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { devastation = 1 } 
+				}
+			}
+			700 = { 
 				num_of_times_improved = 3 
 				owned_by = ROOT 
 				if = {
@@ -2842,7 +2876,7 @@ korean_missions_eoc_4 = {
 				province_id = 684 
 				province_id = 1822 
 				province_id = 2145 
-				province_id = 1821
+				province_id = 685
 			}
 			OR = { 
 				NOT = { num_of_buildings_in_province = 3 }
@@ -2944,7 +2978,7 @@ korean_missions_eoc_4 = {
 			}
 			if = { 
 				limit = { has_dlc = "Leviathan" }
-				1821 = { 
+				685 = { 
 					OR = { 
 						has_great_project = {
 							type = grand_canal_4
@@ -2959,16 +2993,16 @@ korean_missions_eoc_4 = {
 				}
 			}
 			else = { 
-				1821 = { num_of_times_improved = 5 }
+				685 = { num_of_times_improved = 5 }
 			} 
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
-				1821 = {
+				685 = {
 					NOT = { devastation = 1 } 
 				}
 			}
 			else = { 
-				1821 = {
+				685 = {
 					NOT = { local_autonomy_above_min = 5 } 
 				}
 			}
