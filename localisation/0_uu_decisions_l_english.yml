@@ -90,4 +90,9 @@
  uucanal_panama_open_title:0 "Reopen the Panama Canal"
   uucanal_panama_open_desc:0 "Reopen the Panama Canal to the passage of all ships."
  uu_closed_canal_mod:0 "Canal Closed"
+ amazon_peru_strait:0 "River Port of Iquitos"
+  amazon_peru_strait_tt:0 "Allows movement of troops between §Y[815.GetName]§! and §Y[2934.GetName]§!"
+ amazon_brazil_strait:0 "Madeira River Shipping System"
+  amazon_brazil_strait_tt:0 "Allows movement of troops between §Y[2934.GetName]§! and §Y[2900.GetName]§!"
+ 
  

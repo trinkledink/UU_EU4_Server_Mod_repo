@@ -1,0 +1,11 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_great_project_amazon_peru_strait"
+		texturefile = "gfx//interface//great_projects//great_project_amazon_peru_strait.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_amazon_brazil_strait"
+		texturefile = "gfx//interface//great_projects//great_project_amazon_brazil_strait.dds"
+	}
+}

@@ -122,4 +122,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 111;130;sea;1308;-1;-1;-1;-1;Friuli-Istria UU Added 
 5004;5005;sea;1371;4583;1015;4578;1016;Pearl River Delta UU Added
 1822;5006;sea;1373;4699;1170;4696;1177;Yangtze Delta UU Added
+815;2934;canal;815;-1;-1;-1;-1;amazon_peru_strait UU Added
+2900;2934;canal;2934;-1;-1;-1;-1;amazon_brazil_strait UU Added
 -1;-1;;-1;-1;-1;-1;-1;-1
