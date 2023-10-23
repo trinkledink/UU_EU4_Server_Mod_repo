@@ -1674,6 +1674,7 @@ military_engineering_reform = {
 	modifiers = {
 		artillery_barrage_cost = -0.25
 		artillery_cost = -0.1
+		artillery_levels_available_vs_fort = 2 #UU new
 	}
 	
 	ai = {
@@ -1748,7 +1749,8 @@ cavalry_warfare_reform = {
 		}
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.1
+		cav_to_inf_ratio = 0.2 #UU buffed from 0.1
+		cavalry_flanking = 0.5 #UU new 
 		cavalry_cost = -0.15
 	}
 	
@@ -2283,7 +2285,7 @@ green_standard_army_reform = {
 		manpower_recovery_speed = 0.2
 	}
 	custom_attributes = {
-		manpower_from_defeating_armies = yes		#10% of the defeated troops join the Green Standard Army
+		manpower_from_defeating_armies = yes		#UU buffed from 10 - 20% of the defeated troops join the Green Standard Army
 	}
 	
 	ai = {
@@ -2527,8 +2529,9 @@ subutais_strategies_reform = {
 		}
 	}
 	modifiers = {
-		leader_siege = 1
+		leader_siege = 2 #UU change from 1
 		artillery_cost = -0.1
+		artillery_level_modifier = 1 #UU change, artillery counts double towards forts
 	}
 	
 	ai = {
@@ -2614,8 +2617,9 @@ ghazi_reform = {
 	modifiers = {
 		cavalry_cost = -0.1
 		land_attrition = -0.1
-		loot_amount = 0.5
-		available_province_loot = 0.5
+		loot_amount = 1 #UU buffed from 0.5
+		available_province_loot = 1 #UU buffed from 0.5
+		reinforce_cost_modifier = -0.2 #UU new
 	}
 	
 	ai = {
@@ -2807,7 +2811,8 @@ revive_the_almogavars_reform = {
 		}
 	}
 	modifiers = {
-		manpower_in_true_faith_provinces = 0.05
+		manpower_in_true_faith_provinces = 0.1 #UU buffed from 0.05
+		manpower_in_own_culture_provinces = 0.05 #UU added
 		movement_speed = 0.1
 		infantry_cost = -0.1
 	}
@@ -2901,9 +2906,10 @@ compagnie_dordonnance_reform = {
 	}
 	modifiers = {
 		drill_decay_modifier = -0.33
-		army_tradition_decay = -0.005
+		army_tradition_decay = -0.01 #UU buffed from 0.005
 		cav_to_inf_ratio = 0.1
-		global_regiment_cost = -0.05
+		global_regiment_cost = -0.1 #UU buffed from 0.05
+		morale_damage_received = -0.05 #UU added
 	}
 	
 	ai = {
@@ -2970,8 +2976,9 @@ gendarmes_reform = {
 	}
 	modifiers = {
 		cavalry_power = 0.1 
-		nobles_loyalty_modifier = 0.1 #UU changed
-		morale_damage = 0.10 #UU changed
+		nobles_loyalty_modifier = 0.1 #UU changed from 0.05
+		morale_damage = 0.10 #UU changed from 0.05
+		cav_to_inf_ratio = 0.1 #UU added
 	}
 	ai = {
 		factor = 1
@@ -3227,6 +3234,7 @@ staatse_leger_reform = {
 		movement_speed = 0.1
 		drill_gain_modifier = 0.5
 		reinforce_speed = 0.25
+		global_regiment_recruit_speed = -0.3 #UU added 
 	}
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes

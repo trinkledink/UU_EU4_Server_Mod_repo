@@ -1932,7 +1932,7 @@ on_battle_won_country_effect = {
 			}
 			multiply_variable = {
 				which = land_units_killed_var
-				value = 0.1
+				value = 0.2 #UU change from 0.1
 			}
 			while = {
 				limit = {

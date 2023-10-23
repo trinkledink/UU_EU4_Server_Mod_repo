@@ -1908,7 +1908,7 @@
  MODIFIER_GLOBAL_ALLOWED_NUM_OF_MANUFACTORIES:0 "Possible Number of Manufactories"
  MODIFIER_CAN_CLAIM_STATES:0 "Can claim entire states"
  MODIFIER_FREE_CONCENTRATE_DEVELOPMENT:0 "Can concentrate development with no losses."
- MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max effect of Absolutism"
+ MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier"
  PASSED_AT_LEAST_REFORMS:0 "Passed at least $NUM|Y$ Celestial Empire reforms."
  NOT_PASSED_AT_LEAST_REFORMS:0 "Passed less than $NUM|Y$ Celestial Empire reforms."
  HAVE_A_CURRENT_DECREE:0 "Celestial Empire has a current Decree"

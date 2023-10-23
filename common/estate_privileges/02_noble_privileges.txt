@@ -2208,7 +2208,7 @@ estate_nobles_mansabdari_cav_maintenance = {
 			always = yes
 		}
 		modifier = {
-			cavalry_cost = -0.5
+			cavalry_cost = -0.25 #UU nerfed from 50
 		}
 	}
 	ai_will_do = {

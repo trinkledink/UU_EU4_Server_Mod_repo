@@ -247,7 +247,7 @@ country_event = {	##Free Cities Free City estates mission event##
 		}
 	}
 }
-country_event = { #Hanseatic League rename to Hansa if they want to
+country_event = { 	#Hanseatic League rename to Hansa if they want to
 	id = UU_balance_events.6
 	title = UU_balance_events.6.t
 	desc = UU_balance_events.6.desc
