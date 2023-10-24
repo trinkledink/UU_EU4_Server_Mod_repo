@@ -470,3 +470,22 @@ country_event = { #Imperium of God
         override_country_name = IMPERIUM_OF_GOD        
     }
 }
+
+country_event = { #Remember your AI settings 
+    id = uu_easter_egg_events.15
+    title = uu_easter_egg_events.15.t
+    desc = uu_easter_egg_events.15.desc 
+    picture = DEATH_OF_HEIR_eventPicture
+
+    mean_time_to_happen = {
+        months = 1800 #150y
+    }
+    trigger = {
+        is_at_war = no
+        ai = no 
+    }
+   
+    option = {
+        name = uu_easter_egg_events.15.a
+    }
+}

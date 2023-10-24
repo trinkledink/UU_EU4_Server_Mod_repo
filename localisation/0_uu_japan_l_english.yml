@@ -1,0 +1,13 @@
+﻿l_english: 
+ ###### Japan and Shinto #######
+ shinto_events.999.t:0 "Shinto in a Changing World"
+ shinto_events.999.desc:0 "The Shinto faith is innately tied with Japanese culture and has roots stretching back centuries, but in this recent period of modernization and globalization, roughly once a generation there arises new apparent conflicts between our traditional beliefs and the changing world around us which might drastically shift the way we interact with the world. As the leader of our nation, [Root.Monarch.GetName] must decide how we wish to adapt to the world if we are to preserve our own nature without collapse, or perhaps if we shall abandon the old faith entirely.\n\n§OAll following eligible incidents are listed below. This event will recur as long as there are available incidents and there has not been an incident in the last 30 years.§!"
+ shinto_events.999.a:0 "Address the issue of Neo-Confucianism."
+ shinto_events.999.b:0 "Address the issue of the Nanban Trade."
+ shinto_events.999.c:0 "Address the issue of Proliferation of Firearms." 
+ shinto_events.999.d:0 "Address the issue of the Spread of Christianity."
+ shinto_events.999.e:0 "Address the issue of Rising Shogunate Authority."  
+ shinto_events.999.f:0 "Address the issue of the Ikko-Ikki." 
+ shinto_events.999.g:0 "Address the issue of the Wokou Pirates."
+ shinto_events.999.h:0 "Address the issue of Urbanization."  
+ uu_incident_manager_tt:0 "§OThe relevant Incident will begin shortly.§!"
