@@ -369,7 +369,7 @@ country_event = {	#Shinto Incident Manager
 	}
 
 	mean_time_to_happen = {
-		months = 12 #30y minimum from trigger + 1y mtth
+		months = 24 #30y minimum from trigger + 2y mtth
 	}
 
 	option = {	#Incident I - Neo-Confucianism

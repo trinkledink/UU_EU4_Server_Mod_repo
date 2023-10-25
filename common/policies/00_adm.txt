@@ -2349,7 +2349,7 @@ humanist_genstaff_policy = {
 	}
 	
 	allow = {
-		has_idea_group = humanist_ideas
+		full_idea_group = humanist_ideas
 		full_idea_group = general_staff_ideas
 	}
 	
@@ -2372,7 +2372,7 @@ eco_genstaff_policy = {
 	}
 	
 	allow = {
-		has_idea_group = economic_ideas
+		full_idea_group = economic_ideas
 		full_idea_group = general_staff_ideas
 	}
 	

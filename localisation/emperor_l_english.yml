@@ -231,7 +231,7 @@
  LOST_HEGEMON_THEM_TITLE:0 "Hedgemony Lost"
  LOST_HEGEMON_THEM_SETUP:0 "When another nation lose their position as a hedgemon."
  LOST_HEGEMON_THEM_HEADER:0 "Our Chancellor reports"
- LOST_HEGEMON_THEM_1:0 ""Hedgemony lost!"
+ LOST_HEGEMON_THEM_1:0 "Hedgemony lost!"
  LOST_HEGEMON_THEM_2:0 "$WHO$ has lost their position as $HEGEMONY$. They no longer are a dominant power."
  LOST_HEGEMON_THEM_3:0 ""
  LOST_HEGEMON_THEM_4:0 ""
