@@ -1929,7 +1929,7 @@ expansion_genstaff_policy = {
 	}
 	
 	allow = {
-		has_idea_group = expansion_ideas
+		full_idea_group = expansion_ideas
 		full_idea_group = general_staff_ideas
 	}
 	
@@ -1952,7 +1952,7 @@ admin_genstaff_policy = {
 	}
 	
 	allow = {
-		has_idea_group = administrative_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = general_staff_ideas
 	}
 	
