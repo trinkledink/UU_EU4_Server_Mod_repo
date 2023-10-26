@@ -1924,9 +1924,11 @@ estate_church_heir_shrine = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_church_embrace_singluar_cult }
+		num_of_unlocked_cults = 2	#UU change
 	}
 	on_granted = {
 		enable_cult_for_heirs = yes
+		custom_tooltip = uu_heir_cult_cannot_be_same_as_main_tt #UU
 	}
 	on_revoked = {
 		disable_cult_for_heirs = yes

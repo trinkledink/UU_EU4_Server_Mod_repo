@@ -9,7 +9,7 @@
  estate_church_sok_fulani_jihad:0 "§JProclaim Jihad§!"
   estate_church_sok_fulani_jihad_desc:0 "There are still many realms of unbelievers, and kingdoms where monarchs call themselves Muslims yet raise the flag of a worldly kingdom above the banner of Islam. These unbelievers will not triumph over our state."
   estate_church_sok_fulani_jihad_tt:0 "§G+25%§! Manpower Recovery Speed when at war with non-Muslims."
- estate_burghers_pluto_weapons:0 "§MPlutocratic Military Industry§!"
+ estate_burghers_pluto_weapons:0 "§MPlutocratic Military Industry§!"  #Unused currently
   estate_vaisyas_pluto_weapons:0 "§MPlutocratic Military Industry§!"
   estate_burghers_pluto_weapons_desc:0 "War is an unsavoury business, but business it remains nonetheless. There is profit to be gained from selling weapons to our warring rivals, and we can equip our armies and improve our economy simultaneously."
   estate_vaisyas_pluto_weapons_desc:0 "War is an unsavoury business, but business it remains nonetheless. There is profit to be gained from selling weapons to our warring rivals, and we can equip our armies and improve our economy simultaneously."
@@ -78,6 +78,10 @@
  #zhuang:0 "Cuengh" #Duplicated here. Indigenous name 
  #zhuang_new:0 "Zhuang" #Duplicated here. Sinicized name
  turkic:0 "Oghuz" #New Turkic culture group
+
+ #Other tooltips
+ uu_heir_cult_cannot_be_same_as_main_tt:0 "§YNote: Heir cult cannot be the same as the main cult.§!"
+
  #Unused?
  peruvian_theocarcy:0 "Peruvian Theocracy"
  gain_armytradition_aspect:0 "§YImprove Royal Army Staff§!"
