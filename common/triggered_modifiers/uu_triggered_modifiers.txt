@@ -51,6 +51,7 @@ uu_ai_native_nomigrate_tmod = {
 	potential = {
 		ai = yes
 		NOT = { has_reform = native_settle_down_reform }
+		government = native
 		capital_scope = {
 			OR = {
 				region = brazil_region
