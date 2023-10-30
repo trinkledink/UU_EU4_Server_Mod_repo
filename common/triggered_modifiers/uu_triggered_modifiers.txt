@@ -46,3 +46,23 @@ uu_high_absolutism_tmod = {
 	can_revoke_parliament_seats = yes
 	allow_free_estate_privilege_revocation = yes
 }
+
+uu_ai_native_nomigrate_tmod = {
+	potential = {
+		ai = yes
+		NOT = { has_reform = native_settle_down_reform }
+		capital_scope = {
+			OR = {
+				region = brazil_region
+				region = upper_peru_region
+				region = cascadia_region
+				region = california_region
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { has_reform = native_settle_down_reform }
+	}
+	migration_cost = 5.0 #this should deter them from migrating so much in the areas with gold
+}
