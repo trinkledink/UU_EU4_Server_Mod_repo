@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  ###############################################################
  # New Idea Group Ideas
  ###############################################################
@@ -73,6 +73,36 @@
   uu_empower_guilds_desc:0 "The guilds are the heart of our industry, leading the way for advanced craftsmanship in our nation. We must not let these organizations be restricted by aristocrats or other outdated hierarchies, the guilds must be allowed to flourish with greater autonomy for our industry to prosper."
  uu_private_arms_industries:0 "Expand Private Arms Industries"
   uu_private_arms_industries_desc:0 "We must outsource more of our weapons production to independent arms industries, who can use their profits to innovate and create better weapons. Profit is the best motivator for many of these individuals, and we can utilize this to improve our army quality." # \n§YUnlocks a unique estate privilege for the Merchant Guilds which enhances the effectiveness of our Weapons Manufactories.§!
+ subject_vassal_ideas:0 "Vassal Ideas"
+ uu_decent_deving:0 "Decent Deving"
+  uu_decent_deving_desc:0 "We should focusing on devloping our own lands as good as we can so we make our overlord very happy when we get annexed :) "
+ uu_good_blopp:0 "Good Blopping"
+  uu_good_blopp_desc:0 "One of our main purposes is too hold land for our overlord and core it for him. We should invest in doing that better so we can become the bestest subject."
+ uu_good_production:0 "Good Production"
+  uu_good_production_desc:0 "With this broken flat goods produced modifier we can add more value to our trade node so we may donate it to our kind overlord"
+ uu_prosperity:0 "Prosperity"
+  uu_prosperity_desc:0 "We will often end up between the fronts of the mightly justified wars of our overlord. We need to ensure we don't suffer long term consequences"
+ uu_good_taxation:0 "Good Taxation"
+  uu_good_taxation_desc:0 "Flat tax income will be good for us no matter the size of our nation."
+ uu_funded_construction:0 "Funded Construction"
+  uu_funded_construction_desc:0 "While our overlord could be spending his recourses to buil buildings within our realm directly, it would be selfish to solely rely on that. Our overlord has many other matters to attend to after all"
+ uu_friends_in_high_places:0 "Friends in high places"
+  uu_friends_in_high_places_desc:0 "With these strong connections we can pull even more trade for no reason to the benefit of our great overlord"
+ subject_march_ideas:0 "March Ideas"
+ uu_improved_fortification:0 "Improved Fortification"
+  uu_improved_fortification_desc:0 "We must maintain strong fortification as a potential buffer state"
+ uu_proud_march:0 "Proud March"
+  uu_proud_march_desc:0 " We are a proud march of the super best overlord ever"
+ uu_army_logistics:0 "Army Logistics"
+  uu_army_logistics_desc:0 "Better army managment is important as that is our sole prupose, we could at least be good at it"
+ uu_spacious_barracks:0 "Spacious Barracks"
+  uu_spacious_barracks_desc:0 "By cramping more soldiers in the same space we can have more soldiers!"
+ uu_military_excellenz:0 "Military Excellenz"
+  uu_military_excellenz_desc:0 "Learning and adapting the every changing methods of war is important to our survival"
+ uu_annoying_carpet_sieging:0 "Annoying Carpet Sieging"
+  uu_annoying_carpet_sieging:0 " Sometimes our best use is simply to be a distraction"
+ uu_pulling_your_weight:0 "Pulling your Weight"
+  uu_pulling_your_weight_desc:0 "It's time we actually contribute a sufficient amount of troops to our overlords rightous wars"
 
  ###############################################################
  # Policies Localisation
