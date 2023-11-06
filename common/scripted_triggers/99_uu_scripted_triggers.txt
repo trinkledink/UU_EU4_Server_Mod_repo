@@ -416,11 +416,11 @@ is_valid_for_subject_vassal_ideas = {
     is_vassal = yes
     ai = yes
     overlord = { full_idea_group = influence_ideas }
-		NOT = { has_idea_group = uu_subject_march_ideas }
+		NOT = { has_idea_group = subject_march_ideas }
 }
 is_valid_for_subject_march_ideas = {
     is_march = yes
     ai = yes
     overlord = { full_idea_group = influence_ideas }
-		NOT = { has_idea_group = uu_subject_vassal_ideas }
+		NOT = { has_idea_group = subject_vassal_ideas }
 }
