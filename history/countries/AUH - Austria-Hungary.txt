@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = austrian_dual_monarchy
-technology_group = western
-primary_culture = austrian
-add_accepted_culture = hungarian
-religion = catholic
-capital = 134 # Wien

@@ -1,0 +1,161 @@
+country_decisions = {
+
+	uu_sokoto_nation = { #Forming it without a civil war is supposed to be quite difficult, and the church must be pretty powerful 
+		major = yes
+		potential = {
+			NOT = { tag = ZAF }
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no 
+				AND = {
+					ai = yes 
+					tag = HAU
+				}
+			}
+			OR = {
+				culture_group = mande
+				culture_group = sahelian
+			}
+			NOT = { has_country_flag = formed_sokoto_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SOK }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				religion = sunni
+				has_country_modifier = uu_fulani_preacher_accepted
+			}	
+		}
+		provinces_to_highlight = {
+			province_id = 1148
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			custom_trigger_tooltip = {
+				tooltip = uu_allow_sokoto_decision_tt
+				has_country_modifier = uu_fulani_preacher_accepted
+			}	
+			adm_tech = 10
+			stability = 3
+			religion_group = muslim
+			OR = {
+				piety = 0.9
+				has_idea_group = religious_ideas
+				has_idea_group = theocracy_gov_ideas
+			}
+			estate_influence = {
+				estate = estate_church
+				influence = 90
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 70
+			}
+			estate_territory = {
+				estate = estate_church
+				territory = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_dhimmi
+					influence = 40
+				}
+			}
+			owns_core_province = 1148 	#Gobir
+			1148 = { 					#Gobir
+				is_state = yes
+			}
+			dominant_religion = sunni
+			num_of_cities = 8
+			OR = {
+				primary_culture = fulani
+				accepted_culture = fulani
+				AND = {
+					government_rank = 3
+					culture_group = sahelian
+				}
+			}
+		}
+		effect = {
+			remove_country_modifier = uu_fulani_preacher_accepted
+			set_global_flag = uu_sokoto_happened_flag
+			set_country_flag = formed_sokoto_flag
+			1148 = {
+				move_capital_effect = yes
+			}
+			change_tag = SOK
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				add_stability = -3
+				change_government = monarchy
+			}
+			if = {
+				limit = { is_revolutionary = no }
+				add_government_reform = feudal_theocracy
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = SOK_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_piety = 0.25
+			swap_non_generic_missions = yes
+			define_ruler = {
+				name = "Usman dan Fodio"
+				dynasty = "Torodbe"
+				adm = 5
+				dip = 5
+				mil = 5
+				min_age = 40
+				max_age = 55
+				claim = 100
+				religion = sunni 
+				culture = fulani
+			}
+			add_ruler_personality = scholar_personality
+			add_ruler_personality = inspiring_leader_personality
+			add_ruler_personality = zealot_personality
+			change_primary_culture = fulani 
+			add_accepted_culture = hausa
+		}
+		ai_importance = 400 #The countries that qualify will hate the holder of Sokoto.
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 1800 }
+			}
+		}
+	}
+}

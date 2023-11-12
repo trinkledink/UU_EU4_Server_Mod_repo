@@ -1,0 +1,240 @@
+estate_dhimmi_piety = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+		}
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		monthly_piety = -0.001
+	}
+}
+
+estate_burghers_elb_improved_workshops = {
+	icon = privilege_build_jain_temple
+	loyalty = 0.1
+	influence = 0.1
+	max_absolutism = -15
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	
+	is_valid = {
+		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_elb_improved_workshops }
+	}
+	can_select = {
+		always = yes
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			add_province_modifier = {
+				name = estate_burghers_elb_improved_workshops_mod
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_burghers_elb_improved_workshops_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_burghers_elb_improved_workshops_mod
+			}
+			remove_province_modifier = estate_burghers_elb_improved_workshops_mod
+		}
+	}
+
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_church_sok_fulani_jihad = {
+	icon = privilege_cawa_offensive_fighters
+	max_absolutism = 5 #positive value.
+	loyalty = 0.05
+	influence = 0.15
+	is_valid = {
+		has_idea = sok_fulani_jihad
+		religion_group = muslim 
+	}
+	can_select = {
+		OR = {
+			has_idea = sok_fulani_jihad
+			religion_group = muslim
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_church_sok_fulani_jihad_tt
+	}
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	modifier_by_land_ownership = {
+		manpower_in_true_faith_provinces = 0.75
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				NOT = { religion_group = root }
+				war_with = root
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.25
+		}
+	}
+	penalties = {
+		relation_with_heathens = -75
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_burghers_pluto_weapons = {
+	icon = privilege_technology
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.1
+	influence = 0.15
+	max_absolutism = -15
+	
+	is_valid = {
+		always = no 
+		#has_idea_group = plutocracy_ideas
+	}
+	can_select = {
+		always = no
+		#has_idea = uu_private_arms_industries
+	}
+	on_granted = {
+		custom_tooltip = uu_better_weapons_manus_priv_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_building = weapons
+				OR = {
+					owner = { is_at_war = yes }
+					owner = {
+						any_neighbor_country = { is_at_war = yes }
+					}
+				}
+			}
+			add_province_triggered_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = uu_better_weapons_manus_priv_revoke_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_vaisyas_pluto_weapons = {
+	icon = privilege_technology
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.1
+	influence = 0.15
+	max_absolutism = -15
+	
+	is_valid = {
+		always = no
+		#has_idea_group = plutocracy_ideas
+		#NOT = { has_estate = estate_burghers }
+	}
+	can_select = {
+		always = no 
+		#has_idea = uu_private_arms_industries
+	}
+	on_granted = {
+		custom_tooltip = uu_better_weapons_manus_priv_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_building = weapons
+				OR = {
+					owner = { is_at_war = yes }
+					owner = {
+						any_neighbor_country = { is_at_war = yes }
+					}
+				}
+			}
+			add_province_triggered_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = uu_better_weapons_manus_priv_revoke_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}

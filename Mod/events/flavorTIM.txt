@@ -1,0 +1,383 @@
+########################################
+# Flavor Events for Timurid
+#
+# written by Sara Wendel-�rtqvist
+# Events rewritten and adapted for patch 1.22 by Henrik Lohmander
+########################################
+
+namespace = flavor_tim
+normal_or_historical_nations = yes
+
+# Muhammad Baysonqor's Rebellion
+country_event = {
+	id = flavor_tim.0
+	title = "flavor_tim.0.t"
+	desc = "uu_flavor_tim.0.d"
+	picture = OVEREXTENSION_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		exists = QOM
+		has_ruler = "Shah Rukh"
+	}
+
+	
+	option = { 
+		name = "flavor_tim.0.a" #
+		custom_tooltip = uu_tim_flavor_4_tt
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						is_neighbor_of = ROOT
+						dynasty = Timurid
+						any_owned_province = {
+							is_core = TIM
+						}
+						any_neighbor_country = {
+							dynasty = Timurid
+						}
+					}
+				}
+				country_event = { id = flavor_tim.4 }
+			}
+		}
+	}
+}
+
+# Death of Shah Rukh
+country_event = {
+	id = flavor_tim.1
+	title = "flavor_tim.1.t"
+	desc = "flavor_tim.1.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		NOT = { has_global_flag = death_of_shah_rukh }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = { set_global_flag = death_of_shah_rukh }
+	
+	option = { 
+		name = "flavor_tim.1.a" # My time has come!
+		custom_tooltip = flavor_tim.1.a.tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					alliance_with = ROOT 
+				}
+				break_alliance = ROOT
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						is_neighbor_of = ROOT
+						dynasty = Timurid
+						any_owned_province = {
+							is_core = TIM
+						}
+						any_neighbor_country = {
+							dynasty = Timurid
+						}
+					}
+				}
+				country_event = { id = flavor_tim.2 }
+			}
+		}
+	}
+}
+
+# Death of Shah Rukh
+country_event = {
+	id = flavor_tim.2
+	title = "flavor_tim.2.t"
+	desc = "flavor_tim.2.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_tim.2.aa" # My time has come!
+		trigger = { dynasty = Timurid }
+		add_stability = 1
+		add_yearly_manpower = 1.25
+		if = {
+			limit = {
+				is_subject_of_type_with_overlord = { who = TIM type = tributary_state }
+			}
+			grant_independence = yes
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "flavor_tim.2.ab" # We must march to Herat
+		trigger = { dynasty = Timurid }
+		custom_tooltip = flavor_tim.2.ab.tt
+		
+		add_stability = 1
+		add_adm_power = 50
+		if = {
+			limit = {
+				is_subject_of_type_with_overlord = { who = TIM type = tributary_state }
+			}
+			grant_independence = yes
+		}
+		add_country_modifier = {
+			name = uu_tim_declared_for_herat_mod
+			duration = 7300
+		}
+		declare_war_with_cb = {
+			who = TIM
+			casus_belli = cb_conquest
+			war_goal_province = 446
+		}
+		goto = 446
+	}
+	option = {
+		name = "flavor_tim.2.b" #
+		trigger = { NOT = { dynasty = Timurid } }
+		custom_tooltip = flavor_tim.2.a.tt
+		if = {
+			limit = {
+				is_subject_of_type_with_overlord = { who = TIM type = tributary_state }
+			}
+			grant_independence = yes
+		}
+		if = {
+			limit = {
+				NOT = { dynasty = "Timurid" }
+				government = monarchy
+				NOT = { tag = HLR }
+				NOT = { tag = ROM }
+				NOT = { tag = MUG }
+				NOT = { tag = PER }
+				OR = {
+					culture_group = iranian
+					primary_culture = uzbehk
+					primary_culture = turkmeni
+				}
+				NOT = { primary_culture = azerbaijani }
+				NOT = { has_reform = tribal_federation }
+				religion_group = muslim
+			}
+			custom_tooltip = flavor_tim.2.b.tt
+		}
+		
+	}
+}
+
+# Ulugh Beg's Observatory
+country_event = {
+	id = flavor_tim.3
+	title = "flavor_tim.EVTNAME3"
+	desc = "flavor_tim.EVTDESC3"
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = TRS
+			tag = TIM
+		}
+		has_ruler = "Ulugh Beg"
+		NOT = { is_year = 1465 }
+	}
+
+	mean_time_to_happen = {
+		months = 63
+	}
+	
+	option = {
+		name = "flavor_tim.EVTOPTA3" # Build it!
+		add_years_of_income = -1
+		add_dip_power = 50
+		add_mil_power = 50
+		add_adm_power = 50
+		add_innovativeness_big_effect = yes
+	}
+	option = {
+		name = "flavor_tim.EVTOPTB3" # We don't have the time or the money for such foolishness!
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = flavor_tim.4
+	title = "flavor_tim.0.t"
+	desc = "uu_flavor_tim.0.d"
+	picture = OVEREXTENSION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { dynasty = "Timurid" }
+				every_known_country = {
+					limit = {
+						dynasty = "Timurid"
+					}
+					reverse_add_opinion = {
+						who = ROOT 
+						modifier = opinion_timurid_rival_claimant
+					}
+				}
+			}
+		}
+	}
+	option = { 
+		name = "flavor_tim.0.a" # My time has come!
+		custom_tooltip = uu_tim_flavor_4_tt
+		if = {
+			limit = { dynasty = "Timurid" }
+			tooltip = {
+				every_known_country = {
+					limit = {
+						dynasty = "Timurid"
+					}
+					reverse_add_opinion = {
+						who = ROOT 
+						modifier = opinion_timurid_rival_claimant
+					}
+				}
+			}
+			add_permanent_claim = 446 #Herat
+		}
+		if = {
+			limit = {
+				tag = QOM 
+				ai = yes 
+			}
+			grant_independence = yes
+		}
+	}
+}
+
+country_event = {
+	id = flavor_tim.1000
+	title = "flavor_tim.1000.t"
+	desc = "flavor_tim.1000.d"
+	picture = SIEGE_eventPicture
+
+	immediate = {
+		446 = {
+			controller = {
+				save_event_target_as = uuheratevt 
+			}
+		}
+	}
+	trigger = {
+		has_country_modifier = uu_tim_declared_for_herat_mod
+		is_free_or_tributary_trigger = yes
+		446 = {
+			NOT = { 
+				controlled_by = TIM 
+				controlled_by = ROOT
+			}
+			controller = {
+				has_country_modifier = uu_tim_declared_for_herat_mod
+				NOT = { war_with = ROOT }
+				NOT = { truce_with = ROOT }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_tim.1000.a 
+		add_prestige = 10
+		446 = {
+			controller = {
+				capital_scope = {
+					add_permanent_claim = ROOT
+				}
+				ROOT = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_imperial #kekw
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = flavor_tim.1000.b 
+		add_prestige = -15
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Death of Shah Rukh UU sped up
+country_event = {
+	id = flavor_tim.1001
+	title = "flavor_tim.1.t"
+	desc = "flavor_tim.1.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		NOT = { has_global_flag = death_of_shah_rukh }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = { 
+		set_global_flag = death_of_shah_rukh
+		TIM = { kill_ruler = yes } 
+	}
+	
+	option = { 
+		name = "flavor_tim.1.a" # My time has come!
+		custom_tooltip = flavor_tim.1.a.tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					alliance_with = ROOT 
+				}
+				break_alliance = ROOT
+			}
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						is_neighbor_of = ROOT
+						dynasty = Timurid
+						any_owned_province = {
+							is_core = TIM
+						}
+						any_neighbor_country = {
+							dynasty = Timurid
+						}
+					}
+				}
+				country_event = { id = flavor_tim.2 }
+			}
+		}
+	}
+}

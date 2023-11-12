@@ -1,0 +1,106 @@
+namespace = uu_respawn
+
+country_event = {
+    id = uu_respawn.1
+    title = uu_respawn.1.t
+    desc = uu_respawn.1.desc 
+    picture = EXPLORERS_eventPicture
+
+    trigger = {
+        tag = POR 
+        NOT = { is_year = 1462 } #scripted death date
+        NOT = { has_leader = "Diogo Gomes" }
+        NOT = { num_of_explorers = 1 }
+    }
+
+    mean_time_to_happen = { 
+		months = 1
+	}
+
+    fire_only_once = yes
+
+   
+    option = {
+        name = uu_respawn.1.a
+        add_dip_power = -50
+        define_explorer = {
+            fire = 3
+            shock = 3
+            manuever = 3
+            siege = 0
+        }
+    }
+}
+
+country_event = {
+    id = uu_respawn.2
+    title = uu_respawn.2.t
+    desc = uu_respawn.2.desc 
+    picture = NOBLE_ESTATE_eventPicture
+
+    trigger = {
+        tag = FRA 
+        NOT = { is_year = 1463 } #scripted death date
+        NOT = { has_leader = "Jean Bureau" }
+    }
+
+    mean_time_to_happen = { 
+		months = 1
+	}
+
+   
+    option = {
+        name = uu_respawn.2.a
+        define_general = {
+            name = "Jean Bureau"
+            fire = 4
+            shock = 4
+            manuever = 1
+            siege = 3
+            trait = siege_specialist_personality
+        }
+        if = {
+            limit = {
+                NOT = { has_country_flag = uu_respawned_bureau }
+            }
+            set_country_flag = uu_respawned_bureau
+        }
+    }
+}
+
+country_event = {
+    id = uu_respawn.102
+    title = uu_respawn.102.t
+    desc = uu_respawn.102.desc 
+    picture = KING_SICK_IN_BED_eventPicture
+
+    trigger = {
+        tag = FRA 
+        is_year = 1463
+        has_leader = "Jean Bureau"
+        has_country_flag = uu_respawned_bureau
+    }
+
+    mean_time_to_happen = { 
+		months = 18
+	}
+
+    fire_only_once = yes
+
+   
+    option = {
+        name = uu_respawn.102.a
+        kill_leader = { type = "Jean Bureau" }
+        add_prestige = 10
+    }
+
+    after = {
+        while = { #No Jeans
+            limit = {
+                has_leader = "Jean Bureau"
+            }
+            kill_leader = { type = "Jean Bureau" }
+        }
+        clr_country_flag = uu_respawned_bureau
+    }
+}

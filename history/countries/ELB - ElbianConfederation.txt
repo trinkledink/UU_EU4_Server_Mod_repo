@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = bohemian_elective_kingdom_reform
-technology_group = western
-primary_culture = czech_newer
-add_accepted_culture = saxon
-religion = hussite
-capital = 266 # Praha

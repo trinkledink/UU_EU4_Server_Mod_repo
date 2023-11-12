@@ -1,0 +1,519 @@
+namespace = UU_balance_events
+
+country_event = {
+	id = UU_balance_events.1
+	title = UU_el_dorado_found
+	desc = "UU_balance_events.1.DESC"
+	picture = INCAN_GODS_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searching_for_el_dorado
+		capital_scope = {
+			continent = south_america
+		}
+	}
+	mean_time_to_happen = {
+		months = 600
+	}
+	immediate = {
+		every_country = {
+			limit = { 
+				has_country_modifier = is_searching_el_dorado
+			}
+			remove_country_modifier = is_searching_el_dorado
+		}
+	}
+	option = {
+		name = "UU_balance_events.1a"
+		add_prestige = 100
+		add_splendor = 50
+		random_province = {
+			Limit = {	
+				continent = south_america
+			}
+			change_trade_goods = gold
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 1
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+				add_center_of_trade_level = 1
+			}
+			else_if = {
+				limit = {
+					NOT = { province_has_center_of_trade_of_level = 1 }
+				}
+				center_of_trade = 1
+			}
+			else = {
+				add_base_production = 2
+			}
+			add_permanent_province_modifier = {
+				name = "U.U_el_dorado"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = UU_balance_events.2
+	title = UU_colombia_1
+	desc = "UU_balance_events.2.DESC"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1550
+		tag = COL
+	}
+	mean_time_to_happen = {
+		months = 150
+	}
+	immediate = {
+		ROOT = {
+			set_country_flag = colombian_events
+		}
+	}
+	option = {
+		name = "UU_balance_events.2a"
+		add_stability = -1
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = UU_balance_events.3
+	title = muslim_school_events.20.t
+	desc = "mjl_events.EVTDESC5"
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = muslim_school_events.20.b
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanafi_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.c
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanbali_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.dd
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = maliki_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.e
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = shafii_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.f
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.g
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = ismaili_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.h
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = zaidi_school 
+		}
+	}
+}
+country_event = {	##Free Cities Free City New Production Methods mission event##
+	id = UU_balance_events.4
+	title = UU_FC_1
+	desc = "UU_balance_events.4.DESC"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "UU_balance_events.4a"
+		capital_scope = {
+			change_trade_goods = dyes
+		}
+	}
+	option = {
+		name = "UU_balance_events.4b"
+		capital_scope = {
+			change_trade_goods = cloth
+		}
+	}
+	option = {
+		name = "UU_balance_events.4c"
+		capital_scope = {
+			change_trade_goods = paper
+		}
+	}
+	option = {
+		name = "UU_balance_events.4d"
+		capital_scope = {
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+country_event = {	##Free Cities Free City estates mission event##
+	id = UU_balance_events.5
+	title = UU_FC_2
+	desc = "UU_balance_events.5.DESC"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "UU_balance_events.5a"
+		define_advisor = {
+			type = theologian
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+	option = {
+		name = "UU_balance_events.5b"
+		define_advisor = {
+			type = trader
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+	option = {
+		name = "UU_balance_events.5c"
+		define_advisor = {
+			type = commandant
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+}
+country_event = { 	#Hanseatic League rename to Hansa if they want to
+	id = UU_balance_events.6
+	title = UU_balance_events.6.t
+	desc = UU_balance_events.6.desc
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UU_balance_events.6.a
+		override_country_name = UUHSA2
+	}
+	option = {
+		name = UU_balance_events.6.b
+		override_country_name = UUHSA
+	}
+	option = {
+		name = UU_balance_events.6.c
+	}
+}
+country_event = {	#Shinto Incident Manager
+	id = shinto_events.999
+	title = shinto_events.999.t
+	desc = shinto_events.999.desc
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		NOT = { is_incident_active = yes }												#Cannot fire if active incident (should never be the case)
+		OR = {																			#Minimum 30y since last incident
+			NOT = { has_country_flag = shinto_incident_recent }
+			had_country_flag = { 
+				flag = shinto_incident_recent 
+				days = 10950 
+			}
+		}
+		OR = {																			#Will not fire if no eligible incident
+			NOT = { has_country_flag = uu_start_of_neo_confucianism_chain }				#I: Neo-Confucianism trigger (can always fire) 
+			AND = {																		#II: Nanban Trade trigger
+				NOT = { has_country_flag = uu_start_of_nanban_chain }
+				is_institution_enabled = new_world_i
+				num_of_ports = 1
+				OR = {
+					AND = {
+						OR = {
+							normal_or_historical_nations = no
+							is_playing_custom_nation = yes
+						}
+						has_global_flag = japan_has_encountered_the_west
+					}
+					AND = {
+						OR = {
+							normal_or_historical_nations = no
+							is_playing_custom_nation = yes
+						}
+						any_known_country = {
+							NOT = { same_continent = ROOT }
+						}
+					}
+				}
+			}
+			AND = {																		#III: Firearms trigger
+				NOT = { has_country_flag = uu_start_of_incident_firearms_chain }
+				is_incident_happened = incident_nanban
+			}
+			AND = {																		#IV : Christianity trigger
+				NOT = { has_country_flag = uu_start_of_incident_spread_of_christianity_chain }
+				OR = {
+					has_global_flag = japan_has_encountered_the_west
+					normal_or_historical_nations = no 
+				}
+				any_known_country = {
+					religion_group = christian
+				}
+			}
+			AND = {																		#V: Rising Shogunate Authority trigger 
+				NOT = { has_country_flag = uu_start_of_incident_shogunate_authority_chain }
+				has_reform = daimyo
+				OR = {
+					current_age = age_of_reformation
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+				}
+				OR = {
+					overlord = {
+						legitimacy = 90
+					}
+					overlord = {
+						is_revolutionary = no
+						absolutism = 50
+					}
+					AND = {
+						is_revolutionary = no
+						absolutism = 50
+					}
+				}			
+			}
+			AND = {																		#VI: Ikko Ikki trigger
+				NOT = { has_country_flag = uu_start_of_ikko_chain }
+				NOT = { current_age = age_of_discovery }
+			}
+			AND = {																		#VII: Wokou Pirates trigger 
+				NOT = { has_country_flag = uu_start_of_wokou_chain }
+				num_of_ports = 1
+				any_known_country = {
+					num_of_ports = 1
+					NOT = { religion = shinto }
+				}
+				any_neighbor_country = {
+					exists = yes
+				}
+			}
+			AND = { 																	#VII: Urbanization trigger
+				NOT = { has_country_flag = uu_start_of_urbanisation_chain }
+				has_institution = global_trade
+				num_of_cities = 2
+			}
+		}
+		has_dlc = "Mandate of Heaven"
+		religion = shinto
+	}
+
+	mean_time_to_happen = {
+		months = 24 #30y minimum from trigger + 2y mtth
+	}
+
+	option = {	#Incident I - Neo-Confucianism
+		name = shinto_events.999.a
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_neo_confucianism_chain }
+		}
+		set_country_flag = uu_start_of_neo_confucianism_chain
+	}
+
+	option = {	#Incident II - Nanban Trade
+		name = shinto_events.999.b
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_nanban_chain }
+			is_institution_enabled = new_world_i
+			num_of_ports = 1
+			if = {
+				limit = {
+					normal_or_historical_nations = yes
+					is_playing_custom_nation = no
+				}
+				custom_trigger_tooltip = {
+					tooltip = japan_has_encountered_the_west_tooltip
+					has_global_flag = japan_has_encountered_the_west
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						normal_or_historical_nations = no
+						is_playing_custom_nation = yes
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = encountered_other_continent_tooltip
+					any_known_country = {
+						NOT = { same_continent = ROOT }
+					}
+				}
+			}
+		}
+		set_country_flag = uu_start_of_nanban_chain
+	}
+
+	option = {	#Incident III - Firearms
+		name = shinto_events.999.c
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_incident_firearms_chain }
+			is_incident_happened = incident_nanban
+		}
+		set_country_flag = uu_start_of_incident_firearms_chain
+	}
+
+	option = {	#Incident IV - Christianity
+		name = shinto_events.999.d
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_incident_spread_of_christianity_chain }
+			NOT = { current_age = age_of_discovery }
+			if = {
+				limit = {
+					normal_or_historical_nations = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = japan_has_encountered_the_west_tooltip
+					has_global_flag = japan_has_encountered_the_west
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = encountered_christian_tooltip
+				any_known_country = {
+					religion_group = christian
+				}
+			}
+		}
+		set_country_flag = uu_start_of_incident_spread_of_christianity_chain
+	}
+
+	option = {	#Incident V - Rising Shogunate Authority
+		name = shinto_events.999.e
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_incident_shogunate_authority_chain }
+			has_reform = daimyo
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			OR = {
+				overlord = {
+					legitimacy = 90
+				}
+				overlord = {
+					is_revolutionary = no
+					absolutism = 50
+				}
+				AND = {
+					is_revolutionary = no
+					absolutism = 50
+				}
+			}
+		}
+		set_country_flag = uu_start_of_incident_shogunate_authority_chain
+	}
+
+	option = {	#Incident VI - Ikko-Ikki
+		name = shinto_events.999.f
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_ikko_chain }
+			NOT = { current_age = age_of_discovery }
+		}
+		set_country_flag = uu_start_of_ikko_chain
+	}
+
+	option = {	#Incident VII - Wokou Pirates
+		name = shinto_events.999.g
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_wokou_chain }
+			num_of_ports = 1
+			any_known_country = {
+				num_of_ports = 1
+				NOT = { religion = shinto }
+			}
+			any_neighbor_country = {
+				exists = yes
+			}
+		}
+		set_country_flag = uu_start_of_wokou_chain
+	}
+
+	option = {	#Incident VIII - Urbanization
+		name = shinto_events.999.h
+		custom_tooltip = uu_incident_manager_tt
+		trigger = { 
+			NOT = { has_country_flag = uu_start_of_urbanisation_chain }
+			has_institution = global_trade
+			num_of_cities = 2
+		}
+		set_country_flag = uu_start_of_urbanisation_chain
+	}
+}

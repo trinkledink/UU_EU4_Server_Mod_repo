@@ -1,9 +1,0 @@
-discovered_by = BTS 
-discovered_by = SKA 
-discovered_by = MIR 
-discovered_by = ANT 
-discovered_by = MFY
-
-1497.12.25 = { discovered_by = POR }
-1529.6.1 = { discovered_by = FRA } # Parmentier Brothers
-

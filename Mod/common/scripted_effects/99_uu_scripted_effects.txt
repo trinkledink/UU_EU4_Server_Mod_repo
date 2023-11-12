@@ -1,0 +1,82 @@
+papal_cost = {
+	if = {
+		limit = {
+			tag = PAP
+			curia_treasury_size = 300
+		}
+		add_curia_treasury = -300
+	}
+	if = {
+		limit = {
+			NOT = { tag = PAP }
+		}
+		add_papal_influence = -50
+	}
+}
+
+uu_special_color_effect = { #Applies specific colours to nations depending on gov't. or otherwise
+	if = {
+		limit = {
+			tag = POR 
+			government = republic
+		}
+		change_country_color = { color = { 11 82 43 } } 		#Green Republic Portugal
+	} else_if = {
+		limit = {
+			tag = SPA 
+			government = republic
+		}
+		change_country_color = { color = { 240 120 0 } }  		#Orange Republic Spain
+	} else_if = {
+		limit = { 
+			tag = GER 
+			government = monarchy
+		}
+		change_country_color = { color = { 143 137 129 } } 		#Grey Monarchy Germany 
+	} else_if = {
+		limit = { 
+			has_country_flag = renamed_to_north_sea_empire 
+		}
+		change_country_color = { color = { 202 245 251 } } 		#North Sea Empire from Norse events
+	} else = {
+		restore_country_color = yes
+	}
+	every_subject_country = {
+		limit = {
+			has_country_flag = uu_overlord_colour
+		}
+		change_country_color = { country = overlord }
+	}
+}
+
+uu_special_name_effect = { #Applies specific names to nations depending on gov't. or otherwise
+	if = { #Ottomans -> Turkey
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			OR = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		override_country_name = TURKEY_STRING
+	} else_if = {
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			NOT = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		restore_country_name = yes
+	}
+}

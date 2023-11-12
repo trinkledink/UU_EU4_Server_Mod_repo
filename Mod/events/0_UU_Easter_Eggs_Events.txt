@@ -1,0 +1,491 @@
+namespace = uu_easter_egg_events
+
+# Easter Eggs
+country_event = {
+	id = uu_easter_egg_events.1
+	title = uu_easter_egg_events.1.t
+	desc = uu_easter_egg_events.1.d
+	picture = PRINCE_BISHOP_eventPicture
+	
+	mean_time_to_happen = {
+		months = 600 # 50 Years
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = uu_easter_egg_events.1.a
+		add_country_modifier = {
+			name = "uu_blessed_by_dream"
+			duration = 3650
+		}
+	}
+}
+
+country_event = { #Nepali Crusade
+    id = uu_easter_egg_events.2
+    title = uu_easter_egg_events.2.t
+    desc = uu_easter_egg_events.2.desc
+    picture = DHIMMI_ESTATE_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 1600
+        tag = NPL
+        NOT = {
+            exists = LIT
+        }
+        any_owned_province = {
+            culture = lithuanian
+        }
+        has_had_golden_age = yes
+        OR = {
+            has_reform = states_general_reform
+            has_reform = monastic_elections_reform
+            government = republic
+        }
+        great_power_rank = 10
+    }
+    
+    mean_time_to_happen = {
+        months = 240
+    }
+    option = {
+        name = uu_easter_egg_events.2.a
+        every_province = {
+            limit = {
+                culture = lithuanian
+            }
+            discover_country = ROOT
+            add_claim = ROOT
+        }
+        add_prestige = -1
+    }
+    option = {
+        name = uu_easter_egg_events.2.b
+    }
+}
+
+country_event = { #Missing Localization
+    id = uu_easter_egg_events.3
+    title = uu_easter_egg_events.3.t
+    desc = uu_easter_egg_events.3.desc
+    picture = OVEREXTENSION_eventPicture
+
+    trigger = {
+        NOT = { stability = 1 }
+        has_discovered = 61 #Dresden
+        has_discovered = 21 #Tromso
+        OR = {
+            has_any_disaster = yes
+            overextension_percentage = 1.0
+        }
+    }
+    mean_time_to_happen = {
+        months = 480
+    }
+
+    option = {
+        name = uu_easter_egg_events.3.a
+        61 = {
+            owner = {
+                add_prestige = -0.01
+            }
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.3.b
+        21 = {
+            owner = {
+                add_prestige = -0.01
+            }
+        }
+    }
+}
+
+country_event = { #El Dorado Delhi
+    id = uu_easter_egg_events.4
+    title = uu_easter_egg_events.4.t
+    desc = uu_easter_egg_events.4.desc
+    picture = GOLDEN_CITY_eventPicture
+
+    trigger = {
+        has_country_modifier = sce_search_eldorado
+    }
+    mean_time_to_happen = {
+        months = 1200
+    }
+    option = {
+        name = uu_easter_egg_events.4.a
+        if = {
+            limit = {
+                NOT = { has_discovered = 522}
+            }
+            hidden_effect = {
+                522 = {
+                    discover_country = ROOT
+                }
+            }
+            custom_tooltip = uu_delhi_eldorado_tt
+        } else = {
+            add_prestige = 1
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.4.b
+        define_advisor = {
+            type = trader
+            cost_multiplier = 0.9
+            skill = 1
+            culture = kanauji
+            religion = hinduism
+        }
+    }        
+}
+
+country_event = { #Hedgehog 1
+    id = uu_easter_egg_events.5
+    title = uu_easter_egg_events.5.t
+    desc = uu_easter_egg_events.5.desc
+    picture = FREE_CITY_eventPicture
+
+    trigger = {
+        capital_scope = {
+            region = north_german_region 
+        }
+        NOT = { has_country_flag = uu_easter_egg_had_hedgehog_flag }
+        NOT = { num_of_ruler_traits = { amount = 3 }}
+    }
+    mean_time_to_happen = {
+        months = 4800
+        modifier = {
+		    factor = 0.1
+            tag = SAX
+        }
+    }
+    immediate = {
+        set_country_flag = uu_easter_egg_had_hedgehog_flag 
+    }      
+
+    option = {
+        name = uu_easter_egg_events.5.a
+        add_prestige = -5
+        custom_tooltip = uu_hedgehog_consequences_tt
+        hidden_effect = {
+            country_event = { 
+                id = uu_easter_egg_events.6
+                days = 40
+                random = 15
+            }
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.5.b
+        add_ruler_personality = cruel_personality
+        custom_tooltip = uu_hedgehog_consequences_tt
+        hidden_effect = {
+            country_event = { 
+                id = uu_easter_egg_events.7
+                days = 40
+                random = 15
+            }
+        }
+    }    
+    option = {
+        name = uu_easter_egg_events.5.c
+        add_ruler_personality = benevolent_personality
+    }
+}
+
+country_event = { #Hedgehog 2
+    id = uu_easter_egg_events.6
+    title = uu_easter_egg_events.6.t
+    desc = uu_easter_egg_events.6.desc
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = uu_easter_egg_events.6.a
+        add_prestige = 5
+        define_advisor = {
+            type = socialreformer
+            skill = 3
+            cost_multiplier = 0.5
+            culture = ROOT
+            religion = ROOT
+        }
+    }
+}
+
+country_event = { #Hedgehog 3
+    id = uu_easter_egg_events.7
+    title = uu_easter_egg_events.7.t
+    desc = uu_easter_egg_events.7.desc
+    picture = ASSASSINATION_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = uu_easter_egg_events.7.a
+        custom_tooltip = uu_hedgehog_fight_tt
+        random = {
+            chance = 100
+            kill_ruler = yes   
+        }
+    }
+
+    option = {
+        name = uu_easter_egg_events.7.b
+        add_prestige = -10
+        custom_tooltip = uu_hedgehog_spare_tt
+        remove_ruler_personality = cruel_personality
+        add_ruler_personality = kind_hearted_personality
+    }
+
+}
+
+country_event = { #The Ripper
+    id = uu_easter_egg_events.8
+    title = uu_easter_egg_events.8.t
+    desc = uu_easter_egg_events.8.desc
+    picture = ASSASSINATION_eventPicture
+    goto = ripper_prov
+    mean_time_to_happen = {
+        months = 9000
+    }
+
+    trigger = {
+        has_advisor = yes
+        NOT = { stability = 3 }
+    }
+
+    immediate = {
+        random_owned_province = {
+            save_event_target_as = ripper_prov
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.8.a
+        custom_tooltip = uu_ripper_tt
+    }
+    option = {
+        name = uu_easter_egg_events.8.b
+        kill_advisor = random
+    }
+
+}
+
+country_event = { #No one wants to mod
+    id = uu_easter_egg_events.9
+    title = uu_easter_egg_events.9.t
+    desc = uu_easter_egg_events.9.desc
+    picture = MERCHANTS_TALKING_eventPicture
+    
+    mean_time_to_happen = {
+        months = 9000
+    }
+
+    trigger = {
+        is_at_war = no
+    }
+
+    option = {
+        name = uu_easter_egg_events.9.a
+        custom_tooltip = uu_easter_egg_events.9.tt
+    }
+
+    option = {
+        name = uu_easter_egg_events.9.b
+        custom_tooltip = uu_easter_egg_events.9.tt2
+    }
+
+}
+
+country_event = { #Yellow Prussia 1
+    id = uu_easter_egg_events.10
+    title = uu_easter_egg_events.10.t
+    desc = uu_easter_egg_events.10.desc 
+    picture = TEMPORAL_RIFT_eventPicture
+
+    mean_time_to_happen = {
+        months = 3600
+    }
+    major = yes
+    fire_only_once = yes 
+
+    trigger = {
+        tag = PRU 
+        is_at_war = no 
+        num_of_cities = 30
+    }
+
+    option = {
+        name = uu_easter_egg_events.10.a
+        custom_tooltip = uu_easter_egg_events.10.tt
+        hidden_effect = {
+            change_country_color = { color = { 252 233 58 } } #Navarra
+            country_event = {
+                id = uu_easter_egg_events.11
+                days = 14
+            }
+        }
+    }
+
+}
+
+country_event = { #Yellow Prussia 2
+    id = uu_easter_egg_events.11
+    title = uu_easter_egg_events.11.t
+    desc = uu_easter_egg_events.11.desc 
+    picture = TEMPORAL_RIFT_eventPicture
+
+    is_triggered_only = yes 
+    hidden = yes
+
+    immediate = {
+        restore_country_color = yes
+    }
+   
+    option = {
+        name = uu_easter_egg_events.11.a
+    }
+}
+
+country_event = { #Morocconomics
+    id = uu_easter_egg_events.12
+    title = uu_easter_egg_events.12.t
+    desc = uu_easter_egg_events.12.desc 
+    picture = MERCHANTS_TALKING_eventPicture
+
+    mean_time_to_happen = {
+        months = 180
+    }
+    fire_only_once = yes 
+    trigger = {
+        OR = {
+            tag = MOR 
+            was_tag = MOR 
+            primary_culture = moroccan
+        }
+        has_estate_loan = yes
+        num_of_loans = 8
+        advisor = trader
+		advisor = master_of_mint
+    }
+   
+    option = {
+        name = uu_easter_egg_events.12.a
+        add_prestige = -10
+        add_mercantilism = 5
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+        add_loan = {
+            fixed_interest = 1
+            duration = 60
+        }
+    }
+    option = {
+        name = uu_easter_egg_events.12.b
+        reduce_meritocracy_effect = yes
+		remove_advisor = master_of_mint
+		remove_advisor = trader
+		add_adm_power = 2
+		add_dip_power = 2
+    }
+}
+
+country_event = { #Renovation of Marineburg
+    id = uu_easter_egg_events.13
+    title = uu_easter_egg_events.13.t
+    desc = uu_easter_egg_events.13.desc 
+    picture = GREAT_BUILDING_eventPicture
+
+    mean_time_to_happen = {
+        months = 600
+    }
+    fire_only_once = yes 
+    trigger = {
+        is_at_war = no
+        owns_core_province = 1841
+        1841 = {
+            has_great_project = {
+                type = malbork_castle
+                tier = 3
+            }
+        }
+        OR = {
+            has_idea_group = naval_ideas 
+            has_idea_group = maritime_ideas            
+        }
+        num_of_marines = 30
+    }
+   
+    option = {
+        name = uu_easter_egg_events.13.a
+        add_prestige = 10
+        1841 = {
+            add_province_modifier = { 
+                name = uu_marienburg
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            1841 = {
+                change_province_name = "Marineburg"
+                rename_capital = "Marineburg"
+            } 
+        }
+    }
+}
+
+country_event = { #Imperium of God 
+    id = uu_easter_egg_events.14
+    title = uu_easter_egg_events.14.t
+    desc = uu_easter_egg_events.14.desc 
+    picture = PRAYING_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = uu_easter_egg_events.14.a
+        add_prestige = 200
+        add_adm_power = 200
+        add_dip_power = 200
+        add_mil_power = 200
+        override_country_name = IMPERIUM_OF_GOD        
+    }
+}
+
+country_event = { #Remember your AI settings 
+    id = uu_easter_egg_events.15
+    title = uu_easter_egg_events.15.t
+    desc = uu_easter_egg_events.15.desc 
+    picture = DEATH_OF_HEIR_eventPicture
+
+    mean_time_to_happen = {
+        months = 1800 #150y
+    }
+    trigger = {
+        is_at_war = no
+        ai = no 
+    }
+   
+    option = {
+        name = uu_easter_egg_events.15.a
+    }
+}

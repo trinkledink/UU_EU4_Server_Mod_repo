@@ -1,0 +1,74 @@
+namespace = UU_papal_creed
+
+
+country_event = {
+	id = UU_papal_creed.1
+	title = "UU_papal_creed.EVTNAME1"
+	desc = "UU_papal_creed.EVTDESC1"
+	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+	
+	is_triggered_only = yes
+
+
+	immediate = {
+		remove_country_modifier = "papal_sanction_for_church_taxes"
+		remove_country_modifier = "papal_blessing"
+		remove_country_modifier = "papal_indulgence"
+		remove_country_modifier = "usury_forgiven"
+		remove_country_modifier = "papal_sanction_for_holy_war"
+		remove_country_modifier = "papal_legate"
+		set_country_flag = uu_papal_creed_flag
+	}
+	
+	option = {
+		name = "UU_papal_creed.EVTOPTA"
+		add_country_modifier = {
+			name = "papal_sanction_for_church_taxes"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTB"
+		add_country_modifier = {
+			name = "papal_blessing"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTC"
+		add_country_modifier = {
+			name = "papal_indulgence"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTD"
+		add_country_modifier = {
+				name = "usury_forgiven"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTE"
+		add_country_modifier = {
+			name = "papal_sanction_for_holy_war"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTF"
+		add_country_modifier = {
+			name = "papal_legate"
+			duration = 7300
+		}
+	}
+	option = {
+		name = "UU_papal_creed.EVTOPTG"
+		add_stability = 1
+		add_devotion = -25
+	}
+
+	after = {
+		clr_country_flag = uu_papal_creed_flag
+	}
+}

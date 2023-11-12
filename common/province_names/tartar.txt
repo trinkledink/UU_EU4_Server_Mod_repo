@@ -1,3 +1,0 @@
-285 = "Kefe"
-2447 = "Matrika"
-464 = "Hajji Tarkhan"

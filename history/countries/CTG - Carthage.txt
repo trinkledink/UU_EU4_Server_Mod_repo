@@ -1,7 +1,0 @@
-government = republic
-add_government_reform = merchants_reform
-primary_culture = tunisian
-religion = sunni
-technology_group = muslim
-capital = 341	# Tunis
-religious_school = maliki_school

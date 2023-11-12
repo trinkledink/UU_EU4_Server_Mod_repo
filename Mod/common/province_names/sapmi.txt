@@ -1,0 +1,5 @@
+4151 = "Aanaar"
+
+#NEW
+4114 = "Dálvvadis"
+18 = "Sápmi"
