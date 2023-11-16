@@ -2083,9 +2083,9 @@ ramparts = {
 		all
 	}
 
-	#build_trigger = {
-	#	is_flatland = yes
-	#}
+	build_trigger = {
+		has_fort_building_trigger = yes
+	}
 	modifier = {
 		local_hostile_attrition = 1.5
 		max_attrition = 1.5

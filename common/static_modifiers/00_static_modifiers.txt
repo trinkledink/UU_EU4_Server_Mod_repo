@@ -206,24 +206,24 @@ severe_winter = {
 
 mild_monsoon = {
 	local_hostile_attrition = 0.5
-	local_hostile_movement_speed = -0.20
-	local_friendly_movement_speed = -0.20
+#	local_hostile_movement_speed = -0.20
+#	local_friendly_movement_speed = -0.20
 
 	picture = "monsoon_mild"
 }
 
 normal_monsoon = {
 	local_hostile_attrition = 1
-	local_hostile_movement_speed = -0.25
-	local_friendly_movement_speed = -0.25
+#	local_hostile_movement_speed = -0.25
+#	local_friendly_movement_speed = -0.25
 
 	picture = "monsoon_normal"
 }
 
 severe_monsoon = {
 	local_hostile_attrition = 1.5
-	local_hostile_movement_speed = -0.50
-	local_friendly_movement_speed = -0.50
+#	local_hostile_movement_speed = -0.50
+#	local_friendly_movement_speed = -0.50
 
 	picture = "monsoon_severe"
 }
