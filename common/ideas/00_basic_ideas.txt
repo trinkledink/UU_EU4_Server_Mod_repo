@@ -1052,7 +1052,7 @@ exploration_ideas = {
 		production_efficiency = 0.1	##UU Added
 	}
 	vice_roys  = {
-		global_tariffs = 0.40
+		global_tariffs = 0.33
  		envoy_travel_time = -0.20
  	}
 	free_colonies = {
@@ -1656,7 +1656,7 @@ humanist_ideas = {
 		monthly_piety = -0.005
 	}
 	local_traditions = {
-		idea_cost = -0.1
+		overextension_impact_modifier = -0.8 #kek?
 		harmonization_speed = 0.25
 	}
 	ecumenism = {
@@ -1925,10 +1925,10 @@ infrastructure_ideas = {
 		movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
 	}
-	uu_efficient_mining = {
+	uu_efficient_mining = {	#UU
 		gold_depletion_chance_modifier = -0.8 #UU buffed
 	}
-	uu_bureau_of_cartography = {
+	uu_bureau_of_cartography = { #UU
 		state_governing_cost = -0.1
 	}
 
