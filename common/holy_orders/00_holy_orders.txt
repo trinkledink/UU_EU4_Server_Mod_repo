@@ -352,20 +352,7 @@ avis_order = {
 calatrava_order = {
     icon = GFX_holy_order_calatrava
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
-		OR = { 
-			tag = CAS
-			tag = SPA 
-			is_or_was_tag = { tag = NAV }
-			has_country_flag = enable_holy_orders_flag 
-		}
+    	always = no #UU
     }
     color = { 106 147 116 } 
     cost = 50
@@ -377,9 +364,7 @@ calatrava_order = {
         add_base_manpower = -1
     }
     modifier = {
-		#local_defender_dice_roll_bonus = 1 #UU
-        local_regiment_cost = -0.25
-        regiment_recruit_speed = -0.25
+		local_defender_dice_roll_bonus = 1
     }
     ai_priority = {
         factor = 2
@@ -767,4 +752,28 @@ du_si = {
     localization = coordinator_office
 }
 
+####UU
 
+uu_merc_religious_holyorder = {    
+    icon = GFX_holy_order_calatrava
+    trigger = {
+        has_active_policy = Merc-Religious 
+    }
+    color = { 232 48 2 } #Papaya
+    cost = 50
+    cost_type = mil_power        #Merc nations don't really need mil
+    per_province_effect = {
+        add_base_production = 1 
+    }
+    per_province_abandon_effect = {
+       add_base_production = -1 
+    }
+    modifier = {
+		supply_limit_modifier = 0.25
+        trade_goods_size_modifier = 0.1
+    }
+    ai_priority = {
+        factor = 1
+    }
+    localization = holy_order
+}

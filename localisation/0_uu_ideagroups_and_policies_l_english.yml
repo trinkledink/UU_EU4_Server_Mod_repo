@@ -107,52 +107,29 @@ l_english:
  ###############################################################
  # Policies Localisation
  ###############################################################
- 
- #Adm
- mercenary_resettlement_policy:0 "Mercenary Resettlement Act"
- desc_mercenary_resettlement_policy:0 "Tradition dictates that mercenaries are paid in gold. By paying them in land, we can integrate these foreigners and hirearms into our nation, further developing our nation."
- peacetime_mercenary_recruitment:0 "Peacetime Mercenary Recruitment"
- desc_peacetime_mercenary_recruitment:0 "Most nations reliant on mercenaries have made the mistake of disbanding their hired armies during peacetime. By enacting an act to keep mercenaries on standby we can avoid this mistake, and utilise the labour force for other purposes."
- privatised_new_world_companies_policy:0 "Privatised New World Companies"
- desc_privatised_new_world_companies_policy:0 "The connections we have made through our mercenaries provides us with an opportunity to create private New World Companies."
- eco_genstaff_policy:0 "Soldiers as Labourers"
- desc_eco_genstaff_policy:0 "Our off-duty soldiers, instead of losing their edge at home or causing trouble, will be sent to assist local construction efforts to maintain their physicality and save on hiring costs."
- 
- #Dip
- indigenous_mercenaries_policy:0 "Enlistment of Indigenous Mercenaries Act"
- desc_indigenous_mercenaries_policy:0 "Utilising the natives in our armies lets us fight better in the New World, as well as integrate the local population to our colonies."
- influence_mercenaries_policy:0 "Incorporation of Vassal Armies"
- desc_influence_mercenaries_policy:0 "There should be a closer connection between the armies of our vassal states and ours."
- expanded_network_policy:0 "Expanded Trade Network"
- desc_expanded_network_policy:0 "Mercenaries follow the winds of trade and war, and the web of connections that we have gained from our focus on a hired army has proven quite profitable."
- 
- #Mil
- enlistment_propaganda_act:0 "Enlistment Propaganda"
- desc_enlistment_propaganda_act:0 "By carefully filtering information about our military prestige, we might increase the amount of volunteers aswell as increase the overall morale"
- innovative_mercenaries_policy:0 "Private Innovators Act"
- desc_innovative_mercenaries_policy:0 "Promoting individuals with a skill for military innovations will benefit our nations armies greatly."
- holy_orders_policy:0 "Enlistment of Holy Orders"
- desc_holy_orders_policy:0 "A man fighting for faith is better than a man fighting for money. Mercenaries fighting in the name of God will show greater ability than the regular hirearm."
- improved_battlefield_knowledge_policy:0 "Commandant Bribery"
- desc_improved_battlefield_knowledge_policy:0 "Bribing the enemy commandants will obviously give us an advantage when facing the enemy - if we have to face them at all."
- naval_raids_policy:0 "National Privateers Act"
- desc_naval_raids_policy:0 "It is common for pirates to roam the seas around us. We could take advantage of this and have the pirates raid for us instead."
- marine_mercenaries_policy:0 "Contract Sailors Act"
- desc_marine_mercenaries_policy:0 "Hiring private sailors will greatly increase the sailors that our nation can employ."
- enlistment_propaganda_policy:0 "Enlistment Propaganda"
- desc_enlistment_propaganda_policy:0 "With our clout over public sentiment, it is essential that we exercise it in a way that ensures the people know for what we fight."
- boarding_parties_policy:0 "Boarding Parties Act"
- desc_enlistment_propaganda_policy:0 "By placing some of our feared shock troops aboard our ships, our admirals can afford to be less scared of boarding parties and engage in more aggressive maneuvers."
- maritime_genstaff_policy:0 "Armed Merchant Marine Act"
- desc_maritime_genstaff_policy:0 " "
- expansion_genstaff_policy:0 "Auftragstaktik"
- desc_expansion_genstaff_policy:0 "As our armies go further afield, delivering information in a timely manner from headquarters becomes nearly impossible. Commanding officers must be able to decide independently on the best way to achieve defined objectives, and be trained in that way."
- humanist_genstaff_policy:0 "Military Atheism Act"
- desc_humanist_genstaff_policy:0 "Meritocracy triumphs faith. Soldiers will be allowed to command our armies regardless of their faith."
- admin_genstaff_policy:0 "After-Action Reports"
- desc_admin_genstaff_policy:0 "Require each commander after an operation to write an in-depth report of the successes and failures of the day. This valuable information must be shared and leanred from to prevent our armies from repeating mistakes."
- military_academies_act:0 "Military Academies Act"
- desc_military_academies_act:0 "Let the nobility of our realm use their wealth to finance new universities of military study for the scions of their house. The expertise and insight from these learned noble sons will benefit the army as a whole."
+
+ Holy-Stab-Grenade:0 "§RThe Holy Stab Grenade§!"
+  desc_Holy-Stab-Grenade:0 "§YOn Enact: Gain §J+5§! Stability. Lose §J-10§! War Exhaustion\nOn Revoke: Lose §R-3§! Stability.§!"
+ Merc-Religious:0 "§OMerc-Religious§!"
+  desc_Merc-Religious:0 "§JUnlocks a unique Holy Order.§!"
+  uu_merc_religious_holyorder:0 "§lOrder of the National Church§!"
+  uu_merc_religious_holyorder_desc:0 "§YThis order is unlocked by the Mercenary-Religious policy.§!"
+ Religious-Trade:0 "§OReligious-Trade§!"
+  desc_Religious-Trade:0 "§JUnlocks the ability to propagate religion anywhere.§!"
+ Religious-Maritime:0 "§OReligious-Maritime§!"
+  desc_Religious-Maritime:0 "§YOn Revoke: Adds §J5§! years of sailors.§!"
+ Quantity-Humanist:0 "§OQuantity-Humanist§!"
+  desc_Quantity-Humanist:0 "§YOn Revoke: Adds §J2§! years of manpower.§!"
+ GStaff-Humanist:0 "§OGStaff-Humanist§!"  
+  desc_GStaff-Humanist:0 "§YOn Enact: Immediately gain general with §J100§! tradition.§!"
+ Eco-Mercenary:0 "§OEco-Mercenary§!"
+  desc_Eco-Mercenary:0 "§JGives +10% Infantry Combat Ability to mercenary regiments while active.§!"
+  uu_eco_merc_mod:0 "Eco-Mercenary"
+ Merc-Infra:0 "§OMerc-Infra§!"
+  desc_Merc_Infra:0 "§YOn Enact: Each province with at least §G50§! of our regiments will gain 1 £adm£ and 1 £dip£ Development.§!"
+
+ Court-Divine:0 "§OCourt-Divine§!" 
+  desc_Court-Divine:0 "§JThe §Y[Root.GetChurchOrFallbackName]§! estate privilege §YExpansionist Zealotry§! has no longer penalties for §Y[Root.GetName]§!. Additionally, the privilege now grants additional §G+10.0%§! Morale of Armies and §G-0.05§! Monthly War Exhaustion while being at war with §YHeathens§! or §YHeretics§!.§!"
  ###############################################################
  # Ideagroup Events Localisation
  ###############################################################
