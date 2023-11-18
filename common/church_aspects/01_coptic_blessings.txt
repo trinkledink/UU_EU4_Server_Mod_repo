@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 legitimize_government = {
 	is_blessing = yes
 

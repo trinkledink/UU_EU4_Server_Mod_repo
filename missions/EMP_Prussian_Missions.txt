@@ -512,7 +512,7 @@ emp_bra_pru_2 = {
 				custom_tooltip = pru_access_franconian_conquest_success_tt
 				tooltip = {
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 1
 					}
 					add_power_projection = {
@@ -557,7 +557,7 @@ emp_bra_pru_2 = {
 				}
 				custom_tooltip = zim_amongst_the_great_powers_tt
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -921,7 +921,7 @@ emp_bra_pru_3 = {
 					has_dlc = "Domination" 
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -1312,7 +1312,7 @@ emp_bra_pru_4 = {
 			if = { 
 				limit = { has_dlc = "Domination" }
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 				

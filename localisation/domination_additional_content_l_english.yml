@@ -1,4 +1,5 @@
-﻿l_english:
+﻿#UU UPDATED 1.36.1
+l_english:
  desc_japan_increased_demand_of_spice:1 "Our people have acquired a taste for spices, and its production has been expanded to satisfy that increased demand."
  desc_japan_increased_demand_of_tea:1 "Our people have acquired a taste for tea, and its production has been expanded to satisfy that increased demand."
  desc_jap_onna_musha_modifier:1 "Women of the samurai warrior class are eager to serve us in battle."
@@ -319,9 +320,9 @@
  gov_coastal_government:0 "Coastal Government"
  scaling_with_estate_influence_tt:0 "§YScales with Influence§!\nAt §Y100%§! influence the privilege has the following effect:"
  scaling_with_estate_loyalty_tt:0 "§YScales with Loyalty§!\nAt §Y100%§! loyalty the privilege has the following effect:"
- when_loyal_tt:0 "§GWhen Loyal (above 60%)§!:"
- when_neutral_tt:0 "§YWhen Neutral (between 30% and 60%)§!:"
- when_disloyal_tt:0 "§RWhen Disloyal (under 30%)§!:"
+ when_loyal_tt:0 "§GWhen Loyal (above 60%) and 100% Influence§!:"
+ when_neutral_tt:0 "§YWhen Neutral (between 30% and 60%) and 100% Influence§!:"
+ when_disloyal_tt:0 "§RWhen Disloyal (under 30%) and 100% Influence§!:"
  UNTIL_REVOKED:0 "until revoked"
  estate_church_clerical_education_loyal:0 "Clerical Education"
  estate_church_clerical_education_neutral:0 "Clerical Education"
@@ -344,6 +345,10 @@
  ASK_FOR_CONTRIBUTION_BURGHERS_level_2:0 "Investment Contribution"
  ASK_FOR_CONTRIBUTION_BURGHERS_level_3:0 "Investment Contribution"
  ASK_FOR_CONTRIBUTION_BURGHERS_level_4:0 "Investment Contribution"
+ ASK_FOR_CONTRIBUTION_VAISYAS_level_1:0 "Investment Contribution"
+ ASK_FOR_CONTRIBUTION_VAISYAS_level_2:0 "Investment Contribution"
+ ASK_FOR_CONTRIBUTION_VAISYAS_level_3:0 "Investment Contribution"
+ ASK_FOR_CONTRIBUTION_VAISYAS_level_4:0 "Investment Contribution"
  estate_dhimmi_protected_communities_scaling:0 "Protected Community"
  DEMAND_CONTRIBUTION_DHIMMI_level_1:0 "Exploited Community"
  DEMAND_CONTRIBUTION_DHIMMI_level_2:0 "Exploited Community"

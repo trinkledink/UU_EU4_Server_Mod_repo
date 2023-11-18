@@ -1,5 +1,5 @@
 ## UU Mainly just moved provinces so there are mostly no split states between colonial regions.
-
+#UU UPDATED 1.36.1
 # Alaska
 colonial_alaska = {
 	color = { 225 225 225 }

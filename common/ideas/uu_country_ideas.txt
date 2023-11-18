@@ -426,6 +426,7 @@ MOR_ideas = { #Morocco
 	bonus = {
 		#hostile_attrition = 1				#Removed
 		colonists = 1						#Added 
+		effect = { remove_temporary_colonist = yes }
 	}
 	trigger = {
 		tag = MOR
@@ -580,6 +581,7 @@ ADU_ideas = { #Andalusia
 	}
 	adu_expeditionary_sentiment = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	adu_al_awasim = {
 		defensiveness = 0.1
@@ -702,6 +704,7 @@ SCA_norway_ideas = {
 	american_migration_wave = {
 		global_colonial_growth = 10
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	the_thousand_convoys = {
 		global_trade_power = 0.2
@@ -1687,6 +1690,7 @@ COL_ideas = { #Colombia
 BRZ_ideas = { #Brazil
 	start = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 		global_colonial_growth = 20
 	}
 	
@@ -1701,6 +1705,7 @@ BRZ_ideas = { #Brazil
 	
 	brz_plantations = {
 		build_cost = -0.15
+		effect = { remove_temporary_colonist = yes }	#In case it doesn't work in starting idea
 	}
 	brz_home_of_the_amazon = {
 		land_attrition = -0.5

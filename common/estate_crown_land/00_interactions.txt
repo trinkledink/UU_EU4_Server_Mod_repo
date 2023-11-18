@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 interaction = {
     key = sale_of_titles
     random_seed = crown_land_share
@@ -320,7 +321,7 @@ interaction = {
 			}
 			NOT = { has_estate_privilege = estate_church_statutory_rights }
 		}
-        #is_at_war = no
+        #is_at_war = no	#UU
 		if = {
 			limit = { has_government_attribute = can_not_seize_land }
 			NOT = { has_government_attribute_short_desc = can_not_seize_land }

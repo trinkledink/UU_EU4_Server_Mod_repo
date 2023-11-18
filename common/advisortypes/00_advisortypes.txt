@@ -7,9 +7,9 @@
 # Note that ai_will_do calculates a priority.
 # An advisor may be chosen over another if its random priority exceeds it. RandomPriority(advisor) := rand[1, 2[ * Priority(advisor).
 
-
+#UU UPDATED 1.36.1
 ######################################################
-# Administrative Advisors
+# Administrative Advisors 
 ######################################################
 
 ######################################################
@@ -18,13 +18,17 @@ philosopher = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
 		}
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
 	}
 	
 	# Bonus
@@ -88,6 +92,27 @@ philosopher = {
 		}
 		modifier = { tolerance_heretic = 1 }
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.1
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -104,7 +129,7 @@ natural_scientist = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -113,8 +138,24 @@ natural_scientist = {
 		}
 	}
 	
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
+	
 	# Bonus
-	innovativeness_gain = 0.25
+	innovativeness_gain = 0.25	#UU
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -175,6 +216,17 @@ natural_scientist = {
 		modifier = { tolerance_heretic = 1 }
 	}
 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.03
+		}
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -190,7 +242,7 @@ artist = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -198,9 +250,25 @@ artist = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	monthly_splendor = 1
+	monthly_splendor = 1	#UU
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -261,10 +329,32 @@ artist = {
 		modifier = { tolerance_own = 1 }
 	}
 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.1
+		}
+	}
+
 	chance = {
 		factor = 1
 	}
 	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.2
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { stability = 0 }
+		}
+	}
 }
 
 ######################################################
@@ -273,7 +363,7 @@ treasurer = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -281,9 +371,25 @@ treasurer = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	production_efficiency = 0.10
+	production_efficiency = 0.10	#UU
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -344,6 +450,17 @@ treasurer = {
 		modifier = { religious_unity = 0.15 }
 	}
 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.03
+		}
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -359,7 +476,7 @@ theologian = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -367,10 +484,62 @@ theologian = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
 	global_unrest = -2
-
+	#UU Scaled modifiers
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_papacy = yes } }
+		modifier = { papal_influence = 0.2 } # +1 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_church_aspects = yes } }
+		modifier = { church_power_modifier = 0.02 } # +10% at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_fervor = yes } }
+		modifier = { monthly_fervor_increase = 0.1 } # +0.5 monthly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_patriarch_authority = yes } }
+		modifier = { yearly_patriarch_authority = 0.001 } # +0.5% yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_piety = yes } }
+		modifier = { monthly_piety_accelerator = 0.0005 } # 0.25 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { religion = confucianism } }
+		modifier = { yearly_harmony = 0.05 } # +0.25 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_karma = yes } }
+		modifier = { yearly_karma_decay = 0.01 } # 5% yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_doom = yes } }
+		modifier = { yearly_doom_reduction = 0.2 } # -1 yearly at lv.5
+	}
+	skill_scaled_modifier = {
+		trigger = { owner = { uses_authority = yes } }
+		modifier = { yearly_authority = 0.03 } # +0.15 yearly at lv.5
+	}
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
 		modifier = { reform_progress_growth = 0.03 }
@@ -386,6 +555,16 @@ theologian = {
 		}
 	}
 
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = geo_advisor_scaling_flag 
+			}
+		}
+		modifier = {
+			yearly_patriarch_authority = 0.01
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
@@ -432,49 +611,31 @@ theologian = {
 	}
 
 	skill_scaled_modifier = {
-		trigger = { owner = { uses_papacy = yes } }
-		modifier = { papal_influence = 0.2 } # +1 yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_church_aspects = yes } }
-		modifier = { church_power_modifier = 0.02 } # +10% at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_fervor = yes } }
-		modifier = { monthly_fervor_increase = 0.1 } # +0.5 monthly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_patriarch_authority = yes } }
-		modifier = { yearly_patriarch_authority = 0.001 } # +0.5% yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_piety = yes } }
-		modifier = { monthly_piety_accelerator = 0.0005 } # 0.25 yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { religion = confucianism } }
-		modifier = { yearly_harmony = 0.05 } # +0.25 yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_karma = yes } }
-		modifier = { yearly_karma_decay = 0.01 } # 5% yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_doom = yes } }
-		modifier = { yearly_doom_reduction = 0.2 } # -1 yearly at lv.5
-	}
-	skill_scaled_modifier = {
-		trigger = { owner = { uses_authority = yes } }
-		modifier = { yearly_authority = 0.03 } # +0.15 yearly at lv.5
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.03
+		}
 	}
 
 	chance = {
-		factor = 1.5
+		factor = 1
 
 	}
 	
 	ai_will_do = {
 		factor = 1
+modifier = {
+			factor = 1.5
+			unrest = -1
+	}
+modifier = {
+			factor = 1.5
+			unrest = 1
+		}
 	}
 }
 
@@ -484,12 +645,28 @@ master_of_mint = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -507,6 +684,16 @@ master_of_mint = {
 		}
 		modifier = {
 			governing_capacity_modifier = 0.05
+		}
+	}
+skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				mission_completed = YEM_eastern_hub
+			}
+		}
+		modifier = {
+			global_foreign_trade_power = 0.05
 		}
 	}
 
@@ -554,6 +741,17 @@ master_of_mint = {
 		}
 		modifier = { religious_unity = 0.15 }
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.03
+		}
+	}
 	
 	chance = {
 		factor = 1
@@ -574,7 +772,7 @@ inquisitor = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -583,6 +781,22 @@ inquisitor = {
 		}
 	}
 	allow_only_owner_religion = yes
+
+	skill_scaled_modifier = {
+		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
+		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
 	global_missionary_strength = 0.02
@@ -601,6 +815,16 @@ inquisitor = {
 		}
 	}
 
+skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = geo_advisor_scaling_flag 
+			}
+		}
+		modifier = {
+			yearly_patriarch_authority = 0.01
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
@@ -656,6 +880,17 @@ inquisitor = {
 			establish_order_cost = -0.05
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.03
+		}
+	}
 	
 	chance = {
 		factor = 1
@@ -689,7 +924,7 @@ statesman = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -697,9 +932,20 @@ statesman = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	diplomatic_reputation = 2
+	diplomatic_reputation = 2	#UU
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -739,6 +985,14 @@ statesman = {
 			trade_efficiency = 0.02
 		}
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_government_attribute = enables_statesman_autonomy_reduction }
+		}
+		modifier = {
+			global_autonomy = -0.01
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -755,12 +1009,23 @@ naval_reformer = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -776,6 +1041,17 @@ naval_reformer = {
 		}
 		modifier = {
 			culture_conversion_cost = -0.05
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				mission_completed = BYZ_warehouse_of_the_east
+			}
+		}
+		modifier = {
+			global_trade_power = 0.03
 		}
 	}
 	
@@ -829,12 +1105,23 @@ trader = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -909,7 +1196,7 @@ spymaster = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -917,9 +1204,20 @@ spymaster = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	spy_offence = 0.33
+	spy_offence = 0.33	#UU
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -975,7 +1273,7 @@ colonial_governor = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -983,9 +1281,20 @@ colonial_governor = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	naval_attrition = -0.15
+	naval_attrition = -0.15	#UU?
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1049,12 +1358,23 @@ diplomat = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -1115,12 +1435,23 @@ navigator = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -1190,12 +1521,23 @@ army_reformer = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -1237,7 +1579,7 @@ army_organiser = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -1245,9 +1587,31 @@ army_organiser = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
 	land_forcelimit_modifier = 0.10
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				mission_completed = BYZ_foreign_officers
+			}
+		}
+		modifier = { 
+			mercenary_cost = -0.03
+		}
+	}
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1284,12 +1648,23 @@ commandant = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -1331,12 +1706,23 @@ quartermaster = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	
@@ -1382,7 +1768,7 @@ recruitmaster = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -1390,9 +1776,20 @@ recruitmaster = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	manpower_recovery_speed = 0.10
+	manpower_recovery_speed = 0.10	#UU
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1433,7 +1830,7 @@ fortification_expert = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
@@ -1441,9 +1838,20 @@ fortification_expert = {
 			monthly_russian_modernization = 0.02
 		}
 	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
 	
 	# Bonus
-	defensiveness = 0.25
+	defensiveness = 0.25	#UU
 
 	skill_scaled_modifier = {
 		trigger = {
@@ -1481,12 +1889,23 @@ grand_captain = {
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
-				has_government_mechanic = russian_modernization
+				has_government_mechanic = russian_modernization_mechanic
 				NOT = { culture_group = PREV }
 			}
 		}
 		modifier = {
 			monthly_russian_modernization = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
 		}
 	}
 	

@@ -21,3 +21,11 @@
  flavor_tim.1000.a:0 "Family or not, the empire is mine!"
  flavor_tim.1000.b:0 "It is simply not the right time."
 
+ #Uncon Emergency Diplomat
+ uu_diplomat.1.t:0 "Unconditional Surrender Received"
+  uu_diplomat.1.desc:0 "[Root.GetName] has gained enough warscore to force their enemy to surrender. An emergency diplomatic corps has been assembled to conduct peace negotiations."
+  uu_diplomat.1.a:0 "It will definitely be used properly"
+  player_uncon_diplomat_title:0 "Unconditional Surrender Emergency Diplomat"
+  player_uncon_diplomat_desc:0 "For when an enemy player unconditionally surrenders and you don't have a free diplomat"
+  player_uncon_diplomat_modifier:0 "Emergency Diplomat"
+

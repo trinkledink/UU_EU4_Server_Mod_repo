@@ -697,15 +697,15 @@ dan_trade_and_colonial_mission_slot = {
 				}
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -1621,7 +1621,7 @@ dan_sweden_and_great_power_mission_slot = {
 			}
 			set_country_flag = dan_no_more_swedish_rebels
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 		}
@@ -2768,7 +2768,7 @@ dan_religion_mission_slot = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -2811,7 +2811,7 @@ dan_religion_mission_slot = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -2820,7 +2820,7 @@ dan_religion_mission_slot = {
 			add_fervor = 100
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -2845,7 +2845,7 @@ dan_religion_mission_slot = {
 			}
 			custom_tooltip = swe_humanist_effects_tt
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 4
 			}
 		}
@@ -2995,7 +2995,7 @@ dan_catholic_mission_slot = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -3050,7 +3050,7 @@ dan_catholic_mission_slot = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -3215,7 +3215,7 @@ dan_protestant_mission_slot = {
 			add_fervor = 100
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -3254,7 +3254,7 @@ dan_protestant_mission_slot = {
 				custom_tooltip = dan_spread_the_reformation_tt
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 		}
@@ -3357,7 +3357,7 @@ dan_humanist_mission_slot = {
 		}
 		effect = {
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 		}

@@ -374,7 +374,7 @@ Eco-Trade = {
 		full_idea_group = economic_ideas
 	}
 	
-	monthly_dip = -1
+	country_diplomatic_power = -1
 	trade_efficiency = 0.15
 	global_trade_goods_size_modifier = 0.1
 	
@@ -432,7 +432,7 @@ Eco-Maritime = {
 
 
 Court-Divine = {	##Allows good expansionist zealotry
-	monarch_diplomatic_power = DIP 
+	monarch_power = DIP 
 
 	potential = {
 		has_idea_group = court_ideas

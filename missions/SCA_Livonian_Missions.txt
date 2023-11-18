@@ -2432,7 +2432,7 @@ liv_purge_reformation_mission_slot = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -2487,7 +2487,7 @@ liv_purge_reformation_mission_slot = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -3669,7 +3669,7 @@ liv_dummy_mission_slot_2 = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -3724,7 +3724,7 @@ liv_dummy_mission_slot_2 = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}

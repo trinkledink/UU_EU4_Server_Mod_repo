@@ -1,7 +1,7 @@
 ########################################
 # General Flavor Events for Japan and Daimyos
 #
-# written by Sara Wendel-Örtqvist
+# written by Sara Wendel-ï¿½rtqvist
 ########################################
 # Reworked and given alternative effects for Mandate of Heaven / 1.20 by Drikus Kuiper.
 ########################################
@@ -3960,7 +3960,7 @@ country_event = { #Onna Musha and the Edo Period
 		add_devotion = 10
 		add_republican_tradition = 5 
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 	}

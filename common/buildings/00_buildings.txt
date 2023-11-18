@@ -23,7 +23,7 @@
 # AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
 # It will still check whether it can afford a building before doing so though, but may save up to it.
 
-
+# UU UPDATED 1.36.1
 ################################################
 # Tier 1, 15th Century Buildings
 ################################################
@@ -40,12 +40,31 @@ marketplace = {
 			type = production
 			value = 1
 		}
+if = {
+			limit = {
+				FROM = { 
+					has_dlc = "Mandate of Heaven"
+					has_country_flag = mam_trade_building_prosperity_flag
+				}
+			}
+			add_prosperity = 5
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = marketplace
 			type = production
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { 
+					has_dlc = "Mandate of Heaven"
+					has_country_flag = mam_trade_building_prosperity_flag
+				}
+				
+			}
+			add_prosperity = -5
 		}
 	}
 
@@ -115,6 +134,7 @@ temple = {
 		local_tax_modifier = 0.4
 	}
 	on_built = {
+		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
 			building = temple
@@ -142,6 +162,28 @@ temple = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -149,6 +191,14 @@ temple = {
 			building = temple
 			type = tax
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
 		}
 		if = {
 			limit = {
@@ -162,6 +212,17 @@ temple = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
 	}
 	on_obsolete = {
 	}
@@ -174,7 +235,7 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.4
+		local_manpower_modifier = 0.4	#UU
 	}
 	on_built = {
 		if = {
@@ -418,7 +479,7 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 50
+	cost = 50	#UU
 	time = 12
 	modifier = {
 		local_state_maintenance_modifier = -0.25
@@ -812,6 +873,7 @@ cathedral = {
 		local_tax_modifier = 1
 	}
 	on_built = {
+		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_upgrading_or_building = {
 			building = cathedral
@@ -841,6 +903,28 @@ cathedral = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -848,6 +932,14 @@ cathedral = {
 			building = cathedral
 			type = tax
 			value = 2
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
 		}
 		if = {
 			limit = {
@@ -861,6 +953,17 @@ cathedral = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
 	}
 	on_obsolete = {
 	}
@@ -1080,7 +1183,7 @@ training_fields = {
 #	}
 
 	modifier = {
-		local_manpower_modifier = 0.8
+		local_manpower_modifier = 0.8	#UU
 	}
 	
 	on_built = {
@@ -1251,7 +1354,7 @@ stock_exchange = {
 	make_obsolete = trade_depot
 
 	modifier = {
-		province_trade_power_modifier = 1.5
+		province_trade_power_modifier = 1.5 #UU
 	}
 
 	on_built = {
@@ -1359,7 +1462,7 @@ counting_house = {
 
 
 town_hall = {
-	cost = 100
+	cost = 100	#UU
 	time = 12
 
 	make_obsolete = courthouse
@@ -1980,6 +2083,14 @@ farm_estate = {
 			type = production 
 			value = 1
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = 1
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1991,6 +2102,14 @@ farm_estate = {
 			building = manufactory 
 			type = production 
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = -1
 		}
 	}
 	on_obsolete = {
@@ -2084,7 +2203,7 @@ ramparts = {
 	}
 
 	build_trigger = {
-		has_fort_building_trigger = yes
+		has_fort_building_trigger = yes	#UU
 	}
 	modifier = {
 		local_hostile_attrition = 1.5
@@ -2116,6 +2235,10 @@ ramparts = {
 	}
 	
 	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = per_reinforced_defenses }
+			remove_province_modifier = per_reinforced_defenses
+		}
 		remove_dev_from_building = {
 			building = manufactory 
 			type = manpower 
@@ -2130,6 +2253,18 @@ ramparts = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			from = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 20
+			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0
+			from = { personality = ai_militarist }
+		}
 	}
 }
 

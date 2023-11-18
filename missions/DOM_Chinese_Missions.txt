@@ -577,15 +577,15 @@ chinese_kingdoms_1 = {
 				add_ruler_personality = conqueror_personality
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 3
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 3
 			}
 			custom_tooltip = chi_warscore_reward_tt
@@ -816,7 +816,7 @@ ming_missions_1_b = {
 				add_corruption = -2
 				change_government_reform_progress = 100
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 			}
@@ -2561,15 +2561,15 @@ DOM_Qing_Missions_2_b = {
 				}
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -3912,7 +3912,7 @@ DOM_Qing_Missions_3 = {
 				}
 				else = { 
 					change_ruler_stat = {
-						stat = adm
+						type = adm
 						amount = 2
 					}
 				}
@@ -4371,15 +4371,15 @@ ming_missions_3_b = {
 				duration = 9125 
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -5785,7 +5785,7 @@ DOM_Qing_Missions_4_b = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 2
 				}
 			}

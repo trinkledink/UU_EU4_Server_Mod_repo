@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
     NOT = {
         has_country_flag = formed_tier_two_flag
@@ -65,8 +66,7 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         tag = NBI #Nubia 
         tag = SOM #Somalia
         tag = SON #Songhai 
-        tag = MAL #Mali 
-        tag = KBO #Kanem-Bornu 
+        tag = MAL #Mali  
         tag = KON #Kongo 
         #Polynesian Kingdoms 
         tag = UHW #Hawaii Formable 
@@ -98,8 +98,7 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         #Horde Formables 
         tag = MCH #Manchu
         tag = ILK #The Illest Khanate
-        #Other 
-        tag = BYZ #Byzantium 
+        #India
         tag = DLH #Delhi (below other India tags so it can still form Punjab) 
     }
 	NOT = {
@@ -109,6 +108,7 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         tag = AUH #AustriaHungary UU 
         tag = SCA #Scandinavia (so it can't form Russia)
         tag = LAE #Latin Empire
+        tag = BYZ #Byzantium 
         #Russian Empires
         tag = RUS #Russia 
         tag = UKR #Ruthenia 
@@ -127,7 +127,8 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         tag = TUR #Ottomans 
         tag = ADU #Andalusia
         tag = ARB #Arabia 
-        tag = PER #Persia 
+        tag = PER #Persia
+        tag = ERS #Eranshahr 
         tag = TIM #Timurids
         tag = SOK #Sokoto  
         tag = ZAF #Macina
@@ -136,6 +137,7 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         tag = KIT #Kitara
         tag = GZI #Zimbabwe 
         tag = RZI #Rozwi (can still form Zimbabwe via mission)
+        tag = KBO #Kanem-Bornu
         #Asian Empire Rank Tags 
         tag = JAP #Japan 
         tag = MSA #Malaya
@@ -205,8 +207,7 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         #Horde Formables 
         tag = MCH #Manchu
         tag = ILK #The Illest Khanate
-        #Other 
-        tag = BYZ #Byzantium 
+        #India 
         tag = DLH #Delhi (below other India tags so it can still form Punjab) 
     }
 	NOT = {
@@ -216,6 +217,7 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         tag = AUH #AustriaHungary UU 
         tag = SCA #Scandinavia (so it can't form Russia)
         tag = LAE #Latin Empire
+        tag = BYZ #Byzantium 
         #Russian Empires
         tag = RUS #Russia 
         tag = UKR #Ruthenia 
@@ -235,6 +237,7 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         tag = ADU #Andalusia
         tag = ARB #Arabia 
         tag = PER #Persia 
+        tag = ERS #Eranshahr
         tag = TIM #Timurids
         tag = SOK #Sokoto  
         tag = ZAF #Macina
@@ -243,6 +246,7 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         tag = KIT #Kitara
         tag = GZI #Zimbabwe 
         tag = RZI #Rozwi (can still form Zimbabwe via mission)
+        tag = KBO #Kanem-Bornu
         #Asian Empire Rank Tags 
         tag = JAP #Japan 
         tag = MSA #Malaya
@@ -282,6 +286,7 @@ can_form_tier_four_trigger = { #Empire Rank Nations
         tag = AUH #AustriaHungary UU 
         tag = SCA #Scandinavia (so it can't form Russia)
         tag = LAE #Latin Empire
+        tag = BYZ #Byzantium 
         #Russian Empires
         tag = RUS #Russia 
         tag = UKR #Ruthenia 
@@ -301,6 +306,7 @@ can_form_tier_four_trigger = { #Empire Rank Nations
         tag = ADU #Andalusia
         tag = ARB #Arabia 
         tag = PER #Persia 
+        tag = ERS #Eranshahr
         tag = TIM #Timurids
         tag = SOK #Sokoto  
         tag = ZAF #Macina
@@ -309,6 +315,7 @@ can_form_tier_four_trigger = { #Empire Rank Nations
         tag = KIT #Kitara
         tag = GZI #Zimbabwe 
         tag = RZI #Rozwi (can still form Zimbabwe via mission)
+        tag = KBO #Kanem-Bornu
         #Asian Empire Rank Tags 
         tag = JAP #Japan 
         tag = MSA #Malaya
@@ -416,11 +423,11 @@ is_valid_for_subject_vassal_ideas = {
     is_vassal = yes
     ai = yes
     overlord = { full_idea_group = influence_ideas }
-		NOT = { has_idea_group = subject_march_ideas }
+	NOT = { has_idea_group = subject_march_ideas }
 }
 is_valid_for_subject_march_ideas = {
     is_march = yes
     ai = yes
     overlord = { full_idea_group = influence_ideas }
-		NOT = { has_idea_group = subject_vassal_ideas }
+	NOT = { has_idea_group = subject_vassal_ideas }
 }

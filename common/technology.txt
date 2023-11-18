@@ -3,7 +3,7 @@
 # If adding new technology, make sure they are AFTER THE LAST TECHNOLOGY
 
 # Groups must be defined BEFORE tables.
-
+#UU UPDATED 1.36.1
 #Nation Designer Cost is set to match triggers for starting institutions.
 
 groups = {

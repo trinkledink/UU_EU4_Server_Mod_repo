@@ -1,5 +1,5 @@
 # Triggers will be evaluated in the scope of the Subject, with the Overlord as its FROM scope.
-
+#UU UPDATED 1.36.1
 #Crown Colony Upgrades
 increase_force_limit_from_colony = {
 	can_upgrade_trigger = {

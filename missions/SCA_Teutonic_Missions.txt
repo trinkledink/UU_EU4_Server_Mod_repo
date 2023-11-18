@@ -954,7 +954,7 @@ teu_pru_dummy_hre_mission_slot_1 = {
 				}
 				add_war_exhaustion = -2
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 				if = {
@@ -1006,7 +1006,7 @@ teu_pru_dummy_hre_mission_slot_1 = {
 				}
 				else = {
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 				}
@@ -2211,7 +2211,7 @@ teu_pru_diplomatic_hre_mission_slot = {
 			}
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -2263,7 +2263,7 @@ teu_pru_diplomatic_hre_mission_slot = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -4057,15 +4057,15 @@ teu_pru_prussia_mission_slot = {
 		}
 		effect = {
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -5587,7 +5587,7 @@ teu_crusader_development_mission_slot = {
 					full_idea_group = religious_ideas
 				}
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 2
 				}
 			}
@@ -5599,7 +5599,7 @@ teu_crusader_development_mission_slot = {
 					full_idea_group = theocracy_gov_ideas
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 			}
@@ -6797,15 +6797,15 @@ teu_dummy_mission_slot_3 = {
 		effect = {
 			custom_tooltip = teu_prussian_path_effects_tt
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 			custom_tooltip = teu_crsuader_path_effects_tt
@@ -7470,7 +7470,7 @@ teu_dummy_mission_slot_5 = {
 					full_idea_group = religious_ideas
 				}
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 2
 				}
 			}
@@ -7482,7 +7482,7 @@ teu_dummy_mission_slot_5 = {
 					full_idea_group = religious_ideas
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 			}

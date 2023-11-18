@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 illius_qui_se_pro_divini = {
     mechanics = {
         crusades_after_age_limit
@@ -24,7 +25,7 @@ illius_qui_se_pro_divini = {
 apostolicae_servitutis = {
     modifier = {
         curia_powers_cost = -0.5
-        curia_treasury_contribution = 1
+        curia_treasury_contribution = 1 #UU
     }
 	potential = {
     }
@@ -82,9 +83,9 @@ libertas_ecclesiae = {
 	}
     trigger = {
         is_papal_controller = yes
-        #is_emperor = yes
+        #is_emperor = yes   #UU
     	hre_religion = catholic
-        #hre_religion_locked = yes
+        #hre_religion_locked = yes  #UU
     }
     ai_will_do = {
         factor = 0

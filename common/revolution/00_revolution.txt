@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 revolution = {
 	# FROM = center of revolution
 	target_province_weights = {

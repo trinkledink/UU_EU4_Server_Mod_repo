@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 hessian_militarization_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 11
@@ -15,7 +16,7 @@ hessian_militarization_mechanic = {
 				modifier = {
 					mercenary_discipline = 0.10
 					mercenary_manpower = 0.25
-					monthly_hessian_militarization = -0.5
+					monthly_hessian_militarization = -0.83 #UU 10 yearly
 				}
 			}
 			reverse_scaled_modifier = {

@@ -1308,7 +1308,7 @@ country_event = {
 	}
 }
 
-# José Monino
+# Josï¿½ Monino
 country_event = {
 	id = flavor_spa.3094
 	title = "flavor_spa.EVTNAME3094"
@@ -1339,7 +1339,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = statesman
-			name = "José Monino"
+			name = "Josï¿½ Monino"
 			culture = andalucian
 			discount = yes
 			skill = 3
@@ -2063,7 +2063,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Abén Umayyad"
+				leader = "Abï¿½n Umayyad"
 				friend = GRA
 				size = 2
 				win = yes
@@ -2962,7 +2962,7 @@ country_event = { #The Spanish Dollar
 		}
 		
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		

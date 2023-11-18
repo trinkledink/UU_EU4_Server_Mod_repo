@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 age_of_discovery = {
 	start = 1400
 	
@@ -84,26 +85,17 @@ age_of_discovery = {
 		obj_two_continents = {
 			OR = {
 				num_of_continents = 2
-				151 = {
-					owned_by = ROOT
-				}
+				151 = { owned_by = ROOT }
 			}
 		}
+
 		obj_humiliate_rival = {
 			custom_trigger_tooltip = {
 				tooltip = obj_humiliate_rival_tooltip
-				OR = {
-					has_country_flag = humiliated_rival
-					has_country_flag = U.U_humiliated_rival
-				}
+				has_country_flag = humiliated_rival
 			}
-
-		}		
+		}
 	}
-
-
-	
-	
 	
 	abilities = {
 		ab_allow_feudal_de_jure_law = {
@@ -232,7 +224,8 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
-		ab_timur_legacy = {
+
+		ab_timur_legacy = {	#UU
             allow = {
                 tag = TIM
             }
@@ -323,6 +316,7 @@ age_of_reformation = {
 			}
 		}
 	}	
+
 	
 	abilities = {
 		ab_allow_religion_enforced = {
@@ -447,7 +441,14 @@ age_of_reformation = {
 		
 		ab_persia_development = {
 			allow = {
-				tag = PER
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = unlocked_this_ab_tt
+						has_country_flag = enable_persian_age_ability_flag
+					}
+					tag = PER
+					tag = ERS
+				}
 			}
 			modifier = {
 				development_cost = -0.2
@@ -457,7 +458,7 @@ age_of_reformation = {
 			}
 		}
 		
-		ab_italian_renaissance_architecture = {
+		ab_italian_renaissance_architecture = {	#UU
 			allow = {
 				OR = {
 					tag = ITA
@@ -871,7 +872,6 @@ age_of_revolutions = {
 					tag = HAB
 					tag = HLR
 					tag = AUH
-
 				}
 			}
 			modifier = {

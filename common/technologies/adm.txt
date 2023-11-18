@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 monarch_power = ADM
 
 # applied when a country is ahead of time in this technology
@@ -25,6 +26,8 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+
+	#effect = { } # When a country researches the technology
 }
 
 technology = { #Advanced Tribes
@@ -196,7 +199,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
+	administrative_efficiency = 0.05	#UU								 
 }
 
 technology = { #Scientific Experimentation
@@ -236,7 +239,7 @@ technology = { #Metallurgy
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	town_hall = yes
+	town_hall = yes	#UU moved from 22
 	mills = yes
 	production_efficiency 	=	0.02
 
@@ -320,7 +323,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.1								 
+	administrative_efficiency = 0.1	#UU							 
 	furnace = yes
 }
 
@@ -389,7 +392,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.1							 
+	administrative_efficiency = 0.1		#UU					 
 }
 
 technology = { #Separation of Powers

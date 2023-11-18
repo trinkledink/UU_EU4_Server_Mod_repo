@@ -585,7 +585,7 @@ Quality-Humanist = {
 	tolerance_of_heathens_capacity = 1
 	
 	effect = {
-		create_general = { tradition = 200 }
+		create_general = { tradition = 100 }
 	}
 	removed_effect = {}
 	ai_will_do = {

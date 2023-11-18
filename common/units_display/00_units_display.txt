@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 infantry = {
 	factor = 1
 }
@@ -9,6 +10,8 @@ cavalry = {
             has_dharma_elephants_trigger = yes
             tag = POL
             tag = PLC
+			tag = SIA 
+			has_reform = steppe_horde
         }
 	}
 }

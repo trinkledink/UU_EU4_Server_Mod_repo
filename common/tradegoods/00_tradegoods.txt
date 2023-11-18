@@ -1,7 +1,7 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new resources, make sure they are uniquely named.
 # Please add price definitions to prices.txt as well.
-
+#UU UPDATED 1.36.1
 #Base resources
 grain = {
 	color = { 0.96 0.93 0.58 }

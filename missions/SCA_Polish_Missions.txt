@@ -736,7 +736,7 @@ poland_sca_slot_2_a = {
 			custom_tooltip = pol_alternatively_every_required_province_tt
 			tooltip = {
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 				if = {
@@ -764,7 +764,7 @@ poland_sca_slot_2_a = {
 					bohemia_area = { add_nationalism = -5 }
 					lusatia_area = { add_nationalism = -5 }
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 2
 					}
 					if = { 
@@ -951,7 +951,7 @@ poland_sca_slot_2_a = {
 				}
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -997,7 +997,7 @@ poland_sca_slot_2_b = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1005,7 +1005,7 @@ poland_sca_slot_2_b = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1075,7 +1075,7 @@ poland_sca_slot_2_plc_1 = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1083,7 +1083,7 @@ poland_sca_slot_2_plc_1 = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1882,7 +1882,7 @@ poland_sca_slot_3_a = {
 				else_if = { 
 					limit = { mercantilism = 25 } 
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 					set_country_flag = enable_special_trader_flag
@@ -2348,7 +2348,7 @@ poland_sca_slot_3_plc_1 = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 			}
@@ -4234,7 +4234,7 @@ poland_sca_slot_5_branching_lit_hre = {
 				duration = 9125 
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -4681,11 +4681,11 @@ poland_sca_slot_5_branching_hre_west = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 2
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -4738,7 +4738,7 @@ poland_sca_slot_5_branching_hre_west = {
 
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 2
 			}
 		}

@@ -1,3 +1,4 @@
+#UU UPDATED 1.36.1
 #Province Scope unless otherwise specified
 
 #Province has one of our many river estuary modifiers:
@@ -75,6 +76,7 @@ has_river_estuary_trigger = {
 			has_province_modifier = volta_estuary_modifier
 			#China
 			has_province_modifier = mng_bogue_modifier
+			has_province_modifier = expanded_nile_estuary_modifier
 		}
 	}
 }
@@ -155,6 +157,20 @@ has_no_river_estuary_trigger = {
 			#China
 			has_province_modifier = mng_bogue_modifier
 		}
+	}
+}
+
+#Has special Trade modifier
+has_special_trade_modifier = {
+	OR = {
+		has_province_modifier = sound_toll
+		has_province_modifier = bosphorous_sound_toll
+		has_province_modifier = trade_post_modifier
+		has_province_modifier = tur_hormuz_toll_modifier
+		has_province_modifier = birth_of_a_new_city_dip
+		has_province_modifier = birthplace_of_the_new_world
+		has_province_modifier = growth_of_global_trade
+		has_province_modifier = dominant_trade_hub
 	}
 }
 

@@ -1037,7 +1037,7 @@ dom_cas_missions_2 = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 			}
@@ -1327,11 +1327,11 @@ dom_cas_missions_2_b = {
 				add_claim = ROOT
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -2092,15 +2092,15 @@ dom_cas_missions_3 = {
 			}
 			
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 1
 			}
 		}
@@ -2727,15 +2727,15 @@ dom_cas_missions_4 = {
 					duration = 9125
 				}
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -2786,15 +2786,15 @@ dom_cas_missions_4 = {
 						duration = 9125
 					}
 					change_ruler_stat = {
-						stat = adm
+						type = adm
 						amount = 1
 					}
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 1
 					}
 				}
@@ -3282,13 +3282,13 @@ dom_cas_missions_4_c = {
 				custom_tooltip = por_more_likely_to_get_expansionist_tt
 				set_country_flag = por_more_likely_to_get_expansionist_flag 
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 2
 				}
 				add_prestige_or_monarch_power = { amount = 10 }
@@ -4396,7 +4396,7 @@ dom_cas_missions_5_c = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip 
+					type = dip 
 					amount = 1 
 				}
 				add_mercantilism = 3 

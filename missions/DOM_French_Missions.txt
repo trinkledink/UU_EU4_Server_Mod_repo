@@ -582,7 +582,7 @@ french_missions_1_hre_branch = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -2639,7 +2639,7 @@ french_missions_3_charlemagne_path = {
 		}
 		effect = { 
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 			if = {
@@ -3683,7 +3683,7 @@ french_rev_missions_3 = {
 			}
 			
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 		}

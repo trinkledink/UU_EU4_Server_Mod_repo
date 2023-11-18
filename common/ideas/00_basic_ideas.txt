@@ -6,7 +6,7 @@
 # ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
-
+#UU UPDATED 1.36.1
 aristocracy_ideas = { #Aristocratic Ideas
 	category = MIL
 
@@ -202,7 +202,7 @@ theocracy_gov_ideas = { #Divine Ideas
 	
 	bonus = {
 		church_privilege_slots = 1
-		brahmins_hindu_privilege_slots = 1
+		brahmins_privilege_slots = 1
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1

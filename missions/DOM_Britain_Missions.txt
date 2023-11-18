@@ -2000,11 +2000,11 @@ ave_row_3 = {
 				add_adm_power = 50
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 		}
@@ -3326,7 +3326,7 @@ gbr_ave_the_royal_court_slot = {
 				legitimacy = 95
 			}
 			ruler_total_stats = {
-				stats = 5
+				amount = 5
 			}
 			has_adm_advisor = yes
 			has_dip_advisor = yes

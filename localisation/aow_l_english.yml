@@ -1,4 +1,5 @@
 ﻿##UU changed trade node names
+#UU UPDATED 1.36.1
 l_english:
  LOCAL_AUTONOMY_EFFECTS:0 "The current local autonomy has the following effects on $NAME$:\n$EFFECT$"
  NO_LOCAL_AUTONOMY_EFFECTS:0 "There are no current local autonomy effects in $NAME$."
