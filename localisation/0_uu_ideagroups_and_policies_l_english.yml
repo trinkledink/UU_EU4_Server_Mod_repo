@@ -108,6 +108,8 @@
  # Policies Localisation
  ###############################################################
 
+ Pluto-Inno:0 "§OPluto-Inno§!"
+  desc_Pluto-Inno:0 "§YOn Enact: Grants 2 loans with base 1% interest.§!"
  Holy-Stab-Grenade:0 "§RThe Holy Stab Grenade§!"
   desc_Holy-Stab-Grenade:0 "§YOn Enact: Gain §J+5§! Stability. Lose §J-10§! War Exhaustion\nOn Revoke: Lose §R-3§! Stability.§!"
  Merc-Religious:0 "§OMerc-Religious§!"

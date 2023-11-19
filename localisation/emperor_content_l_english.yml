@@ -3204,7 +3204,7 @@ l_english:
  trade_company_wien:0 "Austrian Charter" #Unused
  TRADE_COMPANY_WIEN_Root_Culture_GetName:0 "[Root.Culture.GetName] Austria Company"
  TRADE_COMPANY_WIEN_European_Trade_Company:0 "Austria Trade Company"
- trade_company_venice:0 "Po Valley Charter"
+ trade_company_venice:0 "North Italian Charter"
  TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Po Valley Company" #Changed
  TRADE_COMPANY_VENICE_European_Trade_Company:0 "Po Valley Trade Company"
  trade_company_krakow:0 "Polish Charter"

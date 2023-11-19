@@ -1,4 +1,4 @@
-Pluto-Inno = {
+Pluto-Inno = {	#Adds 2 1% loans
 	monarch_power = ADM
 	
 	potential = {
