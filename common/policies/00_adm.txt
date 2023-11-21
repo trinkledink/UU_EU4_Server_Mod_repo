@@ -1253,7 +1253,6 @@ Merc-Infra = {
 	
 	effect = {
 		every_owned_province = {
-			custom_tooltip = jap_military_parade_tt
 			limit = {
 				num_of_units_in_province = {
 					who = ROOT 
@@ -1261,8 +1260,7 @@ Merc-Infra = {
 				}
 			}
 			add_base_tax = 1 
-			add_base_production = 1 
-			add_base_manpower = 1
+			add_base_production = 2 
 		}
 	}
 	removed_effect = {}
