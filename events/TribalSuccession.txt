@@ -1,5 +1,7 @@
 namespace = tribal_succession
 
+#UU UPDATED 1.36.1
+
 # Tribal Succession Crisis
 country_event = {
 	id = tribal_succession.1

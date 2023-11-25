@@ -8,6 +8,8 @@
 namespace = flavor_mor
 normal_or_historical_nations = yes
 
+#UU UPDATED 1.36.1
+
 # #Crisis of the Maghreb (REMOVED)
 # country_event = {
 	# id = flavor_mor.1

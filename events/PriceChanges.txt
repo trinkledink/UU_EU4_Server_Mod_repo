@@ -2,9 +2,12 @@
 # Price Change Events
 #
 # written by Johan Andersson & Henrik Lohmander
+# UU Added Elbian content
 ####################################################
 
 namespace = prices
+
+#UU UPDATED 1.36.1
 
 # Triangle Trade
 country_event = {
@@ -2485,7 +2488,7 @@ country_event = {
 			has_country_flag = bohemian_crystal_flag
 			AND = {
 				OR = {
-					NOT = { has_dlc = Emperor }
+					NOT = { has_dlc = "Emperor" }
 					NOT = { BOH = { owns = 1771 } }
 				}
 				NOT = { has_global_flag = bohemian_glass }

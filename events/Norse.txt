@@ -7,6 +7,8 @@
 
 namespace = norse_events
 
+#UU UPDATED 1.36.1
+
 country_event = {
 	id = norse_events.1
 	title = norse_events.1.t

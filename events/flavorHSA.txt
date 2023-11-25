@@ -2,10 +2,13 @@
 # Flavor Events for Hansa
 #
 # written by Sara Wendel-�rtqvist
+# UU added compatibility with UU HSA MT
 ########################################
 
 namespace = flavor_hsa
 normal_or_historical_nations = yes
+
+#UU UPDATED 1.36.1
 
 # Georg Giese
 country_event = {

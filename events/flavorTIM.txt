@@ -3,10 +3,13 @@
 #
 # written by Sara Wendel-�rtqvist
 # Events rewritten and adapted for patch 1.22 by Henrik Lohmander
+# UU Modified for new starting event chain
 ########################################
 
 namespace = flavor_tim
 normal_or_historical_nations = yes
+
+#UU UPDATED 1.36.1
 
 # Muhammad Baysonqor's Rebellion
 country_event = {

@@ -8,6 +8,8 @@
 namespace = flavor_kbo
 normal_or_historical_nations = yes
 
+#UU UPDATED 1.36.1
+
 #The two branches of the Sayfawa dynasty
 country_event = {
 	id = flavor_kbo.1

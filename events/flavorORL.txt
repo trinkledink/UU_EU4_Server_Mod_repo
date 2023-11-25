@@ -6,6 +6,8 @@
 namespace = flavor_orl
 normal_or_historical_nations = yes
 
+#UU UPDATED 1.36.1
+
 # Retrial of Joan of Arc finds her innocent
 country_event = {
 	id = flavor_orl.4

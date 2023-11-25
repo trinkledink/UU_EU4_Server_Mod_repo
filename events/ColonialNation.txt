@@ -1,5 +1,7 @@
 namespace = colonial_nation
 
+#UU UPDATED 1.36.1
+
 # Tariffs Too High
 country_event = {
 	id = colonial_nation.1
@@ -5040,7 +5042,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 30000	#UU 
 	}
 	
 	option = { #exploit the pilgrims

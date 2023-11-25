@@ -14,6 +14,9 @@ normal_or_historical_nations = yes
 #1 Decreases
 #0 Increases
 
+#UU UPDATED 1.36.1
+# UU added elbian stuff
+
 # Freedom of the Press
 country_event = {
 	id = innovativeness_events.1
