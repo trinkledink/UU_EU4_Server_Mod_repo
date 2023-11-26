@@ -5,11 +5,7 @@ estate_dhimmi_piety = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-		OR = {
-			religion = sunni
-			religion = shiite
-			religion = ibadi
-		}
+		religion_group = muslim 
 	}
 	on_granted = {
 	}

@@ -38,7 +38,14 @@ uu_special_color_effect = { #Applies specific colours to nations depending on go
 			has_country_flag = renamed_to_north_sea_empire 
 		}
 		change_country_color = { color = { 202 245 251 } } 		#North Sea Empire from Norse events
-	} else = {
+	} else_if = {
+		limit = {	#pench addition
+			NOT = {
+				is_playing_custom_nation = yes
+				is_federation_leader = yes #possibly redundant?
+				is_federation_nation = yes
+			}
+		}
 		restore_country_color = yes
 	}
 	every_subject_country = {
