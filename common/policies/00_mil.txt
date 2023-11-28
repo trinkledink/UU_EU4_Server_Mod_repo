@@ -190,8 +190,7 @@ Offensive-Religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	morale_damage = 0.1
-	warscore_from_battles_modifier = 0.1
+	infantry_power = 0.15
 	
 	effect = {}
 	removed_effect = {}
@@ -746,6 +745,143 @@ Quality-Infra = {
 	
 	army_tradition_decay = -0.01
 	drill_gain_modifier = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Admin-Aristo = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	cavalry_power = 0.1
+	nobles_loyalty_modifier = 0.1
+	rajput_loyalty_modifier = 0.1
+	maratha_loyalty_modifier = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Admin-Divine = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	fire_damage = 0.05
+	manpower_in_true_faith_provinces = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Admin-Horde = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	shock_damage = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Admin-Defensive = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	garrison_damage = 0.33
+	fort_maintenance_modifier = -0.2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Admin-Mercenary = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	mercenary_discipline = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Quantity-Admin = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	discipline = 0.05
 	
 	effect = {}
 	removed_effect = {}

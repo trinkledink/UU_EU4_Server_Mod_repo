@@ -593,6 +593,7 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
+		qizilbash_loyalty_modifier = 0.1
 	}
 
 	invasion_logistics = { #UU
@@ -1320,6 +1321,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
+		ghulams_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {

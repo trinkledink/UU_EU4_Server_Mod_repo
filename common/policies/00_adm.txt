@@ -1268,3 +1268,215 @@ Merc-Infra = {
 		factor = 1.0
 	}
 }
+
+Quantity-Infra = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = infrastructure_ideas
+	}
+	
+	movement_speed = 0.05
+	reinforce_speed = 0.2
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Trade-Infra = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = infrastructure_ideas
+	}
+	
+	global_own_trade_power = 0.15
+	embargo_efficiency = 0.25
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Maritime-Infra = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = maritime_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = maritime_ideas
+		full_idea_group = infrastructure_ideas
+	}
+	
+	state_governing_cost = -0.1
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Admin-Pluto = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	republican_tradition = 0.2
+	parliament_backing_chance = 0.15
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Admin-Advancement = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = indigenous_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = indigenous_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	governing_capacity_modifier = 0.1
+	monthly_reform_progress_modifier = 0.1
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Admin-Offensive = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	army_tradition_from_battle = 1.5
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+GStaff-Admin = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	land_forcelimit_modifier = 0.1
+	monthly_reform_progress_modifier = 0.1
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Quality-Admin = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	global_tax_modifier = 0.25
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Admin-Espionage = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	min_autonomy_in_territories = -0.15
+	
+	effect = {
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}

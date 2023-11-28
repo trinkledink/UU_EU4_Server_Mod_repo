@@ -307,6 +307,8 @@ shogunate = {
 		max_absolutism = 5
 		amount_of_samurai = 10
 		has_samurai = yes
+		land_morale = 0.1		#UU 
+		infantry_power = 0.1	#UU		
 	}
 
 	custom_attributes = {
