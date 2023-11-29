@@ -629,7 +629,7 @@ Quantity-Eco = {
 	}
 	
 	land_forcelimit_modifier = 0.1
-	global_manpower_modifier = 0.1
+	land_maintenance_modifier = -0.1
 	
 	effect = {}
 	removed_effect = {}
