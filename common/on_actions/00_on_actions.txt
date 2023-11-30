@@ -962,6 +962,7 @@ on_new_monarch = {
 		flavor_daimyo.4			#Shiba Yoshikado
 		flavor_fra.9000			# Fran�ois Villon
 		flavor_sca.2			# Education Focus of the new Ruler
+		UU_balance_events.7		#UU Horde Education Focus of the new Ruler
 		flavor_rus.128			# Peter the Great
 		flavor_rus.131			# Streltsy Payment
 		flavor_gbr.102			# Religious Stance of the King

@@ -347,6 +347,14 @@ on_new_monarch_effect = {
 			value = 1
 		}
 	}
+	if = {		##UU Added so on new ruler you get the event if you havethe priviledge
+		limit = {
+			has_estate_privilege = uu_estate_nomadic_tribes_mana_privilege
+		}
+		country_event = {
+			id = UU_balance_events.7
+		}
+	}
 }
 
 battle_cult_spreading_effect = {

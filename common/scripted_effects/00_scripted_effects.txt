@@ -9768,3 +9768,12 @@ restore_greek_names = {
 		4315 = { change_province_name = Evdoksia rename_capital = Evdoksia }
 	}
 }
+
+uu_estate_nomadic_tribes_mana_privilege_scripted_effect = {
+	custom_tooltip = enable_baseline_invite_scholar_tt
+	hidden_effect = {
+		country_event = {
+			id = UU_balance_events.7
+		}
+	}
+}

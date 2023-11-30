@@ -517,3 +517,52 @@ country_event = {	#Shinto Incident Manager
 		set_country_flag = uu_start_of_urbanisation_chain
 	}
 }
+country_event = {
+	id = UU_balance_events.7
+	title = flavor_sca.2.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		has_estate = estate_nomadic_tribes
+		NOT = { has_ruler_modifier = sca_administrative_focus }
+		NOT = { has_ruler_modifier = sca_diplomatic_focus }
+		NOT = { has_ruler_modifier = sca_military_focus }
+		NOT = { has_ruler_modifier = sca_administrative_focus_non_heir }
+		NOT = { has_ruler_modifier = sca_diplomatic_focus_non_heir }
+		NOT = { has_ruler_modifier = sca_military_focus_non_heir }
+		NOT = { has_country_flag = is_selecting_stat_bonus_for_heir }
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = is_selecting_stat_bonus_for_heir }
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+		add_ruler_modifier = {
+			name = sca_administrative_focus_non_heir
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.b
+		add_ruler_modifier = {
+			name = sca_diplomatic_focus_non_heir
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.c
+		add_ruler_modifier = {
+			name = sca_military_focus_non_heir
+			duration = -1
+		}
+	}
+
+	after = {
+		clr_country_flag = is_selecting_stat_bonus_for_heir
+	}
+}
