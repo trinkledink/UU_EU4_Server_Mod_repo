@@ -1733,6 +1733,7 @@ influence_ideas = {
 	}
 	buffer_states = {
 		diplomatic_upkeep = 2
+		monthly_favor_modifier = 0.25
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2

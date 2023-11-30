@@ -73,10 +73,10 @@ uu_great_lakes_renaissance = {
 		}
 		random_events = { 
 			1000 = 0
-			# 100 = war_of_the_roses.2		
-			# 100 = war_of_the_roses.3		
-			# 100 = war_of_the_roses.4
-			# 100 = war_of_the_roses.5
+			 100 = uu_kitara.3			#urbanization
+			 100 = uu_kitara.4			#Chose trade goods		
+			 50 = uu_kitara.5			#Advisor choins court
+			 100 = war_of_the_roses.5
 			# #6 is triggere from on battle	
 			# 100 = war_of_the_roses.7
 			# 100 = war_of_the_roses.8	
