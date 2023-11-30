@@ -1253,3 +1253,276 @@ Explo-Quality = {
 		factor = 1.0
 	}	
 }
+
+Aristo-Influence = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = influence_ideas
+	}
+
+	vassal_forcelimit_bonus = 1
+	cavalry_power = 0.1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Divine-Influence = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = influence_ideas
+	}
+
+	manpower_in_primary_culture_provinces = 0.1
+	manpower_in_true_faith_provinces = 0.1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Horde-Influence = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = influence_ideas
+	}
+
+	land_morale = 0.05
+	manpower_in_accepted_culture_provinces = 0.15
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Defensive-Influence = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = influence_ideas
+	}
+
+	land_morale = 0.05
+	vassal_manpower_bonus = 0.25
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Merc-Influence = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = influence_ideas
+	}
+
+	allow_client_states = yes
+	vassal_forcelimit_bonus = 1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Quantity-Influence = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = influence_ideas
+	}
+
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = influence_ideas
+	}
+
+	global_manpower = 0.1
+	vassal_forcelimit_bonus = 1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Pluto-Naval = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = naval_ideas
+	}
+
+	global_ship_repair = 0.25
+	recover_army_morale_speed = 0.15
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Advancement-Naval = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = indigenous_ideas
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = indigenous_ideas
+		full_idea_group = naval_ideas
+	}
+
+	hull_size_modifier = 0.1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Offensive-Naval = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = naval_ideas
+	}
+
+	regiment_disembark_speed = 0.1
+	siege_blockade_progress = 2
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+GStaff-Naval = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = naval_ideas
+	}
+
+	leader_land_fire = 1
+	max_admiral_fire = 1
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Quality-Naval = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = naval_ideas
+	}
+
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = naval_ideas
+	}
+
+	navy_tradition_decay = -0.01
+
+	effect = {
+	}
+	removed_effect = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
