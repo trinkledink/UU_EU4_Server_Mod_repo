@@ -1491,7 +1491,7 @@ Admin-Explo = {
 		full_idea_group = exploration_ideas
 	}
 	
-	reduced_liberty_desire_on_other_continent = -0.2
+	reduced_liberty_desire_on_other_continent = 20
 	
 	effect = {
 	}
