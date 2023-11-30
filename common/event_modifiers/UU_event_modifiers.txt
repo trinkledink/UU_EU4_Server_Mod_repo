@@ -232,3 +232,8 @@ uu_closed_canal_mod = {
 	province_trade_power_modifier = -0.5
 	picture = "great_project_upgrade_cost_opposite"
 }
+
+#Plot Armour
+uu_plot_armour = {
+	monarch_lifespan = 50
+}

@@ -218,10 +218,11 @@
  genstaff_veterans_event:0 "Outdated Old Guard"
  
  ###############################################################
- # French Debuff
+ # French Debuff /// Other Starting modifiers
  ###############################################################
  
  UU_french_morale:0 "French Morale"
+ uu_plot_armour:0 "UU Plot Armour"
 
  ###############################################################
  # UU Buddhism Karma Decisions
