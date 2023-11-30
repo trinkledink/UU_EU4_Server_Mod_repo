@@ -98,7 +98,7 @@ capital = 518	# Chittogarh
 	}
 }
 1444.11.10 = {
-	add_country_modifier = {
+	add_ruler_modifier = {
 		name = "uu_plot_armour"
 		duration = 3650
 	}
