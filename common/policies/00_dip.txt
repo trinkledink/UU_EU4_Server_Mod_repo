@@ -496,35 +496,7 @@ Infra-Naval = {
 	}
 }
 
-
-
-Court-Divine = {	##Allows good expansionist zealotry
-	monarch_power = DIP 
-
-	potential = {
-		has_idea_group = court_ideas
-		has_idea_group = theocracy_gov_ideas
-	}
-	
-	allow = {
-		full_idea_group = court_ideas
-		full_idea_group = theocracy_gov_ideas
-	}
-
-	church_privilege_slots = 1
-	
-	effect = {
-		set_country_flag = improved_expansionist_zealotry
-	}
-	removed_effect = {
-		clr_country_flag = improved_expansionist_zealotry
-	}
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
-Infra-Espio = {
+Infra-Espionage = {
 	monarch_power = DIP
 
 	potential = {
@@ -571,7 +543,7 @@ Admin-Trade = {
 	}
 }
 
-Admin-Influ = {
+Admin-Influence = {
 	monarch_power = DIP
 
 	potential = {
@@ -594,6 +566,7 @@ Admin-Influ = {
 		factor = 1.0
 	}
 }
+
 Admin-Maritime = {
 	monarch_power = DIP
 
@@ -617,7 +590,150 @@ Admin-Maritime = {
 		factor = 1.0
 	}
 }
-Trade-Pluto = {
+
+Aristo-Espionage = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = spy_ideas
+	}
+
+	special_unit_forcelimit = 0.2
+	spy_offence = 0.15
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Divine-Espionage = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = spy_ideas
+	}
+
+	culture_conversion_cost = -0.2
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Horde-Espionage = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = spy_ideas
+	}
+
+	province_warscore_cost = -0.15
+	ae_impact = -0.15
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Defensive-Espio = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = spy_ideas
+	}
+
+	global_spy_defence = 0.2
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Merc-Espionage = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = spy_ideas
+	}
+
+	privateer_efficiency = 0.25
+	spy_offence = 0.2
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Quantity-Espio = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = spy_ideas
+	}
+
+	diplomats = 2
+	spy_offence = 0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Pluto-Trade = {
 	monarch_power = DIP
 
 	potential = {
@@ -640,7 +756,8 @@ Trade-Pluto = {
 		factor = 1.0
 	}
 }
-Trade-Advance = {
+
+Advancement-Trade = {
 	monarch_power = DIP
 
 	potential = {
@@ -663,7 +780,8 @@ Trade-Advance = {
 		factor = 1.0
 	}
 }
-Trade-Offensive = {
+
+Offensive-Trade = {
 	monarch_power = DIP
 
 	potential = {
@@ -686,7 +804,8 @@ Trade-Offensive = {
 		factor = 1.0
 	}
 }
-Trade-General = {
+
+GStaff-Trade = {
 	monarch_power = DIP
 
 	potential = {
@@ -709,7 +828,8 @@ Trade-General = {
 		factor = 1.0
 	}
 }
-Trade-Quality = {
+
+Quality-Trade = {
 	monarch_power = DIP
 
 	potential = {
@@ -731,7 +851,8 @@ Trade-Quality = {
 		factor = 1.0
 	}
 }
-Explo-Aristo = {
+
+Aristo-Explo = {
 	monarch_power = DIP
 
 	potential = {
@@ -754,6 +875,7 @@ Explo-Aristo = {
 		factor = 1.0
 	}
 }
+
 Explo-Divine = {
 	monarch_power = DIP
 
@@ -777,6 +899,7 @@ Explo-Divine = {
 		factor = 1.0
 	}
 }
+
 Explo-Horde = {
 	monarch_power = DIP
 
@@ -800,6 +923,7 @@ Explo-Horde = {
 		factor = 1.0
 	}
 }
+
 Explo-Defensive = {
 	monarch_power = DIP
 
@@ -823,6 +947,7 @@ Explo-Defensive = {
 		factor = 1.0
 	}
 }
+
 Explo-Merc = {
 	monarch_power = DIP
 
@@ -846,7 +971,8 @@ Explo-Merc = {
 		factor = 1.0
 	}
 }
-Explo-Quantity = {
+
+Quantity-Explo = {
 	monarch_power = DIP
 
 	potential = {
@@ -865,6 +991,34 @@ Explo-Quantity = {
 	effect = {}
 	removed_effect = {}
 	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+
+
+Court-Divine = {	##Allows good expansionist zealotry
+	monarch_power = DIP 
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = theocracy_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = theocracy_gov_ideas
+	}
+
+	church_privilege_slots = 1
+	
+	effect = {
+		set_country_flag = improved_expansionist_zealotry
+	}
+	removed_effect = {
+		clr_country_flag = improved_expansionist_zealotry
+	}
 	ai_will_do = {
 		factor = 1.0
 	}

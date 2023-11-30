@@ -73,10 +73,13 @@ mercenaries_running_amock = {
 	mercenary_discipline = -0.05
 }
 
-#policy w eco 
+#policies
 uu_eco_merc_mod = {
 	is_mercenary_modifier = yes
 	infantry_power = 0.1
+}
+uu_offensive_espio_mod = {
+	global_attacker_dice_roll_bonus = 1
 }
 
 #GenStaff Ideagroup Event Modifiers 

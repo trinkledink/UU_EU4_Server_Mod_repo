@@ -889,6 +889,127 @@ Quantity-Admin = {
 		factor = 1.0
 	}	
 }
+
+Pluto-Espionage = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	artillery_power = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Advancement-Espio = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = indigenous_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = indigenous_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	land_morale = 0.1
+	discipline = 0.025
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	monthly_mil = -1
+	
+	effect = {}
+	removed_effect = {
+		add_country_modifier = {
+			name = uu_offensive_espio_mod
+			duration = 3650
+		}
+	}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+
+Espio-GStaff = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	leader_siege = 2
+	max_general_siege = 1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+
+Espio-Quality = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	warscore_from_battles_modifier = 0.1
+	morale_damage = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
 Trade-Aristo = {
 	monarch_power = MIL
 	
@@ -911,6 +1032,7 @@ Trade-Aristo = {
 		factor = 1.0
 	}	
 }
+
 Trade-Divine = {
 	monarch_power = MIL
 	
@@ -934,6 +1056,7 @@ Trade-Divine = {
 		factor = 1.0
 	}	
 }
+
 Trade-Horde = {
 	monarch_power = MIL
 	
@@ -956,6 +1079,7 @@ Trade-Horde = {
 		factor = 1.0
 	}	
 }
+
 Trade-Merc = {
 	monarch_power = MIL
 	
@@ -980,6 +1104,7 @@ Trade-Merc = {
 		factor = 1.0
 	}	
 }
+
 Trade-Quantity = {
 	monarch_power = MIL
 	
@@ -1004,6 +1129,7 @@ Trade-Quantity = {
 		factor = 1.0
 	}	
 }
+
 Explo-Pluto = {
 	monarch_power = MIL
 	
@@ -1027,6 +1153,7 @@ Explo-Pluto = {
 		factor = 1.0
 	}	
 }
+
 Explo-Advance = {
 	monarch_power = MIL
 	
@@ -1051,6 +1178,7 @@ Explo-Advance = {
 		factor = 1.0
 	}	
 }
+
 Explo-Offensive = {
 	monarch_power = MIL
 	
@@ -1075,7 +1203,8 @@ Explo-Offensive = {
 		factor = 1.0
 	}	
 }
-Explo-General = {
+
+Explo-GStaff = {
 	monarch_power = MIL
 	
 	potential = {
@@ -1099,6 +1228,7 @@ Explo-General = {
 		factor = 1.0
 	}	
 }
+
 Explo-Quality = {
 	monarch_power = MIL
 	

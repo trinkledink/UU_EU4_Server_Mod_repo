@@ -129,7 +129,9 @@
   uu_eco_merc_mod:0 "Eco-Mercenary"
  Merc-Infra:0 "§OMerc-Infra§!"
   desc_Merc_Infra:0 "§YOn Enact: Each province with at least §G50§! of our regiments will gain 1 £adm£ and 2 £dip£ Development.§!"
-
+ Offensive-Espio:0 "§OOffensive-Espio§!"
+  desc_Offensive-Espio:0 "§YOn Revoke: Gives §J+1 Global Attacker Dice Roll§! for 12 months.§!"
+  uu_offensive_espio_mod:0 "Offensive-Espio"
  Court-Divine:0 "§OCourt-Divine§!" 
   desc_Court-Divine:0 "§JThe §Y[Root.GetChurchOrFallbackName]§! estate privilege §YExpansionist Zealotry§! has no longer penalties for §Y[Root.GetName]§!. Additionally, the privilege now grants additional §G+10.0%§! Morale of Armies and §G-0.05§! Monthly War Exhaustion while being at war with §YHeathens§! or §YHeretics§!.§!"
  ###############################################################
