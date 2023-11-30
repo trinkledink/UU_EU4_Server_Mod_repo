@@ -889,3 +889,71 @@ Quantity-Admin = {
 		factor = 1.0
 	}	
 }
+Trade-Aristo = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	cavalry_cost = -0.15
+	shock_damage = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+Trade-Divine = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = theocracy_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = theocracy_gov_ideas
+	}
+	
+	enforce_religion_cost = -0.2
+	
+	effect = {
+		uu_rally_for_the_faith = yes
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+Trade-Horde = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	cavalry_power = 0.1
+	
+	effect = {
+		uu_rally_for_the_faith = yes
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}

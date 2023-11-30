@@ -113,7 +113,7 @@ add_army_professionalism = 0.1
 1444.11.10 = {
 	add_country_modifier = {
 		name = "uu_plot_armour"
-		duration = 120
+		duration = 3650
 	}
 }
 

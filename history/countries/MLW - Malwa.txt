@@ -85,7 +85,7 @@ religious_school = hanafi_school
 1444.11.10 = {
 	add_country_modifier = {
 		name = "uu_plot_armour"
-		duration = 120
+		duration = 3650
 	}
 }
 

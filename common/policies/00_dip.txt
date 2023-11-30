@@ -617,3 +617,72 @@ Admin-Maritime = {
 		factor = 1.0
 	}
 }
+Trade-Pluto = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = plutocracy_ideas
+	}
+
+	trade_efficiency = 0.1
+	burghers_loyalty_modifer = 0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Trade-Advance = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = indigenous_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = indigenous_ideas
+	}
+
+	trade_efficiency = 0.1
+	global_own_trade_power = 0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Trade-Offensive = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = offensive_ideas
+	}
+
+	global_trade_power = 0.1
+	light_ship_power = 0.15
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
