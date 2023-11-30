@@ -1082,6 +1082,7 @@ Eco-Explo = {
 	}
 	
 	treasure_fleet_income = 0.33
+	colony_cost_modifier = -0.2
 	
 	effect = {
 	}

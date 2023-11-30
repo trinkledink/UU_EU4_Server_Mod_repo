@@ -686,3 +686,186 @@ Trade-Offensive = {
 		factor = 1.0
 	}
 }
+Trade-General = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = general_staff_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = general_staff_ideas
+	}
+
+	naval_tradition_from_trade = 0.5
+	max_admiral_maneuver = 1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Trade-Quality = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = quality_ideas
+	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = quality_ideas
+	}
+
+	caravan_power = 0.25
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Aristo = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = aristocracy_ideas
+	}
+
+	global_tariffs = 0.15
+	liberty_desire_from_subject_development = -0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Divine = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = theocracy_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = theocracy_gov_ideas
+	}
+
+	native_assimilation = 1
+	culture_conversion_cost = -0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Horde = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = horde_gov_ideas
+	}
+
+	colonist = 1
+	naval_forcelimit_modifier = 0.25
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Defensive = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = defensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = defensive_ideas
+	}
+
+	global_tariffs = 0.25
+	land_attrition = -0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Merc = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = mercenary_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = mercenary_ideas
+	}
+
+	trade_range_modifier = 0.2
+	global_colonial_growth = 20
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+Explo-Quantity = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = quantity_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = quantity_ideas
+	}
+
+	treasure_fleet_income = 0.2
+	global_colonial_growth = 10
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}

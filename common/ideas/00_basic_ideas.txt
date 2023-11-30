@@ -515,7 +515,7 @@ spy_ideas = {
 	}
 	
 	blackmailing = {
-		monthly_favor_modifier = 0.33
+		province_warscore_cost = -0.2
 		accept_vassalization_reasons = 15
 	}
 
@@ -1733,7 +1733,6 @@ influence_ideas = {
 	}
 	buffer_states = {
 		diplomatic_upkeep = 2
-		province_warscore_cost = -0.2
 	}
 	diplomatic_influence = {
 		diplomatic_reputation = 2
@@ -1874,7 +1873,7 @@ court_ideas = {
 		horde_unity = 0.5
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
-		imperial_authority = 0.05
+		imperial_authority_value = 0.1
 	}
 	court_embassies = {
 		max_absolutism_effect = 0.2
@@ -1912,6 +1911,7 @@ infrastructure_ideas = {
 	}
 	encourage_development_idea = { #UU
 		global_prosperity_growth = 0.5
+		move_capital_cost_modifier = -0.33
 	}
 	modular_administration = { #UU 
 		expand_administration_cost = -1
