@@ -59,8 +59,8 @@ Inno-Maritime = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	disengagement_chance = 0.25
-	global_trade_power = 0.1
+	admiral_skill_gain_modifier = 1.5
+	disengagement_chance = 0.15
 	
 	effect = {
 
@@ -328,7 +328,7 @@ Court-Expansion = {
 	}
 	
 	monthly_splendor = 2
-	prestige = 1
+	colonist_placement_chance = 0.15
 	
 	effect = {}
 	removed_effect = {}

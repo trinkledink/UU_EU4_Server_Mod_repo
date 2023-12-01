@@ -369,6 +369,7 @@ venice_merchants_reform = {
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = VEN
+			was_tag = VEN		#UU 
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = venice_merchants_reform
