@@ -94,5 +94,8 @@
   amazon_peru_strait_tt:0 "Allows movement of troops between §Y[815.GetName]§! and §Y[2934.GetName]§!"
  amazon_brazil_strait:0 "Madeira River Shipping System"
   amazon_brazil_strait_tt:0 "Allows movement of troops between §Y[2934.GetName]§! and §Y[2900.GetName]§!"
+ #Transports Decision
+ uu_replace_transports:0 "Replace Transports with Transport Light Ship"
+  uu_replace_transports_desc:0 "Every owned Cog will be deleted and replaced with a Transport Light Ship at the cost of 8 ducats each."
  
  

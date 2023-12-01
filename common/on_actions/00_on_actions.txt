@@ -26,6 +26,10 @@ on_startup = {
         which = uu_deadheir_counter_var
         value = 0
     }
+	change_variable = {
+        which = uu_transports_counter_var
+        value = 0
+    }
 	if = {
 		limit = {
 			current_age = age_of_discovery

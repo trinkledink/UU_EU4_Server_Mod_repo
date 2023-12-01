@@ -1,0 +1,79 @@
+country_decisions = {
+    uu_replace_transports = {
+        potential = {
+            ai = no 
+            num_of_transport = 1
+            num_of_owned_provinces_with = {
+                value = 1
+                has_port = yes
+            }
+            dip_tech = 3
+        }
+
+        allow = {
+            num_of_transport = 1
+            is_at_war = no
+        }
+
+        effect = {
+            custom_tooltip = uu_replace_transports_desc
+            export_to_variable = {
+                which = uu_transports_counter_var
+                value = trigger_value:num_of_transport
+            }
+            if = {
+                limit = {
+                    capital_scope = {
+                        has_port = yes
+                    }
+                }
+                capital_scope = {
+                    set_province_flag = uu_transport_target_flag
+                }
+            } else_if = {
+                limit = {
+                    any_owned_province = { 
+                        has_port = yes
+                        is_overseas = no
+                    }
+                }   
+                random_owned_province = {
+                    limit = { 
+                        has_port = yes
+                        is_overseas = no 
+                    }
+                    set_province_flag = uu_transport_target_flag
+                }
+            } else = {
+                random_owned_province = {
+                    limit = { has_port = yes }
+                    set_province_flag = uu_transport_target_flag
+                }
+            }
+            while = {
+                limit = { 
+                    check_variable = {
+						which = uu_transports_counter_var
+						value = 1
+					}
+                }
+                add_treasury = -8
+                every_owned_province = {
+                    limit = { has_province_flag = uu_transport_target_flag }
+                    voc_indiamen_light = ROOT
+                }
+                subtract_variable = {
+					which = uu_transports_counter_var
+					value = 1
+				}
+            }
+            every_province = {
+                kill_units = {
+                    who = ROOT
+                    type = transport
+                }
+            }
+            every_owned_province = { clr_province_flag = uu_transport_target_flag }
+        }
+    }
+}

@@ -948,7 +948,7 @@ Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
 		full_idea_group = spy_ideas
 	}
 	
-	monthly_mil = -1
+	country_military_power = -1
 	
 	effect = {}
 	removed_effect = {
@@ -1049,7 +1049,10 @@ Trade-Divine = {
 	enforce_religion_cost = -0.2
 	
 	effect = {
-		uu_rally_for_the_faith = yes
+		every_province = {
+			limit = { religion = ROOT }
+			ROOT = { add_manpower = 0.5 }
+		}
 	}
 	removed_effect = {}
 	ai_will_do = {
@@ -1292,7 +1295,7 @@ Divine-Influence = {
 		full_idea_group = influence_ideas
 	}
 
-	manpower_in_primary_culture_provinces = 0.1
+	manpower_in_own_culture_provinces = 0.1
 	manpower_in_true_faith_provinces = 0.1
 
 	effect = {
