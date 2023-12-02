@@ -340,12 +340,14 @@ Merc-Religious = {	##Unlocks a new holy order!
 	
 	effect = {}
 	removed_effect = {	#because of a bug
-		every_owned_province = {
-			limit = { 
-				holy_order = uu_merc_religious_holyorder 
-				base_production = 2
+		hidden_effect = {
+			every_owned_province = {
+				limit = { 
+					holy_order = uu_merc_religious_holyorder 
+					base_production = 2
+				}
+				add_base_production = -1
 			}
-			add_base_production = -1
 		}
 	}
 	ai_will_do = {
@@ -520,29 +522,6 @@ Offensive-Humanist = {
 	}
 }
 
-Offensive-Humanist = {	
-	monarch_power = ADM
-	
-	potential = {
-		has_idea_group = offensive_ideas
-		has_idea_group = humanist_ideas
-	}
-	
-	allow = {
-		full_idea_group = offensive_ideas
-		full_idea_group = humanist_ideas
-	}
-	
-	core_creation = -0.1
-	monthly_reform_progress_modifier = 0.1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
 GStaff-Humanist = {	##Gain 100 trad general on enact
 	monarch_power = ADM
 	
@@ -608,8 +587,7 @@ Espio-Humanist = {
 	
 	technology_cost = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -632,8 +610,7 @@ Explo-Humanist = {
 	colonists = 1
 	native_assimilation = 0.5
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -656,8 +633,7 @@ Naval-Humanist = {
 	recover_navy_morale_speed = 0.1
 	trade_company_governing_cost = -0.3
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -680,8 +656,7 @@ Court-Humanist = {
 	advisor_pool = 2
 	no_stability_loss_on_monarch_death = yes
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -703,8 +678,7 @@ Aristo-Expansion = {
 	
 	build_cost = -0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -727,8 +701,7 @@ Divine-Expansion = {
 	missionaries = 1
 	global_missionary_strength = 0.01
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -750,8 +723,7 @@ Horde-Expansion = {
 	
 	colonist_placement_chance = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -774,8 +746,7 @@ Defensive-Expansion = {
 	rival_border_fort_maintenance = -0.5
 	global_monthly_devastation = -0.5
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -798,8 +769,7 @@ Merc-Expansion = {
 	trade_range_modifier = 0.2
 	trade_company_investment_cost = -0.2
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -822,8 +792,7 @@ Expansion-Quantity = {
 	land_attrition = -0.1
 	transport_attrition = -0.33
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -846,8 +815,7 @@ Expansion-Trade = {
 	global_trade_power = 0.1
 	trade_steering = 0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -870,8 +838,7 @@ Influence-Expansion = {
 	reduced_liberty_desire_on_other_continent = 15
 	vassal_manpower_bonus = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -893,8 +860,7 @@ Maritime-Expansion = {
 	
 	min_autonomy_in_territories = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -917,8 +883,7 @@ Maritime-Expansion = {
 	naval_forcelimit_modifier = 0.15
 	ship_power_propagation = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -941,8 +906,7 @@ Eco-Pluto = {
 	production_efficiency = 0.1
 	trade_efficiency = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -965,8 +929,7 @@ Eco-Advancement = {
 	build_cost = -0.1
 	build_time = -0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -989,8 +952,7 @@ Eco-Offensive = {
 	embargo_efficiency = 0.25
 	reinforce_cost_modifier = -0.25
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1013,8 +975,7 @@ GStaff-Economic = {
 	yearly_army_professionalism = 0.005
 	land_maintenance_modifier = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1036,8 +997,7 @@ Quality-Eco = {
 	
 	global_trade_goods_size_modifier = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1060,8 +1020,7 @@ Espionage-Eco = {
 	interest = -0.5
 	diplomats = 1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1084,8 +1043,7 @@ Eco-Explo = {
 	treasure_fleet_income = 0.33
 	colony_cost_modifier = -0.2
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1108,8 +1066,7 @@ Eco-Naval = {
 	global_ship_cost = -0.1
 	global_ship_recruit_speed = -0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1131,8 +1088,7 @@ Eco-Court = {
 	
 	estate_interaction_cooldown_modifier = -0.20
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1155,8 +1111,7 @@ Aristo-Infra = {
 	global_supply_limit_modifier = 0.5
 	great_project_upgrade_cost = -0.25
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1179,8 +1134,7 @@ Divine-Infra = {
 	global_tax_modifier = 0.25
 	global_missionary_strength = 0.01
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1202,8 +1156,7 @@ Horde-Infra = {
 	
 	development_cost = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1225,8 +1178,7 @@ Defensive-Infra = {
 	
 	development_cost_in_primary_culture = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1250,15 +1202,17 @@ Merc-Infra = {
 	merc_maintenance_modifier = -0.1
 	
 	effect = {
-		every_owned_province = {
-			limit = {
-				num_of_units_in_province = {
-					who = ROOT 
-					amount = 50 
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					num_of_units_in_province = {
+						who = ROOT 
+						amount = 50 
+					}
 				}
+				add_base_tax = 1 
+				add_base_production = 2 
 			}
-			add_base_tax = 1 
-			add_base_production = 2 
 		}
 	}
 	removed_effect = {}
@@ -1283,8 +1237,7 @@ Quantity-Infra = {
 	movement_speed = 0.05
 	reinforce_speed = 0.2
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1307,8 +1260,7 @@ Trade-Infra = {
 	global_own_trade_power = 0.15
 	embargo_efficiency = 0.25
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1330,8 +1282,7 @@ Maritime-Infra = {
 	
 	state_governing_cost = -0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1354,8 +1305,7 @@ Admin-Pluto = {
 	republican_tradition = 0.2
 	parliament_backing_chance = 0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1378,8 +1328,7 @@ Admin-Advancement = {
 	governing_capacity_modifier = 0.1
 	monthly_reform_progress_modifier = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1401,8 +1350,7 @@ Admin-Offensive = {
 	
 	army_tradition_from_battle = 1.5
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1425,8 +1373,7 @@ GStaff-Admin = {
 	land_forcelimit_modifier = 0.1
 	monthly_reform_progress_modifier = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1448,8 +1395,7 @@ Quality-Admin = {
 	
 	global_tax_modifier = 0.25
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1471,8 +1417,7 @@ Admin-Espionage = {
 	
 	min_autonomy_in_territories = -0.15
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1494,8 +1439,7 @@ Admin-Explo = {
 	
 	reduced_liberty_desire_on_other_continent = 20
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1517,8 +1461,7 @@ Admin-Naval = {
 	global_sailors_modifier = 0.2
 	trade_company_investment_cost = -0.25
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1540,8 +1483,7 @@ Admin-Court = {
 	legitimacy = 1
 	yearly_government_power = 1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0

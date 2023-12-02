@@ -601,10 +601,8 @@ Eco-Mercenary = {
 	
 	mercenary_discipline = 0.05
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 	}
@@ -1077,8 +1075,7 @@ Trade-Horde = {
 	
 	cavalry_power = 0.1
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1102,8 +1099,7 @@ Trade-Merc = {
 	mercenary_cost = -0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1127,8 +1123,7 @@ Trade-Quantity = {
 	movement_speed = 0.05
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1151,8 +1146,7 @@ Explo-Pluto = {
 	global_manpower_modifier = 0.2
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1176,8 +1170,7 @@ Explo-Advance = {
 	mil_tech_cost_modifier = -0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1201,8 +1194,7 @@ Explo-Offensive = {
 	heavy_ship_power = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1226,8 +1218,7 @@ Explo-GStaff = {
 	infantry_power = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1251,8 +1242,7 @@ Explo-Quality = {
 	manpower_recovery_speed = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1275,10 +1265,8 @@ Aristo-Influence = {
 	vassal_forcelimit_bonus = 1
 	cavalry_power = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1300,10 +1288,8 @@ Divine-Influence = {
 	manpower_in_own_culture_provinces = 0.1
 	manpower_in_true_faith_provinces = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1325,10 +1311,8 @@ Horde-Influence = {
 	land_morale = 0.05
 	manpower_in_accepted_culture_provinces = 0.15
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1350,10 +1334,8 @@ Defensive-Influence = {
 	land_morale = 0.05
 	vassal_manpower_bonus = 0.25
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1375,10 +1357,8 @@ Merc-Influence = {
 	allow_client_states = yes
 	vassal_forcelimit_bonus = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1400,10 +1380,8 @@ Quantity-Influence = {
 	global_manpower = 0.1
 	vassal_forcelimit_bonus = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1425,10 +1403,8 @@ Pluto-Naval = {
 	global_ship_repair = 0.25
 	recover_army_morale_speed = 0.15
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1449,10 +1425,8 @@ Advancement-Naval = {
 
 	hull_size_modifier = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1474,10 +1448,8 @@ Offensive-Naval = {
 	regiment_disembark_speed = 0.1
 	siege_blockade_progress = 2
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1499,10 +1471,8 @@ GStaff-Naval = {
 	leader_land_fire = 1
 	max_admiral_fire = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1524,10 +1494,8 @@ Quality-Naval = {
 	number_of_cannons_flagship_modifier = 5
 	flagship_durability = 2.5
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}

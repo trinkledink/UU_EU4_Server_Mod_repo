@@ -59,8 +59,8 @@ Inno-Maritime = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	admiral_skill_gain_modifier = 1.5
 	disengagement_chance = 0.15
+	admiral_skill_gain_modifier = 1.5
 	
 	effect = {
 
@@ -168,10 +168,8 @@ Court-Religious = {
 	max_absolutism = 10
 	max_absolutism_effect = 0.2
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 	}
