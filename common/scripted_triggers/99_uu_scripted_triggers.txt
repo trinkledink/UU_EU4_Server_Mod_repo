@@ -431,3 +431,17 @@ is_valid_for_subject_march_ideas = {
     overlord = { full_idea_group = influence_ideas }
 	NOT = { has_idea_group = subject_vassal_ideas }
 }
+is_kitara_lake_province = {
+    OR = {
+        area = imatong_area
+        area = urgoma_area
+        area = western_rift_area
+        area = uganda_area
+        area = buzinza_area
+        area = rwanda_area
+        area = buha_area
+        area = tanzania_area
+        area = kenya_area
+        area = bunyoro_area
+    }
+}
