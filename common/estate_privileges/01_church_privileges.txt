@@ -731,7 +731,10 @@ estate_church_inwards_perfection = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
-		religion_group = eastern
+		OR = {	
+			religion_group = eastern
+			has_country_modifier = uu_kitara_isolationism
+		}
 		NOT = { has_country_flag = mng_outward_perfection_flag } 
 		NOT = { has_government_mechanic = perfectionism_mechanic }
 	}

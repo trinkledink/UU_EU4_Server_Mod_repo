@@ -1084,6 +1084,7 @@ tribe_settle_the_land_reform = {
     modifiers = {
         colonists = 2
         global_colonial_growth = 25
+		colony_development_boost = 1
         range = -0.99
     }
 }

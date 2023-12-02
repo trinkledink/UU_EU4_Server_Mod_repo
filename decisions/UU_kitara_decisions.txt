@@ -1,0 +1,69 @@
+country_decisions = {
+    uu_kitara_embrace_isolationism = {
+        potential = {
+            tag = KIT 
+			NOT = { has_country_flag = uu_kitara_isolationism_flg }
+        }
+		major = yes
+		
+        allow = {
+           all_province = {
+				limit = {
+					is_kitara_lake_province = yes
+				}
+				is_core = ROOT
+		   }
+		}
+        effect = {
+        	custom_tooltip = uu_kitara_enable_inwards_perfection
+			set_country_flag = uu_kitara_isolationism_flg
+			add_country_modifier = {
+				name = "uu_kitara_isolationism"
+				duration = -1
+		   }
+        }
+    }
+}
+country_decisions = {
+    uu_kitara_embrace_irrigate_savanna = {
+        potential = {
+            tag = KIT 
+			NOT = { has_country_flag = uu_kitara_savanna_flg }
+        }
+		major = yes
+		
+        allow = {
+            4064 = {				#Great Lakes Trade Node
+				all_trade_node_member_province = {
+					OR = {
+						AND = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						is_sea = yes
+						is_wasteland = yes
+					}
+				}
+       		}
+			adm_tech = 10
+		}
+        effect = {
+			set_country_flag = uu_kitara_savanna_flg
+			add_years_of_income = -2
+			add_adm_power = -200
+			4064 = {				#Great Lakes Trade Node
+				every_trade_node_member_province = {
+					limit = {
+						has_terrain = savannah
+						is_sea = no
+						is_wasteland = no
+					}
+					add_province_modifier = {
+						name = "uu_kitara_savanna_irrigation"
+						duration = -1
+					} 
+				}
+       		}
+        }
+    }
+}

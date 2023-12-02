@@ -72,18 +72,11 @@ uu_great_lakes_renaissance = {
 		events = {
 		}
 		random_events = { 
-			1000 = 0
-			 100 = uu_kitara.3			#urbanization
-			 100 = uu_kitara.4			#Chose trade goods		
-			 50 = uu_kitara.5			#Advisor choins court
-			 100 = war_of_the_roses.5
-			# #6 is triggere from on battle	
-			# 100 = war_of_the_roses.7
-			# 100 = war_of_the_roses.8	
-			# 100 = war_of_the_roses.9
-			#10 & 11 is triggered from siege won
-			#12 % 13 triggers for other nations, and fires 14.
-			#101 & 102 are endings for rebel victory.
+			2000 = 0
+			160 = uu_kitara.3			#urbanization
+			90 = uu_kitara.4			#Chose trade goods		
+			40 = uu_kitara.5			#Advisor choins court
+			110 = uu_kitara.6	#Inno and Gov Reforms
 		}
 	}
 }

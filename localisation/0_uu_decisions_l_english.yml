@@ -97,5 +97,9 @@
  #Transports Decision
  uu_replace_transports_title:0 "Replace Transports with Transport Light Ship"
   uu_replace_transports_desc:0 "Every owned Cog will be deleted and replaced with a Transport Light Ship at the cost of 8 ducats each. Replacement units will spawn at a port in your country."
- 
+ #Kitara
+ uu_kitara_embrace_isolationism_title:0 "Embrace Isolationism"
+ uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensive. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum"
+  uu_kitara_embrace_irrigate_savanna_title:0 "Savanna Irrigation"
+  uu_kitara_embrace_irrigate_savanna_desc:0 "With some planning and monetary investment we could improve the fertility of the savanna"
  

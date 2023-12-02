@@ -221,6 +221,13 @@ uu_shaman_vision_quest = {
 uu_kitara_colonies = {
 	colony_development_boost = 1
 }
+uu_kitara_isolationism = {
+	global_allowed_num_of_manufactories = 1
+}
+uu_kitara_savanna_irrigation = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.1
+}
 
 #timurids
 uu_tim_declared_for_herat_mod = {
