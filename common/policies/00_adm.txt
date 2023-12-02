@@ -142,8 +142,8 @@ Inno-Espionage = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	diplomats = 1
 	technology_cost = -0.05
+	global_unrest = 2
 	
 	effect = {
 
@@ -468,6 +468,7 @@ Pluto-Humanist = {
 	}
 	
 	global_trade_goods_size_modifier = 0.1
+	global_unrest = -2
 	
 	effect = {}
 	removed_effect = {}
@@ -972,7 +973,7 @@ GStaff-Economic = {
 		full_idea_group = economic_ideas
 	}
 	
-	yearly_army_professionalism = 0.005
+	leader_cost = -0.15
 	land_maintenance_modifier = -0.1
 	
 	effect = {}
@@ -1267,6 +1268,29 @@ Trade-Infra = {
 	}
 }
 
+Infra-Influence = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = influence_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = influence_ideas
+		full_idea_group = infrastructure_ideas
+	}
+	
+	accept_vassalization_reasons = 15
+	improve_relation_modifier = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
 Maritime-Infra = {
 	monarch_power = ADM
 	
@@ -1445,6 +1469,7 @@ Admin-Explo = {
 		factor = 1.0
 	}
 }
+
 Admin-Naval = {
 	monarch_power = ADM
 	
@@ -1467,6 +1492,7 @@ Admin-Naval = {
 		factor = 1.0
 	}
 }
+
 Admin-Court = {
 	monarch_power = ADM
 	
@@ -1480,8 +1506,8 @@ Admin-Court = {
 		full_idea_group = court_ideas
 	}
 	
-	legitimacy = 1
 	yearly_government_power = 1
+	advisor_cost = -0.1
 	
 	effect = {}
 	removed_effect = {}

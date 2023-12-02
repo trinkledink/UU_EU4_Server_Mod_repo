@@ -183,6 +183,10 @@ country_event = {
 		OR = {
 			heir_age = 15
 			has_heir = no
+			AND = {
+				heir_age = 10
+				ai = no
+			}
 		}
 		if = {
 			limit = {
@@ -246,6 +250,8 @@ country_event = {
 		set_country_flag = hun_keep_ladislaus_alive
 		define_ruler = {
 			regency = yes
+			name = "Mihály"			#UU historical
+			dynasty = "Szilágyi"
 			ADM = 2
 			DIP = 2
 			MIL = 2
