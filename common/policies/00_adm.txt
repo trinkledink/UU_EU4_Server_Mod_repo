@@ -241,8 +241,8 @@ Aristo-Religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	global_tax_modifier = 0.25
-	all_estate_loyalty_equilibrium = 0.05
+	global_tax_modifier = 0.2
+	global_autonomy = -0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -271,7 +271,21 @@ Holy-Stab-Grenade = {
 		add_war_exhaustion = -10
 	}
 	removed_effect = {
-		add_stability = -3
+		if = {
+			limit = { stability = 0 }
+			add_stability = -3
+		} else_if = {
+			limit = { stability = -1 }
+			add_stability = -2
+			add_adm_power = -100
+		} else_if = {
+			limit = { stability = -2 }
+			add_stability = -1
+			add_adm_power = -200
+		} else = {
+			limit = { stability = -3 }
+			add_adm_power = -300
+		}
 	}
 	ai_will_do = {
 		factor = 0
@@ -868,29 +882,6 @@ Maritime-Expansion = {
 	}
 }
 
-Maritime-Expansion = {
-	monarch_power = ADM
-	
-	potential = {
-		has_idea_group = maritime_ideas
-		has_idea_group = expansion_ideas
-	}
-	
-	allow = {
-		full_idea_group = maritime_ideas
-		full_idea_group = expansion_ideas
-	}
-	
-	naval_forcelimit_modifier = 0.15
-	ship_power_propagation = 0.1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
 Eco-Pluto = {
 	monarch_power = ADM
 	
@@ -997,6 +988,7 @@ Quality-Eco = {
 	}
 	
 	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -1417,7 +1409,7 @@ Quality-Admin = {
 		full_idea_group = administrative_ideas
 	}
 	
-	global_tax_modifier = 0.25
+	global_tax_modifier = 0.33
 	
 	effect = {}
 	removed_effect = {}

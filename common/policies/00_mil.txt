@@ -1282,7 +1282,7 @@ Explo-Quality = {
 	}
 	
 	land_attrition = -0.25
-	manpower_recovery_speed = 0.1
+	fire_damage = 0.1
 
 	
 	effect = {}
