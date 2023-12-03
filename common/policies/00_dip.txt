@@ -471,6 +471,53 @@ Infra-Espionage = {
 	}
 }
 
+Infra-Espionage = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = spy_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = spy_ideas
+		full_idea_group = infrastructure_ideas
+	}
+
+	siege_ability = 0.15
+
+	effect = {}
+	removed_effect = {}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Infra-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = infrastructure_ideas
+	}
+
+	state_maintenance_modifier = -0.25
+	global_prosperity_growth = 0.1
+
+	effect = {}
+	removed_effect = {}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
 Admin-Trade = {
 	monarch_power = DIP
 
@@ -1277,32 +1324,6 @@ Offensive-Maritime = {
 
 	effect = {}
 	removed_effect = {}
-	
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
-GStaff-Maritime = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = general_staff_ideas
-		has_idea_group = maritime_ideas
-	}
-	
-	allow = {
-		full_idea_group = general_staff_ideas
-		full_idea_group = maritime_ideas
-	}
-
-	max_flagships = 1
-	country_diplomatic_power = -1
-
-	effect = {}
-	removed_effect = {
-		add_dip_power = -500
-	}
 	
 	ai_will_do = {
 		factor = 1.0
