@@ -954,7 +954,7 @@ Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
 	removed_effect = {
 		add_country_modifier = {
 			name = uu_offensive_espio_mod
-			duration = 3650
+			duration = 365
 		}
 	}
 	ai_will_do = {
