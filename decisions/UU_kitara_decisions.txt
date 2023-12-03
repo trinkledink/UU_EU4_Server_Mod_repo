@@ -7,12 +7,12 @@ country_decisions = {
 		major = yes
 		
         allow = {
-           all_province = {
-				limit = {
+			NOT = {
+				any_province = {
 					is_kitara_lake_province = yes
+					NOT = { is_core = ROOT }
 				}
-				is_core = ROOT
-		   }
+			}
 		}
         effect = {
         	custom_tooltip = uu_kitara_enable_inwards_perfection
@@ -20,11 +20,9 @@ country_decisions = {
 			add_country_modifier = {
 				name = "uu_kitara_isolationism"
 				duration = -1
-		   }
+		    }
         }
     }
-}
-country_decisions = {
     uu_kitara_embrace_irrigate_savanna = {
         potential = {
             tag = KIT 
@@ -33,24 +31,16 @@ country_decisions = {
 		major = yes
 		
         allow = {
-            4064 = {				#Great Lakes Trade Node
-				all_trade_node_member_province = {
-					OR = {
-						AND = {
-							owned_by = ROOT
-							is_city = yes
-						}
-						is_sea = yes
-						is_wasteland = yes
-					}
+			NOT = {
+				any_province = {
+					is_kitara_lake_province = yes
+					NOT = { is_core = ROOT }
 				}
-       		}
+			}
 			adm_tech = 10
+			full_idea_group = infrastructure_ideas
 		}
-        effect = {
-			set_country_flag = uu_kitara_savanna_flg
-			add_years_of_income = -2
-			add_adm_power = -200
+        hidden_effect = {
 			4064 = {				#Great Lakes Trade Node
 				every_trade_node_member_province = {
 					limit = {
@@ -64,6 +54,12 @@ country_decisions = {
 					} 
 				}
        		}
+		}
+		effect = {
+			set_country_flag = uu_kitara_savanna_flg
+			add_years_of_income = -2
+			add_adm_power = -200
+			custom_tooltip = "uu_kitara_savanna_irrigation.tt"
         }
     }
 }

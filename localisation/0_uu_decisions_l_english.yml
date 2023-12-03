@@ -102,4 +102,5 @@
  uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensive. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum"
   uu_kitara_embrace_irrigate_savanna_title:0 "Savanna Irrigation"
   uu_kitara_embrace_irrigate_savanna_desc:0 "With some planning and monetary investment we could improve the fertility of the savanna"
- 
+  uu_kitara_enable_inwards_perfection:0 "As long as this modifier is active we have access to the §Yinwards perfection§! clergy estete privilege. Should we §Gcore a province§! outside of the §YGreat Lakes Trade Node§! we will §R§!lose this modifier."
+  uu_kitara_savanna_irrigation.tt:0 "Every owned province in §YGreat Lakes§! trade node that is a §Ysavanna§! will receive §G-10% Development Cost§! and §G+1 Building Slot§!" 
