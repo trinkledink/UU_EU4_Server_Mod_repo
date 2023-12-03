@@ -143,7 +143,7 @@ Inno-Espionage = {
 	}
 	
 	technology_cost = -0.05
-	global_unrest = 2
+	global_unrest = -2
 	
 	effect = {
 

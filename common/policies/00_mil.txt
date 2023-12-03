@@ -1225,12 +1225,12 @@ Explo-Offensive = {
 	
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group = indigenous_ideas
+		has_idea_group = offensive_ideas
 	}
 	
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group = indigenous_ideas
+		full_idea_group = offensive_ideas
 	}
 	
 	privateer_efficiency = 0.15
@@ -1735,12 +1735,12 @@ Offensive-Court = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = indigenous_ideas
+		has_idea_group = offensive_ideas
 		has_idea_group = court_ideas
 	}
 
 	allow = {
-		full_idea_group = indigenous_ideas
+		full_idea_group = offensive_ideas
 		full_idea_group = court_ideas
 	}
 
