@@ -1420,7 +1420,7 @@ Quantity-Influence = {
 		full_idea_group = influence_ideas
 	}
 
-	global_manpower = 0.1
+	global_manpower_modifier = 0.1
 	vassal_forcelimit_bonus = 1
 
 	effect = {}
@@ -1443,7 +1443,7 @@ Pluto-Naval = {
 		full_idea_group = naval_ideas
 	}
 
-	global_ship_repair = 0.25
+	recover_navy_morale_speed = 0.15
 	recover_army_morale_speed = 0.15
 
 	effect = {}
