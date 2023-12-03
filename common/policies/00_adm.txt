@@ -578,9 +578,7 @@ Quality-Humanist = {
 	num_accepted_cultures = 1
 	tolerance_of_heathens_capacity = 1
 	
-	effect = {
-		create_general = { tradition = 100 }
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
