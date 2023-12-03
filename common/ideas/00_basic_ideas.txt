@@ -275,8 +275,9 @@ indigenous_ideas = {
 
 	trigger = {
 		is_tribal = yes
-		NOT = { has_reform = steppe_horde}
-		NOT = { has_reform = great_mongol_state_reform}
+		NOT = { has_reform = steppe_horde }
+		NOT = { has_reform = great_mongol_state_reform }
+		NOT = { has_reform = tribal_federation }
 	}
 
 	indigenous_irregular_warfare = {
