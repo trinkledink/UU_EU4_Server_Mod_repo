@@ -228,6 +228,7 @@ country_event = {
 
 	trigger = {
 		tag = KIT
+		has_country_modifier = uu_kitara_isolationism
 		any_owned_province = {
 			is_core = ROOT
 			is_kitara_lake_province = no
