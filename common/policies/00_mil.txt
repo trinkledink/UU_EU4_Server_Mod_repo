@@ -1721,7 +1721,7 @@ Advancement-Court = {
 		full_idea_group = court_ideas
 	}
 
-	yearly_army_professionalism = 0.05
+	yearly_army_professionalism = 0.005
 	mil_advisor_cost = -0.25
 
 	effect = {}
