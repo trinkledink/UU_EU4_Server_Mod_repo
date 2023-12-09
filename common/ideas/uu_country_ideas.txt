@@ -420,7 +420,7 @@ TUN_ideas = { #Tunis
 }
 MOR_ideas = { #Morocco 
 	start = {
-		naval_attrition = -0.25
+		technology_cost = -0.1	#new
 		naval_forcelimit_modifier = 0.25
 	}
 	bonus = {
@@ -446,9 +446,11 @@ MOR_ideas = { #Morocco
 	}
 	mor_fleet = {
 		galley_power = 0.2
+		naval_attrition = -0.25	#from traditions
 	}
 	mor_pirate_republics = {
 		privateer_efficiency = 0.15
+		available_loot = 0.5
 	}
 	mor_powerful_viziers = {
 		same_culture_advisor_cost = -0.2
@@ -520,14 +522,14 @@ MAL_ideas = {		#mali
 	free = yes		# will be added at load
 
 	restore_malian_suzerainity = {
-		reduced_liberty_desire = 0.2 			#UU replaced, was 20% vassal income
+		reduced_liberty_desire = 20 			#UU replaced, was 20% vassal income
 	}
 	gold_of_bure = {
 		global_trade_goods_size_modifier = 0.1
 		treasure_fleet_income = 0.33		#UU added
 	}
 	reclamation_of_land = {
-		development_cost = 0.10					#UU replaced, was 10% MP
+		development_cost = -0.10					#UU replaced, was 10% MP
 	}
 	mandinka_warrior_spirit = {
 		discipline = 0.05
@@ -550,7 +552,7 @@ SON_ideas = {							#Songhai
 	}
 	
 	bonus = {
-		infantry_shock = 0.2				#UU added
+		infantry_shock = 0.25				#UU added
 	}
 	
 	trigger = {
@@ -579,7 +581,7 @@ SON_ideas = {							#Songhai
 		manpower_in_accepted_culture_provinces = 0.33			#UU added
 	}
 	trans_sahara_trade = {					
-		yearly_army_professionalism = 0.05			#UU added, CHANGE NAME
+		yearly_army_professionalism = 0.005			#UU added, CHANGE NAME
 	}
 }
 irish_ideas = { #idk why it isnt IRE_ideas, it was like this when I found it

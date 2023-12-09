@@ -10,45 +10,27 @@ normal_or_historical_nations = yes
 
 #UU UPDATED 1.36.1
 
-# #Crisis of the Maghreb (REMOVED)
-# country_event = {
-	# id = flavor_mor.1
-	# title = flavor_mor.1.t
-	# desc = flavor_mor.1.d
-	# picture = FAMINE_eventPicture
-	
-	# fire_only_once = yes
-	
-	# trigger = {
-		# always = no #it will never happen.
-		# tag = MOR
-		# NOT = { is_year = 1450 }
-	# }
-	
-	# mean_time_to_happen = {
-		# months = 300000000000 #it will never happen.
-	# }
+country_event = {		#UU introduce Wattasid chain
+	id = flavor_mor.0
+	title = flavor_mor.0.t
+	desc = flavor_mor.0.desc
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
 
-	# option = {
-		# name = flavor_mor.1.a #Let them try! We shall rise again!
-		# add_country_modifier = {
-			# name = "mor_crisis"
-			# duration = 1825
-		# }
-		# every_known_country = {
-			# limit = {
-				# capital_scope = {
-					# region = maghreb_region
-				# }
-			# }
-			# add_country_modifier = {
-				# name = "mor_crisis"
-				# duration = 1825
-			# }
-			# country_event = { id = flavor_mor.11 }
-		# }
-	# }
-# }
+	fire_only_once = yes 
+	is_triggered_only = yes 
+
+	trigger = {
+		tag = MOR
+		has_ruler_flag = uumor_wattasids_flag
+	}
+
+	option = {
+		name = flavor_mor.0.a
+		custom_tooltip = uumor_wattasid_startup_tt
+	}
+}
+
+#Crisis of the Maghreb (REMOVED)
 
 #Moorish Refugees
 country_event = {
@@ -135,7 +117,7 @@ country_event = {
 	}
 }
 
-#The Wattasid Viziers - Foreboding
+#The Wattasid Viziers - Foreboding	UU changed
 country_event = {
 	id = flavor_mor.5
 	title = flavor_mor.5.t
@@ -157,22 +139,36 @@ country_event = {
 		name = flavor_mor.5.a #A great man has passed away
 		add_piety = -0.05
 		set_country_flag = mor_death_of_yahya
+		add_stability = -1
+		define_ruler = {
+			name = "'Alî"
+			dynasty = "Wattasid"
+			culture = berber
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+		add_ruler_modifier = {	#he will die soon by event anyway
+			name = "uu_plot_armour"
+			duration = 3650
+			hidden = yes
+		}
+		set_ruler_flag = uumor_wattasids_flag
 	}
 	
 }
 
-#A Wattasid Conspiracy?
+#A Wattasid Conspiracy?			UU Changed
 country_event = {
 	id = flavor_mor.6
 	title = flavor_mor.6.t
-	desc = flavor_mor.6.d
+	desc = flavor_mor.6.duu
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
 		tag = MOR
-		has_country_flag = mor_death_of_yahya
 		NOT = { is_year = 1490 }
 	}
 	
@@ -183,19 +179,50 @@ country_event = {
 	option = {
 		name = flavor_mor.6.a #Kill them all!
 		ai_chance = { factor = 1 }
-		add_stability = -1
+		if = {
+			limit = { 				#Wat ruler, Wat heir
+				dynasty = "Wattasid" 
+				heir_has_ruler_dynasty = yes
+			}
+			kill_ruler = yes
+			define_ruler = { dynasty = "Marinid" }
+			kill_heir = { allow_new_heir = no }
+		} 	
+		else_if = {					#Wat ruler, Mar heir
+			limit = { 
+				dynasty = "Wattasid" 
+				OR = {
+					heir_has_ruler_dynasty = no
+					has_heir = no
+				}
+			}
+			kill_ruler = yes
+		} 
+		else = { 					#Mar ruler, any heir
+			add_stability = -1 
+		}	
+		custom_tooltip = uumor_add_stats_tt
+		hidden_effect = {
+			change_adm = 2
+			change_mil = 2
+		}
+		add_country_modifier = {
+			name = uumor_unrest_mod
+			duration = 1825
+		}
 		country_event = { id = flavor_mor.7 days = 30 }
 	}
 	
 	option = {
 		name = flavor_mor.6.b #They remain our trusted advisors.
 		ai_chance = { factor = 0 }
+		add_stability = 1
 		set_country_flag = mor_wattasid_power
 	}
 	
 }
 
-#Wattasid Revolt
+#Wattasid Revolt			UU Changed
 country_event = {
 	id = flavor_mor.7
 	title = flavor_mor.7.t
@@ -217,11 +244,11 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 3
+				size = 2
 				culture = berber
 				religion = sunni
 				leader = "Muhammad"
-				leader_dynasty = "ibn Yahya Wattasid"
+				leader_dynasty = "Wattasid"
 			}
 		}
 	}
@@ -243,7 +270,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 15	#UU Halved
 	}
 	
 	immediate = {
@@ -254,11 +281,18 @@ country_event = {
 		name = flavor_mor.8.a #Abdicate
 		ai_chance = { factor = 50 }
 		add_stability = -2
-		define_ruler = {
-			name = "Muhammad I"
-			dynasty = "Wattasid"
-			culture = berber
+		if = {
+			limit = { NOT = { dynasty = "Wattasid"} }
+			define_ruler = {
+				name = "Muhammad I"
+				dynasty = "Wattasid"
+				culture = berber
+			}
+		} else = { 
+			clr_ruler_flag = uumor_wattasids_flag 
+			define_general = { name = "Muhammad Wattasid" }
 		}
+		
 		if = {
 			limit = {
 				has_states_general_mechanic = yes
@@ -276,17 +310,18 @@ country_event = {
 	option = {
 		name = flavor_mor.8.b #This is my Throne!
 		ai_chance = { factor = 50 }
+		trigger = { NOT = { dynasty = "Wattasid"} }
 		random_owned_province = {
 			limit = {
 				is_capital = no
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 3
+				size = 2
 				religion = sunni
 				culture = berber
 				leader = "Muhammad"
-				leader_dynasty = "ibn Yahya Wattasid"
+				leader_dynasty = "Wattasid"
 			}
 		}
 	}
@@ -597,6 +632,38 @@ country_event = {
 				name = "mor_looks_inward"
 				duration = 7300
 			}
+		}
+	}
+}
+
+country_event = {	#backend event
+	id = flavor_mor.999
+	title = flavor_mor.999.t
+	desc = flavor_mor.999.desc
+	picture = ANGRY_MOB_eventPicture
+	hidden = yes 
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ruler_flag = uumor_wattasids_flag 
+	}
+
+	option = {
+		name = flavor_mor.999.a
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			change_variable = {
+				which = uu_deadheir_counter_var
+				value = -1
+			}
+		}
+		define_heir = {
+			dynasty	= "Marinid"
+			claim = 100
+			block_disinherit = yes
 		}
 	}
 }

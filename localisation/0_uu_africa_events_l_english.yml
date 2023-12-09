@@ -73,3 +73,11 @@
  uu_kitara.8.t:0 "End of isolationism"
  uu_kitara.8.d:0 "We have abandoned our totaly inwards focused policy. It's time Kitara opens up to the world"
  uu_kitara.8.a:0 "Is this a good thing?"
+
+ flavor_mor.0.t:0 "The Wattasid Viziers"
+  flavor_mor.0.desc:0 "Ever since the Sultan 'Abd al-Haqq II was an infant, his rule has been dominated by the Wattasid family of viziers, who have amassed enough power and popularity to the point where the Sultan, now a grown man, cannot dislodge them from power without causing a revolt. Though the Marinid dynasty rules Morocco in name, it is the Wattasids under the incredibly popular and politically savvy Abû Zakariyâ Yahyâ who control the government and collect the taxes. However, as the Sultan grows into his political prime and the Vizier grows out of it, the once unshakeable hold on power held by the viziers may soon begin to weaken..."
+  flavor_mor.0.a:0 "Is this the future of Morocco?"
+ uumor_wattasid_startup_tt:0 "§YWhile the Wattasids hold power in a hereditary regency, the Marinid sultans will not be permitted to rule.\n\nAny attempt by the Marinids to regain power will surely lead to bloodshed, but a victorious Marinid ruler will surely become a better ruler for it.§!"
+ flavor_mor.6.duu:0 "The discontent among the Marinids has reached its apex. The legendary Abu Zakariya is dead, and it is now clear to all in the Sultan's family the extent of the Wattasid domination of the state - indeed, the Sultan himself is fully convinced the Wattasids have been conspiring to keep his house from power indefinitely and eventually to seize the throne of Morocco for themselves, and to that end he has gathered his forces to massacre the entire Wattasid family in one fell swoop while he has the means to do so."
+ uumor_add_stats_tt:0 "§GThe new ruler will gain 2 £adm£ and 2 £mil£.§!"
+ uumor_unrest_mod:0 "Wattasids Massacred"

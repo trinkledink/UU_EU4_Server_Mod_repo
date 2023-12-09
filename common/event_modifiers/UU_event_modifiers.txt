@@ -250,6 +250,14 @@ uu_tim_declared_for_herat_mod = {
 	global_regiment_cost = -0.1
 }
 
+#morocco
+uumor_unrest_mod = {
+	global_unrest = 2
+}
+uumor_heir_cooldown_hidden_mod = {
+	#N/A
+}
+
 #Canal 
 uu_closed_canal_mod = {
 	province_trade_power_value = 0.01

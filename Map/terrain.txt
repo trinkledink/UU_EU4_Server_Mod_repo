@@ -231,7 +231,7 @@ categories =  {
 			4840 # Mandala
 			
 			4856
-			703 4960 4961 4966 4967 4969 4974 4975 5003 5008 #UU changed
+			703 4960 4961 4966 4967 4969 4974 4975 5003 5008 226 #UU changed
 		}
 	}
 
@@ -319,7 +319,7 @@ categories =  {
 		supply_limit = 4
 		
 		terrain_override = {
-			210	226 # Spain
+			210 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
 			4236 #Slovakia
@@ -665,6 +665,8 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			
 			2736 4863 4861 4855 1094 2733
+
+			5017
 		}
 	}
 
