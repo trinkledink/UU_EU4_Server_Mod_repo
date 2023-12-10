@@ -107,3 +107,18 @@
 367 = "Açores"
 1995 = "Micronésia"
 4720 = "Genebra"
+
+#UU 
+596 = "Malaca"
+668 = "Amacão"
+5004 = "Tamão"
+2149 = "Liampó"
+1829 = "Chincheu"
+4399 = "Sirião"
+1164 = "Rio Benito"
+5009 = "Camarões"
+1205 = "Mogadíscio"
+529 = "Bombaim"
+2258 = "Cabo Corso"
+1119 = "Costa da Pimenta"
+5017 = "Alcácer-Quibir"

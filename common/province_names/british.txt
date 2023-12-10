@@ -23,6 +23,9 @@
 1639 = "Madras" #Chennai 
 540 = "Pondicherry"
 546 = "Dacca"
+224 = "Seville"
+232 = "Braganza"
+334 = "Tangier"
 
 356 = "Benghazi"
 357 = "Derna"

@@ -122,3 +122,4 @@
 529 = "Bombaim"
 2258 = "Cabo Corso"
 1119 = "Costa da Pimenta"
+5017 = "Alcácer-Quibir"
