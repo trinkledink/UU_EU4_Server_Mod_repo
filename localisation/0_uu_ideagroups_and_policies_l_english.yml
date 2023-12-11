@@ -121,6 +121,7 @@
  Quantity-Humanist:0 "§OQuantity-Humanist§!"
   desc_Quantity-Humanist:0 "§YOn Revoke: Adds §G2§! years of manpower.§!"
  GStaff-Humanist:0 "§OGStaff-Humanist§!"  
+ GStaff-Maritime:0 "§OGStaff-Maritime§!"  
  Admin-Mercenary:0 "§OAdmin-Mercenary§!"
   desc_Admin-Mercenary:0 "§YWhile Active: Mercenary regiments gain §G+10%§! Infantry Combat Ability.§!"
   uu_eco_merc_mod:0 "Eco-Mercenary"
