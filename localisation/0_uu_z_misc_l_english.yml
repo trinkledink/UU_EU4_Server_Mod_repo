@@ -16,6 +16,8 @@
   uu_better_weapons_manus_priv_tt:0 "All provinces with §YWeapons Manufactories§! will gain §G+0.33 Local Goods Produced§! and §G+5 Local Trade Power§! when the country or any neighbour is §Rat war§!."
   uu_better_weapons_manus_priv_revoke_tt:0 "The modifier '§YPlutocratic Military Industry§!' is removed from all provinces with a §YWeapons Manufactory§!."
   uu_better_weapons_manus_priv_mod:0 "Plutocratic Military Industry"
+ uu_estate_nomadic_tribes_mana_privilege:0 "Tribal Intellectualism"
+  uu_estate_nomadic_tribes_mana_privilege_desc:0 "FOR DA HORDE!"
  #Merc Companies
  merc_cav_free_company:0 "Free Cav Company"
  merc_ideas_frontline:0 "Frontline Company"
