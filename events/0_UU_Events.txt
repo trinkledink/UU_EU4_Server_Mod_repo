@@ -524,7 +524,7 @@ country_event = {
 	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	trigger = {
-		has_estate = estate_nomadic_tribes
+		has_estate_privilege = uu_estate_nomadic_tribes_mana_privilege
 		NOT = { has_ruler_modifier = sca_administrative_focus }
 		NOT = { has_ruler_modifier = sca_diplomatic_focus }
 		NOT = { has_ruler_modifier = sca_military_focus }
