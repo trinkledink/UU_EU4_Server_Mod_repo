@@ -11139,7 +11139,7 @@ failed_monsoon = {
 }
 
 good_monsoon_modifier = {
-	development_cost = -0.2
+	local_development_cost = -0.2
 }
 
 company_drought = {

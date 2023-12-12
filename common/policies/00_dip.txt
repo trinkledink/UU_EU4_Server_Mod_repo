@@ -59,8 +59,8 @@ Inno-Maritime = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	admiral_skill_gain_modifier = 1.5
 	disengagement_chance = 0.15
+	admiral_skill_gain_modifier = 1.5
 	
 	effect = {
 
@@ -168,10 +168,8 @@ Court-Religious = {
 	max_absolutism = 10
 	max_absolutism_effect = 0.2
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 	}
@@ -337,29 +335,6 @@ Court-Expansion = {
 	}
 }
 
-Court-Expansion = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = court_ideas
-		has_idea_group = expansion_ideas
-	}
-	
-	allow = {
-		full_idea_group = court_ideas	
-		full_idea_group = expansion_ideas
-	}
-	
-	monthly_splendor = 2
-	prestige = 1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
 Eco-Trade = {
 	monarch_power = DIP
 	
@@ -473,29 +448,6 @@ Infra-Naval = {
 	}
 }
 
-Infra-Naval = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = infrastructure_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = infrastructure_ideas
-	}
-	
-	state_maintenance_modifier = -0.25
-	global_prosperity_growth = 0.1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1.0
-	}
-}
-
 Infra-Espionage = {
 	monarch_power = DIP
 
@@ -510,6 +462,30 @@ Infra-Espionage = {
 	}
 
 	siege_ability = 0.15
+
+	effect = {}
+	removed_effect = {}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Infra-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = infrastructure_ideas
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = infrastructure_ideas
+	}
+
+	state_maintenance_modifier = -0.25
+	global_prosperity_growth = 0.1
 
 	effect = {}
 	removed_effect = {}
@@ -581,7 +557,7 @@ Admin-Maritime = {
 	}
 
 	naval_forcelimit_modifier = 0.15
-	ship_trade_power_modifier = 0.1
+	ship_power_propagation = 0.15
 
 	effect = {}
 	removed_effect = {}
@@ -1153,7 +1129,8 @@ Divine-Naval = {
 		full_idea_group = naval_ideas
 	}
 
-	movement_speed_in_fleet_modifier = 0.1
+	movement_speed_in_fleet_modifier = 1
+	global_ship_cost = -0.1
 
 	effect = {}
 	removed_effect = {}
@@ -1259,6 +1236,150 @@ Quantity-Naval = {
 	}
 }
 
+Pluto-Maritime = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	light_ship_power = 0.5
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Advancement-Maritime = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = indigenous_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = indigenous_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	capture_ship_chance = 0.2
+	naval_attrition = -0.1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Offensive-Maritime = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	landing_penalty = -1
+	regiment_disembark_speed  = 0.2
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+GStaff-Maritime = {	#Lose dip on revoke
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	max_flagships = 1
+	country_diplomatic_power = -1
+
+	effect = {}
+	removed_effect = {
+		add_dip_power = -500
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Quality-Maritime = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	ship_durability = 0.05
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Aristo-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = court_ideas
+	}
+
+	max_absolutism = 10
+	yearly_absolutism = 1
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
 Court-Divine = {	##Allows good expansionist zealotry
 	monarch_power = DIP 
 
@@ -1280,6 +1401,119 @@ Court-Divine = {	##Allows good expansionist zealotry
 	removed_effect = {
 		clr_country_flag = improved_expansionist_zealotry
 	}
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Horde-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = court_ideas
+	}
+
+	move_capital_cost_modifier = -0.5
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Defensive-Court = {	#BUFF CAPITAL
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = court_ideas
+	}
+
+	fort_maintenance_modifier = -0.1
+
+	effect = {
+		capital_scope = {
+			add_province_modifier = {
+				name = uu_def_court_capital_mod
+				duration = -1
+			}
+			every_province_in_state = { 
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = uu_def_court_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		every_owned_province = {
+			remove_province_modifier = uu_def_court_mod
+			remove_province_modifier = uu_def_court_capital_mod
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Mercenary-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = court_ideas
+	}
+
+	global_rebel_suppression_efficiency = 2
+	loyalty_change_on_revoked = 0.05
+
+	effect = {}
+	removed_effect = {}
+	
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+Quantity-Court = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = court_ideas
+	}
+
+	advisor_cost = -0.15
+	reduced_liberty_desire = 15
+
+	effect = {}
+	removed_effect = {}
+	
 	ai_will_do = {
 		factor = 1.0
 	}

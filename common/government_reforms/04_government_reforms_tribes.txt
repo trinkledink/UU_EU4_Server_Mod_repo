@@ -49,7 +49,7 @@ steppe_horde = {
 	}
 	custom_attributes = {
 		enables_horde_idea_group = yes
-		enables_aristocratic_idea_group = no
+		enables_natives_idea_group = no
 	}
 	ai = {
 		factor = 1000
@@ -118,6 +118,10 @@ tribal_federation = {
 		government_abilities = {
 			tribal_federation_mechanic
 		}
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+		enables_natives_idea_group = no
 	}
 	ai = {
 		factor = 0
@@ -1084,6 +1088,7 @@ tribe_settle_the_land_reform = {
     modifiers = {
         colonists = 2
         global_colonial_growth = 25
+		colony_development_boost = 1
         range = -0.99
     }
 }

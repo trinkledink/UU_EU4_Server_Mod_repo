@@ -5,7 +5,7 @@ country_event = {								#Starter
 	id = uu_kitara.1
 	title = "uu_kitara.1.t"
 	desc = "uu_kitara.1.d"
-	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+	picture = SONGHAI_eventPicture
 	
 	is_triggered_only = yes
 
@@ -16,16 +16,17 @@ country_event = {								#Starter
 	
 	option = {
 		name = "uu_kitara.1.a"
-		add_adm_power = 40
-		add_dip_power = 40
-		add_mil_power = 40
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		change_government_reform_progress = 100
 	}
 }
 country_event = {								#Starter	
 	id = uu_kitara.2
 	title = "uu_kitara.2.t"
 	desc = "uu_kitara.2.d"
-	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 	
@@ -36,27 +37,208 @@ country_event = {								#Starter
 country_event = {
 	id = uu_kitara.3
 
-	title = "uu_kitara.2.t"
-	desc = "uu_kitara.2.d"
-	picture = CATHOLIC_RULERS_PRAYING_eventPicture
+	title = "uu_kitara.3.t"
+	desc = "uu_kitara.3.d"
+	picture = GREAT_BUILDING_eventPicture
 	goto = uu_kitara_urbanization_target
 
+	trigger = {
+		any_owned_province = {
+			NOT = { has_province_flag = uu_kitara_urbanization_target }
+		}
+	}
 	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					is_overseas = no
-					is_city = yes
+			4064 = {							#Great Lakes
+				random_trade_node_member_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						NOT = { has_province_flag = uu_kitara_urbanization_target }
+						owned_by = ROOT
+					}
+					save_event_target_as = uu_kitara_urbanization_target
+					set_province_flag = uu_kitara_urbanization_target
 				}
-				save_event_target_as = uu_kitara_urbanization_target
-				
 			}
 		}
 	}
 	option = {
 		name = "uu_kitara.3.a"
+		event_target:uu_kitara_urbanization_target = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+country_event = {
+	id = uu_kitara.4
 
+	title = "uu_kitara.4.t"
+	desc = "uu_kitara.4.d"
+	picture = AFRICAN_CARAVAN_eventPicture
+	goto = uu_kitara_goods_target
+
+	trigger = {
+		4064 = {							#Great Lakes
+			any_trade_node_member_province = {
+				is_overseas = no
+				is_city = yes
+				OR = {
+					trade_goods = livestock
+					trade_goods = grain
+					trade_goods = slaves
+					trade_goods = fish
+				}
+				owned_by = ROOT
+			}
+		}
+	}
+	is_triggered_only = yes
+
+
+	immediate = {
+		hidden_effect = {
+			4064 = {							#Great Lakes
+				random_trade_node_member_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						OR = {
+							trade_goods = livestock
+							trade_goods = grain
+							trade_goods = slaves
+							trade_goods = fish
+						}
+						owned_by = ROOT
+					}
+					save_event_target_as = uu_kitara_goods_target
+				}
+			}
+		}
+	}
+	option = {
+		name = "uu_kitara.4.a"
+		event_target:uu_kitara_goods_target = {
+			change_trade_goods = cloth
+		}
+	}
+	option = {
+		name = "uu_kitara.4.b"
+		event_target:uu_kitara_goods_target = {
+			change_trade_goods = paper
+		}
+	}
+	option = {
+		name = "uu_kitara.4.c"
+		event_target:uu_kitara_goods_target = {
+			change_trade_goods = dyes
+		}
+	}
+	option = {
+		name = "uu_kitara.4.e"
+		event_target:uu_kitara_goods_target = {
+			add_base_manpower = 2
+		}
+	}
+}
+country_event = {
+	id = uu_kitara.5
+
+	title = "uu_kitara.5.t"
+	desc = "uu_kitara.5.d"
+	picture = WESTERNISATION_eventPicture
+	goto = uu_kitara_urbanization_target
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "uu_kitara.5.a"
+		define_advisor = {
+			type = socialreformer
+			skill = 2
+			discount = yes
+		}
+	}
+	option = {
+		name = "uu_kitara.5.b"
+		define_advisor = {
+			type = statesman
+			skill = 2
+			discount = yes
+		}
+	}
+	option = {
+		name = "uu_kitara.5.c"
+		define_advisor = {
+			type = army_reformer
+			skill = 2
+			discount = yes
+		}
+	}
+}
+country_event = {
+	id = uu_kitara.6
+
+	title = "uu_kitara.6.t"
+	desc = "uu_kitara.6.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "uu_kitara.6.a"
+		change_government_reform_progress = 25
+		change_innovativeness = 3
+	}
+}
+country_event = {
+	id = uu_kitara.7					#Buganda Purple
+
+	title = "uu_kitara.7.t"
+	desc = "uu_kitara.7.d"
+	picture = MALI_RULER_eventPicture
+
+	trigger = {
+		was_tag = BUG
+		tag = KIT
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "uu_kitara.7.a"
+		change_country_color = { color = { 21 21 227 } }
+	}
+	option = {
+		name = "uu_kitara.7.b"
+	}
+}
+country_event = {
+	id = uu_kitara.8					#remove modifier
+
+	title = "uu_kitara.8.t"
+	desc = "uu_kitara.8.d"
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = KIT
+		has_country_modifier = uu_kitara_isolationism
+		any_owned_province = {
+			is_core = ROOT
+			is_kitara_lake_province = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "uu_kitara.8.a"
+		remove_country_modifier = uu_kitara_isolationism
 	}
 }

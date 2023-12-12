@@ -19,7 +19,7 @@
  uu_sokoto_nation_title:0 "Establish the Sokoto Caliphate"
   uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a Caliphate to rule over the Hausa cities, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
  uu_kick_out_fulani_scholar_title:0 "Ban the Fulani Preachers"
- uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
+  uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
   uu_allow_sokoto_decision_tt:0 "Has the country modifier '§YFulani Preacher Accepted§!' from the event '§YFulani Preachers§!', which fires in the early 1500s."
  uu_macina_nation_title:0 "Establish the Massina Caliphate"
   uu_macina_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate based in the Massina, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
@@ -95,7 +95,12 @@
  amazon_brazil_strait:0 "Madeira River Shipping System"
   amazon_brazil_strait_tt:0 "Allows movement of troops between §Y[2934.GetName]§! and §Y[2900.GetName]§!"
  #Transports Decision
- uu_replace_transports:0 "Replace Transports with Transport Light Ship"
+ uu_replace_transports_title:0 "Replace Transports with Transport Light Ship"
   uu_replace_transports_desc:0 "Every owned Cog will be deleted and replaced with a Transport Light Ship at the cost of 8 ducats each. Replacement units will spawn at a port in your country."
- 
- 
+ #Kitara
+ uu_kitara_embrace_isolationism_title:0 "Embrace Isolationism"
+  uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensive. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum"
+ uu_kitara_embrace_irrigate_savanna_title:0 "Savanna Irrigation"
+  uu_kitara_embrace_irrigate_savanna_desc:0 "With some planning and monetary investment we could improve the fertility of the savanna"
+  uu_kitara_enable_inwards_perfection:0 "As long as this modifier is active we have access to the §YInwards Perfection§! clergy estate privilege. Should we §Gcore a province§! outside of the §YGreat Lakes Trade Node§! we will §R§!lose this modifier."
+  uu_kitara_savanna_irrigation.tt:0 "Every owned province in §YGreat Lakes§! trade node that is a §Ysavanna§! will receive §G-10% Development Cost§! and §G+1 Building Slot§!" 

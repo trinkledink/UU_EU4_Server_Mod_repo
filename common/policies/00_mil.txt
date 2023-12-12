@@ -417,7 +417,7 @@ Advancement-Expansion = {
 	}
 	
 	native_uprising_chance = -1
-	military_tactics = 0.05
+	military_tactics = 0.1
 	
 	effect = {}
 	removed_effect = {}
@@ -601,10 +601,8 @@ Eco-Mercenary = {
 	
 	mercenary_discipline = 0.05
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 	}
@@ -956,7 +954,7 @@ Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
 	removed_effect = {
 		add_country_modifier = {
 			name = uu_offensive_espio_mod
-			duration = 3650
+			duration = 365
 		}
 	}
 	ai_will_do = {
@@ -1012,7 +1010,7 @@ Espio-Quality = {
 	}	
 }
 
-Trade-Aristo = {
+Aristo-Trade = {
 	monarch_power = MIL
 	
 	potential = {
@@ -1035,7 +1033,7 @@ Trade-Aristo = {
 	}	
 }
 
-Trade-Divine = {
+Divine-Trade = {	#I DONT KNOW IF THIS IS BALANCED
 	monarch_power = MIL
 	
 	potential = {
@@ -1051,10 +1049,30 @@ Trade-Divine = {
 	enforce_religion_cost = -0.2
 	
 	effect = {
-		every_province = {
-			limit = { religion = ROOT }
-			ROOT = { add_manpower = 0.5 }
-		}
+		if = {
+			limit = { current_age = age_of_discovery }
+			every_province = {
+				limit = { religion = ROOT }
+				ROOT = { add_manpower = 0.15 }
+			}
+		} else_if = {
+			limit = { current_age = age_of_reformation }
+			every_province = {
+				limit = { religion = ROOT }
+				ROOT = { add_manpower = 0.25 }
+			}
+		} else_if = {
+			limit = { current_age = age_of_absolutism }
+			every_province = {
+				limit = { religion = ROOT }
+				ROOT = { add_manpower = 0.4 }
+			}
+		} else = {	#age_of_revolutions or further?
+			every_province = {
+				limit = { religion = ROOT }
+				ROOT = { add_manpower = 0.6 }
+			}
+		}	
 	}
 	removed_effect = {}
 	ai_will_do = {
@@ -1062,7 +1080,7 @@ Trade-Divine = {
 	}	
 }
 
-Trade-Horde = {
+Horde-Trade = {
 	monarch_power = MIL
 	
 	potential = {
@@ -1077,8 +1095,30 @@ Trade-Horde = {
 	
 	cavalry_power = 0.1
 	
-	effect = {
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1.0
+	}	
+}
+
+Defensive-Trade = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = trade_ideas
+		has_idea_group = defensive_ideas
 	}
+	
+	allow = {
+		full_idea_group = trade_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	military_tactics = 0.15
+	mercantilism_cost = -0.25 	
+	
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1102,8 +1142,7 @@ Trade-Merc = {
 	mercenary_cost = -0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1127,8 +1166,7 @@ Trade-Quantity = {
 	movement_speed = 0.05
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1151,8 +1189,7 @@ Explo-Pluto = {
 	global_manpower_modifier = 0.2
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1176,8 +1213,7 @@ Explo-Advance = {
 	mil_tech_cost_modifier = -0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1189,20 +1225,19 @@ Explo-Offensive = {
 	
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group = indigenous_ideas
+		has_idea_group = offensive_ideas
 	}
 	
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group = indigenous_ideas
+		full_idea_group = offensive_ideas
 	}
 	
 	privateer_efficiency = 0.15
 	heavy_ship_power = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1226,8 +1261,7 @@ Explo-GStaff = {
 	infantry_power = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1248,11 +1282,10 @@ Explo-Quality = {
 	}
 	
 	land_attrition = -0.25
-	manpower_recovery_speed = 0.1
+	fire_damage = 0.1
 
 	
-	effect = {
-	}
+	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
@@ -1275,10 +1308,8 @@ Aristo-Influence = {
 	vassal_forcelimit_bonus = 1
 	cavalry_power = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1300,10 +1331,8 @@ Divine-Influence = {
 	manpower_in_own_culture_provinces = 0.1
 	manpower_in_true_faith_provinces = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1325,10 +1354,8 @@ Horde-Influence = {
 	land_morale = 0.05
 	manpower_in_accepted_culture_provinces = 0.15
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1350,10 +1377,8 @@ Defensive-Influence = {
 	land_morale = 0.05
 	vassal_manpower_bonus = 0.25
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1375,10 +1400,8 @@ Merc-Influence = {
 	allow_client_states = yes
 	vassal_forcelimit_bonus = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1397,13 +1420,11 @@ Quantity-Influence = {
 		full_idea_group = influence_ideas
 	}
 
-	global_manpower = 0.1
+	global_manpower_modifier = 0.1
 	vassal_forcelimit_bonus = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1422,13 +1443,11 @@ Pluto-Naval = {
 		full_idea_group = naval_ideas
 	}
 
-	global_ship_repair = 0.25
+	recover_navy_morale_speed = 0.15
 	recover_army_morale_speed = 0.15
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1449,10 +1468,8 @@ Advancement-Naval = {
 
 	hull_size_modifier = 0.1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1474,10 +1491,8 @@ Offensive-Naval = {
 	regiment_disembark_speed = 0.1
 	siege_blockade_progress = 2
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1499,10 +1514,8 @@ GStaff-Naval = {
 	leader_land_fire = 1
 	max_admiral_fire = 1
 
-	effect = {
-	}
-	removed_effect = {
-	}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1522,12 +1535,268 @@ Quality-Naval = {
 	}
 
 	number_of_cannons_flagship_modifier = 5
-	flagship_durability = 2.5
+	flagship_durability = 3
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Aristo-Maritime = {	#Buffed marines
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	special_unit_cost_modifier = -0.1
 
 	effect = {
+		add_country_modifier = {
+			name = uu_aristo_mari_mod
+			duration = -1
+		}
 	}
-	removed_effect = {
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
 	}
+}
+
+Divine-Maritime = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	global_sailors_modifier = 0.2
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Horde-Maritime = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	blockade_efficiency = 0.5
+	leader_naval_manuever = 1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Defensive-Maritime = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	backrow_artillery_damage = 0.15
+	global_supply_limit_modifier = 0.25
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Mercenary-Maritime = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	may_perform_slave_raid = yes
+	coast_raid_range = 1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Quantity-Maritime = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = maritime_ideas
+	}
+
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	allowed_marine_fraction = 0.25
+	sailors_recovery_speed = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Pluto-Court = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = court_ideas
+	}
+
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = court_ideas
+	}
+
+	manpower_recovery_speed = 0.15
+	prestige_decay = -0.01
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Advancement-Court = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = indigenous_ideas
+		has_idea_group = court_ideas
+	}
+
+	allow = {
+		full_idea_group = indigenous_ideas
+		full_idea_group = court_ideas
+	}
+
+	yearly_army_professionalism = 0.005
+	mil_advisor_cost = -0.25
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Offensive-Court = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = court_ideas
+	}
+
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = court_ideas
+	}
+
+	warscore_from_battles_modifier = 0.1
+	power_projection_from_insults = 1
+
+	effect = {
+		add_prestige = 25
+	}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+GStaff-Court = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = court_ideas
+	}
+
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = court_ideas
+	}
+
+	manpower_recovery_speed = 0.1
+	harsh_treatment_cost = -0.33
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+Court-Quality = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = court_ideas
+	}
+
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = court_ideas
+	}
+
+	army_tradition_decay = -0.01
+	max_absolutism_effect = 0.2
+
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}

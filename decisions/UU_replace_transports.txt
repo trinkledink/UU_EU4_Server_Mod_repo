@@ -68,6 +68,9 @@ country_decisions = {
 				}
             }
             every_province = {
+                limit = {
+                    transports_in_province = ROOT
+                }
                 kill_units = {
                     who = ROOT
                     type = transport

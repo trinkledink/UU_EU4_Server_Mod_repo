@@ -81,6 +81,20 @@ uu_eco_merc_mod = {
 uu_offensive_espio_mod = {
 	global_attacker_dice_roll_bonus = 1
 }
+uu_def_court_mod = {
+	local_defensiveness = 0.33
+	local_defender_dice_roll_bonus = 1
+	supply_limit_modifier = 1
+}
+uu_def_court_capital_mod = {
+	fort_level = 2
+	garrison_size = 1
+}
+uu_aristo_mari_mod = {
+	discipline = 0.05
+	morale_damage_received = -0.1
+	is_marine_modifier = yes
+}
 
 #GenStaff Ideagroup Event Modifiers 
 
@@ -220,6 +234,13 @@ uu_shaman_vision_quest = {
 #kitara
 uu_kitara_colonies = {
 	colony_development_boost = 1
+}
+uu_kitara_isolationism = {
+	global_allowed_num_of_manufactories = 1
+}
+uu_kitara_savanna_irrigation = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.1
 }
 
 #timurids
