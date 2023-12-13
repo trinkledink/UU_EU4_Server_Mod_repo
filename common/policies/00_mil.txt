@@ -1535,7 +1535,7 @@ Quality-Naval = {
 	}
 
 	number_of_cannons_flagship_modifier = 5
-	flagship_durability = 5
+	flagship_durability = 3
 
 	effect = {}
 	removed_effect = {}
