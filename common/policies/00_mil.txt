@@ -1565,7 +1565,9 @@ Aristo-Maritime = {	#Buffed marines
 			duration = -1
 		}
 	}
-	removed_effect = {}
+	removed_effect = {
+		remove_country_modifier = uu_aristo_mari_mod
+	}
 	ai_will_do = {
 		factor = 1
 	}
