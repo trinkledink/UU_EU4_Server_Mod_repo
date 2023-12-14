@@ -30,7 +30,7 @@ country_decisions = {
 			owns = 1028
 		}
 		effect = {
-			remove_government_reform = shogunate
+			#remove_government_reform = shogunate ##UU Changed 
 			#set_legacy_government = despotic_monarchy
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
