@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.36.2
 monarchy_mechanic = {
 	monarchy = yes
 	heir = yes
@@ -1543,13 +1543,16 @@ persian_government_reform = {
 				is_playing_custom_nation = yes
 			}
 		}
+		OR = {
 		NOT = { religion_group = zoroastrian_group }
+			is_playing_custom_nation = yes
+		}
 	}
 	trigger = {
-		NOT = { religion_group = zoroastrian_group }
-	}
-	nation_designer_trigger = {
-		NOT = { religion_group = zoroastrian_group }
+		OR = {
+			NOT = { religion_group = zoroastrian_group }
+			is_playing_custom_nation = yes
+	    }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -1721,14 +1724,14 @@ bohemian_elective_kingdom_reform = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
-			primary_culture = czech_newer
+			primary_culture = czech_newer ##UU
 		}
 	}
 	nation_designer_trigger = {
 		OR = {
 			primary_culture = czech
 			primary_culture = czech_new
-			primary_culture = czech_newer
+			primary_culture = czech_newer ##UU
 		}
 	}
 	valid_for_nation_designer = yes
@@ -4937,7 +4940,7 @@ reform_the_pronoiars_reform = {
 	icon = "reform_the_pronoiars_reform"
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = byzantine
+		has_government_attribute = enables_pronoias
 	}
 	modifiers = {
 		allow_client_states = yes

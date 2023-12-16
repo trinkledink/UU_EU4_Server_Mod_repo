@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.36.2
 united_cantons_reform = {
 	icon = "united_cantons_reform"
 	allow_normal_conversion = yes
@@ -1064,7 +1064,7 @@ strengthen_the_ulema_reform = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		custom_attributes = {
-			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180°
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
 		}
 	}
 	
@@ -1738,10 +1738,7 @@ legacy_of_the_safavid_reform = {
 		}
 	}
 	trigger = {
-		OR = {
-			has_reform = feudal_theocracy
-			has_reform = persian_government_reform
-		}
+		has_government_mechanic = feudal_theocracy_mechanic
 	}
 	modifiers = {
 		church_loyalty_modifier = 0.1
@@ -1767,7 +1764,7 @@ legacy_of_the_safavid_reform = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		custom_attributes = {
-			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180°
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
 		}
 	}
 	ai = {
@@ -4454,7 +4451,7 @@ karimi_stations_reform = {
 	icon = "karimi_stations_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Domination"
+		has_dlc = "King of Kings"
 		OR = {
 			have_had_reform = karimi_stations_reform
 			has_unlocked_government_reform = {

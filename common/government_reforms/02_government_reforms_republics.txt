@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.36.2
 republic_mechanic = {
 	basic_reform = yes
 	republican_name = yes

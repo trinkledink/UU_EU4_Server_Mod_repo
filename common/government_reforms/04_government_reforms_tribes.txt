@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.36.2
 tribe_mechanic = {
 	tribal = yes
 	monarchy = yes
@@ -1097,7 +1097,10 @@ tribe_tribal_unity = {
 	icon = "fist_in_air"
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
 		has_reform = tribal_federation
+			has_reform = turkoman_ottoman_institutions
+		}
 		has_dlc = "Cradle of Civilization"
 	}
 	modifiers = {

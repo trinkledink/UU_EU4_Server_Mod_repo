@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.36.2
 theocracy_mechanic = {
 	has_devotion = yes
 	rulers_can_be_generals = no
