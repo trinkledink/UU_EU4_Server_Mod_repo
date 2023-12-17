@@ -263,14 +263,14 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
-		#NOT = { has_country_flag = formed_japan_flag }
+		#NOT = { has_country_flag = formed_japan_flag } #UU removed
 		OR = {
 			AND = {
 				capital_scope = {
 					province_id = 1020
 				}
 				culture_group = japanese_g
-				NOT = { exists = JAP }
+				#NOT = { exists = JAP } UU removed
 			}
 			AND = {
 				is_playing_custom_nation = yes
@@ -1546,7 +1546,14 @@ persian_government_reform = {
 		religion_group = muslim
 	}
 	trigger = {
+<<<<<<< Updated upstream
 		religion_group = muslim
+=======
+		OR = {
+			NOT = { religion_group = zoroastrian_group }
+			is_playing_custom_nation = yes
+		}
+>>>>>>> Stashed changes
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
