@@ -1546,14 +1546,10 @@ persian_government_reform = {
 		religion_group = muslim
 	}
 	trigger = {
-<<<<<<< Updated upstream
-		religion_group = muslim
-=======
 		OR = {
 			NOT = { religion_group = zoroastrian_group }
 			is_playing_custom_nation = yes
 		}
->>>>>>> Stashed changes
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
