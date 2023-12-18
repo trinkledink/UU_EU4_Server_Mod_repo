@@ -1394,6 +1394,7 @@ Court-Divine = {	##Allows good expansionist zealotry
 	}
 
 	church_privilege_slots = 1
+	brahmins_privilege_slots = 1
 	
 	effect = {
 		set_country_flag = improved_expansionist_zealotry
