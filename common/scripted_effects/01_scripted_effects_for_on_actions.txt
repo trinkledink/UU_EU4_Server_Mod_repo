@@ -3363,7 +3363,30 @@ on_development_effect = {
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
 on_mercenary_recruited_effect = {
-	#UU Removed
+	if = {
+		limit = {
+			FROM = { has_not_free_mercs_trait = yes }
+			is_not_free_merc_company = yes
+			OR = {
+				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
+				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
+			}
+		}
+		if = {
+			limit = {
+				FROM = { 
+					OR = {
+						has_country_flag = fifty_percent_merc_army_professionalism_cost 
+						has_country_modifier = pol_cheap_ap_mercs_modifier
+					}
+				}
+			}
+			FROM = { add_army_professionalism = -0.01 }
+		}
+		else = { 
+			FROM = { add_army_professionalism = -0.02 } 
+		}
+	}
 }
 
 on_parliament_debate_reset_effect = {
