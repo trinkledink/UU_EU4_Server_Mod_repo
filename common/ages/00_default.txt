@@ -23,12 +23,12 @@ age_of_discovery = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = obj_discover_america_tooltip
-					OR = {
-						north_america = { has_discovered = ROOT }
-						south_america = { has_discovered = ROOT }
-						new_world = { has_discovered = ROOT }
-					}
+				OR = {
+					north_america = { has_discovered = ROOT }
+					south_america = { has_discovered = ROOT }
+					new_world = { has_discovered = ROOT }
 				}
+			}
 		}
 		obj_100_development = {
 			allow = {
@@ -845,7 +845,7 @@ age_of_revolutions = {
 			allow = {
 				OR = {
 					tag = AVE
-				tag = GBR
+					tag = GBR
 				}
 			}
 			modifier = {
@@ -876,6 +876,21 @@ age_of_revolutions = {
 			}
 			modifier = {
 				morale_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_necro_sokoto = {
+			allow = {
+				OR = {
+					tag = SOK
+					tag = ZAF
+					tag = FUL
+				}
+			}
+			effect = {
+				custom_tooltip = ab_necro_sokoto_tt	#20% mp from defeating armies
 			}
 			ai_will_do = {
 				factor = 100

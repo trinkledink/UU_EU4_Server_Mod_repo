@@ -1967,7 +1967,12 @@ on_battle_won_country_effect = {
 	}
 	if = {
 		limit = {
-			ROOT = { has_government_attribute = manpower_from_defeating_armies }
+			ROOT = { 
+				OR = {
+					has_government_attribute = manpower_from_defeating_armies 
+					has_age_ability = ab_necro_sokoto
+				}
+			}
 		}
 		ROOT = {
 			set_variable = {
