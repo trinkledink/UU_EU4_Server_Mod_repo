@@ -1,7 +1,7 @@
 #Galley
 type = galley
 
-hull_size = 8
+hull_size = 10 #UU was 8
 base_cannons = 12 
 blockade = 8
 
