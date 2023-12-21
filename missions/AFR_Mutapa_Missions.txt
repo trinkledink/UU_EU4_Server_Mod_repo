@@ -4,10 +4,10 @@ mutapa_vassal_missions_slot = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 	}
 	potential = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = GZI
@@ -160,10 +160,10 @@ mutapa_conquer_africa_missions_slot = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 	}
 	potential = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = GZI
@@ -342,10 +342,10 @@ mutapa_restore_zimbabwe_missions_slot = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 	}
 	potential = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = GZI
@@ -572,10 +572,10 @@ mutapa_trade_missions_slot = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 	}
 	potential = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = GZI
@@ -915,10 +915,10 @@ mutapa_modernize_missions_slot = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 	}
 	potential = {
-		has_dlc = "Emperor"
+		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = GZI
