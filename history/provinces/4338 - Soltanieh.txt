@@ -3,7 +3,7 @@
 owner = TIM
 controller = TIM
 culture = azerbaijani
-religion = shiite
+religion = sunni
 capital = "Soltanieh"
 trade_goods = wine #Grapes and Fruits
 hre = no

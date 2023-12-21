@@ -3,7 +3,7 @@
 owner = KHO
 controller = KHO
 culture = baluchi
-religion = shiite
+religion = sunni
 capital = "Bam"
 trade_goods = cotton
 hre = no
