@@ -1215,7 +1215,8 @@ FKN_ideas = { #Franconia
 		defensiveness = 0.2
 	}
 	fkn_free_knights_of_franconia = {
-		infantry_power = 0.10   		 #Was CCA
+		infantry_power = 0.05   		 #Was 0.1 CCA
+		artillery_power = 0.1
 	}
 	franconian_wine = { #in WBG_ideas
 		#production_efficiency = 0.1
