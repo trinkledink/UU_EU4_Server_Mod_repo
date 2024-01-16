@@ -86,10 +86,7 @@ country_decisions = {
 			change_tag = ARB
 			swap_non_generic_missions = yes
 			if = {
-				limit = { 
-					has_custom_ideas = no
-					NOT = { has_idea_group = HSN_ideas } #so if you e.g. are hisn kayfa then you don't update your ideas
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			unlock_estate_privilege = {
