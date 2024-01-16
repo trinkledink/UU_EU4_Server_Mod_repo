@@ -82,11 +82,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			if = {
 				limit = {
 					government = theocracy
-					OR = {
-						has_reform = monastic_order_reform
-						has_reform = crusading_kingdom_reform
-						has_reform = militarized_crusader_order_reform
-					}
+					has_government_attribute = monastic_order
 				}
 				change_government = monarchy
 				#set_legacy_government = feudal_monarchy
@@ -206,11 +202,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			if = {
 				limit = {
 					government = theocracy
-					OR = {
-						has_reform = monastic_order_reform
-						has_reform = crusading_kingdom_reform
-						has_reform = militarized_crusader_order_reform
-					}
+					has_government_attribute = monastic_order
 				}
 				change_government = monarchy
 				#set_legacy_government = feudal_monarchy
