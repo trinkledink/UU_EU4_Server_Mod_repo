@@ -794,3 +794,7 @@ uukbo_imperial_capital = {
 	development_cost = -0.05
 	vassal_income = 0.25
 }
+#Saxony
+uu_meissen_porcelain = {
+	trade_goods_size = 5
+}

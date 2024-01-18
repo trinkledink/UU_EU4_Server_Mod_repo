@@ -1,0 +1,10 @@
+﻿l_english: 
+ uu_freiberg_silver_mine_1:0 "Freiberg Silver Mine"
+ uu_freiberg_silver_mine_2:0 "Freiberg Silver Mine"
+ uu_freiberg_silver_mine_3:0 "Freiberg Silver Mine"
+ uu_freiberg_silvermine.tt:0 "This §Ymodifier§! will be §Gupgraded§! once the province gets developed to §Y15§! and §Y30  development§! respectivly"
+ uu_meissen_porcelain:0 "Meissner Porcelain"
+ uu_sax_missions.1.t:0 "Porcelain from Meissen"
+ uu_sax_missions.1.d:0 "Our inventors have spent some time studying samples of porcelain that our traders have brought back from China. They claim to have discovered the secrets of its production. The samples that they have presented to [Root.Owner.Monarch.GetTitle] [Root.Owner.Monarch.GetName] are certainly very fine, and will bring in considerable wealth if they can be produced in large amounts. They now request our investment to set up a porcelain manufactory which will, they say, allow them to capture the German market for chinaware."
+ uu_sax_missions.1.a:0 "Porcelain shall be our path to riches."
+ uu_sax_manufactories_institution.tt:0 "If the §Ymanufactories instution§! has not appeared yet, we will have a higher chance of spawning it, otherwise §Gadd 100 manufactories institution process§!"

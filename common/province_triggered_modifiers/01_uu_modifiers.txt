@@ -1,22 +1,22 @@
-uu_gb_normandy_modifier = {
-	potential = {}
-	trigger = {
-		owner = {
-			OR = {
-				tag = GBR
-				tag = ENG
-				tag = AVE
-			}
-			owns_core_province = 167
-			owns_core_province = 168
-			owns_core_province = 1879
-			owns_core_province = 4385
-			mission_completed = eng_secure_normandy
-		}
-	}
-	land_morale = 0.1
-	nobles_loyalty_modifier = 0.05
-}
+# uu_gb_normandy_modifier = {
+# 	potential = {}
+# 	trigger = {
+# 		owner = {
+# 			OR = {
+# 				tag = GBR
+# 				tag = ENG
+# 				tag = AVE
+# 			}
+# 			owns_core_province = 167
+# 			owns_core_province = 168
+# 			owns_core_province = 1879
+# 			owns_core_province = 4385
+# 			mission_completed = eng_secure_normandy
+# 		}
+# 	}
+# 	land_morale = 0.1
+# 	nobles_loyalty_modifier = 0.05
+# }
 
 uu_better_weapons_manus_priv_mod = {
 	potential = {
@@ -41,4 +41,58 @@ uu_better_weapons_manus_priv_mod = {
 
 	trade_goods_size = 0.33
 	province_trade_power_value = 5
+}
+uu_freiberg_silver_mine_1 = {
+	potential = {
+		NOT = { development = 15 }
+	}
+	trigger = {
+		NOT = { development = 15 }
+	}
+	tax_income = 12
+	local_development_cost = -0.05
+	custom_tooltip = uu_freiberg_silvermine.tt
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+uu_freiberg_silver_mine_2 = {
+	potential = {
+		NOT = { development = 30 }
+		development = 15
+	}
+	trigger = {
+		NOT = { development = 30 }
+		development = 15
+	}
+	tax_income = 36
+	custom_tooltip = uu_freiberg_silvermine.tt
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+uu_freiberg_silver_mine_3 = {
+	potential = {
+		development = 30
+	}
+	trigger = {
+		development = 30
+	}
+	tax_income = 72
+	custom_tooltip = uu_freiberg_silvermine.tt
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
 }

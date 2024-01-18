@@ -1598,9 +1598,20 @@ manufactories = {
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
-		development = 20
 		printing_press = 100
 		global_trade = 100
+		if = {
+			limit = {
+				has_global_flag = bottger_happened
+			}
+			OR = {
+				province_id = 61			#Dresden
+				development = 30
+			}
+		}
+		else = {
+			development = 20
+		}
 		custom_trigger_tooltip = {
 			tooltip = two_neighbor_dev_15_provinces
 			calc_true_if = {

@@ -3345,44 +3345,44 @@ COR_ideas = {
 # }
 
 
-SAX_ideas = {
-	start = {
-	   	advisor_cost = -0.1
-		development_cost = -0.1
-	}
+# SAX_ideas = {
+# 	start = {
+# 	   	advisor_cost = -0.1
+# 		development_cost = -0.1
+# 	}
 	
-	bonus = {
-		prestige = 1.0
-	}
+# 	bonus = {
+# 		prestige = 1.0
+# 	}
 	
-	trigger = {
-		tag = SAX
-	}
-	free = yes		#will be added at load.
+# 	trigger = {
+# 		tag = SAX
+# 	}
+# 	free = yes		#will be added at load.
 	
-	albertine_and_ernestine = {
-		diplomats = 1
-	}
-	meissner_porcelain = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	the_zwinger = {
-		diplomatic_reputation = 1
-	}
-	wittenberg_university = {
-	 	tolerance_heretic = 3
-	}
-	corpus_evangelicorum = {
-		diplomatic_upkeep = 1
-		church_power_modifier = 0.10
-	}
-	sax_principal_line = {
-		global_tax_modifier = 0.10
-	}
-	the_saxon_circle = {
-		discipline = 0.05
-	}
-}
+# 	albertine_and_ernestine = {
+# 		diplomats = 1
+# 	}
+# 	meissner_porcelain = {
+# 		global_trade_goods_size_modifier = 0.1
+# 	}
+# 	the_zwinger = {
+# 		diplomatic_reputation = 1
+# 	}
+# 	wittenberg_university = {
+# 	 	tolerance_heretic = 3
+# 	}
+# 	corpus_evangelicorum = {
+# 		diplomatic_upkeep = 1
+# 		church_power_modifier = 0.10
+# 	}
+# 	sax_principal_line = {
+# 		global_tax_modifier = 0.10
+# 	}
+# 	the_saxon_circle = {
+# 		discipline = 0.05
+# 	}
+# }
 
 
 
