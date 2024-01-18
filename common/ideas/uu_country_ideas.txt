@@ -213,6 +213,90 @@ NED_ideas = { #Netherlands
         siege_ability = 0.2
     }
 }
+SAX_ideas = {
+	start = {
+	   	advisor_cost = -0.1
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		development_cost_in_primary_culture = -0.1
+	}
+	
+	trigger = {
+		tag = SAX
+	}
+	free = yes		#will be added at load.
+	
+	albertine_and_ernestine = {
+		global_tax_modifier = 0.2
+	}
+	meissner_porcelain = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	the_zwinger = {
+		country_admin_power = 1
+		prestige_decay = -0.01
+	}
+	wittenberg_university = {
+	 	innovativeness_gain = 0.5
+		yearly_innovativeness = 0.25
+	}
+	corpus_evangelicorum = {
+		tolerance_heretic = 3
+		church_power_modifier = 0.15
+		monthly_fervor_increase = 0.5
+	}
+	sax_principal_line = {
+		culture_conversion_cost = -0.15
+		manpower_in_own_culture_provinces = 0.33
+	}
+	the_saxon_circle = {
+		discipline = 0.05
+	}
+}
+SAX1_ideas = {						#At 100 Inno with Mission
+	start = {
+	   	advisor_cost = -0.1
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		development_cost_in_primary_culture = -0.1
+	}
+	
+	trigger = {
+		tag = SAX
+		has_country_flag = uu_sax_innovativeness
+	}
+	free = yes		#will be added at load.
+	
+	albertine_and_ernestine = {
+		global_tax_modifier = 0.2
+	}
+	meissner_porcelain = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	the_zwinger = {
+		country_admin_power = 1
+		prestige_decay = -0.01
+	}
+	wittenberg_university = {
+	 	all_power_cost = -0.05
+	}
+	corpus_evangelicorum = {
+		tolerance_heretic = 3
+		church_power_modifier = 0.15
+		monthly_fervor_increase = 0.5
+	}
+	sax_principal_line = {
+		culture_conversion_cost = -0.15
+		manpower_in_own_culture_provinces = 0.33
+	}
+	the_saxon_circle = {
+		discipline = 0.05
+	}
+}
 ITA_ideas = { #Italy
 	start = {
 		global_trade_power = 0.20

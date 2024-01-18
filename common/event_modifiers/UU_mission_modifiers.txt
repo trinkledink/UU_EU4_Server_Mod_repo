@@ -965,3 +965,7 @@ uujap_legacy_sengoku = {
 	infantry_power = 0.1
 	allowed_samurai_fraction = 0.1
 }
+#Saxony
+uu_meissen_porcelain = {
+	trade_goods_size = 5
+}
