@@ -1,3 +1,5 @@
+#UU UPDATED 1.36.2
+
 country_decisions = {
 
 	moroccan_nation = {
@@ -14,7 +16,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = MOR }
+			NOT = { was_tag = MOR }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = PAP }
@@ -161,7 +163,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = ALG }
+			NOT = { was_tag = ALG }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -314,7 +316,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_tunisia_flag }
-			NOT = { was_tag = TUN }						  
+			NOT = { was_tag = TUN }		#UU				  
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -439,7 +441,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = TRP }
+			NOT = { was_tag = TRP }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }

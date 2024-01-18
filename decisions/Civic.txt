@@ -1,3 +1,5 @@
+#UU UPDATED 1.36.2
+
 country_decisions = {
 	#Major Decisions:	color = { 146 174 114 }
 	#Minor Decisions:	color = { 60 117 165 }
@@ -57,7 +59,7 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_abolish_slavery_act }
 			slaves = 1
-			#current_age = age_of_revolutions
+			#current_age = age_of_revolutions #UU
 			adm_tech = 15
 		}
 		allow = {

@@ -1,4 +1,4 @@
-##### NON LUBECK ONLY
+# UU Changed
 
 country_decisions = {
 	declare_hanseatic_league = {

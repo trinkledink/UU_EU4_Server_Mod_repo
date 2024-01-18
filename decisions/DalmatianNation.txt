@@ -53,7 +53,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = DAL }
-			#NOT = { num_of_cities = 11 }
+			#NOT = { num_of_cities = 11 }	#UU
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
