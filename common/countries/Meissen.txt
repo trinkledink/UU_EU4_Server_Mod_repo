@@ -2,7 +2,8 @@
 
 graphical_culture = westerngfx
 
-color = { 58  174  61 }
+color = { 235  178  18 }
+#color = { 58  174  61 } #Swapped with Wolgast
 revolutionary_colors = { 5 8 1 }
 
 historical_idea_groups = {

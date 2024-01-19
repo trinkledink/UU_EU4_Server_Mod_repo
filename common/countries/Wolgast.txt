@@ -2,7 +2,8 @@
 
 graphical_culture = westerngfx
 
-color = { 235  178  18 }
+#color = { 235  178  18 } #Swapped with Meissen
+color = { 58  174  61 }
 
 historical_idea_groups = {
 	trade_ideas
