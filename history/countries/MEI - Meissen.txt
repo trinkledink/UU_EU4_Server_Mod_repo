@@ -1,0 +1,161 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = saxon
+religion = catholic
+technology_group = western
+elector = yes
+capital = 61	# Meissen/Dresden
+
+1428.1.4 = { #Copy pasted from Saxony
+	monarch = {
+		name = "Friedrich II"
+		dynasty = "von Wettin"
+		birth_date = 1412.8.22
+		dip = 3
+		adm = 4
+		mil = 0
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Margaret"
+		dynasty = "von Habsburg"
+		birth_date = 1416.6.3
+		death_date = 1464.9.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
+	add_ruler_personality = industrious_personality
+}
+#Same as Friedrich II of Thuringia
+#Dukes of Saxony
+
+1443.7.31 = {
+	heir = {
+		name = "Albrecht"
+		monarch_name = "Albrecht I der Beherzte"
+		dynasty = "von Wettin"
+		birth_date = 1443.7.31
+		death_date = 1500.9.12
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1464.9.7 = { elector = no }
+
+1464.9.7 = {
+	monarch = {
+		name = "Albrecht I der Beherzte"
+		dynasty = "von Wettin"
+		birth_date = 1443.7.31
+		dip = 1
+		adm = 2
+		mil = 5
+	}
+}
+
+1471.8.27 = {
+	heir = {
+		name = "Georg"
+		monarch_name = "Georg der Bärtige"
+		dynasty = "von Wettin"
+		birth_date = 1471.8.27
+		death_date = 1539.4.17
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1500.9.12 = {
+	monarch = {
+		name = "Georg der Bärtige"
+		dynasty = "von Wettin"
+		birth_date = 1471.8.27
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+1500.9.12 = {
+	heir = {
+		name = "Heinrich"
+		monarch_name = "Heinrich der Fromme"
+		dynasty = "von Wettin"
+		birth_date = 1473.3.16
+		death_date = 1541.8.18
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1505.1.1 = { leader = {	name = "Mauritz"               	type = general	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1532.1.1 } }
+
+1517.10.31 = {
+	set_global_flag = reformation_started
+}
+
+1531.1.1 = { religion = protestant }
+
+1539.4.17 = {
+	monarch = {
+		name = "Heinrich der Fromme"
+		dynasty = "von Wettin"
+		birth_date = 1473.3.16
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1539.4.17 = {
+	heir = {
+		name = "Moritz"
+		monarch_name = "Moritz I"
+		dynasty = "von Wettin"
+		birth_date = 1521.3.21
+		death_date = 1553.7.11
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 4
+		leader = { name = "Moritz von Wettin"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1 }
+	}
+}
+		
+1541.8.18 = {
+	monarch = {
+		name = "Moritz I"
+		dynasty = "von Wettin"
+		birth_date = 1521.3.21
+		dip = 1
+		adm = 1
+		mil = 4
+		leader = { name = "Moritz von Wettin"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1 }
+	}
+}
+
+1541.8.18 = {
+	heir = {
+		name = "August"
+		monarch_name = "August"
+		dynasty = "von Wettin"
+		birth_date = 1526.7.31
+		death_date = 1586.2.11
+		claim = 95
+		dip = 3
+		adm = 4
+		mil = 1
+	}
+}
