@@ -1,0 +1,325 @@
+uu_PAP_dogma_mechanic = {
+	available = {
+		has_dlc = "King of Kings"
+	}
+	powers = {
+		uu_PAP_dogma_power = {
+			gui = uu_PAP_buttons
+			show_before_interactions = yes
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0.05
+			development_scaled_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					manpower_in_true_faith_provinces = 0.25
+					global_tax_modifier = 0.5
+					enforce_religion_cost = -0.75
+				}
+			}
+			reverse_scaled_modifier = {
+				modifier = {
+					stability_cost_modifier = 0.25
+					idea_cost = -0.1
+					innovativeness_gain = 0.5
+				}
+				start_value = 0
+				end_value = 50
+			}
+			scaled_modifier = {
+				modifier = {
+					stability_cost_modifier = -0.25
+					idea_cost = 0.1
+					innovativeness_gain = -0.5
+				}
+				start_value = 50
+				end_value = 100
+			}
+			is_good = yes
+		}
+	}
+	interactions = {
+		uu_develop_administrative_dogma = {
+			icon = GFX_system_of_councils_adm_button
+			gui = "system_of_councils_adm_button"
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = { 
+				curia_treasury_size = 750
+            }
+			effect = {
+				add_curia_treasury = -750
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = uu_pap_adm_dogma_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_1_tt
+					
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_adm_dogma_2_modifier
+							duration = -1
+							hidden = yes
+						}
+						set_variable = {
+							which = uu_pap_adm_dogma_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = uu_pap_adm_dogma_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_adm_dogma_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_2_tt
+
+					hidden_effect = {
+						remove_country_modifier = uu_pap_adm_dogma_1_modifier
+						remove_country_modifier = uu_pap_adm_dogma_3_modifier
+						set_variable = {
+							which = uu_pap_adm_dogma_var
+							value = 2
+						}
+					}
+					
+					add_country_modifier = {
+						name = uu_pap_adm_dogma_2_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = uu_pap_adm_dogma_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_adm_dogma_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_3_tt
+				
+					hidden_effect = {
+						remove_country_modifier = uu_pap_adm_dogma_1_modifier
+						remove_country_modifier = uu_pap_adm_dogma_2_modifier
+						set_variable = {
+							which = uu_pap_adm_dogma_var
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = uu_pap_adm_dogma_3_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+		uu_develop_diplomatic_dogma = {
+			icon = GFX_system_of_councils_dip_button
+			gui = "system_of_councils_dip_button"
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = { 
+				curia_treasury_size = 750
+            }
+			effect = {
+				add_curia_treasury = -750
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_1_tt
+					
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_mil_dogma_2_modifier
+							duration = -1
+							hidden = yes
+						}
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_2_tt
+
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_3_modifier
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 2
+						}
+					}
+					
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_2_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_3_tt
+				
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_2_modifier
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_3_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+		uu_develop_military_dogma = {
+			icon = GFX_system_of_councils_mil_button
+			gui = "system_of_councils_mil_button"
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = { 
+				curia_treasury_size = 750
+            }
+			effect = {
+				add_curia_treasury = -750
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_1_tt
+					
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_mil_dogma_2_modifier
+							duration = -1
+							hidden = yes
+						}
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_2_tt
+
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_3_modifier
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 2
+						}
+					}
+					
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_2_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = uu_pap_mil_dogma_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_3_tt
+				
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_2_modifier
+						set_variable = {
+							which = uu_pap_mil_dogma_var
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_3_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+}
