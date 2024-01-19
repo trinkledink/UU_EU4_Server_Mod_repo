@@ -1,4 +1,5 @@
-﻿#UU UPDATED 1.36.1
+﻿#UU UPDATED 1.36.2
+ #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL
 l_english:
  PROV1:0 "Stockholm"
  PROV2:0 "Östergötland"
@@ -2176,7 +2177,7 @@ l_english:
  PROV2175:0 "Runing"
  PROV2176:0 "Shangqiu"
  PROV2177:0 "Ningwu"
- PROV2178:0 "Lu'an" 
+ PROV2178:0 "Lu'an"
  PROV2179:0 "Yan'an"
  PROV2180:0 "Tianshui"
  PROV2181:0 "Pingliang"
