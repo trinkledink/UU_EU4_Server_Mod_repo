@@ -318,3 +318,39 @@ butua_zimbabwe_monarchy = {
 		}
 	}
 }
+
+hre_landgrave = {
+	rank = {
+		1 = LANDGRAVIATE
+	}
+	ruler_male = {
+		1 = LANDGRAVE 
+	}
+	ruler_female = {
+		1 = LANDGRAVINE
+	}
+	consort_male = {
+		1 = LANDGRAVE_CONSORT
+	}
+	consort_female = {
+		1 = LANDGRAVINE
+	}
+	heir_male = {
+		1 = HEIR 
+	}
+	heir_female = {
+		1 = HEIR_fem 
+	}
+
+	trigger = {
+		government = monarchy 
+		is_part_of_hre = yes
+		is_elector = no
+		NOT = { government_rank = 2 }
+		OR = {
+			tag = HES 
+			tag = THU
+		}
+	}
+}
+

@@ -1,4 +1,4 @@
-﻿#UU UPDATED 1.36.1
+﻿#UU UPDATED 1.36.2
 l_english:
   ##UU Changed localization of shinto incidents to add guide numbers, but apparently died in the merge
  NO_EDICT_PLAIN:0 "No Edict"
@@ -576,7 +576,7 @@ l_english:
  shinto_events.9.t:0 "Trade Monopolies"
  shinto_events.9.d:0 "The growth of cities has led to the ancient Za trade guilds of our country to rapidly increase their power. The generally chaotic situation in our realm has also meant that they increasingly rely on their own arrangements for security. The guilds have now tied temples, landholders and samurai to their cause. But they have also gained enemies.\nSome implore our [Root.Monarch.GetTitle] to take a stand against the guilds and open up the economy for anyone of ability. Others argue that we should at least give out monopolies and privileges to others than the guilds."
  shinto_events.9.a:0 "We will abolish the old regulations that feed them!(+1)"
- shinto_events.9.b:0 "Monopolies work well but we should not grant them based on tradition.(+2)"
+ shinto_events.9.b:0 "Monopolies work well, but we should not grant them based on tradition.(+2)"
  shinto_events.9.c:0 "We must protect the arrangements of our ancestors.(+3)"
  shinto_events.10.t:0 "Social Stability"
  shinto_events.10.d:0 "In order to combat the threat to order that our rapidly urbanizing society has been subjected to we have imposed a set of strict laws. These rules and regulations limit unwarranted social and even physical mobility. In this way we have managed to preserve the honor and stability that has kept our society together in the many years up to now."
@@ -639,9 +639,9 @@ l_english:
  shinto_events.25.c:0 "We will accept their goods but offer no guarantees in the future.(0)"
  shinto_events.26.t:0 "Duplicity among European Traders"
  shinto_events.26.d:0 "Ever since the arrival of the westerners some have regarded them with distrust. Their pockets are deep, their weapons powerful and, to some, their culture seems fascinating. Those that deal with these traders, however, report that the Europeans are constantly plotting against each other. Scarcely a meeting with foreign emissaries goes by in which they do not warn us of some plot or scheme by their adversaries. It is clear we are not dealing with men of honor.\nAs a new group of traders request that we increase their privileges our advisors caution us to consider the offer carefully."
- shinto_events.26.a:0 "We will allow them to expand their presence."
- shinto_events.26.b:0 "Limit their influence to a few more ports."
- shinto_events.26.c:0 "Their business must be kept limited to [nanban_traders_here.GetCapitalName]."
+ shinto_events.26.a:0 "We will allow them to expand their presence. (-1)"
+ shinto_events.26.b:0 "Limit their influence to a few more ports. (0)"
+ shinto_events.26.c:0 "Their business must be kept limited to [nanban_traders_here.GetCapitalName]. (+1)"
  shinto_events.27.t:0 "Rangaku"
  shinto_events.27.d:0 "The trade post in [nanban_traders_here.GetName] has started to attract not only merchants but also scholars and intellectuals. To these men the books that the foreigners bring are far more valuable than the goods they wish to sell. The study of western science and culture, Rangaku, is growing into its own discipline, and according to the adherents we have much to learn. Many clerics are skeptical, however, as are some Confucian scholars."
  shinto_events.27.a:0 "We must do our best to encourage dissemination of western science.(-1)"

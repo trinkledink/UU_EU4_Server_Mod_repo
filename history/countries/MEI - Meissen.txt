@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = margraviate_reform	#Margraviate of Meissen
 government_rank = 1
 primary_culture = saxon
 religion = catholic
@@ -64,7 +64,7 @@ capital = 61	# Meissen/Dresden
 1471.8.27 = {
 	heir = {
 		name = "Georg"
-		monarch_name = "Georg der Bärtige"
+		monarch_name = "Georg der Bï¿½rtige"
 		dynasty = "von Wettin"
 		birth_date = 1471.8.27
 		death_date = 1539.4.17
@@ -77,7 +77,7 @@ capital = 61	# Meissen/Dresden
 
 1500.9.12 = {
 	monarch = {
-		name = "Georg der Bärtige"
+		name = "Georg der Bï¿½rtige"
 		dynasty = "von Wettin"
 		birth_date = 1471.8.27
 		dip = 1

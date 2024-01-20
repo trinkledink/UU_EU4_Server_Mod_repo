@@ -1,5 +1,6 @@
 ﻿ #UU Improved province names
- #UU UPDATED 1.36.1
+ #UU UPDATED 1.36.2
+ #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL
 l_english:
  brittany_area:0 "Brittany"
  brittany_area_name:0 "Brittany"

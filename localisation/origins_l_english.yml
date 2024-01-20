@@ -1,4 +1,4 @@
-﻿#UU UPDATED 1.36.1
+﻿#UU UPDATED 1.36.2
 #UU Fetishist/Muslim school loc fixes
 l_english:
  ###ETH FLAVOR EVENTS###
@@ -917,7 +917,7 @@ l_english:
  federal_gain_tribal_allegiance_desc:0 "The kingdoms proclaim their allegiance to the [Root.Monarch.GetTitle]."
  kitara_nation_title:0 "Restore the Empire of Kitara" #UU Change
  kitara_nation_desc:0 "After much struggle and suffering, we have united the people of the Great Lakes and mended the divide that separated us. It is time now to rebuild the unity that was once lost and raise again the banner of Kitara so everyone might see that we stand as one."
- macina_nation_title:0 "Form Macina"
+ macina_nation_title:0 "Form Massina" #UU Change
  macina_nation_desc:0 "Our people have endured terrible injustice and tyranny under our old overlords, but we have finally freed ourselves of their yoke and are now ready to carve our own path. Let's raise our new banner as a symbol of our freedom and as a warning for those who would dare to threaten it."
  mali_nation_title:0 "Restore the Mali Empire" #UU Change
  mali_nation_desc:0 "The powerful and prosperous Mali Empire fell many years ago due to jealous neighbors and squabbling chieftains. Despite that, the spirit of Mali can not be destroyed, it will always survive inside its people. Now the lands around Manding are united again, it is time for a new Mansa to rise up and bring the empire back to its former glory."

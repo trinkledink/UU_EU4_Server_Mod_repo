@@ -16,5 +16,9 @@
  UU_MAI:0 "Mai" #King of Kanem Bornu
  UU_CALIPHATE:0 "Caliphate" #For Sokoto
  UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies
- 
+ LANDGRAVIATE:0 "Landgraviate" #For HRE Landgraves of Thuringia, Hesse
+  LANDGRAVE:0 "Landgrave"
+  LANDGRAVINE:0 "Landgravine"
+  LANDGRAVE_CONSORT:0 "Landgrave-Consort"
+ MARGRAVIATE:0 "Margraviate"  #For German HRE Margraves Meissen, Brandenburg, Baden (if not electors)
  
