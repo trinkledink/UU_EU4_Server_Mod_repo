@@ -227,6 +227,19 @@ on_war_won = {
 	ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
 		limit = {
+			any_subject_country = {
+				has_country_flag = uu_overlord_colour
+			}
+		}
+		every_subject_country = {
+			limit = {
+				has_country_flag = uu_overlord_colour
+			}
+			change_country_color = { country = overlord }
+		}
+	}
+	if = {
+		limit = {
 			has_country_flag = can_gain_legendary_pirates_flag
 			NOT = { has_ruler_flag = historical_pirate }
 			has_government_attribute = is_pirate_republic_reform
