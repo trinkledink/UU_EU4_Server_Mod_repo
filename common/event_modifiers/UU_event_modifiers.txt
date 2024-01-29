@@ -84,11 +84,11 @@ uu_offensive_espio_mod = {
 uu_def_court_mod = {
 	local_defensiveness = 0.33
 	local_defender_dice_roll_bonus = 1
-	supply_limit_modifier = 1
+	supply_limit_modifier = 1	#local by default
 }
 uu_def_court_capital_mod = {
-	fort_level = 2
-	garrison_size = 1
+	fort_level = 2	#local
+	local_garrison_size = 1
 }
 uu_aristo_mari_mod = {
 	discipline = 0.05
