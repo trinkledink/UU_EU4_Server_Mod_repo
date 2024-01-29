@@ -949,6 +949,7 @@ Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
 	}
 	
 	country_military_power = -1
+	spy_offence = 0.3
 	
 	effect = {}
 	removed_effect = {
