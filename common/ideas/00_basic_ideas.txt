@@ -316,6 +316,7 @@ innovativeness_ideas = { #Innovative Ideas
 	
 	empiricism = {
 		innovativeness_gain = 0.5
+		yearly_innovativeness = 0.24 ##that is 10.8 inno every 30 years including the 50% modifier
 	}
 	patron_of_art  = {
 		prestige_decay = -0.01

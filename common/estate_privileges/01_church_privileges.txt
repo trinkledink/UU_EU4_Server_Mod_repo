@@ -752,12 +752,12 @@ estate_church_inwards_perfection = {
 			remove_estate_privilege = estate_eunuchs_outwards_perfection_privilege 
 		}
 	}
-	modifier_by_land_ownership = {
-		development_cost_in_primary_culture = -0.33
+	modifier_by_land_ownership = {	#uu modified
+		development_cost_in_primary_culture = -0.33	#was dev cost
 		global_tax_modifier = 0.33
 		production_efficiency = 0.33
-		#manpower_in_true_faith_provinces = 0.33
-		manpower_recovery_speed = -0.33
+		#manpower_in_true_faith_provinces = 0.33	#uu removed
+		manpower_recovery_speed = -0.33	#uu added
 		core_creation = 1
 		province_warscore_cost = 2
 	}
