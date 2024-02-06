@@ -574,9 +574,27 @@ canton={
 	}
 }
 philippines={
-	location=1397
+	location=4358
 	color = {
 		17 240 220
+	}
+	outgoing={
+		name="malacca"
+		path={
+			1368 1363
+		}
+		control={ 
+			4685.000000 821.000000 4655.000000 784.000000 4605.000000 757.000000 4525.000000 687.000000 
+		}
+	}
+	outgoing={
+		name="nippon"
+		path={
+			1396 1392
+		}
+		control={ 
+			4785.000000 976.000000 4825.000000 1110.000000 4850.000000 1180.000000 
+		}
 	}
 	outgoing={
 		name="the_moluccas"
