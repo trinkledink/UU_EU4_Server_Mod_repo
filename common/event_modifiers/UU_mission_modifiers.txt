@@ -472,15 +472,28 @@ FKN_end_of_the_peasants_war = {
 	global_tax_modifier = 0.1
 }
 FKN_german_ambition = {
-	core_creation = -0.2
+	army_tradition_decay = -0.01
+	mil_advisor_cost = -0.1
 }
 FKN_common_currency = {
 	trade_efficiency = 0.10
 }
-FKN_duke = {
+FKN_form_monarchy = {
 	legitimacy = 1
-	state_maintenance_modifier = -0.2
-	global_own_trade_power = 0.1
+	advisor_cost = -0.2
+	ae_impact = -0.2
+	improve_relation_modifier = 0.25
+}
+FKN_form_republic = {
+	republican_tradition = 0.25
+	global_trade_goods_size_modifier = 0.1
+}
+FKN_form_theocracy = {
+	devotion = 1
+	monthly_reform_progress_modifier = 0.33
+	papal_influence = 2
+	church_power_modifier = 0.2
+	monthly_fervor_increase = 0.5
 }
 FKN_focus_on_image = {
 	imperial_authority = 0.05

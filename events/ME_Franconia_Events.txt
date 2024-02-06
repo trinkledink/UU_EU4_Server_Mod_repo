@@ -20,8 +20,17 @@ country_event = {
 		
 		#custom_tooltip = FKN_missions_for_hre
 		change_government = monarchy
+		
+		if = {
+			limit = { has_country_modifier = FKN_form_republic }
+			remove_country_modifier = FKN_form_republic
+		}
+		if = {
+			limit = { has_country_modifier = FKN_form_theocracy }
+			remove_country_modifier = FKN_form_theocracy
+		}
 		add_country_modifier = {
-			name = FKN_duke
+			name = FKN_form_monarchy
 			duration = 9125
 		}
 	}
@@ -31,10 +40,6 @@ country_event = {
 		
 		ai_chance = { factor = 0 }
 		
-		add_country_modifier = {
-			name = FKN_duke
-			duration = 9125
-		}
 		add_reform_progress_medium_effect = yes
 	}
 	
