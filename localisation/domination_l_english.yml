@@ -5700,7 +5700,7 @@ l_english:
  ave_iberian_conquest:0 "Iberian Conquest"
  desc_ave_iberian_conquest:0 "The Iberian Peninsula has fallen to the might of our [Root.GovernmentName]. Their population shall become part of the [Root.GetAdjective] war machine!"
  gbr_new_world_dominance:0 "New World Domination"
- desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+50.0%§! Production Efficiency and §G+50.0%§! Trade Efficiency."
+ desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency."
  ave_new_world_dominance:0 "New World Domination"
  desc_ave_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!"
  ave_west_european_empire:0 "Empire of Europe"
