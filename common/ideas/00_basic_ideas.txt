@@ -328,13 +328,13 @@ innovativeness_ideas = { #Innovative Ideas
 		monthly_reform_progress_modifier = 0.2
 	}
 	print_culture = {
-		global_institution_spread = 0.25
+		idea_cost = -0.1
 	}
 	optimism = {
 		war_exhaustion = -0.05
 	}
 	formalized_officer_corps = {
-		idea_cost = -0.1
+		global_institution_spread = 0.25
 	}
 
 	ai_will_do = {

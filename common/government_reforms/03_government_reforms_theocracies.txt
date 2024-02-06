@@ -544,6 +544,7 @@ tibetan_dual_government_reform = {
 		OR = {
 			primary_culture = tibetan
 			culture_group = tibetan_group
+			primary_culture = tibetan_new #uu added
 		}
 	}
 	trigger = {
@@ -551,6 +552,7 @@ tibetan_dual_government_reform = {
 		OR = {
 			primary_culture = tibetan
 			culture_group = tibetan_group
+			primary_culture = tibetan_new #uu added
 		}
 	}
 	nation_designer_trigger = {
