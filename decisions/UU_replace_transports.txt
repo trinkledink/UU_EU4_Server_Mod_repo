@@ -3,15 +3,24 @@ country_decisions = {
         potential = {
             ai = no 
             num_of_transport = 1
-            num_of_owned_provinces_with = {
-                value = 1
-                has_port = yes
+            any_owned_province = {
+                num_of_units_in_province = {
+                    who = ROOT
+                    type = transport
+                    amount = 1
+                }
             }
             dip_tech = 3
         }
 
         allow = {
-            num_of_transport = 1
+            any_owned_province = {
+                num_of_units_in_province = {
+                    who = ROOT
+                    type = transport
+                    amount = 1
+                }
+            }
             is_at_war = no
         }
 
@@ -57,7 +66,7 @@ country_decisions = {
 						value = 1
 					}
                 }
-                add_treasury = -8
+                add_treasury = -20
                 every_owned_province = {
                     limit = { has_province_flag = uu_transport_target_flag }
                     voc_indiamen_light = ROOT
