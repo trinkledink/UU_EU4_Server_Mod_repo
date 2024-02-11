@@ -858,7 +858,6 @@ mercenary_ideas = { ##UU version used.
 	}
 	mercenary_connection_networks = {
 		trade_range_modifier = 0.33
-		mercs_do_not_cost_army_professionalism = yes
 	}
 	local_land_knowledge = {
 		infantry_power = 0.1

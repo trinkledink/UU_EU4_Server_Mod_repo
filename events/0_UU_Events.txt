@@ -267,257 +267,7 @@ country_event = { 	#Hanseatic League rename to Hansa if they want to
 		name = UU_balance_events.6.c
 	}
 }
-country_event = {	#Shinto Incident Manager
-	id = shinto_events.999
-	title = shinto_events.999.t
-	desc = shinto_events.999.desc
-	picture = CITY_VIEW_eventPicture
-
-	trigger = {
-		NOT = { is_incident_active = yes }												#Cannot fire if active incident (should never be the case)
-		OR = {																			#Minimum 30y since last incident
-			NOT = { has_country_flag = shinto_incident_recent }
-			had_country_flag = { 
-				flag = shinto_incident_recent 
-				days = 10950 
-			}
-		}
-		OR = {																			#Will not fire if no eligible incident
-			NOT = { has_country_flag = uu_start_of_neo_confucianism_chain }				#I: Neo-Confucianism trigger (can always fire) 
-			AND = {																		#II: Nanban Trade trigger
-				NOT = { has_country_flag = uu_start_of_nanban_chain }
-				is_institution_enabled = new_world_i
-				num_of_ports = 1
-				OR = {
-					AND = {
-						OR = {
-							normal_or_historical_nations = no
-							is_playing_custom_nation = yes
-						}
-						has_global_flag = japan_has_encountered_the_west
-					}
-					AND = {
-						OR = {
-							normal_or_historical_nations = no
-							is_playing_custom_nation = yes
-						}
-						any_known_country = {
-							NOT = { same_continent = ROOT }
-						}
-					}
-				}
-			}
-			AND = {																		#III: Firearms trigger
-				NOT = { has_country_flag = uu_start_of_incident_firearms_chain }
-				is_incident_happened = incident_nanban
-			}
-			AND = {																		#IV : Christianity trigger
-				NOT = { has_country_flag = uu_start_of_incident_spread_of_christianity_chain }
-				OR = {
-					has_global_flag = japan_has_encountered_the_west
-					normal_or_historical_nations = no 
-				}
-				any_known_country = {
-					religion_group = christian
-				}
-			}
-			AND = {																		#V: Rising Shogunate Authority trigger 
-				NOT = { has_country_flag = uu_start_of_incident_shogunate_authority_chain }
-				has_reform = daimyo
-				OR = {
-					current_age = age_of_reformation
-					current_age = age_of_absolutism
-					current_age = age_of_revolutions
-				}
-				OR = {
-					overlord = {
-						legitimacy = 90
-					}
-					overlord = {
-						is_revolutionary = no
-						absolutism = 50
-					}
-					AND = {
-						is_revolutionary = no
-						absolutism = 50
-					}
-				}			
-			}
-			AND = {																		#VI: Ikko Ikki trigger
-				NOT = { has_country_flag = uu_start_of_ikko_chain }
-				NOT = { current_age = age_of_discovery }
-			}
-			AND = {																		#VII: Wokou Pirates trigger 
-				NOT = { has_country_flag = uu_start_of_wokou_chain }
-				num_of_ports = 1
-				any_known_country = {
-					num_of_ports = 1
-					NOT = { religion = shinto }
-				}
-				any_neighbor_country = {
-					exists = yes
-				}
-			}
-			AND = { 																	#VII: Urbanization trigger
-				NOT = { has_country_flag = uu_start_of_urbanisation_chain }
-				has_institution = global_trade
-				num_of_cities = 2
-			}
-		}
-		has_dlc = "Mandate of Heaven"
-		religion = shinto
-	}
-
-	mean_time_to_happen = {
-		months = 24 #30y minimum from trigger + 2y mtth
-	}
-
-	option = {	#Incident I - Neo-Confucianism
-		name = shinto_events.999.a
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_neo_confucianism_chain }
-		}
-		set_country_flag = uu_start_of_neo_confucianism_chain
-	}
-
-	option = {	#Incident II - Nanban Trade
-		name = shinto_events.999.b
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_nanban_chain }
-			is_institution_enabled = new_world_i
-			num_of_ports = 1
-			if = {
-				limit = {
-					normal_or_historical_nations = yes
-					is_playing_custom_nation = no
-				}
-				custom_trigger_tooltip = {
-					tooltip = japan_has_encountered_the_west_tooltip
-					has_global_flag = japan_has_encountered_the_west
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						normal_or_historical_nations = no
-						is_playing_custom_nation = yes
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = encountered_other_continent_tooltip
-					any_known_country = {
-						NOT = { same_continent = ROOT }
-					}
-				}
-			}
-		}
-		set_country_flag = uu_start_of_nanban_chain
-	}
-
-	option = {	#Incident III - Firearms
-		name = shinto_events.999.c
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_incident_firearms_chain }
-			is_incident_happened = incident_nanban
-		}
-		set_country_flag = uu_start_of_incident_firearms_chain
-	}
-
-	option = {	#Incident IV - Christianity
-		name = shinto_events.999.d
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_incident_spread_of_christianity_chain }
-			NOT = { current_age = age_of_discovery }
-			if = {
-				limit = {
-					normal_or_historical_nations = yes
-				}
-				custom_trigger_tooltip = {
-					tooltip = japan_has_encountered_the_west_tooltip
-					has_global_flag = japan_has_encountered_the_west
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = encountered_christian_tooltip
-				any_known_country = {
-					religion_group = christian
-				}
-			}
-		}
-		set_country_flag = uu_start_of_incident_spread_of_christianity_chain
-	}
-
-	option = {	#Incident V - Rising Shogunate Authority
-		name = shinto_events.999.e
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_incident_shogunate_authority_chain }
-			has_reform = daimyo
-			OR = {
-				current_age = age_of_reformation
-				current_age = age_of_absolutism
-				current_age = age_of_revolutions
-			}
-			OR = {
-				overlord = {
-					legitimacy = 90
-				}
-				overlord = {
-					is_revolutionary = no
-					absolutism = 50
-				}
-				AND = {
-					is_revolutionary = no
-					absolutism = 50
-				}
-			}
-		}
-		set_country_flag = uu_start_of_incident_shogunate_authority_chain
-	}
-
-	option = {	#Incident VI - Ikko-Ikki
-		name = shinto_events.999.f
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_ikko_chain }
-			NOT = { current_age = age_of_discovery }
-		}
-		set_country_flag = uu_start_of_ikko_chain
-	}
-
-	option = {	#Incident VII - Wokou Pirates
-		name = shinto_events.999.g
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_wokou_chain }
-			num_of_ports = 1
-			any_known_country = {
-				num_of_ports = 1
-				NOT = { religion = shinto }
-			}
-			any_neighbor_country = {
-				exists = yes
-			}
-		}
-		set_country_flag = uu_start_of_wokou_chain
-	}
-
-	option = {	#Incident VIII - Urbanization
-		name = shinto_events.999.h
-		custom_tooltip = uu_incident_manager_tt
-		trigger = { 
-			NOT = { has_country_flag = uu_start_of_urbanisation_chain }
-			has_institution = global_trade
-			num_of_cities = 2
-		}
-		set_country_flag = uu_start_of_urbanisation_chain
-	}
-}
-country_event = {
+country_event = {	#educated ruler for hordes
 	id = UU_balance_events.7
 	title = flavor_sca.2.t
 	desc = flavor_sca.2.desc
@@ -564,5 +314,159 @@ country_event = {
 
 	after = {
 		clr_country_flag = is_selecting_stat_bonus_for_heir
+	}
+}
+province_event = {	#TOO MANY FORTS
+	id = UU_balance_events.8
+	title = UU_balance_events.8.t
+	desc = UU_balance_events.8.desc
+	picture = FORT_eventPicture
+
+	trigger = {
+		AND = {
+			controlled_by = owner
+			has_fort_building_trigger = yes
+			any_neighbor_province = {
+				owned_by = ROOT
+				controlled_by = owner
+				has_fort_building_trigger = yes
+			}
+			owner = { 	#ai can keep their forts
+				ai = no
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = uu_fort_target_province_1
+			random_neighbor_province = {
+				limit = {
+					has_fort_building_trigger = yes
+					owned_by = ROOT
+					controlled_by = owner
+				}
+				save_event_target_as = uu_fort_target_province_2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {	# 
+		name = UU_balance_events.8.a
+		event_target:uu_fort_target_province_1 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+		event_target:uu_fort_target_province_2 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+	}
+	option = {	# 
+		name = UU_balance_events.8.b
+		goto = uu_fort_target_province_1
+		event_target:uu_fort_target_province_1 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+	}
+	option = {	# 
+		name = UU_balance_events.8.c
+		goto = uu_fort_target_province_2
+		event_target:uu_fort_target_province_2 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
 	}
 }

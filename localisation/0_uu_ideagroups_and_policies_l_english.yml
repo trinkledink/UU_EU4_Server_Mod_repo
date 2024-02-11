@@ -18,7 +18,7 @@
  viable_career_option:0 "Viable Career Option"
   viable_career_option_desc:0 "Constant employment of mercenaries has led the life of a mercenary to be a viable career option for our people."
  mercenary_connection_networks:0 "Mercenary Connection Networks"
-  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without.\n§YUnlocks a unique Mercenary Company consisting of only Infantry.§!"
+  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without.\n§YUnlocks a unique Mercenary Company consisting of only Infantry.§! \nMercenary Companies no longer reduce §YArmy Professionalism§! when hired."
  trusted_partner_discounts:0 "Trusted Partner Discounts"
   trusted_partner_discounts_desc:0 "We have gained the favour and trust of certain contracting partners, allowing us to employ their companies' service for a cheaper price than most other nations would."
  local_land_knowledge:0 "Local Land Knowledge"
