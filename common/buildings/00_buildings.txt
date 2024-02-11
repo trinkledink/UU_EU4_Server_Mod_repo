@@ -382,6 +382,7 @@ fort_15th = {
 	time = 30
 
 	build_trigger = {
+		ai = no
 		NOT = {
 			any_neighbor_province = {
 				owner = {

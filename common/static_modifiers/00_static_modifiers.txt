@@ -1898,7 +1898,7 @@ prepared_streltsy_modifier = {
 }
 
 new_order_regiment_mobilized_modifier = {
-	infantry_power = 0.15
+	infantry_power = 0.5 #uu nerfed from 0.15
 }
 
 inward_focus_modifier = {
