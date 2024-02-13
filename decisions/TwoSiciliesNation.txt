@@ -63,6 +63,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			#adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -79,6 +80,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TTS
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { tag = NAP }

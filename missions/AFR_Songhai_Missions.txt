@@ -25,23 +25,23 @@ songhai_military_slot = {
 		effect = {
 			capital_scope = {
 				add_institution_embracement = {
-					which = feudalism
-					value = 100
+					which = renaissance
+					value = 50
 				}
 			}
 			random_owned_province = {
 				limit = {
 					NOT = {
 						provincial_institution_progress = {
-							which = feudalism
+							which = renaissance
 							value = 1
 						}
 					}
 					is_state = yes
 				}
 				add_institution_embracement = {
-					which = feudalism
-					value = 100
+					which = renaissance
+					value = 50
 				}
 			}
 			change_government_reform_progress = -25
@@ -183,10 +183,7 @@ songhai_military_slot = {
 			}
 		}
 		effect = {
-			custom_tooltip = no_more_comet_sighted_event_tt
-			hidden_effect = {
-				set_country_flag = no_more_comet_sighted_event
-			}
+			remove_comet_sighted_events = yes
 			add_country_modifier = {
 				name = son_modern_government
 				duration = -1
@@ -549,7 +546,7 @@ songhai_maghreb_slot = {
 				set_country_flag = can_colonize_djado_and_tajarhi
 			}
 			add_stability = 1
-			add_accepted_culture_or_dip_power = { culture = tuareg }
+			add_accepted_culture_or_dip_power = { culture = tuareg dip_reward = yes }
 		}
 		ai_weight = {
 			factor = 200	#Alt-history
@@ -831,8 +828,9 @@ songhai_mossi_slot = {
 		}
 		effect = {
 			add_army_tradition = 20
-			country_event = {
-				id = flavor_son.5
+			enable_branching_mission_review = {
+				key = SON
+				ai_event_id = flavor_son.5
 			}
 		}
 		ai_weight = {
@@ -852,8 +850,8 @@ songhai_question_mark_slot = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
-		NOT = { has_country_flag = son_islamtic_focus }
-		NOT = { has_country_flag = son_tolderance_focus }
+		NOT = { has_country_flag = son_islamic_focus }
+		NOT = { has_country_flag = son_tolerance_focus }
 	}
 	has_country_shield = yes
 
@@ -1251,7 +1249,6 @@ songhai_question_mark_slot = {
 		}
 		effect = {
 			custom_tooltip = son_religious_effects_tt
-			add_increase_same_religion_opinion = yes
 			add_country_modifier = {
 				name = son_beacon_of_islam
 				duration = -1
@@ -1275,7 +1272,7 @@ songhai_jihad_slot = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
-		has_country_flag = son_islamtic_focus
+		has_country_flag = son_islamic_focus
 	}
 	has_country_shield = yes
 
@@ -1294,6 +1291,7 @@ songhai_jihad_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			custom_trigger_tooltip = {
 				tooltip = son_convert_the_mossi_tt
 				NOT = {
@@ -1333,6 +1331,7 @@ songhai_jihad_slot = {
 		}
 		position = 5
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			if = {
 				limit = {
 					has_estate = estate_church
@@ -1411,6 +1410,7 @@ songhai_jihad_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
@@ -1545,6 +1545,7 @@ songhai_jihad_slot = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			custom_trigger_tooltip = {
 				tooltip = son_convert_west_africa_tt
 				NOT = {
@@ -1561,7 +1562,6 @@ songhai_jihad_slot = {
 			}
 		}
 		effect = {
-			add_increase_same_religion_opinion = yes
 			add_country_modifier = {
 				name = son_beacon_of_islam
 				duration = -1
@@ -1584,7 +1584,7 @@ songhai_protection_slot = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
-		has_country_flag = son_tolderance_focus
+		has_country_flag = son_tolerance_focus
 	}
 	has_country_shield = yes
 
@@ -1596,6 +1596,7 @@ songhai_protection_slot = {
 		}
 		position = 4
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			if = {
 				limit = {
 					has_estate = estate_dhimmi
@@ -1665,6 +1666,7 @@ songhai_protection_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			calc_true_if = {
 				all_country = {
 					custom_trigger_tooltip = {
@@ -1717,6 +1719,7 @@ songhai_protection_slot = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			custom_trigger_tooltip = {
 				tooltip = son_eliminate_other_muslims_tt
 				NOT = {
@@ -1759,6 +1762,7 @@ songhai_protection_slot = {
 		}
 		position = 8
 		trigger = {
+			not_in_mission_preview_mode = { key = SON }
 			num_of_owned_provinces_with = {
 				religion = shamanism
 				value = 35

@@ -4,7 +4,10 @@ hab_holy_roman_ambitions = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUH
+		}
 	}
 	has_country_shield = yes
 	
@@ -107,18 +110,6 @@ hab_holy_roman_ambitions = {
 		
 		completed_by = 1526.8.30
 		
-		ai_weight = {
-			factor = 3
-			modifier = {
-				factor = 0
-				bohemia_area = {
-					owner = {
-						alliance_with = ROOT
-					}
-				}
-			}
-		}
-		
 		provinces_to_highlight = {
 			OR = {
 				province_id = 266
@@ -173,15 +164,20 @@ hab_holy_roman_ambitions = {
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest (though they got the crown not through war, but marriages are a little bit too mysterious and complex for the AI)
+			modifier = {
+				factor = 0
+				bohemia_area = {
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
 		}
 	}
 	recover_silesia = {
 		icon = mission_unite_home_region
 		required_missions = { subjugate_bohemia }
 		completed_by = 1620.11.8
-		ai_weight = {
-			factor = 2
-		}
 		trigger = {
 			silesia_area = {
 				type = all
@@ -238,35 +234,6 @@ hab_holy_roman_ambitions = {
 		icon = mission_noble_council
 		completed_by = 1772.8.5
 		required_missions = { recover_silesia }
-		ai_weight = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				malopolska_area = {
-					owner = {
-						alliance_with = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				slovakia_area = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			modifier = {
-				factor = 2
-				malopolska_area = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			modifier = {
-				factor = 2
-				red_ruthenia_area = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-		}
 		provinces_to_highlight = {
 			OR = {
 				area = slovakia_area
@@ -347,6 +314,32 @@ hab_holy_roman_ambitions = {
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest
+			modifier = {
+				factor = 0
+				malopolska_area = {
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				slovakia_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			modifier = {
+				factor = 2
+				malopolska_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			modifier = {
+				factor = 2
+				red_ruthenia_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 		}
 	}
 }
@@ -357,7 +350,10 @@ hab_protect_the_balkans = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUH
+		}
 	}
 	has_country_shield = yes
 	
@@ -606,6 +602,7 @@ hab_protect_the_balkans = {
 				}
 			}
 		}
+
 		provinces_to_highlight = {
 			OR = {
 				area = southern_transylvania_area
@@ -624,9 +621,6 @@ hab_protect_the_balkans = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_orthodox_tolerance
-			}
 			wallachia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -645,96 +639,97 @@ hab_protect_the_balkans = {
 	}
 }
 
-hab_italian_ambitions = {
-	slot = 3
-	generic = no
-	ai = yes
+# hab_italian_ambitions = {
+	# slot = 3
+	# generic = no
+	# ai = yes
 	
-	potential = {
-		tag = HAB
-		NOT = { map_setup = map_setup_random }
-	}
+	# potential = {
+		# OR = {
+			# tag = HAB
+			# tag = AUH
+		# }
+		# NOT = { map_setup = map_setup_random }
+	# }
 	
-	has_country_shield = yes
+	# has_country_shield = yes
 	
-	austrian_italian_ambition = {
-		icon = mission_italian_condottiere
-		position = 7
-		completed_by = 1797.10.17
+	# austrian_italian_ambition = {
+		# icon = mission_italian_condottiere
+		# position = 3
+		# completed_by = 1797.10.17
 		
-		ai_weight = {
-			factor = 500
-			modifier = {
-				factor = 0.5
-				venetia_area = {
-					is_part_of_hre = yes
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-			}
-			modifier = {
-				factor = 2
-				venetia_area = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-		}
+		# ai_weight = {
+			# factor = 500
+			# modifier = {
+				# factor = 0.5
+				# venetia_area = {
+					# is_part_of_hre = yes
+					# NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				# }
+			# }
+			# modifier = {
+				# factor = 2
+				# venetia_area = {
+					# country_or_non_sovereign_subject_holds = ROOT
+				# }
+			# }
+		# }
 		
-		required_missions = { austrian_croatia }
-		provinces_to_highlight = {
-			area = venetia_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			venetia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_mercantilism = 5
-			venetia_area = {
-				add_province_modifier = {
-					name = "protected_italian_interests"
-					duration = 3650
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Emperor"
-				}
-				if = {
-					limit = {
-						exists = MLO
-						valid_for_personal_unions_trigger = yes
-						MLO = {
-							valid_for_personal_unions_trigger = yes
-							num_of_cities = 3 #no point in taking an OPM
-							owns = 104
-						}
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = MLO
-					}
-				}
-				else = {
-					lombardy_area = {
-						limit = {
-							NOT = { is_core = root }
-							NOT = { is_permanent_claim = root }
-						}
-						add_permanent_claim = root
-					}
-					po_valley_area = {
-						limit = {
-							NOT = { is_core = root }
-							NOT = { is_permanent_claim = root }
-						}
-						add_permanent_claim = root
-					}
-				}
-			}
-		}
-	}
-}
+		# required_missions = {  }
+		# provinces_to_highlight = {
+			# area = venetia_area
+			# NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		# }
+		# trigger = {
+			# venetia_area = {
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
+		# }
+		# effect = {
+			# add_mercantilism = 5
+			# add_country_modifier = {
+				# name = "uu_road_to_rome"	#UU change
+				# duration = 7300
+			# }
+			# if = {
+				# limit = {
+					# has_dlc = "Emperor"
+				# }
+				# if = {
+					# limit = {
+						# exists = MLO
+						# valid_for_personal_unions_trigger = yes
+						# MLO = {
+							# valid_for_personal_unions_trigger = yes
+							# num_of_cities = 3 #no point in taking an OPM
+							# owns = 104
+						# }
+					# }
+					# add_casus_belli = {
+						# type = cb_restore_personal_union
+						# months = 300
+						# target = MLO
+					# }
+				# }
+				# else = {
+					# lombardy_area = {
+						# limit = {
+							# NOT = { is_core = root }
+							# NOT = { is_permanent_claim = root }
+						# }
+						# add_permanent_claim = root
+					# }
+					# po_valley_area = {
+						# limit = {
+							# NOT = { is_core = root }
+							# NOT = { is_permanent_claim = root }
+						# }
+						# add_permanent_claim = root
+					# }
+				# }
+			# }
+		# }
+	# }
+# }

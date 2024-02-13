@@ -1,0 +1,22 @@
+# No previous file for Dallol
+
+owner = DND
+controller = DND
+add_core = DND
+is_city = yes
+culture = songhai 
+religion = shamanism #Fetishism
+capital = "Say"
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+discovered_by = sub_saharan
+
+1464.1.1 = {
+    owner = SON 
+    controller = SON 
+    add_core = SON 
+    remove_core = DND
+}

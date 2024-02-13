@@ -16,6 +16,7 @@ unlock_estate_privilege = {
 	estate_privilege = estate_burghers_orthodox_tolerance
 }
 
+
 1387.3.31 = {
 	monarch = {
 		name = "Sigismund I"

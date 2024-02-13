@@ -47,7 +47,7 @@ country_event = {
     }
 	
 	mean_time_to_happen = {
-		months = 2500
+		months = 180
 	}
 
     option = { # Relief effort    
@@ -131,7 +131,7 @@ country_event = {
     }
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 180
 	}
 
     option = {
@@ -379,7 +379,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 180
 	}
 
     option = {      

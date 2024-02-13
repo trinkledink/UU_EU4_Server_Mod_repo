@@ -1,0 +1,32 @@
+country_decisions = {
+	embrace_native_traditions = {
+		major = yes
+		potential = {
+			tag = CAN
+		}
+		allow  = {
+			any_owned_province = {
+				religion = totemism
+				development = 15
+			}
+			stability = 2
+			prestige = 80
+			republican_tradition = 85
+			adm_tech = 10
+		}
+		effect = {
+			add_stability = -2
+			add_prestige = -50
+			change_religion = totemism
+			change_technology_group = high_american
+			change_unit_type = high_american
+			add_country_modifier = {
+				name = totemism_resurgence
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

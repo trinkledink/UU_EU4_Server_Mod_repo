@@ -76,7 +76,8 @@ monarch_names = {
 	"René #0" = 0
 	"Sébastien #0" = 0
 	"Simon #0" = 0
-	
+
+
 	"Marie #0" = -10
 	"Geneviève #0" = -2
 	"Anne #0" = -1
@@ -129,4 +130,6 @@ army_names = {
          "Armée de l'Avallonnais" "Armée de Tonnerre"  "Armée de l'Auxonnois"
          "Armée de la Saône"      
 	 "Armée de $PROVINCE$" 
+
 }
+

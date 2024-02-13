@@ -1,0 +1,47 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = songhai
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1142	# Dendi
+religious_school = maliki_school
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -20
+}
+change_dhimmi_or_church_land_share_effect = {
+	share = 10
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 10
+}
+
+1399.1.1 = {
+	monarch = {	
+		name = "Mar-Arandan"
+		dynasty = "Sonni"
+		birth_date = 1397.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1420.1.1 = {
+	heir = {
+		name = "Sulâyman"
+		monarch_name = "Sulâyman" 
+		dynasty = "Sonni"
+		birth_date = 1420.1.1
+		death_Date = 1464.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}

@@ -1,0 +1,320 @@
+# For specific combinations of culture, religion and other such triggers
+# Will pick the first valid one it finds in list
+
+#Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
+
+kanem_bornu_monarchy = {
+	
+	rank = {
+		1 = EMIRATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = UU_MAI
+		2 = UU_MAI 
+		3 = UU_MAI
+	}
+	ruler_female = {
+		1 = UU_MAI
+		2 = UU_MAI
+		3 = UU_MAI
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		tag = KBO 
+		OR = {
+			government = tribal
+			government = monarchy
+		}
+	}
+}
+
+mansa_country = {
+	rank = {
+		1 = CHIEFDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = FAAMA
+		2 = MANSA
+		3 = MANSA
+	}
+
+	ruler_female = {
+		1 = FAAMA
+		2 = MANSA
+		3 = MANSA
+	}
+	
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			culture = mali
+			tag = FUL 
+		}
+		government = tribal
+	}
+}
+
+sokoto_caliphate = {
+	rank = {
+		1 = SULTANATE
+		2 = UU_CALIPHATE
+		3 = UU_CALIPHATE
+	}
+
+	
+	ruler_male = {
+		1 = SULTAN
+		2 = CALIPH
+		3 = CALIPH
+	}
+
+	ruler_female = {
+		1 = SULTANA
+		2 = CALIPHA
+		3 = CALIPHA
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		tag = SOK 
+		religion_group = muslim
+		has_reform = feudal_theocracy
+	}
+}
+
+generic_africa_caliphate = {
+	rank = {
+		1 = IMAMATE
+		2 = IMAMATE
+		3 = UU_CALIPHATE
+	}
+
+	
+	ruler_male = {
+		1 = UU_ALMAMI
+		2 = UU_ALMAMI
+		3 = CALIPH
+	}
+
+	ruler_female = {
+		1 = IMAM_fem
+		2 = IMAM_fem
+		3 = CALIPHA
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+	
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = guinea_region
+				region = niger_region
+				region = sahel_region
+			}
+		}
+		NOT = { tag = SOK }
+		religion_group = muslim
+		has_reform = feudal_theocracy
+	}
+}
+
+mutapa_zimbabwe_monarchy = { #copy of mutapa from vanilla
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = MWENEMUTAPA
+		3 = GREAT_MWENEMUTAPA
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = MWENEMUTAPA_fem
+		3 = GREAT_MWENEMUTAPA_fem
+	}
+	
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		was_tag = ZIM
+		tag = GZI
+	}
+}
+
+butua_zimbabwe_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = MAMBO
+		2 = GRAND_MAMBO
+		3 = GREAT_MAMBO
+	}
+
+	ruler_female = {
+		1 = MAMBO
+		2 = GRAND_MAMBO_fem
+		3 = GREAT_MAMBO_fem
+	}
+	
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		was_tag = RZW
+		OR = {
+			tag = RZI
+			tag = GZI
+		}
+	}
+}

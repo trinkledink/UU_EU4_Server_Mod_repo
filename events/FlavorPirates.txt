@@ -146,6 +146,16 @@ country_event = {
 			swap_non_generic_missions = yes
 		}
 	}
+
+	after = { # Trigger an event, which will swap the national ideas of pirate tag with correct ideas
+		hidden_effect = {
+			NSS = {
+				country_event = {
+					id = pirates.25
+				}
+			}
+		}
+	}
 }
 
 # Libertatia
@@ -305,6 +315,16 @@ country_event = {
 		}
 		create_march = LIB
 	}
+
+	after = { # Trigger an event, which will swap the national ideas of pirate tag with correct ideas
+		hidden_effect = {
+			LIB = {
+				country_event = {
+					id = pirates.25
+				}
+			}
+		}
+	}
 }
 
 # Sale
@@ -450,6 +470,44 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		}
 	}
+	option = { #kill stinky pirates
+		name = "pirates.4.c"
+		4563 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+		}
+		release = SLE
+		SLE = {
+			change_government = republic
+			add_government_reform = pirate_republic_reform
+			adopt_reform_progress = ROOT
+			add_republican_tradition = 50
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			define_ruler = {
+				name = "Murat" # Jan Janszoon
+				dynasty = "Reis"
+				adm = 3
+				dip = 3
+				mil = 4
+			}
+			if = {
+				limit = {
+					NOT = { has_idea_group = barbary_pirate_ideas }
+				}
+				swap_free_idea_group = yes
+			}
+			swap_non_generic_missions = yes
+			set_ruler_flag = historical_pirate
+		}
+		SLE = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+			
+		}
+	}
 }
 
 # Tetouan
@@ -591,6 +649,12 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		}
 	}
+	option = { #pirate stinky
+		name = "pirates.5.c"
+		4561 = {
+			add_base_tax = 1
+		}
+    }
 }
 
 # Port Royal
@@ -756,6 +820,16 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		}
 	}
+
+	after = { # Trigger an event, which will swap the national ideas of pirate tag with correct ideas
+		hidden_effect = {
+			PRY = {
+				country_event = {
+					id = pirates.25
+				}
+			}
+		}
+	}
 }
 
 # Tortuga - Brethren of the Coast
@@ -906,6 +980,16 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		}
 	}
+
+	after = { # Trigger an event, which will swap the national ideas of pirate tag with correct ideas
+		hidden_effect = {
+			TOR = {
+				country_event = {
+					id = pirates.25
+				}
+			}
+		}
+	}
 }
 
 # Palembang - Return of Piracy
@@ -1007,7 +1091,7 @@ country_event = {
 		}
 		add_republican_tradition = 50
 		set_ruler_flag = historical_pirate
-			add_ruler_personality = legendary_pirate_personality
+		add_ruler_personality = legendary_pirate_personality
 		swap_non_generic_missions = yes
 	}
 
@@ -1110,7 +1194,7 @@ country_event = {
 		}
 		add_republican_tradition = 50
 		set_ruler_flag = historical_pirate
-			add_ruler_personality = legendary_pirate_personality
+		add_ruler_personality = legendary_pirate_personality
 		swap_non_generic_missions = yes
 	}
 
@@ -1286,6 +1370,28 @@ country_event = {
 	}
 }
 
+
+# Give the Pirate nations their righful ideas
+country_event = {
+	id = pirates.25
+	title = "pirates.25.t"
+	picture = SMUGGLERS_eventPicture
+	desc = "pirates.25.d"
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "pirates.25.a"
+		ai_chance = {
+			factor = 1
+		}
+		if = {
+			limit = {
+				NOT = { has_idea_group = pirate_ideas }
+			}
+			swap_free_idea_group = yes
+		}
 
 # [Root.Monarch.GetName] is now a legendary pirate!
 country_event = {

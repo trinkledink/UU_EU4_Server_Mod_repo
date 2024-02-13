@@ -1,19 +1,7 @@
 government = monarchy
+add_government_reform = plutocratic_reform
 primary_culture = catalan
 religion = sunni
 technology_group = muslim
 capital = 221
 religious_school = maliki_school
-
-change_estate_land_share = {
-	estate = estate_nobles
-	share = 10
-}
-change_estate_land_share = {
-	estate = estate_church
-	share = 20
-}
-change_estate_land_share = {
-	estate = estate_burghers
-	share = 10
-}

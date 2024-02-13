@@ -1,0 +1,44 @@
+uu_gb_normandy_modifier = {
+	potential = {}
+	trigger = {
+		owner = {
+			OR = {
+				tag = GBR
+				tag = ENG
+				tag = AVE
+			}
+			owns_core_province = 167
+			owns_core_province = 168
+			owns_core_province = 1879
+			owns_core_province = 4385
+			mission_completed = eng_secure_normandy
+		}
+	}
+	land_morale = 0.1
+	nobles_loyalty_modifier = 0.05
+}
+
+uu_better_weapons_manus_priv_mod = {
+	potential = {
+		OR = {
+			owner = { has_estate_privilege = estate_burghers_pluto_weapons }
+			owner = { has_estate_privilege = estate_vaisyas_pluto_weapons }
+		}
+	}
+
+	trigger = {
+		OR = {
+			owner = { has_estate_privilege = estate_burghers_pluto_weapons }
+			owner = { has_estate_privilege = estate_vaisyas_pluto_weapons }
+		}
+		OR = {
+			owner = { is_at_war = yes }
+			owner = {
+				any_neighbor_country = { is_at_war = yes }
+			}
+		}
+	}
+
+	trade_goods_size = 0.33
+	province_trade_power_value = 5
+}

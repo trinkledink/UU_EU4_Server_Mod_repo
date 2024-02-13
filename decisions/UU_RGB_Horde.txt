@@ -1,0 +1,51 @@
+country_decisions = {
+	uu_rgb_horde = {
+		color = { 180 170 0 }
+		major = yes
+		
+		potential = {
+			tag = GLH
+			ai = no
+			owns = 465
+			NOT = { has_country_flag = uu_rgb_horde_active }
+		}
+		allow = {
+			tag = GLH
+			custom_trigger_tooltip = {
+				tooltip = uu_rgb_horde_trigger_tt
+				465 = { is_capital_of = ROOT }
+			}
+		}
+		effect = {
+			set_country_flag = uu_rgb_horde_active
+			override_country_name = RGB_HORDE
+			country_event = { id = uu_rgb_horde.999 }
+			hidden_effect = { country_event = { id = uu_rgb_horde.1 } }
+		}
+		ai_will_do = { #Should be redundant
+			factor = 0
+		}
+	}
+	uu_rgb_horde_off = {
+		color = { 180 170 0 }
+		
+		major = yes
+		
+		potential = {
+			tag = GLH
+			has_country_flag = uu_rgb_horde_active
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_country_flag = uu_rgb_horde_active
+			restore_country_color = yes
+			clr_country_flag = uu_overlord_colour
+			restore_country_name = yes
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+}

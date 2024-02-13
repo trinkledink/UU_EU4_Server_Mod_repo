@@ -1,0 +1,204 @@
+country_decisions = {
+    uu_unite_madagascar = {
+        major = yes
+        potential = {
+            OR = {
+                tag = BTS
+                tag = SKA
+                tag = MIR
+                tag = ANT
+                tag = MFY
+            }
+            NOT = { has_country_flag = uu_united_madagascar_flag }
+        }
+        provinces_to_highlight = {
+            OR = {
+                area = madagascar_highlands_area
+                area = betsimasaraka_area
+                area = sakalava_area
+                area = southern_madagascar
+            }
+            NOT = { 
+                AND = {
+                    is_core = ROOT
+                    owned_by = ROOT  
+                }
+            }
+        }
+        allow = {
+            madagascar_highlands_area = {
+                type = all
+                is_core = ROOT
+                owned_by = ROOT
+            }
+            betsimasaraka_area = {
+                type = all
+                is_core = ROOT
+                owned_by = ROOT
+            }
+            sakalava_area = {
+                type = all
+                is_core = ROOT
+                owned_by = ROOT
+            }
+            southern_madagascar = {
+                type = all
+                is_core = ROOT
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            set_government_rank = 2
+            add_prestige = 25
+            set_country_flag = uu_united_madagascar_flag
+            capital_scope = {
+                add_base_tax = 3
+                add_base_production = 3
+                add_base_manpower = 3
+            }
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+            create_colony_mission_reward = {
+                province = 4020
+            }
+        }
+    }
+
+    songhai_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			primary_culture = songhai
+			NOT = { has_country_flag = formed_songhai_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SON }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2269 #Zarmaganda
+                province_id = 2270 #Dallol
+                province_id = 1142 #Dendi
+                province_id = 2268 #Aribanda
+                province_id = 1133 #Gao
+                province_id = 2262 #Karabara
+                AND = {
+					ROOT = {
+						NOT = { owns_core_province = 2271 }
+						NOT = { owns_core_province = 2264 }
+					}
+					OR = {
+						province_id = 2271 #Azawagh - not songhai culture but on the river 
+						province_id = 2264 #Hombori - songhai culture, owned by a mossi tag at game start
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SON }
+			is_at_war = no
+            stability = 1
+			is_free_or_tributary_trigger = yes
+            owns_core_province = 2269 #Zarmaganda
+            owns_core_province = 2270 #Dallol
+            owns_core_province = 1142 #Dendi
+            owns_core_province = 2268 #Aribanda
+            owns_core_province = 1133 #Gao
+            owns_core_province = 2262 #Karabara
+            1133 = {
+                is_state = yes
+            }
+            OR = {
+                owns_core_province = 2271 #Azawagh - not songhai culture but on the river 
+                owns_core_province = 2264 #Hombori - songhai culture, owned by a mossi tag at game start
+            }
+		}
+		effect = {
+			change_tag = SON
+            restore_country_name = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 2
+			add_prestige = 10
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_songhai_flag
+            change_government_reform_progress = 300
+            every_owned_province = {
+                limit = {
+                    culture = songhai 
+                    nationalism = 0.5
+                }
+                add_nationalism = -20
+            }
+            2262 = {
+                add_base_manpower = 1
+            }
+            1133 = {
+                move_capital_effect = yes
+                add_base_manpower = 3
+            }
+            2268 = {
+                add_base_manpower = 1
+            }
+            1142 = {
+                add_base_manpower = 1
+            }
+            2270 = {
+                add_base_manpower = 1
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+    uu_kick_out_fulani_scholar = {
+		major = yes
+		
+		potential = {
+			has_country_modifier = uu_fulani_preacher_accepted
+		}
+		allow = {
+			has_country_modifier = uu_fulani_preacher_accepted
+			stability = 0
+		}
+		effect = {
+			add_stability = -1 
+			remove_accepted_culture = fulani
+			remove_country_modifier = uu_fulani_preacher_accepted
+            custom_tooltip = uu_crush_sokoto
+			add_country_modifier = {
+				name = uu_fulani_preacher_rejected
+				duration = -1
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 1800 }
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+country_decisions = {
+	help_poor = {
+		color = { 204 76 127 }
+		major = yes
+		potential = {
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+			}
+		}
+		allow = {	
+			is_at_war = no
+			years_of_income = 0.20
+			custom_trigger_tooltip = {
+				tooltip = uu_buddhist_decision_tooltip
+				NOT = { has_country_modifier = helped_poor }
+			}		
+		}
+		effect = {
+			add_years_of_income	= -0.2
+			hidden_effect = {
+				add_country_modifier = {
+					name = "helped_poor"
+					duration = 3650
+				}
+			}
+			add_karma = 25
+		}
+		ai_will_do	= {
+			factor = 1
+			modifier = {
+				factor = 0
+				karma = 0 
+				NOT = { years_of_income = 1 }
+			}
+		}
+				
+	}
+	benefit_from_offerings = {
+		color = { 204 76 127 }
+		major = yes
+		potential = {
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+			}
+		}
+		allow = {	
+			is_at_war = no
+			custom_trigger_tooltip = {
+				tooltip = uu_buddhist_decision_tooltip
+				NOT = { has_country_modifier = benefited_from_offerings }
+			}	
+		}
+		effect = {
+			add_years_of_income	= 0.15
+			hidden_effect = {
+				add_country_modifier = {
+					name = "benefited_from_offerings"
+					duration = 3650
+				}
+			}
+			add_karma = -25
+		}
+		ai_will_do	= {
+			factor = 1
+		}
+	}
+}

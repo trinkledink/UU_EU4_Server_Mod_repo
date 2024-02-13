@@ -1,0 +1,24 @@
+#UU UPDATED 1.36.1
+infantry = {
+	factor = 1
+}
+cavalry = {
+	factor = 1
+	modifier = {
+		factor = 3
+        OR = {
+            has_dharma_elephants_trigger = yes
+            tag = POL
+            tag = PLC
+			tag = SIA 
+			has_reform = steppe_horde
+        }
+	}
+}
+artillery = {
+	factor = 1
+	modifier = {
+		factor = 3
+		tag = SMO
+	}
+}

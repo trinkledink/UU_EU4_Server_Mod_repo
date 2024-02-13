@@ -1,0 +1,416 @@
+uuhau_1 = {
+    slot = 1
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_2_free_i = {
+    slot = 2
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_2_secret = {
+    slot = 2
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_2_free_ii = {
+    slot = 2
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_free_i = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_branching = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+        NOT = { has_country_flag = uuhau_chose_islam }
+        NOT = { has_country_flag = uuhau_chose_pagan }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_islam = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+        OR = {
+            has_country_flag = uuhau_chose_islam
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_pagan = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+        }
+        has_country_flag = uuhau_chose_pagan
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_kbi_zam = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        NOT = {
+            was_tag = GOB 
+            was_tag = DRA 
+            was_tag = KTS 
+            was_tag = KAN 
+            was_tag = RAN 
+            was_tag = ZZZ 
+            was_tag = BIR 
+        }
+    }
+    has_country_shield = yes
+}
+uuhau_3_gob = { #city of war
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        was_tag = GOB
+    }
+    has_country_shield = yes
+}
+uuhau_3_dra_kts = { #market cities 
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        OR = {
+            was_tag = DRA
+            was_tag = KTS
+        }
+    }
+    has_country_shield = yes
+}
+uuhau_3_kan_ran = { #indigo cities 
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+         OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        OR = {
+            was_tag = KAN
+            was_tag = RAN
+        }
+    }
+    has_country_shield = yes
+}
+uuhau_3_zzz = { #amina stronk. give legendary conq 
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        was_tag = ZZZ
+    }
+    has_country_shield = yes
+}
+uuhau_3_bir = { #city of govt
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = SOK
+            tag = HAU 
+        }
+        was_tag = BIR
+    }
+    has_country_shield = yes
+}
+
+uuhau_3_formhausa = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_secret = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_3_free_ii = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_4_free_i = {
+    slot = 4
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_4_secret = {
+    slot = 4
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_4_free_ii = {
+    slot = 4
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}
+
+uuhau_5 = {
+    slot = 5
+	generic = no
+	ai = yes
+	potential = {
+        OR = {
+            tag = KBI 
+            tag = GOB 
+            tag = DRA 
+            tag = KTS 
+            tag = KAN 
+            tag = RAN 
+            tag = ZZZ 
+            tag = ZAM 
+            tag = BIR 
+            tag = HAU 
+            tag = SOK
+        }
+    }
+    has_country_shield = yes
+
+}

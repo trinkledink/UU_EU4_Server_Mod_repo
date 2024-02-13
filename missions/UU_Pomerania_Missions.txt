@@ -1,0 +1,528 @@
+# This file includes Missions for Stettin, Wolgast, Rugen and Pomerania.
+
+POM_GEN_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = POM
+			tag = RUG
+			tag = WOL
+			tag = STE
+		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
+	}	
+	has_country_shield = yes
+
+	uu_form_pomerania = {
+		icon = mercenary_companies
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = uu_pom_culture_provinces_tt
+			every_province = {
+				limit = {
+					culture = pommeranian
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+
+	POM_capture_rostock = {
+		icon = defend_the_city
+		required_missions = { uu_form_pomerania }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2996
+				province_id = 46
+				province_id = 4749
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 2996
+			owns_or_non_sovereign_subject_of = 46
+			owns_or_non_sovereign_subject_of = 4749
+		}
+		effect = {
+			if = { 
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				44 = {	#Hamburg
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				45 = {	#Lubeck
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				1874 = { #Bremen
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				25 = {	 #Gotland
+				add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				38 = {	 #Riga
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	POM_destroy_hansa = {
+		icon = mission_bane_of_the_hansa
+		required_missions = { POM_capture_rostock }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 44
+				province_id = 45
+				province_id = 1874
+				province_id = 25
+				province_id = 38
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				province_id = 44
+				province_id = 45
+				province_id = 1874
+				province_id = 25
+				province_id = 38
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = uu_pom_hansa_destroyed
+				duration = -1
+			}
+		}
+	}
+	
+	
+	POM_seek_greatest_minds = {
+		icon = sponsor_the_arts
+		required_missions = { }
+		position = 4
+		trigger = {
+			calc_true_if = {
+				amount = 2
+				desc = POM_seek_greatest_minds_trigger_tt
+				has_adm_advisor = yes
+				has_dip_advisor = yes
+				has_mil_advisor = yes
+			}
+		}
+		effect = {
+			# add_country_modifier = {
+				# name = POM_great_minds
+				# duration = 9125
+			# }
+			custom_tooltip = POM_advisor
+			if = {
+				limit = {
+					has_adm_advisor_3 = yes
+				}
+				add_adm_power = 35
+			}
+			if = {
+				limit = {
+					has_dip_advisor_3 = yes
+				}
+				add_dip_power = 35
+			}
+			if = {
+				limit = {
+					has_mil_advisor_3 = yes
+				}
+				add_mil_power = 35
+			}
+		}
+	}
+
+	POM_greifswald_university = {
+		icon = wittenberg_university
+		required_missions = { POM_seek_greatest_minds }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 2994
+			OR = {
+				NOT = { owned_by = ROOT }
+				AND = {
+					NOT = { num_of_times_improved = 13 }
+					NOT = { has_building = university }
+				}
+			}
+		}
+		trigger = {
+			2994 = {
+				owned_by = ROOT
+				OR = {
+					num_of_times_improved = 13
+					has_building = university
+				}
+			}
+			prestige = 80
+			is_prosperous = yes
+		}
+		effect = {
+			add_adm_power = 35
+			add_dip_power = 35
+			add_mil_power = 35
+			2994 = {
+				add_building = university
+				add_province_modifier = {
+					name = POM_university_of_greifswald
+					duration = -1
+				}
+			}
+		}
+	}
+	
+}
+
+POM_GEN_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = POM
+			tag = RUG
+			tag = WOL
+			tag = STE
+		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
+	}	
+	has_country_shield = yes
+
+	POM_seek_marriages = {
+		icon = spread_the_von_wettins
+		required_missions = { }
+		position = 2
+		trigger = {
+			if = {
+				limit = {
+					government = monarchy
+				}
+				if = {
+					limit = {
+						ai = yes
+					}
+					num_of_royal_marriages = 2
+				}
+				else = {
+					num_of_royal_marriages = 3
+				}
+			}
+			else = {
+				num_of_allies = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = POM_surrounded_by_kinsmen
+				duration = 9125
+			}
+		}
+	}
+	POM_vengeance = {
+		icon = mission_the_gryf
+		required_missions = { POM_capture_rostock POM_seek_marriages }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				is_rival = BRA
+				NOT = { exists = BRA }
+			}
+			army_size = 15
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = BRA
+				}
+				add_casus_belli = {
+					target = BRA
+					type = cb_annex
+					months = -1
+				}
+			}
+			else = {
+				add_mil_power = 250
+				add_prestige_or_monarch_power = { amount = 10 }
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	POM_legacy_of_eric = {
+		icon = league_of_the_public_weal
+		required_missions = { POM_vengeance }
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					exists = SWE
+				}
+				total_development = SWE
+			}
+			if = {
+				limit = {
+					exists = DAN
+				}
+				total_development = DAN
+			}
+			if = {
+				limit = {
+					exists = NOR
+				}
+				total_development = NOR
+			}
+			total_development = 250
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = SWE
+							exists = DAN
+							exists = NOR
+						}
+					}
+				}
+				scandinavia_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						exists = DAN
+					}
+					add_casus_belli = {
+						target = DAN
+						type = cb_restore_personal_union
+						months = -1
+					}
+				}
+				if = {
+					limit = {
+						exists = SWE
+					}
+					add_casus_belli = {
+						target = SWE
+						type = cb_restore_personal_union
+						months = -1
+					}
+				}
+				if = {
+					limit = {
+						exists = NOR
+					}
+					add_casus_belli = {
+						target = NOR
+						type = cb_restore_personal_union
+						months = -1
+					}
+				}
+			}
+			add_country_modifier = {
+				name = POM_legacy_of_eric_modifier
+				duration = 9125
+			}
+		}
+	}
+	POM_reign_of_gryf = {
+		icon = mission_the_kalmar_union
+		required_missions = { POM_legacy_of_eric }
+		position = 5
+		provinces_to_highlight = {
+			region = scandinavia_region
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 12
+			owns_or_non_sovereign_subject_of = 1
+			owns_or_non_sovereign_subject_of = 17
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 20
+				region = scandinavia_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = uu_pom_strong_marines
+				duration = -1
+			}
+		}
+	}
+}
+
+POM_GEN_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = POM
+			tag = RUG
+			tag = WOL
+			tag = STE
+		}
+		NOT = { has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag }
+	}	
+	has_country_shield = yes
+
+	RUG_insel_der_wohlstands = {
+		icon = new_pilings
+		required_missions = { }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 4745
+			OR = {
+				NOT = { owned_by = ROOT }
+				AND ={
+					NOT = { has_trade_building_trigger = yes }
+					NOT = { has_shipyard_building_trigger = yes }
+				}
+			}
+		}
+		trigger = {
+			4745 = {
+				owned_by = ROOT
+				OR = {
+					has_trade_building_trigger = yes
+					has_shipyard_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			4745 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = RUG_island_of_opportunity
+					duration = -1
+				}
+			}
+		}
+	}
+	RUG_rugen_naval_base = {
+		icon = expand_the_arsenal
+		required_missions = { RUG_insel_der_wohlstands }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 4745
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_dock_building_trigger = yes }
+			}
+		}
+		trigger = {
+			4745 = {
+				owned_by = ROOT
+				has_dock_building_trigger = yes
+				num_of_times_improved = 15
+			}
+			navy_size = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = RUG_naval_supremacy
+				duration = -1
+			}
+			add_country_modifier = {
+				name = uu_pom_competent_marines
+				duration = -1
+			}
+		}
+	}
+	POM_liberate_pomerelia = {
+		icon = protect_against_the_turks
+		required_missions = { POM_vengeance }
+		position = 4
+		provinces_to_highlight = {
+			area = west_prussia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = POM_prussian_unity
+				duration = -1
+			}
+			add_accepted_culture_or_dip_power = { culture = prussian }
+			43 = {
+				add_local_autonomy = -15
+				add_province_modifier = {
+					name = POM_gdansk
+					duration = -1
+				}
+			}
+		}
+	}
+}

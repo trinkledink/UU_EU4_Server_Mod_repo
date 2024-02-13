@@ -1,3 +1,5 @@
+#UU UPDATED 1.36.2
+
 country_decisions = {
 
 	moroccan_nation = {
@@ -14,6 +16,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { was_tag = MOR }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = PAP }
@@ -76,6 +79,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = MOR
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -122,8 +126,11 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = { NOT = { has_reform = celestial_empire } }
-				change_government_to_monarchy = yes #Desert tribes settling down, theocracies become monarchies.
+				limit = { 
+					NOT = { has_reform = celestial_empire } 
+					NOT = { tag = SOS } #you cant take away my sus theocracy
+				}
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			change_primary_culture = moroccan
@@ -156,6 +163,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { was_tag = ALG }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -240,6 +248,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = ALG
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -282,7 +291,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes	#Desert tribes settling down.
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
@@ -307,7 +316,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_tunisia_flag }
-			NOT = { was_tag = TUN }						  
+			NOT = { was_tag = TUN }		#UU				  
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -379,6 +388,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = TUN
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -398,7 +408,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes
 				}
-				change_government_to_monarchy = yes #Desert tribes settling down.
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
@@ -431,6 +441,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			NOT = { was_tag = TRP }	#UU
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -495,6 +506,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = TRP
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -513,7 +525,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes #Desert tribes settling down.
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25

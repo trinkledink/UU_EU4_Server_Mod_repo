@@ -1,0 +1,15 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_disaster_uu_fulani_jihad_disaster"
+		texturefile = "gfx//interface//disasters//uu_fulani_jihad_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_uu_great_lakes_renaissance"
+		texturefile = "gfx//interface//disasters//uu_great_lakes_renaissance.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

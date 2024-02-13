@@ -1,0 +1,25 @@
+country_decisions = {
+	
+	UU_declare_a_papal_creed = {
+		color = { 210 210 0 }
+		
+		major = yes
+		
+		potential = {
+			tag = PAP
+			ai = no
+			NOT = { has_country_flag = uu_papal_creed_flag }
+		}
+		allow = {
+			curia_treasury_size = 750
+		}
+		effect = {
+			add_curia_treasury = -750
+			country_event = { id = UU_papal_creed.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
