@@ -91,3 +91,71 @@ uu_special_name_effect = { #Applies specific names to nations depending on gov't
 		restore_country_name = yes
 	}
 }
+
+uu_grant_daimyo_to_clan_effect = {
+	[[target]
+		every_owned_province = {
+			add_nationalism = 10
+			add_core = $clan$
+		}
+	]
+	[[clan]
+		inherit = $target$ 
+		add_treasury = 300
+		add_manpower = 10
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300	
+		every_core_province = {
+			limit = { region = japan_region }
+			remove_core = $clan$
+		}
+		random_owned_province = {
+			set_province_flag = z_jap_clan_separatist_flag
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = $target$
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = z_jap_clan_separatist_flag }
+					has_port = yes
+				}
+				$clan$ = {
+					   transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					   transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					   infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					   infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
+			}
+		}	
+	]
+	vassalize = $clan$
+	reverse_add_opinion = {
+		who = $clan$ 
+		modifier = released_vassal
+	}
+	add_country_modifier = {
+		name = uu_jap_replaced_daimyo_mod
+		duration = 3650
+	}
+}

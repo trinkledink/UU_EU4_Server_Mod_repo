@@ -8561,7 +8561,7 @@ belem_tower = {
 	}
 }
 
-sankin_kotai_palaces = {
+sankin_kotai_palaces = {		#UU changed
 	# province it starts in
 	start = 1028
 	
@@ -8634,6 +8634,7 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8671,8 +8672,8 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -0.5
-			prestige_from_land = 0.5
+			prestige_decay = -0.005
+			vassal_forcelimit_bonus = 0.20
 		}
 
 		#what effects happen when this tier is achieved
@@ -8701,9 +8702,9 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -0.5
-			prestige_from_land = 1
-			general_cost = -0.1
+			prestige_decay = -0.005
+			vassal_forcelimit_bonus = 0.33
+			vassal_income = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -8724,18 +8725,19 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			regiment_recruit_speed = -0.25
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -1
-			prestige_from_land = 1
-			general_cost = -0.1
+			prestige_decay = -0.01
+			vassal_forcelimit_bonus = 0.5
+			vassal_income = 0.25
+			amount_of_samurai = 10
 		}
 
 		#what effects happen when this tier is achieved
