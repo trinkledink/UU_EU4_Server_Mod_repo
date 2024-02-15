@@ -1251,8 +1251,24 @@ Pluto-Maritime = {
 
 	light_ship_power = 0.5
 
-	effect = {}
-	removed_effect = {}
+	effect = {
+		every_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_province_modifier = uu_maritime_pluto_greed
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = uu_maritime_pluto_greed
+				}
+				remove_province_modifier = uu_maritime_pluto_greed
+			}
+        }
+	}
 	
 	ai_will_do = {
 		factor = 1.0

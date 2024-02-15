@@ -1589,8 +1589,15 @@ Divine-Maritime = {
 
 	global_sailors_modifier = 0.2
 
-	effect = {}
-	removed_effect = {}
+	effect = {
+		add_country_modifier = {
+			name = uu_maritime_religious_mod
+			duration = -1
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = uu_maritime_religious_mod
+	}
 	ai_will_do = {
 		factor = 1
 	}

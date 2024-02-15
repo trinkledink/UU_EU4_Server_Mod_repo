@@ -142,6 +142,10 @@
   desc_Aristo-Maritime:0 "§YWhile Active: Marine regiments gain §G+5%§! Discipline and §G-10%§! Morale Damage Received.§!"
   uu_aristo_mari_mod:0 "Aristo-Maritime"
  Offensive-Court:0 "§OOffensive-Court§!"
+ uu_maritime_infra_port_town:0 "Port Town Infrastructure"
+  desc_uu_maritime_infra_port_town:0 "You get this from your Infra-Maritime policy."
+ uu_maritime_pluto_greed:0 "Port Town Production"
+  desc_uu_maritime_pluto_greed:0 "You get this from your Pluto-Maritime policy."
  ###############################################################
  # Ideagroup Events Localisation
  ###############################################################

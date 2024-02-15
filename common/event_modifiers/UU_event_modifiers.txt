@@ -95,6 +95,18 @@ uu_aristo_mari_mod = {
 	morale_damage_received = -0.1
 	is_marine_modifier = yes
 }
+uu_maritime_religious_mod = {
+	is_marine_modifier = yes
+	land_morale = 0.1
+}
+
+uu_maritime_infra_port_town = {	#port town province modifier
+	local_development_cost_modifier = -0.1
+}
+
+uu_maritime_pluto_greed = {	#pure greed
+	trade_goods_size = 0.25
+}
 
 #GenStaff Ideagroup Event Modifiers 
 

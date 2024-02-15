@@ -4622,6 +4622,35 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
+	#UU triggered modifiers
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Maritime-Infra
+			}
+		}
+		add_province_modifier = uu_maritime_infra_port_town
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_infra_port_town
+		}
+		remove_province_modifier = uu_maritime_infra_port_town
+	}
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Pluto-Maritime
+			}
+		}
+		add_province_modifier = uu_maritime_pluto_greed
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_pluto_greed
+		}
+		remove_province_modifier = uu_maritime_pluto_greed
+	}
 }
 
 # country
