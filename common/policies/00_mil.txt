@@ -1574,7 +1574,7 @@ Aristo-Maritime = {	#Buffed marines
 	}
 }
 
-Divine-Maritime = {
+Divine-Maritime = {	##also buffs marines
 	monarch_power = MIL
 
 	potential = {
@@ -1591,12 +1591,12 @@ Divine-Maritime = {
 
 	effect = {
 		add_country_modifier = {
-			name = uu_maritime_religious_mod
+			name = uu_divi_mari_mod
 			duration = -1
 		}
 	}
 	removed_effect = {
-		remove_country_modifier = uu_maritime_religious_mod
+		remove_country_modifier = uu_divi_mari_mod
 	}
 	ai_will_do = {
 		factor = 1
@@ -1741,7 +1741,7 @@ Advancement-Court = {
 	}
 }
 
-Offensive-Court = {
+Offensive-Court = { ##Add things on enact
 	monarch_power = MIL
 
 	potential = {

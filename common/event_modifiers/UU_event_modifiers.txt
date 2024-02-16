@@ -95,7 +95,7 @@ uu_aristo_mari_mod = {
 	morale_damage_received = -0.1
 	is_marine_modifier = yes
 }
-uu_maritime_religious_mod = {
+uu_divi_mari_mod = {
 	is_marine_modifier = yes
 	land_morale = 0.1
 }

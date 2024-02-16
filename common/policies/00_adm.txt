@@ -1,4 +1,4 @@
-Pluto-Inno = {	#Adds 2 1% loans
+Pluto-Inno = {	##Adds 2 1% loans
 	monarch_power = ADM
 	
 	potential = {
@@ -1283,7 +1283,7 @@ Infra-Influence = {
 	}
 }
 
-Maritime-Infra = {
+Maritime-Infra = { ##Buffs ports
 	monarch_power = ADM
 	
 	potential = {

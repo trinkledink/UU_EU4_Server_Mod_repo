@@ -147,6 +147,10 @@
   uu_maritime_pluto_greed:0 "Pluto-Maritime"
  Maritime-Infra:0 "§OMaritime-Infra§!"
   uu_maritime_infra_port_town:0 "Infra-Maritime"
+ Divine-Maritime:0 "§ODivine-Maritime§!"
+  desc_Divine-Maritime:0 "§YWhile Active: Marine regiments gain §G+10%§! Morale.§!"
+  uu_divi_mari_mod:0 "Divine-Maritime"
+ 
 
  ###############################################################
  # Ideagroup Events Localisation
