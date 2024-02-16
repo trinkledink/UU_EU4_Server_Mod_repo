@@ -1301,7 +1301,10 @@ Maritime-Infra = { ##Buffs ports
 			limit = {
 				has_port = yes
 			}
-			add_province_modifier = uu_maritime_infra_port_town
+			add_province_modifier = {
+				name = uu_maritime_infra_port_town
+				duration = -1
+			}
 		}
 	}
 	removed_effect = {
