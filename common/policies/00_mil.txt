@@ -1759,6 +1759,7 @@ Offensive-Court = {
 
 	effect = {
 		add_prestige = 25
+		add_army_tradition = 20
 	}
 	removed_effect = {}
 	ai_will_do = {
