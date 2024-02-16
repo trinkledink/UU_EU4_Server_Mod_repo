@@ -1034,7 +1034,7 @@ Aristo-Trade = {
 	}	
 }
 
-Divine-Trade = {	#I DONT KNOW IF THIS IS BALANCED
+Divine-Trade = {	##I DONT KNOW IF THIS IS BALANCED
 	monarch_power = MIL
 	
 	potential = {
