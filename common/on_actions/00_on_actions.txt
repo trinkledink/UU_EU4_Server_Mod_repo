@@ -4629,7 +4629,10 @@ on_province_owner_change = {
 				has_active_policy = Maritime-Infra
 			}
 		}
-		add_province_modifier = uu_maritime_infra_port_town
+		add_province_modifier = {
+			name = uu_maritime_infra_port_town
+			duration = -1
+		}
 	}
 	else_if = {
 		limit = {
@@ -4643,7 +4646,10 @@ on_province_owner_change = {
 				has_active_policy = Pluto-Maritime
 			}
 		}
-		add_province_modifier = uu_maritime_pluto_greed
+		add_province_modifier = {
+			name = uu_maritime_pluto_greed
+			duration = -1
+		}
 	}
 	else_if = {
 		limit = {
