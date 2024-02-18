@@ -1192,6 +1192,7 @@ curia_controller = {
 	church_loyalty_modifier = 0.1
 	diplomatic_reputation = 1
 	diplomatic_annexation_cost = -0.1
+	monthly_uu_PAP_dogma_power = 0.05 #this makes you run neutral
 }
 
 bought_indulgence = {

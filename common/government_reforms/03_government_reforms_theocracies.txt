@@ -490,6 +490,12 @@ papacy_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			uu_PAP_dogma_mechanic
+		}
+	}
 }
 
 ikko_ikki_reform = {

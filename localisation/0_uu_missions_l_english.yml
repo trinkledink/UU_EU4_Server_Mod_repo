@@ -241,11 +241,54 @@
  ctg_mission_events_3_b.tt:0 "Obtain New Standing-Army Missions." 
  
  ########################################################################
- # UU Papal Mission Mission Localisation. Put in missions_l_english.yml #
+ # UU PAP Missions and Government Mechanic
  ########################################################################
  UU_st_peters_basilica_title:0 "Cathedral of Christ's glory"
  UU_st_peters_basilica_desc:0 "It is time that the servants of God construct a monument displaying their devotion for Christ." 
- 
+
+ uu_PAP_dogma_power:0 "Papal Dogmatic Authority"
+ uu_develop_administrative_dogma:0 "Develop Administrative Dogma"
+ uu_develop_administrative_dogma_desc:0 "Develop dogmas to bolster our administration in accordance to Church guidance."
+ uu_develop_diplomatic_dogma:0 "Develop Diplomatic Dogma"
+ uu_develop_diplomatic_dogma_desc:0 "Develop dogmas to bolster our diplomacy in accordance to Church guidance."
+ uu_develop_military_dogma:0 "Develop Military Dogma"
+ uu_develop_military_dogma_desc:0 "Develop dogmas to bolster our military in accordance to Church guidance."
+
+ uu_pap_adm_dogma_1_modifier:0 "Papal Administrative Dogma"
+ desc_uu_pap_adm_dogma_1_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
+ uu_pap_adm_dogma_2_modifier:0 "Papal Administrative Dogma"
+ desc_uu_pap_adm_dogma_2_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
+ uu_pap_adm_dogma_3_modifier:0 "Papal Administrative Dogma"
+ desc_uu_pap_adm_dogma_3_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
+
+ uu_pap_dip_dogma_1_modifier:0 "Papal Diplomatic Dogma"
+ desc_uu_pap_dip_dogma_1_modifier:0 "Our diplomacy is undergoing tremendous change to become more Catholic."
+ uu_pap_dip_dogma_2_modifier:0 "Papal Diplomatic Dogma"
+ desc_uu_pap_dip_dogma_2_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
+ uu_pap_dip_dogma_3_modifier:0 "Papal Diplomatic Dogma"
+ desc_uu_pap_dip_dogma_3_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
+
+ uu_pap_mil_dogma_1_modifier:0 "Papal Miliary Dogma"
+ desc_uu_pap_dip_dogma_1_modifier:0 "Our military is undergoing tremendous change to become more Catholic."
+ uu_pap_mil_dogma_2_modifier:0 "Papal Miliary Dogma"
+ desc_uu_pap_dip_dogma_2_modifier:0 "Our military is undergoing tremendous change to become more Catholic."
+ uu_pap_mil_dogma_3_modifier:0 "Papal Miliary Dogma"
+ desc_uu_pap_dip_dogma_3_modifier:0 "Our military is undergoing tremendous change to become more Catholic."
+
+ uu_pap_adm_dogma_counter_1_tt:0 "£no£ Yearly Prestige: §G+1§!\n£no£ National Tax Modifier: §G+15%§!\n£no£ Construction Cost §G-10%§!"
+ uu_pap_adm_dogma_counter_2_tt:0 "£yes£ Yearly Prestige: §G+1§!\n£no£ National Tax Modifier: §G+15%§!\n£no£ Construction Cost §G-10%§!"
+ uu_pap_adm_dogma_counter_3_tt:0 "£yes£ Yearly Prestige: §G+1§!\n£yes£ National Tax Modifier: §G+15%§!\n£no£ Construction Cost §G-10%§!"
+ uu_pap_adm_dogma_counter_4_tt:0 "£yes£ Yearly Prestige: §G+1§!\n£yes£ National Tax Modifier: §G+15%§!\n£yes£ Construction Cost §G-10%§!\nYou have completed all tiers and further investments will give 3 years worth of income."
+
+ uu_pap_dip_dogma_counter_1_tt:0 "£no£ Diplomatic Reputation: §G+1§!\n      Diplomatic Annexation cost: §G-10%§!\n£no£ Yearly Inflation Reduction: §G+0.1%§!\n      Interest Per Annum: §G-0.25§!\n£no£ §YCan Establish Holy Orders§!"
+ uu_pap_dip_dogma_counter_2_tt:0 "£yes£ Diplomatic Reputation: §G+1§!\n      Diplomatic Annexation cost: §G-10%§!\n£no£ Yearly Inflation Reduction: §G+0.1%§!\n      Interest Per Annum: §G-0.25§!\n£no£ §YCan Establish Holy Orders§!"
+ uu_pap_dip_dogma_counter_3_tt:0 "£yes£ Diplomatic Reputation: §G+1§!\n      Diplomatic Annexation cost: §G-10%§!\n£yes£ Yearly Inflation Reduction: §G+0.1%§!\n      Interest Per Annum: §G-0.25§!\n£no£ §YCan Establish Holy Orders§!"
+ uu_pap_dip_dogma_counter_4_tt:0 "£yes£ Diplomatic Reputation: §G+1§!\n      Diplomatic Annexation cost: §G-10%§!\n£yes£ Yearly Inflation Reduction: §G+0.1%§!\n      Interest Per Annum: §G-0.25§!\n£yes£ §YCan Establish Holy Orders§! \nYou have completed all tiers and further investments will give 2 years worth of sailors."
+
+ uu_pap_mil_dogma_counter_1_tt:0 "£no£ Land Maintenance Modifier §G-5%§!\n£no£ Morale of Armies: §G+10%§!\n£no£ Manpower Recovery Speed §G+15%§!"
+ uu_pap_mil_dogma_counter_1_tt:0 "£no£ Land Maintenance Modifier §G-5%§!\n£no£ Morale of Armies: §G+10%§!\n£no£ Manpower Recovery Speed §G+15%§!"
+ uu_pap_mil_dogma_counter_1_tt:0 "£no£ Land Maintenance Modifier §G-5%§!\n£no£ Morale of Armies: §G+10%§!\n£no£ Manpower Recovery Speed §G+15%§!"
+ uu_pap_mil_dogma_counter_1_tt:0 "£no£ Land Maintenance Modifier §G-5%§!\n£no£ Morale of Armies: §G+10%§!\n£no£ Manpower Recovery Speed §G+15%§!\nYou have completed all tiers and further investments will give 1.5 years worth of manpower."
  ########################################################################
  # UU HAB Missions Localisation. #
  ########################################################################

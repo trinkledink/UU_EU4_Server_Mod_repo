@@ -3090,6 +3090,13 @@ stpeters_cathedral = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 30
+				}
+			}
 		}
 	}
 
@@ -3117,6 +3124,7 @@ stpeters_cathedral = {
 			appoint_cardinal_cost = -0.1
 			curia_powers_cost = -0.1
 			idea_cost = -0.05
+			yearly_government_power = 0.25 #uu added
 		}
 
 		#what effects happen when this tier is achieved
@@ -3125,6 +3133,11 @@ stpeters_cathedral = {
 				add_estate_loyalty = {
 					estate = estate_church
 					loyalty = 15
+				}
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 30
 				}
 			}
 		}
@@ -3155,6 +3168,7 @@ stpeters_cathedral = {
 			curia_powers_cost = -0.1
 			idea_cost = -0.1
 			church_influence_modifier = 0.1
+			yearly_government_power = 0.25 #uu added
 		}
 
 		#what effects happen when this tier is achieved
@@ -3163,6 +3177,11 @@ stpeters_cathedral = {
 				add_estate_loyalty = {
 					estate = estate_church
 					loyalty = 20
+				}
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 30
 				}
 			}
 		}
