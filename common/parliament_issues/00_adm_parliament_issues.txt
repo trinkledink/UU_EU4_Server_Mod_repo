@@ -1,7 +1,8 @@
-administrative_reform = {
+administrative_reform = { #UU canceled cuz bad
 	category = 3 		# same category = 90% less likely
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_owned_provinces_with = {
 			value = 3
 			local_autonomy = 20
@@ -84,11 +85,12 @@ administrative_reform = {
 	}
 }
 
-appoint_a_new_prime_minister = {
+appoint_a_new_prime_minister = { #advisor
 
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 	}
 	
 	effect = {
@@ -132,9 +134,13 @@ appoint_a_new_prime_minister = {
 			define_advisor = {
 				type = statesman
 				skill = 3
-				cost_multiplier = 0.75
-			}
-			"
+				cost_multiplier = 0.5
+			}"	#UU improved from 0.75
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 
@@ -151,11 +157,12 @@ appoint_a_new_prime_minister = {
 	}	
 }
 
-appropriation_of_land = {
+appropriation_of_land = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_cities = 6
 	}
 	
@@ -227,6 +234,7 @@ charter_university = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 	}
 	
 	effect = {
@@ -239,10 +247,15 @@ charter_university = {
 			effect5 = "add_adm_power = 100"
 			fallback_effect = "add_adm_power = 50"
 		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+		}
 	}
 	
 	modifier = {
-		technology_cost = -0.05
+		technology_cost = -0.075 #UU changed from -0.05
 	}
 	
 	chance = {
@@ -250,19 +263,19 @@ charter_university = {
 		modifier = {
 			factor = 2
 			any_neighbor_country = {
-				tech_difference = 5
+				tech_difference = 3 #UU changed from 5
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5 #UU changed from 2
 			any_neighbor_country = {
-				tech_difference = 8
+				tech_difference = 4 #UU changed from 8
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 2 #UU changed from 3
 			any_neighbor_country = {
-				tech_difference = 10
+				tech_difference = 5 #UU changed from 10
 			}
 		}
 	}
@@ -272,11 +285,12 @@ charter_university = {
 	}	
 }
 
-development_of_infrastructure = {
+development_of_infrastructure = { #uu just in parliament seats now
 
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 	}
 	
 	effect = {
@@ -289,10 +303,23 @@ development_of_infrastructure = {
 			effect5 = "add_dip_power = 100"
 			fallback_effect = "add_dip_power = 50"
 		}
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			add_province_modifier = {
+				name = uu_parliament_infrastrucutre
+				duration = 3650
+			}
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+		}
 	}
 	
 	modifier = {
-		development_cost = -0.1
 	}
 	
 	chance = {
@@ -313,6 +340,7 @@ election_reform = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 		government = republic
 	}
 	
@@ -325,6 +353,11 @@ election_reform = {
 			effect4 = "add_republican_tradition = 13"
 			effect5 = "add_republican_tradition = 15"
 			fallback_effect = "add_republican_tradition = 10"
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -362,6 +395,7 @@ estates_fund_industrialization = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 		has_country_flag = pol_new_issues_tt
 		estate_loyalty = {
 			estate = estate_church
@@ -426,6 +460,9 @@ estates_fund_industrialization = {
 				clr_province_flag = pol_province_needs_industry 
 				add_manufactory = yes
 			}
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -441,10 +478,15 @@ fund_expansion_of_bureaucracy = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 	}
 	
 	effect = {
-
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+		}
 	}	
 	modifier = {
 		advisor_cost = -0.1
@@ -468,11 +510,12 @@ fund_expansion_of_bureaucracy = {
 	}	
 }
 
-fund_national_monuments = {
+fund_national_monuments = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 	}
 	
 	effect = {
@@ -500,12 +543,13 @@ fund_national_monuments = {
 	}	
 }
 
-government_debt_reduction = {
+government_debt_reduction = { #UU canceled cuz bad
 	#Government debt funding plan, provinces contribute to payment of debt.
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_loans = 2
 	}
 	
@@ -552,11 +596,12 @@ government_debt_reduction = {
 	}	
 }
 
-grant_consessions_to_the_brahmins = {
+grant_consessions_to_the_brahmins = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_brahmins
 	}
 	
@@ -594,11 +639,12 @@ grant_consessions_to_the_brahmins = {
 	}	
 }
 
-grant_consessions_to_the_burghers = {
+grant_consessions_to_the_burghers = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_burghers
 	}
 	
@@ -636,11 +682,12 @@ grant_consessions_to_the_burghers = {
 	}	
 }
 
-grant_consessions_to_the_church = {
+grant_consessions_to_the_church = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_church
 	}
 	
@@ -678,11 +725,12 @@ grant_consessions_to_the_church = {
 	}	
 }
 
-grant_consessions_to_the_cossacks = {
+grant_consessions_to_the_cossacks = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_cossacks
 	}
 	
@@ -720,11 +768,12 @@ grant_consessions_to_the_cossacks = {
 	}	
 }
 
-grant_consessions_to_the_dhimmi = {
+grant_consessions_to_the_dhimmi = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_dhimmi
 	}
 	
@@ -762,11 +811,12 @@ grant_consessions_to_the_dhimmi = {
 	}	
 }
 
-grant_consessions_to_the_eunuchs = {
+grant_consessions_to_the_eunuchs = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_eunuchs
 	}
 	
@@ -804,11 +854,12 @@ grant_consessions_to_the_eunuchs = {
 	}	
 }
 
-grant_consessions_to_the_jains = {
+grant_consessions_to_the_jains = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_jains
 	}
 	
@@ -846,11 +897,12 @@ grant_consessions_to_the_jains = {
 	}	
 }
 
-grant_consessions_to_the_janissaries = {
+grant_consessions_to_the_janissaries = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_janissaries
 	}
 	
@@ -888,11 +940,12 @@ grant_consessions_to_the_janissaries = {
 	}	
 }
 
-grant_consessions_to_the_marathas = {
+grant_consessions_to_the_marathas = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_maratha
 	}
 	
@@ -930,11 +983,12 @@ grant_consessions_to_the_marathas = {
 	}	
 }
 
-grant_consessions_to_the_rajputs = {
+grant_consessions_to_the_rajputs = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_rajput
 	}
 	
@@ -972,11 +1026,12 @@ grant_consessions_to_the_rajputs = {
 	}	
 }
 
-grant_consessions_to_the_vaishyas = {
+grant_consessions_to_the_vaishyas = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_estate = estate_vaisyas
 	}
 	
@@ -1014,11 +1069,12 @@ grant_consessions_to_the_vaishyas = {
 	}	
 }
 
-guarantee_religious_tolerance = {
+guarantee_religious_tolerance = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		any_owned_province = {
 			has_owner_religion = no
 		}
@@ -1107,7 +1163,7 @@ guarantee_religious_tolerance = {
 	}
 }
 
-harmonization_of_laws = {
+harmonization_of_laws = { #UU canceled cuz bad
 
 	category = 3
 
@@ -1121,6 +1177,7 @@ harmonization_of_laws = {
 			}
 		}
 		NOT = { government = monarchy }
+		always = no #UU canceled cuz bad
 	}
 	
 	effect = {
@@ -1129,6 +1186,11 @@ harmonization_of_laws = {
 				who = FROM
 				modifier = parliament_closer_ties
 			}
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -1165,13 +1227,13 @@ harmonization_of_laws = {
 		}
 	}
 }
-
 	
 increase_crown_land_share = {
 
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 		NOT = { crown_land_share = 80 }
 	}
 	
@@ -1182,6 +1244,9 @@ increase_crown_land_share = {
 			   estate = all
 			   share = -5
 		    }
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -1226,11 +1291,12 @@ increase_crown_land_share = {
 	}	
 }
 
-increase_taxes = {
+increase_taxes = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 	}
 	
 	effect = {
@@ -1275,6 +1341,7 @@ reform_government_act = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 	}
 	
 	effect = {
@@ -1286,6 +1353,11 @@ reform_government_act = {
 			effect4 = "change_government_reform_progress = 60"
 			effect5 = "change_government_reform_progress = 75"
 			fallback_effect = "change_government_reform_progress = 30"
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -1314,7 +1386,7 @@ reform_government_act = {
 	}	
 }
 
-integration_of_minorities = {
+integration_of_minorities = { #No longer works well with new culture acceptance system.
 
 	category = 3
 
@@ -1418,11 +1490,12 @@ integration_of_minorities = {
 	}
 }
 
-issue_investigate_corruption = {
+issue_investigate_corruption = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		corruption = 0.5
 	}
 	
@@ -1467,11 +1540,12 @@ issue_investigate_corruption = {
 	}	
 }
 
-nationwide_census = {
+nationwide_census = { #UU canceled cuz bad
 
 	category = 3
 	
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_cities = 6
 	}
 	
@@ -1531,11 +1605,12 @@ nationwide_census = {
 	}	
 }
 
-nationwide_land_survey = {
+nationwide_land_survey = { #UU canceled cuz bad
 
 	category = 3
 	
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_cities = 6
 	}
 	
@@ -1601,12 +1676,20 @@ prohibit_use_of_local_languages = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 		any_owned_province = {
 			has_owner_accepted_culture = no
 		}
 		NOT = { has_idea_group = humanist_ideas }
 	}
 	
+	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+		}
+	}
 	
 	modifier = {
 		culture_conversion_cost = -0.15
@@ -1649,6 +1732,7 @@ propagation_of_state_religion = {
 	category = 3
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_adm_issue }
 		any_owned_province = {
 			has_owner_religion = no
 		}
@@ -1700,9 +1784,14 @@ propagation_of_state_religion = {
 			define_advisor = {
 				type = inquisitor
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.5
 			}
-			"
+			" #UU buffed from 0.75
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_adm_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
 		}
 	}
 	
@@ -1745,11 +1834,12 @@ propagation_of_state_religion = {
 	}	
 }
 
-restore_integration = {
+restore_integration = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_country_modifier = annexers_legacy
 	}
 	
@@ -1773,11 +1863,12 @@ restore_integration = {
 	}
 }
 
-support_ruling_dynasty = {
+support_ruling_dynasty = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no #UU canceled cuz bad
 		government = monarchy
 		has_regency = no
 		is_lesser_in_union = no
@@ -1853,11 +1944,12 @@ support_ruling_dynasty = {
 	}
 }
 
-treason_act = {
+treason_act = { #UU canceled cuz bad
 
 	category = 3
 
 	allow = {
+		always = no
 	}
 	
 	

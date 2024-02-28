@@ -1,8 +1,9 @@
-appoint_a_grand_admiral = {
+appoint_a_grand_admiral = { #UU canceled cuz bad
 
 	category = 2
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_ports = 2
 	}
 	
@@ -41,9 +42,15 @@ charter_colonies = {
 			full_idea_group = expansion_ideas
 			full_idea_group = exploration_ideas
 		}
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 	}
 	
 	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
@@ -75,6 +82,7 @@ charter_trade_companies = {
 	category = 2
 	
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 		OR = {
 			dip_tech = 10
 			has_idea_group = trade_ideas
@@ -82,6 +90,11 @@ charter_trade_companies = {
 	}
 	
 	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
@@ -125,6 +138,7 @@ colonial_taxation = {
 
 	allow = {
 		colony = 1
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 	}
 	
 	effect = {
@@ -168,9 +182,15 @@ colonial_taxation = {
 			define_advisor = {
 				type = colonial_governor
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.5
 			}
 			"
+			#uu changes from 0.75 cost
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
 		}
 	}
 	
@@ -204,6 +224,7 @@ emergency_impressment_act = {
 	category = 2
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 		any_owned_province = {
 			has_seat_in_parliament = yes
 			has_port = yes
@@ -219,6 +240,11 @@ emergency_impressment_act = {
 			effect4 = "add_years_of_sailors_scaled_to_seats = 1.25"
 			effect5 = "add_years_of_sailors_scaled_to_seats = 1.5"
 			fallback_effect = "add_years_of_sailors_scaled_to_seats = 1"
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
 		}
 	}
 	
@@ -270,6 +296,7 @@ establish_new_siberian_frontier = {
 				region = ural_region
 			}
 		}
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 	}
 	
 	effect = {
@@ -290,6 +317,11 @@ establish_new_siberian_frontier = {
 				add_siberian_construction = 400
 			}
 		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 
 	chance = {
@@ -302,11 +334,12 @@ establish_new_siberian_frontier = {
 	}	
 }
 
-expand_diplomatic_corps = {
+expand_diplomatic_corps = { #UU canceled cuz bad
 
 	category = 2
 
 	allow = {
+		always = no #UU canceled cuz bad
 	}
 	
 	effect = {
@@ -342,11 +375,12 @@ expand_diplomatic_corps = {
 	}	 
 }
 
-expand_navy = {
+expand_navy = { #UU canceled cuz bad
 
 	category = 2
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_ports = 2
 	}
 	
@@ -392,21 +426,27 @@ expand_navy = {
 	}	
 }
 
-imports_exports = {
+imports_exports = { 
 	#Restrict imports and support exports
 
 	category = 2
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 	}
 	
 	effect = {
 		add_mercantilism = 2
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
 		global_own_trade_power = 0.05
-		mercantilism_cost = -0.1
+		mercantilism_cost = -0.5 #uu changed from -0.1
 	}
 	
 	chance = {
@@ -426,11 +466,12 @@ imports_exports = {
 	}	
 }
 
-impressment_of_sailors = {
+impressment_of_sailors = { #UU canceled cuz bad
 
 	category = 2
 
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_ports = 2
 	}
 	
@@ -473,12 +514,13 @@ impressment_of_sailors = {
 	}	
 }
 
-invest_heir_education = {
+invest_heir_education = { 
 
 	category = 2
 
 	allow = {
 		has_country_flag = pol_new_issues_tt
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 	}
 	
 	on_issue_taken = {
@@ -486,11 +528,16 @@ invest_heir_education = {
 	}
 
 	effect = {
-		random_list = {
-			15 = { change_heir_adm = 1 } 
-			15 = { change_heir_dip = 1 }
-			15 = { change_heir_mil = 1 }
-			65 = { } 
+		random_list = {	#UU improved to make better from 15/15/15/65
+			20 = { change_heir_adm = 1 } 
+			20 = { change_heir_dip = 1 }
+			20 = { change_heir_mil = 1 }
+			40 = { } 
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
 		}
 	}
 	
@@ -504,11 +551,12 @@ invest_heir_education = {
 	ai_will_do = { factor = 1 }
 }
 
-issue_letters_of_marque = {
+issue_letters_of_marque = { #UU canceled cuz bad
 
 	category = 2
 	
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_ports = 2
 	}
 	
@@ -566,6 +614,7 @@ offices_to_vassals = {
 	category = 2
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
 		OR = {
 			vassal = 2
 			personal_union = 2
@@ -636,6 +685,9 @@ offices_to_vassals = {
 			}
 		}
 		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
 			if = {
 				limit = {
 					any_subject_country = {
@@ -680,7 +732,8 @@ offices_to_vassals = {
 	
 	modifier = {
 		diplomatic_annexation_cost = -0.15
-		vassal_income = 0.05
+		vassal_income = 0.15	#uu increased
+		diplomatic_reputation = 1 #uu added
 	}
 
 	chance = {
@@ -717,15 +770,20 @@ reduce_trade_regulations = {
 	category = 2
 	
 	allow = {
-		dip_tech = 16
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
+		#dip_tech = 12 #uu removed
 	}
 	
 	effect = {
-		
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.1 #uu reduced from 15
 	}
 	influence_scaled_modifier = {
 		global_trade_power = 0.15
@@ -758,4 +816,46 @@ reduce_trade_regulations = {
 	ai_will_do = {
 		factor = 1	
 	}	
+}
+
+UU_dip_money_issue = {
+
+	category = 2
+
+	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
+	}
+
+	modifier = {
+		global_tax_modifier = 0.25
+	}
+	
+	effect = {
+		issue_effect_scaling_with_estate_influence = {
+			estate = estate_burghers
+			effect1 = "add_years_of_tax_scaled_to_seats = 1"
+			effect2 = "add_years_of_tax_scaled_to_seats = 1.5"
+			effect3 = "add_years_of_tax_scaled_to_seats = 2"
+			effect4 = "add_years_of_tax_scaled_to_seats = 2.5"
+			effect5 = "add_years_of_tax_scaled_to_seats = 3"
+			fallback_effect = "add_years_of_tax_scaled_to_seats = 2"
+		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			num_of_loans = 6	#UU lowered threashold
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
 }

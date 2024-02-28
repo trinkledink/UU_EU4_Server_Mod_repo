@@ -253,3 +253,9 @@
  
  uu_high_absolutism_tmod:0 "Absolute Rule"
  uu_high_absolutism_tmod_desc:0 "The ruler of our nation essentially controls all aspects of the government, and no institution in the country is powerful enough to defy the ruler in a meaningful way."
+
+ ###############################################################
+ # uu land reform
+ ###############################################################
+
+ uu_parliament_infrastrucutre:0 "Land Reform"

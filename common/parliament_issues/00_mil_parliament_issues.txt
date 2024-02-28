@@ -1,8 +1,9 @@
-appease_the_estates = {
+appease_the_estates = { #UU canceled cuz bad
 
 	category = 1
 
 	allow = {
+		always = no #UU canceled cuz bad
 		has_country_flag = pol_new_issues_tt
 	}
 	
@@ -55,10 +56,17 @@ backing_war_effort = {
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
+		is_at_war = yes	#uu added cuz if no war, what war
 	}
 	
 	effect = {
 		add_stability = 1
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
@@ -96,9 +104,17 @@ combat_janissary_decadence = {
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
 		janissary_percentage = 0.1
 	}
 
+	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
+	}
 	
 	modifier = {
 		is_janissary_modifier = yes
@@ -127,6 +143,7 @@ drill_exercises = {
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
 		has_country_flag = pol_new_issues_tt
 		OR = { 
 			army_professionalism = 0.5 
@@ -143,11 +160,15 @@ drill_exercises = {
 	}
 
 	effect = {
-		
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
-		army_tradition = 0.5
+		army_tradition_decay = -0.01 #uu changed from army_tradition = 0.5
 	}
 
 	chance = { factor = 1 }
@@ -155,11 +176,12 @@ drill_exercises = {
 	ai_will_do = { factor = 1 }
 }
 
-expand_officer_lists = {
+expand_officer_lists = { #UU canceled cuz bad
 
 	category = 1
 
 	allow = {
+		always = no #UU canceled cuz bad
 	}
 	
 	effect = {
@@ -187,11 +209,12 @@ expand_officer_lists = {
 	}
 }
 
-expand_the_army = {
+expand_the_army = { #UU canceled cuz bad
 
 	category = 1
 
 	allow = {
+		always = no
 	}
 	
 	effect = {
@@ -229,6 +252,7 @@ extend_militarization_of_the_state = {
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
 		has_government_mechanic = militarization_mechanic
 	}
 	
@@ -253,6 +277,11 @@ extend_militarization_of_the_state = {
 			power_type = prussian_militarized_society_3
 			value = 20
 		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	modifier = {
@@ -271,11 +300,12 @@ extend_militarization_of_the_state = {
 	}
 }
 
-extended_peacetime_officer_commissions = {
+extended_peacetime_officer_commissions = { #UU canceled cuz bad
 
 	category = 1
 
 	allow = {
+		always = no #UU canceled cuz bad
 		mil_tech = 16
 		dip_tech = 16
 	}
@@ -310,12 +340,13 @@ extended_peacetime_officer_commissions = {
 	}	
 }
 
-fortification_tax = {
+fortification_tax = { #UU canceled cuz bad
 	#Provinces contribute to upkeep of fortifications
 
 	category = 1
 	
 	allow = {
+		always = no #UU canceled cuz bad
 		num_of_owned_provinces_with = {
 			value = 3
 			OR = {
@@ -349,17 +380,26 @@ fortification_tax = {
 	}	
 }
 
-quartering_of_troops = {
+quartering_of_troops = { 
 
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
 	}
 	
 	
 	modifier = {
 		land_attrition = -0.05
 		land_maintenance_modifier = -0.10
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	chance = {
@@ -388,10 +428,24 @@ the_draft = {
 	category = 1
 
 	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
 		is_at_war = yes
+	}
+
+	modifier = {
+		global_unrest = 10
 	}
 	
 	effect = {
+		# issue_effect_scaling_with_estate_influence = {	#UU changed to not scale from seats [trinkle's idea]
+		# 	estate = estate_nobles
+		# 	effect1 = "add_yearly_manpower = 1"
+		# 	effect2 = "add_yearly_manpower = 2"
+		# 	effect3 = "add_yearly_manpower = 3"
+		# 	effect4 = "add_yearly_manpower = 4"
+		# 	effect5 = "add_yearly_manpower = 5"
+		# 	fallback_effect = "add_yearly_manpower = 3"
+		# }
 		issue_effect_scaling_with_estate_influence = {
 			estate = estate_nobles
 			effect1 = "add_years_of_manpower_scaled_to_seats = 0.5"
@@ -401,17 +455,65 @@ the_draft = {
 			effect5 = "add_years_of_manpower_scaled_to_seats = 1.5"
 			fallback_effect = "add_years_of_manpower_scaled_to_seats = 1"
 		}
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
 	}
 	
 	chance = {
 		factor = 1
 		modifier = {
 			factor = 2
-			NOT = { manpower_percentage = 0.5 }
+			NOT = { manpower_percentage = 0.25 }	#UU lowered threashold
 		}
 	}
 
 	ai_will_do = {
 		factor = 1
 	}
+}
+
+uu_generic_drill_exercises = {
+
+	category = 1
+
+	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.02
+		}
+		else = { add_army_tradition = 10 }
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+		}
+	}
+	
+	modifier = {
+		army_tradition = 1 
+	}
+
+	chance = { 
+		factor = 1 
+		modifier = {
+			factor = 2
+			army_tradition = 60
+		}
+		modifier = {
+			factor = 2
+			army_professionalism  = 0.5
+		}
+	}
+	
+	ai_will_do = { factor = 1 }
 }

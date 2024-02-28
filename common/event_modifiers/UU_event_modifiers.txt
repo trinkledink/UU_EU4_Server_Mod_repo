@@ -273,3 +273,9 @@ uu_closed_canal_mod = {
 uu_plot_armour = {
 	monarch_lifespan = 50
 }
+
+#parliament stuff
+uu_parliament_infrastrucutre = {
+	local_development_cost_modifier = -0.1
+	local_build_cost = -0.05
+}
