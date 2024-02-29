@@ -31,6 +31,8 @@ has_mil_advisor = {
 			advisor = recruitmaster
 			advisor = fortification_expert
 			advisor = quartermaster
+			#uu
+			advisor = strategist
 		}
 	}
 }
@@ -46,6 +48,8 @@ has_mil_advisor_2 = {
 			recruitmaster = 2
 			fortification_expert = 2
 			quartermaster = 2
+			#uu
+			strategist = 2
 		}
 	}
 }
@@ -61,6 +65,8 @@ has_mil_advisor_3 = {
 			recruitmaster = 3
 			fortification_expert = 3
 			quartermaster = 3
+			#uu
+			strategist = 3
 		}
 	}
 }
@@ -154,6 +160,8 @@ has_mil_advisor_of_level = {
 		recruitmaster = $level$
 		fortification_expert = $level$
 		quartermaster = $level$
+		#UU
+		strategist = $level$
 	}
 }
 

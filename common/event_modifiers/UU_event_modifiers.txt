@@ -10,6 +10,8 @@ commandant_rejected = {
 }
 trinkle_hero_rejected = {
 }
+trinkle_strategist_rejected = {
+}
 
 #canada
 totemism_resurgence = {

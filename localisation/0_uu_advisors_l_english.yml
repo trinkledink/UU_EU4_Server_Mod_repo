@@ -11,4 +11,8 @@ nationalhero:0 "National Hero"
 nationalhero_desc:0 "'Did I ever tell you how I got the nickname the Dragon of the West?... It's more of a demonstration, really.'"
 national_hero_flag:0 "National Hero" #for the advisor decision
 
+strategist:0 "Save Starer"
+strategist_desc:0 "If you don't have the time or interest in save staring, someone else will."
+strategist_flag:0 "Save Starer" #for the advisor decision
+
 u_u_maybe_later:0 "Maybe later"
