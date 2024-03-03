@@ -281,3 +281,49 @@ uu_parliament_infrastrucutre = {
 	local_development_cost_modifier = -0.1
 	local_build_cost = -0.05
 }
+
+##UU Papal buttons
+uu_pap_adm_dogma_1_modifier = {
+	prestige = 1
+}
+uu_pap_adm_dogma_2_modifier = {
+	global_tax_modifier = 0.15
+	prestige = 1
+}
+uu_pap_adm_dogma_3_modifier = {
+	build_cost = -0.1
+	global_tax_modifier = 0.15
+	prestige = 1
+}
+
+
+uu_pap_dip_dogma_1_modifier = {
+	diplomatic_annexation_cost = -0.1
+	diplomatic_reputation = 1
+}
+uu_pap_dip_dogma_2_modifier = {
+	interest = -0.25
+	inflation_reduction = -0.1
+	diplomatic_annexation_cost = -0.1
+	diplomatic_reputation = 1
+}
+uu_pap_dip_dogma_3_modifier = {
+	interest = -0.25
+	inflation_reduction = -0.1
+	diplomatic_annexation_cost = -0.1
+	diplomatic_reputation = 1
+}
+
+
+uu_pap_mil_dogma_1_modifier = {
+	land_maintenance_modifier = -0.05
+}
+uu_pap_mil_dogma_2_modifier = {
+	land_morale = 0.1
+	land_maintenance_modifier = -0.05
+}
+uu_pap_mil_dogma_3_modifier = {
+	manpower_recovery_speed = 0.15
+	land_morale = 0.1
+	land_maintenance_modifier = -0.05
+}

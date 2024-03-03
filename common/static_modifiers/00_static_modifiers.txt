@@ -1021,6 +1021,7 @@ devotion = {
 	church_loyalty_modifier = 0.1
 	brahmins_hindu_loyalty_modifier = 0.1
 	reform_progress_growth = 0.5
+	monthly_uu_PAP_dogma_power = 0.1	#uu added
 }
 
 # Multiplied by current meritocracy - 50
@@ -1193,7 +1194,7 @@ curia_controller = {
 	church_loyalty_modifier = 0.1
 	diplomatic_reputation = 1
 	diplomatic_annexation_cost = -0.1
-	monthly_uu_PAP_dogma_power = 0.05 #this makes you run neutral
+	monthly_uu_PAP_dogma_power = 0.1 #this makes you run neutral
 }
 
 bought_indulgence = {

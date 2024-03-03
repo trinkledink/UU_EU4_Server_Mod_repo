@@ -9,6 +9,7 @@ country_decisions = {
 			tag = PAP
 			ai = no
 			NOT = { has_country_flag = uu_papal_creed_flag }
+			always = no	#discontinued as of UU patch 1.11 
 		}
 		allow = {
 			curia_treasury_size = 750
