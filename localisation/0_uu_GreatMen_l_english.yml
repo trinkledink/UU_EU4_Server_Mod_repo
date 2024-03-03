@@ -16,7 +16,7 @@
 
  trinkle_strategist:0 "[Root.Mil_Advisor.GetName]"
  trinkle_strategist_desc:0 "Our most beloved save starer has save-stared so super hard and they have realized we could have some more army professionalism."
- trinkle_hero_a:0 "[Root.Mil_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
- trinkle_hero_b:0 "[Root.Mil_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
+ trinkle_strategist_a:0 "[Root.Mil_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
+ trinkle_strategist_b:0 "[Root.Mil_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
  
  u_u_maybe_later:0 "Maybe later"
