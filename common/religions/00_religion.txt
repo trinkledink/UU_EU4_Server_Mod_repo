@@ -144,6 +144,9 @@ christian = {
 						name = "papal_sanction_for_church_taxes"
 						duration = 7300
 					}
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -162,6 +165,9 @@ christian = {
 					add_country_modifier = {
 						name = "papal_blessing"
 						duration = 7300
+					}
+					country_event = { #UU added
+						id = UU_balance_events.9
 					}
 				}
 				ai_will_do = {
@@ -182,6 +188,9 @@ christian = {
 						name = "papal_indulgence"
 						duration = 7300
 					}
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -198,6 +207,9 @@ christian = {
 				}
 				effect = {
 					add_stability = 1
+					country_event = { #UU added
+						id = UU_balance_events.10
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -220,6 +232,9 @@ christian = {
 					add_country_modifier = {
 						name = "usury_forgiven"
 						duration = 7300
+					}
+					country_event = { #UU added
+						id = UU_balance_events.9
 					}
 				}
 				ai_will_do = {
@@ -245,6 +260,9 @@ christian = {
 						name = "papal_sanction_for_holy_war"
 						duration = 7300
 					}
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -269,6 +287,9 @@ christian = {
 						name = "papal_legate"
 						duration = 7300
 					}
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -285,6 +306,9 @@ christian = {
 				}
 				effect = {
 					add_mercantilism = 1
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 1
@@ -308,6 +332,9 @@ christian = {
 				effect = {
 					add_reform_desire = -0.05
 					add_reform_desire_scale = 0.5
+					country_event = { #UU added
+						id = UU_balance_events.9
+					}
 				}
 				ai_will_do = {
 					factor = 0

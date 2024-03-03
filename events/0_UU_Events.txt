@@ -470,3 +470,63 @@ province_event = {	#TOO MANY FORTS
 		}
 	}
 }
+country_event = {	#UU papal Dogma
+	id = UU_balance_events.9
+	title = UU_balance_events.9.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		hidden_effect = { 
+			PAP = { 
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 0.5
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+
+	}
+	
+	
+}
+country_event = {	#UU papal Dogma
+	id = UU_balance_events.10
+	title = UU_balance_events.10.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		hidden_effect = { 
+			PAP = { 
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+
+	}
+	
+	
+}

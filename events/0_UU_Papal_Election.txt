@@ -63,25 +63,59 @@ country_event = {
 
 				option = 2
 			}
+			define_exiled_ruler = {
+				exiled_as = pope_candidate_d_@ROOT
+				male = yes
+				min_age = 45
+				max_age = 70
+
+				option = 3
+			}
 		}
 	}
 	after = {
 		clear_exiled_ruler = pope_candidate_a_@ROOT
 		clear_exiled_ruler = pope_candidate_b_@ROOT
 		clear_exiled_ruler = pope_candidate_c_@ROOT
+		clear_exiled_ruler = pope_candidate_d_@ROOT
 	}
 
 
 	option = {
 		name = UU_papal_election.1.a
 		set_ruler = pope_candidate_a_@ROOT
+		add_years_of_income = 0.35
+		add_devotion = -5
 	}
 	option = {
 		name = UU_papal_election.1.b
 		set_ruler = pope_candidate_b_@ROOT
+		add_prestige = 10
+		add_devotion = -5
+	}
+	option = {
+		name = UU_papal_election.1.d
+		set_ruler = pope_candidate_c_@ROOT
+		add_devotion = 10
+		add_prestige = -5
 	}
 	option = {
 		name = UU_papal_election.1.c
-		set_ruler = pope_candidate_c_@ROOT
+		random_list = {
+			1 = {
+				set_ruler = pope_candidate_a_@ROOT
+			}
+			1 = {
+				set_ruler = pope_candidate_b_@ROOT
+			}
+			1 = {
+				set_ruler = pope_candidate_c_@ROOT
+			}
+		}
+		add_government_power = {
+			mechanic_type = uu_PAP_dogma_mechanic
+			power_type = uu_PAP_dogma_power
+			value = 5
+		}
 	}
 }

@@ -1070,6 +1070,7 @@ kingdom_of_god_reform = {
 		prestige = 1
 		devotion = 1
 		appoint_cardinal_cost = -0.3
+		yearly_government_power = 0.5 #UU added
 	}
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes

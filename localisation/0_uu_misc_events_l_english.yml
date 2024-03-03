@@ -36,3 +36,6 @@ UU_balance_events.8.a:0 "Remove both."
 UU_balance_events.8.b:0 "Remove the fort in [uu_fort_target_province_1.GetName]."
 UU_balance_events.8.c:0 "Remove the fort in [uu_fort_target_province_2.GetName]."
 
+UU_balance_events.9.t:0 "Papal State Gets 0.5 Government Power"
+UU_balance_events.10.t:0 "Papal State Gets 1 Government Power"
+
