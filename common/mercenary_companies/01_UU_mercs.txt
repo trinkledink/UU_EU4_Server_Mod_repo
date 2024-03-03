@@ -82,3 +82,17 @@ ctg_immortals_company = {
 		fire_damage_received = -0.2
 	}
 }
+merc_cav_horde_company = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.75
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+        AND = {
+			has_reform = steppe_horde
+			horde_unity = 50
+		}
+    }
+	cost_modifier = 1
+	max_size = 12
+    min_size = 4
+}

@@ -18,7 +18,7 @@
  viable_career_option:0 "Viable Career Option"
   viable_career_option_desc:0 "Constant employment of mercenaries has led the life of a mercenary to be a viable career option for our people."
  mercenary_connection_networks:0 "Mercenary Connection Networks"
-  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without.\n§YUnlocks a unique Mercenary Company consisting of only Infantry.§!"
+  mercenary_connection_networks_desc:0 "Our connections lets us employ mercenaries from far off places which would be unreachable without.\n§YUnlocks a unique Mercenary Company consisting of only Infantry.§! \nMercenary Companies no longer reduce §YArmy Professionalism§! when hired."
  trusted_partner_discounts:0 "Trusted Partner Discounts"
   trusted_partner_discounts_desc:0 "We have gained the favour and trust of certain contracting partners, allowing us to employ their companies' service for a cheaper price than most other nations would."
  local_land_knowledge:0 "Local Land Knowledge"
@@ -64,7 +64,7 @@
  #Quantity Ideas
  expanded_dockyard_crews:0 "Expanded Dockyard Crews"
   expanded_dockyard_crews_desc:0 "Not every shipwright must be a master. By hiring many cheap labourers instead, we will be able to produce ships faster and reduce the time needed to replace sunken ships."
- #Plutocratic ideas
+ #Plutocratic Ideas
  uu_free_cities:0 "Free Cities"
   uu_free_cities_desc:0 "Granting autonomy to the larger cities in our realm will not only lower administrative burdens on our end but also empower these cities to put their own interest first.\n§YUpgrading/Downgrading Centers of Trade to Level 3 will now increase/decrease the Development of that Province by 1 in each category.§!" 
  uu_armed_merchant_fleet:0 "Armed Merchant Fleet"
@@ -73,6 +73,7 @@
   uu_empower_guilds_desc:0 "The guilds are the heart of our industry, leading the way for advanced craftsmanship in our nation. We must not let these organizations be restricted by aristocrats or other outdated hierarchies, the guilds must be allowed to flourish with greater autonomy for our industry to prosper."
  uu_private_arms_industries:0 "Expand Private Arms Industries"
   uu_private_arms_industries_desc:0 "We must outsource more of our weapons production to independent arms industries, who can use their profits to innovate and create better weapons. Profit is the best motivator for many of these individuals, and we can utilize this to improve our army quality." # \n§YUnlocks a unique estate privilege for the Merchant Guilds which enhances the effectiveness of our Weapons Manufactories.§!
+ #Unique Subject Ideas
  subject_vassal_ideas:0 "Vassal Ideas"
  uu_decent_deving:0 "Decent Deving"
   uu_decent_deving_desc:0 "We should focusing on devloping our own lands as good as we can so we make our overlord very happy when we get annexed :) "
@@ -142,6 +143,15 @@
   desc_Aristo-Maritime:0 "§YWhile Active: Marine regiments gain §G+5%§! Discipline and §G-10%§! Morale Damage Received.§!"
   uu_aristo_mari_mod:0 "Aristo-Maritime"
  Offensive-Court:0 "§OOffensive-Court§!"
+ Pluto-Maritime:0 "§OPluto-Maritime§!"
+  uu_maritime_pluto_greed:0 "Pluto-Maritime"
+ Maritime-Infra:0 "§OMaritime-Infra§!"
+  uu_maritime_infra_port_town:0 "Infra-Maritime"
+ Divine-Maritime:0 "§ODivine-Maritime§!"
+  desc_Divine-Maritime:0 "§YWhile Active: Marine regiments gain §G+10%§! Morale.§!"
+  uu_divi_mari_mod:0 "Divine-Maritime"
+ 
+
  ###############################################################
  # Ideagroup Events Localisation
  ###############################################################

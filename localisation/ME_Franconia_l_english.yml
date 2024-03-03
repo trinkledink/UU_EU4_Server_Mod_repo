@@ -122,7 +122,9 @@
  FKN_on_the_guard: "On the Guard"
  FKN_german_ambition: "German Ambition"
  FKN_common_currency: "Common Currency"
- FKN_duke: "Herzog der Franken"
+ FKN_form_monarchy: "Herzog der Franken"
+ FKN_form_republic: "Burgermeister der Franken"
+ FKN_form_theocracy: "Bistum der Franken"
  FKN_focus_on_image: "Imperial Policy: Emperor's Image"
  FKN_focus_on_diplomacy: "Imperial Policy: Diplomacy"
  FKN_focus_on_prosperity: "Imperial Policy: Prosperity"
@@ -171,6 +173,11 @@
  FKN_largest_army_in_europe: "No country with their capital in §YEurope§! has army as large as ours."
  FKN_largest_army_in_hre: "No §YHoly Roman Prince§! has army as large as ours."
  FKN_dealt_with_peasants: "Dealt with the Peasants from the '§YGreat Peasants' War§!' event.\n\nThe event may happen after 1520."
+ uu_fkn_form_monarchy_tt: "Additonally, due to our §YMonarchy§! government type, we gain the following reward:"
+ uu_fkn_form_republic_tt: "Additonally, due to our §YRepublic§! government type, we gain the following reward:"
+ uu_fkn_form_theocracy_tt: "Additonally, due to our §YTheocracy§! government type, we gain the following reward:"
+
+
  # Events:
  
  ME_Franconia_Events.1.t: "Restoration of the Stem Duchy"

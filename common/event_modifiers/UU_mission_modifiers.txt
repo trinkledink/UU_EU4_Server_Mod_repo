@@ -472,15 +472,28 @@ FKN_end_of_the_peasants_war = {
 	global_tax_modifier = 0.1
 }
 FKN_german_ambition = {
-	core_creation = -0.2
+	army_tradition_decay = -0.01
+	mil_advisor_cost = -0.1
 }
 FKN_common_currency = {
 	trade_efficiency = 0.10
 }
-FKN_duke = {
+FKN_form_monarchy = {
 	legitimacy = 1
-	state_maintenance_modifier = -0.2
-	global_own_trade_power = 0.1
+	advisor_cost = -0.2
+	ae_impact = -0.2
+	improve_relation_modifier = 0.25
+}
+FKN_form_republic = {
+	republican_tradition = 0.25
+	global_trade_goods_size_modifier = 0.1
+}
+FKN_form_theocracy = {
+	devotion = 1
+	monthly_reform_progress_modifier = 0.33
+	papal_influence = 2
+	church_power_modifier = 0.2
+	monthly_fervor_increase = 0.5
 }
 FKN_focus_on_image = {
 	imperial_authority = 0.05
@@ -793,4 +806,38 @@ uukbo_mossi_cavalry = {
 uukbo_imperial_capital = {
 	development_cost = -0.05
 	vassal_income = 0.25
+}
+
+# Japan 
+
+uujap_colonist_mod = {
+	colonists = 1
+	colonist_placement_chance = 0.2
+}
+uujap_malacca_trade_eff_mod = {
+	trade_efficiency = 0.15
+	trade_range_modifier = 0.33
+}
+uujap_edo_new_capital_mod = {
+	local_great_project_upgrade_cost = -0.25
+	local_development_cost = -0.5
+	local_governing_cost = -0.5
+	local_build_time = -0.33
+	province_trade_power_value = 10
+}
+uujap_inflation_goods_mod = {
+	inflation_reduction = 0.2
+	global_trade_goods_size_modifier = 0.1
+}
+uujap_premier_gold_mine_mod = {
+	trade_goods_size = 0.5
+	local_development_cost = -0.05
+}
+uujap_gokaido_mod = {
+	local_friendly_movement_speed = 0.2
+	local_autonomy = -0.1
+	local_development_cost = -0.05
+	local_tax_modifier = 0.1
+	local_production_efficiency = 0.1
+	local_governing_cost = -0.1
 }

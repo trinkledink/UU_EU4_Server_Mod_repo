@@ -818,3 +818,27 @@
  uukbo_meritocratic_admin_tt:0 "We will disempower the royal household by making sure the people in power are both competent and loyal.\n§GEnacting the Tier 7§! §lMeritocratic Recruitment§! §Greform will double its positive effects.§!"
  uukbo_enhanced_admin_tt:0 "§GBecause of our choice in the 'End Dynastic Struggle' mission:§!"
 
+ ########################################################################
+ # UU Japan Missions #
+ ########################################################################
+
+ uujap_build_army_mission_title:0 "Prepare the Army"
+ uujap_alaska_title:0 "Into the Sunrise"
+ uujap_empire_rising_sun_title:0 "Empire of the Rising Sun"
+ uujap_south_china_title:0 "Control Southern China"
+ uujap_malacca_strait_title:0 "Malay Trade"
+ uujap_expand_the_domain_title:0 "Domain Expansion"
+  uujap_expand_the_domain_desc:0 "Our clan's ancestral domain will no longer suffice in such an era of warfare. If we are to survive, we must expand our domain to prevent annexation."
+ uujap_conquer_ryukyu_title:0 "Kingdom of Ryukyu"
+ uujap_philippines_title:0 "Another Archipelago"
+ uujap_spice_islands_title:0 "The Spice Islands"
+ uujap_capture_emperor_title:0 "Capture the Emperor"
+ uujap_samurai_title:0 "The Samurai Caste"
+ uujap_issue_new_coin_title:0 "Issue New Coins"
+ uujap_permit_money_changers_title:0 "Promote Money Changers"
+ uujap_gokaido_title:0 "The Five Highways"
+ uujap_rice_brokers_title:0 "The Rice Broker System"
+
+ #Tooltips
+ uujap_spawned_gold_mission_tt:0 "§GIf we are the first to complete this mission, we will receive the following reward in a random Gold province, or the capital if we own no Gold provinces:§!"
+ uujap_gokaido_tt:0 "§GAll of the aforementioned provinces will gain the following reward:§!"

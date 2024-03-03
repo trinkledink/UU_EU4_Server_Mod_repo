@@ -241,6 +241,9 @@ uu_estate_nomadic_tribes_mana_privilege = { ##UU Added
 	influence = 0.05
 	land_share = 10
 	max_absolutism = -5
+	is_valid = {
+		has_reform = steppe_horde 
+	}
 	on_granted = {
 		country_event = { 
 			id = UU_balance_events.7
@@ -248,6 +251,7 @@ uu_estate_nomadic_tribes_mana_privilege = { ##UU Added
 		}
 	}
 	can_select = {
+		has_reform = steppe_horde
 	}
 	on_revoked = {
 		remove_country_modifier = sca_administrative_focus

@@ -14,7 +14,6 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         #German Regionals (might still be Duchy rank)
         tag = BAV #Bavaria 
         tag = SAX #Saxony
-        tag = NED #Netherlands
         tag = FKN #Franconia 
         tag = SWA #Swabia 
         tag = HAN #Hanover 
@@ -85,10 +84,11 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         tag = MOS #Muscovy Grand Duchy (so you cannot form Poland)
         tag = LIT #Lithuania Grand Duchy (so you cannot form Poland)
         tag = ITA #Italy 
-        #Major German Regionals 
+        #Major German Kingdoms/Archduchies 
         tag = PRU #Prussia 
         tag = HAB #Austria 
         tag = LVA #Livonia 
+        tag = NED #Netherlands
         tag = ELB #Elbian Confederation UU
         has_country_flag = formed_hsa_flag #Hanseatic League 
         #MENA 
@@ -194,10 +194,11 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         tag = MOS #Muscovy Grand Duchy (so you cannot form Poland)
         tag = LIT #Lithuania Grand Duchy (so you cannot form Poland)
         tag = ITA #Italy 
-        #Major German Regionals 
+        #Major German Kingdoms/Archduchies 
         tag = PRU #Prussia 
         tag = HAB #Austria 
         tag = LVA #Livonia 
+        tag = NED #Netherlands
         tag = ELB #Elbian Confederation UU
         has_country_flag = formed_hsa_flag #Hanseatic League 
         #MENA 

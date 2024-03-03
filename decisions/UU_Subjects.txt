@@ -138,6 +138,7 @@ country_decisions = {
             }
             hidden_effect = {
                 clr_country_flag = uu_overlord_colour
+                restore_country_color = yes
                 uu_special_color_effect = yes
             }
         }

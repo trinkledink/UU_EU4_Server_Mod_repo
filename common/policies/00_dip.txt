@@ -1236,7 +1236,7 @@ Quantity-Naval = {
 	}
 }
 
-Pluto-Maritime = {
+Pluto-Maritime = {	##buffs ports
 	monarch_power = DIP
 
 	potential = {
@@ -1251,8 +1251,27 @@ Pluto-Maritime = {
 
 	light_ship_power = 0.5
 
-	effect = {}
-	removed_effect = {}
+	effect = {
+		every_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = uu_maritime_pluto_greed
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = uu_maritime_pluto_greed
+				}
+				remove_province_modifier = uu_maritime_pluto_greed
+			}
+        }
+	}
 	
 	ai_will_do = {
 		factor = 1.0
@@ -1307,7 +1326,7 @@ Offensive-Maritime = {
 	}
 }
 
-GStaff-Maritime = {	#Lose dip on revoke
+GStaff-Maritime = {	##Lose dip on revoke
 	monarch_power = DIP
 
 	potential = {
@@ -1430,7 +1449,7 @@ Horde-Court = {
 	}
 }
 
-Defensive-Court = {	#BUFF CAPITAL
+Defensive-Court = {	##BUFF CAPITAL
 	monarch_power = DIP
 
 	potential = {

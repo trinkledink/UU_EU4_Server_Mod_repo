@@ -31,6 +31,8 @@ has_mil_advisor = {
 			advisor = recruitmaster
 			advisor = fortification_expert
 			advisor = quartermaster
+			#uu
+			advisor = strategist
 		}
 	}
 }
@@ -46,6 +48,8 @@ has_mil_advisor_2 = {
 			recruitmaster = 2
 			fortification_expert = 2
 			quartermaster = 2
+			#uu
+			strategist = 2
 		}
 	}
 }
@@ -61,6 +65,8 @@ has_mil_advisor_3 = {
 			recruitmaster = 3
 			fortification_expert = 3
 			quartermaster = 3
+			#uu
+			strategist = 3
 		}
 	}
 }
@@ -154,6 +160,8 @@ has_mil_advisor_of_level = {
 		recruitmaster = $level$
 		fortification_expert = $level$
 		quartermaster = $level$
+		#UU
+		strategist = $level$
 	}
 }
 
@@ -1732,7 +1740,7 @@ is_trade_node_province = { #This is basically unused but I'm updating it anyway
 			province_id = 584 #Burma
 			province_id = 1365 #Siam 
 			province_id = 1371 #Canton 
-			province_id = 1397 #Philippines 
+			province_id = 4358 #Philippines 
 			province_id = 1997 #Polynesian Triangle
 			province_id = 852 #Mexico
 			province_id = 1411 #Australia 
@@ -2383,7 +2391,7 @@ is_not_free_merc_company = {
 has_free_mercs_trait = {
 	OR = {
 		has_country_modifier = dan_sca_merc_contract
-		has_idea = seasoned_veterans
+		has_idea = mercenary_connection_networks #seasoned_veterans uu changed the merc ideas
 		has_government_attribute = mercs_do_not_cost_army_professionalism
 		has_country_flag = fra_free_mercs_bargain_sale_flag
 	}
@@ -2391,7 +2399,7 @@ has_free_mercs_trait = {
 
 has_not_free_mercs_trait = {
 	NOT = { has_country_modifier = dan_sca_merc_contract }
-	NOT = { has_idea = seasoned_veterans }
+	NOT = { has_idea = mercenary_connection_networks } #seasoned_veterans } uu changed the merc ideas named
 	NOT = { has_government_attribute = mercs_do_not_cost_army_professionalism }
 	NOT = { has_country_flag = fra_free_mercs_bargain_sale_flag }
 }

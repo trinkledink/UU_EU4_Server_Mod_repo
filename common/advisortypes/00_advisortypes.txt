@@ -628,11 +628,11 @@ theologian = {
 	
 	ai_will_do = {
 		factor = 1
-modifier = {
+		modifier = {
 			factor = 1.5
 			unrest = -1
-	}
-modifier = {
+		}
+		modifier = {
 			factor = 1.5
 			unrest = 1
 		}
@@ -686,7 +686,7 @@ master_of_mint = {
 			governing_capacity_modifier = 0.05
 		}
 	}
-skill_scaled_modifier = {
+	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				mission_completed = YEM_eastern_hub

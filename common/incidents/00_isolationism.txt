@@ -125,8 +125,10 @@ incident_firearms = {
 				had_country_flag = { flag = shinto_incident_recent days = 10950 }
 			}
 		}
-		has_country_flag = uu_start_of_incident_firearms_chain
-		NOT = { has_country_flag = end_of_incident_firearms_chain }
+		hidden_trigger = {
+			has_country_flag = uu_start_of_incident_firearms_chain
+			NOT = { has_country_flag = end_of_incident_firearms_chain }
+		}
 	}
 
 	mean_time_to_happen = {

@@ -227,6 +227,19 @@ on_war_won = {
 	ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
 		limit = {
+			any_subject_country = {
+				has_country_flag = uu_overlord_colour
+			}
+		}
+		every_subject_country = {
+			limit = {
+				has_country_flag = uu_overlord_colour
+			}
+			change_country_color = { country = overlord }
+		}
+	}
+	if = {
+		limit = {
 			has_country_flag = can_gain_legendary_pirates_flag
 			NOT = { has_ruler_flag = historical_pirate }
 			has_government_attribute = is_pirate_republic_reform
@@ -4608,6 +4621,41 @@ on_province_owner_change = {
 			name = ottoman_siyasah_tax_reform_manpower
 			duration = -1
 		}
+	}
+	#UU triggered modifiers
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Maritime-Infra
+			}
+		}
+		add_province_modifier = {
+			name = uu_maritime_infra_port_town
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_infra_port_town
+		}
+		remove_province_modifier = uu_maritime_infra_port_town
+	}
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Pluto-Maritime
+			}
+		}
+		add_province_modifier = {
+			name = uu_maritime_pluto_greed
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_pluto_greed
+		}
+		remove_province_modifier = uu_maritime_pluto_greed
 	}
 }
 

@@ -1,4 +1,4 @@
-Pluto-Inno = {	#Adds 2 1% loans
+Pluto-Inno = {	##Adds 2 1% loans
 	monarch_power = ADM
 	
 	potential = {
@@ -458,11 +458,13 @@ Religious-Maritime = {	##Add sailors on remove
 	}
 	
 	prestige = 1
-	
-	effect = {}
+
+	effect = {
+	}
 	removed_effect = {
 		add_yearly_sailors = 5
 	}
+
 	ai_will_do = {
 		factor = 1.0
 	}
@@ -1281,7 +1283,7 @@ Infra-Influence = {
 	}
 }
 
-Maritime-Infra = {
+Maritime-Infra = { ##Buffs ports
 	monarch_power = ADM
 	
 	potential = {
@@ -1294,10 +1296,27 @@ Maritime-Infra = {
 		full_idea_group = infrastructure_ideas
 	}
 	
-	state_governing_cost = -0.1
-	
-	effect = {}
-	removed_effect = {}
+	effect = {
+		every_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = uu_maritime_infra_port_town
+				duration = -1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = uu_maritime_infra_port_town
+				}
+				remove_province_modifier = uu_maritime_infra_port_town
+			}
+        }
+	}
 	ai_will_do = {
 		factor = 1.0
 	}

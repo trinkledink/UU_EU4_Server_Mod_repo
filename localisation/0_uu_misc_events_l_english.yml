@@ -29,3 +29,10 @@
   player_uncon_diplomat_desc:0 "For when an enemy player unconditionally surrenders and you don't have a free diplomat"
   player_uncon_diplomat_modifier:0 "Emergency Diplomat"
 
+#too many forts
+UU_balance_events.8.t:0 "NO ADJACENT FORTS ALLOWED"
+UU_balance_events.8.desc:0 "You dingus, didn't you read the changelog?"
+UU_balance_events.8.a:0 "Remove both."
+UU_balance_events.8.b:0 "Remove the fort in [uu_fort_target_province_1.GetName]."
+UU_balance_events.8.c:0 "Remove the fort in [uu_fort_target_province_2.GetName]."
+

@@ -30,6 +30,7 @@ country_decisions = {
 			has_country_flag = social_reformer_flag
 			has_country_flag = propagandist_flag
 			has_country_flag = national_hero_flag
+			has_country_flag = strategist_flag
 			has_country_flag = radical_mercantilist_reforms
 			has_country_flag = military_reform
 		}

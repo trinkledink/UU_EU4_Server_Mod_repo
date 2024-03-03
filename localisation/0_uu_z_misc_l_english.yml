@@ -27,6 +27,7 @@
  ctg_italian_legion:0 "Italian Legion Company"
  ctg_phalanx_company:0 "Greek Phalanx Company"
  ctg_immortals_company:0 "Persian Immortals Company"
+ merc_cav_horde_company:0 "Horde Cav Company"
  #Age Abilities
  ab_timur_legacy:0 "Timur's Legacy"
  ab_italian_renaissance_architecture:0 "Italian Renaissance Architecture"
@@ -83,6 +84,7 @@
 
  #Other tooltips
  uu_heir_cult_cannot_be_same_as_main_tt:0 "§YNote: Heir cult cannot be the same as the main cult.§!"
+ uu_max_parliament_seats:0 "You have already assigned your max number of parliament seats. The default is 20."
 
  #Unused?
  peruvian_theocarcy:0 "Peruvian Theocracy"

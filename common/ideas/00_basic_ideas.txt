@@ -316,6 +316,7 @@ innovativeness_ideas = { #Innovative Ideas
 	
 	empiricism = {
 		innovativeness_gain = 0.5
+		yearly_innovativeness = 0.24 ##that is 10.8 inno every 30 years including the 50% modifier
 	}
 	patron_of_art  = {
 		prestige_decay = -0.01
@@ -328,13 +329,13 @@ innovativeness_ideas = { #Innovative Ideas
 		monthly_reform_progress_modifier = 0.2
 	}
 	print_culture = {
-		global_institution_spread = 0.25
+		idea_cost = -0.1
 	}
 	optimism = {
 		war_exhaustion = -0.05
 	}
 	formalized_officer_corps = {
-		idea_cost = -0.1
+		global_institution_spread = 0.25
 	}
 
 	ai_will_do = {
@@ -857,7 +858,6 @@ mercenary_ideas = { ##UU version used.
 	}
 	mercenary_connection_networks = {
 		trade_range_modifier = 0.33
-		mercs_do_not_cost_army_professionalism = yes
 	}
 	local_land_knowledge = {
 		infantry_power = 0.1

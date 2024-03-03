@@ -251,3 +251,92 @@ country_event = {
 		set_country_flag = national_hero_flag
 	}
 }
+
+# Strategist			Army professionalism
+country_event = {		
+	id = trinkle_advisor_events.4
+	title = "trinkle_strategist"
+	desc = "trinkle_strategist_desc"
+	picture = ADVISOR_eventPicture	
+	
+	trigger = {
+		strategist = 3
+		NOT = { has_country_flag = strategist_flag }
+		NOT = { has_country_flag = trinkle_strategist_rejected }
+		NOT = {	army_professionalism = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "trinkle_strategist_a"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		add_army_professionalism = 0.1
+		set_country_flag = strategist_flag
+	}
+		
+	option = {
+		name = "trinkle_strategist_b"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		add_meritocracy_effect = yes
+		add_prestige = 50
+		add_army_professionalism = 0.1
+		set_country_flag = strategist_flag
+	}
+	option = {
+		name = "u_u_maybe_later"
+		add_country_modifier = {
+			name = "trinkle_strategist_rejected"
+			duration = 2190
+		}
+	}
+	
+	option = {
+		name = "elb_beacon_of_progress_option"
+		trigger = {
+			has_country_flag = elb_beacon_of_progress_flag
+		}
+
+		random_owned_province = {
+			add_base_manpower = 3
+			add_base_production = 3
+			add_base_tax = 3
+		}
+		goto = ROOT
+		set_country_flag = strategist_flag
+	}
+}
