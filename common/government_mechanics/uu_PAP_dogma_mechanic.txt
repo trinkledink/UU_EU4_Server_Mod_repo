@@ -10,7 +10,7 @@ uu_PAP_dogma_mechanic = {
 			max = 100
 			base_monthly_growth = -0.1
 			scaled_modifier = {
-				modifier = {
+				modifier = {	#this goodstuff scales from 0 to 100
 					manpower_in_true_faith_provinces = 0.25
 					global_tax_modifier = 0.5
 					enforce_religion_cost = -0.75
@@ -26,7 +26,7 @@ uu_PAP_dogma_mechanic = {
 				start_value = 0
 				end_value = 50
 			}
-			scaled_modifier = { #the below modifiers at 100, scaling from 50
+			scaled_modifier = { #the below modifiers at 100, scaling from nothing at 50
 				modifier = {
 					stability_cost_modifier = -0.25
 					idea_cost = 0.1
