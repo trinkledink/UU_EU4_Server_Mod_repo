@@ -15266,6 +15266,7 @@ sankore_madrasah = {
 			factor = 1000
 		}
 		province_modifiers = {
+			institution_growth = 3
 		}
 		area_modifier = {
 		}
@@ -15285,6 +15286,7 @@ sankore_madrasah = {
 			factor = 2500
 		}
 		province_modifiers = {
+			institution_growth = 6
 		}
 		area_modifier = {
 		}
@@ -15305,6 +15307,7 @@ sankore_madrasah = {
 			factor = 5000
 		}
 		province_modifiers = {
+			institution_growth = 12
 		}
 		area_modifier = {
 		}

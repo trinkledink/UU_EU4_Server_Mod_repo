@@ -1,3 +1,9 @@
+334 = { "Tanjah" "Tanjah" }
+5017 = "El-Ksar el-Kebir"
+343 = { "Fas" "Fas" }
+2467 = { "Maknas" "Maknas" }
+4568 = { "Damnat" "Damnat" }
+
 124 = "Massina"
 125 = "Balarm"
 196 = "Tolosha"

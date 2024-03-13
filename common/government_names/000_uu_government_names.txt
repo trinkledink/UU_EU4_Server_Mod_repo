@@ -318,3 +318,42 @@ butua_zimbabwe_monarchy = {
 		}
 	}
 }
+
+moroccan_vizier_regency = {
+	rank = {
+		1 = EMIRATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = VIZIER
+		2 = VIZIER
+		3 = GRANDVIZIER
+	}
+
+	ruler_female = {
+		1 = VIZIER
+		2 = VIZIER
+		3 = GRANDVIZIER_fem
+	}
+
+	#NO CONSORTS BECAUSE IQTA
+	
+	heir_male = {
+		1 = EMIR
+		2 = SULTAN
+		3 = GREAT_SULTAN
+	}
+	
+	heir_female = {
+		1 = EMIRA
+		2 = SULTANA
+		3 = GREAT_SULTANA
+	}
+
+	trigger = {
+		tag = MOR 
+		has_ruler_flag = uumor_wattasids_flag
+	}
+}

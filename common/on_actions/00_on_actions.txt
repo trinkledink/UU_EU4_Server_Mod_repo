@@ -56,7 +56,8 @@ on_startup = {
 	}
 	events = {
 		flavor_mal.0 #UU event for decline of Mali
-		flavor_tim.0 #Timurid event
+		flavor_tim.0 #UU Timurid event
+		flavor_mor.0 #UU Morocco event
 		muslim_school_events.20 #Pick School
 		flavor_got.1 #Event for Gotland to select their mission tree
 		flavor_mng.42 #Event for the starting situation of the Ming 
@@ -1252,6 +1253,22 @@ on_heir_death = {
         which = uu_deadheir_counter_var
         value = 1
     }
+	if = {	#Morocco stuff
+		limit = {
+			NOT = {
+				has_country_modifier = uumor_heir_cooldown_hidden_mod
+			} 
+			has_ruler_flag = uumor_wattasids_flag 
+		}
+		add_country_modifier = {
+			name = uumor_heir_cooldown_hidden_mod
+			duration = 1
+			hidden = yes
+		}
+		country_event = {
+			id = flavor_mor.999
+		}
+	}
 }
 
 # country

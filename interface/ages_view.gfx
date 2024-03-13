@@ -159,6 +159,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_italian_renaissance_architecture.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ab_necro_sokoto"
+		texturefile = "gfx/interface/ages/ab_necro_sokoto.dds"
+	}
+
 	# UU Hacky Sprites
 	spriteType = {
 		name = "GFX_horizontal_scroll_drager"

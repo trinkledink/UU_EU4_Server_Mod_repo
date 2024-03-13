@@ -8,6 +8,8 @@ grand_captain_rejected = {
 }
 commandant_rejected = {
 }
+military_reform_rejected = {
+}
 trinkle_hero_rejected = {
 }
 trinkle_strategist_rejected = {
@@ -262,6 +264,14 @@ uu_tim_declared_for_herat_mod = {
 	core_creation = -0.1
 	manpower_recovery_speed = 0.15
 	global_regiment_cost = -0.1
+}
+
+#morocco
+uumor_unrest_mod = {
+	global_unrest = 2
+}
+uumor_heir_cooldown_hidden_mod = {
+	#N/A
 }
 
 #Canal 

@@ -1429,7 +1429,8 @@ tafilalt_area = { #3
 }
 
 sus_area = { #4
-	348 2464 2466 4568
+	348 2464 2466 4568 
+	344	#UU moved
 }
 
 southern_morocco_area = { #3
@@ -1441,12 +1442,13 @@ western_morocco_area = { #3
 }
 
 marrekesh_area = { #3
-	343 344 2467 2468
+	343 2467 2468 5017
 }
 
-northern_morocco_area = { #5
+northern_morocco_area = {  #5
 	334 335 1751 4563 4561
 }
+
 
 ########################################
 # East Africa					       #
