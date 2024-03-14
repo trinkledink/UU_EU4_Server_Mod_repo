@@ -815,7 +815,7 @@ inquisitor = {
 		}
 	}
 
-skill_scaled_modifier = {
+	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = geo_advisor_scaling_flag 

@@ -2,7 +2,7 @@ socialreformer = {
 	monarch_power = ADM
 	
 	# Bonus
-	monthly_reform_progress = 0.15
+	all_estate_loyalty_equilibrium = 0.05
 	
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
@@ -192,7 +192,7 @@ strategist = {
 	monarch_power = MIL
 	
 	# Bonus
-	yearly_army_professionalism = 0.0025
+	siege_ability = 0.15
 	
 
 	skill_scaled_modifier = {
