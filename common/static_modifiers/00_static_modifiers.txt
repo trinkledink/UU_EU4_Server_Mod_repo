@@ -789,11 +789,12 @@ war_exhaustion = {
 	mr_aristocrats_influence = -0.05
 	rr_girondists_influence = -0.05
 	rr_royalists_influence = 0.05
-	manpower_recovery_speed = -0.01
+	manpower_recovery_speed = -0.02		#UU increased
 	sailors_recovery_speed = -0.01
 	siege_ability = -0.01
 	global_trade_goods_size_modifier = -0.02
 	monthly_militarized_society = -0.05
+	interest = 0.1						#UU added
 }
 
 doom = {

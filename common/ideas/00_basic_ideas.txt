@@ -710,7 +710,7 @@ defensive_ideas = {
 		war_exhaustion_cost = -0.5
 	}
 	until_the_last_man = {
-		morale_damage_received = -0.1
+		morale_damage_received = -0.2
 	}
 	ditch_defense = {
 		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
