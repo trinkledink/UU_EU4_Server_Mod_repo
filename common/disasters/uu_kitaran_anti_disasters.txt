@@ -2,7 +2,7 @@ uu_great_lakes_renaissance = {
 	potential = {
 		tag = KIT
 		is_free_or_tributary_trigger = yes
-		#NOT = { has_country_flag = had_great_lakes_renaissance }
+		NOT = { has_country_flag = had_great_lakes_renaissance }
 	}
 
 
