@@ -1,0 +1,285 @@
+country_decisions = {
+	Pench_Estate_Influence = {
+		major = yes
+		potential = {
+			OR ={
+				estate_influence = {
+					estate = estate_brahmins
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_dhimmi
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_church
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_nobles
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_burghers
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_maratha
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_vaisyas
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_cossacks
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_nomadic_tribes
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_jains
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_janissaries
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_eunuchs
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_qizilbash
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_ghulams
+					influence = 100
+				}
+				estate_influence = {
+					estate = estate_rajput
+					influence = 100
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_brahmins
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_brahmins
+					influence = 0
+					duration = 0
+				}
+			}			
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_dhimmi
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_dhimmi
+					influence = 0
+					duration = 0
+				}
+			}		
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_church
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_nobles
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_burghers
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajputs
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_rajputs
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_maratha
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_maratha
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_vaisyas
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_vaisyas
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_cossacks
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_cossacks
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_nomadic_tribes
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_jains
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_jains
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_janissaries
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_janissaries
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_eunuchs
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_eunuchs
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_qizilbash
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_qizilbash
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_ghulams
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_ghulams
+					influence = 0
+					duration = 0
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 100
+					}
+				}
+				add_estate_influence_modifier = {
+					estate = estate_rajput
+					influence = 0
+					duration = 0
+				}
+			}
+		}
+	}
+}

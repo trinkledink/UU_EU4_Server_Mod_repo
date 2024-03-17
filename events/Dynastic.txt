@@ -1973,7 +1973,7 @@ country_event = {
 	trigger = {
 		has_heir = no
 		ruler_age = 40
-		#government = monarchy #uu removed
+		government = monarchy
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_elective_monarchy }
 		#NOT = { religion_group = muslim } #uu removed
