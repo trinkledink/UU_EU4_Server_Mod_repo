@@ -97,6 +97,9 @@
  #Transports Decision
  uu_replace_transports_title:0 "Replace Transports with Transport Light Ship"
   uu_replace_transports_desc:0 "Every owned Cog §Rin port§! will be deleted and replaced with a Transport Light Ship at the cost of 20 ducats and 0 sailors each. Replacement units will spawn at a port in your country."
+ #Pench Estate Checker
+ Pench_Estate_Influence_title:0 "Estate Influence Checker"
+  Pench_Estate_Influence_desc:0 "§YThis decision is only visible when at least one estate has over 100 influence.§! Hover over the decision button to see the actual influence of each estate."
  #Kitara
  uu_kitara_embrace_isolationism_title:0 "Embrace Isolationism"
   uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensive. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum"
