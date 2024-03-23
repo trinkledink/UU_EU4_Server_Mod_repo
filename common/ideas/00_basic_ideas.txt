@@ -40,6 +40,7 @@ aristocracy_ideas = { #Aristocratic Ideas
 	noble_officers = {
 		army_tradition_decay = -0.01
 		navy_tradition_decay = -0.01
+		num_of_pronoiars = 1
 	}
 	international_nobility = {
 		nobles_privilege_slots = 1
@@ -514,6 +515,7 @@ spy_ideas = {
 	blackmailing = {
 		province_warscore_cost = -0.2
 		accept_vassalization_reasons = 15
+		num_of_pronoiars = 1
 	}
 
 	ai_will_do = {
@@ -710,7 +712,7 @@ defensive_ideas = {
 		war_exhaustion_cost = -0.5
 	}
 	until_the_last_man = {
-		morale_damage_received = -0.2
+		morale_damage_received = -0.15
 	}
 	ditch_defense = {
 		fort_maintenance_modifier = -0.2 ##UU Added, was -0.1
@@ -1409,10 +1411,12 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		num_of_pronoiars = 1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
 		global_sailors_modifier = 0.33
+		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -1575,6 +1579,7 @@ administrative_ideas = {
 	}
 	adaptability = {
 		core_creation = -0.25
+		num_of_pronoiars = 1
 	}
 	administrative_council = {
 		adm_advisor_cost = -0.25 
@@ -1848,6 +1853,7 @@ court_ideas = {
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
 		loyalty_change_on_revoked = 0.05
+		num_of_pronoiars = 1
 	}
 	welcoming_ceremonies = {
 		prestige = 1 
