@@ -380,6 +380,10 @@ break_marriage = {
 	}
 }
 takeondebt = {
+	condition = {	#UU disallow GPs from taking on debt if in debt themselves
+		potential = { always = yes }
+		allow = { NOT = { num_of_loans = 1 } }
+	}
 	effect = {
 		change_asha_vahishta = { value = 2 }
 	}
