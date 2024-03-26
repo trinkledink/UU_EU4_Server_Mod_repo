@@ -4043,6 +4043,7 @@ on_remove_free_city = {
 	events = {
 		free_cities.2
 	}
+	swap_non_generic_missions = yes	#uu to remove free city missions
 }
 
 on_revoke_estate_land_ai = { #AI can't handle the rebels atm or perform a gradual revoke, sorry
