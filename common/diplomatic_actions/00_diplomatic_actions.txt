@@ -685,3 +685,17 @@ sharemap ={
 		}
     }
 }
+designate_march ={
+	effect = {
+		ROOT = {
+			event = UU_papal_election.1
+		}
+	}
+}
+ask_for_march ={
+	effect = {
+		FROM = {
+			event = UU_papal_election.1
+		}
+	}
+}
