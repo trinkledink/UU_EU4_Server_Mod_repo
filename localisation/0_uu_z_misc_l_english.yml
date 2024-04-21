@@ -18,6 +18,7 @@
   uu_better_weapons_manus_priv_mod:0 "Plutocratic Military Industry"
  uu_estate_nomadic_tribes_mana_privilege:0 "Tribal Intellectualism"
   uu_estate_nomadic_tribes_mana_privilege_desc:0 "FOR DA HORDE!"
+ uu_enable_free_cult_for_heirs_tt:0 "The estate privilege '§YBuild Shrines for Heirs§!' no longer affects Clergy influence."
  #Merc Companies
  merc_cav_free_company:0 "Free Cav Company"
  merc_ideas_frontline:0 "Frontline Company"

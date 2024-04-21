@@ -724,8 +724,8 @@ l_english:
  unlock_privilege_estate_nobles_cawa_offensive_fighters_tt:0 "Enable the [Root.GetNobilityOrFallbackName] privilege '§YUse Cawa Conquerors§!'."
  mal_add_disaster_stability_tt:1 "Gain §G1§! Stability (§G50§! Administrative Power if you have 3 Stability already) if the §YDecline of Mali§! disaster is active."
  set_prestige_to_zero_tt:0 "Set [This.GetName]'s Prestige to §Y0§!."
- enable_cult_for_heirs_tt:0 "Heirs can choose a second §YCult§ for your country!." #UU Change
- disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§ for your country!." #UU change
+ enable_cult_for_heirs_tt:0 "Heirs can choose a second §YCult§! for your country!" #UU Change
+ disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§! for your country!" #UU change
  unlock_cult_through_selection_tt:0 "Unlock a §YCult§! of your choice.\nCults from other religions require our knowledge of their existence first in order to unlock them."
  enable_development_on_buildings_built_tt:0 "Constructing non-defensive buildings will §Yincrease§! development of the province.\nDestroying buildings, which were constructed while this effect is active, will however remove development."
  enable_primary_cult_tt:1 "Enable the usage of a §YPrimary Cult§!, which increases the strength of the cult and removes the loss of Stability upon the death of a monarch, but disables using other cults.\nPrimary Cults can be swapped every §Y50§! years."

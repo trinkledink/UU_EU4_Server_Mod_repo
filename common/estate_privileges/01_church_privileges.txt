@@ -2007,7 +2007,16 @@ estate_church_heir_shrine = {
 	conditional_modifier = {
 		trigger = { has_government_attribute = no_influence_from_fetishist_privileges }
 		modifier = {
-			church_influence_modifier = -0.2
+			church_influence_modifier = -0.1 #UU bugfix?
+		}
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_country_flag = uu_no_cost_heir_cult_privilege_flag
+			NOT = { has_government_attribute = no_influence_from_fetishist_privileges }
+		}
+		modifier = {
+			church_influence_modifier = -0.1
 		}
 	}
 	ai_will_do = {
@@ -2060,7 +2069,7 @@ estate_church_embrace_singluar_cult = {
 	conditional_modifier = {
 		trigger = { has_government_attribute = no_influence_from_fetishist_privileges }
 		modifier = {
-			church_influence_modifier = -0.25
+			church_influence_modifier = -0.1 #UU bugfix?
 		}
 	}
 	ai_will_do = {
