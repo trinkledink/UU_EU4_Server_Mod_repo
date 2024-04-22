@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			NOT = { has_country_flag = formed_kitara_flag }
 			OR = {
 				ai = no
@@ -13,9 +13,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = KIT }
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
 			culture_group = great_lakes_group
 			is_colonial_nation = no
 			OR = {
@@ -68,6 +65,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = KIT
+			set_country_flag = formed_tier_four_flag
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {

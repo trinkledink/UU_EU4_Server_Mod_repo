@@ -3,6 +3,7 @@ country_decisions = {
 	dalmatian_nation = {
 		major = yes
 		potential = {
+			can_form_tier_two_trigger = yes
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_dalmatia_flag }
@@ -14,10 +15,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = DAL }
-			NOT = { tag = CRO }
-			NOT = { tag = PAP }
 			OR = {
 				NOT = { exists = DAL}
 				ai = no
@@ -61,6 +58,7 @@ country_decisions = {
 			owns_core_province = 4753			# Zadar
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			add_prestige = 25
 			change_tag = DAL
 			on_change_tag_effect = yes

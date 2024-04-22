@@ -5,7 +5,7 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_india_flag }
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_five_trigger = yes #UU
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -277,11 +277,15 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = BHA
+			set_country_flag = formed_tier_five_flag	#UU
+			change_tag = AKS
 			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_government_rank = 3
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			swap_non_generic_missions = yes
 			india_superregion = {
 				limit = {
 					NOT = { owned_by = ROOT }

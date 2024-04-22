@@ -1,10 +1,10 @@
-country_decisions = { #unfinished
+country_decisions = {
 	uu_macina_nation = {
 		major = yes
 		potential = {
 			NOT = { tag = SOK }
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			OR = {
 				ai = no 
 				AND = {
@@ -21,7 +21,6 @@ country_decisions = { #unfinished
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = ZAF }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -44,6 +43,7 @@ country_decisions = { #unfinished
 			}
 		}
 		allow = {
+			NOT = { exists = ZAF }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -93,6 +93,7 @@ country_decisions = { #unfinished
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			remove_country_modifier = uu_fulani_preacher_accepted
 			set_global_flag = uu_massina_happened_flag
 			set_country_flag = formed_macina_flag

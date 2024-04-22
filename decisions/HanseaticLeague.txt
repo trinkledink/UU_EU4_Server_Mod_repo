@@ -5,7 +5,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_three_trigger = yes
 			NOT = { has_country_flag = formed_hsa_flag }
 			OR = {
 				ai = no
@@ -15,9 +15,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
-			NOT = { tag = GBR }
 			OR = {
 				culture_group = germanic
 				tag = GOT
@@ -32,7 +29,7 @@ country_decisions = {
 					ai = no
 				}
 			}
-			owns = 45
+			owns = 45	#Lubeck
 			OR = {
 				has_mission = hsa_unite_hanseatic_league_mission
 				NOT = { num_of_cities = 25 }
@@ -80,6 +77,7 @@ country_decisions = {
 			45 = { is_strongest_trade_power = ROOT }
 		}
 		effect = {
+			set_country_flag = formed_tier_three_flag
 			45 = { move_capital_effect = yes }
 			if = {
 				limit = {

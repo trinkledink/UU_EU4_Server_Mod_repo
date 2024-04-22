@@ -14,12 +14,11 @@ country_decisions = {
 	united_japan_daimyo = {
 		major = yes
 		potential = {
-			NOT = { tag = JAP }
 			NOT = { has_country_flag = formed_japan_flag }
-			was_never_end_game_tag_trigger = yes
-						NOT = { has_reform = daimyo }
-						NOT = { has_reform = indep_daimyo }
-						NOT = { has_reform = shogunate }
+			can_form_tier_four_trigger = yes
+			NOT = { has_reform = daimyo }
+			NOT = { has_reform = indep_daimyo }
+			NOT = { has_reform = shogunate }
 			NOT = { has_reform = celestial_empire }
 			culture_group = japanese_g
 		}
@@ -48,6 +47,7 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			change_tag = JAP
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes

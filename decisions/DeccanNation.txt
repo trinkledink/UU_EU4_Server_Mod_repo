@@ -3,6 +3,7 @@ country_decisions = {
 	deccan_nation = {
 		major = yes
 		potential = {
+			can_form_tier_four_trigger = yes
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_deccan_flag }
@@ -78,6 +79,7 @@ country_decisions = {
 			owns_core_province = 539 #Madras
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			change_tag = DEC
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes

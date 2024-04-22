@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_five_trigger = yes
 			NOT = { has_country_flag = formed_india_flag }
 			OR = {
 				ai = no
@@ -272,8 +272,8 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_five_flag
 			change_tag = HIN
-			on_change_tag_effect = yes
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes

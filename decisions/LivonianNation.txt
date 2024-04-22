@@ -3,7 +3,7 @@ country_decisions = { #uu only monastic orders become monarchies
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_three_trigger = yes
 			NOT = { has_country_flag = formed_livonia_flag }
 			OR = {
 				ai = no
@@ -13,7 +13,6 @@ country_decisions = { #uu only monastic orders become monarchies
 				tag = RIG
 				tag = LIV
 			}
-			NOT = { exists = LVA }
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -34,6 +33,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			}
 		}
 		allow = {
+			NOT = { exists = LVA }
 			adm_tech = 10
 			is_nomad = no			
 			is_at_war = no
@@ -51,6 +51,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_three_flag
 			37 = { # Semigallia
 				move_capital_effect = yes
 			}
@@ -108,7 +109,7 @@ country_decisions = { #uu only monastic orders become monarchies
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_three_trigger = yes
 			NOT = { has_country_flag = formed_livonia_flag }
 			OR = {
 				ai = no
@@ -121,7 +122,6 @@ country_decisions = { #uu only monastic orders become monarchies
 				}
 			}
 			primary_culture = baltic_german
-			NOT = { exists = LVA }
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -142,6 +142,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			}
 		}
 		allow = {
+			NOT = { exists = LVA }
 			adm_tech = 10
 			is_nomad = no			
 			is_at_war = no
@@ -159,6 +160,7 @@ country_decisions = { #uu only monastic orders become monarchies
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_three_flag
 			37 = { # Semigallia
 				move_capital_effect = yes
 			}

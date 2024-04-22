@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes #UU
 			NOT = { has_country_flag = formed_arabia_flag }
 			OR = {
 				ai = no
@@ -14,9 +14,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = ARB }
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -45,6 +42,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = ARB }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			if = {
@@ -63,13 +61,14 @@ country_decisions = {
 			owns_core_province = 403			#Nizwa
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag	#UU
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			arabia_region = {
 				limit = {
