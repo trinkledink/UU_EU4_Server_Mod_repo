@@ -33,6 +33,7 @@ country_decisions = {
 			has_country_flag = strategist_flag
 			has_country_flag = radical_mercantilist_reforms
 			has_country_flag = military_reform
+			has_country_flag = uu_bank
 		}
 		effect = {
 		

@@ -1446,15 +1446,15 @@ province_event = { #Theocrats take a province
 	trigger = {
 		OR = {
 			AND = {
-				FROM = { has_country_flag = uu_war_with_sok }
+				owner = { has_country_flag = uu_war_with_sok }
 				controller = { tag = SOK }
 			}
 			AND = {
-				FROM = { has_country_flag = uu_war_with_zaf }
+				owner = { has_country_flag = uu_war_with_zaf }
 				controller = { tag = ZAF }
 			}
 			AND = {
-				FROM = { has_country_flag = uu_war_with_ful }
+				owner = { has_country_flag = uu_war_with_ful }
 				controller = { tag = FUL }
 			}
 		}
@@ -1497,22 +1497,22 @@ province_event = { #Monarchists take a province
 	trigger = {
 		OR = {
 			AND = {
-				FROM = { tag = SOK }
+				owner = { tag = SOK }
 				controller = { has_country_flag = uu_war_with_sok }
 			}
 			AND = {
-				FROM = { tag = ZAF }
+				owner = { tag = ZAF }
 				controller = { has_country_flag = uu_war_with_zaf }
 			}
 			AND = {
-				FROM = { tag = FUL }
+				owner = { tag = FUL }
 				controller = { has_country_flag = uu_war_with_ful }
 			}
 		}
 	}
 	immediate = {
 		hidden_effect = {
-			remove_core = FROM
+			remove_core = owner
 			cede_province = controller
 			if = {			#Taking forts will capture all adjacent provs.
 				limit = { has_fort_building_trigger = yes } 
