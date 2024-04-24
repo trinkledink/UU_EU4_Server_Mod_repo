@@ -1,5 +1,6 @@
 country_decisions = {
 	Pench_Estate_Influence = {
+		color = { 60 120 60 }
 		major = yes
 		potential = {
 			OR ={

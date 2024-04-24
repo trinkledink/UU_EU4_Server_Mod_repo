@@ -277,7 +277,7 @@ strategist = {
 	siege_ability = 0.15
 	
 
-	sskill_scaled_modifier = {
+	skill_scaled_modifier = {
 		trigger = {
 			owner = {
 				has_government_mechanic = russian_modernization_mechanic
