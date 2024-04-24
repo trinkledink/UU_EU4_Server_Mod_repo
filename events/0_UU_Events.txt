@@ -531,7 +531,24 @@ country_event = {	#UU papal Dogma
 country_event = { 	#Renames
 	id = UU_balance_events.11
 	title = UU_balance_events.11.t
-	desc = UU_balance_events.11.desc
+	desc = {
+		trigger = {
+			NOT = { 
+				has_country_flag = uueoc_temp_flag
+				has_country_flag = uucsh_temp_flag
+			}
+		}
+		desc = UU_balance_events.11.desc
+	}
+	desc = {
+		trigger = {
+			OR = { 
+				has_country_flag = uueoc_temp_flag
+				has_country_flag = uucsh_temp_flag
+			}
+		}
+		desc = UU_balance_events.11.desc.china
+	}
 	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
@@ -556,6 +573,37 @@ country_event = { 	#Renames
 			has_country_flag = uupun_temp_flag
 		}
 		override_country_name = UUPUN
+	}
+	option = {
+		name = UU_balance_events.11.d
+		trigger = {
+			has_country_flag = uueoc_temp_flag
+		}
+		if = {
+			limit = { tag = MNG }
+			override_country_name = UUEOC_GMNG
+		} else_if = {
+			limit = { tag = QNG }
+			override_country_name = UUEOC_GQNG
+		} else_if = {
+			limit = { tag = YUA }
+			override_country_name = UUEOC_GYUA
+		} 	
+	}
+	option = {
+		name = UU_balance_events.11.e
+		trigger = {
+			has_country_flag = uucsh_temp_flag
+		}
+		override_country_name = UUEOC_GCSH
+		add_country_modifier = {
+			name = "hegemonic_ambition"
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = "imperial_ambition"
+			duration = 9125
+		}
 	}
 	option = {
 		name = UU_balance_events.11.zzz

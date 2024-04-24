@@ -123,6 +123,10 @@
   uumgs_rename_decision_desc:0 "This decision can only be pressed once."
  uupun_rename_decision_title:0 "Rename our nation to the Sikh Empire"
   uupun_rename_decision_desc:0 "This decision can only be pressed once."
+ uueoc_rename_decision_title:0 "Become known as Great [Root.GetName]"
+  uueoc_rename_decision_desc:0 "This decision can only be pressed once."
+ uucsh_rename_decision_title:0 "(§R4§!)@CSH Proclaim Great Shun"
+  uucsh_rename_decision_desc:0 "This decision can only be pressed once."
  #Tiered Formables
  uu_tiered_formables_info_title:0 "Info: Tiered Formables"
   uu_tiered_formables_info_desc:0 "§YClick to update tracker.§!\nAs of UU Hedgehog Mod 1.11, the formable system from Imperator:Rome has been adopted to replace the end-game-tag system. All nations have been divided into 5 tiers based on de jure title and size, although certain exceptions were made for gameplay purposes. The tier will be indicated next to the formation decision. Higher-tier nations cannot form nations of lower or the same tier (i.e. the Emperor of Japan will not adopt the title of Duke of Silesia as his primary title) with some exceptions - see the §Ychangelog§! for a full list.\n\n   Tier 1: Duchy (e.g. @ICE Iceland, @LFA Lanfang, @KUR Courland, most starting nations)\n   Tier 2: §YMinor Kingdom§! (e.g. @ENG England, @MOR Morocco, @KHM Khmer, @TUS Tuscany, @HAN Hanover)\n   Tier 3: §OMajor Kingdom§! (e.g. @GBR Great Britain, @MSA Malaya, @MAM Mamluks, @ITA Italy, @PRU Prussia)\n   Tier 4: §REmpire§! (e.g. @RUS Russia, @YUA Yuan, @PER Persia, @ETH Ethiopia, @PLC Commonwealth)\n   Tier 5: §MMajor Empire§! (e.g. @GER Germany, @HLR H.R.E., @ROM Roman Empire, @BHA Bharat, @MGE Mongol Empire)"

@@ -136,4 +136,64 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+
+	uueoc_rename_decision = {			#Emperor of China
+		potential = { 
+			OR = {
+				tag = MNG 
+				tag = QNG 
+				tag = YUA   
+			}
+			is_emperor_of_china = yes
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 80
+				superregion = china_superregion
+				is_core = ROOT 
+			}
+			owns = 1821
+			owns = 1816
+		}
+		effect = {
+			set_country_flag = uueoc_rename_decision_flag
+			set_country_flag = uueoc_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uucsh_rename_decision = {			#Emperor of China - Shun
+		potential = { 
+			tag = CSH
+			is_emperor_of_china = yes
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 80
+				superregion = china_superregion
+				is_core = ROOT 
+			}
+			owns = 1821
+			owns = 1816
+		}
+		effect = {
+			set_country_flag = uucsh_rename_decision_flag
+			set_country_flag = uucsh_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
 }

@@ -38,9 +38,12 @@
  #Formables?
  UU_balance_events.11.t:0 "A New Identity For Our Nation"
   UU_balance_events.11.desc:0 "As our nation continues to evolve, many have proposed that our government adopt a new name that others may know us by, or perhaps even come to fear."
+    UU_balance_events.11.desc.china:0 "We have now acquired a firm grip over all China, and most already recognize us as the rightful holders of the Mandate of Heaven. Many have proposed we adopt an official dynastic name for our nation in accordance with Chinese tradition."
   UU_balance_events.11.a:0 "We shall be known as Kanata, as a nod to our heritage."
   UU_balance_events.11.b:0 "We will be known as Malagasikara, the Malagasy name of our beloved island."
   UU_balance_events.11.c:0 "We will be known as the Sikh Empire to underscore our growing domain."
+  UU_balance_events.11.d:0 "We will be known henceforth as Great [Root.GetName]."
+  UU_balance_events.11.e:0 "We will be known henceforth as Great [Root.GetName]."
   UU_balance_events.11.zzz:0 "No thanks"
  #Other
  UU_balance_events.9.t:0 "Papal State Gets 0.5 Government Power"

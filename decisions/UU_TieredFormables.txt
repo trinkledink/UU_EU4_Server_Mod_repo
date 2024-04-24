@@ -32,7 +32,6 @@ country_decisions = {
 					limit = {
 						NOT = { has_country_flag = formed_tier_five_flag }
 						OR = {
-							has_country_flag = formed_tier_five_flag
 							#Pan-Germany
 							is_or_was_tag = { tag = HLR } #Holy Roman Empire 
 							is_or_was_tag = { tag = GER } #Germany
@@ -55,7 +54,6 @@ country_decisions = {
 					limit = {
 						NOT = { has_country_flag = formed_tier_four_flag }
 						OR = {
-							has_country_flag = formed_tier_four_flag
 							#European Empires 
 							is_or_was_tag = { tag = PLC } #Commonwealth 
 							is_or_was_tag = { tag = AUH } #AustriaHungary 
@@ -104,7 +102,6 @@ country_decisions = {
 					limit = {
 						NOT = { has_country_flag = formed_tier_three_flag }
 						OR = {
-							has_country_flag = formed_tier_three_flag
 							#European Culture-Group Majors 
 							is_or_was_tag = { tag = GBR } #Great Britain
 							is_or_was_tag = { tag = AVE } #Dual Monarchy
@@ -144,7 +141,6 @@ country_decisions = {
 					limit = {
 						NOT = { has_country_flag formed_tier_two_flag }
 						OR = {
-							has_country_flag = formed_tier_two_flag
 							#British Kingdoms 
 							is_or_was_tag = { tag = ENG } #England 
 							is_or_was_tag = { tag = SCO } #Scotland 
