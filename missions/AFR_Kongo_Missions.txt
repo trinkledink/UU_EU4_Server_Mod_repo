@@ -694,6 +694,7 @@ kongo_conquest_armies_missions_slot = {
 		provinces_to_highlight = {
 			culture = kuba
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			is_city = yes
 		}
 		trigger = {
 			custom_trigger_tooltip = {
@@ -702,6 +703,7 @@ kongo_conquest_armies_missions_slot = {
 					any_province = {
 						culture = kuba
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						is_city = yes
 					}
 				}
 			}
