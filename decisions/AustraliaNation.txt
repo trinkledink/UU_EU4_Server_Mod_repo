@@ -3,7 +3,10 @@ country_decisions = {
 	australia_nation = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				NOT = { has_country_flag = changed_from_colonial_nation }
+				tag = NZL #UU
+			}
 			was_never_end_game_tag_trigger = yes
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }

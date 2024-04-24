@@ -6,7 +6,7 @@ country_decisions = {
 			ai = no
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_elbian_confederation_flag }
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_three_trigger = yes	#technically redundant
 			OR = {
 				tag = BOH
 				tag = SAX
@@ -15,9 +15,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = ELB }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
+			NOT = { exists = ELB }	#makes sense to be here
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -57,7 +55,8 @@ country_decisions = {
 			owns_core_province = 52			# Magdeburg
 			owns_core_province = 264		# Wroclaw
 		}
-		effect = {			
+		effect = {		
+			set_country_flag = formed_tier_three_flag	
 			change_tag = ELB
 			swap_non_generic_missions = yes
 			if = {

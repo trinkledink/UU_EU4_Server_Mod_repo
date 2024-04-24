@@ -61,6 +61,15 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = ITA }
+			custom_trigger_tooltip = {
+				tooltip = uu_no_kog_tt
+				NOT = {
+					AND = {
+						exists = PAP
+						PAP = { has_country_flag = is_kingdom_of_god_flag }
+					}
+				}
+			}
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -200,6 +209,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = ITA } #UU
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

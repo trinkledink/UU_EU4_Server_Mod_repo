@@ -160,30 +160,7 @@ country_decisions = {
 				factor = 0
 				has_reform = free_city
 			}
-			#modifier = {
-			#	factor = 0
-			#	exists = HSA
-			#}
 		}
 		ai_importance = 400
-	}
-	uuhsa_rename_decision = {
-		potential = {
-			has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag 
-			NOT = { has_country_flag = uuhsa_rename_decision_flag }
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			country_event = {
-				id = UU_balance_events.6
-			}
-			set_country_flag = uuhsa_rename_decision_flag
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_importance = 0
 	}
 }

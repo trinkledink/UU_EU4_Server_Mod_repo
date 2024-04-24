@@ -11,7 +11,7 @@
  uu_bharat_nation_title:0 "(§M5§!)@BHA Unite Bharatvarsha"
  uu_restore_roman_empire_kog:0 "(§M5§!)@ROM Restore the Roman Empire"
  #
- siamese_nation_title:0 "(§R4§!)@SIA Form Siamese Nation"
+ siamese_nation_title:0 "(§T§O3§!§!)@SIA Form Siamese Nation"
  restore_dai_viet_title:0 "(§Y2§!)@DAI Restore the Kingdom of Dai Viet" #UU Change
  restore_lan_xang_title:0 "(§Y2§!)@LXA Restore the Kingdom of Lan Xang" #UU Change
  ruthenian_nation_title:0 "(§R4§!)@UKR Reclaim Ruthenian Legacy"
@@ -26,7 +26,7 @@
  polish_nation_title:0 "(§T§O3§!§!)@POL Form Polish Nation"
  andalusian_nation_title:0 "(§R4§!)@ADU Restore Al-Andalus"
  tuscan_nation_title:0 "(§Y2§!)@TUS Form Tuscany"
- tatar_nation_title:0 "(§R4§!)@GLH Re-form the Golden Horde"
+ tatar_nation_title:0 "(§R4§!)@GLH Reunite the Golden Horde"  #UU Change
  from_great_yuan_title:0 "(§R4§!)@YUA Reform Great Yuan"
  yemen_nation_title:0 "(§Y2§!)@YEM Unite Yemen"
  georgia_nation_title:0 "(§Y2§!)@GEO Unite Georgia"
@@ -75,8 +75,8 @@
  aksumite_nation_title:0 "(§M5§!)@AKS Restore Aksum"
  great_zimbabwe_nation_title:0 "(§R4§!)@GZI Restore Zimbabwe"
  hausa_nation_title:0 "(§Y2§!)@HAU Unite the Hausa"
- israel_nation_title:0 "(§Y2§!)@ISR Re-Establish Israel"
- kitara_nation_title:0 "(§R4§!)@KIT Restore the Empire of Kitara" #UU Change
+ israel_nation_title:0 "(§Y2§!)@ISR Reestablish Israel"
+ kitara_nation_title:0 "(§T§O3§!§!)@KIT Restore Kitara" #UU Change
  mali_nation_title:0 "(§Y2§!)@MAL Restore the Mali Kingdom" #UU Change
  mossi_nation_title:0 "(§Y2§!)@MSI Unite the Mossi Kingdoms"
  nubian_nation_title:0 "(§Y2§!)@NBI Unite the Nubians"
@@ -89,7 +89,7 @@
  united_japan_title:0 "(§R4§!)@JAP Japan is united"
  united_japan_daimyo_title:0 "(§R4§!)@JAP Japan is united"
  form_manchu_dynasty_title:0 "(§R4§!)@QNG Qing Dynasty"
- malayan_nation_title:0 "(§R4§!)@MSA Form Malaya"
+ malayan_nation_title:0 "(§T§O3§!§!)@MSA Form Malaya"
  sardinia_piedmont_nation_title:0 "(§Y2§!)@SPI Form Sardinia-Piedmont"
  sardinia_piedmont_nation_inherit_title:1 "(§Y2§!)@SPI Form Sardinia-Piedmont Diplomatically"
  romanian_nation_title:0 "(§Y2§!)@RMN Form Romanian Nation"
@@ -105,7 +105,7 @@
  irish_nation_title:0 "(§Y2§!)@IRE Form Irish Nation"
  british_nation_title:0 "(§T§O3§!§!)@GBR Form British Nation"
  scandinavian_nation_title:0 "(§R4§!)@SCA Form Scandinavian Nation"
- restore_byzantine_empire_title:0 "(§T§O3§!§!)@BYZ Restore the Byzantine Empire"
+ restore_byzantine_empire_title:0 "(§R4§!)@BYZ Restore the Byzantine Empire"
  prussian_nation_title:0 "(§T§O3§!§!)@PRU Reform into Prussia"
  prussian_nation_general_title:0 "(§T§O3§!§!)@PRU Reform into Prussia"
  kingdom_of_jerusalem_title:0 "(§Y2§!)@KOJ Reestablish The Kingdom of Jerusalem"

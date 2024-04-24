@@ -78,7 +78,15 @@
   TRADE_COMPANY_NAPLES:0 "South Italian Charter"
   TRADE_COMPANY_NAPLES_Root_Culture_GetName:0 "[Root.Culture.GetName] South Italy Company"
   TRADE_COMPANY_CAMEROON_Europe_Trade_Company:0 "South Italy Trade Company"
-
+ #Custom names
+ UUFOUTATORO:0 "Fouta Tooro"
+  UUFOUTATORO_ADJ:0 "Fouta Tooro"
+ UUKANATA:0 "Kanata"
+  UUKANATA_ADJ:0 "Kanatan"
+ UUMGS:0 "Malagasikara"
+  UUMGS_ADJ:0 "Malagasikaran"
+ UUPUN:0 "Sikh Empire"
+  UUPUN_ADJ:0 "Sikh Empire"
  #Cultures
  czech_newer:0 "Elbian" #Germanic group clone of Czech
  #zhuang:0 "Cuengh" #Duplicated here. Indigenous name 

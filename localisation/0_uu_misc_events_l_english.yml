@@ -29,13 +29,20 @@
   player_uncon_diplomat_desc:0 "For when an enemy player unconditionally surrenders and you don't have a free diplomat"
   player_uncon_diplomat_modifier:0 "Emergency Diplomat"
 
-#too many forts
-UU_balance_events.8.t:0 "NO ADJACENT FORTS ALLOWED"
-UU_balance_events.8.desc:0 "You dingus, didn't you read the changelog?"
-UU_balance_events.8.a:0 "Remove both."
-UU_balance_events.8.b:0 "Remove the fort in [uu_fort_target_province_1.GetName]."
-UU_balance_events.8.c:0 "Remove the fort in [uu_fort_target_province_2.GetName]."
-
-UU_balance_events.9.t:0 "Papal State Gets 0.5 Government Power"
-UU_balance_events.10.t:0 "Papal State Gets 1 Government Power"
+ #too many forts
+ UU_balance_events.8.t:0 "NO ADJACENT FORTS ALLOWED"
+  UU_balance_events.8.desc:0 "You dingus, didn't you read the changelog?"
+  UU_balance_events.8.a:0 "Remove both."
+  UU_balance_events.8.b:0 "Remove the fort in [uu_fort_target_province_1.GetName]."
+  UU_balance_events.8.c:0 "Remove the fort in [uu_fort_target_province_2.GetName]."
+ #Formables?
+ UU_balance_events.11.t:0 "A New Identity For Our Nation"
+  UU_balance_events.11.desc:0 "As our nation continues to evolve, many have proposed that our government adopt a new name that others may know us by, or perhaps even come to fear."
+  UU_balance_events.11.a:0 "We shall be known as Kanata, as a nod to our heritage."
+  UU_balance_events.11.b:0 "We will be known as Malagasikara, the Malagasy name of our beloved island."
+  UU_balance_events.11.c:0 "We will be known as the Sikh Empire to underscore our growing domain."
+  UU_balance_events.11.zzz:0 "No thanks"
+ #Other
+ UU_balance_events.9.t:0 "Papal State Gets 0.5 Government Power"
+ UU_balance_events.10.t:0 "Papal State Gets 1 Government Power"
 

@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_mali_flag }
 			OR = {
 				ai = no
@@ -13,7 +13,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MAL }
 			OR = {
 				ai = no
 				AND = {
@@ -21,8 +20,6 @@ country_decisions = {
 					num_of_cities = 3 #Carnage
 				}
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
 			OR = {
 				primary_culture = mali
 				has_country_flag = uu_can_form_mali_flag		
@@ -58,7 +55,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			stability = 2
+			stability = 1
 			futa_jallon_area = {
 				is_core = ROOT
 				owned_by = ROOT
@@ -105,13 +102,14 @@ country_decisions = {
 			#religion = sunni
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			remove_country_modifier = uu_decline_of_mali
 			clr_country_flag = uu_can_form_mali_flag
 			change_tag = MAL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 2 } }	#UU Nerfed to kingdom
+				set_government_rank = 2
 			}
 			set_capital = 1124
 			add_country_modifier = {

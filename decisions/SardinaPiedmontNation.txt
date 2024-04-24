@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_sardinia_piedmont_flag }
 			OR = {
 				ai = no
@@ -14,7 +14,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = SPI }
 			OR = {
 				tag = SAV
 				tag = SAR
@@ -44,6 +43,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			NOT = { exists = SPI }
 			#adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -88,6 +88,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			103 = {
 				move_capital_effect = yes
 			}
@@ -139,7 +140,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes	#technically redundant
 			NOT = { has_country_flag = formed_sardinia_piedmont_flag }
 			OR = {
 				ai = no
@@ -149,7 +150,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = SPI }
+			NOT = { exists = SPI }	#makes sense to keep this here
 			government = monarchy
 			OR = {
 				AND = {
@@ -204,6 +205,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			103 = {
 				move_capital_effect = yes
 			}

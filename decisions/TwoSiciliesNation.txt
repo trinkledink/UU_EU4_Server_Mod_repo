@@ -3,7 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_two_sicilies_flag }
 			OR = {
 				ai = no
@@ -13,7 +13,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = TTS }
 			OR = {
 				primary_culture = neapolitan
 				primary_culture = sicilian
@@ -63,6 +62,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = TTS }
 			#adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -79,6 +79,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			change_tag = TTS
 			on_change_tag_effect = yes
 			if = {

@@ -115,7 +115,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			NOT = { has_country_flag = formed_timurids_flag }
 			OR = {
 				ai = no
@@ -125,13 +125,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
-			NOT = { tag = MUG }
-			NOT = { tag = PER }
-			NOT = { tag = TIM }
-			NOT = { tag = ARB }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -197,6 +190,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			change_tag = TIM
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes

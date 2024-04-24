@@ -3,6 +3,7 @@ country_decisions = {
 	restore_roman_empire = {
 		major = yes
 		potential = {
+			can_form_tier_five_trigger = yes
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = restored_rome_flag }
 			owns = 118
@@ -14,10 +15,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
 			NOT = { tag = PAP }
-			NOT = { exists = ROM }
 			OR = {
 				religion_group = christian
 				religion_group = pagan
@@ -28,6 +26,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			NOT = { exists = ROM }
 			num_of_owned_provinces_with = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_highlighted_by_decision
@@ -175,6 +174,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_five_flag
 			set_country_flag = uu_is_imperium_of_god_flag
 			tooltip = {
 				override_country_name = IMPERIUM_OF_GOD

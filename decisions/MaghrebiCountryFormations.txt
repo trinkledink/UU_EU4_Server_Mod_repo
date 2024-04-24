@@ -6,7 +6,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_morocco_flag }
 			OR = {
 				ai = no
@@ -16,11 +16,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = MOR }	#UU
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = moroccan
 				primary_culture = berber
@@ -75,6 +70,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			344 = {
 				move_capital_effect = yes
 			}
@@ -125,10 +121,9 @@ country_decisions = {
 				add_permanent_claim = MOR
 			}
 			add_prestige = 25
-			if = {
-				limit = { 
-					NOT = { has_reform = celestial_empire } 
-					NOT = { tag = SOS } #you cant take away my sus theocracy
+			if = {		#UU copied from below so it does not force kingdom on republics or theocracies.
+				limit = {
+					is_tribal = yes	#Desert tribes settling down.
 				}
 				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
@@ -153,7 +148,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_algiers_flag }
 			OR = {
 				ai = no
@@ -163,13 +158,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = ALG }	#UU
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = TLC }
-			NOT = { tag = ALG }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = algerian
 				AND = {
@@ -244,6 +232,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			338 = {
 				move_capital_effect = yes
 			}
@@ -314,9 +303,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_tunisia_flag }
-			NOT = { was_tag = TUN }		#UU				  
+			can_form_tier_two_trigger = yes
+			NOT = { has_country_flag = formed_tunisia_flag }			  
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -325,10 +313,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = tunisian
 				primary_culture = berber
@@ -384,6 +368,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			341 = {
 				move_capital_effect = yes
 			}
@@ -431,7 +416,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_tripoli_flag }
 			OR = {
 				ai = no
@@ -441,14 +426,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { was_tag = TRP }	#UU
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = TLC }
-			NOT = { tag = ALG }
-			NOT = { tag = TRP }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = tunisian
 				primary_culture = berber
@@ -502,6 +479,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			354 = {
 				move_capital_effect = yes
 			}

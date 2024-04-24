@@ -3,12 +3,9 @@ country_decisions = {
 	ctg_nation = {
 		major = yes
 		potential = {
-			was_never_end_game_tag_trigger = yes
-			NOT = { was_tag = CTG }
-			NOT = { exists = CTG }
-			NOT = { tag = PAP }
-			NOT = { tag = MAM }
+			can_form_tier_three_trigger = yes #technically redundant
 			tag = TUN
+			owns = 341
 			ai = no
 			technology_group = muslim
 		}
@@ -46,6 +43,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_three_flag
 			341 = {
 				move_capital_effect = yes
 			}

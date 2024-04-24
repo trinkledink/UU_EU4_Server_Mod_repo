@@ -6,6 +6,8 @@
   ZAF_ADJ:0 "Massina" 
  RZI:0 "Rozwi" 
   RZI_ADJ:0 "Rozwi"
+ KUR:0 "Courland" #Actual English name for this place
+  KUR_ADJ:0 "Couronian"
 
  #Trade Nodes
  katsina:0 "Hausaland"

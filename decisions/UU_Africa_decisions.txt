@@ -48,7 +48,11 @@ country_decisions = {
             }
         }
         effect = {
-            set_government_rank = 2
+            set_country_flag = formed_tier_two_flag
+            if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
             add_prestige = 25
             set_country_flag = uu_united_madagascar_flag
             capital_scope = {
@@ -70,7 +74,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			primary_culture = songhai
 			NOT = { has_country_flag = formed_songhai_flag }
 			OR = {
@@ -131,11 +135,15 @@ country_decisions = {
             }
 		}
 		effect = {
+            set_country_flag = formed_tier_two_flag
 			change_tag = SON
             restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_government_rank = 2
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			add_prestige = 10
 			if = {
 				limit = { has_custom_ideas = no }

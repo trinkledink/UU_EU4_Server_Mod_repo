@@ -4,24 +4,16 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			NOT = { has_country_flag = formed_scandinavia_flag }
-			#OR = { #redundant
-			#	ai = no
-			#	is_playing_custom_nation = no
-			#}
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			OR = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = SCA }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			# OR = {		#UU opened Scandi up for all
-			# 	tag = DAN #mark
-			# 	tag = SWE #den 
-			# 	tag = NOR #way
-			# }
 			culture_group = scandinavian
 			OR = {
 				ai = no
@@ -48,12 +40,13 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = SCA }
 			if = {
 				limit = {
 					has_dlc = "Lions of the North"
 				}
 				OR = {
-					adm_tech = 20
+					adm_tech = 15
 					custom_trigger_tooltip = {
 						tooltip = scandinavian_nation_tt
 						has_country_flag = can_form_scandinavia_earlier
@@ -78,6 +71,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			if = {
 				limit = {
 					tag =  NOR
@@ -343,7 +337,7 @@ country_decisions = {
 						has_reform = danish_archkingdom
 					}
 					override_country_name = KLU
-					#change_country_color = { color = { 255 212 42 } }
+					#change_country_color = { color = { 255 212 42 } }	#no thanks
 				}
 			}
 		}

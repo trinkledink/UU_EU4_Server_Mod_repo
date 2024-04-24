@@ -34,6 +34,7 @@ country_decisions = {
 				has_country_modifier = uu_fulani_preacher_accepted
 			}
 			NOT = { owns = 1148 } #Sokoto prioritized	
+			NOT = { exists = ZAF } #makes sense to keep this here
 		}
 		provinces_to_highlight = {
 			province_id = 1131
@@ -43,7 +44,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = ZAF }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -69,7 +69,7 @@ country_decisions = {
 			}
 			estate_territory = {
 				estate = estate_church
-				territory = 50
+				territory = 40
 			}
 			NOT = {
 				estate_influence = {
@@ -110,7 +110,6 @@ country_decisions = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				add_stability = -3
 				change_government = monarchy
 			}
 			if = {
@@ -118,8 +117,8 @@ country_decisions = {
 				add_government_reform = feudal_theocracy
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
 			}
 			if = {
 				limit = {

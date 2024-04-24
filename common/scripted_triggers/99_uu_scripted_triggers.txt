@@ -3,181 +3,173 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
     NOT = {
         has_country_flag = formed_tier_two_flag
         #British Kingdoms 
-        is_or_was_tag = ENG #England 
-        is_or_was_tag = SCO #Scotland 
-        is_or_was_tag = IRE #Ireland 
+        is_or_was_tag = { tag = ENG } #England 
+        is_or_was_tag = { tag = SCO } #Scotland 
+        is_or_was_tag = { tag = IRE } #Ireland 
         #Iberian Kingdoms 
-        is_or_was_tag = CAS #Castile 
-        is_or_was_tag = ARA #Aragon 
-        is_or_was_tag = NAV #Navarra
-        is_or_was_tag = POR #Portugal 
+        is_or_was_tag = { tag = CAS } #Castile 
+        is_or_was_tag = { tag = ARA } #Aragon 
+        is_or_was_tag = { tag = NAV } #Navarra
+        is_or_was_tag = { tag = POR } #Portugal 
         #German Regionals (might still be Duchy rank)
-        is_or_was_tag = BAV #Bavaria 
-        is_or_was_tag = SAX #Saxony
-        is_or_was_tag = FKN #Franconia 
-        is_or_was_tag = SWA #Swabia 
-        is_or_was_tag = HAN #Hanover 
-        is_or_was_tag = WES #Westphalia
-        is_or_was_tag = SWI #Switzerland
-        is_or_was_tag = POM #Pomerania
-        is_or_was_tag = SIL #Silesia
-        is_or_was_tag = BOH #Bohemia
+        is_or_was_tag = { tag = BAV } #Bavaria 
+        is_or_was_tag = { tag = SAX } #Saxony
+        is_or_was_tag = { tag = FKN } #Franconia 
+        is_or_was_tag = { tag = SWA } #Swabia 
+        is_or_was_tag = { tag = HAN } #Hanover 
+        is_or_was_tag = { tag = WES } #Westphalia
+        is_or_was_tag = { tag = SWI } #Switzerland
+        is_or_was_tag = { tag = POM } #Pomerania
+        is_or_was_tag = { tag = SIL } #Silesia
+        is_or_was_tag = { tag = BOH } #Bohemia
         #Scandinavian Kingdoms 
-        is_or_was_tag = DAN #Denmark 
-        is_or_was_tag = SWE #Sweden 
-        is_or_was_tag = NOR #Norway
+        is_or_was_tag = { tag = DAN } #Denmark 
+        is_or_was_tag = { tag = SWE } #Sweden 
+        is_or_was_tag = { tag = NOR } #Norway
         #Eastern Europe Kingdoms 
-        is_or_was_tag = RMN #Romania 
-        is_or_was_tag = BUL #Bulgaria
-        is_or_was_tag = HUN #Hungary 
-        is_or_was_tag = SER #Serbia 
-        is_or_was_tag = CRO #Croatia 
-        is_or_was_tag = GRE #Greece  
+        is_or_was_tag = { tag = RMN } #Romania 
+        is_or_was_tag = { tag = BUL } #Bulgaria
+        is_or_was_tag = { tag = HUN } #Hungary 
+        is_or_was_tag = { tag = SER } #Serbia 
+        is_or_was_tag = { tag = CRO } #Croatia 
+        is_or_was_tag = { tag = GRE } #Greece  
         #Caucasus Kingdoms 
-        is_or_was_tag = ARM #Armenia 
-        is_or_was_tag = GEO #Georgia 
+        is_or_was_tag = { tag = ARM } #Armenia 
+        is_or_was_tag = { tag = GEO } #Georgia 
         #Italian Regionals 
-        is_or_was_tag = SPI #Sardinia-Piedmont 
-        is_or_was_tag = TUS #Tuscany 
-        is_or_was_tag = TTS #Two Sicilies 
-        is_or_was_tag = DAL #Dalmatia (can still form Croatia via exception)
+        is_or_was_tag = { tag = SPI } #Sardinia-Piedmont 
+        is_or_was_tag = { tag = TUS } #Tuscany 
+        is_or_was_tag = { tag = TTS } #Two Sicilies 
+        is_or_was_tag = { tag = DAL } #Dalmatia (can still form Croatia via exception)
         #Minor Indian Regionals
-        is_or_was_tag = NPL #Nepal 
-        is_or_was_tag = NAG #Nagpur, the forgotten one 
-        is_or_was_tag = ORI #Orissa 
+        is_or_was_tag = { tag = NPL } #Nepal 
+        is_or_was_tag = { tag = NAG } #Nagpur, the forgotten one 
+        is_or_was_tag = { tag = ORI } #Orissa 
         #Arab Kingdoms 
-        is_or_was_tag = ALG #Algiers 
-        is_or_was_tag = TRP #Tripoli 
-        is_or_was_tag = MOR #Morocco 
-        is_or_was_tag = TUN #Tunis 
-        is_or_was_tag = YEM #Yemen
+        is_or_was_tag = { tag = ALG } #Algiers 
+        is_or_was_tag = { tag = TRP } #Tripoli 
+        is_or_was_tag = { tag = MOR } #Morocco 
+        is_or_was_tag = { tag = TUN } #Tunis 
+        is_or_was_tag = { tag = YEM } #Yemen
         #Other Asian Formables 
-        is_or_was_tag = TIB #Tibet 
-        is_or_was_tag = BUK #Bukhara 
-        is_or_was_tag = KOJ #Jerusalem
-        is_or_was_tag = ISR #Israel
-        is_or_was_tag = DAI #Dai Viet 
-        is_or_was_tag = SST #Shan 
-        is_or_was_tag = LXA #Lan Xang 
-        is_or_was_tag = KHM #Khmer 
+        is_or_was_tag = { tag = TIB } #Tibet 
+        is_or_was_tag = { tag = BUK } #Bukhara 
+        is_or_was_tag = { tag = KOJ } #Jerusalem
+        is_or_was_tag = { tag = ISR } #Israel
+        is_or_was_tag = { tag = DAI } #Dai Viet 
+        is_or_was_tag = { tag = SST } #Shan 
+        is_or_was_tag = { tag = LXA } #Lan Xang 
+        is_or_was_tag = { tag = KHM } #Khmer
+        is_or_was_tag = { tag = KOR } #Korea
         #African Formables
-        is_or_was_tag = MSI #Mossi 
-        is_or_was_tag = HAU #Hausa 
-        is_or_was_tag = NBI #Nubia 
-        is_or_was_tag = SOM #Somalia
-        is_or_was_tag = SON #Songhai 
-        is_or_was_tag = MAL #Mali  
-        is_or_was_tag = KON #Kongo 
+        is_or_was_tag = { tag = MSI } #Mossi 
+        is_or_was_tag = { tag = HAU } #Hausa 
+        is_or_was_tag = { tag = NBI } #Nubia 
+        is_or_was_tag = { tag = SOM } #Somalia
+        is_or_was_tag = { tag = SON } #Songhai 
+        is_or_was_tag = { tag = MAL } #Mali  
+        is_or_was_tag = { tag = KON } #Kongo 
         #Polynesian Kingdoms 
-        is_or_was_tag = UHW #Hawaii Formable 
-        is_or_was_tag = AOT #Aotearoa
-        is_or_was_tag = VIT #Viti 
+        is_or_was_tag = { tag = UHW } #Hawaii Formable 
+        is_or_was_tag = { tag = AOT } #Aotearoa
+        is_or_was_tag = { tag = VIT } #Viti 
     }
     NOT = {
         has_country_flag = formed_tier_three_flag
         #European Culture-Group Majors 
-        is_or_was_tag = GBR #Great Britain
-        is_or_was_tag = AVE #Dual Monarchy
-        is_or_was_tag = FRA #France 
-        is_or_was_tag = LOT #Lotharingia
-        is_or_was_tag = SPA #Spain 
-        is_or_was_tag = POL #Poland 
-        is_or_was_tag = MOS #Muscovy Grand Duchy (so you cannot form Poland)
-        is_or_was_tag = LIT #Lithuania Grand Duchy (so you cannot form Poland)
-        is_or_was_tag = ITA #Italy 
+        is_or_was_tag = { tag = GBR } #Great Britain
+        is_or_was_tag = { tag = AVE } #Dual Monarchy
+        is_or_was_tag = { tag = FRA } #France 
+        is_or_was_tag = { tag = LOT } #Lotharingia
+        is_or_was_tag = { tag = SPA } #Spain 
+        is_or_was_tag = { tag = POL } #Poland 
+        #is_or_was_tag = { tag = GMA } #Great Moravia
+        is_or_was_tag = { tag = MOS } #Muscovy Grand Duchy (so you cannot form Poland)
+        is_or_was_tag = { tag = LIT } #Lithuania Grand Duchy (so you cannot form Poland)
+        is_or_was_tag = { tag = ITA } #Italy 
         #Major German Kingdoms/Archduchies 
-        is_or_was_tag = PRU #Prussia 
-        is_or_was_tag = HAB #Austria 
-        is_or_was_tag = LVA #Livonia 
-        is_or_was_tag = NED #Netherlands
-        is_or_was_tag = ELB #Elbian Confederation UU
+        is_or_was_tag = { tag = PRU } #Prussia 
+        is_or_was_tag = { tag = HAB } #Austria 
+        is_or_was_tag = { tag = LVA } #Livonia 
+        is_or_was_tag = { tag = NED } #Netherlands
+        is_or_was_tag = { tag = ELB } #Elbian Confederation UU
         has_country_flag = formed_hsa_flag #Hanseatic League 
         #MENA 
-        is_or_was_tag = MAM #Mamluks (can reform into Egypt via exception)
-        is_or_was_tag = EGY #Egypt
-        is_or_was_tag = CTG #Carthage UU
+        is_or_was_tag = { tag = MAM } #Mamluks (can reform into Egypt via exception)
+        is_or_was_tag = { tag = EGY } #Egypt
+        is_or_was_tag = { tag = CTG } #Carthage UU
         #Horde Formables 
-        is_or_was_tag = MCH #Manchu
-        is_or_was_tag = ILK #The Illest Khanate
+        is_or_was_tag = { tag = MCH } #Manchu
+        is_or_was_tag = { tag = ILK } #The Illest Khanate
         #India
-        is_or_was_tag = DLH #Delhi (below other India is_or_was_tags so it can still form Punjab) 
+        is_or_was_tag = { tag = DLH } #Delhi (below other India formables so it can still form Punjab) 
+        #Africa 
+        is_or_was_tag = { tag = KIT } #Kitara
+        #SEA Major Kingdoms
+        is_or_was_tag = { tag = MSA } #Malaya
+        is_or_was_tag = { tag = SIA } #Siam
     }
 	NOT = {
         has_country_flag = formed_tier_four_flag
         #European Empires 
-        is_or_was_tag = PLC #Commonwealth 
-        is_or_was_tag = AUH #AustriaHungary UU 
-        is_or_was_tag = SCA #Scandinavia (so it can't form Russia)
-        is_or_was_tag = LAE #Latin Empire
-        is_or_was_tag = BYZ #Byzantium 
+        is_or_was_tag = { tag = PLC } #Commonwealth 
+        is_or_was_tag = { tag = AUH } #AustriaHungary 
+        is_or_was_tag = { tag = SCA } #Scandinavia
+        is_or_was_tag = { tag = LAE } #Latin Empire
+        is_or_was_tag = { tag = BYZ } #Byzantium 
         #Russian Empires
-        is_or_was_tag = RUS #Russia 
-        is_or_was_tag = UKR #Ruthenia 
+        is_or_was_tag = { tag = RUS } #Russia 
+        is_or_was_tag = { tag = UKR } #Ruthenia 
         #Chinese Empires, Hordes
-        is_or_was_tag = QNG #Great Qing
-        is_or_was_tag = MNG #Great Ming 
-        is_or_was_tag = YUA #Great Yuan 
-        is_or_was_tag = GLH #Golden Horde 
+        is_or_was_tag = { tag = QNG } #Great Qing
+        is_or_was_tag = { tag = MNG } #Great Ming 
+        is_or_was_tag = { tag = YUA } #Great Yuan 
+        is_or_was_tag = { tag = GLH } #Golden Horde 
         #Indian Major Regionals
-        is_or_was_tag = RJP #Rajputana 
-        is_or_was_tag = DEC #Deccan 
-        is_or_was_tag = MAR #Marathas 
-        is_or_was_tag = PUN #Punjab
+        is_or_was_tag = { tag = RJP } #Rajputana 
+        is_or_was_tag = { tag = DEC } #Deccan 
+        is_or_was_tag = { tag = MAR } #Marathas 
+        is_or_was_tag = { tag = PUN } #Punjab
         #Middle East Empires/Caliphates
-        is_or_was_tag = RUM #Rum 
-        is_or_was_tag = TUR #Ottomans 
-        is_or_was_tag = ADU #Andalusia
-        is_or_was_tag = ARB #Arabia 
-        is_or_was_tag = PER #Persia
-        is_or_was_tag = ERS #Eranshahr 
-        is_or_was_tag = TIM #Timurids
-        is_or_was_tag = SOK #Sokoto  
-        is_or_was_tag = ZAF #Massina
+        is_or_was_tag = { tag = RUM } #Rum 
+        is_or_was_tag = { tag = TUR } #Ottomans 
+        is_or_was_tag = { tag = ADU } #Andalusia
+        is_or_was_tag = { tag = ARB } #Arabia 
+        is_or_was_tag = { tag = PER } #Persia
+        is_or_was_tag = { tag = ERS } #Eranshahr 
+        is_or_was_tag = { tag = TIM } #Timurids
+        is_or_was_tag = { tag = SOK } #Sokoto  
+        is_or_was_tag = { tag = ZAF } #Massina
         #African Empires
-        is_or_was_tag = ETH #Ethiopia 
-        is_or_was_tag = KIT #Kitara
-        is_or_was_tag = GZI #Zimbabwe 
-        is_or_was_tag = RZI #Rozwi (can still form Zimbabwe via mission)
-        is_or_was_tag = KBO #Kanem-Bornu
-        #Asian Empire Rank Tags 
-        is_or_was_tag = JAP #Japan 
-        is_or_was_tag = MSA #Malaya
-        is_or_was_tag = SIA #Siam (so it cannot form Malaya)
+        is_or_was_tag = { tag = ETH } #Ethiopia 
+        is_or_was_tag = { tag = GZI } #Zimbabwe 
+        is_or_was_tag = { tag = RZI } #Rozwi (can still form Zimbabwe via mission)
+        is_or_was_tag = { tag = KBO } #Kanem-Bornu
+        #Japan
+        is_or_was_tag = { tag = JAP } #Japan 
         #American Empires 
-        is_or_was_tag = INC #Inca 
-        is_or_was_tag = MAY #Maya
+        is_or_was_tag = { tag = INC } #Inca 
+        is_or_was_tag = { tag = MAY } #Maya
         #Papal State
-        is_or_was_tag = PAP #Papal State 
+        is_or_was_tag = { tag = PAP } #Papal State 
     }
 	NOT = {
         has_country_flag = formed_tier_five_flag
         #Pan-Germany
-        is_or_was_tag = HLR #Holy Roman Empire 
-        is_or_was_tag = GER #Germany
+        is_or_was_tag = { tag = HLR } #Holy Roman Empire 
+        is_or_was_tag = { tag = GER } #Germany
         #Pan-Europe 
-        is_or_was_tag = ROM #Roman Empire
+        is_or_was_tag = { tag = ROM } #Roman Empire
         #Pan-Horde
-        is_or_was_tag = MGE #Mongol Empire
+        is_or_was_tag = { tag = MGE } #Mongol Empire
         #Pan-India
-        is_or_was_tag = MUG #Mughals
-        is_or_was_tag = BHA #Bharat 
-        is_or_was_tag = HIN #Hindustan 
+        is_or_was_tag = { tag = MUG } #Mughals
+        is_or_was_tag = { tag = BHA } #Bharat 
+        is_or_was_tag = { tag = HIN } #Hindustan 
         #For Gameplay Purposes 
-        is_or_was_tag = AKS #Aksum (so Eth can form)
-        is_or_was_tag = SYN #Synthetics
-        is_or_was_tag = JMN #Jan Mayen
-    }
-    NOT = { #Major Colonial Formables cannot form T2s
-        is_or_was_tag = USA #United States
-        is_or_was_tag = CAN #Canada
-        is_or_was_tag = BRZ #Brazil 
-        is_or_was_tag = COL #Colombia 
-        is_or_was_tag = LAP #La Plata 
-        is_or_was_tag = WSI #West Indies 
-        is_or_was_tag = PEU #Peru 
-        is_or_was_tag = AUS #Australia 
-        is_or_was_tag = NZL #Zealandia 
-        is_or_was_tag = MEX #Mexico
+        is_or_was_tag = { tag = AKS } #Aksum (so Eth can form)
+        is_or_was_tag = { tag = SYN } #Synthetics
+        is_or_was_tag = { tag = JMN } #Jan Mayen
     }
 }
 
@@ -185,164 +177,164 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
     NOT = {
         has_country_flag = formed_tier_three_flag
         #European Culture-Group Majors 
-        is_or_was_tag = GBR #Great Britain
-        is_or_was_tag = AVE #Dual Monarchy
-        is_or_was_tag = FRA #France 
-        is_or_was_tag = LOT #Lotharingia
-        is_or_was_tag = SPA #Spain 
-        is_or_was_tag = POL #Poland 
-        is_or_was_tag = MOS #Muscovy Grand Duchy (so you cannot form Poland)
-        is_or_was_tag = LIT #Lithuania Grand Duchy (so you cannot form Poland)
-        is_or_was_tag = ITA #Italy 
+        is_or_was_tag = { tag = GBR } #Great Britain
+        is_or_was_tag = { tag = AVE } #Dual Monarchy
+        is_or_was_tag = { tag = FRA } #France 
+        is_or_was_tag = { tag = LOT } #Lotharingia
+        is_or_was_tag = { tag = SPA } #Spain 
+        is_or_was_tag = { tag = POL } #Poland 
+        #is_or_was_tag = { tag = GMA } #Great Moravia
+        is_or_was_tag = { tag = MOS } #Muscovy Grand Duchy (so you cannot form Poland)
+        is_or_was_tag = { tag = LIT } #Lithuania Grand Duchy (so you cannot form Poland)
+        is_or_was_tag = { tag = ITA } #Italy 
         #Major German Kingdoms/Archduchies 
-        is_or_was_tag = PRU #Prussia 
-        is_or_was_tag = HAB #Austria 
-        is_or_was_tag = LVA #Livonia 
-        is_or_was_tag = NED #Netherlands
-        is_or_was_tag = ELB #Elbian Confederation UU
+        is_or_was_tag = { tag = PRU } #Prussia 
+        is_or_was_tag = { tag = HAB } #Austria 
+        is_or_was_tag = { tag = LVA } #Livonia 
+        is_or_was_tag = { tag = NED } #Netherlands
+        is_or_was_tag = { tag = ELB } #Elbian Confederation UU
         has_country_flag = formed_hsa_flag #Hanseatic League 
         #MENA 
-        is_or_was_tag = MAM #Mamluks (can reform into Egypt via exception)
-        is_or_was_tag = EGY #Egypt
-        is_or_was_tag = CTG #Carthage UU
+        is_or_was_tag = { tag = MAM } #Mamluks (can reform into Egypt via exception)
+        is_or_was_tag = { tag = EGY } #Egypt
+        is_or_was_tag = { tag = CTG } #Carthage UU
         #Horde Formables 
-        is_or_was_tag = MCH #Manchu
-        is_or_was_tag = ILK #The Illest Khanate
-        #India 
-        is_or_was_tag = DLH #Delhi (below other India formables so it can still form Punjab) 
+        is_or_was_tag = { tag = MCH } #Manchu
+        is_or_was_tag = { tag = ILK } #The Illest Khanate
+        #India
+        is_or_was_tag = { tag = DLH } #Delhi (below other India formables so it can still form Punjab) 
+        #Africa 
+        is_or_was_tag = { tag = KIT } #Kitara
+        #SEA Major Kingdoms
+        is_or_was_tag = { tag = MSA } #Malaya
+        is_or_was_tag = { tag = SIA } #Siam
     }
 	NOT = {
         has_country_flag = formed_tier_four_flag
         #European Empires 
-        is_or_was_tag = PLC #Commonwealth 
-        is_or_was_tag = AUH #AustriaHungary UU 
-        is_or_was_tag = SCA #Scandinavia (so it can't form Russia)
-        is_or_was_tag = LAE #Latin Empire
-        is_or_was_tag = BYZ #Byzantium 
+        is_or_was_tag = { tag = PLC } #Commonwealth 
+        is_or_was_tag = { tag = AUH } #AustriaHungary 
+        is_or_was_tag = { tag = SCA } #Scandinavia
+        is_or_was_tag = { tag = LAE } #Latin Empire
+        is_or_was_tag = { tag = BYZ } #Byzantium 
         #Russian Empires
-        is_or_was_tag = RUS #Russia 
-        is_or_was_tag = UKR #Ruthenia 
+        is_or_was_tag = { tag = RUS } #Russia 
+        is_or_was_tag = { tag = UKR } #Ruthenia 
         #Chinese Empires, Hordes
-        is_or_was_tag = QNG #Great Qing
-        is_or_was_tag = MNG #Great Ming 
-        is_or_was_tag = YUA #Great Yuan 
-        is_or_was_tag = GLH #Golden Horde 
+        is_or_was_tag = { tag = QNG } #Great Qing
+        is_or_was_tag = { tag = MNG } #Great Ming 
+        is_or_was_tag = { tag = YUA } #Great Yuan 
+        is_or_was_tag = { tag = GLH } #Golden Horde 
         #Indian Major Regionals
-        is_or_was_tag = RJP #Rajputana 
-        is_or_was_tag = DEC #Deccan 
-        is_or_was_tag = MAR #Marathas 
-        is_or_was_tag = PUN #Punjab
+        is_or_was_tag = { tag = RJP } #Rajputana 
+        is_or_was_tag = { tag = DEC } #Deccan 
+        is_or_was_tag = { tag = MAR } #Marathas 
+        is_or_was_tag = { tag = PUN } #Punjab
         #Middle East Empires/Caliphates
-        is_or_was_tag = RUM #Rum 
-        is_or_was_tag = TUR #Ottomans 
-        is_or_was_tag = ADU #Andalusia
-        is_or_was_tag = ARB #Arabia 
-        is_or_was_tag = PER #Persia 
-        is_or_was_tag = ERS #Eranshahr
-        is_or_was_tag = TIM #Timurids
-        is_or_was_tag = SOK #Sokoto  
-        is_or_was_tag = ZAF #Massina
+        is_or_was_tag = { tag = RUM } #Rum 
+        is_or_was_tag = { tag = TUR } #Ottomans 
+        is_or_was_tag = { tag = ADU } #Andalusia
+        is_or_was_tag = { tag = ARB } #Arabia 
+        is_or_was_tag = { tag = PER } #Persia
+        is_or_was_tag = { tag = ERS } #Eranshahr 
+        is_or_was_tag = { tag = TIM } #Timurids
+        is_or_was_tag = { tag = SOK } #Sokoto  
+        is_or_was_tag = { tag = ZAF } #Massina
         #African Empires
-        is_or_was_tag = ETH #Ethiopia 
-        is_or_was_tag = KIT #Kitara
-        is_or_was_tag = GZI #Zimbabwe 
-        is_or_was_tag = RZI #Rozwi (can still form Zimbabwe via mission)
-        is_or_was_tag = KBO #Kanem-Bornu
-        #Asian Empire Rank Tags 
-        is_or_was_tag = JAP #Japan 
-        is_or_was_tag = MSA #Malaya
-        is_or_was_tag = SIA #Siam (so it cannot form Malaya)
+        is_or_was_tag = { tag = ETH } #Ethiopia 
+        is_or_was_tag = { tag = GZI } #Zimbabwe 
+        is_or_was_tag = { tag = RZI } #Rozwi (can still form Zimbabwe via mission)
+        is_or_was_tag = { tag = KBO } #Kanem-Bornu
+        #Japan
+        is_or_was_tag = { tag = JAP } #Japan 
         #American Empires 
-        is_or_was_tag = INC #Inca 
-        is_or_was_tag = MAY #Maya
+        is_or_was_tag = { tag = INC } #Inca 
+        is_or_was_tag = { tag = MAY } #Maya
         #Papal State
-        is_or_was_tag = PAP #Papal State 
+        is_or_was_tag = { tag = PAP } #Papal State 
     }
 	NOT = {
         has_country_flag = formed_tier_five_flag
         #Pan-Germany
-        is_or_was_tag = HLR #Holy Roman Empire 
-        is_or_was_tag = GER #Germany
+        is_or_was_tag = { tag = HLR } #Holy Roman Empire 
+        is_or_was_tag = { tag = GER } #Germany
         #Pan-Europe 
-        is_or_was_tag = ROM #Roman Empire
+        is_or_was_tag = { tag = ROM } #Roman Empire
         #Pan-Horde
-        is_or_was_tag = MGE #Mongol Empire
+        is_or_was_tag = { tag = MGE } #Mongol Empire
         #Pan-India
-        is_or_was_tag = MUG #Mughals
-        is_or_was_tag = BHA #Bharat 
-        is_or_was_tag = HIN #Hindustan 
+        is_or_was_tag = { tag = MUG } #Mughals
+        is_or_was_tag = { tag = BHA } #Bharat 
+        is_or_was_tag = { tag = HIN } #Hindustan 
         #For Gameplay Purposes 
-        is_or_was_tag = AKS #Aksum (so Eth can form)
-        is_or_was_tag = SYN #Synthetics
-        is_or_was_tag = JMN #Jan Mayen
+        is_or_was_tag = { tag = AKS } #Aksum (so Eth can form)
+        is_or_was_tag = { tag = SYN } #Synthetics
+        is_or_was_tag = { tag = JMN } #Jan Mayen
     }
 }
 
-can_form_tier_four_trigger = { #Empire Rank Nations 
+can_form_tier_four_trigger = { #Empire Rank Nations, also most "end game" tags 
     NOT = {
         has_country_flag = formed_tier_four_flag
         #European Empires 
-        is_or_was_tag = PLC #Commonwealth 
-        is_or_was_tag = AUH #AustriaHungary UU 
-        is_or_was_tag = SCA #Scandinavia (so it can't form Russia)
-        is_or_was_tag = LAE #Latin Empire
-        is_or_was_tag = BYZ #Byzantium 
+        is_or_was_tag = { tag = PLC } #Commonwealth 
+        is_or_was_tag = { tag = AUH } #AustriaHungary 
+        is_or_was_tag = { tag = SCA } #Scandinavia
+        is_or_was_tag = { tag = LAE } #Latin Empire
+        is_or_was_tag = { tag = BYZ } #Byzantium 
         #Russian Empires
-        is_or_was_tag = RUS #Russia 
-        is_or_was_tag = UKR #Ruthenia 
+        is_or_was_tag = { tag = RUS } #Russia 
+        is_or_was_tag = { tag = UKR } #Ruthenia 
         #Chinese Empires, Hordes
-        is_or_was_tag = QNG #Great Qing
-        is_or_was_tag = MNG #Great Ming 
-        is_or_was_tag = YUA #Great Yuan 
-        is_or_was_tag = GLH #Golden Horde 
+        is_or_was_tag = { tag = QNG } #Great Qing
+        is_or_was_tag = { tag = MNG } #Great Ming 
+        is_or_was_tag = { tag = YUA } #Great Yuan 
+        is_or_was_tag = { tag = GLH } #Golden Horde 
         #Indian Major Regionals
-        is_or_was_tag = RJP #Rajputana 
-        is_or_was_tag = DEC #Deccan 
-        is_or_was_tag = MAR #Marathas 
-        is_or_was_tag = PUN #Punjab
+        is_or_was_tag = { tag = RJP } #Rajputana 
+        is_or_was_tag = { tag = DEC } #Deccan 
+        is_or_was_tag = { tag = MAR } #Marathas 
+        is_or_was_tag = { tag = PUN } #Punjab
         #Middle East Empires/Caliphates
-        is_or_was_tag = RUM #Rum 
-        is_or_was_tag = TUR #Ottomans 
-        is_or_was_tag = ADU #Andalusia
-        is_or_was_tag = ARB #Arabia 
-        is_or_was_tag = PER #Persia 
-        is_or_was_tag = ERS #Eranshahr
-        is_or_was_tag = TIM #Timurids
-        is_or_was_tag = SOK #Sokoto  
-        is_or_was_tag = ZAF #Massina
+        is_or_was_tag = { tag = RUM } #Rum 
+        is_or_was_tag = { tag = TUR } #Ottomans 
+        is_or_was_tag = { tag = ADU } #Andalusia
+        is_or_was_tag = { tag = ARB } #Arabia 
+        is_or_was_tag = { tag = PER } #Persia
+        is_or_was_tag = { tag = ERS } #Eranshahr 
+        is_or_was_tag = { tag = TIM } #Timurids
+        is_or_was_tag = { tag = SOK } #Sokoto  
+        is_or_was_tag = { tag = ZAF } #Massina
         #African Empires
-        is_or_was_tag = ETH #Ethiopia 
-        is_or_was_tag = KIT #Kitara
-        is_or_was_tag = GZI #Zimbabwe 
-        is_or_was_tag = RZI #Rozwi (can still form Zimbabwe via mission)
-        is_or_was_tag = KBO #Kanem-Bornu
-        #Asian Empire Rank Tags 
-        is_or_was_tag = JAP #Japan 
-        is_or_was_tag = MSA #Malaya
-        is_or_was_tag = SIA #Siam (so it cannot form Malaya)
+        is_or_was_tag = { tag = ETH } #Ethiopia 
+        is_or_was_tag = { tag = GZI } #Zimbabwe 
+        is_or_was_tag = { tag = RZI } #Rozwi (can still form Zimbabwe via mission)
+        is_or_was_tag = { tag = KBO } #Kanem-Bornu
+        #Japan
+        is_or_was_tag = { tag = JAP } #Japan 
         #American Empires 
-        is_or_was_tag = INC #Inca 
-        is_or_was_tag = MAY #Maya
+        is_or_was_tag = { tag = INC } #Inca 
+        is_or_was_tag = { tag = MAY } #Maya
         #Papal State
-        is_or_was_tag = PAP #Papal State 
+        is_or_was_tag = { tag = PAP } #Papal State 
     }
 	NOT = {
         has_country_flag = formed_tier_five_flag
         #Pan-Germany
-        is_or_was_tag = HLR #Holy Roman Empire 
-        is_or_was_tag = GER #Germany
+        is_or_was_tag = { tag = HLR } #Holy Roman Empire 
+        is_or_was_tag = { tag = GER } #Germany
         #Pan-Europe 
-        is_or_was_tag = ROM #Roman Empire
+        is_or_was_tag = { tag = ROM } #Roman Empire
         #Pan-Horde
-        is_or_was_tag = MGE #Mongol Empire
+        is_or_was_tag = { tag = MGE } #Mongol Empire
         #Pan-India
-        is_or_was_tag = MUG #Mughals
-        is_or_was_tag = BHA #Bharat 
-        is_or_was_tag = HIN #Hindustan 
+        is_or_was_tag = { tag = MUG } #Mughals
+        is_or_was_tag = { tag = BHA } #Bharat 
+        is_or_was_tag = { tag = HIN } #Hindustan 
         #For Gameplay Purposes 
-        is_or_was_tag = AKS #Aksum (so Ethiopia can form)
-        is_or_was_tag = SYN #Synthetics
-        is_or_was_tag = JMN #Jan Mayen
+        is_or_was_tag = { tag = AKS } #Aksum (so Eth can form)
+        is_or_was_tag = { tag = SYN } #Synthetics
+        is_or_was_tag = { tag = JMN } #Jan Mayen
     }
 }
 
@@ -350,73 +342,23 @@ can_form_tier_five_trigger = { #Great Empires
 	NOT = {
         has_country_flag = formed_tier_five_flag
         #Pan-Germany
-        is_or_was_tag = HLR #Holy Roman Empire 
-        is_or_was_tag = GER #Germany
+        is_or_was_tag = { tag = HLR } #Holy Roman Empire 
+        is_or_was_tag = { tag = GER } #Germany
         #Pan-Europe 
-        is_or_was_tag = ROM #Roman Empire
+        is_or_was_tag = { tag = ROM } #Roman Empire
         #Pan-Horde
-        is_or_was_tag = MGE #Mongol Empire
+        is_or_was_tag = { tag = MGE } #Mongol Empire
         #Pan-India
-        is_or_was_tag = MUG #Mughals
-        is_or_was_tag = BHA #Bharat 
-        is_or_was_tag = HIN #Hindustan 
+        is_or_was_tag = { tag = MUG } #Mughals
+        is_or_was_tag = { tag = BHA } #Bharat 
+        is_or_was_tag = { tag = HIN } #Hindustan 
         #For Gameplay Purposes 
-        is_or_was_tag = AKS #Aksum (so Eth can form)
-        is_or_was_tag = SYN #Synthetics
-        is_or_was_tag = JMN #Jan Mayen
+        is_or_was_tag = { tag = AKS } #Aksum (so Eth can form)
+        is_or_was_tag = { tag = SYN } #Synthetics
+        is_or_was_tag = { tag = JMN } #Jan Mayen
     }
 }
 
-can_form_small_colonial_trigger = { #Small Colonial Tags 
-    NOT = {
-        #American States
-        is_or_was_tag = LOU #Louisiana 
-        is_or_was_tag = CAL #California 
-        is_or_was_tag = TEX #Texas 
-        is_or_was_tag = ILI #Illinois 
-        is_or_was_tag = FLO #Florida
-        is_or_was_tag = VRM #Vermont
-        is_or_was_tag = SNA #Sonora
-        #Canada Provinces
-        is_or_was_tag = QUE #Quebec
-        is_or_was_tag = CSC #Cascadia 
-        #South America Minors
-        is_or_was_tag = VNZ #Venezuela 
-        is_or_was_tag = CHL #Chile
-        is_or_was_tag = PRG #Paraguay 
-        #Caribbean/Central America  
-        is_or_was_tag = CUB #Cuba 
-        is_or_was_tag = HAT #Haiti 
-        is_or_was_tag = CAM #United Central America 
-    }
-    NOT = {
-        is_or_was_tag = USA #United States
-        is_or_was_tag = CAN #Canada
-        is_or_was_tag = BRZ #Brazil 
-        is_or_was_tag = COL #Colombia 
-        is_or_was_tag = LAP #La Plata 
-        is_or_was_tag = WSI #West Indies 
-        is_or_was_tag = PEU #Peru 
-        is_or_was_tag = AUS #Australia 
-        is_or_was_tag = NZL #Zealandia 
-        is_or_was_tag = MEX #Mexico
-    }
-}
-
-can_form_large_colonial_trigger = { #Large Colonial Tags 
-    NOT = {
-        is_or_was_tag = USA #United States
-        is_or_was_tag = CAN #Canada
-        is_or_was_tag = BRZ #Brazil 
-        is_or_was_tag = COL #Colombia 
-        is_or_was_tag = LAP #La Plata 
-        is_or_was_tag = WSI #West Indies 
-        is_or_was_tag = PEU #Peru 
-        is_or_was_tag = AUS #Australia 
-        is_or_was_tag = NZL #Zealandia 
-        is_or_was_tag = MEX #Mexico
-    }
-}
 is_valid_for_subject_vassal_ideas = {
     is_vassal = yes
     ai = yes

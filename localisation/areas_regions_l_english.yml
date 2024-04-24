@@ -152,11 +152,11 @@ l_english:
  ireland_area:0 "Ireland"
  ireland_area_name:0 "Ireland"
  ireland_area_adj:0 "Irish"
- highlands_area:0 "Highlands"
- highlands_area_name:0 "Highlands"
+ highlands_area:0 "Scottish Highlands"  #UU Changed
+ highlands_area_name:0 "Scottish Highlands"
  highlands_area_adj:0 "Highlander"
- lowlands_area:0 "Lowlands"
- lowlands_area_name:0 "Lowlands"
+ lowlands_area:0 "Scottish Lowlands"  #UU Changed
+ lowlands_area_name:0 "Scottish Lowlands"
  lowlands_area_adj:0 "Lowlander"
  kingdom_of_the_isles_area:0 "The Isles"
  kingdom_of_the_isles_area_name:0 "Mann"

@@ -3,9 +3,8 @@ country_decisions = {
 	uu_sokoto_nation = { #Forming it without a civil war is supposed to be quite difficult, and the church must be pretty powerful 
 		major = yes
 		potential = {
-			NOT = { tag = ZAF }
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			OR = {
 				ai = no 
 				AND = {
@@ -22,7 +21,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = SOK }
+			NOT = { exists = SOK }	#makes sense to keep this here
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -69,7 +68,7 @@ country_decisions = {
 			}
 			estate_territory = {
 				estate = estate_church
-				territory = 50
+				territory = 40
 			}
 			NOT = {
 				estate_influence = {
@@ -93,6 +92,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			remove_country_modifier = uu_fulani_preacher_accepted
 			set_global_flag = uu_sokoto_happened_flag
 			set_country_flag = formed_sokoto_flag
@@ -106,7 +106,6 @@ country_decisions = {
 					NOT = { government = monarchy }
 					is_revolutionary = no
 				}
-				add_stability = -3
 				change_government = monarchy
 			}
 			if = {
@@ -114,8 +113,8 @@ country_decisions = {
 				add_government_reform = feudal_theocracy
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
 			}
 			if = {
 				limit = {
