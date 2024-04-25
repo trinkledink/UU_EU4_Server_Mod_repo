@@ -149,7 +149,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
-				value = 80
+				value = 90
 				superregion = china_superregion
 				is_core = ROOT 
 			}
@@ -177,7 +177,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
-				value = 80
+				value = 90
 				superregion = china_superregion
 				is_core = ROOT 
 			}
@@ -185,6 +185,7 @@ country_decisions = {
 			owns = 1816
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			set_country_flag = uucsh_rename_decision_flag
 			set_country_flag = uucsh_temp_flag
 			country_event = {

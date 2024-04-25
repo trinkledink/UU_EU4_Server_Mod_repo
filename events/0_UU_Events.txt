@@ -606,6 +606,23 @@ country_event = { 	#Renames
 		}
 	}
 	option = {
+		name = UU_balance_events.11.ez
+		trigger = {
+			has_country_flag = uucsh_temp_flag
+		}
+		add_country_modifier = {
+			name = "hegemonic_ambition"
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = "imperial_ambition"
+			duration = 9125
+		}
+	}
+	option = {
+		trigger = {
+			NOT = { has_country_flag = uucsh_temp_flag }
+		}
 		name = UU_balance_events.11.zzz
 	}
 	after = {
