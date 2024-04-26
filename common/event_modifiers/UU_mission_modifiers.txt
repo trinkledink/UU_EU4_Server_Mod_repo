@@ -733,7 +733,7 @@ uukbo_dynastic_struggle_modifier = {
 }
 
 uukbo_strong_government = {
-	global_autonomy = -0.1
+	core_creation = -0.1
 	global_tax_modifier = 0.15
 	advisor_cost = -0.2
 }

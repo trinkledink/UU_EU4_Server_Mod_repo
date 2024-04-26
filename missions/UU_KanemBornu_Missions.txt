@@ -12,11 +12,8 @@ uukbo_free_1 = {
 		required_missions = { }
 		position = 1
         trigger = {
-            stability = 1 
-            estate_loyalty = {
-                estate = estate_nobles
-                loyalty = 50
-            }
+            stability = 1
+
         }
         effect = {
             add_stability = -1
@@ -40,6 +37,10 @@ uukbo_free_1 = {
 		required_missions = { uukbo_counter_the_nobility }
 		position = 2
         trigger = {
+            estate_loyalty = {
+                estate = estate_nobles
+                loyalty = 40
+            }
             NOT = {
                 num_of_rebel_armies = 1
                 num_of_rebel_controlled_provinces = 1
@@ -74,14 +75,17 @@ uukbo_free_1 = {
                 corruption = 0.1
                 inflation = 0.1
             }
-            capital_scope = {
-                has_building = courthouse
+            OR = {
+                capital_scope = {
+                    has_building = courthouse
+                }
+                NOT = { average_autonomy = 10 }
             }
         }
         effect = {
-            add_mil_power = 40
-            add_adm_power = 40
-            add_dip_power = 40
+            add_mil_power = 50
+            add_adm_power = 50
+            add_dip_power = 50
             add_country_modifier = {
                 name = uukbo_strong_government
                 duration = 7300 #20y
@@ -415,9 +419,9 @@ uukbo_free_2 = {
             }
         }
         effect = {
-            add_mil_power = 40
-            add_adm_power = 40
-            add_dip_power = 40
+            add_mil_power = 50
+            add_adm_power = 50
+            add_dip_power = 50
             bornu_area = {
                 add_base_tax = 1
                 add_base_production = 1
@@ -438,10 +442,10 @@ uukbo_free_2 = {
         }
 		position = 4
         trigger = {
-            legitimacy = 100
+            legitimacy = 95
             months_of_ruling = 120
             has_heir = yes
-            heir_claim = 100
+            heir_claim = 95
             heir_has_ruler_dynasty = yes 
             NOT = { corruption = 0.1 }
         }
@@ -899,8 +903,6 @@ uukbo_free_3 = {
 		required_missions = { }
 		position = 1
         trigger = {
-        	religion = sunni
-		    government = monarchy
             stability = 1
         }
         effect = {
@@ -942,11 +944,7 @@ uukbo_free_3 = {
         trigger = {
             religion = sunni
 		    government = monarchy
-            piety = 0.75
-            estate_influence = {
-                estate = estate_church
-                influence = 30
-            }
+            piety = 0.5
             estate_loyalty = {
                 estate = estate_church
                 loyalty = 60
@@ -989,16 +987,16 @@ uukbo_free_3 = {
                     }
                 }
                 AND = {
-                    piety = 1
+                    piety = 0.75
                     is_defender_of_faith = yes
                 }
             }
         }
         effect = {
-            add_mil_power = 40
-            add_adm_power = 40
-            add_dip_power = 40
-    		add_prestige = 15
+            add_mil_power = 50
+            add_adm_power = 50
+            add_dip_power = 50
+    		add_prestige = 20
             add_legitimacy = 15
             add_country_modifier = {
                 name = uukbo_khalifa_mod
@@ -1175,10 +1173,16 @@ uukbo_free_4 = {
 		required_missions = { }
 		position = 1
         trigger = {
-            army_size = 1
+            army_size = YAO
             army_size_percentage = 1
             OR = {
-                offensive_war_with = YAO
+                AND = {
+                    offensive_war_with = YAO
+                    war_score_against = {
+                        who = YAO 
+                        value = 50
+                    }
+                }
                 NOT = { exists = YAO }
             }
         }
@@ -1227,6 +1231,9 @@ uukbo_free_4 = {
             }
         }
         effect = {
+            add_mil_power = 50
+            add_adm_power = 50
+            add_dip_power = 50
             kanem_area = {
                 add_base_tax = 1
                 add_base_production = 1

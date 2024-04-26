@@ -1,7 +1,7 @@
 # No previous file for Kano
 
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = tribal_tradekingdom
 primary_culture = hausa
 religion = shamanism #Fetishism
 technology_group = sub_saharan
