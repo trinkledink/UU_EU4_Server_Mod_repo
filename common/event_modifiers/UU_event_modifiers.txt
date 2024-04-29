@@ -214,8 +214,9 @@ elb_czech_supremacy_2 = {
 
 #cossack 
 uu_cossack_stole_dev = {
-	global_tax_modifier = -0.2
-	prestige = -1
+	local_tax_modifier = -0.33
+	local_production_efficiency = -0.33
+	local_manpower_modifier = -0.33
 }
 
 #mali 

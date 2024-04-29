@@ -59,6 +59,10 @@ cossacks_mechanic = {
 						}
 						add_base_tax = -1
 						add_devastation = 2
+						add_province_modifier = {
+							name = uu_cossack_stole_dev
+							duration = 730
+						}
 					}
 					random_owned_province = {
 						limit = {
@@ -66,6 +70,10 @@ cossacks_mechanic = {
 						}
 						add_base_production = -1
 						add_devastation = 2
+						add_province_modifier = {
+							name = uu_cossack_stole_dev
+							duration = 730
+						}
 					}
 					random_owned_province = {
 						limit = {
@@ -73,10 +81,10 @@ cossacks_mechanic = {
 						}
 						add_base_manpower = -1
 						add_devastation = 2
-					}
-					add_country_modifier = {
-						name = uu_cossack_stole_dev
-						duration = 3650
+						add_province_modifier = {
+							name = uu_cossack_stole_dev
+							duration = 730
+						}
 					}
 				}
 				reverse_add_casus_belli = {
@@ -85,7 +93,7 @@ cossacks_mechanic = {
 					months = 36
 				}
 			}
-			cooldown_years = 0
+			cooldown_years = 10
 			ai_chance = {
 				factor = 100
 			}
