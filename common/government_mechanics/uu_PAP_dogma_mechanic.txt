@@ -258,6 +258,9 @@ uu_PAP_dogma_mechanic = {
 			trigger = {
                 curia_treasury_size = 2000
 				mil_power = 150
+				NOT = {
+					has_country_modifier = dogma_manpower_5yr_cooldown
+				}
             }
 			effect = {
 				add_curia_treasury = -2000
@@ -353,6 +356,10 @@ uu_PAP_dogma_mechanic = {
 					}
 					custom_tooltip = uu_pap_mil_dogma_counter_4_tt
 					add_yearly_manpower = 2
+					add_country_modifier = {
+						name = dogma_manpower_5yr_cooldown
+						duration = 1825 #5 year cooldown
+					}
 				}
 			}
 			ai_chance = {
