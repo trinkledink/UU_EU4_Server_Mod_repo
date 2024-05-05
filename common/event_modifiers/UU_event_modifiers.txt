@@ -314,13 +314,13 @@ uu_pap_dip_dogma_1_modifier = {
 }
 uu_pap_dip_dogma_2_modifier = {
 	interest = -0.25
-	inflation_reduction = -0.1
+	inflation_reduction = 0.1
 	diplomatic_annexation_cost = -0.1
 	diplomatic_reputation = 1
 }
 uu_pap_dip_dogma_3_modifier = {
 	interest = -0.25
-	inflation_reduction = -0.1
+	inflation_reduction = 0.1
 	diplomatic_annexation_cost = -0.1
 	diplomatic_reputation = 1
 }
