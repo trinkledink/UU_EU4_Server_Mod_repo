@@ -87,3 +87,42 @@ uu_max_seats = {
  	max_possible_parliament_seats = 20
 	
 }
+
+uu_PAP_HRE_not_catholic = {
+	potential = {
+		ai = no
+		tag = PAP
+	}
+
+	trigger = {
+		AND = {
+			NOT = {
+				hre_religion = catholic
+			}
+			hre_size = 1
+		}
+	}
+
+	monthly_uu_PAP_dogma_power = -0.1
+   
+}
+
+uu_PAP_in_heretical_HRE = {
+	potential = {
+		ai = no
+		tag = PAP
+		is_part_of_hre = yes
+	}
+
+	trigger = {
+		AND = {
+			NOT = {
+				hre_religion = catholic
+			}
+			hre_size = 1
+		}
+	}
+
+	monthly_uu_PAP_dogma_power = -1
+   
+}

@@ -42,6 +42,11 @@
  uu_develop_military_dogma:0 "Develop Military Dogma"
  uu_develop_military_dogma_desc:0 "Develop dogmas to bolster our military in accordance to Church guidance."
 
+ ###Triggered modifiers for PAP mechanic
+ uu_PAP_HRE_not_catholic:0 "Heretical HRE"
+ uu_PAP_in_heretical_HRE:0 "In a Heretical HRE"
+ 
+
  uu_pap_adm_dogma_1_modifier:0 "Papal Administrative Dogma"
  desc_uu_pap_adm_dogma_1_modifier:0 "Our administration is undergoing tremendous change to become more Catholic."
  uu_pap_adm_dogma_2_modifier:0 "Papal Administrative Dogma"
