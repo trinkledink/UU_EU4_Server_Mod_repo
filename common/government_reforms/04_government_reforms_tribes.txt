@@ -161,7 +161,7 @@ tribal_kingdom = {
 	}
 }
 
-tribal_tradekingdom = {
+tribal_tradekingdom = {		#uu added
 	icon = "native_settle_down_reform"
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1061,7 +1061,7 @@ tribe_becomes_horde_reform = {
 	}
 }
 
-tribe_remain_tribal_reform = {
+tribe_remain_tribal_reform = {	
 	icon = "rioting_burning_2"
 	allow_normal_conversion = yes
 	potential = {
@@ -1079,7 +1079,7 @@ tribe_remain_tribal_reform = {
 	}
 }
 
-tribe_settle_the_land_reform = {
+tribe_settle_the_land_reform = {	#uu added
     icon = native_land_tradition_reform
 	potential = {
 		NOT = { has_reform = steppe_horde }
@@ -1091,6 +1091,40 @@ tribe_settle_the_land_reform = {
 		colony_development_boost = 1
         range = -0.99
     }
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = uu_no_other_colonists_tt
+		}
+		NOR = {
+			#national ideas
+			has_idea = norse_ideas_leifs_legacy
+			has_idea = pioneer_spirit
+			has_idea = ICE_nationalism
+			has_idea = inter_caetera
+			has_idea = manifest_destiny
+			has_idea = settling_the_interior
+			has_idea = cab_carib_seafaring
+			has_idea = lon_conquistadores
+			has_idea = nzh_expand_to_the_east
+			has_idea = hdr_distant_diplomacy
+			has_idea = AUS_outback_stations
+			has_idea = NZL_pokarekare_ana
+			has_idea = WSI_Colonial_Legacy
+			has_idea = asu_colonialism
+			has_idea = adu_expeditionary_sentiment
+			has_idea = maj_nusa_tenggara
+			#idea groups
+			has_idea = colonial_ventures
+			has_idea = additional_colonists
+			has_idea = general_colonization_law
+			#main/feasable event/mission modifiers
+			has_country_modifier = temporary_colonist
+			has_country_modifier = spice_colony_modifier
+			has_country_modifier = colonize_the_continent
+			has_country_modifier = mal_colonial_enthusiasm
+			has_country_modifier = zan_expansion_into_the_cape
+		}
+	}
 }
 
 tribe_tribal_unity = {
