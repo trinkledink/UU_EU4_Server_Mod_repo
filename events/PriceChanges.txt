@@ -1131,6 +1131,7 @@ country_event = {
 			spices = 3
 		}
 		NOT = { has_global_flag = decline_of_spices_happened }
+		has_global_flag = spice_trade_happened  #uu added
 	}
 	mean_time_to_happen = {
 		months = 60
