@@ -6,7 +6,7 @@
 #
 # graphical_culture = westerngfx
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.1
 germanic = {
 	graphical_culture = westerngfx
 
@@ -356,6 +356,9 @@ germanic = {
 			Anezka Eliska Katerina Marie Ludmila Alzbeta Agnieszka Agnes Alzbeta Andela Anna Anna Berta Bohuslava Bozena 
 			Branislava Dagmar Danuta Dobravy
 		}
+	}
+	gothic_ger = {
+		primary = FEO
 	}
 	female_names = {
 		Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda 

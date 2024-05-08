@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.1
 estate_dhimmi = {
 	icon = 6
 	other_religion_group_only = yes
@@ -17,9 +17,9 @@ estate_dhimmi = {
 
 	# If true, country will get estate
 	trigger = {
-	OR = {
-		has_dlc = "The Cossacks"
-		has_dlc = "King of Kings"
+		OR = {
+			has_dlc = "The Cossacks"
+			has_dlc = "King of Kings"
 		}
 		NOT = { has_government_attribute = disables_estate_dhimmi }
 		NOT = { has_disabled_estate = { estate = estate_dhimmi } }
@@ -91,7 +91,7 @@ estate_dhimmi = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
 			has_any_estate_disaster_active = yes
-				has_not_own_estate_disaster_active = { estate = estate_dhimmi }
+			has_not_own_estate_disaster_active = { estate = estate_dhimmi }
 		}
 		influence = -40
 	}
@@ -103,7 +103,7 @@ estate_dhimmi = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
 			has_any_estate_disaster_active = yes
-				has_not_own_estate_disaster_active = { estate = estate_dhimmi }
+			has_not_own_estate_disaster_active = { estate = estate_dhimmi }
 		}
 		loyalty = -20
 	}

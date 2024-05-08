@@ -1,10 +1,14 @@
+#UU UPDATED 1.37.1
 estate_brahmins = {
 	icon = 8
 	
 	# If true, country will get estate
 	#This replaces Church Estate for Dharmic Group and replaces Dhimmi Estate for Muslim Group.
 	trigger = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "Winds of Change"
+		}
 		NOT = { has_government_attribute = disables_estate_brahmins }
 		NOT = { has_disabled_estate = { estate = estate_brahmins } }
 		OR = {
