@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 militarization_mechanic = {
 	alert_icon_gfx = GFX_alerticons_government_mechanics
 	alert_icon_index = 10
@@ -16,6 +16,14 @@ militarization_mechanic = {
 					manpower_recovery_speed = 0.20
 					land_maintenance_modifier = 0.20 #UU Change
 					monthly_militarized_society = -0.5
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					has_government_attribute = GER_buff_prussian_militarization
+				}
+				modifier = {
+					infantry_power = 0.1
 				}
 			}
 		}
