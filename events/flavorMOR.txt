@@ -8,7 +8,7 @@
 namespace = flavor_mor
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 country_event = {		#UU introduce Wattasid chain
 	id = flavor_mor.0
@@ -141,7 +141,7 @@ country_event = {
 		set_country_flag = mor_death_of_yahya
 		add_stability = -1
 		define_ruler = {
-			name = "'Alî"
+			name = "'Alï¿½"
 			dynasty = "Wattasid"
 			culture = berber
 			adm = 3
@@ -169,6 +169,7 @@ country_event = {
 	
 	trigger = {
 		tag = MOR
+		has_country_flag = mor_death_of_yahya
 		NOT = { is_year = 1490 }
 	}
 	
@@ -288,7 +289,8 @@ country_event = {
 				dynasty = "Wattasid"
 				culture = berber
 			}
-		} else = { 
+		} 
+		else = { 
 			clr_ruler_flag = uumor_wattasids_flag 
 			define_general = { name = "Muhammad Wattasid" }
 		}

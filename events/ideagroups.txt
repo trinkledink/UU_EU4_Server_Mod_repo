@@ -4,7 +4,7 @@ namespace = ideagroups
 # Aristocracy Ideas
 #######################################
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # Loss of Stability
 country_event = {

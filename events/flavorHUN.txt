@@ -7,7 +7,7 @@
 namespace = flavor_hun
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.1
 #it should now be possible to stay independent as player Hungary regardless of RNG
 
 # Diet of 1445
@@ -20,11 +20,14 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		has_regency = yes
 		#has_consort_regency = no
 		is_lesser_in_union = no
-		has_leader = "János Hunyadi"
+		has_leader = "Jï¿½nos Hunyadi"
 		is_year = 1445
 		NOT = { is_year = 1470 }
 		has_government_attribute = heir
@@ -41,13 +44,13 @@ country_event = {
 		}
 		name = flavor_hun.1.a
 		define_ruler = {
-			name = "János"
+			name = "Jï¿½nos"
 			dynasty = "Hunyadi"
 			DIP = 5
 			ADM = 4
 			MIL = 5
 			age = 39
-			attach_leader = "János Hunyadi"
+			attach_leader = "Jï¿½nos Hunyadi"
 		}
 		if = {
 			limit = {
@@ -127,16 +130,16 @@ country_event = {
 		}
 		name = flavor_hun.1.c
 		define_ruler = {
-			name = "János"
+			name = "Jï¿½nos"
 			dynasty = "Hunyadi"
 			DIP = 5
 			ADM = 4
 			MIL = 5
 			age = 39
-			attach_leader = "János Hunyadi"
+			attach_leader = "Jï¿½nos Hunyadi"
 		}
 		define_heir = {
-			name = "Mátyás"
+			name = "Mï¿½tyï¿½s"
 			culture = hungarian
 			dynasty = "Hunyadi"
 			adm = 4
@@ -177,16 +180,15 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1450
 		NOT = { is_year = 1457 }
 		OR = {
 			heir_age = 15
 			has_heir = no
-			AND = {
-				heir_age = 10
-				ai = no
-			}
 		}
 		if = {
 			limit = {
@@ -232,7 +234,7 @@ country_event = {
 		HAB = { remove_historical_friend = HUN }
 		hidden_effect = { clr_country_flag = hun_ladislaus_postumus_heir }
 		define_heir = {
-			name = "Mátyás"
+			name = "Mï¿½tyï¿½s"
 			culture = hungarian
 			dynasty = "Hunyadi"
 			adm = 4
@@ -250,8 +252,8 @@ country_event = {
 		set_country_flag = hun_keep_ladislaus_alive
 		define_ruler = {
 			regency = yes
-			name = "Mihály"			#UU historical
-			dynasty = "Szilágyi"
+			name = "Mihï¿½ly"			#UU historical
+			dynasty = "Szilï¿½gyi"
 			ADM = 2
 			DIP = 2
 			MIL = 2
@@ -353,7 +355,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1450
 		NOT = { is_year = 1457 }
 		OR = {
@@ -384,7 +389,7 @@ country_event = {
 		HAB = { remove_historical_friend = HUN }
 		kill_heir = { allow_new_heir = no }
 		define_heir = {
-			name = "Mátyás"
+			name = "Mï¿½tyï¿½s"
 			culture = hungarian
 			dynasty = "Hunyadi"
 			adm = 4
@@ -453,7 +458,7 @@ country_event = {
 		remove_historical_friend = HAB
 		HAB = { remove_historical_friend = HUN }
 		define_heir = {
-			name = "Mátyás"
+			name = "Mï¿½tyï¿½s"
 			culture = hungarian
 			dynasty = "Hunyadi"
 			adm = 4
@@ -547,7 +552,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1466
 		NOT = { is_year = 1470 }
 		has_regency = no
@@ -600,7 +608,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1465
 		has_regency = no
 		owns = 1772 #Pressburg
@@ -638,7 +649,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1473
 		NOT = { is_year = 1500 }
 	}
@@ -663,7 +677,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1490
 		NOT = { is_year = 1530 }
 		is_neighbor_of = TUR
@@ -709,7 +726,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1614
 		NOT = { is_year = 1620 }
 		government = monarchy
@@ -746,7 +766,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		truce_with = TUR
 		exists = HAB
 		HAB = {
@@ -798,7 +821,7 @@ country_event = {
 }
 
 #magyar Peasant Revolt
-#György Dózsa
+#GyÃ¶rgy DÃ³zsa
 country_event = {
 	id = flavor_hun.11
 	title = flavor_hun.11.t
@@ -808,7 +831,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		NOT = { stability = 3 }
 		has_ruler_modifier = hun_power_to_magnates
 	}
@@ -849,7 +875,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				size = 2
-				leader = "György Dózsa"
+				leader = "Gyï¿½rgy Dï¿½zsa"
 			}
 			clr_province_flag = hun_peasant_revolt
 		}
@@ -864,7 +890,7 @@ country_event = {
 	}
 }
 
-#Tamás Bakócz
+#TamÃ¡s BakÃ³cz
 country_event = {
 	id = flavor_hun.12
 	title = flavor_hun.12.t
@@ -874,7 +900,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1490
 		NOT = { is_year = 1520 }
 	}
@@ -895,7 +924,7 @@ country_event = {
 		add_prestige = 5
 		define_advisor = {
 			type = statesman
-			name = "Tamás Bakócz"
+			name = "Tamï¿½s Bakï¿½cz"
 			culture = hungarian
 			discount = yes
 			skill = 2
@@ -1095,7 +1124,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_at_war = no
 		has_truce = no
 		slovakia_area = {
@@ -1131,7 +1163,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 2
-				leader = "Jan Jiskra z Brandýsa"
+				leader = "Jan Jiskra z Brandï¿½sa"
 			}
 		}
 	}
@@ -1159,7 +1191,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		has_regency = no
 		OR = {
 			has_country_flag = hun_had_mercenaries_in_slovakia
@@ -1217,7 +1252,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		has_regency = no
 		has_country_modifier = hun_black_army
 		NOT = { has_reform = black_army_reform }
@@ -1297,7 +1335,10 @@ country_event = {
 		name = flavor_hun.18.b
 		trigger = {
 			is_subject = no
-			has_dlc = "Emperor"
+			OR = {
+				has_dlc = "Emperor"
+				has_dlc = "Domination"
+			}
 		}
 		set_country_flag = black_army_reform_flag
 		add_government_reform = black_army_reform
@@ -1405,7 +1446,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		owns = 4239
 		is_year = 1450
 		NOT = { is_year = 1500 }
@@ -1505,7 +1549,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		owns = 4239
 		religion_group = christian
 		NOT = { exists = SER }
@@ -1557,7 +1604,10 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = HUN
+			OR = {
+				tag = HUN
+				was_tag = HUN
+			}
 			tag = TRA
 		}
 		religion = catholic
@@ -1725,7 +1775,7 @@ country_event = {
 	}
 }
 
-#Támas Nádasdy
+#TÃ¡mas NÃ¡dasdy
 country_event = {
 	id = flavor_hun.23
 	title = flavor_hun.23.t
@@ -1735,7 +1785,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1530
 		NOT = { is_year = 1555 }
 	}
@@ -1749,7 +1802,7 @@ country_event = {
 		name = flavor_hun.23.a
 		add_adm_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			culture = hungarian
 			type = master_of_mint
 			skill = 3
@@ -1760,7 +1813,7 @@ country_event = {
 		name = flavor_hun.23.b
 		add_dip_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			culture = hungarian
 			type = diplomat
 			skill = 3
@@ -1771,7 +1824,7 @@ country_event = {
 		name = flavor_hun.23.c
 		add_mil_power = 50
 		define_advisor = {
-			name = "Tamás Nádasdy"
+			name = "Tamï¿½s Nï¿½dasdy"
 			type = fortification_expert
 			culture = hungarian
 			skill = 3
@@ -1791,7 +1844,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		exists = HAB
 		is_subject = no
 		government = monarchy
@@ -1838,9 +1894,9 @@ country_event = {
 		change_tag = TRA
 		on_change_tag_effect = yes
 		define_ruler = {
-			name = "János"
+			name = "Jï¿½nos"
 			culture = hungarian
-			dynasty = "Zápolya"
+			dynasty = "Zï¿½polya"
 			claim = 95
 			change_adm = 4
 			change_dip = 3
@@ -1941,7 +1997,10 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				tag = HUN
+				OR = {
+					tag = HUN
+					was_tag = HUN
+				}
 				is_lesser_in_union = no
 			}
 			senior_union_with = HUN
@@ -2110,7 +2169,10 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = HUN
+			OR = {
+				tag = HUN
+				was_tag = HUN
+			}
 			tag = TRA
 		}
 		NOT = { primary_culture = romanian }
@@ -2157,7 +2219,7 @@ country_event = {
 }
 
 
-# Tamás Erdödy
+# TamÃ¡s ErdÃ¶dy
 country_event = {
 	id = flavor_hun.28
 	title = flavor_hun.28.t
@@ -2167,7 +2229,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1583
 		NOT = { is_year = 1610 }
 		owns = 131
@@ -2180,7 +2245,7 @@ country_event = {
 	option = {
 		name = flavor_hun.28.a
 		define_advisor = {
-			name = "Tamás Erdödy"
+			name = "Tamï¿½s Erdï¿½dy"
 			culture = hungarian
 			skill = 3
 			discount = yes
@@ -2191,7 +2256,7 @@ country_event = {
 	option = {
 		name = flavor_hun.28.b
 		define_general = {
-			name = "Tamás Erdödy"
+			name = "Tamï¿½s Erdï¿½dy"
 			shock = 3
 			fire = 3
 			manuever = 2
@@ -2202,7 +2267,7 @@ country_event = {
 }
 
 
-# Matthias Dévay
+# Matthias DÃ©vay
 country_event = {
 	id = flavor_hun.29
 	title = flavor_hun.29.t
@@ -2212,7 +2277,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1530
 		NOT = { is_year = 1540 }
 		owns = 131
@@ -2255,7 +2323,7 @@ country_event = {
 	option = {
 		name = flavor_hun.29.a
 		define_advisor = {
-			name = "Matthias Dévay"
+			name = "Matthias Dï¿½vay"
 			skill = 3
 			discount = yes
 			religion = protestant
@@ -2277,7 +2345,7 @@ country_event = {
 			clr_province_flag = magyar_reform
 		}
 		define_advisor = {
-			name = "Thomas Szalaházy"
+			name = "Tamï¿½s Szalahï¿½zy"
 			culture = hungarian
 			religion = catholic
 			skill = 3
@@ -2297,7 +2365,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_institution_enabled = renaissance
 		is_year = 1450
 		NOT = { is_year = 1470 }
@@ -2354,7 +2425,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1580
 		NOT = { is_year = 1640 }
 		owns = 154
@@ -2412,7 +2486,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		NOT = { exists = SLO }
 		is_year = 1750
 		slovakia_area = {
@@ -2508,7 +2585,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_year = 1600
 		NOT = { is_year = 1700 }
 		any_owned_province = {
@@ -2550,7 +2630,7 @@ country_event = {
 }
 
 
-#Francis (II) Rákóczi
+#Francis (II) RÃ¡kÃ³czi
 #Event for independent Hungary
 country_event = {
 	id = flavor_hun.34
@@ -2561,7 +2641,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_subject = no
 		has_regency = yes
 		government = monarchy
@@ -2581,7 +2664,7 @@ country_event = {
 		}
 		define_ruler = {
 			name = "Ferenc"
-			dynasty = "Rákóczy"
+			dynasty = "Rï¿½kï¿½czy"
 			culture = hungarian
 			adm = 4
 			dip = 5
@@ -2607,13 +2690,13 @@ country_event = {
 				size = 2
 				culture = hungarian
 				leader = "Ferenc"
-				leader_dynasty = "Rákóczy"
+				leader_dynasty = "Rï¿½kï¿½czy"
 			}
 		}
 	}
 }
 
-#Francis (II) Rákóczi
+#Francis (II) RÃ¡kÃ³czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.35
@@ -2624,7 +2707,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HUN
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
 		is_subject_other_than_tributary_trigger = yes
 		government = monarchy
 		is_year = 1694
@@ -2650,7 +2736,7 @@ country_event = {
 					}
 					define_ruler = {
 						name = "Ferenc"
-						dynasty = "Rákóczy"
+						dynasty = "Rï¿½kï¿½czy"
 						culture = hungarian
 						adm = 4
 						dip = 5
@@ -2678,13 +2764,13 @@ country_event = {
 				culture = hungarian
 				size = 3
 				leader = "Ferenc"
-				leader_dynasty = "Rákóczy"
+				leader_dynasty = "Rï¿½kï¿½czy"
 			}
 		}
 	}
 }
 
-#Francis (II) Rákóczi
+#Francis (II) RÃ¡kÃ³czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.36
@@ -2704,7 +2790,7 @@ country_event = {
 			hidden_effect = {
 				define_ruler = {
 					name = "Ferenc"
-					dynasty = "Rákóczy"
+					dynasty = "Rï¿½kï¿½czy"
 					culture = hungarian
 					adm = 4
 					dip = 5
@@ -2716,7 +2802,7 @@ country_event = {
 }
 
 
-#Francis (II) Rákóczi
+#Francis (II) RÃ¡kÃ³czi
 #Event for subjected Hungary
 country_event = {
 	id = flavor_hun.37
@@ -2778,7 +2864,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 3
-				leader = "Ferenc II Rákóczy"
+				leader = "Ferenc II Rï¿½kï¿½czi"
 			}
 		}
 	}
@@ -2883,6 +2969,9 @@ country_event = {
 			elector = yes
 		}
 		event_target:hungary_country = {
+			country_event = { id = flavor_hun.52 }
+		}
+		event_target:hungary_country = {
 			add_opinion = {
 				who = root
 				modifier = opinion_hun_let_into_empire
@@ -2967,6 +3056,9 @@ country_event = {
 				modifier = opinion_hun_didnt_let_into_empire
 			}
 		}
+		event_target:hungary_country = {
+			country_event = { id = flavor_hun.54 }
+		}
 		if = {
 			limit = {
 				tag = HAB
@@ -3045,5 +3137,856 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+	}
+}
+
+########################################
+# New Hungarian flavor events for 1.37
+#
+# written by Parmelion
+########################################
+
+#Addressing the Ethnic Situation
+country_event = {
+	id = flavor_hun.38
+	title = flavor_hun.38.t
+	desc = flavor_hun.38.d
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #Promote the Hungarian culture
+		name = flavor_hun.38.a
+		add_country_modifier = {
+			name = "hun_promote_hungarian_culture"
+			duration = -1
+		}
+	}
+	option = { #Guarantee the minority rights
+		name = flavor_hun.38.b
+		add_country_modifier = {
+			name = "hun_guarantee_minority_rights"
+			duration = -1
+		}
+	}
+}
+
+#Balazs Magyar
+country_event = {
+	id = flavor_hun.39
+	title = flavor_hun.39.t
+	desc = flavor_hun.39.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		is_subject = no
+		is_year = 1470
+		OR = {
+			has_country_modifier = hun_black_army
+			has_reform = black_army_reform
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = flavor_hun.39.a
+		ai_chance = { factor = 10 }
+		define_advisor = {
+			name = "Balï¿½zs Magyar"
+			culture = hungarian
+			type = commandant
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = flavor_hun.39.b
+		ai_chance = { factor = 80 }
+		define_general = {
+			shock = 4
+			fire = 4
+			manuever = 4
+			siege = 2
+			name = "Balï¿½zs Magyar"
+		}
+	}
+	
+	option = {
+		name = flavor_hun.39.c
+		ai_chance = { factor = 10 }
+		add_mil_power = 50
+	}
+}
+
+#Gubec's Peasant Uprising
+country_event = {
+    id = flavor_hun.40
+	title = flavor_hun.40.t
+	desc = flavor_hun.40.d
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		is_year = 1573
+		croatia_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 3
+	}
+	
+	option = {
+	    name = flavor_hun.40.a
+		ai_chance = { factor = 20 }
+		add_years_of_income = -0.3
+		croatia_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_province_modifier = {
+				name = "hun_peasants_compensated"
+				duration = 3650
+			}
+		}
+		slavonia_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_province_modifier = {
+				name = "hun_peasants_compensated"
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 80 }
+	    name = flavor_hun.40.b
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 3
+				leader = "Matija Gubec"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+#Ascendant Hungary
+country_event = {
+    id = flavor_hun.41
+	title = flavor_hun.41.t
+	desc = flavor_hun.41.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = flavor_hun.41.a
+		ai_chance = { factor = 90 }
+		add_dip_power = 200
+		add_country_modifier = {
+			name = hun_imperial_crown_bid
+			duration = 7300
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+	    name = flavor_hun.41.b
+		custom_tooltip = hun_elector_cb_tt
+		hidden_effect = {
+			every_elector = {
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+			emperor = {
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+	}
+}
+
+# Adam FrantiÅ¡ek KollÃ¡r
+country_event = {
+	id = flavor_hun.42
+	title = flavor_hun.42.t
+	desc = flavor_hun.42.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		exists = HAB
+		HAB = {
+			is_emperor = yes
+		}
+		is_year = 1760
+		NOT = { is_year = 1783 }
+		slovakia_area = {
+			owned_by = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+    option = {
+	    name = flavor_hun.42.a
+		ai_chance = { factor = 90 }
+			define_advisor = {
+			type = statesman
+			name = "Adam Frantisek Kollï¿½r"
+			culture = slovak
+			discount = yes
+			skill = 3
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+	    name = flavor_hun.42.b
+		add_dip_power = 50
+	}
+}
+
+
+# Pal Kinizsi
+country_event = {
+	id = flavor_hun.43
+	title = flavor_hun.43.t
+	desc =  flavor_hun.43.d
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		is_year = 1490
+		NOT = { is_year = 1494 }
+		OR = {
+			has_country_modifier = hun_black_army
+			has_reform = black_army_reform
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = flavor_hun.43.a
+		add_army_tradition_or_mil_power = { amount = 15 }
+	}
+	
+	option = {
+		name = flavor_hun.43.b
+		define_advisor = {
+			name = "Pï¿½l Kinizsi"
+			culture = hungarian
+			type = army_reformer
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = flavor_hun.43.c
+		add_mil_power = 50
+	}
+}
+
+#Beatrice of Aragon
+country_event = {
+	id = flavor_hun.44
+	title = flavor_hun.44.t
+	desc =  flavor_hun.44.d
+	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+	    dynasty = "Hunyadi"
+		is_year = 1480
+		NOT = { is_year = 1508 }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+    option = {
+	    name = flavor_hun.44.a
+		ai_chance = { factor = 90 }
+		add_ruler_modifier = {
+			name = "hun_beatrice_aragon"
+			duration = 7300
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+	    name = flavor_hun.44.b
+		add_dip_power = 50
+	}
+}
+
+#Tripartitum 
+country_event = { 
+    id = flavor_hun.45
+	title = flavor_hun.45.t
+	desc = flavor_hun.45.d
+	picture = BIG_BOOK_eventPicture 
+	
+	trigger = {
+		OR = {
+			OR = {
+				tag = HUN
+				was_tag = HUN
+			}
+			tag = TRA
+		}
+		is_year = 1514
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+	    months = 6
+	}
+	
+	option = { 
+	    name = flavor_hun.45.a
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = "hun_tripartitum"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_hun.45.b	
+		ai_chance = { factor = 0 }
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Saxons convert to Protestantism	
+country_event = {
+    id = flavor_hun.46
+	title = flavor_hun.46.t
+	desc = flavor_hun.46.d
+	picture = {	
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PROTESTANT_RELIGIOUS_TENSIONS_eventPicture
+	}
+	picture = {	
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = PRAYING_eventPicture
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		is_year = 1533
+		NOT = { is_year = 1549 }
+		religion = catholic
+		is_religion_enabled = protestant
+		owns = 4128
+		owns = 4127
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+	    name = flavor_hun.46.a
+		4128 = {
+		    change_religion = protestant 
+		}
+		4128 = {
+			add_province_modifier = {
+				name = hun_religious_tolerance
+				duration = 3650
+			}
+		}
+		4127 = {
+		    change_religion = protestant 
+		}
+		4127 = {
+			add_province_modifier = {
+				name = hun_religious_tolerance
+				duration = 3650
+			}
+		}
+	}
+	
+	option = {
+	    name = flavor_hun.46.b
+		4128 = {
+		    change_religion = protestant 
+		}
+		4128 = {
+			add_unrest = 5
+		}
+		4128 = {
+			add_province_modifier = {
+				name = hun_convert_the_saxons
+				duration = 3650
+			}
+		}
+		4127 = {
+		    change_religion = protestant 
+		}
+		4127 = {
+			add_unrest = 5
+		}
+		4127 = {
+			add_province_modifier = {
+				name = hun_convert_the_saxons
+				duration = 3650
+			}
+		}
+	}
+}
+
+#Bibliotheca Corviniana
+country_event = { 
+    id = flavor_hun.47
+	title = flavor_hun.47.t
+	desc = flavor_hun.47.d
+	picture = BIG_BOOK_eventPicture 
+
+	is_triggered_only = yes
+	
+	option = { 
+	    name = flavor_hun.47.a
+		goto = 153
+		add_country_modifier = {
+			name = hun_corviana_library
+			duration = 7300
+		}
+		153 = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					has_great_project = {
+						type = buda_castle
+						tier = 0
+					}
+				}
+				set_great_project_tier_1 = {
+					type = buda_castle
+				}
+			}
+			else = {
+				add_base_tax = 3
+			}
+		}
+	}
+}
+
+#Capital in Danger
+country_event = {
+    id = flavor_hun.48
+	title = flavor_hun.48.t
+	desc = flavor_hun.48.d 
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		owns = 153
+		153 = {
+			is_capital_of = ROOT
+		}
+		153 = {
+			any_neighbor_province = {
+				owned_by = TUR
+			}
+		}
+		owns_core_province = 1772
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+	    name = flavor_hun.48.a
+		ai_chance = { factor = 25 }
+		goto = 153
+		153 = {
+		    add_permanent_province_modifier = {
+				name = hun_buda_fortified
+				duration = 14600
+			}
+			add_base_manpower = 3
+	    }
+	}
+
+	option = {
+		ai_chance = { factor = 75 }
+	    name = flavor_hun.48.b
+		goto = 1772
+		1772 = {
+			move_capital_effect = yes
+		}
+		1772 = {
+			add_base_tax = 2
+			add_base_production = 2
+	    }
+	}
+}
+
+#Juraj JÃ¡noÅ¡Ã­k
+country_event = {
+    id = flavor_hun.49
+	title = flavor_hun.49.t
+	desc = flavor_hun.49.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	goto = 4236
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1710
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		slovakia_area = {
+			owned_by = ROOT
+		}
+		4236 = {
+			culture = slovak
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+	    name = flavor_hun.49.a
+		ai_chance = { factor = 100 }
+		custom_tooltip = hun_janosik_raid
+		hidden_effect = {
+			4236 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		4236 = {
+			add_base_production = -1
+		}
+		custom_tooltip = hun_empty
+		add_years_of_income = -0.5
+		set_country_flag = hun_hunt_of_janosik
+		custom_tooltip = hun_janosik_group_tt
+	}
+
+	option = {
+		ai_chance = { factor = 75 }
+	    name = flavor_hun.49.b
+		custom_tooltip = hun_janosik_raid
+		hidden_effect = {
+			4236 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		4236 = {
+			add_base_production = -1
+		}
+		custom_tooltip = hun_empty
+		set_country_flag = hun_janosik_ignored
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+}
+
+#JÃ¡noÅ¡Ã­k Strikes Again
+country_event = {
+    id = flavor_hun.50
+	title = flavor_hun.50.t
+	desc = flavor_hun.50.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	goto = 154
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		has_country_flag = hun_janosik_ignored
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+		154 = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+	    name = flavor_hun.50.a
+		ai_chance = { factor = 100 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+		custom_tooltip = hun_janosik_raid_nitra
+		hidden_effect = {
+			154 = {
+				remove_loot = {
+					who = REB
+					amount = 100
+				}
+			}
+		}
+		154 = {
+			add_base_production = -2
+		}
+		custom_tooltip = hun_empty
+		add_years_of_income = -0.5
+		set_country_flag = hun_hunt_of_janosik
+		custom_tooltip = hun_janosik_group_tt
+	}
+}
+
+#The End of Jï¿½noï¿½ï¿½k
+country_event = {
+    id = flavor_hun.51
+	title = flavor_hun.51.t
+	desc = flavor_hun.51.d 
+	picture = JURAJ_JANOSIK_eventPicture #to be replaced
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		has_country_flag = hun_hunt_of_janosik
+		OR = {
+			tag = HUN
+			was_tag = HUN
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+	    name = flavor_hun.51.a
+		ai_chance = { factor = 100 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 20
+		}
+		slovakia_area = {
+			add_province_modifier = {
+				name = "hun_end_of_banditry"
+				duration = 7300
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_hun.52
+	title = flavor_hun.52.t
+	desc = flavor_hun.52.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_hun.52.a
+	}
+}
+
+#New Trade Goods in Pest
+country_event = {
+	id = flavor_hun.53
+	title = flavor_hun.53.t
+	desc = flavor_hun.53.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_hun.53.a"
+		153 = {
+			change_trade_goods = cloth
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.b"
+		153 = {
+			change_trade_goods = copper
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.c"
+		153 = {
+			change_trade_goods = iron
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.de"
+		153 = {
+			change_trade_goods = glass
+		}
+		153 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_hun.53.e"
+		153 = {
+			add_base_production = 3
+		}
+	}	
+}
+
+#Hungary Joins the Empire - Negative Response
+country_event = {
+	id = flavor_hun.54
+	title = flavor_hun.54.t
+	desc = flavor_hun.54.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_hun.54.a
 	}
 }

@@ -4,7 +4,7 @@
 # Written by Henrik Lohmander
 ########################################
 
-#UU UPDATED 1.36.2
+#UU UPDATED 1.37.0
 
 namespace = shinto_events
 

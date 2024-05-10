@@ -8,7 +8,7 @@
 
 namespace = fetishist_flavor
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 #Discovering Yemoja cult
 country_event = {
@@ -4449,7 +4449,8 @@ country_event = {
 # Written by Ogulcan Yildirim
 ##############################
 
-# Heir can choose a new cult for them		UU CHANGED
+# Heir can choose a new cult for them
+#UU ADDED mutual exclusivity with primary cult
 country_event = {
 	id = fetishist_flavor.600
 	title = fetishist_flavor.600.t

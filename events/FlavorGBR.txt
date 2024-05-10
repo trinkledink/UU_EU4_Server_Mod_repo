@@ -7,7 +7,7 @@
 namespace = flavor_gbr
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # The Angevin Past
 country_event = {

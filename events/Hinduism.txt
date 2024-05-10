@@ -6,7 +6,7 @@
 
 namespace = hindu_events
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 country_event = {
 	id = hindu_events.1

@@ -8,7 +8,7 @@
 namespace = flavor_mng
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # The Strategic Decision after Zheng Ho's Journey
 country_event = {
@@ -3472,8 +3472,8 @@ country_event = { #The Hijin Policy of the Empire of China
 	id = flavor_mng.55
 	title = flavor_mng.55.t
 	desc = flavor_mng.55.d
-	picture = HARBOUR_eventPicture
-		trigger = { 
+	picture = HARBOUR_eventPicture	
+	trigger = { 
 		is_emperor_of_china = yes 
 		has_dlc = "Domination"
 		tag = MNG 

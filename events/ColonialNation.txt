@@ -1,6 +1,5 @@
+#UU UPDATED 1.37.0
 namespace = colonial_nation
-
-#UU UPDATED 1.36.1
 
 # Tariffs Too High
 country_event = {

@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.2
+#UU UPDATED 1.37.0
 
 # Military reform
 country_event = {

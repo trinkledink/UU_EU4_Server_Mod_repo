@@ -6,7 +6,7 @@
 namespace = flavor_orl
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # Retrial of Joan of Arc finds her innocent
 country_event = {
@@ -169,7 +169,7 @@ country_event = {
 	trigger = {
 		has_global_flag = maid_of_orleans
 		OR = {
-			current_age = age_of_reformation
+			current_age = age_of_reformation #UU Added
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}

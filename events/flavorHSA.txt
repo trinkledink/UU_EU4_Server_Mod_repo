@@ -8,7 +8,7 @@
 namespace = flavor_hsa
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # Georg Giese
 country_event = {
@@ -999,11 +999,11 @@ country_event = { #
 		
 		97 = {
 			owner = {
-				save_event_target_as = fu_owner_of_amsterdam
+				save_event_target_as = EU_owner_of_amsterdam
 			}
 			1269 = {
 				add_trade_modifier = {
-					who = event_target:fu_owner_of_amsterdam 
+					who = event_target:EU_owner_of_amsterdam 
 					duration = 5475
 					power = 20
 					key = hsa_moved_the_staple_port_key
@@ -1011,11 +1011,11 @@ country_event = { #
 			}
 		}
 		add_opinion = {
-			who = event_target:fu_owner_of_amsterdam
+			who = event_target:EU_owner_of_amsterdam
 			modifier = hsa_moved_the_staple_port 
 		}
 		add_casus_belli = {
-			target = event_target:fu_owner_of_amsterdam
+			target = event_target:EU_owner_of_amsterdam
 			type = cb_trade_war_triggered
 			months = 120 
 		}

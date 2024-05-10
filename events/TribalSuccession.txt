@@ -1,6 +1,6 @@
 namespace = tribal_succession
 
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 
 # Tribal Succession Crisis
 country_event = {
@@ -26,13 +26,21 @@ country_event = {
 			NOT = { tag = CRI }
 			has_global_flag = death_of_haji_giray
 		}
-		OR = {
-			NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
-			NOT = {
-				heir_total_stats = {
-					amount = 12
+		if = {
+			limit = {
+				NOT = { has_country_flag = hordes_any_child_can_be_khans_flag }
+			}
+			OR = {
+				NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
+				NOT = {
+					heir_total_stats = {
+						amount = 9	#uu changed
+					}
 				}
 			}
+		}
+		else = {
+			NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
 		}
 	}
 	
@@ -60,7 +68,7 @@ country_event = {
 	option = {
 		name = tribal_succession.1.a
 		trigger = {
-			# NOT = { legitimacy_or_horde_unity = 50 }		#	Removed, so there will always be another option
+			NOT = { legitimacy_or_horde_unity = 50 }
 		}
 		if = {
 			limit = {
@@ -132,8 +140,7 @@ country_event = {
 		name = tribal_succession.2.a
 		remove_country_modifier = tribal_succession_crisis
 		add_stability_or_adm_power = yes
-		#	add_horde_unity = 25 #nerfed because it happens more often
-		add_horde_unity = 10
+		add_horde_unity = 25
 	}
 }
 	
