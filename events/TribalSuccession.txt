@@ -67,9 +67,9 @@ country_event = {
 	
 	option = {
 		name = tribal_succession.1.a
-		trigger = {
-			NOT = { legitimacy_or_horde_unity = 50 }
-		}
+		#trigger = {									#UU removed trigger for this option
+		#	NOT = { legitimacy_or_horde_unity = 50 }
+		#}
 		if = {
 			limit = {
 				any_owned_province = {
