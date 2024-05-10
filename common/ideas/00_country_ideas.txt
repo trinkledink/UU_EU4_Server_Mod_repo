@@ -18214,44 +18214,44 @@ AYB_ideas = {
 	}
 }
 
-UCN_ideas = {
-	start = {
-		trade_efficiency = 0.15
-		fire_damage = 0.1
-	}
+# UCN_ideas = {
+# 	start = {
+# 		trade_efficiency = 0.15
+# 		fire_damage = 0.1
+# 	}
 	
-	trigger = {
-		has_country_flag = ned_united_crowns_flag
-		tag = NED 
-	}
-	free = yes
+# 	trigger = {
+# 		has_country_flag = ned_united_crowns_flag
+# 		tag = NED 
+# 	}
+# 	free = yes
 	
-	bonus = {
-		naval_morale = 0.15
-	}		
+# 	bonus = {
+# 		naval_morale = 0.15
+# 	}		
 	
-	reform_of_comission_buying = {
+# 	reform_of_comission_buying = {
 		
-	}
-	british_industrialization = {
+# 	}
+# 	british_industrialization = {
 		
-	}
-	instructie_voor_de_admiraliteiten = {
+# 	}
+# 	instructie_voor_de_admiraliteiten = {
 		
-	}
-	dutch_trading_spirit = {
+# 	}
+# 	dutch_trading_spirit = {
 		
-	}
-	army_sappers = {
+# 	}
+# 	army_sappers = {
 		
-	}
-	amsterdam_wisselbank = {
+# 	}
+# 	amsterdam_wisselbank = {
 		
-	}
-	city_upon_a_hill = {
+# 	}
+# 	city_upon_a_hill = {
 		
-	}
-}
+# 	}
+# }
 
 AUH_ideas = {
 	start = {
