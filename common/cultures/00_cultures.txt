@@ -6,7 +6,7 @@
 #
 # graphical_culture = westerngfx
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
-#UU UPDATED 1.37.1
+#UU UPDATED 1.37.0
 germanic = {
 	graphical_culture = westerngfx
 

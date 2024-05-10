@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.1
+#UU UPDATED 1.37.0
 age_of_discovery = {
 	start = 1400
 	

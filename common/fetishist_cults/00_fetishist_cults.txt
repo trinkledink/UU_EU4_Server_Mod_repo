@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+# UU UPDATED 1.37.0
 yemoja_cult = {
 	naval_maintenance_modifier = -0.15
 	naval_forcelimit_modifier = 0.2

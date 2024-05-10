@@ -1,5 +1,5 @@
 # [range_from, range_to[
-#UU UPDATED 1.36.1
+# UU UPDATED 1.37.0
 defender_of_faith_1 = {
 	level = 1
     range_from = 50

@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.1
+# UU UPDATED 1.37.0
 estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5

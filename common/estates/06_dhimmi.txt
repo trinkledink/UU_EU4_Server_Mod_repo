@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.1
+# UU UPDATED 1.37.0
 estate_dhimmi = {
 	icon = 6
 	other_religion_group_only = yes

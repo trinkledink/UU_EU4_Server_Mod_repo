@@ -1,5 +1,5 @@
 # Bonus covers  [range_from, range_to[
-#UU UPDATED 1.36.1
+# UU UPDATED 1.37.0
 bonus = {
     key = crown_land_level_0
     range_from = -100.0

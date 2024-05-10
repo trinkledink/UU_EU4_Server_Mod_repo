@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.1
+# UU UPDATED 1.37.0
 interaction = {
     key = sale_of_titles
     random_seed = crown_land_share

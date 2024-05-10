@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+# UU UPDATED 1.37.0
 staple_port = {
     level = 1
     type = coastal
