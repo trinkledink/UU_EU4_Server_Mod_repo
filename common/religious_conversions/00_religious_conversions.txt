@@ -1,6 +1,6 @@
 # Describes how religion is spread to new provinces from
 # Centers of Reformation and the "Propagate Religion" Trading Policy
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 propagate_religion_policy = {
 	
 	trading_policy = yes # Religion is taken from country using the trading policy.	max_distance is not used.
@@ -31,6 +31,7 @@ propagate_religion_policy = {
 		
 		modifier = {
 			factor = 0
+			has_owner_religion = yes
 			owner = {
 				has_country_flag = immunity_against_propogate_religion
 			}

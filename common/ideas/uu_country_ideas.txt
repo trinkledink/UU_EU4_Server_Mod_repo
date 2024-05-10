@@ -258,6 +258,8 @@ ITA_ideas = { #Italy
 TUS_ideas = { #Tuscany
 	start = {
 		papal_influence = 2
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
 		development_cost = -0.1
 	}
 	
@@ -880,93 +882,6 @@ SCA_denmark_ideas = {
 	nordic_lions_united = {
 		discipline = 0.05
 		legitimacy = 0.5
-	}
-}
-HAB_ideas = { #Austria
-	start = {
-		land_morale = 0.10
-		improve_relation_modifier = 0.3
-	}
-	
-	bonus = {
-		heir_chance = 0.50
-	}
-	
-	trigger = {
-		OR = {
-			tag = HAB
-			AND = {
-				tag = STY
-				dynasty = "von Habsburg"
-			}
-		}
-	}
-	free = yes		#will be added at load.
-
-	imperial_ambitions = {
-		imperial_authority = 0.1
-		diplomatic_annexation_cost = -0.15
-	}
-	military_border = {
-		global_garrison_growth = 0.15
-		fort_maintenance_modifier = -0.10
-	}
-	fugger_banks = {
-		inflation_reduction = 0.05
-		interest = -0.5
-	}
-	habsburg_dominance = {
-		diplomatic_reputation = 2
-	}
-	edict_of_restitution = {
-		global_missionary_strength = 0.02
-	}
-	austrian_court = {
-		diplomatic_upkeep = 1
-	}
-	hofkriegsrat = {
-		reinforce_speed = 0.3
-		#discipline = 0.05					#Removed
-	}
-}
-AUH_ideas = { #Austria-Hungary
-	start = {
-		land_morale = 0.10
-		global_autonomy = -0.05
-	}
-	
-	bonus = {
-		num_accepted_cultures = 1
-	}
-	
-	trigger = {
-		tag = AUH
-	}
-	free = yes		#will be added at load.
-
-	imperial_administration = {
-		administrative_efficiency = 0.05
-	}
-	hofkriegsrat = {
-		#reinforce_speed = 0.3					#Same as HAB ideas
-	}
-	bulwark_of_christianity = {
-		#global_manpower_modifier = 0.2			#Same as HUN ideas
-	}
-	fugger_banks = {
-		#inflation_reduction = 0.05				#Same as HAB ideas
-		#interest = -0.5
-	}
-	wag_of_the_chin = {
-		advisor_pool = 2
-		power_projection_from_insults = 1
-	}
-	hungarian_estates_general = {
-		no_religion_penalty = yes				#Same as HUN ideas
-	}
-	herren_generals = {
-		land_forcelimit_modifier = 0.25
-		manpower_in_accepted_culture_provinces = 0.2
 	}
 }
 HSN_ideas = { #Hisn Kayfa + Arabia

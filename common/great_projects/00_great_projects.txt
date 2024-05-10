@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 kiel_canal = {
 	# province it starts in
 	start = 1775
@@ -31,6 +31,7 @@ kiel_canal = {
 			is_subject = no			
 			OR = { 
 				mission_completed = emp_brapru_kiel_canal
+				mission_completed = GER_german_industry
 				adm_tech = 15 #UU Change
 			}
 		}
@@ -180,6 +181,14 @@ kiel_canal = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
+		conditional_modifier = {
+			trigger = {
+				owner = { mission_completed = GER_kiel_canal }
+			}
+			modifier = {
+				merchants = 1
+			}
+		}
 	}
 }
 
@@ -216,6 +225,9 @@ suez_canal = {
 			OR = {
 				adm_tech = 15 #UU Change
 				mission_completed = mam_highway_empire
+				mission_completed = hsn_suez_canal
+				mission_completed = ITA_explore_eastern_markets
+				mission_completed = ven_mamluk_suez
 			}
 		}
 		NOT = { has_global_flag = uu_closed_suez_canal }
@@ -233,6 +245,7 @@ suez_canal = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		
 	}
 
 	#can our country upgrade it?
@@ -242,6 +255,7 @@ suez_canal = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+		
 	}
 
 	#tier data
@@ -299,6 +313,20 @@ suez_canal = {
 		country_modifiers = {
 			global_trade_power = 0.02
 		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = has_completed_hsn_suez_canal_tt
+					owner = { 
+						mission_completed = hsn_suez_canal
+					}
+				}
+			}
+			modifier = {
+				global_trade_power = 0.1
+			}
+		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
@@ -330,6 +358,20 @@ suez_canal = {
 		country_modifiers = {
 			global_trade_power = 0.03
 		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = has_completed_hsn_suez_canal_tt
+					owner = { 
+						mission_completed = hsn_suez_canal
+					}
+				}
+			}
+			modifier = {
+				global_trade_power = 0.1
+			}
+		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
@@ -359,6 +401,28 @@ suez_canal = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_trade_power = 0.05
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				custom_trigger_tooltip = {
+					tooltip = has_completed_hsn_suez_canal_tt
+					owner = { 
+						mission_completed = hsn_suez_canal
+					}
+				}
+			}
+			modifier = {
+				global_trade_power = 0.1
+			}
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = { mission_completed = ITA_journey_to_the_east }
+			}
+			modifier = {
+				merchants = 1
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -396,7 +460,13 @@ panama_canal = {
 		FROM = {
 			owns_or_vassal_of = 835
 			is_subject = no
-			adm_tech = 15 #UU Change
+			if = {
+				limit = {
+					NOT = { mission_completed = SUN_panama_canal }
+					NOT = { mission_completed = SUNm_panama_canal }
+				}
+				adm_tech = 15 #UU Change
+			}
 		}
 		NOT = { has_global_flag = uu_closed_panama_canal }
 	}
@@ -540,7 +610,25 @@ panama_canal = {
 		country_modifiers = {
 			global_trade_power = 0.05
 		}
-
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					custom_trigger_tooltip = {
+						tooltip = SUN_completed_panama_canal_mission
+						OR = {
+							mission_completed = SUN_panama_canal
+							mission_completed = SUNm_panama_canal
+						}
+					}
+				}
+			}
+			modifier = {
+				reduced_trade_penalty_on_non_main_tradenode = 0.5
+				trade_efficiency = 0.05
+			}
+		}
+		
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}

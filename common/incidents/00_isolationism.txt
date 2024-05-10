@@ -1,7 +1,7 @@
 ##############################################################################################
 ######## UU Incidents are now triggered via event which lets you choose between them. ########
 ##############################################################################################
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 incident_neo_confucianism = {	
 
 	frame = 1

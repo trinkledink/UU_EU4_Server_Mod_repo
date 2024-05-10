@@ -1,7 +1,7 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new resources, make sure they are uniquely named.
 # Please add price definitions to prices.txt as well.
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 #Base resources
 grain = {
 	color = { 0.96 0.93 0.58 }
@@ -343,6 +343,15 @@ fish = {
 		modifier = {
 			factor = 1.2
 			has_terrain = glacier
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = fish }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = fish } }
+				}
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1114,6 +1123,15 @@ tea = {
 			}
 		}
 		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_increased_trade_goods_discovery = { trade_goods = tea }
+					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = tea } }
+				}
+			}
+		}
+		modifier = {
 			factor = 0
 			OR = {
 				area = molluca_area
@@ -1320,7 +1338,7 @@ coffee = {
 		modifier = {
 			factor = 2
 			FROM = {
-			OR = {
+				OR = {
 					has_increased_trade_goods_discovery = { trade_goods = coffee }
 					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = coffee } }
 				}
@@ -1501,7 +1519,7 @@ tobacco = {
 		global_spy_defence = 0.25
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	chance = {
 		factor = 15
@@ -1708,7 +1726,7 @@ dyes = {
 		heir_chance = 0.33
 	}
 	province = {
-		 province_trade_power_modifier = 0.10
+		province_trade_power_modifier = 0.10
 	}
 	
 	chance = {
@@ -1807,7 +1825,7 @@ tropical_wood = {
 		modifier = {
 			factor = 2
 			FROM = {
-			OR = {
+				OR = {
 					has_increased_trade_goods_discovery = { trade_goods = tropical_wood }
 					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = tropical_wood } }
 				}
@@ -1974,7 +1992,7 @@ incense = {
 		modifier = {
 			factor = 2
 			FROM = {
-			OR = {
+				OR = {
 					has_increased_trade_goods_discovery = { trade_goods = incense }
 					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = incense } }
 				}
@@ -2240,16 +2258,30 @@ coal = {
 		}
 		if = {
 			limit = {
+				NOT = { has_province_flag = GER_specific_coal }
 				owner = {
 					NOT = { has_country_flag = earlier_coal_available }
 				}
 			}
-		provincial_institution_progress = {
-			which = enlightenment
-			value = 100
+			provincial_institution_progress = {
+				which = enlightenment
+				value = 100
+			}
+			owner = { has_institution = enlightenment }
 		}
-		owner = { has_institution = enlightenment }
-	}
+		else_if = {
+			limit = {
+				has_province_flag = GER_specific_coal
+			}
+			provincial_institution_progress = {
+				which = manufactories
+				value = 100
+			}
+			owner = {
+				has_institution = manufactories
+				adm_tech = 21
+			}
+		}
 		else = {
 			provincial_institution_progress = {
 				which = manufactories

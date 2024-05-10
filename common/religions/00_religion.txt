@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 # If you add religions, and use those tags, do not change them without changing everywhere they are used.
 
 # Uses all 'modifiers' possible thats exported as a Modifier.
@@ -411,6 +411,7 @@ christian = {
 			taborite_resurgence_aspect
 			orphan_hetmans_aspect
 			freedom_to_preach_aspect
+			rekindle_the_hussite_wars_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
 		
@@ -2394,6 +2395,7 @@ pagan = {
 		
 		authority = yes
 		religious_reforms = yes
+		require_reformed_for_institution_development = yes
 		reform_tooltip = INTI_REFORM_TOOLTIP
 		
 		heretic = { INTI_HERETIC }	
@@ -2420,6 +2422,7 @@ pagan = {
 		doom = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
+		require_reformed_for_institution_development = yes
 		reform_tooltip = NAHUATL_REFORM_TOOLTIP
 		
 		heretic = { NAHUATL_HERETIC }	
@@ -2433,16 +2436,17 @@ pagan = {
 		declare_war_in_regency = yes
 		country = {
 			tolerance_own = 1
-			advisor_pool = 1
+			same_religion_advisor_cost = -0.1
 		}
 		country_as_secondary = {
-			advisor_pool = 1
+			same_religion_advisor_cost = -0.1
 			stability_cost_modifier = -0.1
 		}
 		province = {
 			local_missionary_strength = 0.02
 		}
 		
+		require_reformed_for_institution_development = yes
 		religious_reforms = yes
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		
@@ -2642,7 +2646,7 @@ jewish_group = {
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
 	defender_of_faith = yes
-		zoroastrian = {
+	zoroastrian = {
 		icon = 26
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
@@ -2658,7 +2662,7 @@ zoroastrian_group = {
 			merchants = 1
 			tolerance_own = 1
 		}
-allowed_center_conversion = {
+		allowed_center_conversion = {
 			sunni
 			shiite
 			orthodox

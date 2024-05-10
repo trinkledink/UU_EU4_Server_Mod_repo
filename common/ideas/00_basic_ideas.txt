@@ -6,7 +6,7 @@
 # ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 aristocracy_ideas = { #Aristocratic Ideas
 	category = MIL
 

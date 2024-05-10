@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 #Province Scope unless otherwise specified
 
 #Province has one of our many river estuary modifiers:
@@ -156,6 +156,7 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = volta_estuary_modifier
 			#China
 			has_province_modifier = mng_bogue_modifier
+			has_province_modifier = expanded_nile_estuary_modifier
 		}
 	}
 }

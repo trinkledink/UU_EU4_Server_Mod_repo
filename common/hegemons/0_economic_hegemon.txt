@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 economic_hegemon = {
 	allow = {
 		is_great_power = yes

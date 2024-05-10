@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 monarch_power = ADM
 
 # applied when a country is ahead of time in this technology
@@ -6,6 +6,7 @@ ahead_of_time = {
 	production_efficiency = 0.2
 	yearly_corruption = -0.05
 	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_adm = 1
 }
 
 # Pre-era techs
@@ -214,6 +215,7 @@ technology = { #Scientific Experimentation
 	
 	plantations = yes
 	allowed_idea_groups	= 4
+	administrative_efficiency = 0.05	#UU	
 }
 
 technology = { #Military Administration
@@ -291,7 +293,7 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
-	administrative_efficiency = 0.1								 
+	administrative_efficiency = 0.1	#UU						 
 }
 
 technology = { #Absolute Rulership
@@ -342,6 +344,8 @@ technology = { #The Constitution
 	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
+
+	#town_hall = yes #uu moved to 16
 }
 
 technology = { #Measuring the World

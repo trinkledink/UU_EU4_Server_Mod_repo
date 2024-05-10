@@ -1,5 +1,5 @@
 # These ideas are loaded after all country ideas, but before default idea.
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 client_ideas = {
 	start = {
 		land_morale = 0.1

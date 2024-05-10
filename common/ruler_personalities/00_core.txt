@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 #Ruler Personalities
 #1st personality will be assigned at 15 years of age.
 #2nd personality will be assigned after ruling for 10 years.
@@ -228,7 +228,7 @@ tolerant_personality = {
 			factor = 1
 			has_estate_privilege = estate_dhimmi_dhimmi_education
 		}
-modifier = {
+		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
@@ -270,7 +270,7 @@ kind_hearted_personality = {
 	}
 	
 	chance = {
-modifier = {
+		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
@@ -358,7 +358,7 @@ free_thinker_personality = {
 	}
 	
 	chance = {
-modifier = {
+		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
@@ -383,7 +383,7 @@ well_connected_personality = {
 				factor = 1
 				DIP = 6
 			}
-modifier = {
+			modifier = {
 				factor = 3
 				has_country_flag = turkoman_triple_trait_chance
 			}
@@ -901,6 +901,10 @@ zealot_personality = {
 			has_estate_privilege = estate_church_clerical_education
 		}
 		modifier = {
+			factor = 1
+			has_country_flag = INC_increase_chance_for_zealot_personality_flag
+		}
+		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
@@ -1230,6 +1234,10 @@ scholar_personality = {
 				factor = 1
 				ADM = 6
 			}
+			modifier = {
+				factor = 3
+				has_country_flag = hsn_scholar_trait
+			}
 		}
 	}
 
@@ -1242,6 +1250,10 @@ scholar_personality = {
 			modifier = {
 				factor = 1
 				heir_ADM = 6
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = hsn_scholar_trait
 			}
 		}
 	}
@@ -1257,12 +1269,20 @@ scholar_personality = {
 	
 	allow = { }
 	
-	chance = {
+	chance = { 
 		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
-	 }
+		modifier = {
+			factor = 3
+			has_country_flag = hsn_scholar_trait
+		}
+		modifier = {
+			factor = 1
+			has_country_flag = SUN_increase_chance_for_scholar_trait_flag
+		}
+	}
 	
 	custom_ai_explanation = "AI_RULER_SPEND_UNLOCK_INSTIT"
 	
@@ -1322,6 +1342,10 @@ entrepreneur_personality = {
 			has_government_attribute = is_merchant_republic
 		}
 		modifier = {
+			factor = 2
+			has_country_flag = ITA_higher_likelihood_of_entrepeneur_flag
+		}
+		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
@@ -1372,6 +1396,10 @@ industrious_personality = {
 		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
+		}
+		modifier = {
+			factor = 1
+			has_country_flag = MUG_higher_industrious_chance
 		}
 	}
 	
@@ -1531,6 +1559,13 @@ charismatic_negotiator_personality = {
 			has_country_flag = egypt_better_traits_flag
 		}
 	}
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_country_flag = hab_higher_charismatic_negotiator_chance
+		}
+	}
 	
 	other_ai_peace_term_bonus = 10
 	
@@ -1600,7 +1635,7 @@ silver_tongue_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
-			}
+	}
 	
 	other_ai_war_chance_multiplier = 0.5
 	
@@ -1613,6 +1648,7 @@ conqueror_personality = {
 	ruler_allow = {
 		allow = {
 			MIL = 3
+			NOT = { ruler_has_personality = legendary_conqueror_personality }
 		}
 	
 		chance = {
@@ -1634,6 +1670,7 @@ conqueror_personality = {
 	heir_allow = {
 		allow = {
 			heir_MIL = 3
+			NOT = { heir_has_personality = legendary_conqueror_personality }
 		}
 	
 		chance = {
@@ -1655,6 +1692,7 @@ conqueror_personality = {
 	consort_allow = {
 		allow = {
 			consort_MIL = 3
+			NOT = { consort_has_personality = legendary_conqueror_personality }
 		}
 
 		chance = {
@@ -1670,7 +1708,6 @@ conqueror_personality = {
 	}
 
 	allow = {
-		
 	}
 	years_of_nationalism = -5
 	nation_designer_cost = 2
@@ -1981,6 +2018,10 @@ martial_educator_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		modifier = {
+			factor = 3
+			has_country_flag = azt_more_martial_educators_flag
+		}
 	}
 	
 	easy_war_chance_multiplier = 1.2
@@ -2119,6 +2160,7 @@ babbling_buffoon_personality = {
 		allow = {
 			NOT = { ruler_has_personality = charismatic_negotiator_personality }
 			NOT = { ruler_has_personality = silver_tongue_personality }
+			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { dip = 5 }
 		}
 	
@@ -2147,6 +2189,7 @@ babbling_buffoon_personality = {
 		allow = {
 			NOT = { heir_has_personality = charismatic_negotiator_personality }
 			NOT = { heir_has_personality = silver_tongue_personality }
+			NOT = { has_country_flag = boh_prevent_negative_traits }
 			NOT = { heir_dip = 5 }
 		}
 	
@@ -2293,7 +2336,7 @@ embezzler_personality = {
 	}
 
 	allow = {
-		
+		NOT = { has_country_flag = ned_remove_embezzler_rulers }
 	}
 	
 	chance = {
@@ -2611,6 +2654,7 @@ sinner_personality = {
 	wants_to_appoint_cardinals_in_his_own_land = yes
 	
 	tolerance_own = -2
+	monthly_blood = -0.5
 	nation_designer_cost = -2
 } #1 better
 greedy_personality = {
@@ -2743,6 +2787,7 @@ cruel_personality = {
 		allow = {
 			NOT = { ruler_has_personality = just_personality }
 			NOT = { ruler_has_personality = kind_hearted_personality }
+			NOT = { has_country_flag = hsn_prevent_leader_trait }
 		}
 	
 		chance = {
@@ -2770,6 +2815,7 @@ cruel_personality = {
 		allow = {
 			NOT = { heir_has_personality = just_personality }
 			NOT = { heir_has_personality = kind_hearted_personality }
+			NOT = { has_country_flag = hsn_prevent_leader_trait }
 		}
 	
 		chance = {
@@ -2833,6 +2879,7 @@ naive_personality = {
 		allow = {
 			NOT = { ruler_has_personality = silver_tongue_personality }
 			NOT = { ruler_has_personality = careful_personality }
+			NOT = { has_country_flag = boh_prevent_negative_traits }
 		}
 	
 		chance = {
@@ -2864,6 +2911,7 @@ naive_personality = {
 		allow = {
 			NOT = { heir_has_personality = silver_tongue_personality }
 			NOT = { heir_has_personality = careful_personality }
+			NOT = { has_country_flag = boh_prevent_negative_traits }
 		}
 	
 		chance = {
@@ -2942,6 +2990,7 @@ craven_personality = {
 		allow = {
 			NOT = { ruler_has_personality = inspiring_leader_personality }
 			NOT = { ruler_has_personality = bold_fighter_personality }
+			NOT = { has_country_flag = hsn_prevent_leader_trait }
 		}
 	
 		chance = {
@@ -2973,6 +3022,7 @@ craven_personality = {
 		allow = {
 			NOT = { heir_has_personality = inspiring_leader_personality }
 			NOT = { heir_has_personality = bold_fighter_personality }
+			NOT = { has_country_flag = hsn_prevent_leader_trait }
 		}
 	
 		chance = {
@@ -3610,7 +3660,7 @@ reformist_personality = {
 
 legendary_conqueror_personality = { 
 	
-	allow = { always = no }
+	allow = { has_country_flag = TIM_legendary_conqueror_flag }
 	
 	shock_damage = 0.1 
 	years_of_nationalism = -5
@@ -3626,7 +3676,7 @@ legendary_conqueror_personality = {
 
 great_engineer_personality = {
 	
-	allow = { always = no }
+	allow = { has_country_flag = TIM_legendary_architect_flag }
 	
 	building_budget_multiplier = 1.8
 	build_cost = -0.15
@@ -3638,7 +3688,12 @@ patron_of_arts_personality = {
 	
 	ruler_allow = {
 		allow = {
-			ADM = 4
+			if = {
+				limit = {
+					NOT = { has_country_flag = TIM_patron_of_art_personality_unlock_flag }
+				}
+				ADM = 4
+			}
 		}
 	
 		chance = {
@@ -3646,12 +3701,21 @@ patron_of_arts_personality = {
 				factor = 1
 				ADM = 6
 			}
+			modifier = {
+				factor = 1
+				has_country_flag = TIM_patron_of_art_personality_unlock_flag
+			}
 		}
 	}
 
 	heir_allow = {
 		allow = {
-			heir_ADM = 4
+			if = {
+				limit = {
+					NOT = { has_country_flag = TIM_patron_of_art_personality_unlock_flag }
+				}
+				heir_ADM = 4
+			}
 		}
 	
 		chance = {
@@ -3659,18 +3723,31 @@ patron_of_arts_personality = {
 				factor = 1
 				heir_ADM = 6
 			}
+			modifier = {
+				factor = 1
+				has_country_flag = TIM_patron_of_art_personality_unlock_flag
+			}
 		}
 	}
 	
 	consort_allow = {
 		allow = {
-			consort_ADM = 4
+			if = {
+				limit = {
+					NOT = { has_country_flag = TIM_patron_of_art_personality_unlock_flag }
+				}
+				consort_ADM = 4
+			}
 		}
 
 		chance = {
 			modifier = {
 				factor = 1
 				consort_ADM = 6
+			}
+			modifier = {
+				factor = 1
+				has_country_flag = TIM_patron_of_art_personality_unlock_flag
 			}
 		}
 	}
@@ -3689,7 +3766,7 @@ patron_of_arts_personality = {
 	nation_designer_cost = 5
 }
 
-fu_papal_puppetmaster_personality = {
+papal_puppetmaster_personality = {
 	
 	allow = { always = no }
 	prestige = 1 
@@ -3699,7 +3776,7 @@ fu_papal_puppetmaster_personality = {
 
 iron_crowned_personality = {
 	
-	allow = { always = no }
+	allow = { has_country_flag = HLR_enable_iron_crowned_trait_flag }
 	core_creation = -0.2
 	war_exhaustion = -0.05
 	nation_designer_cost = 30
@@ -3727,4 +3804,99 @@ peasant_revolt_leader_personality = {
 	
 	chance = {	
 	}
+}
+
+merchant_basileus_personality = {	
+	allow = {
+		OR = {
+			is_playing_custom_nation = yes
+			has_country_flag = feo_merchant_basileus_flag
+		}
+		culture_group = byzantine
+	}
+	
+	chance = { }
+	
+	trade_efficiency = 0.1
+	global_trade_goods_size_modifier = 0.1
+	
+	nation_designer_cost = 15
+}
+
+orangist_stadholder_personality = {
+	allow = {
+		always = no
+	}
+	nation_designer_cost = 40
+	yearly_absolutism = 0.5
+	global_unrest = -2
+}
+
+reaver_personality = {
+	ruler_allow = {
+		allow = {
+			MIL = 3
+		}
+	
+		chance = {
+			modifier = {
+				factor = 1
+				is_monarch_leader = yes
+			}
+			modifier = {
+				factor = 1
+				MIL = 6
+			}
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			heir_MIL = 3
+		}
+	
+		chance = {
+			modifier = {
+				factor = 1
+				is_heir_leader = yes
+			}
+			modifier = {
+				factor = 1
+				heir_MIL = 6
+			}
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			consort_MIL = 3
+		}
+
+		chance = {
+			modifier = {
+				factor = 1
+				consort_MIL = 6
+			}
+		}
+	}
+	allow = {
+		has_country_flag = unlocked_reaver_personality_flag
+	}
+
+	available_province_loot = 0.15
+	raze_power_gain = 0.2
+	nation_designer_cost = 2
+	
+	gift_chance = -50
+	wants_land = yes
+}
+
+last_knight_personality = {
+	allow = {
+		always = no
+	}
+	nation_designer_cost = 60
+	
+	cavalry_power = 0.1
+	army_tradition_from_battle = 0.5
 }

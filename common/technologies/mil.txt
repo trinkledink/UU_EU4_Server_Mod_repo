@@ -1,10 +1,11 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.0
 monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
 ahead_of_time = {
 	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_mil = 1
 }
 
 # Pre-era techs
@@ -557,7 +558,7 @@ technology = {
 	
 	infantry_fire		= 	0.5
 		
-	enable = swivel_cannon		
+	enable = swivel_cannon
 	enable = howitzer
 
 	combat_width = 2
@@ -609,7 +610,7 @@ technology = {
 	enable = muscovite_cossack	
 
 	enable = horse_artillery_unit
-	enable = coehorn_mortar		
+	enable = coehorn_mortar
 }
 
 technology = {
@@ -695,7 +696,7 @@ technology = {
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
-	enable = royal_mortar	
+	enable = royal_mortar
 	enable = licorne
 }
 
@@ -823,7 +824,7 @@ technology = {
 	
 	#Defense in Depth
 		
-	enable = flying_battery  
+	enable = flying_battery
 	enable = grand_battery
 }
 
