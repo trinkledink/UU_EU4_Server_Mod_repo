@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.3
+#UU UPDATED 1.37.0
 african_great_lakes={
 	location=4064
 	color={
