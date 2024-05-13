@@ -12169,12 +12169,12 @@ orm_hormuz_merchants_influence = {
     trade_goods_size_modifier = 0.25
 }
 
-orm_religious_culture_buff = {
+orm_religious_culture_buff = {	##UU Change for religious culture
 	religion = yes
 	local_unrest = -1
-	local_tax_modifier = 0.1
-	local_production_efficiency = 0.1
-	local_manpower_modifier = 0.1
+	local_tax_modifier = 0.15
+	local_production_efficiency = 0.15
+	local_manpower_modifier = 0.15
     province_trade_power_modifier = 0.1
     local_governing_cost = -0.1
 }

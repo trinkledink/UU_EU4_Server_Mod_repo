@@ -1,5 +1,5 @@
-﻿#UU UPDATED 1.36.2
- #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL
+﻿#UU UPDATED 1.37.0
+ #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL. DO NOT REMOVE THIS FROM THE MOD
 l_english:
  PROV1:0 "Stockholm"
  PROV2:0 "Östergötland"
@@ -762,7 +762,7 @@ l_english:
  PROV759:0 "Diamantina"
  PROV760:0 "Porto Seguro"
  PROV761:0 "Espirito Santo"
- PROV762:0 "São Tome"
+ PROV762:0 "São Tomé"
  PROV763:0 "Rio de Janeiro"
  PROV764:0 "Santo Amaro"
  PROV765:0 "Minas Gerais"

@@ -1,4 +1,4 @@
-﻿#UU UPDATED 1.36.2
+﻿#UU UPDATED 1.37.0
 #UU Fetishist/Muslim school loc fixes
 l_english:
  ###ETH FLAVOR EVENTS###
@@ -587,7 +587,7 @@ l_english:
  GZI_ADJ:0 "Zimbabwe"
  NBI:0 "Nubia"
  NBI_ADJ:0 "Nubian"
- RZI:0 "Rozwi" #UU Change
+ RZI:0 "Rozwi Empire"
  RZI_ADJ:0 "Rozwi"
  KIT:0 "Kitara"
  KIT_ADJ:0 "Kitaran"
@@ -664,6 +664,7 @@ l_english:
  estate_church_one_faith_one_culture:0 "Religious Culture"
  estate_church_one_faith_one_culture_desc:0 "Unity in a society can only be achieved when the [Root.GetClergyName] not only takes the spiritual matters in hand but also takes a more crucial role in the cultural and social questions of the realm."
  estate_church_one_faith_one_culture_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!" #UU change
+estate_church_one_faith_one_culture_buffed_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!\nLocal Trade Power: §G+10.0%§!\nProvince Governing Cost: §G-10.0%§!" #UU change
  estate_church_one_faith_one_culture_gtb:2 "Every owned province, which is NOT in the §Y[Root.Culture.GetGroupName]§! culture group and has NOT an §Yaccepted culture§!, gains '§YHeretic Culture§!', giving the following effects:\nLocal Unrest: §R+3.00§!\nLocal Culture Conversion Cost: §R+10.0%§!" #UU change
  estate_church_one_faith_one_culture_rta:0 "The modifier '§YReligious Society§!' is removed from all §Y[Root.Religion.GetName]§! provinces with an §Yaccepted culture§! or with a culture of the §Y[Root.Culture.GetGroupName]§! culture group."
  estate_church_one_faith_one_culture_rtb:0 "The modifier '§YHeretic Culture§!' is removed from all provinces without an §Yaccepted culture§! and without a culture of the §Y[Root.Culture.GetGroupName]§! culture group."
@@ -725,7 +726,7 @@ l_english:
  mal_add_disaster_stability_tt:1 "Gain §G1§! Stability (§G50§! Administrative Power if you have 3 Stability already) if the §YDecline of Mali§! disaster is active."
  set_prestige_to_zero_tt:0 "Set [This.GetName]'s Prestige to §Y0§!."
  enable_cult_for_heirs_tt:0 "Heirs can choose a second §YCult§! for your country!" #UU Change
- disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§! for your country!" #UU change
+ disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§! for your country!" #UU Change
  unlock_cult_through_selection_tt:0 "Unlock a §YCult§! of your choice.\nCults from other religions require our knowledge of their existence first in order to unlock them."
  enable_development_on_buildings_built_tt:0 "Constructing non-defensive buildings will §Yincrease§! development of the province.\nDestroying buildings, which were constructed while this effect is active, will however remove development."
  enable_primary_cult_tt:1 "Enable the usage of a §YPrimary Cult§!, which increases the strength of the cult and removes the loss of Stability upon the death of a monarch, but disables using other cults.\nPrimary Cults can be swapped every §Y50§! years."
@@ -830,7 +831,7 @@ l_english:
  allows_every_time_invite_of_jafari_school:0 "Allows to invite a Scholar from the §YJafari School§! without diplomatic relations."
  allows_every_time_invite_of_zaidi_school:0 "Allows to invite a Scholar from the §YZaidi School§! without diplomatic relations."
  hanafi_school_bonus_tt:0 "Idea Cost: §G-5.0%§!" #UU Change
- hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!\nMaximum Absolutism: §G+10%§!"
+ hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!\nMaximum Absolutism: §G+10.0§!"
  maliki_school_bonus_tt:0 "Reform Progress Growth: §G+20.0%§!"
  shafii_school_bonus_tt:0 "Merchants: §G+1§!\nTrade Steering: §G+15.0%§!" #UU change
  ismaili_school_bonus_tt:0 "Yearly Legitimacy: §G+1.00§!"
@@ -915,11 +916,11 @@ l_english:
  federal_celebrate_rituals_together_desc:0 "In special times it is important to remember what binds us together and celebrate the festivals of our people."
  federal_gain_tribal_allegiance_title:0 "Confederal Kingdoms: Gain Tribal Allegiance"
  federal_gain_tribal_allegiance_desc:0 "The kingdoms proclaim their allegiance to the [Root.Monarch.GetTitle]."
- kitara_nation_title:0 "Restore the Empire of Kitara" #UU Change
+ kitara_nation_title:0 "Claim the Empire of Kitara Title"
  kitara_nation_desc:0 "After much struggle and suffering, we have united the people of the Great Lakes and mended the divide that separated us. It is time now to rebuild the unity that was once lost and raise again the banner of Kitara so everyone might see that we stand as one."
- macina_nation_title:0 "Form Massina" #UU Change
+ macina_nation_title:0 "Form Macina"
  macina_nation_desc:0 "Our people have endured terrible injustice and tyranny under our old overlords, but we have finally freed ourselves of their yoke and are now ready to carve our own path. Let's raise our new banner as a symbol of our freedom and as a warning for those who would dare to threaten it."
- mali_nation_title:0 "Restore the Mali Empire" #UU Change
+ mali_nation_title:0 "Take the Mantle of Mali"
  mali_nation_desc:0 "The powerful and prosperous Mali Empire fell many years ago due to jealous neighbors and squabbling chieftains. Despite that, the spirit of Mali can not be destroyed, it will always survive inside its people. Now the lands around Manding are united again, it is time for a new Mansa to rise up and bring the empire back to its former glory."
  mossi_nation_title:0 "Unite the Mossi Kingdoms"
  mossi_nation_desc:0 "For too many years the sons of princess Yennega have fought between themselves. But now the constant rivalries and feuds have been quenched and long lost brothers are again riding side by side. It is time to turn our eyes to the world and let them know that the Mossi are one."
@@ -1016,7 +1017,7 @@ l_english:
  eth_market_of_the_west_desc:1 "The trade in the Red Sea was once one of the most important trade nodes in the world. It connected the Roman Empire with the riches of India, which allowed the Romans to enjoy Indian goods without having the trouble to deal with the Persians. This changed though when its successor, the Byzantine Empire, fell to the Ottoman Turks. Ever since, the Red Sea is no longer as profitable as it once was - and due to the colonialism of the Europeans, it most likely will never be again.\nBut we still have options. Thanks to our new found connection with the Europeans it is possible for us to be present in their much more active trade nodes. All we need to do is reach their rich market one way or another."
  eth_ideas_and_institutions_title:0 "Ideas of the West"
  eth_ideas_and_institutions_desc:1 "While our religion and culture is the most important aspect of our civilization. Technology wasn't really of great concern for us.\nUntil we found out what the Europeans are capable of. Due to our trade relations with the Europeans, merchants were able to experience the engineering of the European first hand. Especially their technological achievements in the military left our merchants highly impressed, and our nation worried. We must ensure that none of these Europeans get ahead of us!"
- has_better_tech_than_westerns_tt:0 "No §YWestern§! country is ahead in any technology compared to §Y[Root.GetName]§!."
+ has_better_tech_than_westerns_tt:1 "No §YWestern§! country has more technologies than §Y[Root.GetName]§!."
  has_more_institutions_than_westerns_tt:1 "No §YWestern§! country embraced more institutions than §Y[Root.GetName]§!."
  eth_westernize_the_army_title:0 "Modernize the Army"
  eth_westernize_the_army_desc:0 "Our nation was able to see the efficiency and the brutality of the European armies in the past. Especially during the conflicts with the Sultanate Adal, [Root.GetName] witnessed the technological achievements in warfare thanks to the Portuguese. We should modernize our army and adapt the Western Technology or else our nation might fall to competent European invaders."
@@ -1453,7 +1454,7 @@ l_english:
  zan_establish_contact_with_persia_bt:1 "The owner of §Y[2218.GetName]§! is either an ally or a subject of §Y[Root.GetName]§!."
  zan_build_manufactories_ct:0 "Up to §Y6§! owned provinces with a §YManufactory§! gain §G2§! Production."
  zan_explore_the_malacca_trade_tt:0 "§Y[Root.GetName]§! gains permanent claims on the islands §YSumatra§! and §YJava§!."
- zan_conquer_madagascar_tt:0 "Every province of §YMadagascar§! owned by [Root.GetName] or its subjects get the province modifier '§YSwahili Overtaking§!' for §Y25 years§!, giving the following events:\nLocal Missionary Strength: §G+2.0%§!\nLocal Goods Produced: §G+0.25§!"
+ zan_conquer_madagascar_tt:1 "Every province of §YMadagascar§! owned by [Root.GetName] or its subjects get the province modifier '§YSwahili Overtaking§!' for §Y25 years§!, giving the following effects:\nLocal Missionary Strength: §G+2.0%§!\nLocal Goods Produced: §G+0.25§!"
  zan_colonize_the_cape_ct:0 "§Y[Root.GetName]§! gains a permanent claim on every province with a §YCenter of Trade§! in the §YKongo§! and §YCentral Africa§! region."
  zan_settle_trade_posts_ct:0 "Gain §G4 years§! worth of Trade Income."
  ZAN_DOMINATION:0 "Kilwan Merchant Domination"
@@ -2413,8 +2414,8 @@ l_english:
  flavor_zan.11.t:0 "Persia expelled the ambassador!"
  flavor_zan.11.desc:0 "Bad news, my sultan! Our embassy reached the distant land of [From.GetAdjective], but their ruler was narrow minded enough to reject our Farsi origin, and expel our people from their country."
  flavor_zan.11.a:0 "Oh, those filthy bastards!"
- flavor_zan.12.t:0 "The Destruction of the [embassy_owner.GetAdjective] Embassy"
- flavor_zan.12.desc:0 "Despite our best efforts, we lost the [embassy_owner.GetAdjective] Embassy! Our connection with [embassy_owner.GetName] has been severed. Only time will tell how this will impact our relation..."
+ flavor_zan.12.t:1 "The Destruction of the Persian Embassy"
+ flavor_zan.12.desc:1 "Despite our best efforts, we lost the Persian Embassy! Our connection with their diplomats has been severed. Only time will tell how this will impact our relation..."
  flavor_zan.12.a:0 "That's not good..."
  flavor_zan.12.b:0 "That's not good..."
  flavor_zan.13.t:1 "[From.GetName] lost the [Root.GetAdjective] embassy!"

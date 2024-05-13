@@ -8,6 +8,12 @@
   RZI_ADJ:0 "Rozwi"
  KUR:0 "Courland" #Actual English name for this place
   KUR_ADJ:0 "Couronian"
+ AVE:0 "Dual Monarchy"
+   AVE_ADJ:0 "Anglo-French"
+  AV0:0 "Anglo-French Republic"
+   AV0_ADJ:0 "Anglo-French"
+  AV1:0 "Anglo-French Union"
+   AV1_ADJ:0 "Anglo-French"
 
  #Trade Nodes
  katsina:0 "Hausaland"
@@ -43,6 +49,11 @@
  white_house:0 "District of Columbia" 
  sankore_madrasah:0 "Sankoré Madrasah"
  belem_tower:0 "Belém Tower"
+ st_basil_cathedral:0 "St. Basil's Cathedral" #UU Change
+ grand_canal_1:0 "Grand Canal: Hangzhou"  #UU Change
+ grand_canal_2:0 "Grand Canal: Suzhou"    #UU Change
+ grand_canal_3:0 "Grand Canal: Zhenjiang" #UU Change
+ grand_canal_4:0 "Grand Canal: Yangzhou"  #UU Change
 
  #Ideas 
  indigenous_ideas:0 "Advancement Ideas"
@@ -74,6 +85,34 @@
  obj_huge_capital_desc:0 "At least §Y50§! development in the capital."
  obj_two_institutions_desc:0 "Own and control at least §Y2§! provinces where institutions originated from."
 
- #Misc
- desc_gbr_pax_britannica:1 "An empire second to none, our people enjoy freedom, security and stability. Truly a Pax Britannica."
- desc_ave_pax_angevina:1 "An empire second to none, our people enjoy freedom, security and stability. Truly a Pax Andecavina."
+ #Hedgemons
+ HEGEMONS_TITLE_WIN:0 "Hedgemons"
+ lost_hegemony:0 "Lost Hedgemony"
+ IS_NOT_HEGEMON_TRIGGER:0 "Is NOT a hedgemon"
+ IS_HEGEMON_TRIGGER:0 "Is a Hedgemon"
+ LOST_HEGEMON_US_TITLE:0 "Hedgemony Lost"
+ LOST_HEGEMON_US_SETUP:0 "When we lose our position as a hedgemon!"
+ LOST_HEGEMON_US_1:0 "Hedgemony lost!"
+ LOST_HEGEMON_THEM_TITLE:0 "Hedgemony Lost"
+ LOST_HEGEMON_THEM_SETUP:0 "When another nation lose their position as a hedgemon."
+ LOST_HEGEMON_THEM_1:0 "Hedgemony lost!"
+ GAIN_HEGEMON_US_TITLE:0 "Hedgemony Gained"
+ GAIN_HEGEMON_US_SETUP:0 "When you proclaim a Hedgemony"
+ GAIN_HEGEMON_US_1:0 "Hedgemony proclaimed!"
+ GAIN_HEGEMON_THEM_TITLE:0 "Hedgemony Gained"
+ GAIN_HEGEMON_THEM_SETUP:0 "When another nation proclaims a Hedgemony"
+ GAIN_HEGEMON_THEM_1:0 "Hedgemony proclaimed!"
+ cb_hegemon:0 "Contain Hedgemon"
+ military_hegemon:0 "Military Hedgemon"
+ naval_hegemon:0 "Naval Hedgemon"
+ economic_hegemon:0 "Economic Hedgemon"
+ HEGEMON_ALREADY:0 "You are already a hedgemon!"
+ OTHER_HEGEMON_ALREADY:0 "There is already a $WHICH|Y$. You need to make sure $WHO|Y$ loses a war, which will make them lose their hedgemony."
+ WE_ARE_BOTH_HEGEMONS:0 "Hedgemons can not ally with other Hedgemons"
+ DIPLO_HEGEMON:0 "$WHO$ is a Hedgemon: "
+ is_hegemon:0 "Hedgemon"
+ allied_to_hegemon:0 "Allied to Hedgemon"
+ SCORE_HEGEMONY:2 "Final score is multiplied by $VAL$, as being a Hedgemon increases it, while being allied to one decreases it."
+ PROCLAIM_HEGEMONY_DESC:0 "Proclaiming a hedgemony will give us plenty of benefits, increasing our power projection, but will also make us stand more alone in the world!"
+ HAVE_HEGEMONY_PROGRESS_LESS_THAN:0 "Hedgemony Power is less than $VAL|Y%$"
+ HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "Hedgemony Power is at least $VAL|Y%$"

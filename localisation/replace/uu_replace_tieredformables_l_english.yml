@@ -1,8 +1,8 @@
 ﻿l_english: 
  elbian_nation_title:0 "(§T§O3§!§!)@ELB Form the Elbian Confederation"
  elbian_nation_diplomatically_title:0 "(§T§O3§!§!)@ELB Confederate Elbia Diplomatically"
- form_austrohungarian_empire_title:0 "(§R4§!)@AUH Form Austro-Hungarian Empire"
- form_austrohungarian_empire_diplomatically_title:0 "(§R4§!)@AUH Form Austria-Hungary Diplomatically"
+ #form_austrohungarian_empire_title:0 "(§R4§!)@AUH Form Austro-Hungarian Empire"
+ #form_austrohungarian_empire_diplomatically_title:0 "(§R4§!)@AUH Form Austria-Hungary Diplomatically"
  ctg_nation_title:0 "(§T§O3§!§!)@CTG Reform Carthage"
  songhai_nation_title:0 "(§Y2§!)@SON Unite the Songhai"
  uu_sokoto_nation_title:0 "(§R4§!)@SOK Establish the Sokoto Caliphate"
@@ -10,7 +10,7 @@
  uu_hindustan_nation_title:0 "(§M5§!)@HIN Unite Hindustan"
  uu_bharat_nation_title:0 "(§M5§!)@BHA Unite Bharatvarsha"
  uu_restore_roman_empire_kog:0 "(§M5§!)@ROM Restore the Roman Empire"
- uu_unite_madagascar_title:0 "(§Y2§!)@[Root.GetTag] Unite the Island"
+ uu_unite_madagascar_title:0 "(§Y2§!)@[Root.GetTag] Unify the Island"
  #
  siamese_nation_title:0 "(§T§O3§!§!)@SIA Form Siamese Nation"
  restore_dai_viet_title:0 "(§Y2§!)@DAI Restore the Kingdom of Dai Viet" #UU Change
@@ -72,7 +72,7 @@
  habsburg_nation_title:1 "(§T§O3§!§!)@HAB Reclaim the Archduchy of Austria"
  bulgaria_nation_title:0 "(§Y2§!)@BUL Restore Bulgaria"
  kongo_nation_title:0 "(§Y2§!)@KON Restore the Kongo Kingdom"
- ethiopia_nation_title:0 "(§R4§!)@ETH Restore Solomonid's Legacy"
+ ethiopia_nation_title:0 "(§R4§!)@ETH Restore Solomonids' Legacy"
  aksumite_nation_title:0 "(§M5§!)@AKS Restore Aksum"
  great_zimbabwe_nation_title:0 "(§R4§!)@GZI Restore Zimbabwe"
  hausa_nation_title:0 "(§Y2§!)@HAU Unite the Hausa"
@@ -115,6 +115,8 @@
  bukharan_nation_title:0 "(§Y2§!)@BUK Form Bukhara"
  arab_nation_title:0 "(§R4§!)@ARB Form Arabia"
  tibetan_nation_title:0 "(§Y2§!)@TIB Form Tibetan Nation"
+ form_austria_hungary_title:0 "(§R4§!)@AUH Form Austria-Hungary"
+ great_moravia_title:0 "(§T§O3§!§!)@GMA Restore Great Moravia"
 
   
 

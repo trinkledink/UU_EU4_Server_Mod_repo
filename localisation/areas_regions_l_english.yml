@@ -1,6 +1,6 @@
 ﻿ #UU Improved province names
- #UU UPDATED 1.36.2
- #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL
+ #UU UPDATED 1.37.0
+ #NOTE: THIS FILE IS NECESSARY FOR USING THE MAP EDITOR TOOL. DO NOT REMOVE THIS FROM THE MOD
 l_english:
  brittany_area:0 "Brittany"
  brittany_area_name:0 "Brittany"
@@ -10,7 +10,7 @@ l_english:
  normandy_area_adj:0 "Normand"
  provence_area:0 "Provence"
  provence_area_name:0 "Provence"
- provence_area_adj:0 "Provencal"
+ provence_area_adj:0 "Provençal"  #UU Added Accent
  guyenne_area:0 "Guyenne"
  guyenne_area_name:0 "Guyenne"
  guyenne_area_adj:0 "Guyennese"
@@ -83,10 +83,10 @@ l_english:
  valencia_area:0 "Valencia"
  valencia_area_name:0 "Valencia"
  valencia_area_adj:0 "Valencian"
- lower_andalucia_area:0 "Lower Andalucía"
+ lower_andalucia_area:0 "Lower Andalucía" #UU Added Accent
  lower_andalucia_area_name:0 "Córdoba"
  lower_andalucia_area_adj:0 "Córdoban"
- upper_andalucia_area:0 "Upper Andalucía"
+ upper_andalucia_area:0 "Upper Andalucía" #UU Added Accent
  upper_andalucia_area_name:0 "Granada"
  upper_andalucia_area_adj:0 "Granadan"
  castille_area:1 "South Castile"
@@ -128,7 +128,7 @@ l_english:
  liguria_area:0 "Liguria"
  liguria_area_name:0 "Liguria"
  liguria_area_adj:0 "Ligurian"
- corsica_sardinia_area:1 "Western Mediterranean Islands"
+ corsica_sardinia_area:2 "Tyrrhenian Isles"
  corsica_sardinia_area_name:0 "Sardinia"
  corsica_sardinia_area_adj:0 "Sardinian"
  sicily_area:1 "Eastern Sicily"
@@ -683,7 +683,7 @@ l_english:
  hautes_plaines_area:0 "Hautes Plains"
  hautes_plaines_area_name:0 "Titteri"
  hautes_plaines_area_adj:0 "Titterian"
- ouled_nail_area:0 "Ouled Naïl"
+ ouled_nail_area:0 "Ouled Naïl"   #UU Added Accent
  ouled_nail_area_name:0 "Ouled Naïl"
  ouled_nail_area_adj:0 "Ouled Naïl"
  djerba_area:0 "Djerba"
@@ -728,7 +728,7 @@ l_english:
  jubba_area:0 "Jubba"
  jubba_area_name:0 "Jubba"
  jubba_area_adj:0 "Jubban"
- tanzania_area:0 "Tanganyika" #Tanzania makes no sense without Zanzibar
+ tanzania_area:0 "Tanganyika" #UU Tanzania makes no sense without Zanzibar
  tanzania_area_name:0 "Tanganyika"
  tanzania_area_adj:0 "Tanganyikan"
  buha_area:0 "Buha"
@@ -1003,7 +1003,7 @@ l_english:
  dendi_area_name:0 "Dendi"
  dendi_area_adj:0 "Dendi"
  azbin_area:1 "West Azbin"
- azbin_area_name:1 "Aïr"
+ azbin_area_name:1 "Aïr"    #UU Added Accent
  azbin_area_adj:1 "Aïr"
  east_azbin_area:0 "East Azbin"
  east_azbin_area_name:0 "Azbin"
@@ -1020,7 +1020,7 @@ l_english:
  west_africa_coast_area:0 "West African Coast"
  west_africa_coast_area_name:0 "Gold Coast"
  west_africa_coast_area_adj:0 "Golden"
- guinea_coast_area:0 "Guinea Coast" #changed because new guinea state added
+ guinea_coast_area:0 "Guinea Coast" #UU changed because new guinea state added
  guinea_coast_area_name:0 "Sierra Leone"
  guinea_coast_area_adj:0 "Guinea Coast"
  south_atlantic_islands_area:0 "South Atlantic Islands"
@@ -1101,12 +1101,12 @@ l_english:
  isfahan_area:0 "Isfahan"
  isfahan_area_name:0 "Isfahan"
  isfahan_area_adj:0 "Isfahani"
- azerbaijan_area:0 "Azerbaijan"
- azerbaijan_area_name:0 "Azerbaijan"
- azerbaijan_area_adj:0 "Azerbaijani"
- tabriz_area:0 "Tabriz"
- tabriz_area_name:0 "Tabriz"
- tabriz_area_adj:0 "Tabrizian"
+ azerbaijan_area:1 "Zanjan"
+ azerbaijan_area_name:1 "Zanjan"
+ azerbaijan_area_adj:1 "Zanjani"
+ tabriz_area:1 "Azerbaijan"
+ tabriz_area_name:1 "Azerbaijan"
+ tabriz_area_adj:1 "Azerbaijani"
  tabarestan_area:0 "Tabarestan"
  tabarestan_area_name:0 "Tabarestan"
  tabarestan_area_adj:0 "Tabarestani"
@@ -1743,7 +1743,7 @@ l_english:
  guapore_area:0 "Guapore"
  guapore_area_name:0 "Guapore"
  guapore_area_adj:0 "Guaporan"
- sao_paolo_area:0 "São Paulo"
+ sao_paolo_area:0 "São Paulo" #UU Added Accent
  sao_paolo_area_name:0 "Paulo"
  sao_paolo_area_adj:0 "Pauloan"
  rio_de_janeiro_area:0 "Rio de Janeiro"
@@ -1755,10 +1755,10 @@ l_english:
  pernambuco_area:0 "Pernambuco"
  pernambuco_area_name:0 "Pernambuco"
  pernambuco_area_adj:0 "Pernambucoan"
- sao_francisco_area:0 "São Francisco"
+ sao_francisco_area:0 "São Francisco" #UU Added Accent
  sao_francisco_area_name:0 "Paratinga"
  sao_francisco_area_adj:0 "Paratingan"
- maranhao_area:0 "Maranhão"
+ maranhao_area:0 "Maranhão" #UU Added Accent
  maranhao_area_name:0 "Maranhão"
  maranhao_area_adj:0 "Maranhãon"
  piaui_area:0 "Piauí"
@@ -1767,8 +1767,8 @@ l_english:
  amapa_area:0 "Amapá"
  amapa_area_name:0 "Amapá"
  amapa_area_adj:0 "Amapán"
- grao_para_area:0 "Grão Para"
- grao_para_area_name:0 "Belém"
+ grao_para_area:0 "Grão Para" #UU Added Accent
+ grao_para_area_name:0 "Belém" #UU Added Accent
  grao_para_area_adj:0 "Belemian"
  amazon_area:0 "Amazon"
  amazon_area_name:0 "Amazonia"
@@ -2343,7 +2343,7 @@ l_english:
  guinea_region:0 "Guinea"
  guinea_region_name:0 "Guinea"
  guinea_region_adj:0 "Guinean"
- sao_tome_area:0 "São Tomé"
+ sao_tome_area:0 "São Tomé"     #UU Added Accent
  sao_tome_area_name:0 "São Tomé"
  sao_tome_area_adj:0 "São Toméan"
  niger_region:0 "Niger"
