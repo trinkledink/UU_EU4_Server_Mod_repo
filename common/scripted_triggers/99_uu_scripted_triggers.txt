@@ -83,7 +83,7 @@ can_form_tier_two_trigger = { #Kingdoms, usually for one culture specifically
         is_or_was_tag = { tag = LOT } #Lotharingia
         is_or_was_tag = { tag = SPA } #Spain 
         is_or_was_tag = { tag = POL } #Poland 
-        #is_or_was_tag = { tag = GMA } #Great Moravia
+        is_or_was_tag = { tag = GMA } #Great Moravia
         is_or_was_tag = { tag = MOS } #Muscovy Grand Duchy (so you cannot form Poland)
         is_or_was_tag = { tag = LIT } #Lithuania Grand Duchy (so you cannot form Poland)
         is_or_was_tag = { tag = ITA } #Italy 
@@ -183,7 +183,7 @@ can_form_tier_three_trigger = { #Major Kingdoms, usually composed of other kingd
         is_or_was_tag = { tag = LOT } #Lotharingia
         is_or_was_tag = { tag = SPA } #Spain 
         is_or_was_tag = { tag = POL } #Poland 
-        #is_or_was_tag = { tag = GMA } #Great Moravia
+        is_or_was_tag = { tag = GMA } #Great Moravia
         is_or_was_tag = { tag = MOS } #Muscovy Grand Duchy (so you cannot form Poland)
         is_or_was_tag = { tag = LIT } #Lithuania Grand Duchy (so you cannot form Poland)
         is_or_was_tag = { tag = ITA } #Italy 
