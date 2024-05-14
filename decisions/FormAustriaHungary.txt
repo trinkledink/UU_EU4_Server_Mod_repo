@@ -117,7 +117,7 @@ country_decisions = {
 			if = {
 				limit = {
 					is_part_of_hre = yes
-					is_elector = no
+					# is_elector = no	#UU an elector leaving is even worse!
 					is_emperor = no
 				}
 				emperor = {
@@ -130,6 +130,12 @@ country_decisions = {
 				emperor = {
 					country_event = { id = hre_event.5 }
 				}
+			}
+			if = {	#UU touch
+				limit = {
+					is_emperor = yes
+					}
+				dismantle_hre = yes
 			}
 			add_prestige = 25
 			change_tag = AUH

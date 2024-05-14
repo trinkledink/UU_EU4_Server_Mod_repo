@@ -1,0 +1,6 @@
+
+uu_cb_tim_crush_rebellion = {
+	is_triggered_only = yes
+	
+	war_goal = UU_TIM_crush_rebellion
+}

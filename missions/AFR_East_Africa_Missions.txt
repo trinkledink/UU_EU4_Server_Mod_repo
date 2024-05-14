@@ -571,7 +571,7 @@ east_african_diplomatic_slot = {
 		trigger = {
 			is_great_power = yes
 			684 = {
-				OR = {	#uu adapted
+				OR = {	#uu changed
 					strongest_trade_power = {
 						has_opinion = {
 							who = ROOT
@@ -582,7 +582,7 @@ east_african_diplomatic_slot = {
 				}
 			}
 			1371 = {
-				OR = {	#uu adapted
+				OR = {	#uu changed
 					strongest_trade_power = {
 						has_opinion = {
 							who = ROOT
@@ -593,7 +593,7 @@ east_african_diplomatic_slot = {
 				}
 			}
 			4233 = {
-				OR = {	#uu adapted
+				OR = {	#uu changed
 					strongest_trade_power = {
 						has_opinion = {
 							who = ROOT

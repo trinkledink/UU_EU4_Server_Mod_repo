@@ -1,0 +1,41 @@
+UU_TIM_crush_rebellion = {
+	type = take_capital	#uu changed from take_core
+
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		allowed_provinces = {
+			is_core = ROOT
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_become_vassal
+		}
+		
+		prov_desc = ALL_CORES
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		allowed_provinces = {
+			is_core = FROM
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_become_vassal
+		}
+		
+		prov_desc = ALL_CORES	
+	}
+	
+	war_name = UU_TIM_CRUSH_REBELLION_WARNAME
+}
