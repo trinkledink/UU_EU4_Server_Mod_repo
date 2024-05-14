@@ -147,8 +147,8 @@ country_event = {
 		}
 		declare_war_with_cb = {
 			who = TIM
-			casus_belli = uu_cb_tim_crush_rebellion #cb_conquest
-			#war_goal_province = 446
+			casus_belli = cb_conquest
+			war_goal_province = 446
 		}
 		goto = 446
 	}
