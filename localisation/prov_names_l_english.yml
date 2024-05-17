@@ -3138,7 +3138,7 @@ l_english:
  PROV4152:0 "Kainuu"
  PROV4153:0 "The Scandes"
  PROV4154:0 "The Pyrenees"
- PROV4155:0 "The Carpathians"
+ PROV4155:0 "Eastern Carpathians" #UU Changed because of new added wasteland tile
  PROV4156:0 "The Caucasus"
  PROV4157:0 "The Alps"
  PROV4158:0 "Janjiro"
@@ -3808,3 +3808,4 @@ l_english:
  PROV5015:0 "Lokoro"
  PROV5016:0 "Upper Tshuapa"
  PROV5017:0 "Alcazarquivir"
+PROV5018:0 "Southern Carpathians"
