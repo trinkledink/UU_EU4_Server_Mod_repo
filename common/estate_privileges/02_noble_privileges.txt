@@ -1,4 +1,4 @@
-# UU UPDATED 1.37.0
+# UU UPDATED 1.37.1
 estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -3927,7 +3927,7 @@ estate_nobles_ITA_military_governors = {
 		}
 	}
 	benefits = {
-		territories_governing_cost = -0.05
+		state_governing_cost = -0.05
 	}
 	on_granted = {
 		custom_tooltip = ITA_specify_the_conditional_effects

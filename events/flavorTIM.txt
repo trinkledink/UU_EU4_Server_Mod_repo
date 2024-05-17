@@ -9,7 +9,7 @@
 namespace = flavor_tim
 normal_or_historical_nations = yes
 
-#UU UPDATED 1.37.0
+#UU UPDATED 1.37.1
 
 # Muhammad Baysonqor's Rebellion
 country_event = {
@@ -1392,8 +1392,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { has_country_flag = TIM_muhammad_juki_no_longer_candidate }
-	}
+        tag = TIM
+        NOT = { has_country_flag = TIM_muhammad_juki_no_longer_candidate }
+    } 
 	
 	immediate = {
 		hidden_effect = {
