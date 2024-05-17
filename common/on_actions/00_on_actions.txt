@@ -1,5 +1,5 @@
 #When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.1
 # country
 on_startup = {
 	emperor = {
@@ -107,7 +107,8 @@ on_startup = {
 			}
 		}
 		set_country_flag = formed_tier_five_flag
-	} else_if = {
+	} 
+	else_if = {
 		limit = {
 			NOT = { has_country_flag = formed_tier_four_flag }
 			OR = {
@@ -155,7 +156,8 @@ on_startup = {
 			}
 		}
 		set_country_flag = formed_tier_four_flag
-	} else_if = {
+	} 
+	else_if = {
 		limit = {
 			NOT = { has_country_flag = formed_tier_three_flag }
 			OR = {
@@ -194,7 +196,8 @@ on_startup = {
 			}
 		}
 		set_country_flag = formed_tier_three_flag
-	} else_if = {
+	} 
+	else_if = {
 		limit = {
 			NOT = { has_country_flag formed_tier_two_flag }
 			OR = {
@@ -745,7 +748,12 @@ on_battle_won_country = {
 			}
 			from = {
 				war_with = root
-				NOT = { has_country_flag = hun_uniqe_defeated_country }
+				NOT = {
+					check_variable = {
+						which = hun_uniqe_defeated_country
+						value = 3
+					}
+				}
 			}
 		}
 		set_country_flag = hun_won_battle
@@ -1041,7 +1049,21 @@ on_battle_won_unit = {
 			random_war_enemy_country = {
 				limit = { has_country_flag = hun_lost_battle }
 				clr_country_flag = hun_lost_battle
-				set_country_flag = hun_uniqe_defeated_country
+				if = {
+					limit = {
+						NOT = { check_variable = { which = hun_uniqe_defeated_country value = 1 } }
+					}
+					set_variable = {
+						which = hun_uniqe_defeated_country
+						value = 1
+					}
+				}
+				else = {
+					change_variable = {
+						which = hun_uniqe_defeated_country
+						value = 1
+					}
+				}
 			}
 		}
 	}
@@ -2008,6 +2030,13 @@ on_annexed = {
 			add_dip_power = 100
 		}
 	}
+	if = {
+		limit = {
+			FROM = { tag = TUR }
+			HUN = { has_country_modifier = hun_avenge_varna }
+		}
+		HUN = { remove_country_modifier = hun_avenge_varna }
+	}
 }
 
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
@@ -2252,86 +2281,6 @@ on_adm_development = {
 			}
 		}
 	}
-	if = {
-		limit = { owner = { has_country_flag = enable_supplemental_development_flag } }
-		random_list = {
-			20 = { add_base_tax = 1 }
-			80 = { }
-		}
-	}
-	if = {
-		limit = { 
-			owner = { has_country_modifier = lit_increased_dev_modifier }
-		}
-		add_base_tax = 1 
-	}
-	if = { 
-		limit = { has_state_edict = chinese_industrialization } 
-		random_list = {
-			10 = { add_base_tax = 1 } 
-			10 = { add_prosperity = 1 } 
-			10 = { add_province_modifier = { name = qng_center_of_industrialization_modifier duration = 3650 } }
-			70 = {  } 
-		}
-	}
-	if = {
-		limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
-		owner = {
-			change_estate_land_share = {
-				estate = all 
-				share = -0.2
-			}
-		}
-	}
-	
-	if = {
-		limit = { owner = { has_country_modifier = jap_20_years_devving_tax_yields_twice_bonus_1_burgher_loyalt_modifier } }
-		add_base_tax = 1 
-		owner = {
-			add_estate_loyalty = {
-				estate = estate_burghers 
-				loyalty = 1 
-			}
-		}
-	}
-	
-	if = { 
-		limit = { 
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = { 
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-	if = {
-		limit = {
-			religion = ROOT
-			owner = {
-				has_country_flag = geo_orthodox_dev
-			}
-		}
-		random_list = {
-			10 = { add_base_tax = 1 }
-			90 = { }
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				trade_goods = cloth
-				trade_goods = silk
-			}
-			owner = { has_country_modifier = turkoman_expanding_industry }
-		}
-		random_list = {
-			20 = { add_base_tax = 1 } 
-			80 = {  } 
-		}
-	}
 }
 
 # province
@@ -2349,43 +2298,6 @@ on_dip_development = {
 			}
 		}
 	}
-	if = { 
-		limit = { 
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = { 
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-	if = {
-		limit = {
-			religion = ROOT
-			owner = {
-				has_country_flag = geo_orthodox_dev
-			}
-		}
-		random_list = {
-			10 = { add_base_production = 1 }
-			90 = { }
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				trade_goods = cloth
-				trade_goods = silk
-			}
-			owner = { has_country_modifier = turkoman_expanding_industry }
-		}
-		random_list = {
-			20 = { add_base_production = 1 } 
-			80 = {  } 
-		}
-	}
 }
 
 # province
@@ -2401,43 +2313,6 @@ on_mil_development = {
 				which = dev_sum_clicks
 				value = 1
 			}
-		}
-	}
-	if = { 
-		limit = { 
-			owner = { has_country_modifier = pru_victory_lower_saxony_modifier }
-			OR = { 
-				culture = saxon
-				culture = lower_saxon
-			}
-		}
-		add_nationalism = -3
-		add_local_autonomy = -5
-		add_prosperity = 1
-	}
-	if = {
-		limit = {
-			religion = ROOT
-			owner = {
-				has_country_flag = geo_orthodox_dev
-			}
-		}
-		random_list = {
-			10 = { add_base_manpower = 1 }
-			90 = { }
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				trade_goods = cloth
-				trade_goods = silk
-			}
-			owner = { has_country_modifier = turkoman_expanding_industry }
-		}
-		random_list = {
-			20 = { add_base_manpower = 1 } 
-			80 = {  } 
 		}
 	}
 }
@@ -5306,6 +5181,54 @@ on_province_owner_change = {
         }
 		remove_province_modifier = estate_nobles_vegvar_system_modifier
 	}
+	if = {
+		limit = {
+			FROM = {
+				has_estate_privilege = estate_nobles_vegvar_system
+			}
+		}
+		if = {
+			limit = {
+				any_neighbor_province = {
+					owned_by = FROM
+				}
+				FROM = {
+					has_estate_privilege = estate_nobles_vegvar_system
+				}
+			}
+			every_neighbor_province = {
+				limit = {
+					owned_by = FROM
+					has_fort_building_trigger = yes
+					NOT = {
+						has_province_modifier = estate_nobles_vegvar_system_modifier
+					}
+				}
+				add_province_modifier = {
+					name = estate_nobles_vegvar_system_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	if = {
+        limit = {
+			NOT = {
+				has_province_modifier = estate_nobles_vegvar_system_modifier
+			}
+			owner = {
+				has_estate_privilege = estate_nobles_vegvar_system
+			}
+			has_fort_building_trigger = yes
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+        }
+        add_province_modifier = {
+            name = estate_nobles_vegvar_system_modifier
+            duration = -1
+        }
+	}
 	#UU triggered modifiers
 	if = {	
 		limit = {
@@ -5905,6 +5828,13 @@ on_dependency_lost = {
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
 	on_religion_change_estate_privileges_effect = yes
+	if = {
+		limit = {
+			tag = TUR
+			HUN = { has_country_modifier = hun_avenge_varna }
+		}
+		HUN = { remove_country_modifier = hun_avenge_varna }
+	}
 	if = {
 		limit = {
 			ai = no
@@ -6532,7 +6462,17 @@ on_expanded_infrastructure = {
 			owner = {
 				has_country_flag = boh_expand_infrastructure_prague_flag
 			}
+			NOT = {
+				check_variable = {
+					which = boh_expanded_infrastructure_prague
+					value = 3
+				}
+			}
 		}
+        change_variable = {
+            which = boh_expanded_infrastructure_prague
+            value = 1
+        }
 		add_base_tax = 1
 		add_base_production = 1
 		add_base_manpower = 1

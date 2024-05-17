@@ -1,4 +1,4 @@
-# UU UPDATED 1.37.0
+# UU UPDATED 1.37.1
 
 # INSTRUCTIONS:
 #
@@ -159,7 +159,7 @@ declarewar = {
 	}
 	effect = {
 		on_war_declaration_effect = yes
-if = {
+		if = {
 			limit = { 
 				mission_completed = hun_the_anatolian_threat
 				NOT = {
@@ -194,7 +194,7 @@ if = {
 			country_event = {
 				id = flavor_teu.33
 				days = 10
-}
+			}
 		}
 		if = {
 			limit = {
@@ -232,8 +232,8 @@ if = {
                     NOT = { is_emperor = yes }
                 }
                 country_event = { id = flavor_ita.7 }
-			}
-		}
+            }
+        }
 	}
 }
 
@@ -396,7 +396,7 @@ royal_marriage = {
 			NOT = { war_with = FROM }
 		}
 	}
-effect = {
+	effect = {
 		change_asha_vahishta = { value = 0.5 }
 	}
 }
@@ -429,7 +429,7 @@ fabricate_claim = {
 break_marriage = {
 	effect = {
 		change_asha_vahishta = { value = -1 }
-if = {
+		if = {
 			limit = {
 				has_country_flag = received_burgundian_marriage
 				FROM = { tag = BUR }
@@ -457,7 +457,7 @@ takeondebt = {
 influence_nation = {
 	effect = {
 		change_asha_vahishta = { value = 2 }
-
+		
 		if = {
 			limit = {
 				has_country_flag = GER_buff_influence_nation_flag
@@ -472,7 +472,7 @@ influence_nation = {
 intervene_in_war = {
 	effect = {
 		change_asha_vahishta = { value = 50 }
-
+		
 		if = {
 			limit = {
 				has_country_flag = GER_buff_great_power_interactions_flag
@@ -580,9 +580,9 @@ integrationaction = {
 	condition = {
 		tooltip = INTEGRATETOOLOWDESC
 		potential = {
-OR = {
-			senior_union_with = FROM
-FROM = {
+			OR = {
+				senior_union_with = FROM
+				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = mongol_brother_realm
 				}
@@ -704,16 +704,16 @@ invite_to_trade_league = {
 		potential = {
 		}
 		allow = {
-if = {
+			if = {
 				limit = {
 					NOT = { has_country_flag = ven_easier_to_invite_trade_league_members_yes_flag }
 				}
-			from = {
-				home_trade_node = {
-					trade_share = {
-						country = root
-						share = 1
-}
+				from = {
+					home_trade_node = {
+						trade_share = {
+							country = root
+							share = 1
+						}
 					}
 				}
 			}
