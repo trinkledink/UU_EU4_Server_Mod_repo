@@ -338,3 +338,5 @@ uu_pap_mil_dogma_3_modifier = {
 	land_morale = 0.1
 	land_maintenance_modifier = -0.05
 }
+
+dogma_manpower_5yr_cooldown = {}

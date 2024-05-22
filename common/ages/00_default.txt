@@ -291,6 +291,7 @@ age_of_discovery = {
                 vassal_income = 0.5
                 vassal_forcelimit_bonus = 1
                 reduced_liberty_desire = 50
+				num_of_age_rewards = 1
             }
         }
 	}
@@ -484,6 +485,8 @@ age_of_reformation = {
 						tag = ADU
 						NOT = { exists = SPA }
 					}
+				}
+			}
 			effect = { 
 				on_age_ability_taken = { age = age_of_reformation }
 			}
@@ -572,6 +575,7 @@ age_of_reformation = {
 			}
 			modifier = {
 				great_project_upgrade_cost = -0.5
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -628,7 +632,6 @@ age_of_absolutism = {
 		
 		obj_emperor_of_china = {
 			army_professionalism = 0.80
-		
 		}
 		
 		obj_cultures_accepted = {
@@ -640,7 +643,6 @@ age_of_absolutism = {
 				tooltip = obj_religious_league_war_on_winning_side_tooltip
 				has_country_flag = religious_league_war_on_winning_side
 			}
-			
 		}
 	}	
 	
@@ -767,6 +769,7 @@ age_of_absolutism = {
 			modifier = {
 				global_trade_power = 0.20
 				trade_steering = 0.20
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -1075,6 +1078,9 @@ age_of_revolutions = {
 			}
 			effect = {
 				custom_tooltip = ab_necro_sokoto_tt	#20% mp from defeating armies
+			}
+			modifier = {
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
