@@ -303,19 +303,22 @@ development_of_infrastructure = { #uu just in parliament seats now
 			effect5 = "add_dip_power = 100"
 			fallback_effect = "add_dip_power = 50"
 		}
-		every_owned_province = {
-			limit = {
-				has_seat_in_parliament = yes
-			}
-			add_province_modifier = {
-				name = uu_parliament_infrastrucutre
-				duration = 3650
-			}
-		}
+		custom_tooltip = uu_land_reform_tt
+		
 		hidden_effect = {
 			set_country_flag = uu_just_passed_adm_issue
 			clr_country_flag = uu_just_passed_mil_issue
 			clr_country_flag = uu_just_passed_dip_issue
+
+			every_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_province_modifier = {
+					name = uu_parliament_infrastrucutre
+					duration = 3650
+				}
+			}
 		}
 	}
 	
