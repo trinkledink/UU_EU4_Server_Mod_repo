@@ -322,9 +322,6 @@ development_of_infrastructure = { #uu just in parliament seats now
 		}
 	}
 	
-	modifier = {
-	}
-	
 	chance = {
 		factor = 1
 		modifier = {
