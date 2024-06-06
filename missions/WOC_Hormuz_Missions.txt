@@ -1039,7 +1039,7 @@ ORM_4 = {
 				province_id = 2219
 				province_id = 4332
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { num_of_times_improved_by_owner = 1 }
 		} 
 
 		trigger = {  
