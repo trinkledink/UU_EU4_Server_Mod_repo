@@ -7,3 +7,8 @@ ctg_opinion_sack_of_rome = {
 	opinion = -75
 	yearly_decay = 1
 }
+
+opinion_timurid_rival_claimant = {
+	opinion = -200
+	yearly_decay = 1
+}

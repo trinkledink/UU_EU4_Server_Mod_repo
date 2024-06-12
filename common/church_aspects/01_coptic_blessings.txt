@@ -1,3 +1,4 @@
+# UU UPDATED 1.37.0
 legitimize_government = {
 	is_blessing = yes
 
@@ -44,7 +45,7 @@ send_monks_to_establish_monasteries = {
 
 	modifier = {
 		global_missionary_strength = 0.02
-		tolerance_own = 1   
+		tolerance_own = 1
 	}
 	ai_will_do = {
 		factor = 10
@@ -74,7 +75,7 @@ promote_territorial_rights = {
 
 	modifier = {
 		core_creation = -0.15
-		diplomatic_annexation_cost = -0.15				
+		diplomatic_annexation_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 10

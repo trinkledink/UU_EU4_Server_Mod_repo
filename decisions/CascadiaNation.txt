@@ -5,7 +5,6 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			was_never_end_game_tag_trigger = yes
-			ai = no
 			is_nomad = no
 			is_random_new_world = no
 			NOT = { tag = HLR }
@@ -50,6 +49,10 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_alaska
@@ -69,9 +72,11 @@ country_decisions = {
 						NOT = { is_former_colonial_nation = yes }
 					}
 					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
 				}
 			}
 			change_tag = CSC
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }
@@ -98,6 +103,13 @@ country_decisions = {
 					NOT = { primary_culture = mexican }
 				}
 				change_primary_culture = mexican
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+				}
+				change_primary_culture = quebecois
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

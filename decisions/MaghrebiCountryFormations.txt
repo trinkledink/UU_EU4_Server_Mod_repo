@@ -1,10 +1,12 @@
+#UU UPDATED 1.36.2
+
 country_decisions = {
 
 	moroccan_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_morocco_flag }
 			OR = {
 				ai = no
@@ -14,10 +16,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = moroccan
 				primary_culture = berber
@@ -72,10 +70,12 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			344 = {
 				move_capital_effect = yes
 			}
 			change_tag = MOR
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -121,9 +121,11 @@ country_decisions = {
 				add_permanent_claim = MOR
 			}
 			add_prestige = 25
-			if = {
-				limit = { NOT = { has_reform = celestial_empire } }
-				change_government_to_monarchy = yes #Desert tribes settling down, theocracies become monarchies.
+			if = {		#UU copied from below so it does not force kingdom on republics or theocracies.
+				limit = {
+					is_tribal = yes	#Desert tribes settling down.
+				}
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			change_primary_culture = moroccan
@@ -146,7 +148,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_algiers_flag }
 			OR = {
 				ai = no
@@ -156,12 +158,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = TLC }
-			NOT = { tag = ALG }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = algerian
 				AND = {
@@ -236,10 +232,12 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			338 = {
 				move_capital_effect = yes
 			}
 			change_tag = ALG
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -282,7 +280,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes	#Desert tribes settling down.
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
@@ -305,9 +303,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_tunisia_flag }
-			NOT = { was_tag = TUN }						  
+			can_form_tier_two_trigger = yes
+			NOT = { has_country_flag = formed_tunisia_flag }			  
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -316,10 +313,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = tunisian
 				primary_culture = berber
@@ -375,10 +368,12 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			341 = {
 				move_capital_effect = yes
 			}
 			change_tag = TUN
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -398,7 +393,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes
 				}
-				change_government_to_monarchy = yes #Desert tribes settling down.
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
@@ -421,7 +416,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_two_trigger = yes
 			NOT = { has_country_flag = formed_tripoli_flag }
 			OR = {
 				ai = no
@@ -431,13 +426,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = MOR }
-			NOT = { tag = TUN }
-			NOT = { tag = TLC }
-			NOT = { tag = ALG }
-			NOT = { tag = TRP }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			OR = {
 				primary_culture = tunisian
 				primary_culture = berber
@@ -491,10 +479,12 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_two_flag
 			354 = {
 				move_capital_effect = yes
 			}
 			change_tag = TRP
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -513,7 +503,7 @@ country_decisions = {
 				limit = {
 					is_tribal = yes #Desert tribes settling down.
 				}
-				change_government_to_monarchy = yes
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25

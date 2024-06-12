@@ -37,6 +37,7 @@ categories =  {
 			1348 1347 1345
 			1402 4357 1397 4358
 			1358 1353 1352 1351 1350 1354
+			1293 #UU Straits of Gibraltar
 		}
 	}	
 
@@ -48,7 +49,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.45
+		local_development_cost = 0.45 #UU change
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -131,6 +132,8 @@ categories =  {
 			4831 4832 # Mandala
 
 			2774 2775 2794 2796 #South Somalia
+
+			4962 4965 4968 4952 5004 5005 5006 5007 #UU
 		}		
 	}
 	
@@ -170,7 +173,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.15
+		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 		
@@ -228,6 +231,7 @@ categories =  {
 			4840 # Mandala
 			
 			4856
+			703 4960 4961 4966 4967 4969 4974 4975 5003 5008 226 #UU changed
 		}
 	}
 
@@ -310,17 +314,17 @@ categories =  {
 		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
-		local_development_cost = 0.3
+		local_development_cost = 0.3 #UU change
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 		
 		terrain_override = {
-			210	226 # Spain
+			210 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
 			4236 #Slovakia
 			974 975 976 977 2003 2020 2480 2481 2486 2609 2610 2612 2613 936  #North America
-			2154 2155 #East Asia
+			2154  #East Asia
 			808 814 2825 #South America
 			452 2073 #Tibet
 			1078
@@ -367,6 +371,7 @@ categories =  {
 			4653 4655 4656 4680 4679
 			# 1.30
 			4750 4754
+			4963 4954 #UU
 		}
 	}
 
@@ -427,7 +432,7 @@ categories =  {
 			2296 318
 			1170 2949 798 2948
 			
-			703 704 726 730 2110 2113
+			704 726 730 2110 2113
 			42 457 458
 			4150 #Iberia
 			1017 1012 1019 1023 1024 1818 1825 1837 1839 1847 4359 4360 #Japan
@@ -438,6 +443,7 @@ categories =  {
 			4795 # Mandala
 			
 			4858 4857 2735 1090
+			4943 2155 4957				#UU added/changed provinces
 		}
 	}
 
@@ -449,7 +455,7 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 1
-		local_development_cost = 0.3
+		local_development_cost = 0.3 #UU change
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
 		
@@ -480,6 +486,8 @@ categories =  {
 			4804 4799 2709 4817 # Mandala
 			
 			1085 4869 2730
+
+			4976 #UU added
 		}
 	}	
 	
@@ -491,7 +499,7 @@ categories =  {
 
 		movement_cost = 1.3
 		defence = 1
-		local_development_cost = 0.2
+		local_development_cost = 0.2 #UU change
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 
@@ -513,6 +521,7 @@ categories =  {
 			362 #Egypt
 			2702 #Philippines
 			4706 # 1.30 Greece and Bulgaria
+			4987 4988 4995
 		}
 	}
 	
@@ -542,6 +551,7 @@ categories =  {
 			860 2618
 			
 			1093
+			4945 4949 4947 4959	#UU added provinces
 		}
 	}
 	
@@ -604,6 +614,9 @@ categories =  {
 			4815 # Mandala
 			
 			2728
+			
+			4953 4958 668 #China UU Added
+			2954			#UU
 		}
 	}	
 	
@@ -620,6 +633,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
+
 			1749 224
 			221 1750 220 214 
 			1748 2754
@@ -652,6 +666,8 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			
 			2736 4863 4861 4855 1094 2733
+
+			5017 1882 354 2451 339 #UU
 		}
 	}
 
@@ -665,7 +681,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.15
+		local_development_cost = 0.15 #UU change
 		nation_designer_cost_multiplier = 0.9	
 
 		terrain_override = {
@@ -673,7 +689,7 @@ categories =  {
 			850 852 853 2018 2621 2622 2623 2626 2628 2629 2644 2646 2645 
 			588 2401 2301 324 1224 
 			869 2006 2019 2483 2488 2496 2501 2624
-			335 336 339 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1751 1882 2274 2454 2458 2459 2462 2463 
+			335 336 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1751 2274 2454 2458 2459 2462 2463 
 			2464 2465 2756 2757 2758 2762 2763 2766 2770 2771 2772 2778 2779 2781 2787 2792 2950 2951
 			326 329 332 418 1846 
 			2303
@@ -703,6 +719,7 @@ categories =  {
 			4422 4436 4464 #Central India
 			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
+			4964 #UU
 		}
 	}
 
@@ -714,7 +731,7 @@ categories =  {
 
 		supply_limit = 6
 		movement_cost = 1.00
-		local_development_cost = 0.1
+		local_development_cost = 0.1 #UU change
 		nation_designer_cost_multiplier = 0.95	
 		
 		terrain_override = {
@@ -741,6 +758,7 @@ categories =  {
 			4836 2383 4829
 			
 			1092 4851 1094 4850 4846 4881
+			4942 4944 4948 4946	4973 1989 5000 5001 5002 #UU added provinces
 		}		
 	}
 	
@@ -791,6 +809,7 @@ categories =  {
 			
 			# 1.29
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683
+			4985 4990 4991 4992 4996 #UU added
 			
 		}	
 	}	

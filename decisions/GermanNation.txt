@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_five_trigger = yes
 			NOT = { has_country_flag = formed_germany_flag }
 			OR = {
 				ai = no
@@ -14,10 +14,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = GER }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
 			OR = {
 				ai = no
 				AND = {
@@ -26,17 +22,7 @@ country_decisions = {
 					adm_tech = 20
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
-				}
-			}
-			OR = {
-				culture_group = germanic
-				tag = ELB
-			}
+			culture_group = germanic
 			NOT = { primary_culture = dutch }
 			is_colonial_nation = no
 			OR = {
@@ -192,7 +178,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_five_flag
 			change_tag = GER
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
 			if = {
 				limit = {

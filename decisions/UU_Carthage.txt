@@ -1,0 +1,86 @@
+country_decisions = {
+
+	ctg_nation = {
+		major = yes
+		potential = {
+			can_form_tier_three_trigger = yes #technically redundant
+			tag = TUN
+			owns = 341
+			ai = no
+			technology_group = muslim
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 125
+				province_id = 4736
+				province_id = 4737
+				province_id = 341
+				province_id = 2454
+				province_id = 4566
+				province_id = 2455
+				province_id = 2473
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			is_nomad = no
+			owns_core_province = 125
+			owns_core_province = 4736
+			owns_core_province = 4737
+			owns_core_province = 341
+			owns_core_province = 2454
+			owns_core_province = 4566
+			owns_core_province = 2455
+			owns_core_province = 2473
+			341 = {
+				development = 25
+			}
+		}
+		effect = {
+			set_country_flag = formed_tier_three_flag
+			341 = {
+				move_capital_effect = yes
+			}
+			341 = {
+				change_province_name = "Carthago"
+				rename_capital = "Carthago"
+			}
+			change_tag = CTG
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government = republic }
+				}
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				add_republican_tradition = 30
+			}
+			
+			country_event = { id = ctg_mission_events.3 }
+		}
+	}
+}

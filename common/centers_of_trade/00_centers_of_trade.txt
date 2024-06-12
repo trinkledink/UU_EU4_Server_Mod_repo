@@ -1,3 +1,4 @@
+# UU UPDATED 1.37.0
 staple_port = {
     level = 1
     type = coastal
@@ -20,7 +21,7 @@ entrepot = {
 
 world_port = {
     level = 3
-	development = 25
+	development = 20
     cost = 1000
     type = coastal
     province_modifiers = {
@@ -34,7 +35,8 @@ world_port = {
     }
     global_modifiers = {
         navy_tradition_decay = -0.002
-		global_foreign_trade_power = 0.03								   
+		global_foreign_trade_power = 0.03
+        allowed_marine_fraction = 0.02
     }
 }
 
@@ -60,7 +62,7 @@ market_town = {
 world_trade_center = {
     level = 3
     cost = 1000
-	development = 25
+	development = 20
     type = inland
     province_modifiers = {
         province_trade_power_value = 25

@@ -1,0 +1,633 @@
+namespace = UU_balance_events
+
+country_event = {
+	id = UU_balance_events.1
+	title = UU_el_dorado_found
+	desc = "UU_balance_events.1.DESC"
+	picture = INCAN_GODS_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searching_for_el_dorado
+		capital_scope = {
+			continent = south_america
+		}
+	}
+	mean_time_to_happen = {
+		months = 600
+	}
+	immediate = {
+		every_country = {
+			limit = { 
+				has_country_modifier = is_searching_el_dorado
+			}
+			remove_country_modifier = is_searching_el_dorado
+		}
+	}
+	option = {
+		name = "UU_balance_events.1a"
+		add_prestige = 100
+		add_splendor = 50
+		random_province = {
+			Limit = {	
+				continent = south_america
+			}
+			change_trade_goods = gold
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 1
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+				add_center_of_trade_level = 1
+			}
+			else_if = {
+				limit = {
+					NOT = { province_has_center_of_trade_of_level = 1 }
+				}
+				center_of_trade = 1
+			}
+			else = {
+				add_base_production = 2
+			}
+			add_permanent_province_modifier = {
+				name = "U.U_el_dorado"
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = UU_balance_events.2
+	title = UU_colombia_1
+	desc = "UU_balance_events.2.DESC"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1550
+		tag = COL
+	}
+	mean_time_to_happen = {
+		months = 150
+	}
+	immediate = {
+		ROOT = {
+			set_country_flag = colombian_events
+		}
+	}
+	option = {
+		name = "UU_balance_events.2a"
+		add_stability = -1
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = UU_balance_events.3
+	title = muslim_school_events.20.t
+	desc = "mjl_events.EVTDESC5"
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = muslim_school_events.20.b
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanafi_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.c
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = hanbali_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.dd
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = maliki_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.e
+		trigger = {
+			NOT = { religion = shiite }
+		}
+		set_religious_school = {
+			group = muslim
+			school = shafii_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.f
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.g
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = ismaili_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.h
+		trigger = {
+			NOT = { religion = sunni }
+		}
+		set_religious_school = {
+			group = muslim
+			school = zaidi_school 
+		}
+	}
+}
+country_event = {	##Free Cities Free City New Production Methods mission event##
+	id = UU_balance_events.4
+	title = UU_FC_1
+	desc = "UU_balance_events.4.DESC"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "UU_balance_events.4a"
+		capital_scope = {
+			change_trade_goods = dyes
+		}
+	}
+	option = {
+		name = "UU_balance_events.4b"
+		capital_scope = {
+			change_trade_goods = cloth
+		}
+	}
+	option = {
+		name = "UU_balance_events.4c"
+		capital_scope = {
+			change_trade_goods = paper
+		}
+	}
+	option = {
+		name = "UU_balance_events.4d"
+		capital_scope = {
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+country_event = {	##Free Cities Free City estates mission event##
+	id = UU_balance_events.5
+	title = UU_FC_2
+	desc = "UU_balance_events.5.DESC"
+	picture = DIPLOMACY_SIGNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "UU_balance_events.5a"
+		define_advisor = {
+			type = theologian
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+	option = {
+		name = "UU_balance_events.5b"
+		define_advisor = {
+			type = trader
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+	option = {
+		name = "UU_balance_events.5c"
+		define_advisor = {
+			type = commandant
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+}
+country_event = { 	#Hanseatic League rename to Hansa if they want to
+	id = UU_balance_events.6
+	title = UU_balance_events.6.t
+	desc = UU_balance_events.6.desc
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UU_balance_events.6.a
+		override_country_name = UUHSA2
+	}
+	option = {
+		name = UU_balance_events.6.b
+		override_country_name = UUHSA
+	}
+	option = {
+		name = UU_balance_events.6.c
+	}
+}
+country_event = {	#educated ruler for hordes
+	id = UU_balance_events.7
+	title = flavor_sca.2.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		has_estate_privilege = uu_estate_nomadic_tribes_mana_privilege
+		NOT = { has_ruler_modifier = sca_administrative_focus }
+		NOT = { has_ruler_modifier = sca_diplomatic_focus }
+		NOT = { has_ruler_modifier = sca_military_focus }
+		NOT = { has_ruler_modifier = sca_administrative_focus_non_heir }
+		NOT = { has_ruler_modifier = sca_diplomatic_focus_non_heir }
+		NOT = { has_ruler_modifier = sca_military_focus_non_heir }
+		NOT = { has_country_flag = is_selecting_stat_bonus_for_heir }
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = is_selecting_stat_bonus_for_heir }
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+		add_ruler_modifier = {
+			name = sca_administrative_focus_non_heir
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.b
+		add_ruler_modifier = {
+			name = sca_diplomatic_focus_non_heir
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.c
+		add_ruler_modifier = {
+			name = sca_military_focus_non_heir
+			duration = -1
+		}
+	}
+
+	after = {
+		clr_country_flag = is_selecting_stat_bonus_for_heir
+	}
+}
+province_event = {	#TOO MANY FORTS
+	id = UU_balance_events.8
+	title = UU_balance_events.8.t
+	desc = UU_balance_events.8.desc
+	picture = FORT_eventPicture
+
+	trigger = {
+		AND = {
+			controlled_by = owner
+			has_fort_building_trigger = yes
+			any_neighbor_province = {
+				owned_by = ROOT
+				controlled_by = owner
+				has_fort_building_trigger = yes
+			}
+			owner = { 	#ai can keep their forts
+				ai = no
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = uu_fort_target_province_1
+			random_neighbor_province = {
+				limit = {
+					has_fort_building_trigger = yes
+					owned_by = ROOT
+					controlled_by = owner
+				}
+				save_event_target_as = uu_fort_target_province_2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {	# 
+		name = UU_balance_events.8.a
+		event_target:uu_fort_target_province_1 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+		event_target:uu_fort_target_province_2 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+	}
+	option = {	# 
+		name = UU_balance_events.8.b
+		goto = uu_fort_target_province_1
+		event_target:uu_fort_target_province_1 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+	}
+	option = {	# 
+		name = UU_balance_events.8.c
+		goto = uu_fort_target_province_2
+		event_target:uu_fort_target_province_2 = {
+			if = {
+				limit = { 
+					has_building = fort_15th
+				}
+				remove_building = fort_15th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_16th
+				}
+				remove_building = fort_16th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_17th
+				}
+				remove_building = fort_17th
+			}
+			else_if = {
+				limit = { 
+					has_building = fort_18th
+				}
+				remove_building = fort_18th
+			}
+		}
+	}
+}
+country_event = {	#UU papal Dogma
+	id = UU_balance_events.9
+	title = UU_balance_events.9.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		hidden_effect = { 
+			PAP = { 
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 0.5
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+
+	}
+	
+	
+}
+country_event = {	#UU papal Dogma
+	id = UU_balance_events.10
+	title = UU_balance_events.10.t
+	desc = flavor_sca.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		hidden_effect = { 
+			PAP = { 
+				add_government_power = {
+					mechanic_type = uu_PAP_dogma_mechanic
+					power_type = uu_PAP_dogma_power
+					value = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_sca.2.a
+
+	}
+}
+country_event = { 	#Renames
+	id = UU_balance_events.11
+	title = UU_balance_events.11.t
+	desc = {
+		trigger = {
+			NOT = { 
+				has_country_flag = uueoc_temp_flag
+				has_country_flag = uucsh_temp_flag
+			}
+		}
+		desc = UU_balance_events.11.desc
+	}
+	desc = {
+		trigger = {
+			OR = { 
+				has_country_flag = uueoc_temp_flag
+				has_country_flag = uucsh_temp_flag
+			}
+		}
+		desc = UU_balance_events.11.desc.china
+	}
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = UU_balance_events.11.a
+		trigger = {
+			has_country_flag = uucan_temp_flag
+		}
+		override_country_name = UUKANATA
+	}
+	option = {
+		name = UU_balance_events.11.b
+		trigger = {
+			has_country_flag = uumgs_temp_flag
+		}
+		override_country_name = UUMGS
+	}
+	option = {
+		name = UU_balance_events.11.c
+		trigger = {
+			has_country_flag = uupun_temp_flag
+		}
+		override_country_name = UUPUN
+	}
+	option = {
+		name = UU_balance_events.11.d
+		trigger = {
+			has_country_flag = uueoc_temp_flag
+		}
+		if = {
+			limit = { tag = MNG }
+			override_country_name = UUEOC_GMNG
+		} else_if = {
+			limit = { tag = QNG }
+			override_country_name = UUEOC_GQNG
+		} else_if = {
+			limit = { tag = YUA }
+			override_country_name = UUEOC_GYUA
+		} 	
+	}
+	option = {
+		name = UU_balance_events.11.e
+		trigger = {
+			has_country_flag = uucsh_temp_flag
+		}
+		override_country_name = UUEOC_GCSH
+		add_country_modifier = {
+			name = "hegemonic_ambition"
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = "imperial_ambition"
+			duration = 9125
+		}
+	}
+	option = {
+		name = UU_balance_events.11.ez
+		trigger = {
+			has_country_flag = uucsh_temp_flag
+		}
+		add_country_modifier = {
+			name = "hegemonic_ambition"
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = "imperial_ambition"
+			duration = 9125
+		}
+	}
+	option = {
+		trigger = {
+			NOT = { has_country_flag = uucsh_temp_flag }
+		}
+		name = UU_balance_events.11.zzz
+	}
+	after = {
+		clr_country_flag = uucan_temp_flag
+		clr_country_flag = uumgs_temp_flag
+		clr_country_flag = uupun_temp_flag
+	}
+}

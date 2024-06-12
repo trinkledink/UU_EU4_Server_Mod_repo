@@ -1,0 +1,370 @@
+uu_PAP_dogma_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 13
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		uu_PAP_dogma_power = {
+			max = 100
+			base_monthly_growth = -0.1
+			scaled_modifier = {
+				modifier = {	#this goodstuff scales from 0 to 100
+					manpower_in_true_faith_provinces = 0.25
+					global_tax_modifier = 0.5
+					enforce_religion_cost = -0.75
+					max_absolutism = 20
+				}
+			}
+			reverse_scaled_modifier = { 
+				modifier = { #the below modifiers at 0 scaling to nothing at 50
+					stability_cost_modifier = 0.25
+					idea_cost = -0.1
+					innovativeness_gain = 0.5
+				}
+				start_value = 0
+				end_value = 50
+			}
+			scaled_modifier = { #the below modifiers at 100, scaling from nothing at 50
+				modifier = {
+					stability_cost_modifier = -0.25
+					idea_cost = 0.1
+					innovativeness_gain = -0.5
+				}
+				start_value = 50
+				end_value = 100
+			}
+		}
+	}
+	interactions = {
+		uu_develop_administrative_dogma = {
+			icon = GFX_system_of_councils_adm_button
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = { 
+                curia_treasury_size = 2000
+				adm_power = 150
+            }
+			effect = {
+				add_curia_treasury = -2000
+				add_adm_power = -150
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = egyptian_adm_westernization_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_1_tt
+				   
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_adm_dogma_1_modifier
+							duration = -1
+						}
+						set_variable = {
+							which = egyptian_adm_westernization_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = egyptian_adm_westernization_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_adm_westernization_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_2_tt
+					hidden_effect = {
+						remove_country_modifier = uu_pap_adm_dogma_1_modifier
+						remove_country_modifier = uu_pap_adm_dogma_3_modifier
+						set_variable = {
+							which = egyptian_adm_westernization_var
+							value = 2
+						}
+					}
+				   
+					add_country_modifier = {
+						name = uu_pap_adm_dogma_2_modifier
+						duration = -1
+						
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = egyptian_adm_westernization_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_adm_westernization_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_3_tt
+			   
+					hidden_effect = {
+						remove_country_modifier = uu_pap_adm_dogma_1_modifier
+						remove_country_modifier = uu_pap_adm_dogma_2_modifier
+						set_variable = {
+							which = egyptian_adm_westernization_var
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = uu_pap_adm_dogma_3_modifier
+						duration = -1
+					}
+				}
+				else_if = {		#Level 4
+					limit = { 
+						check_variable = {
+							which = egyptian_adm_westernization_var
+							value = 3
+						}
+					}
+					custom_tooltip = uu_pap_adm_dogma_counter_4_tt
+					change_government_reform_progress = 50
+				}
+			}
+			ai_chance = {
+				factor = 0	#5% Admin Efficiency is alwasy best
+			}
+		}
+		uu_develop_diplomatic_dogma = {
+			icon = GFX_system_of_councils_dip_button
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = {
+                curia_treasury_size = 2000
+				dip_power = 150
+            }
+			effect = {
+				add_curia_treasury = -2000
+				add_dip_power = -150
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = egyptian_dip_westernization_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_dip_dogma_counter_1_tt
+				   
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_dip_dogma_1_modifier
+							duration = -1
+							
+						}
+						set_variable = {
+							which = egyptian_dip_westernization_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = egyptian_dip_westernization_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_dip_westernization_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_dip_dogma_counter_2_tt
+					hidden_effect = {
+						remove_country_modifier = uu_pap_dip_dogma_1_modifier
+						remove_country_modifier = uu_pap_dip_dogma_3_modifier
+						set_variable = {
+							which = egyptian_dip_westernization_var
+							value = 2
+						}
+					}
+				   
+					add_country_modifier = {
+						name = uu_pap_dip_dogma_2_modifier
+						duration = -1
+						
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = egyptian_dip_westernization_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_dip_westernization_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_dip_dogma_counter_3_tt
+			   
+					hidden_effect = {
+						remove_country_modifier = uu_pap_dip_dogma_1_modifier
+						remove_country_modifier = uu_pap_dip_dogma_2_modifier
+						set_variable = {
+							which = egyptian_dip_westernization_var
+							value = 3
+						}
+					}
+					set_country_flag = enable_holy_orders_flag
+					add_country_modifier = {
+						name = uu_pap_dip_dogma_3_modifier
+						duration = -1
+						
+					}
+				}
+				else_if = {		#Level 4
+					limit = { 
+						check_variable = {
+							which = egyptian_dip_westernization_var
+							value = 3
+						}
+					}
+					custom_tooltip = uu_pap_dip_dogma_counter_4_tt
+					transfer_papal_controller = ROOT
+				}
+			}
+			ai_chance = {
+				factor = 0	#5% Admin Efficiency is alwasy best
+			}
+		}
+		uu_develop_military_dogma = {
+			icon = GFX_system_of_councils_mil_button
+			cost_type = uu_PAP_dogma_power
+			cost = 30
+			trigger = {
+                curia_treasury_size = 2000
+				mil_power = 150
+				NOT = {
+					has_country_modifier = dogma_manpower_5yr_cooldown
+				}
+            }
+			effect = {
+				add_curia_treasury = -2000
+				add_mil_power = -150
+				if = {			#Level 1
+					limit = { 
+						NOT = {
+							check_variable = {
+								which = egyptian_mil_westernization_var
+								value = 1
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_1_tt
+				   
+					hidden_effect = {
+						add_country_modifier = {
+							name = uu_pap_mil_dogma_1_modifier
+							duration = -1
+							
+						}
+						set_variable = {
+							which = egyptian_mil_westernization_var
+							value = 1
+						}
+					}
+				}
+				else_if = {		#Level 2
+					limit = { 
+						check_variable = {
+							which = egyptian_mil_westernization_var
+							value = 1
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_mil_westernization_var
+								value = 2
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_2_tt
+
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_3_modifier
+						set_variable = {
+							which = egyptian_mil_westernization_var
+							value = 2
+						}
+					}
+				   
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_2_modifier
+						duration = -1
+						
+					}
+				}
+				else_if = {		#Level 3
+					limit = { 
+						check_variable = {
+							which = egyptian_mil_westernization_var
+							value = 2
+						}
+						NOT = { 
+							check_variable = {
+								which = egyptian_mil_westernization_var
+								value = 3
+							}
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_3_tt
+			   
+					hidden_effect = {
+						remove_country_modifier = uu_pap_mil_dogma_1_modifier
+						remove_country_modifier = uu_pap_mil_dogma_2_modifier
+						set_variable = {
+							which = egyptian_mil_westernization_var
+							value = 3
+						}
+					}
+					add_country_modifier = {
+						name = uu_pap_mil_dogma_3_modifier
+						duration = -1
+						
+					}
+				}
+				else_if = {		#Level 4
+					limit = { 
+						check_variable = {
+							which = egyptian_mil_westernization_var
+							value = 3
+						}
+					}
+					custom_tooltip = uu_pap_mil_dogma_counter_4_tt
+					add_yearly_manpower = 2
+					add_country_modifier = {
+						name = dogma_manpower_5yr_cooldown
+						duration = 1825 #5 year cooldown
+					}
+				}
+			}
+			ai_chance = {
+				factor = 0	#5% Admin Efficiency is alwasy best
+			}
+		}
+	}
+}

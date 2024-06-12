@@ -1,0 +1,151 @@
+country_decisions = {
+	mali_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			can_form_tier_two_trigger = yes
+			NOT = { has_country_flag = formed_mali_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = MAL }
+					num_of_cities = 3 #Carnage
+				}
+			}
+			OR = {
+				primary_culture = mali
+				has_country_flag = uu_can_form_mali_flag		
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = futa_jallon_area
+				area = manding_area
+				area = massina_area
+				area = baghena_area
+				area = jolof_area
+				province_id = 1134
+				province_id = 1132
+				province_id = 1133
+				province_id = 1128
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = MAL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			stability = 1
+			futa_jallon_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			manding_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			massina_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			baghena_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			jolof_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			1134 = { #Jenne
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			1132 = { #Timbuktu
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			OR = {
+				1128 = { #Taghaza
+					is_core = ROOT
+					owned_by = ROOT
+				}
+				1133 = { #Gao
+					is_core = ROOT
+					owned_by = ROOT
+				}
+			}
+			#religion = sunni
+		}
+		effect = {
+			set_country_flag = formed_tier_two_flag
+			remove_country_modifier = uu_decline_of_mali
+			clr_country_flag = uu_can_form_mali_flag
+			change_tag = MAL
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }	#UU Nerfed to kingdom
+				set_government_rank = 2
+			}
+			set_capital = 1124
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_government_reform_progress = 300
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = MAL_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_mali_flag
+			if = {
+				limit = { has_dlc = "Origins" }
+				swap_non_generic_missions = yes
+			}
+			hidden_effect = { #Pink Mali
+				if = {
+					limit = {
+						was_tag = KBU 
+						ai = no
+					}
+					country_event = {
+						id = flavor_mal.69
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+}

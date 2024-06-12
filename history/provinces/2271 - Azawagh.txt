@@ -1,0 +1,31 @@
+# 2271 - Azawagh
+
+owner = DND
+controller = DND
+add_core = DND
+is_city = yes
+culture = tuareg 
+religion = sunni
+capital = "Menaka"
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 1
+discovered_by = sub_saharan
+
+1464.1.1 = {
+    owner = SON 
+    controller = SON 
+    add_core = SON 
+    remove_core = DND
+}
+
+1591.3.15 = {
+	owner = AIR
+	controller = AIR
+	add_core = AIR
+} # Songahi defeat at Tondibi leaves Tuareg free

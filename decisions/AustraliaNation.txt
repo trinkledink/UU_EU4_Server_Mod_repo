@@ -3,15 +3,17 @@ country_decisions = {
 	australia_nation = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				NOT = { has_country_flag = changed_from_colonial_nation }
+				tag = NZL #UU
+			}
 			was_never_end_game_tag_trigger = yes
-			ai = no
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
-				AND = {
+				AND = { 
 					NOT = {
 						OR = {
 							technology_group = north_american
@@ -49,6 +51,10 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_australia
@@ -68,9 +74,11 @@ country_decisions = {
 						NOT = { is_former_colonial_nation = yes }
 					}
 					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
 				}
 			}
 			change_tag = AUS
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }

@@ -1,0 +1,200 @@
+country_decisions = { 
+
+	rename_to_iran = {					#Persia 1
+		potential = {
+			or = {
+				tag = ERS
+				tag = PER
+			}
+			is_revolutionary = yes
+			NOT = { has_country_flag = is_revolutionary_iran_flag }
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			restore_country_name = yes
+			override_country_name = REV_IRAN_STRING
+			set_country_flag = is_revolutionary_iran_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	rename_to_iran_non_rev = {			#Persia 2
+		potential = {
+			or = {
+				tag = ERS
+				tag = PER
+			}
+			is_revolutionary = no
+			NOT = { has_country_flag = is_iran_flag }
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			restore_country_name = yes
+			override_country_name = IRAN_STRING
+			set_country_flag = is_iran_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+	
+	uuhsa_rename_decision = {			#Hansa
+		potential = {
+			has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag 
+			NOT = { has_country_flag = uuhsa_rename_decision_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = {
+				id = UU_balance_events.6
+			}
+			set_country_flag = uuhsa_rename_decision_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uucan_rename_decision = {			#Canada
+		potential = {
+			tag = CAN 
+			OR = {
+				religion = totemism
+				culture = huron 
+				culture = iroquois
+				culture = laurentian
+				culture = tionontate
+			}
+			NOT = { has_country_flag = uucan_rename_decision_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = uucan_rename_decision_flag
+			set_country_flag = uucan_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uumgs_rename_decision = {			#Madagascar
+		potential = { 
+			has_country_flag = uu_united_madagascar_flag
+			NOT = { has_country_flag = uumgs_rename_decision_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = uumgs_rename_decision_flag
+			set_country_flag = uumgs_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uupun_rename_decision = {			#Sikh Empire
+		potential = { 
+			tag = PUN 
+			religion = sikhism
+			government_rank = 3
+			NOT = { has_country_flag = uupun_rename_decision_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = uupun_rename_decision_flag
+			set_country_flag = uupun_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uueoc_rename_decision = {			#Emperor of China
+		potential = { 
+			OR = {
+				tag = MNG 
+				tag = QNG 
+				tag = YUA   
+			}
+			is_emperor_of_china = yes
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 90
+				superregion = china_superregion
+				is_core = ROOT 
+			}
+			owns = 1821
+			owns = 1816
+		}
+		effect = {
+			set_country_flag = uueoc_rename_decision_flag
+			set_country_flag = uueoc_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+
+	uucsh_rename_decision = {			#Emperor of China - Shun
+		potential = { 
+			tag = CSH
+			is_emperor_of_china = yes
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 90
+				superregion = china_superregion
+				is_core = ROOT 
+			}
+			owns = 1821
+			owns = 1816
+		}
+		effect = {
+			set_country_flag = formed_tier_four_flag
+			set_country_flag = uucsh_rename_decision_flag
+			set_country_flag = uucsh_temp_flag
+			country_event = {
+				id = UU_balance_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 0
+	}
+}

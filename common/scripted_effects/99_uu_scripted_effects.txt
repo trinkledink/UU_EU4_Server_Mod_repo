@@ -1,0 +1,236 @@
+#taken from Missions_expanded
+
+## create or add a CoT
+
+### create_or_add_center_of_trade_level = { level = <number> }
+create_or_add_center_of_trade_level = {
+	if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				check_variable = { which = var value = 1 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = $level$
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = 2 }
+					}
+				}
+				add_center_of_trade_level = 2
+			}
+			else = {
+				add_center_of_trade_level = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+		else = {
+			add_base_production = 2
+		}
+	}
+	else_if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				NOT = { check_variable = { which = var value = 0 } }
+			}
+		}
+		if = {
+			limit = {
+				province_has_center_of_trade_of_level = 3
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = -1 }
+					}
+				}
+				add_center_of_trade_level = -1
+			}
+			else = {
+				add_center_of_trade_level = -2
+			}
+		}
+		else_if = {
+			limit = {
+				province_has_center_of_trade_of_level = 2
+			}
+			add_center_of_trade_level = -1
+		}
+	}
+}
+
+uu_special_color_effect = { #Applies specific colours to nations depending on gov't. or otherwise
+	if = {
+		limit = { 
+			tag = POR	
+		}
+		if = {
+			limit = { 
+				government = republic
+			}
+			change_country_color = { color = { 11 82 43 } } 		#Green Republic Portugal
+		} else = {
+			restore_country_color = yes
+		}		
+	} else_if = {
+		limit = {
+			tag = SPA 
+		}
+		if = {
+			limit = { 
+				government = republic
+			}
+			change_country_color = { color = { 240 120 0 } }  		#Orange Republic Spain
+		} else = {
+			restore_country_color = yes
+		}
+	} else_if = {
+		limit = { 
+			tag = GER 
+		}
+		if = {
+			limit = { 
+				government = monarchy
+			}
+			change_country_color = { color = { 143 137 129 } } 		#Grey Monarchy Germany
+		} else = {
+			restore_country_color = yes
+		}
+	}
+	every_subject_country = {
+		limit = {
+			has_country_flag = uu_overlord_colour
+		}
+		change_country_color = { country = overlord }
+	}
+}
+
+uu_special_name_effect = { #Applies specific names to nations depending on gov't. or otherwise
+	if = { #Ottomans -> Turkey
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			OR = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		override_country_name = TURKEY_STRING
+	} else_if = {
+		limit = {
+			tag = TUR 
+			NOT = { 
+				has_country_flag = unified_islam #otherwise would be The Caliphate
+				has_country_flag = is_revolutionary_turkey_flag #otherwise would be Rev. Turkey
+			}
+			is_revolutionary = no
+			NOT = {
+				government = republic 
+				government = theocracy 
+			}
+		}
+		restore_country_name = yes
+	}
+}
+
+uu_grant_daimyo_to_clan_effect = {
+	[[target]
+		every_owned_province = {
+			add_nationalism = 10
+			add_core = $clan$
+		}
+	]
+	[[clan]
+		inherit = $target$ 
+		add_treasury = 300
+		add_manpower = 10
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300	
+		every_core_province = {
+			limit = { region = japan_region }
+			remove_core = $clan$
+		}
+		random_owned_province = {
+			set_province_flag = z_jap_clan_separatist_flag
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = $target$
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = z_jap_clan_separatist_flag }
+					has_port = yes
+				}
+				$clan$ = {
+					   transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					   transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					transport = PREV
+					   infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					   infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
+			}
+		}	
+	]
+	vassalize = $clan$
+	reverse_add_opinion = {
+		who = $clan$ 
+		modifier = released_vassal
+	}
+	add_country_modifier = {
+		name = uu_jap_replaced_daimyo_mod
+		duration = 3650
+	}
+}

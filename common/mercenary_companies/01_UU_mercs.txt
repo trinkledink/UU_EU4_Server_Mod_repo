@@ -1,22 +1,27 @@
 merc_cav_free_company = {
-    regiments_per_development = 0
-    cost_modifier = 0.75
+    regiments_per_development = 0.01
 	cavalry_weight = 1
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
         total_development = 150
     }
+	cost_modifier = 0.75
+	max_size = 8
+    min_size = 4
 }
 merc_ideas_frontline = {
 	regiments_per_development = 0.075
-	cost_modifier = 0.75
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_idea = mercenary_connection_networks
 	}
+	cost_modifier = 0.75
 }
 merc_ideas_cannons = {
 	regiments_per_development = 0.05
 	artillery_weight = 1
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_idea = prestigious_companies
 	}
 	cost_modifier = 0.60
@@ -24,6 +29,7 @@ merc_ideas_cannons = {
 ctg_french_musketeers = {
 	regiments_per_development = 0.075
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = ctg_carthaginian_musketeers_company
 	}
 	cost_modifier = 1.2
@@ -35,6 +41,7 @@ ctg_spanish_artillery = {
 	regiments_per_development = 0.05
 	artillery_weight = 1
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = ctg_carthaginian_ishpanian_company
 	}
 	cost_modifier = 0.60
@@ -45,6 +52,7 @@ ctg_spanish_artillery = {
 ctg_italian_legion = {
 	regiments_per_development = 0.075
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = ctg_carthaginian_legion_company
 	}
 	cost_modifier = 1.2
@@ -55,6 +63,7 @@ ctg_italian_legion = {
 ctg_phalanx_company = {
 	regiments_per_development = 0.05
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = ctg_carthaginian_phalanx_company
 	}
 	cost_modifier = 1.2
@@ -65,10 +74,25 @@ ctg_phalanx_company = {
 ctg_immortals_company = {
 	regiments_per_development = 0.05
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = ctg_carthaginian_immortals_company
 	}
 	cost_modifier = 1.2
 	modifier = {
 		fire_damage_received = -0.2
 	}
+}
+merc_cav_horde_company = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.75
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+        AND = {
+			has_reform = steppe_horde
+			horde_unity = 50
+		}
+    }
+	cost_modifier = 1
+	max_size = 12
+    min_size = 4
 }

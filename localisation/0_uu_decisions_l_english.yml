@@ -1,0 +1,137 @@
+﻿l_english:
+ #ELB Formation
+ elbian_nation_title:0 "Form the Elbian Confederation"
+  elbian_nation_desc:0 "The Czechs and Saxons have grown ever closer through their similar understanding of religion and culture. It is time to properly align our interests and confederate into a single state."
+ elbian_nation_diplomatically_title:0 "Form the Elbian Confederation Diplomatically"
+  elbian_nation_diplomatically_desc:0 "The Czechs and Saxons have grown ever closer through their similar understanding of religion and culture. It is time to properly align our interests and confederate into a single state."
+ #AUH Formation
+ form_austrohungarian_empire_title:0 "Form Austro-Hungarian Empire"
+  form_austrohungarian_empire_desc:0 "Abandon the Empire in favor of our own Imperial ascendance."
+ form_austrohungarian_empire_diplomatically_title:0 "Form Austro-Hungarian Empire Diplomatically"
+  form_austrohungarian_empire_diplomatically_desc:0 "Abandon the Empire in favor of our own Imperial ascendance."
+ #CTG Formation
+ ctg_nation_title:0 "Reform Carthage"
+  ctg_nation_desc:0 "It's time we lead our people into the prosperous times of our once glorious past and abandon this uncivilized pirating."
+ #SON Formation
+ songhai_nation_title:0 "Unite the Songhai"
+  songhai_nation_desc:0 "The Songhai people have been under foreign domination for too long. It is time to become a strong kingdom in our own right, and forge our own Empire to span the Sahel!"
+ #African Caliphate Formations
+ uu_sokoto_nation_title:0 "Establish the Sokoto Caliphate"
+  uu_sokoto_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a Caliphate to rule over the Hausa cities, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ uu_kick_out_fulani_scholar_title:0 "Ban the Fulani Preachers"
+  uu_kick_out_fulani_scholar_desc:0 "We made a grave mistake by allowing these proselytizers free reign over our people. We must ban them from continuing their preaching and crack down on their activities."
+  uu_allow_sokoto_decision_tt:0 "Has the country modifier '§YFulani Preacher Accepted§!' from the event '§YFulani Preachers§!', which fires in the early 1500s."
+ uu_macina_nation_title:0 "Establish the Massina Caliphate"
+  uu_macina_nation_desc:0 "The religious movement led by the Fulani preachers has reached its apex. We must do away with the old systems of governance and establish a new Caliphate based in the Massina, with our nation's most learned Islamic scholar and his descendants being our spiritual as well as temporal leaders."
+ #Military Dictatorship
+ military_coup_title:0 "Military Coup"
+  military_coup_desc:0 "Only the strong can lead. Our current ruler is too weak."
+ #Buddhism Karma Decisions
+ help_poor_title:0 "(§Y+Karma§!) Help the Poor"
+  help_poor_desc:0 "It is time we spent our resources to help those less fortunate"
+ benefit_from_offerings_title:0 "(§Y-Karma§!) Benefit From Temple Offerings"
+  benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
+ uu_buddhist_decision_tooltip:0 "This decision can only be taken once every §Y10§! years."
+ #Indian Formations 
+ uu_hindustan_nation_title:0 "Unite Hindustan" #(§M5§!)@HIN
+  uu_hindustan_nation_desc:0 "At long last, all of Hindustan has been subjugated by a modern and sophisticated Indian sultanate. We will proclaim the Empire of Hindustan and bring all the lands of the Indian subcontinent under our rule."
+ uu_bharat_nation_title:0 "Unite Bharatvarsha" #(§M5§!)@BHA 
+  uu_bharat_nation_desc:0 "At long last, all of the Indian subcontinent has been united by a modern and sophisticated indigenous Indian empire. We will proclaim the Empire of Bharat and bring all the lands of the Indian subcontinent under our rule."
+ uu_bharat_regions_1_tt:0 "Owns 15 provinces in each of the Western India, Bengal, and Coromandel regions."
+ uu_bharat_regions_2_tt:0 "Owns 20 provinces in each of the Hindustan and Deccan regions."
+ #Advisor Event Checker
+ advisor_events_title:0 "Country Significant Events Tracker"
+  advisor_events_desc:0 "Events triggered by your Level 3+ advisors this game, as well as some other important ones."
+ radical_mercantilist_reforms:0 "Radical Reforms" #localizing the country flag so it shows up properly in the decision
+ uu_bank:0 "National Bank"
+ #El Dorado Search
+ U.U_search_for_el_dorado_title:0 "Start the search for El Dorado"
+  U.U_search_for_el_dorado_desc:0 "We may invest some of our money and troops and maybe find the legendary city of El Dorado"
+ is_searching_el_dorado:0 "Is searching for El Dorado"
+ #MJL Change Muslim School
+ mjl_change_muslim_school_decision_tt:0 "Change the Islamic school, or Maddhab, that our country follows. §YOnly possible once per game.§!"
+ mjl_change_muslim_school_title:0 "Change Islamic School"
+ mjl_change_muslim_school_desc:0 "§YChanging Islamic chools is only possible once per game!§!\n"
+ mjl_events.EVTDESC5:0 "As a country on the verge of change we need to decide which particular religious school we should start patronizing. While there are many ways to follow God we should have a new specific guiding doctrine for our rulers to follow."
+ uu_muslim_school_tt:0 "§YThis decision can only be taken once per game.§!"
+ #UU Hansa Cosmetic Rename
+ uuhsa_rename_decision_title:0 "Change Country Name to just 'Hansa'"
+  uuhsa_rename_decision_desc:0 "If you think 'Hanseatic League' is too long?"
+ UU_balance_events.6.t:0 "Change Country Name to just 'Hansa'"
+  UU_balance_events.6.desc:0 "Exactly what it says on the tin. You only get to make this choice once because the guys don't want to file all the paperwork again"
+  UU_balance_events.6.a:0 "Let's shorten our name (Hansa)"
+  UU_balance_events.6.b:0 "Keep current name (Hanseatic League)."
+  UU_balance_events.6.c:0 "Keep current name (if your name is neither, for some reason)"
+ #Subjects Decisions
+ uu_recolorsubjects_title:0 "Change Subjects to your Map Colour"
+  uu_recolorsubjects_desc:0 "Changes all vassals, marches, and client states to your map colour. Does not affect daimyos, appanages, eyalets, tributaries, junior partners, etc. \n§RWARNING: This may cause problems when subjects occupy provinces with your map colour.§!"
+  uu_overlord_colour_tt:0 "Do NOT have [Root.GetName]'s map colour"
+ uu_fra_recolorsubjects_title:0 "Recolour Appanages" 
+  uu_fra_recolorsubjects_desc:0 "Changes the map colours of Appanage subjects to a shade of blue similar to the French one."
+ uu_restore_color_title:0 "Restore our Map Colour"
+  uu_restore_color_desc:0 "At some point our overlord changed our map colour, but we can change it back."
+ uu_restore_color_overlord_title:0 "Restore Subjects' Map Colours"
+  uu_restore_color_overlord_desc:0 "Changes all subjects back to their original map colours, unless an override exists."
+  uu_overlord_colour_tt_2:0 "Has [Root.GetName]'s map colour"
+ #Disinherit Counter
+ uu_disinherit_counter_decision_title:0 "Disinherit Counter"
+  uu_disinherit_counter_decision_desc:0 "For all the Journey_iis out there who have been forsaken by RNG"
+  uu_disinherit_counter_tooltip:0 "Disinherit Counter:\nTotal §YDisinherits:§! §O[This.uu_disinherit_counter_var.GetValue]§!\nTotal §RDead Heirs§!: §O[This.uu_deadheir_counter_var.GetValue]§!"
+ #Canals
+ uucanal_kiel_close_title:0 "Close the Kiel Canal"
+  uucanal_kiel_close_desc:0 "Temporarily close the Kiel Canal to the passage of all seaborne traffic, including our own and our allies' ships."
+ uucanal_kiel_open_title:0 "Reopen the Kiel Canal"
+  uucanal_kiel_open_desc:0 "Reopen the Kiel Canal to the passage of seaborne traffic."
+ uucanal_suez_close_title:0 "Close the Suez Canal"
+  uucanal_suez_close_desc:0 "Temporarily close the Suez Canal to the passage of all seaborne traffic, including our own and our allies' ships."
+ uucanal_suez_open_title:0 "Reopen the Suez Canal"
+  uucanal_suez_open_desc:0 "Reopen the Suez Canal to the passage of seaborne traffic."
+ uucanal_panama_close_title:0 "Close the Panama Canal"
+  uucanal_panama_close_desc:0 "Temporarily close the Panama Canal to the passage of all seaborne traffic, including our own and our allies' ships."
+ uucanal_panama_open_title:0 "Reopen the Panama Canal"
+  uucanal_panama_open_desc:0 "Reopen the Panama Canal to the passage of all ships."
+ uu_closed_canal_mod:0 "Canal Closed"
+ amazon_peru_strait:0 "River Port of Iquitos"
+  amazon_peru_strait_tt:0 "Allows movement of troops between §Y[815.GetName]§! and §Y[2934.GetName]§!"
+ amazon_brazil_strait:0 "Madeira River Shipping System"
+  amazon_brazil_strait_tt:0 "Allows movement of troops between §Y[2934.GetName]§! and §Y[2900.GetName]§!"
+ #Transports Decision
+ uu_replace_transports_title:0 "Replace Transports with Transport Light Ship"
+  uu_replace_transports_desc:0 "§RMake sure all Cogs are in port before you click the decision, otherwise it will break.§!\nEvery owned Cog will be deleted and replaced with a Transport Light Ship at the cost of 20 ducats and 0 sailors each. Replacement units will spawn at a port in your country."
+ #Pench Estate Checker
+ Pench_Estate_Influence_title:0 "Estate Influence Viewer"
+  Pench_Estate_Influence_desc:0 "§YThis decision is only visible when at least one estate has over 100 influence.§! Hover over the decision button to see the actual influence of each estate.\n\n(btw pench made this)"
+ #Kitara
+ uu_kitara_embrace_isolationism_title:0 "Embrace Isolationism"
+  uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensible. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum."
+ uu_kitara_embrace_irrigate_savanna_title:0 "Savanna Irrigation"
+  uu_kitara_embrace_irrigate_savanna_desc:0 "With some planning and monetary investment we could improve the fertility of the savanna."
+  uu_kitara_enable_inwards_perfection:0 "As long as this modifier is active we have access to the §YInwards Perfection§! clergy estate privilege. Should we §Gcore a province§! outside of the §YGreat Lakes Trade Node§! we will §R§!lose this modifier."
+  uu_kitara_savanna_irrigation.tt:0 "Every owned province in §YGreat Lakes§! trade node that is a §Ysavanna§! will receive §G-10% Development Cost§! and §G+1 Building Slot§!" 
+ #Italy
+ uu_no_kog_tt:0 "§YKingdom of God§! does not exist"
+ #Madagascar
+ uu_unite_madagascar_title:0 "Unite the Island"
+  uu_unite_madagascar_desc:0 "We have brought all Malagasy people of our island, which we call Malagasikara, under our governance. This will surely herald a new era of prosperity for us."
+ #Canada
+ embrace_native_traditions_title:0 "Integrate First Nations Traditions"
+  embrace_native_traditions_desc:0 "If you're reading this, tell Rhazzazor to write a real description"
+ #Cosmetic Renames
+ uucan_rename_decision_title:0 "Rename Our Nation to Kanata"
+  uucan_rename_decision_desc:0 "This decision can only be pressed once."
+ uumgs_rename_decision_title:0 "Rename Our Nation to Malagasikara"
+  uumgs_rename_decision_desc:0 "This deision can only be pressed once."
+ uupun_rename_decision_title:0 "Rename Our Nation to the Sikh Empire"
+  uupun_rename_decision_desc:0 "This decision can only be pressed once."
+ uueoc_rename_decision_title:0 "Become Known as Great [Root.GetName]"
+  uueoc_rename_decision_desc:0 "This decision can only be pressed once."
+ uucsh_rename_decision_title:0 "(§R4§!)@CSH Proclaim Great Shun"
+  uucsh_rename_decision_desc:0 "This decision can only be pressed once."
+ #Tiered Formables
+ uu_tiered_formables_info_title:0 "Info: Tiered Formables"
+  uu_tiered_formables_info_desc:0 "§YClick to update tracker.§!\nAs of UU Hedgehog Mod 1.11, the formable system from Imperator:Rome has been adopted to replace the end-game-tag system. All nations have been divided into 5 tiers based on de jure title and size, although certain exceptions were made for gameplay purposes. The tier will be indicated next to the formation decision. Higher-tier nations cannot form nations of lower or the same tier (i.e. the Emperor of Japan will not adopt the title of Duke of Silesia as his primary title) with some exceptions - see the §Ychangelog§! for a full list.\n\n   Tier 1: Duchy (e.g. @ICE Iceland, @LFA Lanfang, @KUR Courland, most starting nations)\n   Tier 2: §YMinor Kingdom§! (e.g. @ENG England, @MOR Morocco, @KHM Khmer, @TUS Tuscany, @HAN Hanover)\n   Tier 3: §OMajor Kingdom§! (e.g. @GBR Great Britain, @MSA Malaya, @MAM Mamluks, @ITA Italy, @PRU Prussia)\n   Tier 4: §REmpire§! (e.g. @RUS Russia, @YUA Yuan, @PER Persia, @ETH Ethiopia, @PLC Commonwealth)\n   Tier 5: §MMajor Empire§! (e.g. @GER Germany, @HLR H.R.E., @ROM Roman Empire, @BHA Bharat, @MGE Mongol Empire)"
+  uu_tf_t1_tt:0 "Current tier: Tier 1"
+  uu_tf_t2_tt:0 "Current tier: §YTier 2§!"
+  uu_tf_t3_tt:0 "Current tier: §OTier 3§!"
+  uu_tf_t4_tt:0 "Current tier: §RTier 4§!"
+  uu_tf_t5_tt:0 "Current tier: §MTier 5§!"

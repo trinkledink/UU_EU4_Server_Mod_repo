@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes
 			NOT = { has_country_flag = formed_rum_flag }
 			OR = {
 				ai = no
@@ -14,14 +14,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { tag = TUR }
-			NOT = { exists = RUM }
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
-			NOT = { tag = BYZ }
-			NOT = { tag = RUS }
-			NOT = { tag = PRU }
-			NOT = { tag = ENG }
 			is_emperor_of_china = no
 			primary_culture = turkish
 			is_colonial_nation = no
@@ -67,7 +59,9 @@ country_decisions = {
 			owns_core_province = 4312		# Eskeshehir
 		}
 		effect = {
+			set_country_flag = formed_tier_four_flag
 			change_tag = RUM
+			on_change_tag_effect = yes
 			restore_country_name = yes
 			RUM = {
 				if = {
@@ -75,19 +69,31 @@ country_decisions = {
 						NOT = { government = monarchy }
 						is_revolutionary = no
 					}
-					change_government_to_monarchy = yes
+					change_government = monarchy
 				}
 				if = {
 					limit = { is_revolutionary = no }
-					add_government_reform = ottoman_government
+					add_government_reform = sultanate_of_rum_reform
 				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = AKK
+						tag = QAR
+						was_tag = AKK
+						was_tag = QAR
+					}
+				}
+				override_country_name = SELJUK_EMPIRE
+				set_country_flag = is_SELJUK_EMPIRE_flag
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }	#UU
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			anatolia_region = {
 				limit = {

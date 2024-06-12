@@ -1,0 +1,22 @@
+﻿l_english:
+ trinkle_socialreformer:0 "[Root.Adm_Advisor.GetName]"
+ trinkle_socialreformer_desc:0 "Our advisor [Root.Adm_Advisor.GetName]'s ideas have created a veritable golden age of progressive ideology in our nation, with advances in social, political, and economic policy that will lead our nation into the future and cement their name into the history books."
+ trinkle_socialreformer_a:0 "[Root.Adm_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
+ trinkle_socialreformer_b:0 "[Root.Adm_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
+ 
+ trinkle_propagandist:0 "[Root.Dip_Advisor.GetName]"
+ trinkle_propagandist_desc:0 "Our advisor has gone through great efforts to institutionalize our ministry of propaganda."
+ trinkle_propagandist_a:0 "[Root.Dip_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
+ trinkle_propagandist_b:0 "[Root.Dip_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
+ 
+ trinkle_hero:0 "[Root.Dip_Advisor.GetName]"
+ trinkle_hero_desc:0 "Our most beloved national hero has risen to prominence in both public and private eye."
+ trinkle_hero_a:0 "[Root.Dip_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
+ trinkle_hero_b:0 "[Root.Dip_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
+
+ trinkle_strategist:0 "[Root.Mil_Advisor.GetName]"
+ trinkle_strategist_desc:0 "Our most beloved save starer has save-stared so super hard and they have realized we could have some more army professionalism."
+ trinkle_strategist_a:0 "[Root.Mil_Advisor.GetHerHisCap]'s efforts will be admired throughout the nation"
+ trinkle_strategist_b:0 "[Root.Mil_Advisor.GetHerHisCap]'s reputation will reach further than our borders"
+ 
+ u_u_maybe_later:0 "Maybe later"
