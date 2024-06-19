@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.0
+#UU UPDATED 1.37.2
 republic_mechanic = {
 	basic_reform = yes
 	republican_name = yes
@@ -205,9 +205,7 @@ prussian_republic_reform = {
 					have_had_reform = prussian_theocratic_reform
 				}
 			}
-			has_unlocked_government_reform = {
-				government_reform = prussian_republic_reform
-			}
+			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
 		}
 	}
 	trigger = {
@@ -228,9 +226,7 @@ prussian_republic_reform = {
 					have_had_reform = prussian_theocratic_reform
 				}
 			}
-			has_unlocked_government_reform_tooltip = {
-				government_reform = prussian_republic_reform
-			}
+			has_unlocked_government_reform = { government_reform = prussian_republic_reform }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -1494,8 +1490,6 @@ crown_colony_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		enables_estate_church = yes
-		enables_estate_burghers = yes
 	}
 	duration = 4
 }
@@ -1527,8 +1521,6 @@ private_enterprise_colony_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		enables_estate_church = yes
-		enables_estate_burghers = yes		
 	}
 	effect = {
 		hidden_effect = {
@@ -1584,7 +1576,7 @@ self_governing_colony_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		enables_estate_church = yes
+		enables_estate_nobles = yes
 		enables_estate_burghers = yes
 	}
 	effect = {
@@ -1741,7 +1733,12 @@ roman_republic_government = {
 	nation_designer_cost = 100
 	potential = {
 		has_dlc = "Domination"
-		primary_culture = roman 
+		primary_culture = roman
+		OR = {
+			tag = ROM
+			tag = BYZ
+			is_playing_custom_nation = yes
+		}
 	}
 	modifiers = {
 		administrative_efficiency = 0.05
@@ -1998,6 +1995,7 @@ cossacks_reform = {
 		cav_to_inf_ratio = 0.25
 		governing_capacity = 50
 		allowed_cossack_fraction = 0.25
+		move_capital_cost_modifier = -0.75
 	}
 
 	conditional = {
@@ -4193,9 +4191,7 @@ ven_promissione_ducale_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = {
-				government_reform = ven_promissione_ducale_reform
-			}
+			has_unlocked_government_reform = { government_reform = ven_promissione_ducale_reform }
 			have_had_reform = ven_promissione_ducale_reform
 		}
 	}

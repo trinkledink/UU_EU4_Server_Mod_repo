@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.0
+#UU UPDATED 1.37.2
 tribe_mechanic = {
 	tribal = yes
 	monarchy = yes
@@ -1108,7 +1108,7 @@ tribe_becomes_horde_reform = {
 	}
 }
 
-tribe_remain_tribal_reform = {	
+tribe_remain_tribal_reform = {
 	icon = "rioting_burning_2"
 	allow_normal_conversion = yes
 	potential = {
@@ -1158,7 +1158,7 @@ tribe_tribal_unity = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-		has_reform = tribal_federation
+			has_reform = tribal_federation
 			has_reform = turkoman_ottoman_institutions
 		}
 		has_dlc = "Cradle of Civilization"
