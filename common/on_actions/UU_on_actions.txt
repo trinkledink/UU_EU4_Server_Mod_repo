@@ -1,0 +1,515 @@
+# country
+on_startup = {
+    change_variable = {
+        which = dev_adm_clicks
+        value = 0
+    }
+	change_variable = {
+        which = dev_dip_clicks
+        value = 0
+    }
+	change_variable = {
+        which = dev_mil_clicks
+        value = 0
+    }
+	change_variable = {
+        which = dev_sum_clicks
+        value = 0
+    }
+	change_variable = {
+        which = uu_disinherit_counter_var
+        value = 0
+    }
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 0
+    }
+	change_variable = {
+        which = uu_transports_counter_var
+        value = 0
+    }
+    events = {
+		flavor_mal.0 #UU event for decline of Mali
+		flavor_tim.0 #UU Timurid event
+		flavor_mor.0 #UU Morocco event
+	}
+    if = {		#Tiered Formables 
+		limit = {
+			NOT = { has_country_flag = formed_tier_five_flag }
+			OR = {
+				#Pan-Germany
+				is_or_was_tag = { tag = HLR } #Holy Roman Empire 
+				is_or_was_tag = { tag = GER } #Germany
+				#Pan-Europe 
+				is_or_was_tag = { tag = ROM } #Roman Empire
+				#Pan-Horde
+				is_or_was_tag = { tag = MGE } #Mongol Empire
+				#Pan-India
+				is_or_was_tag = { tag = MUG } #Mughals
+				is_or_was_tag = { tag = BHA } #Bharat 
+				is_or_was_tag = { tag = HIN } #Hindustan 
+				#For Gameplay Purposes 
+				is_or_was_tag = { tag = AKS } #Aksum (so Eth can form)
+				is_or_was_tag = { tag = SYN } #Synthetics
+				is_or_was_tag = { tag = JMN } #Jan Mayen
+			}
+		}
+		set_country_flag = formed_tier_five_flag
+	} 
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = formed_tier_four_flag }
+			OR = {
+				#European Empires 
+				is_or_was_tag = { tag = PLC } #Commonwealth 
+				is_or_was_tag = { tag = AUH } #AustriaHungary 
+				is_or_was_tag = { tag = SCA } #Scandinavia
+				is_or_was_tag = { tag = LAE } #Latin Empire
+				is_or_was_tag = { tag = BYZ } #Byzantium 
+				#Russian Empires
+				is_or_was_tag = { tag = RUS } #Russia 
+				is_or_was_tag = { tag = UKR } #Ruthenia 
+				#Chinese Empires, Hordes
+				is_or_was_tag = { tag = QNG } #Great Qing
+				is_or_was_tag = { tag = MNG } #Great Ming 
+				is_or_was_tag = { tag = YUA } #Great Yuan 
+				is_or_was_tag = { tag = GLH } #Golden Horde 
+				#Indian Major Regionals
+				is_or_was_tag = { tag = RJP } #Rajputana 
+				is_or_was_tag = { tag = DEC } #Deccan 
+				is_or_was_tag = { tag = MAR } #Marathas 
+				is_or_was_tag = { tag = PUN } #Punjab
+				#Middle East Empires/Caliphates
+				is_or_was_tag = { tag = RUM } #Rum 
+				is_or_was_tag = { tag = TUR } #Ottomans 
+				is_or_was_tag = { tag = ADU } #Andalusia
+				is_or_was_tag = { tag = ARB } #Arabia 
+				is_or_was_tag = { tag = PER } #Persia
+				is_or_was_tag = { tag = ERS } #Eranshahr 
+				is_or_was_tag = { tag = TIM } #Timurids
+				is_or_was_tag = { tag = SOK } #Sokoto  
+				is_or_was_tag = { tag = ZAF } #Massina
+				#African Empires
+				is_or_was_tag = { tag = ETH } #Ethiopia 
+				is_or_was_tag = { tag = GZI } #Zimbabwe 
+				is_or_was_tag = { tag = RZI } #Rozwi (can still form Zimbabwe via mission)
+				is_or_was_tag = { tag = KBO } #Kanem-Bornu
+				#Japan
+				is_or_was_tag = { tag = JAP } #Japan 
+				#American Empires 
+				is_or_was_tag = { tag = INC } #Inca 
+				is_or_was_tag = { tag = MAY } #Maya
+				#Papal State
+				is_or_was_tag = { tag = PAP } #Papal State 
+			}
+		}
+		set_country_flag = formed_tier_four_flag
+	} 
+	else_if = {
+		limit = {
+			NOT = { has_country_flag = formed_tier_three_flag }
+			OR = {
+				#European Culture-Group Majors 
+				is_or_was_tag = { tag = GBR } #Great Britain
+				is_or_was_tag = { tag = AVE } #Dual Monarchy
+				is_or_was_tag = { tag = FRA } #France 
+				is_or_was_tag = { tag = LOT } #Lotharingia
+				is_or_was_tag = { tag = SPA } #Spain 
+				is_or_was_tag = { tag = POL } #Poland 
+				#is_or_was_tag = { tag = GMA } #Great Moravia
+				is_or_was_tag = { tag = MOS } #Muscovy Grand Duchy (so you cannot form Poland)
+				is_or_was_tag = { tag = LIT } #Lithuania Grand Duchy (so you cannot form Poland)
+				is_or_was_tag = { tag = ITA } #Italy 
+				#Major German Kingdoms/Archduchies 
+				is_or_was_tag = { tag = PRU } #Prussia 
+				is_or_was_tag = { tag = HAB } #Austria 
+				is_or_was_tag = { tag = LVA } #Livonia 
+				is_or_was_tag = { tag = NED } #Netherlands
+				is_or_was_tag = { tag = ELB } #Elbian Confederation UU
+				has_country_flag = formed_hsa_flag #Hanseatic League 
+				#MENA 
+				is_or_was_tag = { tag = MAM } #Mamluks (can reform into Egypt via exception)
+				is_or_was_tag = { tag = EGY } #Egypt
+				is_or_was_tag = { tag = CTG } #Carthage UU
+				#Horde Formables 
+				is_or_was_tag = { tag = MCH } #Manchu
+				is_or_was_tag = { tag = ILK } #The Illest Khanate
+				#India
+				is_or_was_tag = { tag = DLH } #Delhi (below other India formables so it can still form Punjab) 
+				#Africa 
+				is_or_was_tag = { tag = KIT } #Kitara
+				#SEA Major Kingdoms
+				is_or_was_tag = { tag = MSA } #Malaya
+				is_or_was_tag = { tag = SIA } #Siam
+			}
+		}
+		set_country_flag = formed_tier_three_flag
+	} 
+	else_if = {
+		limit = {
+			NOT = { has_country_flag formed_tier_two_flag }
+			OR = {
+				#British Kingdoms 
+				is_or_was_tag = { tag = ENG } #England 
+				is_or_was_tag = { tag = SCO } #Scotland 
+				is_or_was_tag = { tag = IRE } #Ireland 
+				#Iberian Kingdoms 
+				is_or_was_tag = { tag = CAS } #Castile 
+				is_or_was_tag = { tag = ARA } #Aragon 
+				is_or_was_tag = { tag = NAV } #Navarra
+				is_or_was_tag = { tag = POR } #Portugal 
+				#German Regionals (might still be Duchy rank)
+				is_or_was_tag = { tag = BAV } #Bavaria 
+				is_or_was_tag = { tag = SAX } #Saxony
+				is_or_was_tag = { tag = FKN } #Franconia 
+				is_or_was_tag = { tag = SWA } #Swabia 
+				is_or_was_tag = { tag = HAN } #Hanover 
+				is_or_was_tag = { tag = WES } #Westphalia
+				is_or_was_tag = { tag = SWI } #Switzerland
+				is_or_was_tag = { tag = POM } #Pomerania
+				is_or_was_tag = { tag = SIL } #Silesia
+				is_or_was_tag = { tag = BOH } #Bohemia
+				#Scandinavian Kingdoms 
+				is_or_was_tag = { tag = DAN } #Denmark 
+				is_or_was_tag = { tag = SWE } #Sweden 
+				is_or_was_tag = { tag = NOR } #Norway
+				#Eastern Europe Kingdoms 
+				is_or_was_tag = { tag = RMN } #Romania 
+				is_or_was_tag = { tag = BUL } #Bulgaria
+				is_or_was_tag = { tag = HUN } #Hungary 
+				is_or_was_tag = { tag = SER } #Serbia 
+				is_or_was_tag = { tag = CRO } #Croatia 
+				is_or_was_tag = { tag = GRE } #Greece  
+				#Caucasus Kingdoms 
+				is_or_was_tag = { tag = ARM } #Armenia 
+				is_or_was_tag = { tag = GEO } #Georgia 
+				#Italian Regionals 
+				is_or_was_tag = { tag = SPI } #Sardinia-Piedmont 
+				is_or_was_tag = { tag = TUS } #Tuscany 
+				is_or_was_tag = { tag = TTS } #Two Sicilies 
+				is_or_was_tag = { tag = DAL } #Dalmatia (can still form Croatia via exception)
+				#Minor Indian Regionals
+				is_or_was_tag = { tag = NPL } #Nepal 
+				is_or_was_tag = { tag = NAG } #Nagpur, the forgotten one 
+				is_or_was_tag = { tag = ORI } #Orissa 
+				#Arab Kingdoms 
+				is_or_was_tag = { tag = ALG } #Algiers 
+				is_or_was_tag = { tag = TRP } #Tripoli 
+				is_or_was_tag = { tag = MOR } #Morocco 
+				is_or_was_tag = { tag = TUN } #Tunis 
+				is_or_was_tag = { tag = YEM } #Yemen
+				#Other Asian Formables 
+				is_or_was_tag = { tag = TIB } #Tibet 
+				is_or_was_tag = { tag = BUK } #Bukhara 
+				is_or_was_tag = { tag = KOJ } #Jerusalem
+				is_or_was_tag = { tag = ISR } #Israel
+				is_or_was_tag = { tag = DAI } #Dai Viet 
+				is_or_was_tag = { tag = SST } #Shan 
+				is_or_was_tag = { tag = LXA } #Lan Xang 
+				is_or_was_tag = { tag = KHM } #Khmer
+				is_or_was_tag = { tag = KOR } #Korea
+				#African Formables
+				is_or_was_tag = { tag = MSI } #Mossi 
+				is_or_was_tag = { tag = HAU } #Hausa 
+				is_or_was_tag = { tag = NBI } #Nubia 
+				is_or_was_tag = { tag = SOM } #Somalia
+				is_or_was_tag = { tag = SON } #Songhai 
+				is_or_was_tag = { tag = MAL } #Mali  
+				is_or_was_tag = { tag = KON } #Kongo 
+				#Polynesian Kingdoms 
+				is_or_was_tag = { tag = UHW } #Hawaii Formable 
+				is_or_was_tag = { tag = AOT } #Aotearoa
+				is_or_was_tag = { tag = VIT } #Viti 
+			}
+		}
+		set_country_flag = formed_tier_two_flag
+	}
+}
+
+# country
+on_religion_change = {
+    set_country_flag = age_change_religion_absolutism ##UU added
+	# uu dogma
+	if = {
+		limit = {
+			religion = catholic
+		}
+		PAP = { 	#UU added
+			add_government_power = {
+				mechanic_type = uu_PAP_dogma_mechanic
+				power_type = uu_PAP_dogma_power
+				value = 5
+			}
+		}
+	}
+}
+
+# country
+# root = winning country, from = loser country
+on_war_won = {
+    if = {
+		limit = {
+			any_subject_country = {
+				has_country_flag = uu_overlord_colour
+			}
+		}
+		every_subject_country = {
+			limit = {
+				has_country_flag = uu_overlord_colour
+			}
+			change_country_color = { country = overlord }
+		}
+	}
+}
+
+
+# country
+# root = loser country, from = winner country
+on_war_lost = {
+    if = {
+        limit = {
+            government = republic
+            is_lesser_in_union = yes
+		}
+		#change_government_to_monarchy = yes        #present in vanilla. kept in case it causes any problems
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
+    }
+}
+
+# province
+# root = location, from = losing country
+on_siege_won_province = {
+    events = {
+		uufulojihad.100
+		uufulojihad.101
+	}
+}
+
+
+# country
+on_new_monarch = {
+    events = {
+        UU_balance_events.7		#UU Horde Education Focus of the new Ruler
+    }
+}
+
+# country
+on_bankruptcy = {
+	remove_estate_privilege = estate_burghers_indebted_to_burghers	#UU Not sure if redundant by 1.36 but keeping it anyway
+	remove_estate_privilege = estate_jains_indebted_to_jains		#UU
+}
+
+# country
+on_heir_death = {
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 1
+    }
+	if = {	#Morocco stuff
+		limit = {
+			NOT = {
+				has_country_modifier = uumor_heir_cooldown_hidden_mod
+			} 
+			has_ruler_flag = uumor_wattasids_flag 
+		}
+		add_country_modifier = {
+			name = uumor_heir_cooldown_hidden_mod
+			duration = 1
+			hidden = yes
+		}
+		country_event = {
+			id = flavor_mor.999
+		}
+	}
+}
+
+# When a non-native changes government type
+on_government_change = {
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
+}
+
+# When a nation gains the Mandate of Heaven (becomes the Emperor of China)
+# FROM = Old Emperor, ROOT = New Emperor
+on_mandate_of_heaven_gained = {
+    if = {
+		limit = {
+			OR = {
+				NOT = { government = monarchy }
+				government = tribal
+			}
+		}
+		#change_government_to_monarchy = yes         #present in vanilla. kept in case it causes any problems
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
+	}
+}
+
+on_embrace_revolution = {
+    if = {
+		limit = { NOT = { government = republic } }
+		#change_government = republic               #present in vanilla. kept in case it causes any problems
+		uu_special_color_effect = yes
+		uu_special_name_effect = yes
+	}
+}
+
+# province
+on_adm_development = {
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_adm_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
+}
+
+# province
+on_dip_development = {
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_dip_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
+}
+
+# province
+on_mil_development = {
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_mil_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
+}
+
+
+on_remove_free_city = {
+	swap_non_generic_missions = yes	#uu to remove free city missions
+}
+
+# province
+on_province_religion_converted = {
+    if = { #UU added
+		limit = {
+			religion = catholic
+		}
+		PAP = { 	
+			add_government_power = {
+				mechanic_type = uu_PAP_dogma_mechanic
+				power_type = uu_PAP_dogma_power
+				value = 0.33
+			}
+		}
+	}
+}
+
+# province
+# FROM = old owner
+on_province_owner_change = {
+    #UU triggered modifiers
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Maritime-Infra
+			}
+		}
+		add_province_modifier = {
+			name = uu_maritime_infra_port_town
+			duration = -1
+		}
+	} else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_infra_port_town
+		}
+		remove_province_modifier = uu_maritime_infra_port_town
+	}
+	if = {	
+		limit = {
+			owner = {
+				has_active_policy = Pluto-Maritime
+			}
+		}
+		add_province_modifier = {
+			name = uu_maritime_pluto_greed
+			duration = -1
+		}
+	} else_if = {
+		limit = {
+			has_province_modifier = uu_maritime_pluto_greed
+		}
+		remove_province_modifier = uu_maritime_pluto_greed
+	}
+}
+
+on_center_of_trade_upgrade = {
+    if = {	#uu added
+		limit = { 
+			province_has_center_of_trade_of_level = 3
+			owner = { has_idea = uu_free_cities }
+		}
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+	}
+}
+
+on_center_of_trade_downgrade = {
+    if = {	#uu added
+		limit = { 
+			province_has_center_of_trade_of_level = 2
+			owner = { has_idea = uu_free_cities }
+		}
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+	}
+}
+
+# ROOT = New vassal, FROM = Overlord
+on_create_vassal = {
+	uu_special_color_effect = yes
+	uu_special_name_effect = yes
+}
+
+# this = Released country, FROM = Releasing country
+on_country_released = {
+   	uu_special_color_effect = yes
+	uu_special_name_effect = yes 
+}
+
+on_country_creation = {
+  	uu_special_color_effect = yes
+	uu_special_name_effect = yes  
+}
+
+on_heir_disinherited = {
+	change_variable = {
+        which = uu_disinherit_counter_var
+        value = 1
+    }
+	change_variable = {
+        which = uu_deadheir_counter_var
+        value = 1
+    }
+}
