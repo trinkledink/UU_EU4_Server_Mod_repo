@@ -197,19 +197,19 @@ l_english:
  jutland_area:0 "North Jutland"
  jutland_area_name:0 "Jutland"
  jutland_area_adj:0 "Jutlandish"
- skaneland_area:0 "Skåneland"
+ skaneland_area:0 "Scania"  #UU Anglicized
  skaneland_area_name:0 "Scania"
  skaneland_area_adj:0 "Scanian"
- gotaland_area:1 "Östra Götaland"
+ gotaland_area:1 "East Götaland" #UU Anglicized
  gotaland_area_name:0 "Götaland"
  gotaland_area_adj:0 "Geat"
- vastra_gotaland_area:0 "Västra Götaland"
+ vastra_gotaland_area:0 "West Götaland" #UU Anglicized
  vastra_gotaland_area_adj:0 "Skaran"
  vastra_gotaland_area_name:0 "Skaraborg"
- svealand_area:1 "Västra Svealand"
+ svealand_area:1 "West Svealand" #UU Anglicized
  svealand_area_name:0 "Sweden"
  svealand_area_adj:0 "Swedish"
- ostra_svealand_area:0 "Östra Svealand"
+ ostra_svealand_area:0 "East Svealand" #UU Anglicized
  ostra_svealand_area_name:0 "Dalecarlia"
  ostra_svealand_area_adj:0 "Dalecarlian"
  baltic_islands_area:0 "Baltic Islands"
@@ -263,7 +263,7 @@ l_english:
  pomerelia_area:0 "Pomerelia"
  pomerelia_area_name:0 "Pomerelian"
  pomerelia_area_adj:0 "Pomerelian"
- wielkopolska_area:0 "Wielkopolska"
+ wielkopolska_area:0 "Greater Poland" #UU Anglicized
  wielkopolska_area_name:0 "Wielkopolska"
  wielkopolska_area_adj:0 "Wielkopolskan"
  central_poland_area:0 "Central Poland"
@@ -275,7 +275,7 @@ l_english:
  kuyavia_area:0 "Kuyavia"
  kuyavia_area_name:0 "Kuyavia"
  kuyavia_area_adj:0 "Kuyavian"
- malopolska_area:0 "Malopolska"
+ malopolska_area:0 "Lesser Poland"   #UU Anglicized
  malopolska_area_name:0 "Malopolska"
  malopolska_area_adj:0 "Malopolskan"
  podolia_volhynia_area:1 "Podolia"
@@ -290,19 +290,19 @@ l_english:
  mazovia_area:0 "Mazovia"
  mazovia_area_name:0 "Mazovia"
  mazovia_area_adj:0 "Mazovian"
- lithuania_area:2 "Aukstaitija"
- lithuania_area_name:1 "Aukstaitija"
- lithuania_area_adj:1 "Aukstaitijan"
+ lithuania_area:2 "Aukštaitija" #UU added accent
+ lithuania_area_name:1 "Aukštaitija"
+ lithuania_area_adj:1 "Aukštaitijan"
  samogitia_area:0 "Samogitia"
  samogitia_area_name:0 "Samogitia"
  samogitia_area_adj:0 "Samogitian"
  volhynia_area:0 "Volhynia"
  volhynia_area_name:0 "Volhynia"
  volhynia_area_adj:0 "Volhynian"
- west_dniepr_area:0 "West Dniepr"
+ west_dniepr_area:0 "West Dnieper" #UU Anglicized
  west_dniepr_area_name:0 "Cherkasy"
  west_dniepr_area_adj:0 "Cherkassan"
- east_dniepr_area:0 "East Dniepr"
+ east_dniepr_area:0 "East Dnieper" #UU Anglicized
  east_dniepr_area_name:0 "Poltava"
  east_dniepr_area_adj:0 "Poltavan"
  chernigov_area:0 "Chernigov"
@@ -402,7 +402,7 @@ l_english:
  south_saxony_area_name:0 "Meissen"
  south_saxony_area_adj:0 "Meissner"
  lower_bavaria_area:0 "Lower Bavaria"
- lower_bavaria_area_name:0 "Oberpfalz"
+ lower_bavaria_area_name:0 "Upper Palatinate" #UU Anglicized
  lower_bavaria_area_adj:0 "Oberpfalzian"
  upper_bavaria_area:0 "Upper Bavaria"
  upper_bavaria_area_name:0 "Bavaria"
@@ -428,13 +428,13 @@ l_english:
  mittelmark_area:0 "Mittelmark"
  mittelmark_area_name:0 "Mittelmark"
  mittelmark_area_adj:0 "Mittelmarkian"
- vorpommern_area:0 "Vorpommern"
+ vorpommern_area:0 "Hither Pomerania" #UU Anglicized
  vorpommern_area_name:0 "Vorpommern"
  vorpommern_area_adj:0 "Vorpommernian"
- hinter_pommern_area:0 "Hinterpommern"
+ hinter_pommern_area:0 "Farther Pomerania" #UU Anglicized
  hinter_pommern_area_name:0 "Hinterpommern"
  hinter_pommern_area_adj:0 "Hinterpommernian"
- tirol_area:0 "Tirol"
+ tirol_area:0 "Tyrol" #UU Anglicized
  tirol_area_name:0 "Tirol"
  tirol_area_adj:0 "Tirolian"
  austria_proper_area:0 "Austria Proper"
@@ -449,7 +449,7 @@ l_english:
  switzerland_area:0 "Switzerland"
  switzerland_area_name:0 "Switzerland"
  switzerland_area_adj:0 "Swiss"
- romandie_area:0 "Romandie"
+ romandie_area:0 "Romandy" #UU Anglicized
  romandie_area_name:0 "Romandie"
  romandie_area_adj:0 "Romandie"
  upper_rhineland_area:1 "Baden"
@@ -464,9 +464,9 @@ l_english:
  lower_rhineland_area:0 "Lower Rhineland"
  lower_rhineland_area_name:0 "Jullich"
  lower_rhineland_area_adj:0 "Jullichian"
- luxemburg_liege_area:0 "Liege"
- luxemburg_liege_area_name:0 "Liege"
- luxemburg_liege_area_adj:0 "Liegian"
+ luxemburg_liege_area:0 "Liège" #UU Added accent
+ luxemburg_liege_area_name:0 "Liège"
+ luxemburg_liege_area_adj:0 "Liègian"
  westphalia_area:1 "South Westphalia"
  westphalia_area_name:0 "Westphalia"
  westphalia_area_adj:0 "Westphalian"
@@ -482,7 +482,7 @@ l_english:
  holstein_area:1 "Schleswig-Holstein"
  holstein_area_name:0 "Holstein"
  holstein_area_adj:0 "Holsteiner"
- braunschweig_area:0 "Braunschweig"
+ braunschweig_area:0 "Brunswick" #UU Anglicized
  braunschweig_area_name:0 "Braunschweig"
  braunschweig_area_adj:0 "Braunschweiger"
  mecklenburg_area:0 "Mecklenburg"
@@ -560,7 +560,7 @@ l_english:
  dagestan_area:0 "Dagestan"
  dagestan_area_name:0 "Dagestan"
  dagestan_area_adj:0 "Dagestanian"
- rum_area:0 "Rum"
+ rum_area:0 "Rûm" #UU added accent
  rum_area_name:0 "Rum"
  rum_area_adj:0 "Ruman"
  erzurum_area:0 "Erzurum"
@@ -1782,7 +1782,7 @@ l_english:
  patagonian_andes:0 "Patagonian Andes"
  patagonian_andes_name:0 "Chubut"
  patagonian_andes_adj:0 "Chubut"
- bahia_blanca_area:0 "Bahiá Blanca"
+ bahia_blanca_area:0 "Bahía Blanca" #UU Fixed typo
  bahia_blanca_area_name:0 "Candelaria"
  bahia_blanca_area_adj:0 "Candelarian"
  cuyo_area:0 "Cuyo"
@@ -2248,7 +2248,7 @@ l_english:
  west_african_coast_sea_area:0 "West African Sea"
  south_atlantic_area:0 "South Atlantic"
  argentine_sea_area:0 "Argentine Sea"
- gulf_of_st_lawrence_area:0 "Gulf of St Lawrence"
+ gulf_of_st_lawrence_area:0 "Gulf of St. Lawrence" #UU Fixed typo
  gulf_stream_area:0 "Gulf Stream"
  sargasso_sea_area:0 "Sargasso Sea"
  north_atlantic_area:0 "North Atlantic"

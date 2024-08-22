@@ -1,18 +1,23 @@
 ﻿l_english:
-socialreformer:0 "Social Reformer"
-socialreformer_desc:0 "When you base your expectations only on what you see, you blind yourself to the possibilities of a new reality."
-social_reformer_flag:0 "Social Reformer" #for the advisor decision
+ socialreformer:0 "Social Reformer"
+ socialreformer_desc:0 "When you base your expectations only on what you see, you blind yourself to the possibilities of a new reality."
+ social_reformer_flag:0 "Social Reformer" #for the advisor decision
+ 
+ propagandist:0 "Propagandist"
+ propagandist_desc:0 "Repeat a lie enough times, and it becomes the truth."
+ propagandist_flag:0 "Social Reformer" #for the advisor decision
+ 
+ nationalhero:0 "National Hero"
+ nationalhero_desc:0 "'Did I ever tell you how I got the nickname the Dragon of the West?... It's more of a demonstration, really.'"
+ national_hero_flag:0 "National Hero" #for the advisor decision
+ 
+ strategist:0 "Save Starer"
+ strategist_desc:0 "If you don't have the time or interest in save staring, someone else will."
+ strategist_flag:0 "Save Starer" #for the advisor decision
+ 
+ u_u_maybe_later:0 "Maybe later"
 
-propagandist:0 "Propagandist"
-propagandist_desc:0 "Repeat a lie enough times, and it becomes the truth."
-propagandist_flag:0 "Social Reformer" #for the advisor decision
-
-nationalhero:0 "National Hero"
-nationalhero_desc:0 "'Did I ever tell you how I got the nickname the Dragon of the West?... It's more of a demonstration, really.'"
-national_hero_flag:0 "National Hero" #for the advisor decision
-
-strategist:0 "Save Starer"
-strategist_desc:0 "If you don't have the time or interest in save staring, someone else will."
-strategist_flag:0 "Save Starer" #for the advisor decision
-
-u_u_maybe_later:0 "Maybe later"
+ #The GBR event 
+ flavor_gbr.16.uua:0 "Hire a Social Reformer." #UU Added
+ flavor_gbr.16.uub:0 "Hire a Propagandist." #UU Added
+ flavor_gbr.16.uuc:0 "Hire a National Hero." #UU Added

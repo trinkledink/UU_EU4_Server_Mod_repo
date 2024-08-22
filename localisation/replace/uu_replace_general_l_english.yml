@@ -116,3 +116,111 @@
  PROCLAIM_HEGEMONY_DESC:0 "Proclaiming a hedgemony will give us plenty of benefits, increasing our power projection, but will also make us stand more alone in the world!"
  HAVE_HEGEMONY_PROGRESS_LESS_THAN:0 "Hedgemony Power is less than $VAL|Y%$"
  HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "Hedgemony Power is at least $VAL|Y%$"
+
+ #Parliament
+ #mil group
+ backing_war_effort:0 "£mil£ Support the War Effort"
+ combat_janissary_decadence:0 "£mil£ Combat Janissary Decadence"
+ drill_exercises:0 "£mil£ Polish Drill Exercises"
+ the_draft:0 "£mil£ The Draft"
+ uu_generic_drill_exercises:0 "£mil£ Drill Exercises"
+ quartering_of_troops:0 "£mil£ Quartering of Troops"
+ extend_militarization_of_the_state:0 "£mil£ Extend Militarization of the State"
+ #dip group
+ charter_colonies:0 "£dip£ Charter Colonies"
+ establish_new_siberian_frontier:0 "£dip£ Extend Siberian Frontiers"
+ imports_exports:0 "£dip£ Restrict Imports"
+ invest_heir_education:0 "£dip£ Invest in Princely Education"
+ offices_to_vassals:0 "£dip£ Create Offices for Vassal Nobles"
+ reduce_trade_regulations:0 "£dip£ Reduce Trade Regulations"
+ UU_dip_money_issue:0 "£dip£ Wealth Tax"
+ charter_trade_companies:0 "£dip£ Charter Trade Company"
+ colonial_taxation:0 "£dip£ Colonial Taxation"
+ emergency_impressment_act:0 "£dip£ Emergency Impressment Act"
+ #adm group
+ charter_university:0 "£adm£ Fund Expansion of Universities"
+ development_of_infrastructure:0 "£adm£ Land Reform"
+ election_reform:0 "£adm£ Election Reform"
+ estates_fund_industrialization:0 "£adm£ Fund an Industrial Project"
+ fund_expansion_of_bureaucracy:0 "£adm£ Fund Expansion of Bureaucracy"
+ increase_crown_land_share:0 "£adm£ Centralize Land Ownership"
+ reform_government_act:0 "£adm£ Reform the Government"
+ propagation_of_state_religion:0 "£adm£ Propagation of State Religion"
+ prohibit_use_of_local_languages:0 "£adm£ Assimilation and Settlement Policy"
+ appoint_a_new_prime_minister:0 "£adm£ Appoint a New Prime Minister"
+
+ #VOC Indiamen
+ ONLY_VOC_INDIAMEN_MODIFIER:0 "§YAffects only Transport Light Ships§!"
+ VOC_INDIAMEN_NAME:1 "Transport $NAME$"
+ MODIFIER_ALLOWED_VOC_INDIAMEN_FRACTION:1 "Transport Light Ship Force Limit"
+ VOC_INDIAMEN_FORCELIMIT:1 "We can recruit up to $LIMIT|Y$ §GTransport Ships§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our naval forcelimit of $FL$:\n"
+ VOC_INDIAMEN_LIMIT_CULTURE:1 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Transport Light Ships here."
+ ADD_VOC_INDIAMEN_SUB_UNIT_EFFECT:1 "Get '§GTransport§!' $UNIT$ in $WHERE|Y$."
+ VOC_INDIAMEN_DESC:1 " "
+ REGCAT_voc_indiamen:1 "Transport"
+ VOC_INDIAMEN_REGIMENT:1 "Transport Light Ships \n$EFFECT$"
+ HAVE_LESS_VOC_INDIAMEN_THAN:1 "Have less Transport Light Ships than §Y$VALUE$§!.\n"
+ voc_indiamen_modifier:1 "Transport Light Ships Hired"
+ MODIFIER_AMOUNT_OF_VOC_INDIAMEN:1 "Transport Light Ship Force Limit"
+ MODIFIER_HAS_VOC_INDIAMEN:0 "Country Allows Transport Light Ships"
+ NED_UNLOCK_MAXIMIZE_CARGO_SPACE_PRIVILEGE:1 "Unlocks the §YMaximize Cargo-Space§! Privilege for the §Y[Root.GetBurghersName]§!, which grants the following:\n   Ship Cannons: §R-25.0%§!\n   Ship Trade Power Modifier: §G+50.0%§!\n   §YAffects only Transport Light Ships§!"
+ NED_UNLOCK_DIVERSIFY_FLUYTS_PRIVILEGE:1 "Unlocks the §YDiversify the Fluyts§! Privilege for the §Y[Root.GetBurghersName]§!, which grants the following:\n   Ship Cannons: §G+10.0%§!\n   Ship Trade Power Modifier: §R-30.0%§!\n   Hull Size: §G+15.0%§!\n   Ship Costs: §R+30.0%§!\n   §YAffects only Transport Light Ships§!"
+ voc_indiamen_ship:1 "Transport Light Ship"
+
+ #Rum
+ cb_ottoman_subjugation_war:0 "Establish Eyalet" #UU Change because Rum can also have this CB, not just Ottomans
+ fabricate_ottoman_invasion_cb_desc:1 "Justify Invasion will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YEstablish Eyalet§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into an §YEyalet§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y5 years§!.\n\n§YEyalets can be turned into Core Eyalets which can be annexed for 6 £dip£ per development.§!" #UU Change because Rum can also have this CB, not just Ottomans
+ fabricate_ottoman_invasion_cb_tooltip:0 "Justify an invasion against the target country and gain the 'Establish Eyalet' casus belli against them." #UU Change because Rum can also have this CB, not just Ottomans
+ HAS_OTTOMAN_INVASION_CB_ALREADY_TT:0 "§R- §Y[Root.GetName]§! already has an §YEstablish Eyalet§! casus belli against §Y[From.GetName]§!.§!" #UU Change because Rum can also have this CB, not just Ottomans
+ 
+ #England
+ flavor_gbr.20.a:0 "Long live the Anglo-French Empire!" #UU Modded
+ flavor_gbr.20.b:0 "[Root.Monarch.GetName] is now recognized as the rightful sovereign [Root.Monarch.GetTitle] of both England and France." #UU Modded
+ flavor_gbr.20.d:0 "The Monarchy is no more! Long live the new Republic!" #UU Modded
+ flavor_gbr.20.e:0 "We will choose a new name representative of the union of our two states." #UU Modded
+ flavor_gbr.20.f:0 "This change is unnecessary." #UU Modded
+ desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #UU nerf
+ ave_pax_angevina:0 "Pax Andecavina" #UU Better Latin
+
+ #Origins Tooltips
+ estate_church_one_faith_one_culture_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!" #UU change
+ estate_church_one_faith_one_culture_buffed_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!\nLocal Trade Power: §G+10.0%§!\nProvince Governing Cost: §G-10.0%§!" #UU change
+ estate_church_one_faith_one_culture_gtb:2 "Every owned province, which is NOT in the §Y[Root.Culture.GetGroupName]§! culture group and has NOT an §Yaccepted culture§!, gains '§YHeretic Culture§!', giving the following effects:\nLocal Unrest: §R+3.00§!\nLocal Culture Conversion Cost: §R+10.0%§!" #UU change
+ enable_cult_for_heirs_tt:0 "Heirs can choose a second §YCult§! for your country!" #UU Change
+ disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§! for your country!" #UU Change
+ hanafi_school_bonus_tt:0 "Idea Cost: §G-5.0%§!" #UU Change
+ hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!\nMaximum Absolutism: §G+10.0§!"
+ maliki_school_bonus_tt:0 "Reform Progress Growth: §G+20.0%§!"
+ shafii_school_bonus_tt:0 "Merchants: §G+1§!\nTrade Steering: §G+15.0%§!" #UU change
+ mal_dominate_ivory_coast_and_timbuktu_tt:1 "No §YEuropean§! country has §Y20%§! Trade Power in the Trade Nodes §YIvory Coast§!, §YTimbuktu§! or §YHausaland§!." #UU Change
+ mal_absolute_authority_ct:0 "The §YDecline of Mali§! disaster will end, if it is active." #UU Change
+ junior_yemoja_cult:0 "Heir Cult - Yemoja"
+ junior_roog_cult:0 "Heir Cult - Roog"
+ junior_nyame_cult:0 "Heir Cult - Nyame"
+ junior_cwezi_cult:0 "Heir Cult - Cwezi"
+ junior_central_african_ancestor_cult:0 "Heir Cult - Mlira"
+ junior_mwari_cult:0 "Heir Cult - Mwari"
+ junior_enkai_cult:0 "Heir Cult - Enkai"
+ junior_waaq_cult:0 "Heir Cult - Waaq"
+ junior_zanahary_cult:0 "Heir Cult - Zanahary"
+ junior_christianity_cult:0 "Heir Cult - Christianity"
+ junior_islam_cult:0 "Heir Cult - Islam"
+ junior_buddhism_cult:0 "Heir Cult - Buddhadharma"
+ junior_dharmic_cult:0 "Heir Cult - Sanatana Dharma"
+ junior_south_central_american_cult:0 "Heir Cult - Teotl"
+ junior_norse_cult:0 "Heir Cult - Freyja" 
+ junior_zoroastrian_cult:0 "Heir Cult - Mazdayasna"
+ junior_jewish_cult:0 "Heir Cult - Haymanot"
+ tooltip_yemoja_cult:0 "This cult has the following benefits when selected:\nNaval Maintenance Modifier: §G-15.0%§!\nNaval Force Limit Modifier: §G+20.0%§!" #UU Change
+ tooltip_roog_cult:0 "This cult has the following benefits when selected:\nLand Attrition: §G-15.0%§!\nMovement Speed: §G+10.0%§!" #UU Change
+ tooltip_nyame_cult:0 "This cult has the following benefits when selected:\nDiplomatic Reputation: §G+1.00§!\nDiplomatic Annexation Cost: §G-15.0%§!" #UU Change
+ tooltip_south_central_american_cult:0 "This cult has the following benefits when selected:\nMorale of Armies: §G+7.5%§!" #UU Change
+ tooltip_zoroastrian_cult:1 "This cult has the following benefits when selected:\nMerchants: §G+2§!\nMerchant Trade Power: §G+10.00§!" #UU Change
+ tooltip_jewish_cult:1 "This cult has the following benefits when selected:\nAdvisor Cost: §G-10.0%§!\nInterest Per Annum: §G-0.25§!" #UU Change
+
+ #misc
+ BUILD_GREAT_PROJECT_EFFECT:0 "Builds the great project $NAME|Y$.\n" #UU added \n
+ DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$.\n"   #UU added \n
+ MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier"
+ mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU change
+
