@@ -1,4 +1,4 @@
-#UU UPDATED 1.37.0
+#UU UPDATED 1.37.2
 hagia_sophia = {
 	# province it starts in
 	start = 151
@@ -6010,7 +6010,7 @@ golden_temple = {
 	}
 }
 
-jokhang_temple = {
+jokhang_temple = { #UU Changed
 	# province it starts in
 	start = 677
 	
@@ -6143,6 +6143,7 @@ jokhang_temple = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_tax_modifier = 1.00
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -6175,6 +6176,7 @@ jokhang_temple = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_tax_modifier = 2.00
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -9764,16 +9766,26 @@ potosi = {
 		conditional_modifier = {
 			trigger = {
 				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
+					OR = {
+						any_ally = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						overlord = {
+							any_ally = {
+								mission_completed = mng_single_whip_law
+								has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+							}
+						}
+						overlord = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						AND = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
 					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
 				}
 			}
 			modifier = {
@@ -9816,16 +9828,26 @@ potosi = {
 		conditional_modifier = {
 			trigger = {
 				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
+					OR = {
+						any_ally = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						overlord = {
+							any_ally = {
+								mission_completed = mng_single_whip_law
+								has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+							}
+						}
+						overlord = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						AND = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
 					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
 				}
 			}
 			modifier = {
@@ -9868,16 +9890,26 @@ potosi = {
 		conditional_modifier = {
 			trigger = {
 				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
+					OR = {
+						any_ally = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						overlord = {
+							any_ally = {
+								mission_completed = mng_single_whip_law
+								has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+							}
+						}
+						overlord = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
+						AND = {
+							mission_completed = mng_single_whip_law
+							has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+						}
 					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
 				}
 			}
 			modifier = {
@@ -11161,7 +11193,7 @@ bara_katra = {
 }
 
 bran_castle = {
-	start = 4128 #Királyföld
+	start = 4128 #Kir�lyf�ld
 	date = 1357.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -16156,6 +16188,7 @@ swayambhunath = {
 			local_tax_modifier = 0.5
 		}
 		area_modifier = {
+			local_hostile_attrition = 2.5
 		}
 		country_modifiers = {
 			yearly_karma_decay = 0.05
@@ -16178,6 +16211,8 @@ swayambhunath = {
 		}
 		area_modifier = {
 			local_tax_modifier = 0.75
+			local_hostile_attrition = 10
+			max_attrition = 1
 		}
 		country_modifiers = {
 			yearly_karma_decay = 0.1
@@ -16343,7 +16378,7 @@ white_house = {
 }
 
 tikal = {
-	start = 842 #Petén
+	start = 842 #Pet�n
 	date = 10.01.01
 	time = { months = 0	}
 	build_cost = 0

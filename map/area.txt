@@ -629,7 +629,7 @@ bothnia_area = { #3
 }
 
 laponia_area = { #3
-	315 1777 4151
+	315 4151		#UU Kola removed
 }
 
 karelia_area = { #4
@@ -857,6 +857,7 @@ ural_area = { #5
 
 pomor_area = { #4
 	313 1776 1958 4258
+	1777 #UU Kola moved to here
 }
 
 arkhangelsk_area = { #4

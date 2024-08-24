@@ -3,13 +3,6 @@ country_decisions = {
         potential = {
             ai = no 
             num_of_transport = 1
-            any_owned_province = {
-                num_of_units_in_province = {
-                    who = ROOT
-                    type = transport
-                    amount = 1
-                }
-            }
             dip_tech = 3
         }
 

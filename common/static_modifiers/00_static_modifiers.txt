@@ -1361,8 +1361,8 @@ trade_protectorate_low_development_subject_modifier = {
 }
 
 trade_protectorate_overlord_modifier = {
-	global_trade_power = 0.05
-	global_trade_goods_size_modifier = 0.02
+	#global_trade_power = 0.05					#UU change because this is stupid
+	#global_trade_goods_size_modifier = 0.02
 }
 
 liberty_desire = {

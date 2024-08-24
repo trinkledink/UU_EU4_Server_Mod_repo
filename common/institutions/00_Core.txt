@@ -20,7 +20,7 @@ feudalism = {
 		free_leader_pool = 1
 	}
 
-	trade_company_efficiency = 0.2
+	trade_company_efficiency = 0.1	#UU Halved
 
 #effect = { } # When a country embraces it
 
@@ -280,7 +280,7 @@ renaissance = {
 		build_cost = -0.05
 	}
 
-	trade_company_efficiency = 0.4
+	trade_company_efficiency = 0.2 #UU Halved
 
 
 	historical_start_date = 1450.1.1
@@ -544,7 +544,7 @@ new_world_i = {
 		global_prov_trade_power_modifier = 0.10
 	}
 
-	trade_company_efficiency = 0.6
+	trade_company_efficiency = 0.3 #UU Halved
 
 
 	historical_start_date = 1500.1.1
@@ -859,7 +859,7 @@ printing_press = {
 		stability_cost_modifier = -0.05
 	}
 
-	trade_company_efficiency = 0.8
+	trade_company_efficiency = 0.4 #UU Halved
 
 	historical_start_date = 1550.1.1
 	historical_start_province = 1876 #Frankfurt
@@ -1213,7 +1213,7 @@ global_trade = {
 		merchants = 1
 	}
 
-	trade_company_efficiency = 1.0
+	trade_company_efficiency = 0.5 #UU Halved
 
 	historical_start_date = 1600.1.1
 	historical_start_province = 97 #Holland
@@ -1516,7 +1516,7 @@ manufactories = {
 		global_trade_goods_size_modifier = 0.1
 	}
 
-	trade_company_efficiency = 1.25
+	trade_company_efficiency = 0.66 #UU Halved
 
 	historical_start_date = 1650.1.1
 	historical_start_province = 183 #Paris
@@ -2023,7 +2023,7 @@ enlightenment = {
 		culture_conversion_cost = -0.25
 	}
 
-	trade_company_efficiency = 1.5
+	trade_company_efficiency = 0.75 #UU Halved
 
 	historical_start_date = 1700.1.1
 	historical_start_province = 236 #London
@@ -2402,7 +2402,7 @@ enlightenment = {
 #######################################
 industrialization = {
 	
-	trade_company_efficiency = 2.0
+	trade_company_efficiency = 1.0 #UU Halved
 
 	bonus = {
 		global_manpower_modifier = 0.25
