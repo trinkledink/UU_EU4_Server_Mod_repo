@@ -7,11 +7,14 @@ country_decisions = {
         }
 
         allow = {
-            any_owned_province = {
-                num_of_units_in_province = {
-                    who = ROOT
-                    type = transport
-                    amount = 1
+            custom_trigger_tooltip = {
+                tooltip = uu_replace_transports_trigger_tt
+                any_owned_province = {
+                    num_of_units_in_province = {
+                        who = ROOT
+                        type = transport
+                        amount = 1
+                    }
                 }
             }
             is_at_war = no

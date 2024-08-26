@@ -73,7 +73,7 @@
  uu_easter_egg_events.14.a:0 "No Imperium of Man could ever match the Imperium of God."
  IMPERIUM_OF_GOD:0 "Imperium of God"
  IMPERIUM_OF_GOD_ADJ:0 "Papal"
- uu_restore_roman_empire_kog:0 "Restore the Roman Empire" #(§M5§!)@ROM 
+ uu_restore_roman_empire_kog:0 "(§M5§!)@ROM Restore the Roman Empire" 
  uu_restore_roman_empire_kog_desc:0 "Not since the Romans in the second century has one empire commanded the entirety of the Mediterranean and beyond. If we claim this land, we can scoff at whatever pretenders may claim in Constantinople or the Holy Roman Empire and proclaim ourselves the true successors of Rome."
 
  uu_easter_egg_events.15.t:0 "Have you set your AI settings?"

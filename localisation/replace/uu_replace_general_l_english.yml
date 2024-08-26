@@ -148,6 +148,61 @@
  propagation_of_state_religion:0 "£adm£ Propagation of State Religion"
  prohibit_use_of_local_languages:0 "£adm£ Assimilation and Settlement Policy"
  appoint_a_new_prime_minister:0 "£adm£ Appoint a New Prime Minister"
+ #ENG/GBR
+ english_scottish_act_of_union:0 "(§T§O3§!§!)@GBR Acts of Union"
+ english_french_act_of_union:0 "(§T§O3§!§!)@AVE Acts of Union"
+ crown_of_ireland_act:0 "@[Root.GetTag] Crown of Ireland Act"
+ bill_of_rights_act:0 "@[Root.GetTag] Bill of Rights"
+ the_black_act:0 "@[Root.GetTag] The Black Act"
+ the_tea_act:0 "@[Root.GetTag] The Tea Act"
+ french_english_reconciliation_act:0 "@[Root.GetTag] French-English Reconciliation Act"
+ crush_french_nobles:0 "@[Root.GetTag] Curtail French Nobility"
+ the_bank_charter_act:0 "@[Root.GetTag] The Bank Charter Act"
+ acts_of_naval_professionalism:0 "@[Root.GetTag] Act of Naval Professionalism"
+ the_sugar_act:0 "@[Root.GetTag] The Sugar Act"
+ royal_impressment_act:0 "@[Root.GetTag] Royal Impressment Act"
+ isolationism_act:0 "@[Root.GetTag] Isolationism Act"
+ colonial_act:0 "@[Root.GetTag] Colonial Act"
+ military_reassignment_act:0 "@[Root.GetTag] Military Reassignment Act"
+ acts_of_annexation:1 "@[Root.GetTag] Acts of Development"
+ global_empire_act:0 "@[Root.GetTag] Global Empire Act"
+ naval_reassignment_act:0 "@[Root.GetTag] Naval Reassignment Act"
+ diplomatic_act:0 "@[Root.GetTag] Diplomatic Act"
+ internal_focus_act:0 "@[Root.GetTag] Internal Focus Act"
+ discipline_for_the_marines_acts:0 "@[Root.GetTag] Maritime Discipline Acts"
+ improved_man_of_war_acts:0 "@[Root.GetTag] Man-of-War Acts"
+ army_reform_acts:0 "@[Root.GetTag] Army Reform Acts"
+ enact_the_wales_acts:0 "@[Root.GetTag] Laws in Wales Acts"
+ wales_act:0 "@[Root.GetTag] Laws in Wales"
+ reform_government_act:0 "@[Root.GetTag] Reform the Government"
+ acts_of_high_admiralty:0 "@[Root.GetTag] Acts of High Admiralty"
+ acts_of_maritime_courage:0 "@[Root.GetTag] Maritime Courage Acts"
+ acts_of_maritime_professionalism:0 "@[Root.GetTag] Acts of Maritime Professionalism"
+ british_ideas_laws:0 "@[Root.GetTag] Adjust British Laws"
+ angevin_ideas_laws:0 "@[Root.GetTag] Adjust Angevin Laws"
+ english_ideas_laws:0 "@[Root.GetTag] Adjust English Laws"
+ cultural_unity_act:0 "@[Root.GetTag] Act of Cultural Unity"
+ colonial_venture_act:0 "@[Root.GetTag] Colonial Venture"
+ crown_of_iberia_act:1 "@[Root.GetTag] Act of the Spanish Crown"
+ act_of_exploration:0 "@[Root.GetTag] Exploration Act"
+ acts_of_impressment:0 "@[Root.GetTag] Acts of Impressment"
+ acts_of_taxation:0 "@[Root.GetTag] Taxation Acts"
+ act_of_representation:0 "@[Root.GetTag] Acts of Representation"
+ crown_of_italy_act:0 "@[Root.GetTag] Act of the Italian Crown"
+ crown_of_the_empire_act:0 "@[Root.GetTag] Crown of the Empire"
+ the_gold_act:0 "@[Root.GetTag] Gold Act"
+ the_spice_act:0 "@[Root.GetTag] Spice Act"
+ appointment_of_state_minister:0 "@[Root.GetTag] Appointment of State Minister"
+ enact_mercantilism:0 "@[Root.GetTag] Mercantilism Act"
+ promote_free_trade:0 "@[Root.GetTag] Act of Free Trade"
+ royal_marine_act:0 "@[Root.GetTag] Royal Marines Act"
+ military_reform_acts:0 "@[Root.GetTag] Acts of State Military"
+ #HRE
+ establish_the_imperial_diet_act:0 "@HRE Establish the Imperial Diet"
+ act_of_imperial_diplomacy:0 "@HRE Act of Imperial Diplomacy"
+ landsknechte_act:0 "@HRE Landsknechte Act"
+ imperial_religious_unity_act:0 "@HRE Imperial Religious Unity Act"
+ gemeiner_pfennig_act:0 "@HRE Gemeiner Pfennig Act"
 
  #VOC Indiamen
  ONLY_VOC_INDIAMEN_MODIFIER:0 "§YAffects only Transport Light Ships§!"
@@ -179,7 +234,8 @@
  flavor_gbr.20.d:0 "The Monarchy is no more! Long live the new Republic!" #UU Modded
  flavor_gbr.20.e:0 "We will choose a new name representative of the union of our two states." #UU Modded
  flavor_gbr.20.f:0 "This change is unnecessary." #UU Modded
- desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #UU nerf
+ desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #This is the country modifier description. UU Nerfed
+ gbr_dominiate_new_world_at:1 "All §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #This is the mission tooltip. UU nerf
  ave_pax_angevina:0 "Pax Andecavina" #UU Better Latin
 
  #Origins Tooltips

@@ -230,10 +230,10 @@ l_english:
  northern_norway:1 "Trøndelag"
  northern_norway_name:0 "Trøndelag"
  northern_norway_adj:0 "Trøndelagian"
- eastern_norway:0 "Østlandet"
+ eastern_norway:0 "Eastern Norway" #UU Anglicized
  eastern_norway_name:0 "Norway"
  eastern_norway_adj:0 "Norwegian"
- western_norway:0 "Vestlandet"
+ western_norway:0 "Western Norway" #UU Anglicized
  western_norway_name:0 "Bergenshus"
  western_norway_adj:0 "Bergenshusian"
  subarctic_islands_area:2 "North Atlantic Islands"
@@ -284,7 +284,7 @@ l_english:
  pripyat_area:0 "Pripyat"
  pripyat_area_name:0 "Brest"
  pripyat_area_adj:0 "Brestian"
- podlasie_area:0 "Podlasie"
+ podlasie_area:0 "Podlachia"  #UU Anglicized
  podlasie_area_name:0 "Podlasie"
  podlasie_area_adj:0 "Podlasian"
  mazovia_area:0 "Mazovia"
