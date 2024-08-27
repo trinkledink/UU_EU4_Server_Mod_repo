@@ -68,26 +68,6 @@ uu_ai_native_nomigrate_tmod = {
 	migration_cost = 5.0 #this should deter them from migrating so much in the areas with gold
 }
 
-uu_max_seats = {
- 	potential = {
- 		ai = no
- 		has_parliament = yes
- 	}
-
- 	trigger = {
- 		NOT = {
- 			OR = {
- 				has_reform = angevin_monarchy
- 				has_reform = restoration_of_the_senate_reform
- 				has_reform = strengthened_parliament_reform
- 			}
- 		}
- 	}
-
- 	max_possible_parliament_seats = 20
-	
-}
-
 uu_PAP_HRE_not_catholic = {
 	potential = {
 		ai = no

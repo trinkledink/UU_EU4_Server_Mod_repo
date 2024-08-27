@@ -126,7 +126,7 @@ restoration_of_the_senate_reform = {
 	icon = "restoration_of_the_senate_reform"
 	modifiers = {
 		global_unrest = -2
-		max_possible_parliament_seats = 8
+		max_possible_parliament_seats = 10
 	}
 	potential = {
 		is_revolutionary = no

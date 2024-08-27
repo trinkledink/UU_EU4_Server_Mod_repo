@@ -949,7 +949,7 @@ angevin_monarchy = {
 		num_accepted_cultures = 2
 		max_absolutism = 10
 		prestige = 1
-		max_possible_parliament_seats = 15
+		max_possible_parliament_seats = 10
 	}
 	effect = {
 		hidden_effect = {
@@ -6630,7 +6630,7 @@ strengthened_parliament_reform = {
 		max_absolutism = -20
 		development_cost_in_primary_culture = -0.1
 		parliament_backing_chance = 0.05
-		max_possible_parliament_seats = 30	#uu added
+		max_possible_parliament_seats = 10	#uu added
 	}
 	ai = {
 		factor = 10

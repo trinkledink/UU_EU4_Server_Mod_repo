@@ -606,9 +606,10 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+	max_possible_parliament_seats = 20	#UU
 	has_marines = yes
-	has_voc_indiamen = yes
-	allowed_voc_indiamen_fraction = 4 #4x naval FL I really don't know why you'd need more
+	has_voc_indiamen = yes				#UU 
+	allowed_voc_indiamen_fraction = 4 	#UU 4x naval FL (I really don't know why you'd need more)
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI

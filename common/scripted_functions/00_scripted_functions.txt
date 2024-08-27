@@ -202,26 +202,48 @@ can_add_seat_in_parliament = {	#uu max default seats is 20, 30 if strengthened p
 			if = {
 				limit = {
 					owner = { 
-						NOT = { has_reform = strengthened_parliament_reform }
+						has_global_modifier_value = {
+							which = max_possible_parliament_seats	#e.g. strengthened parliament t7 + angevin monarchy t1
+							value = 40
+						}
 					}
 				}
 				owner = { 
 					num_of_owned_provinces_with = {
 						has_seat_in_parliament = yes
-						value = 20
+						value = 40
 					}
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					owner = { 
-						has_reform = strengthened_parliament_reform
+						has_global_modifier_value = {
+							which = max_possible_parliament_seats
+							value = 30
+						}
 					}
 				}
 				owner = { 
 					num_of_owned_provinces_with = {
 						has_seat_in_parliament = yes
 						value = 30
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = { 
+						has_global_modifier_value = {
+							which = max_possible_parliament_seats
+							value = 20
+						}
+					}
+				}
+				owner = {
+					num_of_owned_provinces_with = {
+						has_seat_in_parliament = yes
+						value = 20
 					}
 				}
 			}

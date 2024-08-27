@@ -128,11 +128,14 @@ country_event = {
 	
 	trigger = {
 		tag = MOR
-		NOT = { is_year = 1455 } #Died in 1448
 	}
 	
 	mean_time_to_happen = {
-		months = 33
+		months = 50	#UU changed from 33, he died in 1448 historically
+		modifier = {
+			factor = 0.02
+			NOT = { has_ruler = "Abû Zakariyâ Yahyâ" }
+		}
 	}
 	
 	option = {
@@ -141,7 +144,7 @@ country_event = {
 		set_country_flag = mor_death_of_yahya
 		add_stability = -1
 		define_ruler = {
-			name = "'Alï¿½"
+			name = "'Alî"
 			dynasty = "Wattasid"
 			culture = berber
 			adm = 3

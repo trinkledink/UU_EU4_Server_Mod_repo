@@ -104,7 +104,7 @@
 
  #Other tooltips
  uu_heir_cult_cannot_be_same_as_main_tt:0 "§YNote: Heir cult cannot be the same as the main cult.§!"
- uu_max_parliament_seats:0 "You have already assigned your max number of parliament seats. The default is 20."
+ uu_max_parliament_seats:0 "You have already assigned the maximum possible parliament seats. The default is 20."
 
  #Unused?
  peruvian_theocarcy:0 "Peruvian Theocracy"

@@ -118,6 +118,7 @@
  HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "Hedgemony Power is at least $VAL|Y%$"
 
  #Parliament
+ MODIFIER_MAX_POSSIBLE_PARLIAMENT_SEATS:0 "Possible Parliament Seats" #Was max possible, but now represents a hard limit
  #mil group
  backing_war_effort:0 "£mil£ Support the War Effort"
  combat_janissary_decadence:0 "£mil£ Combat Janissary Decadence"
@@ -133,7 +134,7 @@
  invest_heir_education:0 "£dip£ Invest in Princely Education"
  offices_to_vassals:0 "£dip£ Create Offices for Vassal Nobles"
  reduce_trade_regulations:0 "£dip£ Reduce Trade Regulations"
- UU_dip_money_issue:0 "£dip£ Wealth Tax"
+ UU_dip_money_issue:0 "£dip£ Reform Wealth Tax"
  charter_trade_companies:0 "£dip£ Charter Trade Company"
  colonial_taxation:0 "£dip£ Colonial Taxation"
  emergency_impressment_act:0 "£dip£ Emergency Impressment Act"
@@ -174,7 +175,6 @@
  army_reform_acts:0 "@[Root.GetTag] Army Reform Acts"
  enact_the_wales_acts:0 "@[Root.GetTag] Laws in Wales Acts"
  wales_act:0 "@[Root.GetTag] Laws in Wales"
- reform_government_act:0 "@[Root.GetTag] Reform the Government"
  acts_of_high_admiralty:0 "@[Root.GetTag] Acts of High Admiralty"
  acts_of_maritime_courage:0 "@[Root.GetTag] Maritime Courage Acts"
  acts_of_maritime_professionalism:0 "@[Root.GetTag] Acts of Maritime Professionalism"
