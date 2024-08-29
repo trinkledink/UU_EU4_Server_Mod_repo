@@ -1,10 +1,10 @@
 namespace = uu_diplomat
 
 country_event = {
-   id = uu_diplomat.1
-   title = uu_diplomat.1.t
-   desc = uu_diplomat.1.desc
-   picture = CONQUEST_eventPicture
+   	id = uu_diplomat.1
+   	title = uu_diplomat.1.t
+   	desc = uu_diplomat.1.desc
+   	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
     major = yes

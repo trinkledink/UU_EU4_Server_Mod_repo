@@ -16211,7 +16211,7 @@ swayambhunath = {
 		}
 		area_modifier = {
 			local_tax_modifier = 0.75
-			local_hostile_attrition = 10
+			local_hostile_attrition = 50
 			max_attrition = 1
 		}
 		country_modifiers = {
