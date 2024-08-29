@@ -2736,7 +2736,7 @@ ramparts = {
 		local_hostile_attrition = 1.5
 		max_attrition = 1.5
 		local_defensiveness = 0.15
-		garrison_damage = 0.25
+		local_garrison_damage = 0.25
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
