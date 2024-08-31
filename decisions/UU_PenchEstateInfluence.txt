@@ -141,19 +141,6 @@ country_decisions = {
 			if = {
 				limit = {
 					estate_influence = {
-						estate = estate_rajputs
-						influence = 100
-					}
-				}
-				add_estate_influence_modifier = {
-					estate = estate_rajputs
-					influence = 0
-					duration = 0
-				}
-			}
-			if = {
-				limit = {
-					estate_influence = {
 						estate = estate_maratha
 						influence = 100
 					}

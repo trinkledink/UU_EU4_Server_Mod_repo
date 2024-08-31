@@ -1400,7 +1400,18 @@ country_event = {
 			factor = 1
 		}
 	}
-
+	option = { #UU Added
+		name = flavor_gbr.16.uud
+		trigger = {
+			has_country_flag = selected_mil_advisor
+		}
+		generate_advisor = {
+			type = strategist
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
 
 	#Fallback
 	option = {
