@@ -9,10 +9,11 @@ interaction = {
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
+		hidden_trigger = { NOT = { has_country_modifier = uu_recently_gift_dontdeletethis } }
     }
     effect = {
 		if = {
-limit = {
+			limit = {
 				religion = inti
 				check_variable = {
 					which = inca_amount_of_mummies

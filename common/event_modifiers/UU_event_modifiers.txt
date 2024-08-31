@@ -340,3 +340,6 @@ uu_pap_mil_dogma_3_modifier = {
 }
 
 dogma_manpower_5yr_cooldown = {}
+
+#debug
+uu_recently_gift_dontdeletethis = {}

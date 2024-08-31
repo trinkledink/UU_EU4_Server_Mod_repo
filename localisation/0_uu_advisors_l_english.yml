@@ -17,7 +17,8 @@
  
  u_u_maybe_later:0 "Maybe later"
 
- #The GBR event 
+ #The GBR event which generates an advisor 
  flavor_gbr.16.uua:0 "Hire a Social Reformer." #UU Added
  flavor_gbr.16.uub:0 "Hire a Propagandist." #UU Added
  flavor_gbr.16.uuc:0 "Hire a National Hero." #UU Added
+ flavor_gbr.16.uud:0 "Hire a Save Starer." #UU Added

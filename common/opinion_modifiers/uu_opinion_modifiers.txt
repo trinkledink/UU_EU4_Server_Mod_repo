@@ -12,3 +12,7 @@ opinion_timurid_rival_claimant = {
 	opinion = -200
 	yearly_decay = 1
 }
+
+uu_sent_attache_opinion_mod = {
+	opinion = 15
+}

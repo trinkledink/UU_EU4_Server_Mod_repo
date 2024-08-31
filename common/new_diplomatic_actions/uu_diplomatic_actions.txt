@@ -1,0 +1,402 @@
+# Triggers and effects will be given the Actor's scope, with the Recipient's as FROM
+# Icons are used from the messageicons.dds
+#static_actions = { # static_actions is a reserved token.
+#	# alert_index maps to the frame of the alert icon
+#	royal_marriage = 										{ alert_index = 1 alert_tooltip = ICON_RM }
+#	requestpeace = 										{ alert_index = 2 alert_tooltip = ICON_PEACE  } # alert_index will be overwritten in code for this one.
+#	allianceaction = 										{ alert_index = 3 alert_tooltip = ICON_ALLIANCE }
+#	# 4 is currently unused.
+#	integrationaction = 									{ alert_index = 5 alert_tooltip = ICON_ANNEX }
+#	annexationaction =									{ alert_index = 5 alert_tooltip = ICON_ANNEX }
+#	vassalaction = 										{ alert_index = 6 alert_tooltip = ICON_VASSAL }
+#	milaccess = 											{ alert_index = 7 alert_tooltip = ICON_ASKMIL }
+#	fleet_access = 										{ alert_index = 8 alert_tooltip = ICON_ASKFLEET }
+#	offermilaccess = 										{ alert_index = 9 alert_tooltip = ICON_OFFACC }
+#	callaction = 											{ alert_index = 10 alert_tooltip = ICON_CALLALLY } # This one is referred to in the code (settings.cpp)
+#	offerloan = 												{ alert_index = 11 alert_tooltip = ICON_OFFERLOAN }
+#	sellprov = 												{ alert_index = 12 alert_tooltip = ICON_PROVSALE }
+#		#13 is cursed
+#	request_to_join_federation = 						{ alert_index = 14 alert_tooltip = ICON_FEDERATIONREQUEST }
+#	invite_to_federation = 								{ alert_index = 15 alert_tooltip = ICON_FEDERATIONINVITE }
+#	transfer_trade_power = 							{ alert_index = 16 alert_tooltip = TRANSFER_TRADE_POWER }
+#	religious_unity_action = 							{ alert_index = 17 alert_tooltip = ICON_RELIGIOUS_UNITY }
+#		# 18 is used by requestpeace
+#	form_coalition = 										{ alert_index = 19 alert_tooltip = ICON_FORM_COALITION }
+#	enforce_peace = 										{ alert_index = 20 alert_tooltip = ICON_ENFORCE_PEACE } # This one may be overwritten in code.
+#	grant_electorate = 									{ alert_index = 21 alert_tooltip = ICON_GRANT_ELECTORATE }
+#	demand_unlawful_territory_action = 			{ alert_index = 22 alert_tooltip = ICON_DEMAND_UNLAWFUL_TERRITORY }
+#		# 23 is used by requestpeace
+#		# 24 is used by requestpeace
+#		# 25 is used by requestpeace
+#		# 26 is used by requestpeace
+#		# 27 is used by enforce_peace (when actor is coalition leader) with tooltip "ICON_ENFORCE_PEACE_COALITION_LEADER"
+#	support_independence_action = 					{ alert_index = 28 alert_tooltip = support_independence }
+#	steer_trade = 										{ alert_index = 29 alert_tooltip = ICON_STEER_TRADE }
+#	ask_for_march = 										{ alert_index = 30 alert_tooltip = ICON_MARCH }
+#	sell_ships_action = 									{ alert_index = 31 alert_tooltip = ICON_FLEETSALE }
+#	grant_freecity = 										{ alert_index = 32 alert_tooltip = ICON_GRANT_FREECITY }
+#	# 33 is currently unused
+#	invite_to_trade_league = 							{ alert_index = 34 alert_tooltip = ICON_TRADELEAGUEINVITE }
+#	request_to_join_trade_league = 					{ alert_index = 35 alert_tooltip = ICON_TRADELEAGUEREQUEST }
+#	sharemap = 											{ alert_index = 36 alert_tooltip = ICON_REQUESTSHAREMAP } # alert_tooltip gets special treatment in the code
+#	condottieri_action = 								{ alert_index = 37 alert_tooltip = ICON_CONDOTTIERI }
+#	offer_fleet_access = 								{ alert_index = 38 alert_tooltip = ICON_OFFERFLEET }
+#	break_alliance = 										{ alert_index = 39 alert_tooltip = ICON_BREAK_ALLIANCE }
+#	tributary_state_action = 							{ alert_index = 40 alert_tooltip = ICON_TRIBUTARY }
+#	ask_for_tributary_state_action = 				{ alert_index = 41 alert_tooltip = ICON_ASK_TRIBUTARY }
+#	knowledge_sharing = 								{ alert_index = 42 alert_tooltip = ICON_KNOWLEDGESHARE } #The answer to life
+#	# 43 is currently unused
+#	charter_company = 								{ alert_index = 44 alert_tooltip = ICON_CHARTERCOMPANY }
+#	reduce_relations_favor = { alert_index = 45 alert_tooltip = ICON_TRADEFAVORSFORREDUCERELATIONS }
+#	return_core_favor = { alert_index = 46 alert_tooltip = ICON_TRADEFAVORSFORRETURNCORE }
+#	break_alliance_favor = { alert_index = 47 alert_tooltip = ICON_TRADEFAVORSFORBREAKALLIANCE }
+#	trade_favors_for_trust = { alert_index = 48 alert_tooltip = ICON_TRADEFAVORSFORTRUST }
+#	trade_favors_for_men = { alert_index = 49 alert_tooltip = ICON_TRADEFAVORSFORMEN }
+#	trade_favors_for_sailors = { alert_index = 50 alert_tooltip = ICON_TRADEFAVORSFORSAILORS }
+#	trade_favors_for_heir = { alert_index = 51 alert_tooltip = ICON_TRADEFAVORSFORHEIR }
+#	trade_favors_for_war_prep = { alert_index = 52 alert_tooltip = ICON_TRADEFAVORSFORWARPREP }
+#	trade_favors_for_gold = { alert_index = 53 alert_tooltip = ICON_TRADEFAVORSFORGOLD }
+#	ask_knowledge_sharing = { alert_index = 55 alert_tooltip = ICON_ASKKNOWLEDGESHARE }
+#}
+
+uu_send_attache = {
+	category = alliance
+
+	alert_index = 33	#test
+	alert_tooltip = uu_send_attache_alert_tooltip
+	require_acceptance = yes
+
+	is_visible = {
+		ai = no
+		FROM = {
+			ai = no
+		}
+		NOT = { 
+			reverse_has_opinion_modifier = { 
+				who = FROM 
+				modifier = uu_sent_attache_opinion_mod 
+			} 
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				FROM = { 
+					OR = { 
+						has_removed_fow = yes
+						overlord_of = ROOT
+					} 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = UU_ALREADY_REVEALED_FOW_TT 
+				FROM = { 
+					NOT = { 
+						has_removed_fow = yes
+						overlord_of = ROOT
+					} 
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { is_free_or_tributary_trigger = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_SUBJECT_TT
+				FROM = { is_free_or_tributary_trigger = yes }
+			}
+		}
+		if = {
+			limit = { FROM = { is_at_war = no } }
+			custom_trigger_tooltip = {
+				tooltip = UU_NOT_AT_WAR_TT
+				FROM = { is_at_war = yes }
+			}
+		}
+		if = {
+			limit = { war_with = from }
+			custom_trigger_tooltip = {
+				tooltip = WAR_WITH_FROM_TT
+				NOT = { war_with = from }
+			}
+		}
+	}
+	on_accept = {
+		reverse_add_opinion = {
+			who = from
+			modifier = uu_sent_attache_opinion_mod
+		}
+		FROM = {  
+			remove_fow = 1
+			every_ally = {
+				limit = { NOT = { war_with = ROOT } }
+				remove_fow = 1
+			}
+		} 
+		country_event = {
+			id = uu_diplomatic_actions.1
+			days = 27
+		}
+	}
+	on_decline = {}
+}
+
+uu_cancel_attache = {
+	category = alliance
+
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		reverse_has_opinion_modifier = { 
+			who = FROM 
+			modifier = uu_sent_attache_opinion_mod 
+		}
+	}
+	is_allowed = {
+		#should always be true?
+	}
+	on_accept = {
+		reverse_remove_opinion = {
+			who = from
+			modifier = uu_sent_attache_opinion_mod
+		}
+		FROM = { 
+			country_event = {
+				id = uu_diplomatic_actions.2
+			}
+		}
+	}
+	on_decline = {
+		#should never happen?
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+uu_revoke_attache = {
+	category = alliance
+
+	require_acceptance = no
+	is_visible = {
+		ai = no
+		has_opinion_modifier = { who = from modifier = uu_sent_attache_opinion_mod }
+	}
+	is_allowed = {
+		#should always be true?
+	}
+	on_accept = {
+		remove_opinion = {
+			who = from
+			modifier = uu_sent_attache_opinion_mod
+		}
+		FROM = { 
+			country_event = {
+				id = uu_diplomatic_actions.3
+			}
+		}
+	}
+	on_decline = {
+		#should never happen?
+	}
+	ai_will_do = {
+		always = yes	#ai will not want to share vision
+	}
+}
+
+uu_send_gift_2k = {
+	category = economy
+
+	require_acceptance = no
+
+	is_visible = {
+		ai = no
+	}
+	is_allowed = {
+		if = {
+			limit = { war_with = from }
+			custom_trigger_tooltip = {
+				tooltip = WAR_WITH_FROM_TT
+				NOT = { war_with = from }
+			}
+		}
+		if = {
+			limit = { 
+				AND = { 
+					num_of_loans = 1 
+					current_income_balance = 0 
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_IN_DEBT_AND_DEFICIT_TT
+				NOT = { 
+					AND = {
+						num_of_loans = 1 
+						current_income_balance = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { treasury = 2000 } }
+			custom_trigger_tooltip = {
+				tooltip = UU_INSUFFICIENT_FUNDS_TT
+				treasury = 2000
+			}
+		}
+		if = {
+			limit = { is_bankrupt = yes }
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_BANKRUPT_TT
+				is_bankrupt = no
+			}
+		}
+	}
+	on_accept = {
+		add_treasury = -2000
+		add_country_modifier = {
+			name = uu_recently_gift_dontdeletethis
+			duration = 63
+			hidden = yes
+		} 
+		FROM = { 
+			add_treasury = 2000 
+			country_event = {
+				id = uu_diplomatic_actions.10
+			}
+		}
+	}
+	on_decline = {}
+}
+
+uu_send_gift_10k = {
+	category = economy
+
+	require_acceptance = no
+
+	is_visible = {
+		ai = no
+	}
+	is_allowed = {
+		if = {
+			limit = { war_with = from }
+			custom_trigger_tooltip = {
+				tooltip = WAR_WITH_FROM_TT
+				NOT = { war_with = from }
+			}
+		}
+		if = {
+			limit = { 
+				AND = { 
+					num_of_loans = 1 
+					current_income_balance = 0 
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_IN_DEBT_AND_DEFICIT_TT
+				NOT = { 
+					AND = {
+						num_of_loans = 1 
+						current_income_balance = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { treasury = 10000 } }
+			custom_trigger_tooltip = {
+				tooltip = UU_INSUFFICIENT_FUNDS_TT
+				treasury = 10000
+			}
+		}
+		if = {
+			limit = { is_bankrupt = yes }
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_BANKRUPT_TT
+				is_bankrupt = no
+			}
+		}
+	}
+	on_accept = {
+		add_treasury = -10000
+		add_country_modifier = {
+			name = uu_recently_gift_dontdeletethis
+			duration = 63
+			hidden = yes
+		} 
+		FROM = { 
+			add_treasury = 10000 
+			country_event = {
+				id = uu_diplomatic_actions.11
+			}
+		}
+		
+	}
+	on_decline = {}
+}
+
+uu_send_gift_50k = {
+	category = economy
+
+	require_acceptance = no
+
+	is_visible = {
+		ai = no
+	}
+	is_allowed = {
+		if = {
+			limit = { war_with = from }
+			custom_trigger_tooltip = {
+				tooltip = WAR_WITH_FROM_TT
+				NOT = { war_with = from }
+			}
+		}
+		if = {
+			limit = { 
+				AND = { 
+					num_of_loans = 1 
+					current_income_balance = 0 
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_IN_DEBT_AND_DEFICIT_TT
+				NOT = { 
+					AND = {
+						num_of_loans = 1 
+						current_income_balance = 0
+					}
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { treasury = 50000 } }
+			custom_trigger_tooltip = {
+				tooltip = UU_INSUFFICIENT_FUNDS_TT
+				treasury = 50000
+			}
+		}
+		if = {
+			limit = { is_bankrupt = yes }
+			custom_trigger_tooltip = {
+				tooltip = UU_IS_BANKRUPT_TT
+				is_bankrupt = no
+			}
+		}
+	}
+	on_accept = {
+		add_treasury = -50000
+		add_country_modifier = {
+			name = uu_recently_gift_dontdeletethis
+			duration = 63
+			hidden = yes
+		}
+		FROM = { 
+			add_treasury = 50000	 
+			country_event = {
+				id = uu_diplomatic_actions.12
+			}
+		}
+	}
+	on_decline = {}
+}
