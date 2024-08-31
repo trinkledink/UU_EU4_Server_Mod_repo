@@ -631,3 +631,89 @@ country_event = { 	#Renames
 		clr_country_flag = uupun_temp_flag
 	}
 }
+
+country_event = {	#Pluto arms industry
+	id = UU_balance_events.12
+	title = none
+	desc = none
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_estate_privilege = estate_burghers_pluto_weapons
+			has_estate_privilege = estate_vaisyas_pluto_weapons
+		}
+		OR = {
+			is_at_war = yes 
+			any_neighbor_country = { is_at_war = yes }
+		}
+		any_owned_province = {
+			has_building = weapons
+			NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
+		}
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = { 
+				has_building = weapons
+				NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
+			}
+			add_province_modifier = {
+				name = uu_better_weapons_manus_priv_mod
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = UU_balance_events.11.zzz
+	}
+}
+
+country_event = {	#Pluto arms industry remove
+	id = UU_balance_events.13
+	title = none
+	desc = none
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_estate_privilege = estate_burghers_pluto_weapons
+			has_estate_privilege = estate_vaisyas_pluto_weapons
+		}
+		NOT = {
+			OR = {
+				is_at_war = yes 
+				any_neighbor_country = {
+					is_at_war = yes
+				}
+			}
+		}
+		any_owned_province = {
+			has_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	
+	immediate = {
+		every_owned_province = {
+			limit = { 
+				has_building = weapons
+				has_province_modifier = uu_better_weapons_manus_priv_mod
+			}
+			remove_province_modifier = uu_better_weapons_manus_priv_mod
+		}
+	}
+	option = {
+		name = UU_balance_events.11.zzz
+	}
+}

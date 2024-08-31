@@ -462,7 +462,7 @@ Religious-Maritime = {	##Add sailors on remove
 	effect = {
 	}
 	removed_effect = {
-		add_yearly_sailors = 5
+		#add_yearly_sailors = 5 #converted to decision
 	}
 
 	ai_will_do = {

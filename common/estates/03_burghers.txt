@@ -258,7 +258,7 @@ estate_burghers = {
 
 	privileges = {
 		estate_burghers_elb_improved_workshops	#UU
-		#estate_burghers_pluto_weapons			#UU
+		estate_burghers_pluto_weapons			#UU
 		estate_burghers_land_rights
 		estate_burghers_land_of_commerce
 		estate_burghers_admirals

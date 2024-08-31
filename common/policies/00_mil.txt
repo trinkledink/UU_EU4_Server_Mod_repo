@@ -374,7 +374,7 @@ Quantity-Humanist = {	##Gain 2 years of manpower on revoke
 	
 	effect = {}
 	removed_effect = {
-		add_yearly_manpower = 2
+		#add_yearly_manpower = 2	#converted to a decision
 	}
 	ai_will_do = {
 		factor = 1.0
@@ -935,7 +935,7 @@ Advancement-Espio = {
 	}	
 }
 
-Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
+Offensive-Espio = {	##Gives attacker diceroll for 1y on revoke
 	monarch_power = MIL
 	
 	potential = {
@@ -948,15 +948,12 @@ Offensive-Espio = {	#Gives attacker diceroll for 1y on revoke
 		full_idea_group = spy_ideas
 	}
 	
-	country_military_power = -1
+	#country_military_power = -1	#converted to decision
 	spy_offence = 0.3
 	
 	effect = {}
 	removed_effect = {
-		add_country_modifier = {
-			name = uu_offensive_espio_mod
-			duration = 365
-		}
+		#converted to decision
 	}
 	ai_will_do = {
 		factor = 1.0

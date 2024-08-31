@@ -1,0 +1,95 @@
+#conversion of policy on_revoke to decisions? Can't do on_enacts because then we can't force people to keep the policy in after clicking the decision
+
+country_decisions = {
+	uu_qty_hum_poleffect = {
+		color = { 200 100 0 }
+		major = yes
+		potential = {
+			has_active_policy = Quantity-Humanist 
+		}
+		allow = {
+			had_active_policy = {
+				policy = Quantity-Humanist 
+				days = 3650
+			}
+			custom_trigger_tooltip = {
+				tooltip = uu_xyrcd_tt
+				NOT = { 
+					has_country_modifier = uu_qty_hum_cd_mod
+				}
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+			add_country_modifier = {
+				name = uu_qty_hum_cd_mod
+				duration = 3650 #10y
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	uu_off_esp_poleffect = {
+		color = { 200 100 0 }
+		major = yes
+		potential = {
+			has_active_policy = Offensive-Espio
+		}
+		allow = {
+			had_active_policy = {
+				policy = Offensive-Espio 
+				days = 3650
+			}
+			custom_trigger_tooltip = {
+				tooltip = uu_xyrcd_tt
+				NOT = { 
+					has_country_modifier = uu_off_esp_cd_mod
+				}
+			}
+		}
+		effect = {
+			add_mil_power = -120
+			add_country_modifier = {
+				name = uu_offensive_espio_mod
+				duration = 365
+			}
+			add_country_modifier = {
+				name = uu_off_esp_cd_mod
+				duration = 3650 #10y
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	uu_rlg_mtm_poleffect = {
+		color = { 200 100 0 }
+		major = yes
+		potential = {
+			has_active_policy = Religious-Maritime
+		}
+		allow = {
+			had_active_policy = {
+				policy = Religious-Maritime 
+				days = 3650
+			}
+			custom_trigger_tooltip = {
+				tooltip = uu_xyrcd_tt
+				NOT = { 
+					has_country_modifier = uu_rlg_mtm_cd_mod
+				}
+			}
+		}
+		effect = {
+			add_yearly_sailors = 5
+			add_country_modifier = {
+				name = uu_rlg_mtm_cd_mod
+				duration = 3650 #10y
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

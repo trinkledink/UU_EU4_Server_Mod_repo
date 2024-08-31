@@ -27,3 +27,7 @@
  NDefines.NEconomy.CONVERSION_ZEAL_DURATION = 5475
  NDefines.NEconomy.CARAVAN_POWER_MAX = 25
  NDefines.NEconomy.LAND_TECH_MAINTENANCE_IMPACT = 0.03 --50% more than previous cost per tech
+ NDefines.NGraphics.MAPMODE_RELIGIOUS_LEAGUE_RELIGION_R = 0.5 --catholic league is yellow
+ NDefines.NGraphics.MAPMODE_RELIGIOUS_LEAGUE_RELIGION_LEADER_R = 0.7 --catholic league is yellow
+ NDefines.NGraphics.CITY_SPRAWL_AMOUNT = 5  -- makes cities graphically bigger, was 3
+ NDefines.NFrontend.CAMERA_MIN_HEIGHT = 35.0  -- allows for further zoom, was 50

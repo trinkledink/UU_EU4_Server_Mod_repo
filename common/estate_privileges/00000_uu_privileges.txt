@@ -123,18 +123,16 @@ estate_church_sok_fulani_jihad = {
 
 estate_burghers_pluto_weapons = {
 	icon = privilege_technology
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
-	loyalty = 0.1
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.15
 	influence = 0.15
-	max_absolutism = -15
+	max_absolutism = -10
 	
 	is_valid = {
-		always = no 
-		#has_idea_group = plutocracy_ideas
+		has_idea_group = plutocracy_ideas
 	}
 	can_select = {
-		always = no
-		#has_idea = uu_private_arms_industries
+		has_idea = uu_private_arms_industries
 	}
 	on_granted = {
 		custom_tooltip = uu_better_weapons_manus_priv_tt
@@ -150,7 +148,10 @@ estate_burghers_pluto_weapons = {
 					}
 				}
 			}
-			add_province_triggered_modifier = uu_better_weapons_manus_priv_mod
+			add_province_modifier = {
+				name = uu_better_weapons_manus_priv_mod
+				duration = -1
+			}
 		}
 	}
 	on_revoked = {
@@ -172,7 +173,9 @@ estate_burghers_pluto_weapons = {
 			remove_province_modifier = uu_better_weapons_manus_priv_mod
 		}
 	}
-
+	benefits = {
+		burghers_privilege_slots = 1
+	}
 	ai_will_do = {
 		factor = 1000
 	}
@@ -180,19 +183,17 @@ estate_burghers_pluto_weapons = {
 
 estate_vaisyas_pluto_weapons = {
 	icon = privilege_technology
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
-	loyalty = 0.1
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.15
 	influence = 0.15
-	max_absolutism = -15
+	max_absolutism = -10
 	
 	is_valid = {
-		always = no
-		#has_idea_group = plutocracy_ideas
-		#NOT = { has_estate = estate_burghers }
+		has_idea_group = plutocracy_ideas
+		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
-		always = no 
-		#has_idea = uu_private_arms_industries
+		has_idea = uu_private_arms_industries
 	}
 	on_granted = {
 		custom_tooltip = uu_better_weapons_manus_priv_tt
@@ -208,7 +209,10 @@ estate_vaisyas_pluto_weapons = {
 					}
 				}
 			}
-			add_province_triggered_modifier = uu_better_weapons_manus_priv_mod
+			add_province_modifier = {
+				name = uu_better_weapons_manus_priv_mod
+				duration = -1
+			}
 		}
 	}
 	on_revoked = {
@@ -230,14 +234,17 @@ estate_vaisyas_pluto_weapons = {
 			remove_province_modifier = uu_better_weapons_manus_priv_mod
 		}
 	}
+	benefits = {
+		vaisyas_privilege_slots = 1
+	}
 	ai_will_do = {
 		factor = 1000
 	}
 }
 
-uu_estate_nomadic_tribes_mana_privilege = { ##UU Added
+uu_estate_nomadic_tribes_mana_privilege = {
 	icon = privilege_discipline
-	loyalty =  0.05
+	loyalty = 0.05
 	influence = 0.05
 	land_share = 10
 	max_absolutism = -5

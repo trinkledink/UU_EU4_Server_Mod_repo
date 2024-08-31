@@ -108,6 +108,9 @@ plutocracy_ideas = {
 	abolished_serfdom = {
 		manpower_recovery_speed = 0.15
 	}
+	uu_free_cities = { #Gain 1/1/1 dev on upgrading CoT to Lv3
+		monthly_reform_progress = 0.1
+	}
 	free_merchants = {
 		merchants = 1
 	}
@@ -120,9 +123,6 @@ plutocracy_ideas = {
 		burghers_privilege_slots = 1
 		vaisyas_privilege_slots = 1
 		mr_guilds_influence = 0.025
-	}
-	uu_free_cities = { #Gain 1/1/1 dev on upgrading CoT to Lv3
-		monthly_reform_progress = 0.1
 	}
 	uu_private_arms_industries = { #Unlocks Estate Privilege
 		artillery_power = 0.15
