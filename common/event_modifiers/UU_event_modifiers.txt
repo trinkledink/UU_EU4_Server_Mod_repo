@@ -110,7 +110,7 @@ uu_maritime_infra_port_town = {	#port town province modifier
 }
 
 uu_maritime_pluto_greed = {	#pure greed
-	trade_goods_size = 0.25
+	trade_goods_size_modifier = 0.25
 }
 
 #Pluto 

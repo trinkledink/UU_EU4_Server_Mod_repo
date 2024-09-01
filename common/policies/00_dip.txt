@@ -1252,13 +1252,15 @@ Pluto-Maritime = {	##buffs ports
 	light_ship_power = 0.5
 
 	effect = {
-		every_owned_province = {
-			limit = {
-				has_port = yes
-			}
-			add_province_modifier = {
-				name = uu_maritime_pluto_greed
-				duration = -1
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = uu_maritime_pluto_greed
+					duration = -1
+				}
 			}
 		}
 	}
@@ -1412,14 +1414,17 @@ Court-Divine = {	##Allows good expansionist zealotry
 		full_idea_group = theocracy_gov_ideas
 	}
 
-	church_privilege_slots = 1
-	brahmins_privilege_slots = 1
+	devotion = 0.5
 	
 	effect = {
-		set_country_flag = improved_expansionist_zealotry
+		hidden_effect = {
+			set_country_flag = improved_expansionist_zealotry
+		}
 	}
 	removed_effect = {
-		clr_country_flag = improved_expansionist_zealotry
+		hidden_effect = {
+			clr_country_flag = improved_expansionist_zealotry
+		}
 	}
 	ai_will_do = {
 		factor = 1.0

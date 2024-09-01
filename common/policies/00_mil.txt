@@ -829,8 +829,8 @@ Admin-Defensive = {
 		full_idea_group = administrative_ideas
 	}
 	
-	garrison_damage = 0.33
-	fort_maintenance_modifier = -0.2
+	garrison_damage = 0.5
+	fort_maintenance_modifier = -0.33
 	
 	effect = {}
 	removed_effect = {}
@@ -1047,28 +1047,30 @@ Divine-Trade = {	##I DONT KNOW IF THIS IS BALANCED
 	enforce_religion_cost = -0.2
 	
 	effect = {
-		if = {
-			limit = { current_age = age_of_discovery }
-			every_province = {
-				limit = { religion = ROOT }
-				ROOT = { add_manpower = 0.15 }
-			}
-		} else_if = {
-			limit = { current_age = age_of_reformation }
-			every_province = {
-				limit = { religion = ROOT }
-				ROOT = { add_manpower = 0.25 }
-			}
-		} else_if = {
-			limit = { current_age = age_of_absolutism }
-			every_province = {
-				limit = { religion = ROOT }
-				ROOT = { add_manpower = 0.4 }
-			}
-		} else = {	#age_of_revolutions or further?
-			every_province = {
-				limit = { religion = ROOT }
-				ROOT = { add_manpower = 0.6 }
+		hidden_effect = {
+			if = {
+				limit = { current_age = age_of_discovery }
+				every_province = {
+					limit = { religion = ROOT }
+					ROOT = { add_manpower = 0.15 }
+				}
+			} else_if = {
+				limit = { current_age = age_of_reformation }
+				every_province = {
+					limit = { religion = ROOT }
+					ROOT = { add_manpower = 0.25 }
+				}
+			} else_if = {
+				limit = { current_age = age_of_absolutism }
+				every_province = {
+					limit = { religion = ROOT }
+					ROOT = { add_manpower = 0.4 }
+				}
+			} else = {	#age_of_revolutions or further?
+				every_province = {
+					limit = { religion = ROOT }
+					ROOT = { add_manpower = 0.6 }
+				}
 			}
 		}	
 	}

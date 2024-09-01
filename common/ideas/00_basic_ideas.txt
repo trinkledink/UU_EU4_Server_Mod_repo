@@ -722,7 +722,7 @@ defensive_ideas = {
 		reinforce_speed = 0.33
 	}
 	relentless_charge = {
-		garrison_damage = 0.25 #nerfed 
+		garrison_damage = 0.5 #nerfed 
 	}	
 	#until_the_last_man = {
 	#	morale_damage_received = -0.1

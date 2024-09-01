@@ -408,12 +408,16 @@ Religious-Trade = {	##Allows propagate religion
 	placed_merchant_power = 10
 	
 	effect = {
-		set_country_flag = can_use_propagate_religion
-		set_country_flag = can_propagate_religion_in_abrahamic_provinces
+		hidden_effect = {
+			set_country_flag = can_use_propagate_religion
+			set_country_flag = can_propagate_religion_in_abrahamic_provinces
+		}
 	}
 	removed_effect = {
-		clr_country_flag = can_use_propagate_religion
-		clr_country_flag = can_propagate_religion_in_abrahamic_provinces
+		hidden_effect = {
+			clr_country_flag = can_use_propagate_religion
+			clr_country_flag = can_propagate_religion_in_abrahamic_provinces
+		}
 	}
 	ai_will_do = {
 		factor = 1.0
@@ -1297,13 +1301,15 @@ Maritime-Infra = { ##Buffs ports
 	}
 	
 	effect = {
-		every_owned_province = {
-			limit = {
-				has_port = yes
-			}
-			add_province_modifier = {
-				name = uu_maritime_infra_port_town
-				duration = -1
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = uu_maritime_infra_port_town
+					duration = -1
+				}
 			}
 		}
 	}
