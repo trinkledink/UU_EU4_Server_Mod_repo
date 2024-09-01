@@ -140,10 +140,10 @@
  uu_qty_hum_poleffect_title:0 "Policy Actions: £mil£ Quantity-Humanist"\
   uu_qty_hum_poleffect_desc:0 "Requires policy to be active for 10 years. Grants 2 years of manpower."
   uu_xyrcd_tt:0 "Has NOT taken this decision in the past 10 years."
-  uu_qty_hum_cd_mod:0 "Effect on cooldown"
+  uu_qty_hum_cd_mod:0 "Policy Action on Cooldown"
  uu_off_esp_poleffect_title:0 "Policy Actions: £mil£ Offensive-Espio"
   uu_off_esp_poleffect_desc:0 "Requires policy to be active for 10 years."
-  uu_off_esp_cd_mod:0 "Effect on cooldown"
+  uu_off_esp_cd_mod:0 "Policy Action on Cooldown"
  uu_rlg_mtm_poleffect_title:0 "Policy Actions: £adm£ Religious-Maritime"
   uu_rlg_mtm_poleffect_desc:0 "Requires policy to be active for 10 years. Grants 5 years of sailors."
-  uu_rlg_mtm_cd_mod:0 "Effect on cooldown"
+  uu_rlg_mtm_cd_mod:0 "Policy Action on Cooldown"
