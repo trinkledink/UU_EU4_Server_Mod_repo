@@ -1414,7 +1414,9 @@ Court-Divine = {	##Allows good expansionist zealotry
 		full_idea_group = theocracy_gov_ideas
 	}
 
+	
 	devotion = 0.5
+	prestige_decay = -0.01
 	
 	effect = {
 		hidden_effect = {

@@ -140,8 +140,8 @@ GBR_ideas = { #Great Britain
 	free = yes		#will be added at load.
 
 	gbr_acts_of_union = {
-		diplomatic_annexation_cost = -0.2
-		governing_capacity_modifier = 0.2
+		diplomatic_annexation_cost = -0.2	#was -0.15
+		governing_capacity_modifier = 0.2	#was 0.1
 	}
 	city_upon_a_hill = {
 		global_colonial_growth = 20
@@ -1435,7 +1435,7 @@ FUL_ideas = { #Fulo
 }
 SOK_ideas = { #Sokoto + Massina
 	start = {
-		global_regiment_cost = -0.1
+		church_privilege_slots = 2
 		prestige_from_land = 0.5
 	}
 
@@ -1459,6 +1459,7 @@ SOK_ideas = { #Sokoto + Massina
 	}
 	sok_unrighteous_kings = { 
 		warscore_cost_vs_other_religion = -0.2
+		core_creation = -0.2 
 	}
 	sok_african_caliphate = {
 		monthly_piety_accelerator = 0.001
@@ -1470,13 +1471,13 @@ SOK_ideas = { #Sokoto + Massina
 	}
 	sok_jihad_as_reform = {
 		idea_cost = -0.1
-		reform_progress_growth = 0.15
+		reform_progress_growth = 0.2
 	}
 	community_of_the_faithful = {
 		num_accepted_cultures = 2
 	}
 	sok_fulani_jihad = {
-		church_privilege_slots = 2
+		infantry_power = 0.1
 	}	
 }
 BHA_ideas = { #Bharat
@@ -1807,10 +1808,12 @@ PEU_ideas = { #Peru
 	}
 }
 
-colonial_ideas = {
+colonial_ideas = {	#Generic colonial
 	start = {
-		global_tax_modifier = 0.2	#nerfed
-		center_of_trade_upgrade_cost = -0.15 #nerfed
+		#development_cost = -0.1			#removed 
+		#no_religion_penalty = yes			#removed
+		global_missionary_strength = 0.02	#new
+		stability_cost_modifier = -0.15		#new
 	}
 	
 	bonus = {
@@ -1830,10 +1833,12 @@ colonial_ideas = {
 		horde_unity = 1
 	}
 	continental_trade = {
-		global_prov_trade_power_modifier = 0.25
+		#global_prov_trade_power_modifier = 0.25
+		center_of_trade_upgrade_cost = -0.15 #nerfed
 	}
 	manufacturing_center = {
-		build_cost = -0.1
+		#build_cost = -0.1
+		global_tax_modifier = 0.2	#nerfed
 	}
 	free_thinkers = {
 		idea_cost = -0.1
