@@ -10361,7 +10361,7 @@ cairo_markets = {
 }
 
 cairo_slums = {
-	development_cost = -0.15
+	local_development_cost = -0.15	#belly
 	local_tax_modifier = -0.15
 	local_build_cost = 0.1
 }
@@ -13105,11 +13105,11 @@ estate_burghers_forest_expansion_woods = {
 }
 
 estate_burghers_mountain_expansion_mountains = {
-	local_development_cost = -0.175
+	local_development_cost = -0.15	#UU Change since mountain is 30%
 }
 
 estate_burghers_mountain_expansion_highlands = {
-	local_development_cost = -0.10
+	local_development_cost = -0.075  #UU Change since highland is 15%
 }
 
 estate_burghers_mountain_expansion_hills = {
@@ -13897,13 +13897,13 @@ per_powerful_religious_doctrine_modifier = {
 	global_missionary_strength = 0.02
 	religion = yes
 }
-per_triumph_in_cairo_modifier = {	
-	trade_efficiency = 0.15
+per_triumph_in_cairo_modifier = {	 #belly nerf
+	trade_efficiency = 0.1	
 	prestige = 1 
 }
-per_continental_trading_modifier = {
-	caravan_power = 0.15
-	trade_efficiency = 0.2
+per_continental_trading_modifier = { #belly nerf
+	caravan_power = 0.1
+	trade_efficiency = 0.1
 }
 per_swift_horses_modifier = {
 	movement_speed = 0.15
@@ -13968,8 +13968,8 @@ per_urban_planning_of_shah_abbas_modifier = {
 per_shahnameh_modifier = {
 	monthly_splendor = 1 
 }
-per_persian_arquebusiers_modifier = {
-	infantry_shock = 0.25 
+per_persian_arquebusiers_modifier = { #belly nerf
+	infantry_shock = 0.1 
 	movement_speed = 0.15
 }
 per_shirley_reforms_the_army1_modifier = {
@@ -13980,8 +13980,8 @@ per_shirley_reforms_the_army1_modifier = {
 per_shirley_reforms_the_army2_modifier = {
 	army_tradition = 0.25
 }
-per_porcelain_exports_to_the_west_modifier = {
-	trade_efficiency = 0.15
+per_porcelain_exports_to_the_west_modifier = { #belly nerf
+	trade_efficiency = 0.1
 }
 zoroastrian_interests = {
 	tolerance_own = -2
@@ -13990,8 +13990,8 @@ zoroastrian_interests = {
 	can_not_build_missionaries = yes
 	religion = yes
 }
-zoroastrian_prophet_inspiration = {
-	land_morale = 0.15
+zoroastrian_prophet_inspiration = { #belly nerf
+	land_morale = 0.10
 	defensiveness = 0.33
 }
 zoroastrian_prophet_in_the_court = {
@@ -14000,8 +14000,8 @@ zoroastrian_prophet_in_the_court = {
 }
 
 #Qizilbash Estate
-qizilbash_cavalry_modifier = {
-	cavalry_power = 0.1
+qizilbash_cavalry_modifier = { #belly nerf
+	cavalry_power = 0.05
 	movement_speed = 0.1
 }
 
@@ -14053,7 +14053,6 @@ feo_cossack_self_governance_buff_mod = {
 feo_upgrade_prime_herding_rights_mod = {
 	local_manpower_modifier = 0.1
 }
-
 #Grand Vizier Modifiers
 grand_vizier_philosopher = {
 	yearly_corruption = -0.05
@@ -14073,7 +14072,7 @@ grand_vizier_artist = {
 grand_vizier_treasurer = {
 	yearly_corruption = -0.05
 	country_admin_power = 1
-	development_cost = -0.05
+	production_efficiency=0.1
 }
 grand_vizier_theologian = {
 	yearly_corruption = -0.05
@@ -14172,7 +14171,6 @@ TIM_full_army_trad = {
 TIM_full_army_prof = {
 	yearly_army_professionalism = 0.01 
 }
-
 #Perisna Influence Counter
 used_persian_influece_interaction_1 = { influence_to_vassal_elevation_cost = -20 }
 used_persian_influece_interaction_2 = { influence_to_vassal_elevation_cost = -40 }

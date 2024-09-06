@@ -10397,8 +10397,8 @@ turkoman_maragheh = {
 	allowed_num_of_buildings = 1
 }
 
-turkoman_expanding_industry = {
-	development_cost = -0.1
+turkoman_expanding_industry = { #belly nerf
+	development_cost = -0.05
 	global_trade_goods_size_modifier = 0.1
 }
 
@@ -10439,9 +10439,9 @@ turkoman_heal_internal_divisions = {
 	local_missionary_strength = 0.03
 }
 
-turkoman_sons_of_conquerors = {
+turkoman_sons_of_conquerors = { #belly nerf
 	cav_to_inf_ratio = 0.25
-	cavalry_shock = 0.25
+
 }
 
 turkoman_state_modernization = {
@@ -10478,9 +10478,9 @@ turkoman_privilege_drylands = {
 	local_development_cost = -0.05
 }
 
-turkoman_repopulate_persia = {
+turkoman_repopulate_persia = { #belly nerf
 	development_cost_modifier = -0.05
-	manpower_in_culture_group_provinces = 0.2
+	manpower_in_culture_group_provinces = 0.1
 }
 
 turkoman_gunpowder = {
@@ -10488,8 +10488,8 @@ turkoman_gunpowder = {
 	fire_damage = 0.1
 }
 
-turkoman_control_of_hormuz = {
-	trade_steering = 0.2
+turkoman_control_of_hormuz = { #belly nerf
+	global_trade_power = 0.075
 }
 
 turkoman_splendid_court = {
@@ -10497,8 +10497,7 @@ turkoman_splendid_court = {
 	advisor_pool = 1
 }
 
-turkoman_entrepot_of_persia = {
-	allowed_num_of_manufactories = 1
+turkoman_entrepot_of_persia = { #belly nerf
 	province_trade_power_modifier = 0.5
 }
 
@@ -10517,15 +10516,15 @@ turkoman_naval_hegemony = {
 	own_coast_naval_combat_bonus = 1
 }
 
-turkoman_army_traditions = {
-	cavalry_cost = -0.25
+turkoman_army_traditions = { #belly nerf
+	cavalry_cost = -0.1
 	cav_to_inf_ratio = 0.25
 }
 
-turkoman_army_traditions2 = {
-	cavalry_cost = -0.25
+turkoman_army_traditions2 = { #belly nerf
+	cavalry_cost = -0.1
 	cav_to_inf_ratio = 0.25
-	shock_damage = 0.1
+	
 }
 
 turkoman_emirs_of_baghdad = {
@@ -10558,8 +10557,8 @@ turkoman_era_of_white_sheep = {
 	global_unrest = -2
 }
 
-turkoman_overpower_mamluks = {
-	army_tradition = 1
+turkoman_overpower_mamluks = { #belly nerf
+	army_tradition = 0.5
 }
 
 turkoman_renovate_tabriz = {
@@ -10581,28 +10580,25 @@ turkoman_shahanshahs = {
 	diplomatic_reputation = 1
 }
 
-turkoman_pearl_of_the_empire = {
-	trade_goods_size_modifier = 0.5
-	allowed_num_of_manufactories = 1
+turkoman_pearl_of_the_empire = { #belly nerf
+	trade_goods_size_modifier = 0.25
 }
 
 turkoman_peaceful_worshipping = {
 	local_unrest = -1
 }
 
-turkoman_era_of_black_sheep2 = {
+turkoman_era_of_black_sheep2 = { #belly nerf
 	land_morale = 0.1
 	naval_morale = 0.1
-	all_power_cost = -0.1
 	global_trade_goods_size_modifier = 0.1
 	max_absolutism = 5
 	max_revolutionary_zeal = 10
 }
 
-turkoman_era_of_white_sheep2 = {
+turkoman_era_of_white_sheep2 = { #belly nerf
 	land_morale = 0.1
 	naval_morale = 0.1
-	all_power_cost = -0.1
 	global_trade_goods_size_modifier = 0.1
 	max_absolutism = 5
 	max_revolutionary_zeal = 10
@@ -11482,22 +11478,22 @@ estate_qizilbash_regimental_discipline_qizilbash = {
 	shock_damage = 0.1
 	is_qizilbash_modifier = yes
 }
-
-estate_nobles_tofangchi_regiment_tooltip = {
-	infantry_power = 0.1
+ 
+estate_nobles_tofangchi_regiment_tooltip = { #belly nerf
+	infantry_power = 0.025
 	nobles_influence_modifier = 0.1
 	nobles_loyalty_modifier = 0.05
 }
 
-per_investment_into_persia = {
+per_investment_into_persia = { #belly nerf
 	build_cost = -0.1
-	build_time = -0.25
-	development_cost = -0.05
+	build_time = -0.1
+	
 }
 
-per_persian_merchants_active = {
-	global_trade_goods_size_modifier = 0.2
-	global_own_trade_power = -0.33
+per_persian_merchants_active = { #belly nerf
+	global_trade_goods_size_modifier = 0.1
+	global_own_trade_power = -0.1
 }
 
 #Permanent, province
@@ -11577,9 +11573,9 @@ per_protector_of_the_shia_faith = {
 	monthly_persian_influence = 0.3
 }
 
-per_shia_empire = {
+per_shia_empire = { #belly nerf
 	tolerance_own = 2
-	manpower_in_true_faith_provinces = 0.2
+	manpower_in_true_faith_provinces = 0.1
 }
 per_muslim_empire = {
 	tolerance_own = 1
@@ -11603,9 +11599,9 @@ per_persian_defender_of_faith = {
 }
 
 #Permanent
-per_culture_of_art = {
+per_culture_of_art = { #belly nerf
 	monthly_persian_influence = 0.1
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 	same_culture_advisor_cost = -0.1
 }
 
@@ -13325,11 +13321,11 @@ INC_kallanka_construction = {
 }
 
 estate_burghers_mountain_expansion_upgrade_mountains = {
-	local_development_cost = -0.35
+	local_development_cost = -0.3 #UU Change
 }
 
 estate_burghers_mountain_expansion_upgrade_highlands = {
-	local_development_cost = -0.2
+	local_development_cost = -0.15 #UU Change
 }
 
 estate_burghers_mountain_expansion_upgrade_hills = {
