@@ -587,7 +587,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.1 #this is a 50% increase to base in own territory
+		recover_army_morale_speed = 0.1 #50% increase to base in own territory
 		qizilbash_loyalty_modifier = 0.1
 	}
 
@@ -603,7 +603,7 @@ offensive_ideas = {
 		warscore_from_battles_modifier = 0.15
 	}
 	sufficient_preparations = { #UU
-		transport_attrition = -0.33	
+		transport_attrition = -0.5	
 		may_build_supply_depot = yes						 
 	}
 	engineer_corps = {

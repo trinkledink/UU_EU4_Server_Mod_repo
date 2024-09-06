@@ -1114,7 +1114,7 @@ l_english:
  PROV1111:0 "Arguin"
  PROV1112:0 "Trarza"
  PROV1113:0 "Cayor"
- PROV1114:0 "Gabu"
+ PROV1114:0 "Kansala" #Was Gabu, the modern name for the area - renamed to Kaabu's imperial capital name
  PROV1115:0 "Brakna"
  PROV1116:0 "Wolof"
  PROV1117:0 "Fuuta Jaloo"
@@ -2237,7 +2237,7 @@ l_english:
  PROV2235:0 "Sabzevar"
  PROV2236:0 "Bojnord"
  PROV2237:0 "Tekrur"
- PROV2238:0 "Kantor"
+ PROV2238:0 "Sutukoba"  #Changed to name of important village
  PROV2239:0 "Siine"
  PROV2240:0 "Galam"
  PROV2241:0 "Beafada"

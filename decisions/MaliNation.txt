@@ -81,22 +81,13 @@ country_decisions = {
 				owned_by = ROOT
 				type = all
 			}
-			1134 = { #Jenne
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			1132 = { #Timbuktu
-				is_core = ROOT
-				owned_by = ROOT
-			}
-			OR = {
-				1128 = { #Taghaza
-					is_core = ROOT
-					owned_by = ROOT
-				}
-				1133 = { #Gao
-					is_core = ROOT
-					owned_by = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				OR = { 
+					province_id = 1134	#Jenne 
+					province_id = 1132	#Timbuktu 
+					province_id = 1133	#Taghaza 
+					province_id = 1128	#Gao
 				}
 			}
 			#religion = sunni

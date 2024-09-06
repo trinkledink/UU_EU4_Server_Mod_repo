@@ -231,9 +231,11 @@ uu_cossack_stole_dev = {
 #mali 
 uu_decline_of_mali = {
 	caravan_power = -0.33
-	stability_cost_modifier = 0.15
-	global_autonomy = 0.05
+	global_autonomy = 0.03
 	global_unrest = 1
+	state_maintenance_modifier = 0.2
+	available_province_loot = 0.25
+	ae_impact = -0.15
 }
 
 #Sokoto
