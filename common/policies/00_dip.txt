@@ -484,8 +484,8 @@ Infra-Court = {
 		full_idea_group = infrastructure_ideas
 	}
 
-	state_maintenance_modifier = -0.25
-	global_prosperity_growth = 0.1
+	centralize_state_cost = -0.15
+	global_prosperity_growth = 0.25
 
 	effect = {}
 	removed_effect = {}
@@ -1033,8 +1033,8 @@ Offensive-Influence = {
 		full_idea_group = influence_ideas
 	}
 
-	diplomatic_upkeep = 1
-	overextension_impact_modifier = -0.8
+	unjustified_demands = -0.25
+	overextension_impact_modifier = -0.25
 
 	effect = {}
 	removed_effect = {}
@@ -1415,8 +1415,7 @@ Court-Divine = {	##Allows good expansionist zealotry
 	}
 
 	
-	devotion = 0.5
-	prestige_decay = -0.01
+	diplomatic_reputation = -1
 	
 	effect = {
 		hidden_effect = {

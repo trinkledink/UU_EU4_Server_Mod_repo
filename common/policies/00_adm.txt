@@ -118,7 +118,7 @@ Quality-Inno = {
 	}
 	
 	innovativeness_gain = 0.5
-	war_exhaustion = -0.025
+	war_exhaustion = -0.03
 	
 	effect = {
 
@@ -582,7 +582,7 @@ Quality-Humanist = {
 	}
 	
 	num_accepted_cultures = 1
-	tolerance_of_heathens_capacity = 1
+	years_of_nationalism = -7.5
 	
 	effect = {}
 	removed_effect = {}
@@ -1410,7 +1410,7 @@ GStaff-Admin = {
 	}
 	
 	land_forcelimit_modifier = 0.1
-	monthly_reform_progress_modifier = 0.1
+	state_maintenance_modifier = -0.2
 	
 	effect = {}
 	removed_effect = {}
