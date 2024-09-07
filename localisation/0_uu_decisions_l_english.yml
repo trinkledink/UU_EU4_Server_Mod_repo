@@ -108,7 +108,7 @@
  uu_kitara_embrace_irrigate_savanna_title:0 "Savanna Irrigation"
   uu_kitara_embrace_irrigate_savanna_desc:0 "With some planning and monetary investment we could improve the fertility of the savanna."
   uu_kitara_enable_inwards_perfection:0 "As long as this modifier is active we have access to the §YInwards Perfection§! clergy estate privilege. Should we §Gcore a province§! outside of the §YGreat Lakes Trade Node§! we will §Rlose this modifier.§!"
-  uu_kitara_savanna_irrigation.tt:0 "Every owned province in §YGreat Lakes§! trade node that is a §Ysavanna§! will receive §G-10% Development Cost§! and §G+1 Building Slot§!" 
+  uu_kitara_savanna_irrigation.tt:0 "Every owned province in §YGreat Lakes§! trade node that is a §YSavanna§! will receive §G-10% Development Cost§! and §G+1 Building Slot§!" 
  #Italy
  uu_no_kog_tt:0 "§YKingdom of God§! does not exist"
  #Madagascar
@@ -137,7 +137,7 @@
   uu_tf_t4_tt:0 "Current tier: §RTier 4§!"
   uu_tf_t5_tt:0 "Current tier: §MTier 5§!"
  #Policy Decisions
- uu_qty_hum_poleffect_title:0 "Policy Actions: £mil£ Quantity-Humanist"\
+ uu_qty_hum_poleffect_title:0 "Policy Actions: £mil£ Quantity-Humanist"
   uu_qty_hum_poleffect_desc:0 "Requires policy to be active for 10 years. Grants 2 years of manpower."
   uu_xyrcd_tt:0 "Has NOT taken this decision in the past 10 years."
   uu_qty_hum_cd_mod:0 "Policy Action on Cooldown"

@@ -3783,31 +3783,12 @@ estate_nobles_tupchi_artillery_corps = {
 	on_revoked = {
 		
 	}
-	conditional_modifier = {
-		trigger = {
-			OR = {
-				any_ally = {
-					OR = {
-						technology_group = western
-						technology_group = eastern
-						capital_scope = { continent = europe }
-					}
-				}
-				any_subject_country = {
-					OR = {
-						technology_group = western
-						technology_group = eastern
-						capital_scope = { continent = europe }
-					}
-				}
-			}
-		}
-		modifier = {
-			artillery_cost = -0.33
-		}
-	}
+	#UU removed artillery_cost
 	benefits = {
 		artillery_power = 0.05
+	}
+	penalties = {
+		mil_advisor_cost = 0.1	#UU you have to hire a tupchi-bashi
 	}
 	ai_will_do = {
 		factor = 100

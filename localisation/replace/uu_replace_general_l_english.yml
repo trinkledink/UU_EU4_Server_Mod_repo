@@ -116,7 +116,8 @@
  PROCLAIM_HEGEMONY_DESC:0 "Proclaiming a hedgemony will give us plenty of benefits, increasing our power projection, but will also make us stand more alone in the world!"
  HAVE_HEGEMONY_PROGRESS_LESS_THAN:0 "Hedgemony Power is less than $VAL|Y%$"
  HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "Hedgemony Power is at least $VAL|Y%$"
-
+ #kekw
+ insult_default12:0 "ima be real wit u i just need the pp bro"
  #Parliament
  MODIFIER_MAX_POSSIBLE_PARLIAMENT_SEATS:0 "Possible Parliament Seats" #Was max possible, but now represents a hard limit
  #mil group

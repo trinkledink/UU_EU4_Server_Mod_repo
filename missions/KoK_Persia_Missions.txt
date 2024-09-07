@@ -1547,15 +1547,9 @@ kok_persia_military_mission_slot_1 = {
 		}
 		effect = {
 			unlock_estate_privilege = {
-				estate_privilege = estate_nobles_tofangchi_regiment
-				modifier_tooltip = estate_nobles_tofangchi_regiment_tooltip
-			}
-			unlock_estate_privilege = {
-				estate_privilege = estate_qizilbash_tofangchi_regiment
-			}
-			unlock_estate_privilege = {
 				estate_privilege = estate_ghulams_tofangchi_regiment
 			}
+			#UU only ghilman can have it 
 		}
 	}
 }
