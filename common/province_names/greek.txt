@@ -1,3 +1,4 @@
+#Z adjusted transliteration
 321 = "Kypros"
 4701 = "Korinthos"
 1773 = "Achaia"

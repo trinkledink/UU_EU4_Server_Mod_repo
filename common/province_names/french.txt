@@ -1,4 +1,4 @@
-#NEW
+#UU
 295 = "Moscou"
 257 = "Varsovie"
 321 = "Chypre"
@@ -10,7 +10,6 @@
 2974 = "Looz"
 92 = "Bruxelles"
 4838 = "La Haye"
-
 #West Africa
 1114 = "Gabou"
 1117 = "Fouta-Djalon"
@@ -34,8 +33,6 @@
 2932 = "Ouaddaï"
 5009 = "Cameroun"
 2277 = "Kaouar"
-
-
 #India
 540 = "Pondichéry"
 #Maghreb

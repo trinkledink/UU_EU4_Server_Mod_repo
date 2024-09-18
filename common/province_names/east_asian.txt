@@ -84,7 +84,7 @@
 4231 = Pingshan
 4232 = Jiangjie
 
-#NEW
+#UU
 
 #Hainan
 666 = "Qiongzhou" #Kingchow
