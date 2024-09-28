@@ -311,9 +311,68 @@ estate_ghulams_loyalty_privilege = {
 	}
 }
 
-#estate_ghulams_levies = {
-	#UU This privilege is just the dhimmi one bro we already have dhimmi 
-#}
+estate_ghulams_levies = {
+	icon = privilege_recruit_from_marathi
+	max_absolutism = -5
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		always = no #UU This privilege is just the dhimmi one bro we already have dhimmi 
+	}
+	on_granted = {
+		custom_tooltip = estate_ghulams_levies_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					religion_group = christian
+					religion_group = zoroastrian_group
+				}
+			}
+			add_province_modifier = {
+				name = estate_ghulams_levies_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_ghulams_levies_mod
+			}
+			remove_province_modifier = estate_ghulams_levies_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_ghulams_levies_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_ghulams_levies_mod
+			}
+			remove_province_modifier = estate_ghulams_levies_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_ghulams_levies_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_ghulams_levies_mod
+			}
+			remove_province_modifier = estate_ghulams_levies_mod
+		}
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.05
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 estate_ghulams_levies_non_muslims = {
 	icon = privilege_recruit_from_marathi
@@ -340,9 +399,35 @@ estate_ghulams_levies_non_muslims = {
 	}
 }
 
-#estate_ghulams_special_privilege = {
-	#UU seriously whose idea was this privilege
-#}
+estate_ghulams_special_privilege = {
+	icon = privilege_promote_maratha_nobility
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	land_share = 5
+	is_valid = {
+		always = no #UU seriously whose idea was this privilege
+	}
+	modifier_by_land_ownership = {
+		infantry_power = 0.2
+		qizilbash_loyalty_modifier = -0.5
+		nobles_loyalty_modifier = -0.5
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
 
 estate_ghulams_government = {
 	icon = privilege_promote_maratha_nobility

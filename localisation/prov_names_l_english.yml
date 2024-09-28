@@ -380,7 +380,7 @@ l_english:
  PROV377:0 "Aleppo"
  PROV378:0 "Tarabulus"
  PROV379:0 "Jerusalem"
- PROV380:0 "Al Karak"
+ PROV380:0 "al-Karak" #UU Change for consistent Arabic anglicization
  PROV381:0 "Ajlun"
  PROV382:0 "Damascus"
  PROV383:0 "Tabuk"
@@ -392,9 +392,9 @@ l_english:
  PROV389:1 "Mukalla"
  PROV390:0 "Sana'a"
  PROV391:0 "Najran"
- PROV392:0 "Al-Arid"
+ PROV392:0 "al-Arid" #UU Change for consistent Arabic anglicization
  PROV393:0 "Jabal Shammar"
- PROV394:0 "Al-Qatif"
+ PROV394:0 "al-Qatif" #UU Change for consistent Arabic anglicization
  PROV395:0 "Qatar"
  PROV396:0 "Bahrain"
  PROV397:0 "Bani Yas"
@@ -407,7 +407,7 @@ l_english:
  PROV404:0 "Liwa"
  PROV405:0 "Tadmor"
  PROV406:0 "Haditha"
- PROV407:0 "Ar Raqqa"
+ PROV407:0 "ar-Raqqa" #UU Change for consistent Arabic anglicization
  PROV408:0 "Basra"
  PROV409:0 "Karbala"
  PROV410:0 "Baghdad"
@@ -774,7 +774,7 @@ l_english:
  PROV771:0 "Vitebsk"
  PROV772:0 "Uruguay"
  PROV773:0 "Banda Oriental"
- PROV774:0 "Al-Junaynah"
+ PROV774:0 "al-Junaynah" #UU Change for consistent Arabic anglicization
  PROV775:0 "Asuncion"
  PROV776:0 "Concepcion"
  PROV777:0 "Corrientes"
@@ -2322,18 +2322,18 @@ l_english:
  PROV2320:0 "Ras Gharib"
  PROV2321:0 "Queseer"
  PROV2322:0 "Wadi Halfa"
- PROV2323:0 "Sahra an Nübyah"
+ PROV2323:0 "Sahra an-Nübyah" #UU Change for consistent Arabic anglicization
  PROV2324:0 "Halaib"
  PROV2325:0 "Tarrana"
  PROV2326:0 "Bardiyah"
  PROV2327:0 "Maan"
- PROV2328:0 "Al Ula"
+ PROV2328:0 "al-Ula" #UU Change for consistent Arabic anglicization
  PROV2329:0 "Yanbu"
  PROV2330:0 "Ma'din Sulaym"
  PROV2331:0 "Jeddah"
  PROV2332:1 "Turubah"
  PROV2333:1 "Zufra"
- PROV2334:0 "Badiyat ash Sham"
+ PROV2334:0 "Badiyat ash-Sham" #UU Change for consistent Arabic anglicization
  PROV2335:1 "Dawasir"
  PROV2336:1 "Aflaj"
  PROV2337:1 "Buraydah"
@@ -3255,10 +3255,10 @@ l_english:
  PROV4269:0 "Al Wajh"
  PROV4270:0 "Azraq"
  PROV4271:0 "Suwayda"
- PROV4272:0 "Al Jawf"
- PROV4273:0 "Al-Kariatan"
+ PROV4272:0 "al-Jawf" #UU Change for consistent Arabic anglicization
+ PROV4273:0 "al-Kariatan" #UU Change for consistent Arabic anglicization
  PROV4274:0 "Sudayr"
- PROV4275:0 "Al-Yamamah"
+ PROV4275:0 "al-Yamamah" #UU Change for consistent Arabic anglicization
  PROV4276:0 "Jabal Tubaiq"
  PROV4277:0 "Taif"
  PROV4278:0 "Qunfudhah"
