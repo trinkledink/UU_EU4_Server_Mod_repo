@@ -278,7 +278,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = formed_tier_five_flag	#UU
-			change_tag = AKS
+			change_tag = BHA
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
