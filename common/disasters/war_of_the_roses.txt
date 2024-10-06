@@ -20,31 +20,32 @@ war_of_the_roses = {
 			dynasty = Plantagenet
 		}
 		has_any_disaster = no
-		OR = {
-			has_heir = no
-			AND = {
-				has_heir = yes
-				NOT = { heir_dynasty = York }
-				NOT = { heir_dynasty = Lancaster }
-				NOT = { heir_dynasty = Plantagenet }
-			}
-		}
-		has_regency = no
+		# OR = {
+		# 	has_heir = no
+		# 	AND = {
+		# 		has_heir = yes
+		# 		NOT = { heir_dynasty = York }
+		# 		NOT = { heir_dynasty = Lancaster }
+		# 		NOT = { heir_dynasty = Plantagenet }
+		# 	}
+		# }
+		# has_regency = no
 		is_lesser_in_union = no
 	}
 	
 	can_stop = { 
 		OR = {
 			has_any_disaster = yes
-			AND = {
-				has_heir = yes
-				OR = {
-					heir_dynasty = York
-					heir_dynasty = Lancaster
-					heir_dynasty = Plantagenet
-				}
-			}
-			has_regency = yes
+			#UU removed to make it (almost) unstoppable
+			# AND = {
+			# 	has_heir = yes
+			# 	OR = {
+			# 		heir_dynasty = York
+			# 		heir_dynasty = Lancaster
+			# 		heir_dynasty = Plantagenet
+			# 	}
+			# }
+			# has_regency = yes
 			is_lesser_in_union = yes
 		}
 	}
@@ -53,6 +54,11 @@ war_of_the_roses = {
 	
 	
 	progress = {
+		#uu always progresses some
+		modifier = {
+			factor = 0.25
+			always = yes
+		}
 		modifier = {
 			factor = 1
 			NOT = { legitimacy = 90 }
