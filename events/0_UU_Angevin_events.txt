@@ -1,0 +1,137 @@
+namespace = UU_ave_mission_events
+
+
+
+country_event = { #Anglois begins to spread
+	id = UU_ave_mission_events.1
+	title = UU_ave_mission_events.1.t
+	desc = "UU_ave_mission_events.1.d"
+	picture = ave_promote_angevin_culture
+    
+	option =  #Begin conversion!
+	add_stability = -1
+	custom_tooltip = Angevin_Conversion
+	change_primary_culture = Anglois
+	 random_owned_province = {
+				limit = {
+					area = picardy_area
+				}
+                change_culture = Anglois
+	          }
+			random_owned_province = {
+				limit = {
+					area = ile_de_france_area
+				}
+                change_culture = Anglois
+	          }
+			random_owned_province = {
+				limit = {
+					area = home_counties_area
+				}
+                change_culture = Anglois
+	          }
+			
+			random_owned_province = {
+				limit = {
+					area = Normandie_area
+				}
+                change_culture = Anglois
+	          }
+			
+			
+			
+			
+			if = {
+				limit = {
+					ruler_culture = English
+				}
+				set_ruler_culture = Anglois
+			}
+			if = {
+				limit = {
+					heir_culture = English
+				}
+				set_heir_culture = Anglois
+			}
+	    
+ }  
+
+	
+
+
+country_event = { #Periodic Conversion event
+	id = UU_ave_mission_events.4
+	title = UU_ave_mission_events.4.t
+	desc = {
+		trigger = {
+			NOT = {
+				primary_culture = English
+				tag = ENG
+			}
+		}
+		desc = "UU_ave_mission_events.4.d"
+	}
+	desc = {
+		trigger = {
+			primary_culture = Anglois
+		}
+		desc = "UU_ave_mission_events.4.db"
+	}
+	picture = CZECH_NOBLES_eventPicture
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	random_owned_province = {
+			limit = {
+				OR = {
+					culture = Anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = Anglois 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = Anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = Anglois
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = Anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = Anglois
+		}
+	    random_owned_province = {
+			limit = {
+				OR = {
+					culture = Anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = Anglois
+}	}

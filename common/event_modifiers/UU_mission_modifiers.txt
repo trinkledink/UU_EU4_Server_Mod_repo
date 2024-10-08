@@ -841,3 +841,7 @@ uujap_gokaido_mod = {
 	local_production_efficiency = 0.1
 	local_governing_cost = -0.1
 }
+ave_new_world_dominance = {	#Permanent
+	global_tariffs = 0.20
+	trade_efficiency = 0.10
+}
