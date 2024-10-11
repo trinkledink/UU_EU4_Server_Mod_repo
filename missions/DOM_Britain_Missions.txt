@@ -1263,68 +1263,8 @@ ave_row_slot_2_continuation = {
 		}		
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			custom_trigger_tooltip = {
-				tooltip = ave_promote_angevin_culture_at
-				OR = {
-					employed_advisor = {
-						culture = english
-					}
-					employed_advisor = {
-						culture = scottish
-					}
-					employed_advisor = {
-						culture = welsh
-					}
-					employed_advisor = {
-						culture = cornish
-					}
-				}
-				OR = {
-					employed_advisor = {
-						culture = cosmopolitan_french
-					}
-					employed_advisor = {
-						culture = normand
-					}
-					employed_advisor = {
-						culture = breton
-					}
-					employed_advisor = {
-						culture = gascon
-					}
-					employed_advisor = {
-						culture = wallonian
-					}
-					employed_advisor = {
-						culture = burgundian
-					}
-					employed_advisor = {
-						culture = occitain
-					}
-				}
-			}
-			stability = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					culture_group = british
-					culture_group = french
-				}
-				NOT = { local_autonomy_above_min = 10 }
-				value = 50
-			}
-			OR = {
-				FRA = { is_subject_of = ROOT }
-				development_in_provinces = {
-					culture_group = french
-					value = 200
-				}
-			}
-			if = {
-				limit = { has_government_attribute = english_parliament }
-				has_enacted_parliament_action = {
-					parliament_action = french_english_reconciliation_act		#Special tooltip here
-				}
-			}
+			tag = AVE
+			
 		}	
 		effect  = {
 		country_event = {	

@@ -15,6 +15,15 @@ trinkle_hero_rejected = {
 trinkle_strategist_rejected = {
 }
 
+#angevin
+UU_converting_anglois = {
+global_unrest = 5
+}
+
+
+
+
+
 #canada
 totemism_resurgence = {
 	global_missionary_strength = 0.05
@@ -84,7 +93,6 @@ uu_eco_merc_mod = {
 }
 uu_offensive_espio_mod = {
 	global_attacker_dice_roll_bonus = 1
-	movement_speed = 0.15
 }
 uu_def_court_mod = {
 	local_defensiveness = 0.33
@@ -110,15 +118,7 @@ uu_maritime_infra_port_town = {	#port town province modifier
 }
 
 uu_maritime_pluto_greed = {	#pure greed
-	trade_goods_size_modifier = 0.25
-}
-
-#Pluto 
-
-uu_better_weapons_manus_priv_mod = {
-	trade_goods_size = 0.33
-	province_trade_power_value = 5
-	picture = "amount_of_elite_artillery"
+	trade_goods_size = 0.25
 }
 
 #GenStaff Ideagroup Event Modifiers 
@@ -231,11 +231,9 @@ uu_cossack_stole_dev = {
 #mali 
 uu_decline_of_mali = {
 	caravan_power = -0.33
-	global_autonomy = 0.03
+	stability_cost_modifier = 0.15
+	global_autonomy = 0.05
 	global_unrest = 1
-	state_maintenance_modifier = 0.2
-	available_province_loot = 0.25
-	ae_impact = -0.15
 }
 
 #Sokoto
@@ -351,18 +349,3 @@ uu_pap_mil_dogma_3_modifier = {
 }
 
 dogma_manpower_5yr_cooldown = {}
-
-#debug
-uu_recently_gift_dontdeletethis = {}
-
-#policy
-uu_qty_hum_cd_mod = { 
-	picture = "global_manpower_modifier"
-}
-uu_off_esp_cd_mod = { 
-	picture = "global_attacker_dice_roll_bonus"
-}
-uu_rlg_mtm_cd_mod = {
-	picture = "global_sailors_modifier"
-}
-

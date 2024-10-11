@@ -6,100 +6,85 @@ country_event = { #Anglois begins to spread
 	id = UU_ave_mission_events.1
 	title = UU_ave_mission_events.1.t
 	desc = "UU_ave_mission_events.1.d"
-	picture = ave_promote_angevin_culture
+	picture = MARCHING_PEASANTS_eventPicture
     
-	option =  #Begin conversion!
+	fire_only_once = yes
+
+
+
+
+	
+	option = { #Begin conversion!
+	name = UU_ave_mission_events.1.a
 	add_stability = -1
-	custom_tooltip = Angevin_Conversion
-	change_primary_culture = Anglois
-	 random_owned_province = {
-				limit = {
-					area = picardy_area
-				}
-                change_culture = Anglois
-	          }
-			random_owned_province = {
-				limit = {
-					area = ile_de_france_area
-				}
-                change_culture = Anglois
-	          }
-			random_owned_province = {
-				limit = {
-					area = home_counties_area
-				}
-                change_culture = Anglois
-	          }
+	change_primary_culture = anglois
+	add_country_modifier = {
+			name = UU_converting_anglois
+			duration = 10950
+		}
+				ile_de_france_area 
+                type = all 
+                change_culture = anglois
+			   
+			    home_counties_area 
+                type = all 
+                change_culture = anglois
+			   
+			   
+			    picardy_area 
+                type = all 
+                change_culture = anglois
 			
-			random_owned_province = {
-				limit = {
-					area = Normandie_area
-				}
-                change_culture = Anglois
-	          }
-			
+                
+				normandy_area 
+                type = all 
+                change_culture = anglois
+			    
+				wessex_area 
+                type = all 
+                change_culture = anglois
 			
 			
-			
-			if = {
-				limit = {
-					ruler_culture = English
-				}
-				set_ruler_culture = Anglois
-			}
-			if = {
-				limit = {
-					heir_culture = English
-				}
-				set_heir_culture = Anglois
-			}
-	    
+		
+	}  
  }  
 
 	
 
 
 country_event = { #Periodic Conversion event
-	id = UU_ave_mission_events.4
-	title = UU_ave_mission_events.4.t
-	desc = {
+	id = UU_ave_mission_events.2
+	title = UU_ave_mission_events.2.t
+    desc = "UU_ave_mission_events.2.d"
+    picture = MARCHING_PEASANTS_eventPicture
 		trigger = {
-			NOT = {
-				primary_culture = English
-				tag = ENG
-			}
+		has_country_modifier = UU_converting_anglois
 		}
-		desc = "UU_ave_mission_events.4.d"
-	}
-	desc = {
-		trigger = {
-			primary_culture = Anglois
-		}
-		desc = "UU_ave_mission_events.4.db"
-	}
-	picture = CZECH_NOBLES_eventPicture
 
-	mean_time_to_happen = {
-		months = 24
-	}
+	     mean_time_to_happen = {
+		  months = 1
+	 }  
+	
 
-	random_owned_province = {
+
+            option = {
+             name = UU_ave_mission_events.2.a
+	
+	
+	
+	         random_owned_province = {
 			limit = {
-				OR = {
-					culture = Anglois
-					
-				}		
-				any_neighbor_province = { 
+				province  = { 
 					culture_group = french
                     culture_group = british
 				}
 			}
-			change_culture = Anglois 
+			change_culture = anglois 
 		}
 		random_owned_province = {
 			limit = {
 				OR = {
-					culture = Anglois
+					culture = anglois
 					
 				}		
 				any_neighbor_province = { 
@@ -107,12 +92,12 @@ country_event = { #Periodic Conversion event
                     culture_group = british
 				}
 			}
-			change_culture = Anglois
+			change_culture = anglois
 		}
 		random_owned_province = {
 			limit = {
 				OR = {
-					culture = Anglois
+					culture = anglois
 					
 				}		
 				any_neighbor_province = { 
@@ -120,12 +105,12 @@ country_event = { #Periodic Conversion event
                     culture_group = british
 				}
 			}
-			change_culture = Anglois
+			change_culture = anglois
 		}
 	    random_owned_province = {
 			limit = {
 				OR = {
-					culture = Anglois
+					culture = anglois
 					
 				}		
 				any_neighbor_province = { 
@@ -133,5 +118,70 @@ country_event = { #Periodic Conversion event
                     culture_group = british
 				}
 			}
-			change_culture = Anglois
-}	}
+			change_culture = anglois
+       }	
+       random_owned_province = {
+			limit = {
+				OR = {
+					culture = anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = anglois
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = anglois
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+			change_culture = anglois
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = anglois
+					
+				}		
+				any_neighbor_province = { 
+					culture_group = french
+                    culture_group = british
+				}
+			}
+	}	}			change_culture = a}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

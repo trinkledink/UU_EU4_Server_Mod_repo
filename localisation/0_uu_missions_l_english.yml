@@ -797,6 +797,19 @@
  uujap_gokaido_title:0 "The Five Highways"
  uujap_rice_brokers_title:0 "The Rice Broker System"
 
+ 
+ 
+ 
+ 
+########################################################################
+# UU Angevin Missions #
+########################################################################
+
+ ave_the_angevin_monarchy_title:0 "The Angevin Crown"
+ ave_the_angevin_monarchy_desc:0 "We must reform our empire where do we go?"
+
+
  #Tooltips
  uujap_spawned_gold_mission_tt:0 "§GIf we are the first to complete this mission, we will receive the following reward in a random Gold province, or the capital if we own no Gold provinces:§!"
  uujap_gokaido_tt:0 "§GAll of the aforementioned provinces will gain the following reward:§!"
+ 
