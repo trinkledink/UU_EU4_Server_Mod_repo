@@ -1,9 +1,15 @@
-#UU
+#zeb
 334 = { "Tanjah" "Tanjah" }
-5017 = "El-Ksar el-Kebir"
+5017 = "al-Qasr al-Kabir"
 343 = { "Fas" "Fas" }
 2467 = { "Maknas" "Maknas" }
 4568 = { "Damnat" "Damnat" }
+4561 = { "Titwan" "Titwan" }
+335 = { "Malilya" "Malilya" }
+4562 = "al-Marsa al-Kabir"
+337 = { "Wahran" "Wahran" }
+4563 = { "Sala" "Sala" }
+4787 = { "Shantarin" "Shantarin" }
 
 124 = "Massina"
 125 = "Balarm"
