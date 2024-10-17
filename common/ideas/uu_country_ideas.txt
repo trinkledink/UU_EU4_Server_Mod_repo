@@ -672,8 +672,8 @@ ADU_ideas = { #Andalusia
 }
 MUG_ideas = { #Mughals
 	start = {
-		core_creation = -0.10
-		artillery_power = 0.10
+		core_creation = -0.25
+	    cavalry_power = 0.20
 	}
 	
 	bonus = {
@@ -687,7 +687,7 @@ MUG_ideas = { #Mughals
 	
 	mansabdari_system = {
 		discipline = 0.05
-	    land_morale = 0.10
+	    
 	}
 	control_of_the_ulema = {
 		global_unrest = -2						#Was -1
@@ -703,9 +703,10 @@ MUG_ideas = { #Mughals
 	}
 	zabt_system = {
 		global_tax_modifier = 0.1
+	    build_cost = 0.10
 	}
 	mughal_cannons = {
-		artillery_fire = 0.5						#Added
+		artillery_fire = 1					#Added
 	}
 	fatawa_e_alamgiri = {
 		stability_cost_modifier = -0.15			#Was 10%
@@ -1890,7 +1891,7 @@ colonial_ideas = {
 #}
 AVE_ideas = {
 	start = {
-		global_manpower_modifier = 0.2
+		manpower_in_own_culture_provinces = 0.2
 		land_morale = 0.1
 	}
 
@@ -1925,6 +1926,5 @@ AVE_ideas = {
 	}
 	British_naval_experience = {
 		naval_morale = 0.2
-		Heavy_ship_power = 0.1
 	}
 }
