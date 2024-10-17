@@ -12911,11 +12911,11 @@ estate_burghers_control_over_gold_mine = {
 }
 
 estate_burghers_hydraulic_rights_desert = {
-	local_development_cost = -0.25
+	local_development_cost = -0.225  #uu
 }
 
 estate_burghers_hydraulic_rights_coastal_desert = {
-	local_development_cost = -0.175
+	local_development_cost = -0.15  #uu
 }
 
 estate_burghers_hydraulic_rights_steppes = {
@@ -12923,7 +12923,7 @@ estate_burghers_hydraulic_rights_steppes = {
 }
 
 estate_burghers_hydraulic_rights_savanna = {
-	local_development_cost = -0.075
+	local_development_cost = -0.05 #uu
 }
 
 estate_nobles_neighbor_raids_fort = {
