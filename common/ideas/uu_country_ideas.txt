@@ -703,7 +703,7 @@ MUG_ideas = { #Mughals
 	}
 	zabt_system = {
 		global_tax_modifier = 0.1
-	    build_cost = 0.10
+	    build_cost = -0.10
 	}
 	mughal_cannons = {
 		artillery_fire = 1					#Added
