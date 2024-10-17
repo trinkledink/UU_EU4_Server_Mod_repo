@@ -699,7 +699,7 @@ MUG_ideas = { #Mughals
 	an_indian_padshah = {
 		#free_mil_policy = 1					#Removed
 		all_estate_loyalty_equilibrium = 0.05	#Added
-								
+		land_morale = 0.10 #i wanna kms						
 	}
 	zabt_system = {
 		global_tax_modifier = 0.1
