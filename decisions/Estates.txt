@@ -312,6 +312,15 @@ country_decisions = {
 			NOT = { has_reform = celestial_empire }
 			religion_group = muslim
 			NOT = { has_reform = revolutionary_empire_reform }
+			NOT = {		#uu removed for indians
+				OR = {
+					culture_group = hindusthani
+					culture_group = eastern_aryan
+					culture_group = western_aryan
+					culture_group = dravidian
+					culture_group = central_indic
+				}
+			}
 		}
 		allow = {
 			stability = 1
