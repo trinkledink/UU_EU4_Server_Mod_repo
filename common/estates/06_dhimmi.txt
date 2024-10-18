@@ -21,14 +21,6 @@ estate_dhimmi = {
 			has_dlc = "The Cossacks"
 			has_dlc = "King of Kings"
 		}
-		NOT = { #uu no dhimmi for Indians
-			OR = {
-				culture_group = hindusthani
-				culture_group = eastern_aryan
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-			}
 		NOT = { has_government_attribute = disables_estate_dhimmi }
 		NOT = { has_disabled_estate = { estate = estate_dhimmi } }
 		OR = {
