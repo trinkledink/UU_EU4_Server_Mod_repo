@@ -212,6 +212,7 @@ uu_send_gift_2k = {
 
 	is_visible = {
 		ai = no
+		is_subject = no
 	}
 	is_allowed = {
 		if = {
@@ -225,7 +226,7 @@ uu_send_gift_2k = {
 			limit = { 
 				AND = { 
 					num_of_loans = 1 
-					current_income_balance = 0 
+					NOT = { current_income_balance = 0 }
 				} 
 			}
 			custom_trigger_tooltip = {
@@ -233,7 +234,7 @@ uu_send_gift_2k = {
 				NOT = { 
 					AND = {
 						num_of_loans = 1 
-						current_income_balance = 0
+						NOT = { current_income_balance = 0 }
 					}
 				}
 			}
@@ -277,6 +278,7 @@ uu_send_gift_10k = {
 
 	is_visible = {
 		ai = no
+		is_subject = no
 	}
 	is_allowed = {
 		if = {
@@ -290,7 +292,7 @@ uu_send_gift_10k = {
 			limit = { 
 				AND = { 
 					num_of_loans = 1 
-					current_income_balance = 0 
+					NOT = { current_income_balance = 0 }
 				} 
 			}
 			custom_trigger_tooltip = {
@@ -298,7 +300,7 @@ uu_send_gift_10k = {
 				NOT = { 
 					AND = {
 						num_of_loans = 1 
-						current_income_balance = 0
+						NOT = { current_income_balance = 0 }
 					}
 				}
 			}
@@ -343,6 +345,7 @@ uu_send_gift_50k = {
 
 	is_visible = {
 		ai = no
+		is_subject = no
 	}
 	is_allowed = {
 		if = {
@@ -356,7 +359,7 @@ uu_send_gift_50k = {
 			limit = { 
 				AND = { 
 					num_of_loans = 1 
-					current_income_balance = 0 
+					NOT = { current_income_balance = 0 }
 				} 
 			}
 			custom_trigger_tooltip = {
@@ -364,7 +367,7 @@ uu_send_gift_50k = {
 				NOT = { 
 					AND = {
 						num_of_loans = 1 
-						current_income_balance = 0
+						NOT = { current_income_balance = 0 }
 					}
 				}
 			}
