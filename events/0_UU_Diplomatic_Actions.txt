@@ -1,65 +1,65 @@
 namespace = uu_diplomatic_actions
 
-country_event = {	#Hidden Refresh Event
-   	id = uu_diplomatic_actions.1
-   	title = none
-   	desc = none
-	hidden = yes
-   	picture = CONQUEST_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		any_known_country = {
-			has_opinion_modifier = {
-				who = ROOT
-				modifier = uu_sent_attache_opinion_mod
-			}
-		}
-	}
-
-	immediate = {
-		every_known_country = {		#auto-renew if no hostilities
-			limit = {
-				has_opinion_modifier = {
-					who = ROOT
-					modifier = uu_sent_attache_opinion_mod
-				}
-				NOT = { war_with = ROOT }
-			}
-			remove_fow = 1
-			every_ally = {
-				limit = { NOT = { war_with = ROOT } }
-				remove_fow = 1
-			}
-		}
-		every_known_country = {		#auto-cancel bilaterally if hostilities
-			limit = {
-				has_opinion_modifier = {
-					who = ROOT
-					modifier = uu_sent_attache_opinion_mod
-				}
-				war_with = ROOT
-			}
-			reverse_remove_opinion = {
-				who = root
-				modifier = uu_sent_attache_opinion_mod
-			} 
-			remove_opinion = {
-				who = root
-				modifier = uu_sent_attache_opinion_mod
-			}
-		}
-		country_event = {
-			id = uu_diplomatic_actions.1
-			days = 27
-		}
-	}
-	
-	option = {
-		name = none
-	}
-}
+#country_event = {	#Hidden Refresh Event
+#   	id = uu_diplomatic_actions.1
+#   	title = none
+#   	desc = none
+#	hidden = yes
+#   	picture = CONQUEST_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		any_known_country = {
+#			has_opinion_modifier = {
+#				who = ROOT
+#				modifier = uu_sent_attache_opinion_mod
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		every_known_country = {		#auto-renew if no hostilities
+#			limit = {
+#				has_opinion_modifier = {
+#					who = ROOT
+#					modifier = uu_sent_attache_opinion_mod
+#				}
+#				NOT = { war_with = ROOT }
+#			}
+#			remove_fow = 1
+#			every_ally = {
+#				limit = { NOT = { war_with = ROOT } }
+#				remove_fow = 1
+#			}
+#		}
+#		every_known_country = {		#auto-cancel bilaterally if hostilities
+#			limit = {
+#				has_opinion_modifier = {
+#					who = ROOT
+#					modifier = uu_sent_attache_opinion_mod
+#				}
+#				war_with = ROOT
+#			}
+#			reverse_remove_opinion = {
+#				who = root
+#				modifier = uu_sent_attache_opinion_mod
+#			} 
+#			remove_opinion = {
+#				who = root
+#				modifier = uu_sent_attache_opinion_mod
+#			}
+#		}
+#		country_event = {
+#			id = uu_diplomatic_actions.1
+#			days = 27
+#		}
+#	}
+#	
+#	option = {
+#		name = none
+#	}
+#}
 
 country_event = {	#Target has cancelled
    	id = uu_diplomatic_actions.2
