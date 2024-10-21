@@ -67,6 +67,9 @@ uu_send_attache = {
 	require_acceptance = yes
 
 	is_visible = {
+
+		always = no 	#temporary
+
 		ai = no
 		FROM = {
 			ai = no
@@ -79,6 +82,9 @@ uu_send_attache = {
 		}
 	}
 	is_allowed = {
+
+		always = no 	#temporary
+
 		if = {
 			limit = {
 				FROM = { 
