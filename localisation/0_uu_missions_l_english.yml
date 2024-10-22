@@ -199,8 +199,15 @@
   ctg_breaking_from_traditions_desc:0 "Take the first steps towards a new military by achieving basic standards for our army."
  ctg_new_recruitment_standards_title:0 "Recruitment Standards"
   ctg_new_recruitment_standards_desc:0 "Conscripting the average peasant is no longer a sustainable model for a modern army. We should implement recruitment standards for our army to be on pair with our surrounding neighbours."
- ctg_lessons_from_the_punic_wars_title:0 "Punic War Lessons"
-  ctg_lessons_from_the_punic_wars_desc:0 "The bloody conflicts between Carthage and Rome called the Punic Wars showed great flaws and strengths in the Carthaginian and Roman militaries. We should use the lessons we learnt and implement them for a stronger standing force to wrestle the other nations of the world."
+ ctg_lessons_from_the_punic_wars_modifier_title:0 "Punic War Lessons"
+  ctg_lessons_from_the_punic_wars_modifier_desc:0 "The bloody conflicts between Carthage and Rome called the Punic Wars showed great flaws and strengths in the Carthaginian and Roman militaries. We should use the lessons we learnt and implement them for a stronger standing force to wrestle the other nations of the world."
+ ctg_lessons_from_the_punic_wars_modifier_two_title:0 "Punic War Lessons"
+  ctg_lessons_from_the_punic_wars_modifier_two_desc:0 "The bloody conflicts between Carthage and Rome called the Punic Wars showed great flaws and strengths in the Carthaginian and Roman militaries. We should use the lessons we learnt and implement them for a stronger standing force to wrestle the other nations of the world."
+ ctg_lessons_from_the_punic_wars_modifier_three_title:0 "Punic War Lessons"
+  ctg_lessons_from_the_punic_wars_modifier_three_desc:0 "The bloody conflicts between Carthage and Rome called the Punic Wars showed great flaws and strengths in the Carthaginian and Roman militaries. We should use the lessons we learnt and implement them for a stronger standing force to wrestle the other nations of the world."
+ ctg_carthaginian_military_organization_title:0 "Carthaginian Military Organization"
+  ctg_carthaginian_military_organization_desc:0 "Carthaginian Military Organization"
+ 
  
  #Custom Merc Company Missions
  ctg_musketeer_company_title:0 "Musketeer Company"

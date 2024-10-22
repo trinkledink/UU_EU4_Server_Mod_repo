@@ -27,17 +27,62 @@ ctg_carthaginian_berber_missions = {
 				province_id = 338
 			}
 			
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					AND = {
+						exists = ADU
+						country_or_non_sovereign_subject_holds = ADU
+						ROOT = {
+							alliance_with = ADU
+						}
+					}
+					AND = {
+						exists = MOR
+						country_or_non_sovereign_subject_holds = MOR
+						ROOT = {
+							alliance_with = MOR
+						}
+					}
+				}
+			}
 		}
 		
 		trigger = {
-			baleares_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				4559 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				any_ally = {
+					owns_or_non_sovereign_subject_of = 4559
+				}
+			}
+
+			OR = {
+				333 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				any_ally = {
+					owns_or_non_sovereign_subject_of = 333
+				}
+			}
+
+			OR = {
+				4560 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				any_ally = {
+					owns_or_non_sovereign_subject_of = 4560
+				}
 			}
 			
-			338 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				338 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				any_ally = {
+					owns_or_non_sovereign_subject_of = 338
+				}
 			}
 		}
 		
@@ -159,16 +204,44 @@ ctg_carthaginian_berber_missions = {
 				province_id = 1749 # Cadiz
 			}
 			
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					AND = {
+						exists = ADU
+						country_or_non_sovereign_subject_holds = ADU
+						ROOT = {
+							alliance_with = ADU
+						}
+					}
+					AND = {
+						exists = MOR
+						country_or_non_sovereign_subject_holds = MOR
+						ROOT = {
+							alliance_with = MOR
+						}
+					}
+				}
+			}
 		}
 		
 		trigger = {
 			OR = {
-				334 = {
-					country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					334 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					any_ally = {
+						owns_or_non_sovereign_subject_of = 334
+					}
 				}
-				1749 = {
-					country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					1749 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					any_ally = {
+						owns_or_non_sovereign_subject_of = 1749
+					}
 				}
 			}
 		}
@@ -1254,6 +1327,11 @@ ctg_carthaginian_professional_missions_slot = {
 				name = "ctg_breaking_from_carthaginian_traditions"
 				duration = -1
 			}
+
+			add_country_modifier = {
+				name = "ctg_lessons_from_the_punic_wars_modifier"
+				duration = -1
+			}
 		}
 	}
 	
@@ -1277,9 +1355,14 @@ ctg_carthaginian_professional_missions_slot = {
 			}
 			
 			remove_country_modifier = ctg_breaking_from_carthaginian_traditions
+			remove_country_modifier = ctg_lessons_from_the_punic_wars_modifier
 			
 			add_country_modifier = {
 				name = "ctg_carthaginian_recruitment_standards"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "ctg_lessons_from_the_punic_wars_modifier_two"
 				duration = -1
 			}
 		}
@@ -1305,9 +1388,14 @@ ctg_carthaginian_professional_missions_slot = {
 			}
 			
 			remove_country_modifier = ctg_carthaginian_recruitment_standards
+			remove_country_modifier = ctg_lessons_from_the_punic_wars_modifier_two
 			
 			add_country_modifier = {
-				name = "ctg_lessons_from_the_punic_wars"
+				name = "ctg_carthaginian_military_organization"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "ctg_lessons_from_the_punic_wars_modifier_three"
 				duration = -1
 			}
 		}

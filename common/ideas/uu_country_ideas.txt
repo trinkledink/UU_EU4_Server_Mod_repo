@@ -998,7 +998,7 @@ CTG_ideas = { #Carthage
 	}
 	ctg_mercantilism = {
 		trade_efficiency = 0.2
-		mercantilism_cost = -0.25
+		global_own_trade_power = 0.1
 	}
 	ctg_spreading_civilsation = {
 		development_cost = -0.1

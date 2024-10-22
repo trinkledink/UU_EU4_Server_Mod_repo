@@ -217,31 +217,46 @@ ctg_veteran_mercenary_companies = {
 	mercenary_discipline = 0.025	
 }
 ctg_mercenary_quality_standards = {
-	global_manpower_modifier = -0.10
+	global_manpower_modifier = -0.15 #basically replacing their nat idea
 	mercenary_manpower = 0.20
 	mercenary_cost = -0.20
 	mercenary_discipline = 0.05	
 }
 # Military Professionalism Reforms
 ctg_breaking_from_carthaginian_traditions = {
-	mercenary_manpower = -0.5
+	mercenary_manpower = -0.25
 	mercenary_discipline = -0.025
 	army_tradition = 0.25
-	yearly_army_professionalism = 0.005
+	allowed_marine_fraction = 0.25
 }
 ctg_carthaginian_recruitment_standards = {
-	mercenary_manpower = -1
-	mercenary_discipline = -0.050
+	mercenary_manpower = -0.25
+	mercenary_discipline = -0.05
+	discipline = 0.025
 	army_tradition = 0.50
-	drill_gain_modifier = 0.25
-	yearly_army_professionalism = 0.010
+	allowed_marine_fraction = 0.25
 }
-ctg_lessons_from_the_punic_wars = {
-	mercenary_manpower = -1
+ctg_carthaginian_military_organization = {
+	mercenary_manpower = -0.5
 	mercenary_discipline = -0.075
+	discipline = 0.05	#basically replacing their merc-discipline nat idea with normal discipline
 	army_tradition = 1
-	drill_gain_modifier = 0.5
-	yearly_army_professionalism = 0.015
+	allowed_marine_fraction = 0.25
+}
+
+ctg_lessons_from_the_punic_wars_modifier = {
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+ctg_lessons_from_the_punic_wars_modifier_two = {
+	discipline = 0.05
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+ctg_lessons_from_the_punic_wars_modifier_three = {
+	discipline = 0.075
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
 }
 # Timeout Events
 ctg_recent_military_reforms = {
