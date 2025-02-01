@@ -729,6 +729,7 @@ country_event = {	#TIM cleanup event
 		name = UU_balance_events.11.zzz
 	}
 }
+
 country_event = {	#slacken recruitment - hidden
 	id = UU_balance_events.15
 	title = none
@@ -756,13 +757,8 @@ country_event = {	#slacken recruitment - hidden
 				duration = 330
 				hidden = yes
 			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = uu_slacken_hide_alert_flag }
-				}
-				country_event = {
-					id = UU_balance_events.16
-				}
+			country_event = {
+				id = UU_balance_events.16
 			}
 		}
 	}
@@ -779,13 +775,8 @@ country_event = {	#slacken recruitment - visible
 
 	is_triggered_only = yes 
 
-	mean_time_to_happen = {
-		months = 12
-	}
-	immediate = {
-		add_years_of_owned_provinces_manpower = {
-			years = 2
-		}
+	trigger = {
+		NOT = { has_country_flag = uu_slacken_hide_alert_flag }
 	}
 	option = {
 		name = UU_balance_events.16.a
