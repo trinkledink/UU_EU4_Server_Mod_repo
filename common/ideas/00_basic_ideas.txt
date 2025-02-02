@@ -114,7 +114,7 @@ plutocracy_ideas = {
 	}
 	uu_armed_merchant_fleet = {
 		light_ship_power = 0.2	
-		naval_morale_damage_received = -0.15
+		naval_morale_damage_received = -0.1
 	}
 	uu_empower_guilds = {
 		global_trade_goods_size_modifier = 0.1
@@ -1740,7 +1740,7 @@ naval_ideas = {
 	}
 	naval_cadets = {
 		leader_naval_fire = 1
-		sunk_ship_morale_hit_recieved = -0.33
+		naval_morale_damage_received = -0.1
 	}
 	naval_glory = {
 		navy_tradition = 1

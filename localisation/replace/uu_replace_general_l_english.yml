@@ -84,7 +84,7 @@
  obj_90_absolutism_desc:0 "Absolutism must be at least §Y90§!."
  obj_emperor_of_china:0 "Professional Army"
   obj_emperor_of_china_desc:0 "Have at least §Y80§! Army Professionalism."
- obj_cultures_accepted_desc:0 "Have at least §Y5§! different promoted cultures."
+ obj_cultures_accepted_desc:0 "Have at least §Y5§! promoted cultures."
  obj_emperor_desc:0 "Have a government rank of Empire."
  obj_large_subject_desc:0 "Have a subject with over §Y250§! development."
  obj_disc_army_desc:0 "Have least §Y125%§! discipline in your armies."
@@ -286,7 +286,7 @@
  DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$.\n"   #UU added \n
  MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier" #UU Change
  mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU change
- mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops which fell in battle" #UU Change
+ mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle." #UU Change
  unlock_vozove_hradby_reform_tt:1 "Unlock '§YWagenburg Tactics§!' Tier 5 government reform, giving the following effects:\nMorale Damage Received: §G-10.0%§!\n\nThis reform also includes the following government mechanic:\nWinning battles on §Y[Root.GetAdjectiveCap]§! territory grants §G+0.33§! bonus Army Tradition."
  mechanic_battles_on_own_territory_bonus_tradition_yes:2 "Winning battles on our territory grants §G+0.33§! bonus Army Tradition." #UU Change
  mechanic_army_tradition_on_stackwipe_yes:0 "Overrunning enemy armies now grants §G+0.33§! bonus Army Tradition." #UU Change
@@ -294,6 +294,14 @@
  TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain" #UU Change
  TIM_will_be_necessary_to_form_persia:0 " " #UU removed
  AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!" #UU Change
+ less_than_15_provinces_on_same_continent:0 "Has less than §Y15§! provinces in States."
+ less_than_25_provinces_on_same_continent:0 "Has less than §Y25§! provinces in States."
+ less_than_35_provinces_on_same_continent:0 "Has less than §Y35§! provinces in States."
+ less_than_50_provinces_on_same_continent:0 "Has less than §Y50§! provinces in States."
+ at_least_15_provinces_on_same_continent:0 "Has at least §Y15§! provinces in States."
+ at_least_25_provinces_on_same_continent:0 "Has at least §Y25§! provinces in States."
+ at_least_35_provinces_on_same_continent:0 "Has at least §Y35§! provinces in States."
+ at_least_50_provinces_on_same_continent:0 "Has at least §Y50§! provinces in States."
  SLACK_TEXT:1 "Lose $DROP|Y$ Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will recur every 12 months, granting us §G2§! years of manpower each time.\n\nWe will gain the following modifier:"
 
  #missions 
