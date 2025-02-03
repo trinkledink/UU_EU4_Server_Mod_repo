@@ -20,5 +20,6 @@
  UU_MAI:0 "Mai" #King of Kanem Bornu
  UU_CALIPHATE:0 "Caliphate" #For Sokoto
  UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies
- 
+ #Mechanics?
+ mechanic_unlock_special_state_edicts_yes:2 "Has access to Age-unique §YState Edicts§!\n§YAge of Discovery§!: §G+30.0%§! Local Tax Modifier\n§YAge of Reformation§!: §G+50.0%§! Local Tax Modifier\n§YAge of Absolutism§!: §G+100.0%§! Local Tax Modifier\n§YAge of Revolutions§!: §G+150.0%§! Local Tax Modifier"
  

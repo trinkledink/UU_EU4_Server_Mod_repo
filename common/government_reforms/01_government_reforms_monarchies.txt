@@ -5721,7 +5721,7 @@ regional_council_reform = {
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		custom_attributes = {
-			unlock_special_state_edicts = yes
+			uu_unlock_special_state_edicts = yes	#UU change
 		}
 	}
 }
