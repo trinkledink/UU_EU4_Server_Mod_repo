@@ -110,18 +110,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
 631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 87;235;sea;1271;-1;-1;-1;-1;Calais-Kent UU Added
-656;4350;sea;1395;-1;-1;-1;-1;Manilla-Mindoro UU Added
+656;4350;sea;1395;-1;-1;-1;-1;Manila-Mindoro UU Added
 623;624;sea;1360;-1;-1;-1;-1;Tulangbewang-Banten UU Added
 24;23;sea;1266;-1;-1;-1;-1;Stavanger-Bergen UU Added
 23;2752;sea;1929;2911;1792;2913;1794;Bergen-Molde UU Added
 4354;651;sea;1398;-1;-1;-1;-1;Zamboanga-Sulu UU Added
 2703;651;sea;1398;-1;-1;-1;-1;Lehad Datu-Sulu UU Added
-655;637;sea;1368;-1;-1;-1;-1;Api-Api - Palawan UU Added
+655;637;sea;1368;-1;-1;-1;-1;Api-Api-Palawan UU Added
 4020;4021;sea;1449;-1;-1;-1;-1;Comoros-Antankara UU Added 
 4020;4049;sea;1449;-1;-1;-1;-1;Comoros-Ibo UU Added
 111;130;sea;1308;-1;-1;-1;-1;Friuli-Istria UU Added 
 5004;5005;sea;1371;4583;1015;4578;1016;Pearl River Delta UU Added
 1822;5006;sea;1373;4699;1170;4696;1177;Yangtze Delta UU Added
+4228;2741;sea;1389;-1;-1;-1;-1;Jeju-Naju UU Added 
+979;2611;sea;1680;-1;-1;-1;-1;Alaska Aleutians UU Added
 815;2934;canal;815;-1;-1;-1;-1;amazon_peru_strait UU Added
 2900;2934;canal;2934;-1;-1;-1;-1;amazon_brazil_strait UU Added
 -1;-1;;-1;-1;-1;-1;-1;-1

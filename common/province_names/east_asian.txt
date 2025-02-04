@@ -5,7 +5,7 @@
 735 = "Hancheng"
 1013 = "Gonghong"
 736 = "Qingshang"
-737 = "Qansanzhou"
+737 = "Wanshanzhou"
 
 613 = "Dongguan"
 616 = "Gaoping"
@@ -74,7 +74,7 @@
 2742 = Funing
 2743 = Jingcheng
 2744 = Ningbian
-2745 = Qï¿½ngzhou
+2745 = Qìngzhou
 4182 = Feiqian
 4224 = Xiangmo
 4227 = Jinzhou
@@ -94,7 +94,7 @@
 665 = "Zhaoqing" #Shiuhing
 675 = "Wumeng" #Umung
 2156 = "Chaozhou" #Chaochow
-2157 = "Huizhou" #Waichow
+2157 = "Huìzhou" #Waichow
 2158 = "Shaoguan" #Shiukwan
 2159 = "Leizhou" #Leichow
 2161 = "Lianzhou" #Limchow
@@ -110,7 +110,7 @@
 2132 = "Mangkang" #Markam
 2131 = "Changdu" #Qamdo
 705 = "Jiegu" #Gyegu
-2134 = "Tï¿½ngren" #Rebgong
+2134 = "Tóngren" #Rebgong
 
 #Taiwan
 2154 = "Taipei" #Taipei
