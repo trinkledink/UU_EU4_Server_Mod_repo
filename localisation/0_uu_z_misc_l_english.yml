@@ -84,6 +84,14 @@
  #zhuang_new:0 "Zhuang" #Duplicated here. Sinicized name
  turkic:0 "Oghuz" #New Turkic culture group
 
+ #State Edicts
+ uu_taxmeta_edict_1:0 "Taxation Effort"
+ uu_taxmeta_edict_2:0 "Taxation Effort"
+ uu_taxmeta_edict_3:0 "Taxation Effort"
+ uu_taxmeta_edict_4:0 "Taxation Effort"
+ mechanic_uu_unlock_special_state_edicts_yes:0 "Has access to Age-unique §YState Edicts§!\n§YAge of Discovery§!: §G+30.0%§! Local Tax Modifier\n§YAge of Reformation§!: §G+50.0%§! Local Tax Modifier\n§YAge of Absolutism§!: §G+100.0%§! Local Tax Modifier\n§YAge of Revolutions§!: §G+150.0%§! Local Tax Modifier"
+ 
+
  #Other tooltips
  uu_heir_cult_cannot_be_same_as_main_tt:0 "§YNote: Heir cult cannot be the same as the main cult.§!"
  uu_max_parliament_seats:0 "You have already assigned the maximum possible parliament seats. The default is 20."
