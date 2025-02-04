@@ -50,7 +50,7 @@
 
 585 = "Dongyu"
 
-640 = Kundian
+4802 = Kundian
 
 # Canton & Macau no longer stay as-is
 667 = "Guangzhou"
@@ -74,7 +74,7 @@
 2742 = Funing
 2743 = Jingcheng
 2744 = Ningbian
-2745 = Qìngzhou
+2745 = Qï¿½ngzhou
 4182 = Feiqian
 4224 = Xiangmo
 4227 = Jinzhou
@@ -110,7 +110,7 @@
 2132 = "Mangkang" #Markam
 2131 = "Changdu" #Qamdo
 705 = "Jiegu" #Gyegu
-2134 = "Tóngren" #Rebgong
+2134 = "Tï¿½ngren" #Rebgong
 
 #Taiwan
 2154 = "Taipei" #Taipei

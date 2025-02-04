@@ -238,4 +238,5 @@
 5004 = "Namtau" #Nantou
 5005 = "Kongmun" #Jiangmen, Xinhui
 
-
+4802 = "Khun-tien"  #Pontianak
+4803 = "Siang-ngau" #Sanggau
