@@ -7,8 +7,8 @@
 
 #Taiwan
 2154 = "Taipei" #Taipei
-2155 = "Taiching" #Taizhong
-738 = "Tainam" #Tainan
+2155 = "Taichung" #Taizhong
+738 = "Tailam" #Tainan
 
 #Other China
 667 = "Gengchew" #Guangzhou
@@ -19,3 +19,5 @@
 684 = "Hongchew" #Hangzhou
 685 = "Yeongchew" #Yangzhou
 707 = "Ngokmeng" #Yumen
+
+5004 = "Lamtau" #Nantou 
