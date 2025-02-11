@@ -62,8 +62,11 @@ country_decisions = {
 		effect = {
 			set_country_flag = formed_tier_four_flag
 			change_tag = PUN
+			if = {	#UU
+				limit = { NOT = { tag = DLH } }
+				swap_non_generic_missions = yes
+			}
 			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
 			lahore_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

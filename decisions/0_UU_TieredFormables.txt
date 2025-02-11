@@ -9,7 +9,7 @@ country_decisions = {
 			factor = 0
 		}
 		allow = {
-			always = yes
+			ai = no
 		}
 		effect = {
 			if = {
