@@ -650,7 +650,10 @@ country_event = {	#Pluto arms industry
 			any_neighbor_country = { is_at_war = yes }
 		}
 		any_owned_province = {
-			has_building = weapons
+			OR = { 
+				has_building = weapons
+				has_building = wharf
+			}
 			NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
 		}
 	}
@@ -658,7 +661,10 @@ country_event = {	#Pluto arms industry
 	immediate = {
 		every_owned_province = {
 			limit = { 
-				has_building = weapons
+				OR = { 
+					has_building = weapons
+					has_building = wharf	
+				}
 				NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
 			}
 			add_province_modifier = {
@@ -703,7 +709,6 @@ country_event = {	#Pluto arms industry remove
 	immediate = {
 		every_owned_province = {
 			limit = { 
-				has_building = weapons
 				has_province_modifier = uu_better_weapons_manus_priv_mod
 			}
 			remove_province_modifier = uu_better_weapons_manus_priv_mod

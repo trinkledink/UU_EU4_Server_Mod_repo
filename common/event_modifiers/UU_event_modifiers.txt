@@ -116,7 +116,7 @@ uu_maritime_pluto_greed = {	#pure greed
 #Pluto 
 
 uu_better_weapons_manus_priv_mod = {
-	trade_goods_size = 0.33
+	trade_goods_size = 0.25
 	province_trade_power_value = 5
 	picture = "amount_of_elite_artillery"
 }
