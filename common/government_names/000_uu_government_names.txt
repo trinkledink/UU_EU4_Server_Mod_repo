@@ -357,3 +357,27 @@ moroccan_vizier_regency = {
 		has_ruler_flag = uumor_wattasids_flag
 	}
 }
+
+lanfang_republic = {
+	rank = {
+		1 = UU_KONGSI_FEDERATION
+		2 = UU_KONGSI_FEDERATION
+		3 = UU_KONGSI_FEDERATION
+	}
+
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+	
+	ruler_female = {
+		1 = PRESIDENT_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+
+	trigger = {
+		has_reform = kongsi_federation
+	}
+}
