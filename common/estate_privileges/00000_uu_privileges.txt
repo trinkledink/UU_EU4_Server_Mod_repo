@@ -36,10 +36,7 @@ estate_burghers_elb_improved_workshops = {
 	on_granted_province = {
 		if = {
 			limit = {
-				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
+				has_production_building_trigger = yes
 			}
 			add_province_modifier = {
 				name = estate_burghers_elb_improved_workshops_mod
