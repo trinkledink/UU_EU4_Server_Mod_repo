@@ -126,6 +126,7 @@
  insult_default12:0 "ima be real wit u i just need the pp bro"
  #Parliament
  MODIFIER_MAX_POSSIBLE_PARLIAMENT_SEATS:0 "Possible Parliament Seats" #Was max possible, but now represents a hard limit
+ JAP_parliament_name:0 "Kokkai" #National Diet
  #mil group
  backing_war_effort:0 "£mil£ Support the War Effort"
  combat_janissary_decadence:0 "£mil£ Combat Janissary Decadence"

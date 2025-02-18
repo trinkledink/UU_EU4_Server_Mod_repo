@@ -184,7 +184,7 @@ l_english:
  PROV181:0 "Rethel"
  PROV182:1 "Valois"
  PROV183:0 "Paris"
- PROV184:0 "Orléanais"
+ PROV184:0 "Orléanais" #UU Added accent
  PROV185:0 "Nemours"
  PROV186:1 "Reims"
  PROV187:0 "Barrois"
@@ -380,7 +380,7 @@ l_english:
  PROV377:0 "Aleppo"
  PROV378:0 "Tarabulus"
  PROV379:0 "Jerusalem"
- PROV380:0 "al-Karak" #UU Change for consistent Arabic anglicization
+ PROV380:0 "al-Karak" #UU Change for consistent Arabic transliteration
  PROV381:0 "Ajlun"
  PROV382:0 "Damascus"
  PROV383:0 "Tabuk"
@@ -392,9 +392,9 @@ l_english:
  PROV389:1 "Mukalla"
  PROV390:0 "Sana'a"
  PROV391:0 "Najran"
- PROV392:0 "al-Arid" #UU Change for consistent Arabic anglicization
+ PROV392:0 "al-Arid" #UU Change for consistent Arabic transliteration
  PROV393:0 "Jabal Shammar"
- PROV394:0 "al-Qatif" #UU Change for consistent Arabic anglicization
+ PROV394:0 "al-Qatif" #UU Change for consistent Arabic transliteration
  PROV395:0 "Qatar"
  PROV396:0 "Bahrain"
  PROV397:0 "Bani Yas"
@@ -407,7 +407,7 @@ l_english:
  PROV404:0 "Liwa"
  PROV405:0 "Tadmor"
  PROV406:0 "Haditha"
- PROV407:0 "ar-Raqqa" #UU Change for consistent Arabic anglicization
+ PROV407:0 "ar-Raqqa" #UU Change for consistent Arabic transliteration
  PROV408:0 "Basra"
  PROV409:0 "Karbala"
  PROV410:0 "Baghdad"
@@ -465,7 +465,7 @@ l_english:
  PROV462:1 "Odishi"
  PROV463:0 "Circassia"
  PROV464:0 "Astrakhan"
- PROV465:0 "Yesgay"
+ PROV465:0 "Yesgay" #UU kek
  PROV466:0 "Sarai"
  PROV467:0 "Borisoglebsk"
  PROV468:0 "Manych"
@@ -541,7 +541,7 @@ l_english:
  PROV538:0 "Kongu"
  PROV539:0 "Tondainadu"
  PROV540:1 "Cuddalore"
- PROV541:0 "Vijayanagara" #UU
+ PROV541:0 "Vijayanagara" #UU better transliteration
  PROV542:0 "Golconda"
  PROV543:0 "Velanadu"
  PROV544:0 "Ahmadnagar"
@@ -748,7 +748,7 @@ l_english:
  PROV745:0 "Paramaribo"
  PROV746:0 "Cayenne"
  PROV747:0 "Amapa"
- PROV748:0 "Belém"
+ PROV748:0 "Belém" #UU Added accent
  PROV749:0 "Maranhao"
  PROV750:0 "Crato"
  PROV751:0 "Ceara"
@@ -762,11 +762,11 @@ l_english:
  PROV759:0 "Diamantina"
  PROV760:0 "Porto Seguro"
  PROV761:0 "Espirito Santo"
- PROV762:0 "São Tomé"
+ PROV762:0 "São Thomé das Letras" #UU Change because of ambiguity with sao tome island
  PROV763:0 "Rio de Janeiro"
  PROV764:0 "Santo Amaro"
  PROV765:0 "Minas Gerais"
- PROV766:0 "São Vicente"
+ PROV766:0 "São Vicente" #UU Added accent
  PROV767:0 "Ortelsburg"
  PROV768:0 "Guayra"
  PROV769:0 "Curitiba"
@@ -774,7 +774,7 @@ l_english:
  PROV771:0 "Vitebsk"
  PROV772:0 "Uruguay"
  PROV773:0 "Banda Oriental"
- PROV774:0 "al-Junaynah" #UU Change for consistent Arabic anglicization
+ PROV774:0 "al-Junaynah" #UU Change for consistent Arabic transliteration
  PROV775:0 "Asuncion"
  PROV776:0 "Concepcion"
  PROV777:0 "Corrientes"
@@ -1117,7 +1117,7 @@ l_english:
  PROV1114:0 "Kansala" #Was Gabu, the modern name for the area - renamed to Kaabu's imperial capital name
  PROV1115:0 "Brakna"
  PROV1116:0 "Wolof"
- PROV1117:0 "Fuuta Jaloo"
+ PROV1117:0 "Fuuta Jaloo" #UU better transliteration
  PROV1118:0 "Sierra Leone"
  PROV1119:0 "Grain Coast"
  PROV1120:0 "Bambuk"
@@ -1134,7 +1134,7 @@ l_english:
  PROV1131:0 "Massina"
  PROV1132:0 "Timbuktu"
  PROV1133:0 "Gao"
- PROV1134:0 "Djenné"
+ PROV1134:0 "Djenné" #UU better transliteration
  PROV1135:0 "Yatenga"
  PROV1136:0 "Gurma"
  PROV1137:0 "Wagadugu"
@@ -1205,9 +1205,9 @@ l_english:
  PROV1202:0 "Mombasa"
  PROV1203:0 "Malindi"
  PROV1204:0 "Lamu"
- PROV1205:0 "Muqdisho"
+ PROV1205:0 "Muqdisho" #UU Change for local name
  PROV1206:0 "Qardho"
- PROV1207:0 "Ogaadeen"
+ PROV1207:0 "Ogaadeen"  #UU Change for local name
  PROV1208:0 "Degehabur"
  PROV1209:0 "Berbera"
  PROV1210:0 "Dawaro"
@@ -1276,7 +1276,7 @@ l_english:
  PROV1273:0 "Taveta"
  PROV1274:0 "Coast of Brittany"
  PROV1275:0 "Quiberon Bay"
- PROV1276:0 "Cote D'Argent"
+ PROV1276:0 "Côte d'Argent" #UU accurate French
  PROV1277:0 "Bay of Biscay"
  PROV1278:0 "Cantabrian Sea"
  PROV1279:0 "Tyne"
@@ -1297,16 +1297,16 @@ l_english:
  PROV1294:0 "Gulf of Almeria"
  PROV1295:0 "Gulf of Valencia"
  PROV1296:0 "Gulf of Lion"
- PROV1297:0 "Cote D'Azur"
+ PROV1297:0 "Côte d'Azur" #UU accurate French
  PROV1298:0 "Ligurian Sea"
- PROV1299:0 "Coast of the Faeroes"
+ PROV1299:0 "Coast of the Faroes"  #Basegame typo
  PROV1300:0 "Western Mediterranean"
  PROV1301:0 "Barbary Coast"
  PROV1302:0 "Cape Bon"
  PROV1303:0 "Tyrrhenian Sea" #Basegame typo
  PROV1304:0 "Bay of Naples" #Basegame typo
  PROV1305:0 "Gulf of Gabes"
- PROV1306:0 "Sao Tome"
+ PROV1306:0 "São Tomé" #UU Added accent
  PROV1307:0 "Straits of Messina"
  PROV1308:0 "Gulf of Venice"
  PROV1309:0 "Adriatic Sea"
@@ -1330,7 +1330,7 @@ l_english:
  PROV1327:0 "Aral Sea"
  PROV1328:0 "Gulf of Suez"
  PROV1329:0 "Red Sea"
- PROV1330:0 "Bab al-Mandab"  #UU Change for consistent Arabic anglicization
+ PROV1330:0 "Bab al-Mandab"  #UU Change for consistent Arabic transliteration
  PROV1331:0 "Gulf of Aden"
  PROV1332:0 "Gulf of Oman"
  PROV1333:0 "Gulf of Masirah"
@@ -1373,7 +1373,7 @@ l_english:
  PROV1370:0 "Gulf of Tonkin"
  PROV1371:0 "Guangzhou Bay"
  PROV1372:0 "Taiwan Strait"
- PROV1373:0 "Yangtze Delta"
+ PROV1373:0 "Yangtze Delta" #UU better transliteration
  PROV1374:1 "Eastern Yellow Sea"
  PROV1375:0 "Korea Bay"
  PROV1376:0 "South Korean Sea"
@@ -1648,7 +1648,7 @@ l_english:
  PROV1645:0 "Eastern Indian Ocean South Equatorial Current"
  PROV1646:0 "Indian Ocean South Equatorial Current"
  PROV1647:0 "Western Indian Ocean South Equatorial Current"
- PROV1648:0 "Lake Tchad"
+ PROV1648:0 "Lake Tchad" #UU better transliteration
  PROV1649:0 "Lake Victoria"
  PROV1650:0 "Lake Tanganyika"
  PROV1651:0 "Lake Malawi"
@@ -2273,7 +2273,7 @@ l_english:
  PROV2271:0 "Azawagh"
  PROV2272:0 "Azbin"
  PROV2273:0 "Ader"
- PROV2274:0 "Aïr" #Added accent
+ PROV2274:0 "Aïr" #UU Added accent
  PROV2275:0 "Tenere"
  PROV2276:0 "Itesan"
  PROV2277:0 "Kawar"
@@ -2315,25 +2315,25 @@ l_english:
  PROV2313:0 "Antioch"
  PROV2314:0 "Rahba"
  PROV2315:0 "Suez"
- PROV2316:0 "al-Gharbiya" #UU Change for consistent Arabic anglicization
+ PROV2316:0 "al-Gharbiya" #UU Change for consistent Arabic transliteration
  PROV2317:0 "Minya"
  PROV2318:1 "Bahiriya"
  PROV2319:0 "Manfalut"
  PROV2320:0 "Ras Gharib"
  PROV2321:0 "Queseer"
  PROV2322:0 "Wadi Halfa"
- PROV2323:0 "Sahra an-Nübyah" #UU Change for consistent Arabic anglicization
+ PROV2323:0 "Sahra an-Nübyah" #UU Change for consistent Arabic transliteration
  PROV2324:0 "Halaib"
  PROV2325:0 "Tarrana"
  PROV2326:0 "Bardiyah"
  PROV2327:0 "Maan"
- PROV2328:0 "al-Ula" #UU Change for consistent Arabic anglicization
+ PROV2328:0 "al-Ula" #UU Change for consistent Arabic transliteration
  PROV2329:0 "Yanbu"
  PROV2330:0 "Ma'din Sulaym"
  PROV2331:0 "Jeddah"
  PROV2332:1 "Turubah"
  PROV2333:1 "Zufra"
- PROV2334:0 "Badiyat ash-Sham" #UU Change for consistent Arabic anglicization
+ PROV2334:0 "Badiyat ash-Sham" #UU Change for consistent Arabic transliteration
  PROV2335:1 "Dawasir"
  PROV2336:1 "Aflaj"
  PROV2337:1 "Buraydah"
@@ -2470,7 +2470,7 @@ l_english:
  PROV2468:0 "Tadla"
  PROV2469:0 "Dukkala"
  PROV2470:0 "Haha"
- PROV2471:0 "Shott al-Jarid"  #UU Change for consistent Arabic anglicization
+ PROV2471:0 "Shott al-Jarid"  #UU Change for consistent Arabic transliteration
  PROV2472:0 "Ouargla"
  PROV2473:0 "Sousse"
  PROV2474:1 "Tajarhi"
@@ -2781,7 +2781,7 @@ l_english:
  PROV2779:0 "Afder"
  PROV2780:0 "Beledweyne"
  PROV2781:0 "Gedo"
- PROV2782:0 "Warsheekh"
+ PROV2782:0 "Warsheekh" #UU Change for local name
  PROV2783:0 "Hobyo"
  PROV2784:0 "Galkayo"
  PROV2785:0 "El Buur"
@@ -2792,7 +2792,7 @@ l_english:
  PROV2790:0 "Sanaag"
  PROV2791:0 "Ankober"
  PROV2792:0 "Togdheer"
- PROV2793:0 "Hargeysa"
+ PROV2793:0 "Hargeysa" #UU Change for local name
  PROV2794:0 "Barawa"
  PROV2795:0 "Meregh"
  PROV2796:0 "Pate"
@@ -2893,7 +2893,7 @@ l_english:
  PROV2891:0 "Santo Antonio da Manga"
  PROV2892:0 "Araxas"
  PROV2893:0 "Ofaie"
- PROV2894:0 "São João del Rei"
+ PROV2894:0 "São João del Rei" #UU Added accent
  PROV2895:0 "Castro"
  PROV2896:0 "Campinas"
  PROV2897:0 "Araraquara"
@@ -3016,7 +3016,7 @@ l_english:
  PROV4030:0 "Bara"
  PROV4031:0 "Antsalova"
  PROV4032:0 "Fiherana"
- PROV4033:0 "al-Qadarif"
+ PROV4033:0 "al-Qadarif" #UU Change for consistent Arabic transliteration
  PROV4034:0 "Makua"
  PROV4035:0 "Ngindo"
  PROV4036:0 "Wayao"
@@ -3252,13 +3252,13 @@ l_english:
  PROV4266:0 "Izhkar"
  PROV4267:0 "Bolgar"
  PROV4268:0 "Aqabah"
- PROV4269:0 "al-Wajh"  #UU Change for consistent Arabic anglicization
+ PROV4269:0 "al-Wajh"  #UU Change for consistent Arabic transliteration
  PROV4270:0 "Azraq"
  PROV4271:0 "Suwayda"
- PROV4272:0 "al-Jawf" #UU Change for consistent Arabic anglicization
- PROV4273:0 "al-Kariatan" #UU Change for consistent Arabic anglicization
+ PROV4272:0 "al-Jawf" #UU Change for consistent Arabic transliteration
+ PROV4273:0 "al-Kariatan" #UU Change for consistent Arabic transliteration
  PROV4274:0 "Sudayr"
- PROV4275:0 "al-Yamamah" #UU Change for consistent Arabic anglicization
+ PROV4275:0 "al-Yamamah" #UU Change for consistent Arabic transliteration
  PROV4276:0 "Jabal Tubaiq"
  PROV4277:0 "Taif"
  PROV4278:0 "Qunfudhah"
@@ -3267,9 +3267,9 @@ l_english:
  PROV4281:0 "Dhamar"
  PROV4282:0 "Sahda"
  PROV4283:0 "Shihr"
- PROV4284:0 "al-Ghaydah"
+ PROV4284:0 "al-Ghaydah" #UU Change for consistent Arabic transliteration
  PROV4285:0 "Baraimi"
- PROV4286:0 "ash-Sharqiyah" #UU Change for consistent Arabic anglicization
+ PROV4286:0 "ash-Sharqiyah" #UU Change for consistent Arabic transliteration
  PROV4287:0 "Ibra"
  PROV4288:0 "Shatt"
  PROV4289:0 "Shushtar"
@@ -3545,7 +3545,7 @@ l_english:
  PROV4559:1 "Menorca"
  PROV4560:0 "Ibiza"
  PROV4561:0 "Tétouan"
- PROV4562:0 "al-Marsa al-Kabir"  #UU Change for consistent Arabic anglicization
+ PROV4562:0 "al-Marsa al-Kabir"  #UU Change for consistent Arabic transliteration
  PROV4563:0 "Salé"
  PROV4564:0 "Anfa"
  PROV4565:0 "Tenerife"
