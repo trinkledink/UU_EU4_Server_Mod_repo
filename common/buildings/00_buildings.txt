@@ -1305,14 +1305,14 @@ university = {
 		add_development_from_building = {
 			building = university
 			type = tax
-			value = 2
+			value = 1 #UU
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = university
 			type = tax
-			value = 2
+			value = 1 #UU
 		}
 	}
 	on_obsolete = {
@@ -2360,7 +2360,7 @@ wharf = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2389,7 +2389,7 @@ wharf = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2446,7 +2446,7 @@ weapons = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2474,7 +2474,7 @@ weapons = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2508,7 +2508,7 @@ textile = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2520,7 +2520,7 @@ textile = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2550,7 +2550,7 @@ plantations = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2562,7 +2562,7 @@ plantations = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2592,7 +2592,7 @@ tradecompany = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2604,7 +2604,7 @@ tradecompany = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2631,7 +2631,7 @@ farm_estate = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2651,7 +2651,7 @@ farm_estate = {
 		remove_development_from_building = {
 			building = manufactory 
 			type = production 
-			value = 2 
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2688,7 +2688,7 @@ mills = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2700,7 +2700,7 @@ mills = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2734,14 +2734,14 @@ furnace = {
 		add_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
-			value = 2
+			value = 1 #UU
 		}
 	}
 	on_obsolete = {
@@ -2846,8 +2846,8 @@ soldier_households = {
 	on_built = {
 		add_development_from_building = {
 			building = manufactory
-			type = production
-			value = 2
+			type = manpower
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = manufactory 
@@ -2869,8 +2869,8 @@ soldier_households = {
 	on_destroyed = {
 		remove_development_from_building = {
 			building = manufactory
-			type = production
-			value = 2
+			type = manpower
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = manufactory 
@@ -2923,24 +2923,24 @@ impressment_offices = {
 	on_built = {
 		add_development_from_building = {
 			building = impressment_offices
-			type = manpower
-			value = 2
+			type = production
+			value = 1 #UU
 		}
 		add_dev_from_building = {
 			building = impressment_offices 
-			type = manpower 
+			type = production 
 			value = 1 
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = impressment_offices
-			type = manpower
-			value = 2
+			type = production
+			value = 1 #UU
 		}
 		remove_dev_from_building = {
 			building = impressment_offices 
-			type = manpower 
+			type = production
 			value = 1 
 		}
 	}
@@ -3013,11 +3013,11 @@ state_house = {
 		add_development_from_building = {
 			building = state_house
 			type = tax
-			value = 2
+			value = 1 #UU
 		}
 		add_dev_from_building = { #uu
 			building = state_house 
-			type = production 
+			type = tax #UU 
 			value = 1 
 		}
 	}
@@ -3025,7 +3025,7 @@ state_house = {
 		remove_development_from_building = {
 			building = state_house
 			type = tax
-			value = 2
+			value = 1 #UU
 		}
 	}
 	on_obsolete = {

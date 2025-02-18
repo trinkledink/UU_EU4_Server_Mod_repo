@@ -446,7 +446,7 @@ california={
 girin={
 	location=730
 	color={
-		41 82 45 
+		41 92 65
 	}
 	outgoing={
 		name="siberia"
@@ -668,7 +668,7 @@ the_moluccas={
 philippines={
 	location=4358
 	color = {
-		17 240 220
+		133  132  10
 	}
 	outgoing={
 		name="malacca"
@@ -705,7 +705,7 @@ philippines={
 nippon={
 	location=1376
 	color = {
-		22 94 131 
+		210  95  84
 	}
 	outgoing={
 		name="hangzhou"
@@ -1059,7 +1059,7 @@ deccan={
 comorin_cape={ #Coromandel
 	location=1340
 	color={
-		13 255 179 
+		13 225 179 
 	}
 	outgoing={
 		name="gulf_of_aden"
@@ -1201,7 +1201,7 @@ gulf_of_aden={
 hormuz={
 	location=1334
 	color = {
-		234 233 140
+		224 223 130
 	}
 	outgoing={
 		name="basra"
@@ -1579,7 +1579,8 @@ kiev={
 kazan={
 	location=1082
 	color = {
-		96 131 80
+		#96 131 90
+		195 46 28
 	}
 	inland=yes
 	outgoing={
@@ -1598,7 +1599,7 @@ kazan={
 white_sea={
 	location=1652
 	color={
-		210 46 28 
+		170 200 220
 	}
 	outgoing={
 		name="north_sea"
@@ -1625,7 +1626,7 @@ white_sea={
 novgorod={
 	location=33
 	color={
-		97 126 37 
+		97 156 37 
 	}
 	outgoing={
 		name="baltic_sea"
@@ -2129,7 +2130,7 @@ st_lawrence={
 north_sea={
 	location=1975
 	color={
-		117 165 188 
+		107 155 188 
 	}
 	outgoing={
 		name="english_channel"
