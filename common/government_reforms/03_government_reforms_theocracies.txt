@@ -978,6 +978,7 @@ internal_mission_reform = {
 	}
 	custom_attributes = {
 		on_church_built_clergy_loyalty = yes
+		uu_unlock_special_state_edicts = yes	#UU added
 	}
 }
 
