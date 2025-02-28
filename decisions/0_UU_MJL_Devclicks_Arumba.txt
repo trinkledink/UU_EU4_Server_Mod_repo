@@ -9,12 +9,40 @@ country_decisions = {
 			factor = 0
 		}
 		allow = {
-			custom_trigger_tooltip = {
-				tooltip = dev_sum_clicks_decision_tooltip
-				always = no
+			if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_tooltip_1
+					always = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_page_1
+					always = yes
+				}
+			} else = {
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_tooltip_2
+					always = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_page_2
+					always = yes
+				}
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+				}
+				custom_tooltip = dev_sum_clicks_decision_page_1
+				set_country_flag = uudev_toggle_thissession_flag
+			} else = {
+				custom_tooltip = dev_sum_clicks_decision_page_2
+				clr_country_flag = uudev_toggle_thissession_flag
+			}
 		}
 	}
 }

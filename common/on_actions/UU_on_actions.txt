@@ -1,5 +1,6 @@
 # country
 on_startup = {
+	#Dev Click Counter - 1: Campaign
     change_variable = {
         which = dev_adm_clicks
         value = 0
@@ -32,6 +33,40 @@ on_startup = {
         which = exploit_mil_clicks
         value = 0
     }
+	#Dev Click Counter - 2: Session
+    set_variable = {
+        which = dev_adm_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = dev_dip_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = dev_mil_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = dev_sum_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = infra_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = exploit_adm_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = exploit_dip_clicks_2
+        value = 0
+    }
+	set_variable = {
+        which = exploit_mil_clicks_2
+        value = 0
+    }
+	#Disinherit counter
 	change_variable = {
         which = uu_disinherit_counter_var
         value = 0
@@ -384,6 +419,14 @@ on_adm_development = {
 				which = dev_sum_clicks
 				value = 1
 			}
+			change_variable = {
+				which = dev_adm_clicks_2
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks_2
+				value = 1
+			}
 		}
 	}
 }
@@ -400,6 +443,14 @@ on_dip_development = {
 				which = dev_sum_clicks
 				value = 1
 			}
+			change_variable = {
+				which = dev_dip_clicks_2
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks_2
+				value = 1
+			}
 		}
 	}
 }
@@ -414,6 +465,14 @@ on_mil_development = {
 			}
 			change_variable = {
 				which = dev_sum_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_mil_clicks_2
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks_2
 				value = 1
 			}
 		}
@@ -534,6 +593,10 @@ on_expanded_infrastructure = {
         	which = infra_clicks
         	value = 1
 		}
+		change_variable = {
+        	which = infra_clicks_2
+        	value = 1
+		}
     }
 }
 
@@ -541,6 +604,10 @@ on_expanded_infrastructure_removed = {
 	owner = {
 		change_variable = {
 			which = infra_clicks
+			value = -1
+		}
+		change_variable = {
+			which = infra_clicks_2
 			value = -1
 		}
 	}
@@ -552,6 +619,10 @@ on_adm_exploited = {
 			which = exploit_adm_clicks
 			value = 1
 		}
+		change_variable = {
+			which = exploit_adm_clicks_2
+			value = 1
+		}
 	}
 }
 
@@ -561,6 +632,10 @@ on_dip_exploited = {
 			which = exploit_dip_clicks
 			value = 1
 		}
+		change_variable = {
+			which = exploit_dip_clicks_2
+			value = 1
+		}
 	}
 }
 
@@ -568,6 +643,10 @@ on_mil_exploited = {
 	owner = {
 		change_variable = {
 			which = exploit_mil_clicks
+			value = 1
+		}
+		change_variable = {
+			which = exploit_mil_clicks_2
 			value = 1
 		}
 	}
