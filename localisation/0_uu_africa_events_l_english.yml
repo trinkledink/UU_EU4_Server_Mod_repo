@@ -83,8 +83,8 @@
  uumor_unrest_mod:0 "Wattasids Massacred"
 
  uu_yahuyahu.1.t:0 "The Ethiopian-Adalite Wars"
-  uu_yahuyahu.1.d:0 "For centuries, there has been war between the Christian empire of the Solomonids and the Muslim sultans in the east. Out of the ashes of the Sultanate of Ifat, driven to ruin by the Ethiopian emperor Dawit I in the early 1400s, was born the Sultanate of Adal, led by the son of Ifat's last Sultan. Returning from Arabian exile, the new Sultan Sabr ad-Din III and his armies struck down the Solomonids in the Battle of Adal, among them the Emperor Tewodros I, son of Dawit. Thus did Sabr ad-Din avenge his father, and thus did the war flare up anew.\n\nThough many Emperors and Sultans have come and gone since then, the younger brother of Sabr ad-Din rules in Adal, as does the younger brother of Twodros in Ethiopia. Both rulers remember that day clearly, neither quick to forget the affronts to their own houses from the other's. Already, as Emperor Zara Yaqob campaigns against rebels in the north, Sultan Badlay prepares an invasion of his own. The two would meet at the fateful battle of Gomit in 1445, and only one would leave the battle alive."
-  uu_yahuyahu.1.a:0 "For the sake of the $DYNASTY$s, the fight will continue."
+  uu_yahuyahu.1.d:0 "For centuries, there has been war between the Christian empire of the Solomonids and the Muslim sultans in the east. Out of the ashes of the Sultanate of Ifat, driven to ruin by the Ethiopian emperor Dawit I in the early 1400s, was born the Sultanate of Adal, led by the son of Ifat's last Sultan. Returning from Arabian exile, the new Sultan Sabr ad-Din III and his armies struck down the Solomonids in the Battle of Adal, among them the Emperor Tewodros I, son of Dawit. Thus did Sabr ad-Din avenge his father, and thus did times of war return to Abyssinia.\n\nThough many Emperors and Sultans have come and gone since then, Sabr ad-Din's own brother rules in Adal, as does the younger brother of Tewodros in Ethiopia. Both rulers remember that day clearly, neither quick to forget the affronts to their own houses from the other's. Already, as Emperor Zara Yaqob campaigns against rebels in the north, Sultan Badlay prepares an invasion of his own. The two would meet at the fateful battle of Gomit in 1445, and only one would leave the battle alive."
+  uu_yahuyahu.1.a:0 "For the sake of the $DYNASTY$ dynasty, the fight will continue."
   uu_yahuyahu.1.b:0 "History is ours to make. I will slay the Emperor in battle myself."
   uu_eth_claim_ada_tt:0 "Gain permanent claims on all provinces owned by @ADA §YAdal.§!"
   uu_ada_claim_eth_tt:0 "Gain permanent claims on all provinces owned by @ETH §YEthiopia.§!"
@@ -96,7 +96,7 @@
   uu_yahuyahu.2.c:0 "The current conflict is a more pressing matter at this time."
 
  uu_eth_ada_cb:0 "Conquest of Abyssinia"
-  uu_eth_ada_cb_desc:0 "We must cleanse Abyssinia of these devils."
+  uu_eth_ada_cb_desc:0 "We must cleanse Abyssinia of these villains."
  UU_ETH_ADA_war:0 "Show Superiority"
   UU_ETH_ADA_war_desc:0 "War goal is to show them superiority by winning battles."
   UU_ETH_ADA_WARNAME:0 "$ORDER$$FIRST$ Invasion of $SECOND_NAME$"

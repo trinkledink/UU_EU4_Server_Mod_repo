@@ -1,6 +1,6 @@
 namespace = uu_yahuyahu
 
-#Give ETH and ADA annex cb against each other
+#Give ETH and ADA good cb against each other
 country_event = {								#Starter	
 	id = uu_yahuyahu.1
 	title = uu_yahuyahu.1.t
@@ -23,15 +23,22 @@ country_event = {								#Starter
 			ETH = {
 				add_casus_belli = {
 					type = uu_eth_ada_cb
+					months = 2400
 					target = ADA
 				}
 				every_owned_province = {
 					add_permanent_claim = ADA
 				}
+				every_subject_country = {
+					every_owned_province = {
+						add_permanent_claim = ADA
+					}
+				}
 			}
 			ADA = {
 				add_casus_belli = {
 					type = uu_eth_ada_cb
+					months = 2400
 					target = ETH
 				}
 				every_owned_province = {
@@ -49,6 +56,7 @@ country_event = {								#Starter
 				ETH = {
 					add_casus_belli = {
 						type = uu_eth_ada_cb
+						months = 2400
 						target = ADA
 					}
 				}
@@ -60,6 +68,7 @@ country_event = {								#Starter
 				ADA = {
 					add_casus_belli = {
 						type = uu_eth_ada_cb
+						months = 2400
 						target = ETH
 					}
 				}
@@ -91,6 +100,7 @@ country_event = {								#Starter
 			ADA = {
 				add_casus_belli = {
 					type = uu_eth_ada_cb
+					months = 2400
 					target = ETH
 				}
 			}
