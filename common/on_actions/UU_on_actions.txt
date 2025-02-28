@@ -83,6 +83,7 @@ on_startup = {
 		flavor_mal.0 				#UU event for decline of Mali
 		flavor_tim.0 				#UU Timurid event
 		flavor_mor.0 				#UU Morocco event
+		uu_yahuyahu.1				#UU Ethiopia/Adal event
 		UU_ave_mission_events.3		#UU England event
 	}
     if = {		#Tiered Formables 

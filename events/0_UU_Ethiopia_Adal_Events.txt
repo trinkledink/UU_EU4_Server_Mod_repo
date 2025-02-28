@@ -1,0 +1,155 @@
+namespace = uu_yahuyahu
+
+#Give ETH and ADA annex cb against each other
+country_event = {								#Starter	
+	id = uu_yahuyahu.1
+	title = uu_yahuyahu.1.t
+	desc = uu_yahuyahu.1.d
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = ADA 
+			tag = ETH 
+		}
+		NOT = { has_country_flag = had_eth_ada_start_event }
+	}
+
+	immediate = {
+		set_country_flag = had_eth_ada_start_event
+		hidden_effect = {
+			ETH = {
+				add_casus_belli = {
+					type = uu_eth_ada_cb
+					target = ADA
+				}
+				every_owned_province = {
+					add_permanent_claim = ADA
+				}
+			}
+			ADA = {
+				add_casus_belli = {
+					type = uu_eth_ada_cb
+					target = ETH
+				}
+				every_owned_province = {
+					add_permanent_claim = ETH
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = uu_yahuyahu.1.a
+		if = {
+			limit = { tag = ETH }
+			tooltip = {
+				ETH = {
+					add_casus_belli = {
+						type = uu_eth_ada_cb
+						target = ADA
+					}
+				}
+			}
+			custom_tooltip = uu_eth_claim_ada_tt
+		} else_if = {
+			limit = { tag = ADA }
+			tooltip = {
+				ADA = {
+					add_casus_belli = {
+						type = uu_eth_ada_cb
+						target = ETH
+					}
+				}
+			}
+			custom_tooltip = uu_ada_claim_eth_tt
+		}
+				
+	}
+	option = {
+		name = uu_yahuyahu.1.b
+		trigger = { 
+			tag = ADA 
+			NOT = { is_year = 1446 }
+		}
+		custom_tooltip = uu_ada_declare_war_timer
+		custom_tooltip = " "
+		change_adm = 2
+		change_dip = 2
+		change_mil = 2
+		define_ruler_to_general = {
+			fire = 3
+			shock = 4
+			manuever = 3
+			siege = 3
+		}
+		add_manpower = 5
+		custom_tooltip = " "
+		tooltip = {
+			ADA = {
+				add_casus_belli = {
+					type = uu_eth_ada_cb
+					target = ETH
+				}
+			}
+		}
+		custom_tooltip = uu_ada_claim_eth_tt
+		hidden_effect = {
+			country_event = {
+				id = uu_yahuyahu.2
+				days = 120
+				random = 15
+			}
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = uu_yahuyahu.2
+	title = uu_yahuyahu.2.t
+	desc = uu_yahuyahu.2.d
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { war_with = ETH }
+	}
+
+	option = {
+		name = uu_yahuyahu.2.a
+		trigger = { 
+			NOT = { war_with = ETH }
+		}
+		if = {
+			limit = {
+				NOT = { war_with = ETH }
+			}
+			declare_war_with_cb = {
+				who = ETH
+				casus_belli = uu_eth_ada_cb
+			}
+		} 
+	}
+	option = {
+		name = uu_yahuyahu.2.b
+		add_prestige = -20
+		add_legitimacy = -20
+		change_adm = -2
+		change_dip = -2
+		change_mil = -2
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = uu_yahuyahu.2.c
+		add_prestige = -1
+		trigger = {
+			NOT = { war_with = ETH }
+			is_at_war = yes 
+		}
+		ai_chance = { factor = 100 }
+	}
+}

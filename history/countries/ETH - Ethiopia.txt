@@ -163,7 +163,7 @@ change_estate_land_share = {
 
 1434.6.2 = {
 	monarch = {
-		name = "Zara Yakob"
+		name = "Zara Yaqob"
 		dynasty = "Solomonid"
 		adm = 6
 		dip = 5
@@ -176,19 +176,7 @@ change_estate_land_share = {
 }
 
 
-1434.6.2 = {
-	heir = {
-		name = "Ba'eda Mâryâm"
-		monarch_name = "Ba'eda Mâryâm II"
-		dynasty = "Solomonid"
-		birth_date = 1420.1.1
-		death_date = 1478.10.17
-		claim = 95
-		adm = 1
-		dip = 2
-		mil = 1
-	}
-}
+#UU deleted ahistorical heir
 
 1444.11.10 = {
 	add_ruler_modifier = {
@@ -199,7 +187,7 @@ change_estate_land_share = {
 
 1468.9.7 = {
 	monarch = {
-		name = "Ba'eda Mâryâm II"
+		name = "Ba'eda Mâryâm I" #UU fix ahistorical
 		dynasty = "Solomonid"
 		adm = 1
 		dip = 2

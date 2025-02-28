@@ -14,6 +14,7 @@
    AV0_ADJ:0 "Anglo-French"
   AV1:0 "Anglo-French Union"
    AV1_ADJ:0 "Anglo-French"
+ ADA_ADJ:0 "Adalite" #Actual adjective for this place
 
  #Trade Nodes
  katsina:0 "Hausaland"
