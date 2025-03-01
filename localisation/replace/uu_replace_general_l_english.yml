@@ -18,11 +18,12 @@
 
  #Trade Nodes
  katsina:0 "Hausaland"
- saxony:0 "Dresden"
  rheinland:0 "Rhineland"
  sevilla:0 "Seville"
  kiev:0 "Kyiv"
  safi:0 "Agadir"
+ saxony:0 "Dresden"
+  trade_company_saxony:0 "Elbe Charter"
  bordeaux:0 "Nantes"
   trade_company_bordeaux:0 "Loire Charter"
    TRADE_COMPANY_BORDEAUX_Root_Culture_GetName:0 "[Root.Culture.GetName] Loire Company"
@@ -39,6 +40,9 @@
   trade_company_pest:0 "Danubian Charter"
    TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danubia Company"
    TRADE_COMPANY_PEST_European_Trade_Company:0 "Danubia Trade Company"
+ the_moluccas:0 "Spice Islands"
+  trade_company_indonesia:0 "Malayan Charter" #this is for malacca node, but indented for organization purposes
+   TRADE_COMPANY_INDONESIA_Indonesia_Trade_Company:0 "Malaya Trade Company" 
 
  #Miscellaneous map
  huang_he_estuary_modifier:0 "Yellow River Estuary"
@@ -304,7 +308,8 @@
  at_least_25_provinces_on_same_continent:0 "Has at least §Y25§! provinces in States."
  at_least_35_provinces_on_same_continent:0 "Has at least §Y35§! provinces in States."
  at_least_50_provinces_on_same_continent:0 "Has at least §Y50§! provinces in States."
- SLACK_TEXT:1 "Lose $DROP|Y$ Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will recur every 12 months, granting us §G2§! years of manpower each time.\n\nWe will gain the following modifier:"
+ SLACKEN_BELOW_MIN_AP:0 "You need at least §Y10§! Army Professionalism to slacken recruiting standards!"
+ SLACK_TEXT_NODROP:0 "Lose §Y0§! Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will fire in 12 months, granting us §G2§! years of manpower for §R10§! Army Professionalism.\n\nThis event will recur every 12 months thereafter until invalid."
 
  #missions 
  TIM_timurid_empire_title:0 "§MTimurid Empire§!"

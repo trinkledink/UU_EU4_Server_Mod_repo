@@ -757,6 +757,7 @@ country_event = {	#slacken recruitment - hidden
 			add_years_of_owned_provinces_manpower = {
 				years = 2
 			}
+			add_army_professionalism = -0.1
 			add_country_modifier = {
 				name = uu_slackening_cd
 				duration = 330
@@ -781,15 +782,30 @@ country_event = {	#slacken recruitment - visible
 	is_triggered_only = yes 
 
 	trigger = {
+		ai = no
 		NOT = { has_country_flag = uu_slacken_hide_alert_flag }
 	}
 	option = {
 		name = UU_balance_events.16.a
+		tooltip = {
+			add_years_of_owned_provinces_manpower = {
+				years = 2
+			}
+			add_army_professionalism = -0.1
+		}
+		custom_tooltip = " "
 		custom_tooltip = uu_slacken_tt_1
 	}
 	option = {
 		name = UU_balance_events.16.b
-		set_country_flag = uu_slacken_hide_alert_flag 
+		set_country_flag = uu_slacken_hide_alert_flag
+		tooltip = {
+			add_years_of_owned_provinces_manpower = {
+				years = 2
+			}
+			add_army_professionalism = -0.1
+		}
+		custom_tooltip = " "
 		custom_tooltip = uu_slacken_tt_2
 	}
 }

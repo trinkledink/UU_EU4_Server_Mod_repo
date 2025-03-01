@@ -6407,11 +6407,11 @@ on_concentrate_development = {
 }
 
 on_slacken_start = {
-	add_country_modifier = {
-		name = slackening_modifier
-		duration = -1
-	}
 	hidden_effect = {	#UU
+		add_country_modifier = {
+			name = slackening_modifier	#blank modifier
+			duration = -1
+		}
 		add_country_modifier = {
 			name = uu_slackening_cd
 			duration = 330

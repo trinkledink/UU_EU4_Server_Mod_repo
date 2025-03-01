@@ -2,8 +2,8 @@
 --
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
 
-
-
+ NDefines.NMilitary.SLACKEN_AP_DROP = 0     --since slacken is -10 flat yearly
+ NDefines.NMilitary.SLACKEN_MIN_AP = 0.1     --since slacken is -10 flat yearly
  NDefines.NMilitary.DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.64
  NDefines.NMilitary.DEFAULT_WARGOAL_WARSCORE_BONUS = 8
  NDefines.NMilitary.WARGOAL_MAX_BONUS = 40

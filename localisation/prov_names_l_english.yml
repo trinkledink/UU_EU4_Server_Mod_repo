@@ -3801,6 +3801,8 @@ l_english:
  PROV_ADJ5015:0 "Lokoro"
  PROV_ADJ5016:0 "Upper Tshuapa"
  PROV_ADJ5017:0 "Alcazarquivir"
+ PROV_ADJ5021:0 "Ifat"
+ PROV_ADJ5022:0 "Dakkar"
 
  PROV4942:0 "West Imatong"
  PROV4943:0 "Kidepo"
@@ -3884,5 +3886,5 @@ l_english:
  PROV1799:0 "Columbia Plateau"
  PROV5019:0 "Colorado Rockies"
  PROV5020:0 "Coast Mountains"
-PROV5021:0 "Ifat"
-PROV5022:0 "Dakkar"
+ PROV5021:0 "Ifat"
+ PROV5022:0 "Dakkar"
