@@ -1615,7 +1615,8 @@ lower_kasai = { #4
 }
 
 ogaden_area = { #5
-	1207 1208 1210 2778 2779
+	1207 1210 2778 2779
+	#UU 1208 moved
 }
 
 darfur_central_sahara_area = { #5
@@ -1651,8 +1652,13 @@ tigray_area = { #4
 	1227 2766 2767 2771
 }
 
-ifat_area = { #4
-	1211 1212 2773 2793 
+ifat_area = {   #4
+	1212 2773 2793  
+	#1211 moved
+}
+
+harar_area = { #UU
+	5022 1208 1211
 }
 
 somaliland_area = { #5
@@ -1677,6 +1683,7 @@ damot_area = { #3
 
 aussa_area = { #4
 	1215 2764 2765 2768
+	5021	#UU
 }
 
 shewa_area = { #3

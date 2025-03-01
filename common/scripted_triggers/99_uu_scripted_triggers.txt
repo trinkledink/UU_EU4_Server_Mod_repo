@@ -374,7 +374,6 @@ is_valid_for_subject_march_ideas = {
 is_kitara_lake_province = {
     OR = {
         area = imatong_area
-        area = urgoma_area
         area = western_rift_area
         area = uganda_area
         area = buzinza_area

@@ -1210,12 +1210,12 @@ l_english:
  PROV1207:0 "Ogaadeen"  #UU Change for local name
  PROV1208:0 "Degehabur"
  PROV1209:0 "Berbera"
- PROV1210:0 "Dawaro"
- PROV1211:0 "Harer"
+ PROV1210:0 "Bale" #UU Change, as Dawaro was in the wrng spot
+ PROV1211:0 "Harar" #UU Change for local name
  PROV1212:0 "Zeila"
  PROV1213:0 "Shewa"
  PROV1214:0 "Wollo"
- PROV1215:0 "Tajura"
+ PROV1215:0 "Tajuura"  #UU Change for local name
  PROV1216:0 "Tegali"
  PROV1217:0 "Fazughli"
  PROV1218:0 "Sidamo"
@@ -2760,10 +2760,10 @@ l_english:
  PROV2758:0 "Illubabor"
  PROV2759:0 "Gambela"
  PROV2760:0 "Hadiya"
- PROV2761:0 "Arsi"
+ PROV2761:0 "Dawaro"  #UU Change, as Dawaro was in the wrong spot
  PROV2762:0 "Damot"
  PROV2763:0 "Asosa"
- PROV2764:0 "Ausa"
+ PROV2764:0 "Afar" #UU Change for local name
  PROV2765:0 "Assab"
  PROV2766:0 "Mendefera"
  PROV2767:0 "Enderta"
@@ -3884,3 +3884,5 @@ l_english:
  PROV1799:0 "Columbia Plateau"
  PROV5019:0 "Colorado Rockies"
  PROV5020:0 "Coast Mountains"
+PROV5021:0 "Ifat"
+PROV5022:0 "Dakkar"
