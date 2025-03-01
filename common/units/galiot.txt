@@ -1,7 +1,7 @@
 #Galiot
 type = galley
 
-hull_size = 20 #was 16
+hull_size = 20 #UU was 16
 base_cannons = 24
 blockade = 8
 

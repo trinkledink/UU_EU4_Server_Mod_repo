@@ -4,3 +4,9 @@ uu_cb_tim_crush_rebellion = {
 	
 	war_goal = UU_TIM_crush_rebellion
 }
+
+uu_eth_ada_cb = {
+	is_triggered_only = yes
+	
+	war_goal = UU_ETH_ADA_war
+}

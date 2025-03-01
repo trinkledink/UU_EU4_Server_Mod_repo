@@ -311,7 +311,7 @@ age_of_reformation = {
 		obj_christian_convert = {
 			custom_trigger_tooltip = {	#UU
 				tooltip = obj_christian_convert_tooltip
-				has_country_flag = age_change_religion_absolutism
+				has_country_flag = age_change_religion_flag
 			}
 		}
 		
@@ -377,7 +377,7 @@ age_of_reformation = {
 		}
 		
 		obj_unify_culture = {	
-			is_subject = no
+			is_free_or_tributary_trigger = yes	#UU
 			OR = {
 				has_unified_culture_group = yes
 				num_accepted_cultures = 3	#UU

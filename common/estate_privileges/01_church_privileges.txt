@@ -3440,8 +3440,12 @@ estate_church_TIM_yasa_supremacy = {
 		OR = {
 			tag = TIM
 			was_tag = TIM
+			dynasty = "Timurid" #UU for visibility since it is gained when forming TIM
 		}
 		NOT = { has_country_flag = estate_church_TIM_yasa_supremacy_revoked }
+	}
+	can_select = {				#UU for visibility since it is gained when forming TIM
+		tag = TIM
 	}
 	penalties = {
 		tolerance_own = -1

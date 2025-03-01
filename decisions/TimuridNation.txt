@@ -193,7 +193,6 @@ country_decisions = {
 			set_country_flag = formed_tier_four_flag
 			change_tag = TIM
 			custom_tooltip = uutim_no_mug_tt
-			custom_tooltip = uutim_no_mug_tt
 			custom_tooltip = uutim_no_mug_tt_2
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes

@@ -14,14 +14,16 @@
    AV0_ADJ:0 "Anglo-French"
   AV1:0 "Anglo-French Union"
    AV1_ADJ:0 "Anglo-French"
+ ADA_ADJ:0 "Adalite" #Actual adjective for this place
 
  #Trade Nodes
  katsina:0 "Hausaland"
- saxony:0 "Dresden"
  rheinland:0 "Rhineland"
  sevilla:0 "Seville"
  kiev:0 "Kyiv"
  safi:0 "Agadir"
+ saxony:0 "Dresden"
+  trade_company_saxony:0 "Elbe Charter"
  bordeaux:0 "Nantes"
   trade_company_bordeaux:0 "Loire Charter"
    TRADE_COMPANY_BORDEAUX_Root_Culture_GetName:0 "[Root.Culture.GetName] Loire Company"
@@ -38,6 +40,9 @@
   trade_company_pest:0 "Danubian Charter"
    TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danubia Company"
    TRADE_COMPANY_PEST_European_Trade_Company:0 "Danubia Trade Company"
+ the_moluccas:0 "Spice Islands"
+  trade_company_indonesia:0 "Malayan Charter" #this is for malacca node, but indented for organization purposes
+   TRADE_COMPANY_INDONESIA_Indonesia_Trade_Company:0 "Malaya Trade Company" 
 
  #Miscellaneous map
  huang_he_estuary_modifier:0 "Yellow River Estuary"
@@ -50,11 +55,16 @@
  sankore_madrasah:0 "Sankoré Madrasah" #UU Change
  belem_tower:0 "Belém Tower"    #UU Change
  st_basil_cathedral:0 "St. Basil's Cathedral" #UU Change
+ stpeters_cathedral:0 "St. Peter's Basilica"  #UU Change
  grand_canal_1:0 "Grand Canal: Hangzhou"  #UU Change
  grand_canal_2:0 "Grand Canal: Suzhou"    #UU Change
  grand_canal_3:0 "Grand Canal: Zhenjiang" #UU Change
  grand_canal_4:0 "Grand Canal: Yangzhou"  #UU Change
  khami_ruins:0 "Great Zimbabwe"   #UU Change
+ kilwa_city:0 "Kilwa Kisiwani"    #UU Change
+ fire_temple_of_ateshgah:0 "Fire Temple of Baku" #UU Change because this is objectively cooler
+ kiev_pechersk_lavra:0 "Kyiv Pechersk Lavra"  #UU Change
+ 
 
  #Ideas 
  indigenous_ideas:0 "Advancement Ideas"
@@ -79,7 +89,7 @@
  obj_90_absolutism_desc:0 "Absolutism must be at least §Y90§!."
  obj_emperor_of_china:0 "Professional Army"
   obj_emperor_of_china_desc:0 "Have at least §Y80§! Army Professionalism."
- obj_cultures_accepted_desc:0 "Have at least §Y5§! different promoted cultures."
+ obj_cultures_accepted_desc:0 "Have at least §Y5§! promoted cultures."
  obj_emperor_desc:0 "Have a government rank of Empire."
  obj_large_subject_desc:0 "Have a subject with over §Y250§! development."
  obj_disc_army_desc:0 "Have least §Y125%§! discipline in your armies."
@@ -121,6 +131,7 @@
  insult_default12:0 "ima be real wit u i just need the pp bro"
  #Parliament
  MODIFIER_MAX_POSSIBLE_PARLIAMENT_SEATS:0 "Possible Parliament Seats" #Was max possible, but now represents a hard limit
+ JAP_parliament_name:0 "Kokkai" #National Diet
  #mil group
  backing_war_effort:0 "£mil£ Support the War Effort"
  combat_janissary_decadence:0 "£mil£ Combat Janissary Decadence"
@@ -281,13 +292,27 @@
  DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$.\n"   #UU added \n
  MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier" #UU Change
  mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU change
- mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops which fell in battle" #UU Change
+ mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle." #UU Change
  unlock_vozove_hradby_reform_tt:1 "Unlock '§YWagenburg Tactics§!' Tier 5 government reform, giving the following effects:\nMorale Damage Received: §G-10.0%§!\n\nThis reform also includes the following government mechanic:\nWinning battles on §Y[Root.GetAdjectiveCap]§! territory grants §G+0.33§! bonus Army Tradition."
  mechanic_battles_on_own_territory_bonus_tradition_yes:2 "Winning battles on our territory grants §G+0.33§! bonus Army Tradition." #UU Change
  mechanic_army_tradition_on_stackwipe_yes:0 "Overrunning enemy armies now grants §G+0.33§! bonus Army Tradition." #UU Change
+ tupchi_artillery_corps_tt:0 "Grants §G-10.0%§! Artillery Cost if we have an ally or a subject with §YWestern§! or §YEastern§! technology or has its capital in §YEurope§!."  #UU Change
  TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain" #UU Change
+ TIM_will_be_necessary_to_form_persia:0 " " #UU removed
  AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!" #UU Change
+ less_than_15_provinces_on_same_continent:0 "Has less than §Y15§! provinces in States."
+ less_than_25_provinces_on_same_continent:0 "Has less than §Y25§! provinces in States."
+ less_than_35_provinces_on_same_continent:0 "Has less than §Y35§! provinces in States."
+ less_than_50_provinces_on_same_continent:0 "Has less than §Y50§! provinces in States."
+ at_least_15_provinces_on_same_continent:0 "Has at least §Y15§! provinces in States."
+ at_least_25_provinces_on_same_continent:0 "Has at least §Y25§! provinces in States."
+ at_least_35_provinces_on_same_continent:0 "Has at least §Y35§! provinces in States."
+ at_least_50_provinces_on_same_continent:0 "Has at least §Y50§! provinces in States."
+ SLACKEN_BELOW_MIN_AP:0 "You need at least §Y10§! Army Professionalism to slacken recruiting standards!"
+ SLACK_TEXT_NODROP:0 "Lose §Y0§! Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will fire in 12 months, granting us §G2§! years of manpower for §R10§! Army Professionalism.\n\nThis event will recur every 12 months thereafter until invalid."
 
+ #missions 
+ TIM_timurid_empire_title:0 "§MTimurid Empire§!"
  #decisions
  TIM_bring_taxation_under_control_title:0 "@TIM Restore the Treasury"
  TIM_supremacy_of_the_sharia_title:0 "@TIM Supremacy of the Sharia"

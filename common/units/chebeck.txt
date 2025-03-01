@@ -1,7 +1,7 @@
 #Chebeck
 type = galley
 
-hull_size = 25 #was 20
+hull_size = 25 #UU was 20
 base_cannons = 30 
 blockade = 8
 

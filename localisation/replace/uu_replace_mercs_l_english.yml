@@ -131,9 +131,15 @@
  merc_inc_big_ears:0 "¤§JPakoyoq Guard§!"
  merc_mug_elite_gurkhas:0 "¤§JElite Gurkhas§!"        
  #UU
- merc_cav_free_company:0 "¤Free Cav Company"
- merc_ideas_frontline:0 "¤Frontline Company"
- merc_ideas_cannons:0 "¤Backrow Company"
+ merc_ideas_frontline:0 "¤Frontline Company I"
+ merc_ideas_frontline_2:0 "¤Frontline Company II"
+ merc_ideas_cannons:0 "¤Backrow Company I"
+ merc_ideas_cannons_2:0 "¤Backrow Company II"
+ merc_grander_company:0 "¤Grander Company"
+ merc_gank_squad:0 "¤Gank Squad"
+ merc_dependent_army:0 "¤Dependent Army"
+ merc_lethal_company:0 "¤Lethal Company"
+
  ctg_french_musketeers:0 "¤French Musketeers Company"
  ctg_spanish_artillery:0 "¤Spanish Artillery Company"
  ctg_italian_legion:0 "¤Italian Legion Company"

@@ -910,21 +910,6 @@ FKN_Missions_2 = {
 				root = { religion = anglican }
 				root = { religion = hussite }
 			}
-			OR = {
-				custom_trigger_tooltip = {
-						tooltip = obj_religious_league_war_on_winning_side_tooltip
-						has_country_flag = religious_league_war_on_winning_side
-					}
-				# hre_religion_treaty = yes
-				# hre_religion_locked = yes
-				calc_true_if = {
-					all_ally = {
-						religion = ROOT
-					}
-					amount = 4
-				}
-				NOT = { hre_size = 1 }
-			}	
 			calc_true_if = {
 				desc = fkn_defend_the_protestant_league_ct
 				amount = 50

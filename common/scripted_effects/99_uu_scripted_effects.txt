@@ -136,6 +136,10 @@ uu_special_color_effect = { #Applies specific colours to nations depending on go
 	every_subject_country = {
 		limit = {
 			NOT = { has_country_flag = uu_overlord_colour }
+			OR = {
+				is_march = yes
+				is_vassal = yes
+			}
 		}
 		restore_country_color = yes
 	}
@@ -192,7 +196,6 @@ uu_grant_daimyo_to_clan_effect = {
 			remove_core = $clan$
 		}
 		random_owned_province = {
-			set_province_flag = z_jap_clan_separatist_flag
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 2
@@ -202,7 +205,6 @@ uu_grant_daimyo_to_clan_effect = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					NOT = { has_province_flag = z_jap_clan_separatist_flag }
 					has_port = yes
 				}
 				$clan$ = {
@@ -238,5 +240,97 @@ uu_grant_daimyo_to_clan_effect = {
 	add_country_modifier = {
 		name = uu_jap_replaced_daimyo_mod
 		duration = 3650
+	}
+}
+
+uutim_remove_all_content_effect = {
+	custom_tooltip = uutim_remove_all_content_tt
+	hidden_effect = {
+		if = { limit = { has_country_modifier = TIM_rising_tensions } remove_country_modifier = TIM_rising_tensions }
+		if = { limit = { has_country_modifier = TIM_resolved_the_mushasha_milleniarism } remove_country_modifier = TIM_resolved_the_mushasha_milleniarism }
+		if = { limit = { has_country_modifier = TIM_western_markets } remove_country_modifier = TIM_western_markets }
+		if = { limit = { has_country_modifier = TIM_great_power_mam } remove_country_modifier = TIM_great_power_mam }
+		if = { limit = { has_country_modifier = TIM_a_pious_ruler } remove_country_modifier = TIM_a_pious_ruler }
+		if = { limit = { has_country_modifier = TIM_approval_of_governors } remove_country_modifier = TIM_approval_of_governors }
+		if = { limit = { has_country_modifier = TIM_centralization_reforms } remove_country_modifier = TIM_centralization_reforms }
+		if = { limit = { has_country_modifier = TIM_army_reorganization } remove_country_modifier = TIM_army_reorganization }
+		if = { limit = { has_country_modifier = TIM_fresh_recruits } remove_country_modifier = TIM_fresh_recruits }
+		if = { limit = { has_country_modifier = TIM_gunpowder_empire } remove_country_modifier = TIM_gunpowder_empire }
+		if = { limit = { has_country_modifier = TIM_fresh_blood_modifier } remove_country_modifier = TIM_fresh_blood_modifier }
+		if = { limit = { has_country_modifier = TIM_an_example_to_the_rebels } remove_country_modifier = TIM_an_example_to_the_rebels }
+		if = { limit = { has_country_modifier = TIM_great_power_tur } remove_country_modifier = TIM_great_power_tur }
+		if = { limit = { has_country_modifier = TIM_great_power } remove_country_modifier = TIM_great_power }
+		if = { limit = { has_country_modifier = TIM_recovery_of_treasury_funds } remove_country_modifier = TIM_recovery_of_treasury_funds }
+		if = { limit = { has_country_modifier = TIM_horsemen_of_apocalypse_modifier } remove_country_modifier = TIM_horsemen_of_apocalypse_modifier }
+		if = { limit = { has_country_modifier = TIM_timurid_empire_modifier } remove_country_modifier = TIM_timurid_empire_modifier }
+		if = { limit = { has_country_modifier = TIM_caucasia_modifier } remove_country_modifier = TIM_caucasia_modifier }
+		if = { limit = { has_country_modifier = TIM_start_of_a_renaissance } remove_country_modifier = TIM_start_of_a_renaissance }
+		if = { limit = { has_country_modifier = TIM_loot_and_plunder } remove_country_modifier = TIM_loot_and_plunder }
+		if = { limit = { has_country_modifier = TIM_dev_cost_until_persia_formation } remove_country_modifier = TIM_dev_cost_until_persia_formation }
+		if = { limit = { has_country_modifier = TIM_great_architects } remove_country_modifier = TIM_great_architects }
+		if = { limit = { has_country_modifier = TIM_advancing_the_barriers } remove_country_modifier = TIM_advancing_the_barriers }
+		if = { limit = { has_country_modifier = TIM_repulsing_nomadic_advancement } remove_country_modifier = TIM_repulsing_nomadic_advancement }
+		if = { limit = { has_country_modifier = TIM_legendary_conqueror_modifier } remove_country_modifier = TIM_legendary_conqueror_modifier }
+		if = { limit = { has_country_modifier = TIM_golden_horde } remove_country_modifier = TIM_golden_horde }
+		if = { limit = { has_country_modifier = TIM_ijazah } remove_country_modifier = TIM_ijazah }
+		if = { limit = { has_country_modifier = TIM_patronage_of_arts_modifier } remove_country_modifier = TIM_patronage_of_arts_modifier }
+		if = { limit = { has_country_modifier = TIM_indian_relations } remove_country_modifier = TIM_indian_relations }
+		if = { limit = { has_country_modifier = TIM_internal_benefits } remove_country_modifier = TIM_internal_benefits }
+		if = { limit = { has_country_modifier = TIM_external_benefits } remove_country_modifier = TIM_external_benefits }
+		if = { limit = { has_country_modifier = TIM_destruction_of_india } remove_country_modifier = TIM_destruction_of_india }
+		if = { limit = { has_country_modifier = TIM_india_conquest } remove_country_modifier = TIM_india_conquest }
+		if = { limit = { has_country_modifier = TIM_conquest_of_china } remove_country_modifier = TIM_conquest_of_china }
+		if = { limit = { has_country_modifier = TIM_sufi_orders } remove_country_modifier = TIM_sufi_orders }
+		if = { limit = { has_country_modifier = TIM_persian_economic_hegemon } remove_country_modifier = TIM_persian_economic_hegemon }
+		#province modifiers can stay. 
+		if = { limit = { has_country_flag = TIM_soyurghals_flag } clr_country_flag = TIM_soyurghals_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_iqta_tax_flag } clr_country_flag = TIM_upgrade_iqta_tax_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_iqta_manpower_flag } clr_country_flag = TIM_upgrade_iqta_manpower_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_iqta_ld_flag } clr_country_flag = TIM_upgrade_iqta_ld_flag }
+		if = { limit = { has_country_flag = TIM_unlock_appease_the_elites_privilege_flag } clr_country_flag = TIM_unlock_appease_the_elites_privilege_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag } clr_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
+		if = { limit = { has_country_flag = TIM_legendary_architect_flag } clr_country_flag = TIM_legendary_architect_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_expand_the_fortifications_flag } clr_country_flag = TIM_upgrade_expand_the_fortifications_flag }
+		if = { limit = { has_country_flag = TIM_nobility_loyalty_with_forts_flag } clr_country_flag = TIM_nobility_loyalty_with_forts_flag }
+		if = { limit = { has_country_flag = TIM_legendary_conqueror_flag } clr_country_flag = TIM_legendary_conqueror_flag }
+		if = { limit = { has_country_flag = TIM_unlock_privilege_for_innovativeness_gain_flag } clr_country_flag = TIM_unlock_privilege_for_innovativeness_gain_flag }
+		if = { limit = { has_country_flag = TIM_patron_of_art_personality_unlock_flag } clr_country_flag = TIM_patron_of_art_personality_unlock_flag }
+		if = { limit = { has_country_flag = TIM_upgrade_patronage_of_arts_privilege_flag } clr_country_flag = TIM_upgrade_patronage_of_arts_privilege_flag }
+		if = { limit = { has_country_flag = TIM_unlock_privilege_about_chagatai_flag } clr_country_flag = TIM_unlock_privilege_about_chagatai_flag }
+		if = { limit = { has_country_flag = TIM_holy_orders } clr_country_flag = TIM_holy_orders }
+		if = { limit = { has_country_flag = TIM_gulf_toll_privilege_flag } clr_country_flag = TIM_gulf_toll_privilege_flag }
+		if = { limit = { has_country_flag = TIM_gulf_toll_upgrade_flag } clr_country_flag = TIM_gulf_toll_upgrade_flag }
+		if = { 
+			limit = { 
+				504 = {
+					has_trade_modifier = {
+						who = ROOT 
+						key = TIM_eastern_frontier_protection
+					}
+				}
+			}
+			504 = {
+				remove_trade_modifier = {
+					who = ROOT
+					key = TIM_eastern_frontier_protection
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				524 = {
+					has_trade_modifier = {
+						who = ROOT 
+						key = TIM_eastern_frontier_protection
+					}
+				}
+			}
+			524 = {
+				remove_trade_modifier = {
+					who = ROOT
+					key = TIM_eastern_frontier_protection
+				}
+			}
+		}
 	}
 }

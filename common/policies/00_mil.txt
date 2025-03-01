@@ -1257,7 +1257,7 @@ Explo-GStaff = {
 		full_idea_group = general_staff_ideas
 	}
 	
-	land_forcelimit_modifier = 0.1
+	infantry_power = 0.1
 	land_maintenance_modifier = -0.1
 
 	

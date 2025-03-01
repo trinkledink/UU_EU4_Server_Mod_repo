@@ -1,7 +1,7 @@
 #Archipelago Frigate
 type = galley
 
-hull_size = 30 #was 24
+hull_size = 30 #UU was 24
 base_cannons = 36
 blockade = 8
 

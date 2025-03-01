@@ -16,9 +16,8 @@
   uu_mexico_nahuatl_reform_desc:0 "By incorporating into our government the traditions of those who were here before us, we will create a system much better adapted to our new homeland."
  uu_peru_inti_reform:0 "Integrate Quechua Traditions"
   uu_peru_inti_reform_desc:0 "By incorporating into our government the traditions of those who were here before us, we will create a system much better adapted to our new homeland."
- #Government Names
+  #Government Names
  UU_MAI:0 "Mai" #King of Kanem Bornu
  UU_CALIPHATE:0 "Caliphate" #For Sokoto
  UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies
- 
- 
+ UU_KONGSI_FEDERATION:0 "Kongsi Federation" #Lanfang

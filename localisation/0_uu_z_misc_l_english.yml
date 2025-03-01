@@ -13,7 +13,7 @@
   estate_vaisyas_pluto_weapons:0 "§MPlutocratic Military-Industrial Complex§!"
   estate_burghers_pluto_weapons_desc:0 "War is an unsavoury business, but business it remains nonetheless. There is profit to be gained from selling weapons to our warring rivals, and we can equip our armies and improve our economy simultaneously."
   estate_vaisyas_pluto_weapons_desc:0 "War is an unsavoury business, but business it remains nonetheless. There is profit to be gained from selling weapons to our warring rivals, and we can equip our armies and improve our economy simultaneously."
-  uu_better_weapons_manus_priv_tt:0 "All provinces with §YWeapons Manufactories§! or §YNaval Equipment Manufactories§ will gain §G+0.33§! Local Goods Produced and §G+5§! Local Trade Power when the country or any neighbour is §Rat war§!."
+  uu_better_weapons_manus_priv_tt:0 "All provinces with §YWeapons Manufactories§! or §YNaval Equipment Manufactories§ will gain §G+0.25§! Local Goods Produced and §G+5§! Local Trade Power when the country or any neighbour is §Rat war§!."
   uu_better_weapons_manus_priv_revoke_tt:0 "The modifier '§MPlutocratic Military-Industrial Complex§!' is removed from all provinces."
   uu_better_weapons_manus_priv_mod:0 "§MPlutocratic Military-Industrial Complex§!"
  uu_estate_nomadic_tribes_mana_privilege:0 "Tribal Intellectualism"
@@ -33,7 +33,7 @@
  ab_timur_legacy:0 "Timur's Legacy"
  ab_italian_renaissance_architecture:0 "Italian Renaissance Architecture"
  ab_necro_sokoto:0 "Sokoto Call of the Faithful"
-  ab_necro_sokoto_tt:0 "Winning battles gives us §G20%§! manpower of the enemy troops which fell in battle"
+  ab_necro_sokoto_tt:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle."
  ab_dutch_anti_corruption:0 "Dutch Stock Exchange"
  #Colonial Names
  COLONIAL_CANADA_NouvelleEcosse:0 "Nouvelle-Écosse"
@@ -77,35 +77,29 @@
   TRADE_COMPANY_NAPLES:0 "South Italian Charter"
   TRADE_COMPANY_NAPLES_Root_Culture_GetName:0 "[Root.Culture.GetName] South Italy Company"
   TRADE_COMPANY_CAMEROON_Europe_Trade_Company:0 "South Italy Trade Company"
- #Custom names
- UUFOUTATORO:0 "Fouta Tooro"
-  UUFOUTATORO_ADJ:0 "Fouta Tooro"
- UUKANATA:0 "Kanata"
-  UUKANATA_ADJ:0 "Kanatan"
- UUMGS:0 "Malagasikara"
-  UUMGS_ADJ:0 "Malagasikaran"
- UUPUN:0 "Sikh Empire"
-  UUPUN_ADJ:0 "Sikh Empire"
- UUEOC_GMNG:0 "Great Ming"
-  UUEOC_GMNG_ADJ:0 "Great Ming"
- UUEOC_GQNG:0 "Great Qing"
-  UUEOC_GQNG_ADJ:0 "Great Qing"
- UUEOC_GYUA:0 "Great Yuan"
-  UUEOC_GYUA_ADJ:0 "Great Yuan"
- UUEOC_GCSH:0 "Great Shun"
-  UUEOC_GCSH_ADJ:0 "Great Shun"
+  
  #Cultures
  czech_newer:0 "Elbian" #Germanic group clone of Czech
  #zhuang:0 "Cuengh" #Duplicated here. Indigenous name 
  #zhuang_new:0 "Zhuang" #Duplicated here. Sinicized name
  turkic:0 "Oghuz" #New Turkic culture group
 
+ #State Edicts
+ uu_taxmeta_edict_1:0 "Taxation Effort"
+ uu_taxmeta_edict_2:0 "Taxation Effort"
+ uu_taxmeta_edict_3:0 "Taxation Effort"
+ uu_taxmeta_edict_4:0 "Taxation Effort"
+ mechanic_uu_unlock_special_state_edicts_yes:0 "Has access to Age-unique §YState Edicts§!\n§YAge of Discovery§!: §G+30.0%§! Local Tax Modifier\n§YAge of Reformation§!: §G+50.0%§! Local Tax Modifier\n§YAge of Absolutism§!: §G+100.0%§! Local Tax Modifier\n§YAge of Revolutions§!: §G+150.0%§! Local Tax Modifier"
+ 
+
  #Other tooltips
  uu_heir_cult_cannot_be_same_as_main_tt:0 "§YNote: Heir cult cannot be the same as the main cult.§!"
  uu_max_parliament_seats:0 "You have already assigned the maximum possible parliament seats. The default is 20."
- uutim_subjects_splendor_tt:0 "If it is the §YAge of Discovery§! and we have at least §Y3 Subjects§!, we will additionally gain §G800§! Splendor."
- uutim_no_mug_tt:0 "§RWe will not be able to form Mughals or Persia!§!"
- uutim_no_mug_tt_2:0 "§RWe will not be able to form Mughals or Persia!§! §Y(this is here 3 times to ensure it is read)§!"
+ uutim_subjects_splendor_tt:0 "If it is the §YAge of Discovery§! and we have at least §Y3 Subjects§!, we will additionally gain §G400§! Splendor."
+ uutim_unlock_missions_tt:0 "§JAllow completion of all formerly branching missions.\n§!"
+ uutim_no_mug_tt:0 "§RForming another nation as Timurids will cause us to LOSE ALL REWARDS from Timurid missions (modifiers, mechanics, privileges, etc)!!§!"
+ uutim_no_mug_tt_2:0 "§OWe will not be able to form Persia!§!"
+ uutim_remove_all_content_tt:0 "§RWe will LOSE ALL REWARDS from Timurid missions (modifiers, mechanics, privileges, etc)!!§!"
  uutim_estate_priv_tt_1:0 "The estate privilege §YSoyurghal Grants§! will be granted to the §YNobility§!."
  uutim_estate_priv_tt_2:0 "The estate privilege §YSupremacy of the Yasa§! will be granted to the §YClergy§!."
  uu_cossack_raid_tt_1:0 "A random owned province gains §G1§! of each development."

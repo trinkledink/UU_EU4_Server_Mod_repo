@@ -11,7 +11,7 @@ defensive_fire = 0
 offensive_shock = 1
 defensive_shock = 0
 
-trigger = { #for KBO missions
+trigger = { #for UU KBO missions
 	OR = {
 		technology_group = muslim 
 		has_country_flag = uukbo_can_use_muslim_inf

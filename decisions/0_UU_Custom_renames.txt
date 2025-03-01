@@ -145,6 +145,7 @@ country_decisions = {
 				tag = YUA   
 			}
 			is_emperor_of_china = yes
+			NOT = { has_country_flag = uueoc_rename_decision_flag }
 		}
 		allow = {
 			is_at_war = no
@@ -173,6 +174,7 @@ country_decisions = {
 		potential = { 
 			tag = CSH
 			is_emperor_of_china = yes
+			NOT = { has_country_flag = uucsh_rename_decision_flag }
 		}
 		allow = {
 			is_at_war = no

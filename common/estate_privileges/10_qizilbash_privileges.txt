@@ -353,9 +353,10 @@ estate_qizilbash_horse_responsibilities = {
 	influence = 0.05
 	loyalty = 0.1
 	is_valid = {
-		has_estate_privilege = estate_qizilbash_expand_the_qizilbash_regiments
+		#has_estate_privilege = estate_qizilbash_expand_the_qizilbash_regiments	#UU
 	}
 	can_select = {
+		has_estate_privilege = estate_qizilbash_expand_the_qizilbash_regiments	#UU
 	}
 	on_granted = {
 		#if = {		#UU deleted war steed
@@ -566,23 +567,23 @@ estate_qizilbash_regimental_discipline = {
 	can_select = {
 	}
 	on_granted = {
-		add_country_modifier = {
-			name = estate_qizilbash_regimental_discipline_qizilbash
-			duration = -1
-			#hidden = yes
-		}
-		#scaling_with_influence_privilege_tooltip = {
-		#	estate_privilege = estate_qizilbash_regimental_discipline
+		#add_country_modifier = {
+		#	name = estate_qizilbash_regimental_discipline_qizilbash
+		#	duration = -1
+		#	hidden = yes
 		#}
+		scaling_with_influence_privilege_tooltip = {
+			estate_privilege = estate_qizilbash_regimental_discipline
+		}
 	}
 	on_revoked = {
-		remove_country_modifier = estate_qizilbash_regimental_discipline_qizilbash
-		#scaling_with_influence_privilege_tooltip = {
-		#	estate_privilege = estate_qizilbash_regimental_discipline
-		#}
+		#remove_country_modifier = estate_qizilbash_regimental_discipline_qizilbash
+		scaling_with_influence_privilege_tooltip = {
+			estate_privilege = estate_qizilbash_regimental_discipline
+		}
 	}
 	on_invalid = {
-		remove_country_modifier = estate_qizilbash_regimental_discipline_qizilbash
+		#remove_country_modifier = estate_qizilbash_regimental_discipline_qizilbash
 	}
 	benefits = {
 	}

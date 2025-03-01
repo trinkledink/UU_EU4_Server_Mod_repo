@@ -510,6 +510,7 @@ horn_of_africa_region = {
 		new_sudan_area #uu
 		kurdufan_area #uu moved to here
 		new_darfur_area #uu
+		harar_area #uu
 	}
 }
 

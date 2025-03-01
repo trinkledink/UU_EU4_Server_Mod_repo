@@ -827,7 +827,7 @@ l_english:
  red_sea_coast_area:0 "Red Sea Coast"
  red_sea_coast_area_name:0 "Medri Bahri"
  red_sea_coast_area_adj:0 "Medri Bahrian"
- aussa_area:0 "Aussa"
+ aussa_area:0 "Afar"  #UU Change
  aussa_area_name:0 "Aussa"
  aussa_area_adj:0 "Aussan"
  tigray_area:0 "Tigray"
@@ -840,7 +840,7 @@ l_english:
  shewa_area_name:0 "Shewa"
  shewa_area_adj:0 "Shewan"
  bete_amhara_area:1 "Bete Amhara"
- ifat_area:0 "Ifat"
+ ifat_area:0 "Adal" #UU Change
  ifat_area_name:0 "Ifat"
  ifat_area_adj:0 "Ifati"
  somaliland_area:0 "Somaliland"
@@ -2861,4 +2861,5 @@ l_english:
  guangzhou_area:0 "Pearl Delta"
  central_congo_area:0 "Central Congo Basin"
  tshuapa_area:0 "Tshuapa"
+ harar_area:0 "Harar Plateau"
 

@@ -13,6 +13,6 @@ opinion_timurid_rival_claimant = {
 	yearly_decay = 1
 }
 
-uu_sent_attache_opinion_mod = {
+uu_sent_attache_opinion_mod = {	#cursed
 	opinion = 15
 }

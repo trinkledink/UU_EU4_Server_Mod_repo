@@ -4678,9 +4678,13 @@ estate_nobles_TIM_soyurghal_grants = {
 		OR = {
 			tag = TIM
 			was_tag = TIM
+			dynasty = "Timurid" #UU for visibility since it is gained when forming TIM
 		}
 		NOT = { has_country_flag = estate_nobles_TIM_soyurghal_grants_revoked }
 	}
+	can_select = {				#UU for visibility since it is gained when forming TIM
+		tag = TIM
+	}	
 	penalties = {
 		global_tax_modifier = -0.1
 		reform_progress_growth = -0.1

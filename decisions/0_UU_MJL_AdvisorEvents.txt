@@ -6,6 +6,11 @@ country_decisions = {
 			always = yes
 		}
 		allow = {
+			has_country_flag = radical_mercantilist_reforms
+			has_country_flag = military_reform
+			has_country_flag = uu_bank
+			has_country_flag = commandant
+			has_country_flag = grand_captain
 			has_country_flag = philosopher
 			has_country_flag = natural_scientist
 			has_country_flag = army_reformer
@@ -22,7 +27,6 @@ country_decisions = {
 			has_country_flag = navigator
 			has_country_flag = grand_captain
 			has_country_flag = army_organiser
-			has_country_flag = commandant
 			has_country_flag = quartermaster
 			has_country_flag = recruitmaster
 			has_country_flag = fortification_expert
@@ -31,9 +35,6 @@ country_decisions = {
 			has_country_flag = propagandist_flag
 			has_country_flag = national_hero_flag
 			has_country_flag = strategist_flag
-			has_country_flag = radical_mercantilist_reforms
-			has_country_flag = military_reform
-			has_country_flag = uu_bank
 		}
 		effect = {
 		

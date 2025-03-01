@@ -39,3 +39,43 @@ UU_TIM_crush_rebellion = {
 	
 	war_name = UU_TIM_CRUSH_REBELLION_WARNAME
 }
+
+UU_ETH_ADA_war = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.7
+
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.7
+
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		prov_desc = ALL_CGROUP_PROVS	
+	}
+	
+	war_name = UU_ETH_ADA_WARNAME
+}

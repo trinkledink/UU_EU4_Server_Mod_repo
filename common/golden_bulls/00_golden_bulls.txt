@@ -1,4 +1,4 @@
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.5
 illius_qui_se_pro_divini = {
     mechanics = {
         crusades_after_age_limit

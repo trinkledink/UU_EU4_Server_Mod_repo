@@ -2308,8 +2308,11 @@ al_andalusia_government = {
 			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
 		}
 	}
-	custom_attributes = {	#uu added
-		enables_estate_janissaries = yes
+	conditional = {	#UU
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+		}
+		has_janissaries = yes
 	}
 	government_abilities = {	#uu added
 		iqta_mechanic
@@ -5429,7 +5432,7 @@ centralize_reform = {
 				tooltip = less_than_15_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 15
 					}
 				}
@@ -5441,7 +5444,7 @@ centralize_reform = {
 				tooltip = less_than_25_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 25
 					}
 				}
@@ -5453,7 +5456,7 @@ centralize_reform = {
 				tooltip = less_than_35_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 35
 					}
 				}
@@ -5465,7 +5468,7 @@ centralize_reform = {
 				tooltip = less_than_50_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 50
 					}
 				}
@@ -5479,7 +5482,7 @@ centralize_reform = {
 				tooltip = less_than_15_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 15
 					}
 				}
@@ -5491,7 +5494,7 @@ centralize_reform = {
 				tooltip = less_than_25_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 25
 					}
 				}
@@ -5503,7 +5506,7 @@ centralize_reform = {
 				tooltip = less_than_35_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 35
 					}
 				}
@@ -5515,7 +5518,7 @@ centralize_reform = {
 				tooltip = less_than_50_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
+						is_state = yes	#UU
 						value = 50
 					}
 				}
@@ -5552,7 +5555,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 15
 				}
 			}
@@ -5562,7 +5565,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 25
 				}
 			}
@@ -5572,7 +5575,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 35
 				}
 			}
@@ -5582,7 +5585,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 50
 				}
 			}
@@ -5594,7 +5597,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 15
 				}
 			}
@@ -5604,7 +5607,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 25
 				}
 			}
@@ -5614,7 +5617,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 35
 				}
 			}
@@ -5624,7 +5627,7 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
+					is_state = yes	#UU
 					value = 50
 				}
 			}
@@ -5718,7 +5721,7 @@ regional_council_reform = {
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		custom_attributes = {
-			unlock_special_state_edicts = yes
+			uu_unlock_special_state_edicts = yes	#UU change
 		}
 	}
 }

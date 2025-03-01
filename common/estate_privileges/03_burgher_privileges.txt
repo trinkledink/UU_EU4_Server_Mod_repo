@@ -4228,7 +4228,7 @@ estate_burghers_voc_privilege = {
 		trigger = { has_country_flag = ned_voc_trade_buffs_flag }
 		modifier = { 
 			trade_efficiency = 0.05 
-			allowed_voc_indiamen_fraction = 0.1
+			#allowed_voc_indiamen_fraction = 0.1	#UU this is meaningless in the mod
 		}
 	}
 	conditional_modifier = {

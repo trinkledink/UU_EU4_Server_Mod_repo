@@ -5721,11 +5721,11 @@ on_loan_repaid = {
 	on_loan_repaid_estate_privileges_effect = yes
 	if = {
 		limit = { 
-			THIS = {
+			FROM = {	#UU since 'THIS' doesn't work
 				economic_ideas = 2	#UU 
 			}
 		}
-		THIS = { add_inflation = -0.05 }
+		FROM = { add_inflation = -0.05 }
 	}
 }
 
@@ -6407,13 +6407,21 @@ on_concentrate_development = {
 }
 
 on_slacken_start = {
-	add_country_modifier = {
-		name = slackening_modifier
-		duration = -1
+	hidden_effect = {	#UU
+		add_country_modifier = {
+			name = slackening_modifier	#blank modifier
+			duration = -1
+		}
+		add_country_modifier = {
+			name = uu_slackening_cd
+			duration = 330
+			hidden = yes
+		}
 	}
 }
 on_slacken_stop = {
 	remove_country_modifier = slackening_modifier
+	remove_country_modifier = uu_slackening_cd	#UU
 }
 
 on_colony_finished = { #ROOT - Province

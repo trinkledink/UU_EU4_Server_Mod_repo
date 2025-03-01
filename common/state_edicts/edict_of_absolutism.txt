@@ -8,7 +8,7 @@ edict_of_absolutism = {
 	
 	allow = {
 		custom_trigger_tooltip = {
-			tooltip =edict_of_absolutism_tooltip
+			tooltip = edict_of_absolutism_tooltip
 			has_country_flag = edict_of_absolutism
 		}
 	}

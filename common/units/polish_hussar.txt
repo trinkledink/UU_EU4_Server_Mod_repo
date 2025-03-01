@@ -1,13 +1,13 @@
-# Polish Hussar Moved from t14 to t18 and buffed by 2 pips
+# UU Polish Hussar Moved from t14 to t18 and buffed by 2 pips
 
 type = cavalry
 unit_type = eastern
 
 maneuver = 2
-offensive_morale = 3 #was 2
+offensive_morale = 3 #UU was 2
 defensive_morale = 2
 offensive_fire = 1
 defensive_fire = 1
-offensive_shock = 4 #was 3
+offensive_shock = 4 #UU was 3
 defensive_shock = 3
 

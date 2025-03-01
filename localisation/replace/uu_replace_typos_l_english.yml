@@ -12,3 +12,8 @@
  west_africa_sincretic_rituals_title:0 "Syncretic Rituals"
  west_africa_sankore_university_sunni_title:0 "Sankoré University"
  west_africa_sankore_university_sunni_desc:0 "Sankoré Madrasah in Timbuktu has been the most important center of knowledge south of the Sahara for decades. Now it's time to take that city, and use the manuscripts kept there for our benefit."
+ al_andalusia_government:0 "Andalusian Sultanate"
+ ada_preperation_for_war:0 "Adalite War Preparations"
+ desc_ada_preperation_for_war:0 "War is all present in Adalite society. We are all waiting and preparing for the day where we shall strike at the Ethiopians...\n\nWe gain the modifier '§YAdalan-Ethiopian War§!' as long we are at war with §Y[ETH.GetName]§!, which development is equal or higher than our own, giving the following effects:\nMorale of Armies: §G+5.0%§!\nManpower Recovery Speed: §G+10.0%§!\nMonthly Piety: §Y+0.1§!\n"
+ ada_war_against_ethiopia:0 "Adalite-Ethiopian War"
+ desc_ada_war_against_ethiopia:0 "Yet again our people are fighting our arch rival Ethiopia for dominance in the Horn of Africa! Our troops will decimate the Christians and extinguish the threat they were posing to us for so many decades."

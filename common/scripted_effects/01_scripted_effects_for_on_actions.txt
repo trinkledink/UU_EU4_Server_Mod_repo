@@ -4164,6 +4164,18 @@ on_change_tag_effect = {
 		#Clear all flags which add the preview buttons if you do not have any mission enabling them
 		update_mission_previews = yes
 	}
+	if = {		#UU
+		limit = {
+			is_or_was_tag = { tag = TIM }
+		}
+		uutim_remove_all_content_effect = yes
+		hidden_effect = {		#cleanup
+			country_event = {
+				id = UU_balance_events.14
+				days = 240
+			}
+		}
+	}
 }
 
 on_force_conversion_effect = {
@@ -4274,7 +4286,7 @@ on_general_recruited_effect = {
 		limit = { has_country_modifier = pol_trigger_for_army_professionalism_modifier } 
 		add_army_professionalism = 0.0125 
 	}
-	else = { add_army_professionalism = 0.01 }
+	else = { add_army_professionalism = 0.02 }	#UU
 	if = {
 		limit = { has_government_attribute = recruiting_generals_increases_nobles_loyalty }
 		if = {

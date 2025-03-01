@@ -69,6 +69,7 @@ country_event = {
 	trigger = {
 		is_year = 1550
 		tag = COL
+		always = no 	#I think someone forgot about this
 	}
 	mean_time_to_happen = {
 		months = 150
@@ -95,7 +96,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = {	#MJL change Muslim school 
 	id = UU_balance_events.3
 	title = muslim_school_events.20.t
 	desc = "mjl_events.EVTDESC5"
@@ -495,10 +496,7 @@ country_event = {	#UU papal Dogma
 	
 	option = {
 		name = flavor_sca.2.a
-
-	}
-	
-	
+	}	
 }
 country_event = {	#UU papal Dogma
 	id = UU_balance_events.10
@@ -631,7 +629,6 @@ country_event = { 	#Renames
 		clr_country_flag = uupun_temp_flag
 	}
 }
-
 country_event = {	#Pluto arms industry
 	id = UU_balance_events.12
 	title = none
@@ -653,7 +650,10 @@ country_event = {	#Pluto arms industry
 			any_neighbor_country = { is_at_war = yes }
 		}
 		any_owned_province = {
-			has_building = weapons
+			OR = { 
+				has_building = weapons
+				has_building = wharf
+			}
 			NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
 		}
 	}
@@ -661,7 +661,10 @@ country_event = {	#Pluto arms industry
 	immediate = {
 		every_owned_province = {
 			limit = { 
-				has_building = weapons
+				OR = { 
+					has_building = weapons
+					has_building = wharf	
+				}
 				NOT = { has_province_modifier = uu_better_weapons_manus_priv_mod }
 			}
 			add_province_modifier = {
@@ -674,7 +677,6 @@ country_event = {	#Pluto arms industry
 		name = UU_balance_events.11.zzz
 	}
 }
-
 country_event = {	#Pluto arms industry remove
 	id = UU_balance_events.13
 	title = none
@@ -707,7 +709,6 @@ country_event = {	#Pluto arms industry remove
 	immediate = {
 		every_owned_province = {
 			limit = { 
-				has_building = weapons
 				has_province_modifier = uu_better_weapons_manus_priv_mod
 			}
 			remove_province_modifier = uu_better_weapons_manus_priv_mod
@@ -715,5 +716,96 @@ country_event = {	#Pluto arms industry remove
 	}
 	option = {
 		name = UU_balance_events.11.zzz
+	}
+}
+country_event = {	#TIM cleanup event
+	id = UU_balance_events.14
+	title = none
+	desc = none
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		uutim_remove_all_content_effect = yes
+	}
+	option = {
+		name = UU_balance_events.11.zzz
+	}
+}
+
+country_event = {	#slacken recruitment - hidden
+	id = UU_balance_events.15
+	title = none
+	desc = none
+	picture = LAND_MILITARY_eventPicture
+	
+	hidden = yes 
+
+	trigger = {
+		has_country_modifier = slackening_modifier
+		NOT = { has_country_modifier = uu_slackening_cd }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_years_of_owned_provinces_manpower = {
+				years = 2
+			}
+			add_army_professionalism = -0.1
+			add_country_modifier = {
+				name = uu_slackening_cd
+				duration = 330
+				hidden = yes
+			}
+			country_event = {
+				id = UU_balance_events.16
+			}
+		}
+	}
+	option = {
+		name = none
+	}
+}
+
+country_event = {	#slacken recruitment - visible
+	id = UU_balance_events.16
+	title = UU_balance_events.16.t
+	desc = UU_balance_events.16.desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes 
+
+	trigger = {
+		ai = no
+		NOT = { has_country_flag = uu_slacken_hide_alert_flag }
+	}
+	option = {
+		name = UU_balance_events.16.a
+		tooltip = {
+			add_years_of_owned_provinces_manpower = {
+				years = 2
+			}
+			add_army_professionalism = -0.1
+		}
+		custom_tooltip = " "
+		custom_tooltip = uu_slacken_tt_1
+	}
+	option = {
+		name = UU_balance_events.16.b
+		set_country_flag = uu_slacken_hide_alert_flag
+		tooltip = {
+			add_years_of_owned_provinces_manpower = {
+				years = 2
+			}
+			add_army_professionalism = -0.1
+		}
+		custom_tooltip = " "
+		custom_tooltip = uu_slacken_tt_2
 	}
 }

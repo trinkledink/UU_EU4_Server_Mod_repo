@@ -110,12 +110,18 @@ country_event = {
 	title = UU_ave_mission_events.3.t
 	desc = UU_ave_mission_events.3.d
 	picture = SIEGE_eventPicture
-	mean_time_to_happen = {months = 1}
+	
+	is_triggered_only = yes 
 	fire_only_once = yes
+
+	trigger ={
+		tag = ENG 
+		NOT = { has_country_flag = merc_eng_event_flag }
+	}
 	
-	
-	trigger = {tag = ENG}
-	
+	immediate = {
+		set_country_flag = merc_eng_event_flag
+	}
 	option = {
 		name = UU_ave_mission_events.3.a
 		if = {
@@ -131,7 +137,7 @@ country_event = {
 			factor = 1
 		}
     }	
-     option = {
+    option = {
 		name = UU_ave_mission_events.3.b
 		set_country_flag = eng_took_ave_branch
 		swap_non_generic_missions = yes

@@ -3,7 +3,7 @@
 # If adding new technology, make sure they are AFTER THE LAST TECHNOLOGY
 
 # Groups must be defined BEFORE tables.
-#UU UPDATED 1.36.1
+#UU UPDATED 1.37.5
 #Nation Designer Cost is set to match triggers for starting institutions.
 
 groups = {
@@ -111,7 +111,7 @@ groups = {
 		}
 	}
 	central_african = {
-		start_level = 3
+		start_level = 3	#UU
 		start_cost_modifier = 0.65
 		nation_designer_unit_type = sub_saharan
 		nation_designer_cost = {
@@ -166,7 +166,7 @@ groups = {
 		}
 	}
 	sub_saharan = { #West African
-		start_level = 3
+		start_level = 3	#UU
 		start_cost_modifier = 0.6
 		nation_designer_cost = {
 			trigger = {

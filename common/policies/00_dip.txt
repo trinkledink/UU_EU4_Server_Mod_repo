@@ -59,8 +59,7 @@ Inno-Maritime = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	disengagement_chance = 0.1
-	admiral_skill_gain_modifier = 1.5
+	admiral_skill_gain_modifier = 2.5
 	
 	effect = {
 
@@ -1179,7 +1178,7 @@ Defensive-Naval = {
 		full_idea_group = naval_ideas
 	}
 
-	sunk_ship_morale_hit_recieved = -0.1
+	hull_size_modifier = 0.05
 	disengagement_chance = 0.1
 
 	effect = {}
@@ -1491,9 +1490,11 @@ Defensive-Court = {	##BUFF CAPITAL
 		}
 	}
 	removed_effect = {
-		every_owned_province = {
-			remove_province_modifier = uu_def_court_mod
-			remove_province_modifier = uu_def_court_capital_mod
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = uu_def_court_mod
+				remove_province_modifier = uu_def_court_capital_mod
+			}
 		}
 	}
 	

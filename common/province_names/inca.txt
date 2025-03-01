@@ -1,0 +1,11 @@
+#zeb
+807 = "Amanqay"
+808 = "Qusqu"
+809 = "Pachakamaq"
+810 = "Wankawillka"
+811 = "Sausa"
+813 = "Kashamarka"
+814 = "Wanuku"
+2823 = "Muyupampa"
+2826 = "Chimputi"
+2827 = "Warash"

@@ -15,7 +15,7 @@ uu_merc_religious_holyorder = {
        add_base_production = -1 
     }
     modifier = {
-		supply_limit_modifier = 0.25
+		supply_limit_modifier = 0.5 #Local
         trade_goods_size_modifier = 0.1
     }
     ai_priority = {
@@ -662,7 +662,7 @@ qadiri_order = {
         }
     }
     modifier = {
-        local_culture_conversion_cost = -0.3
+        #local_culture_conversion_cost = -0.3 #UU
         local_build_cost = -0.1
     }
     ai_priority = {
@@ -949,15 +949,15 @@ savafid_order = {
         religion = shiite
     }
     color = { 68 110 35 }
-    cost = 100
+    cost = 50 #UU
     cost_type = mil_power
     per_province_effect = {
-        add_base_manpower = 2
+        add_base_manpower = 1 #UU
         owner = { add_piety = -0.02 }
         custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_manpower = -2
+        add_base_manpower = -1 #UU 
         hidden_effect = {
             if = {
                 limit = { NOT = { base_manpower = 1 } }
@@ -987,15 +987,15 @@ zahediyeh_order = {
         religion_group = muslim
     }
     color = { 217 144 88 }
-    cost = 100
+    cost = 50   #UU
     cost_type = dip_power
     per_province_effect = {
-        add_base_production = 2
+        add_base_production = 1 #UU
         owner = { add_piety = -0.02 }
         custom_tooltip = order_piety_tooltip
     }
     per_province_abandon_effect = {
-        add_base_production = -2
+        add_base_production = -1 #UU
         hidden_effect = {
             if = {
                 limit = { NOT = { base_production = 1 } }
