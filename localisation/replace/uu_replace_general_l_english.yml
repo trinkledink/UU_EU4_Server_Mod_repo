@@ -318,6 +318,11 @@
  TIM_supremacy_of_the_sharia_title:0 "@TIM Supremacy of the Sharia"
  MUG_commission_the_peacock_throne:0 "@MUG Commission the Peacock Throne"
  MUG_viceroyalty_of_deccan:0 "@MUG Viceroyalty of Deccan"
+ #Bookmarks
+ #GC_AFRICA_BOOKMARK:0 "" #todo maybe
+ UU_BOOKMARK:0 "§GFeatured Nations§!"
+ UU_BOOKMARK_DESC:0 "These are some of the nations that have been updated in the mod. This may include new formables, government reforms, mission trees, etc. This list is non-exhaustive, see the patch notes for more details."
+ BOOKMARK_COUNTRY_EASY:0 "§GThis country was updated in the most recent mod patch.§!"
 
  #Relocalizing base game ideas for clarity
  estates_general:0 "Estates General of France" #France, was just Estates General
