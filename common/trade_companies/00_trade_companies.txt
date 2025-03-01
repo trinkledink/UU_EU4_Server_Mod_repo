@@ -311,14 +311,15 @@ trade_company_philippines = {
 	}
 }
 
-trade_company_moluccas = {
+trade_company_moluccas = {	#Spice Islands
 	color = { 185 28 104 }
 	
 	provinces = {
 		646 2687 2688 2689 2690 2718 2724 1357 1245 647 645 2717 648 649 650 2725 2696 2695 635 633 634 643 2713 2714 642 2715 641 2716 632 627 2691 631 2693 629 2692 628 626 625 630 624 644 2723
 		2722 2721 1237 2720 2719 # eastern papua
 		1789 # papua wasteland
-		4790 4791 4792 4793 4794 4795 4796 4797 4798 4845
+		4790 4791 4792 4793 4794 4795 4796 4797 4798 4845	
+		1401 1355 1400 1409 1356 #UU added sea tiles for name placement
 	}
 
 	# Generic
@@ -435,7 +436,7 @@ trade_company_north_sea = {
 }
 
 trade_company_white_sea = {
-	color = { 210 46 28 }
+	color = { 170 200 220 }
 	
 	provinces = {
 		1955 4122 4256 4257 #arkhangelsk_area
@@ -982,7 +983,7 @@ trade_company_kiev = {
 }
 
 trade_company_novgorod = {
-	color = { 97 126 37 }
+	color = { 97 156 37 }
 	
 	provinces = {
 		30 32 309 4124 33 34 1961 
@@ -1052,7 +1053,7 @@ trade_company_aleppo = {
 }
 
 trade_company_kazan = {
-	color = { 96 131 80 }
+	color = { 195 46 28 }
 	
 	provinces = {
 		306 1079 1083 1957 #galich_area

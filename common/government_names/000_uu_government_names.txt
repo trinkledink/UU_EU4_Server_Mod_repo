@@ -260,9 +260,17 @@ mutapa_zimbabwe_monarchy = { #copy of mutapa from vanilla
 	}
 
 	trigger = {
-		government = monarchy
-		was_tag = ZIM
-		tag = GZI
+		OR = {
+			government = tribal
+			government = monarchy
+		}
+		OR = {
+			tag = ZIM
+			AND = {
+				was_tag = ZIM
+				tag = GZI
+			}
+		}
 	}
 }
 
@@ -310,7 +318,10 @@ butua_zimbabwe_monarchy = {
 	}
 
 	trigger = {
-		government = monarchy
+		OR = {
+			government = tribal
+			government = monarchy
+		}
 		was_tag = RZW
 		OR = {
 			tag = RZI
