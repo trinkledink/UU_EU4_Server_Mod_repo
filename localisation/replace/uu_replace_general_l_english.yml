@@ -288,18 +288,15 @@
  tooltip_jewish_cult:1 "This cult has the following benefits when selected:\nAdvisor Cost: §G-10.0%§!\nInterest Per Annum: §G-0.25§!" #UU Change
 
  #misc tooltips, updated for UU changes
- BUILD_GREAT_PROJECT_EFFECT:0 "Builds the great project $NAME|Y$.\n" #UU added \n
- DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$.\n"   #UU added \n
- MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier" #UU Change
- mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU change
- mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle." #UU Change
- unlock_vozove_hradby_reform_tt:1 "Unlock '§YWagenburg Tactics§!' Tier 5 government reform, giving the following effects:\nMorale Damage Received: §G-10.0%§!\n\nThis reform also includes the following government mechanic:\nWinning battles on §Y[Root.GetAdjectiveCap]§! territory grants §G+0.33§! bonus Army Tradition."
- mechanic_battles_on_own_territory_bonus_tradition_yes:2 "Winning battles on our territory grants §G+0.33§! bonus Army Tradition." #UU Change
- mechanic_army_tradition_on_stackwipe_yes:0 "Overrunning enemy armies now grants §G+0.33§! bonus Army Tradition." #UU Change
- tupchi_artillery_corps_tt:0 "Grants §G-10.0%§! Artillery Cost if we have an ally or a subject with §YWestern§! or §YEastern§! technology or has its capital in §YEurope§!."  #UU Change
- TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain" #UU Change
- TIM_will_be_necessary_to_form_persia:0 " " #UU removed
- AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!" #UU Change
+ mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU Rework
+ mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle." #UU Change from +10%
+ unlock_vozove_hradby_reform_tt:1 "Unlock '§YWagenburg Tactics§!' Tier 5 government reform, giving the following effects:\nMorale Damage Received: §G-10.0%§!\n\nThis reform also includes the following government mechanic:\nWinning battles on §Y[Root.GetAdjectiveCap]§! territory grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ mechanic_battles_on_own_territory_bonus_tradition_yes:2 "Winning battles on our territory grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ mechanic_army_tradition_on_stackwipe_yes:0 "Overrunning enemy armies now grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ tupchi_artillery_corps_tt:0 "Grants §G-10.0%§! Artillery Cost if we have an ally or a subject with §YWestern§! or §YEastern§! technology or has its capital in §YEurope§!."  #UU Change from -33%
+ TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain"  #UU Rework
+ TIM_will_be_necessary_to_form_persia:0 " "
+ AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!"
  less_than_15_provinces_on_same_continent:0 "Has less than §Y15§! provinces in States."
  less_than_25_provinces_on_same_continent:0 "Has less than §Y25§! provinces in States."
  less_than_35_provinces_on_same_continent:0 "Has less than §Y35§! provinces in States."
