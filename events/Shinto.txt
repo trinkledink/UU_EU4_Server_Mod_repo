@@ -3332,6 +3332,9 @@ country_event = {	#Shinto Incident Manager - UU
 				days = 10950 
 			}
 		}
+		NOT = {																			#Will not fire if incident is pending
+			has_country_flag = uu_shinto_manager_cooldown
+		}
 		OR = {																			#Will not fire if no eligible incident
 			NOT = { has_country_flag = uu_start_of_neo_confucianism_chain }				#I: Neo-Confucianism trigger (can always fire) 
 			AND = {																		#II: Nanban Trade trigger
@@ -3416,6 +3419,12 @@ country_event = {	#Shinto Incident Manager - UU
 		}
 		has_dlc = "Mandate of Heaven"
 		religion = shinto
+	}
+
+	immediate = {																		#Flags as having incident pending, is removed when incident fires
+		hidden_effect = {
+			set_country_flag = uu_shinto_manager_cooldown
+		}
 	}
 
 	mean_time_to_happen = {

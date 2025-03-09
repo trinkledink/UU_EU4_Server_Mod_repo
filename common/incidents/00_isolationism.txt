@@ -34,6 +34,7 @@ incident_neo_confucianism = {
 	immediate_effect = {
 		country_event = { id = shinto_events.19 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -101,6 +102,7 @@ incident_nanban = {
 	immediate_effect = {
 		country_event = { id = shinto_events.25 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -138,6 +140,7 @@ incident_firearms = {
 	immediate_effect = {
 		country_event = { id = shinto_events.32 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -190,6 +193,7 @@ incident_spread_of_christianity = {
 	immediate_effect = {
 		country_event = { id = shinto_events.38 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -246,6 +250,7 @@ incident_shogunate_authority = {
 	immediate_effect = {
 		country_event = { id = shinto_events.50 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -283,6 +288,7 @@ incident_ikko_shu = {
 	immediate_effect = {
 		country_event = { id = shinto_events.13 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -327,6 +333,7 @@ incident_wokou = {
 	immediate_effect = {
 		country_event = { id = shinto_events.1 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
 
@@ -365,5 +372,6 @@ incident_urbanization = {
 	immediate_effect = {
 		country_event = { id = shinto_events.7 }
 		set_country_flag = active_incident_flag
+		clr_country_flag = uu_shinto_manager_cooldown	#so the incident manager can fire again
 	}
 }
