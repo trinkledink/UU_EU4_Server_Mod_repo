@@ -95,6 +95,7 @@
  obj_disc_army_desc:0 "Have least §Y125%§! discipline in your armies."
  obj_huge_capital_desc:0 "At least §Y50§! development in the capital."
  obj_two_institutions_desc:0 "Own and control at least §Y2§! provinces where institutions originated from."
+ ab_autonomy:0 "Absolutism of Age"
 
  #Hedgemons
  HEGEMONS_TITLE_WIN:0 "Hedgemons"
