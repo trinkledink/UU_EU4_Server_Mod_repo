@@ -592,7 +592,7 @@ offensive_ideas = {
 	}
 
 	invasion_logistics = { #UU
-		movement_speed = 0.15
+		movement_speed = 0.1 #5
 	}
 	uu_landing_craft = { #UU
 		landing_penalty = -1
@@ -614,7 +614,8 @@ offensive_ideas = {
 		assault_fort_cost_modifier = -1
 	}
 	napoleonic_warfare = {
-		discipline = 0.05
+		fire_damage = 0.15
+		#discipline = 0.05
 		artillery_barrage_cost = -0.2
 	}
 
@@ -900,7 +901,7 @@ economic_ideas = {
 	category = ADM
 
 	bonus = {
-		build_time = -0.25
+		global_allowed_num_of_manufactories = 1
 	}
 
 	uu_minting_regulations = {
@@ -920,6 +921,7 @@ economic_ideas = {
  	}
 	regulation_bureau = {
 		build_cost = -0.1 
+		build_time = -0.25
 	}
 	debt_and_loans = {
 		interest = -0.5
@@ -1877,7 +1879,8 @@ infrastructure_ideas = {
 		centralize_state_cost = -0.25
 	}
 	expanded_infrastructure_network = {
-		movement_speed = 0.1
+		global_supply_limit_modifier = 0.25
+		#movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
 	}
 	uu_efficient_mining = {	#UU
