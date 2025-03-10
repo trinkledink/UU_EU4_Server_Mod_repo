@@ -429,6 +429,17 @@ on_adm_development = {
 				value = 1
 			}
 		}
+		if = {
+			limit = {
+				has_building = weapons
+				region = japan_region
+				owner = { has_country_flag = uujap_samurai_from_weapons_dev_flag }
+			}
+			random = {
+				chance = 50 
+				samurai_infantry = owner
+			}
+		}		
 	}
 }
 
@@ -453,6 +464,17 @@ on_dip_development = {
 				value = 1
 			}
 		}
+		if = {
+			limit = {
+				has_building = weapons
+				region = japan_region
+				owner = { has_country_flag = uujap_samurai_from_weapons_dev_flag }
+			}
+			random = {
+				chance = 50 
+				samurai_infantry = owner
+			}
+		}
 	}
 }
 
@@ -475,6 +497,17 @@ on_mil_development = {
 			change_variable = {
 				which = dev_sum_clicks_2
 				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_building = weapons
+				region = japan_region
+				owner = { has_country_flag = uujap_samurai_from_weapons_dev_flag }
+			}
+			random = {
+				chance = 50 
+				samurai_infantry = owner
 			}
 		}
 	}
@@ -652,6 +685,19 @@ on_mil_exploited = {
 		}
 	}
 }
+
+on_mil_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+	if = {
+		limit = {
+			ROOT = {
+				has_country_flag = uujap_inno_ap_at_from_mil_tech_flag
+			}
+		}
+		change_innovativeness = 1
+		add_army_professionalism = 0.01
+		add_army_tradition = 5
+	}
+} 
 
 on_heir_disinherited = {
 	change_variable = {

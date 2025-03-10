@@ -104,13 +104,7 @@ uujap_1 = {
 				}
 				add_permanent_claim = 1032
 			}
-			sakhalin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim_multi_provinces = { target = sakhalin_area }
 		}
 	}
 	JAP_take_the_thousand_islands = {
@@ -138,20 +132,8 @@ uujap_1 = {
 			kamchatka_area = {
 				discover = ROOT
 			}
-			kamchatka_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			okhotsk_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim_multi_provinces = { target = kamchatka_area }
+			add_permanent_claim_multi_provinces = { target = okhotsk_area }
 		}
 	}
 	JAP_siberian_intervention = {
@@ -179,6 +161,10 @@ uujap_1 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = uujap_colonist_mod_2
+				duration = 10950
+			}
 			custom_tooltip = JAP_siberian_intervention_tt
 			hidden_effect = {
 				east_siberia_region = {
@@ -204,10 +190,24 @@ uujap_1 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			#at least 1 city in alaska 
+			any_owned_province = {
+				colonial_region = colonial_alaska
+				is_city = yes
+			}
 		}
 		effect = {
-			#permaclaim on california, double chance of gold? like portugal? perma colonist?
+			add_country_modifier = {
+				name = uujap_colonist_mod_3
+				duration = -1
+			}
+			increase_gold_discovery = yes
+			add_permanent_claim_multi_provinces = { target = straits_of_georgia_area }
+			add_permanent_claim_multi_provinces = { target = salish_sea_area }
+			add_permanent_claim_multi_provinces = { target = columbia_river_area }
+			add_permanent_claim_multi_provinces = { target = oregon_area }
+			add_permanent_claim_multi_provinces = { target = northern_california_area }
+			add_permanent_claim_multi_provinces = { target = california_area }
+			add_permanent_claim_multi_provinces = { target = central_valley_area }
 		}
 	}
 	uujap_empire_rising_sun = {	#TODO
@@ -222,15 +222,55 @@ uujap_1 = {
 		}
 		
 		trigger = {
-			#owns x provinces in colonial california
-			#any province in california has a port and good devvies
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				OR = {
+					colonial_region = colonial_alaska
+					colonial_region = colonial_california
+				}
+				is_city = yes
+			}
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = colonial_california
+				}
+				any_owned_province = {
+					colonial_region = colonial_california
+					has_port = yes
+					development = 15
+				}
+			}
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = colonial_alaska
+				}
+				any_owned_province = {
+					colonial_region = colonial_alaska
+					has_port = yes
+					development = 15
+				}
+			}
 		}
 		effect = {
-			#perma envoy travel time, ship mvt speed, treasure fleet size? give colonies adm eff somehow?
+			add_country_modifier = {
+				name = uujap_empire_rising_sun_mod
+				duration = -1
+			}
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				add_country_modifier = {
+					name = uujap_rising_sun_colony_mod
+					duration = -1
+				}
+			}
 		}
 	}
 
-	uujap_dejima = {	#TODO 
+	uujap_dejima = {
 		icon = mission_market_place_with_asian_traders
 		required_missions = {  }
 		position = 11
@@ -252,13 +292,15 @@ uujap_1 = {
 		effect = {
 			4182 = { 
 				center_of_trade = 1 
+				change_trade_goods = silk 
+				change_province_name = "Nagasaki"
+			} 	
+			4182 = {
 				add_province_modifier = {
 					name = uujap_dejima_port_entry_modifier
 					duration = -1 
 				}
-				change_trade_goods = silk 
-				change_province_name = "Nagasaki"
-			} 	
+			}
 		}
 	}
 }
@@ -296,7 +338,7 @@ uujap_2 = {
 		}
 	}
 	
-	uujap_attack_korea = {	#TODO
+	uujap_attack_korea = {
 		icon = mission_asian_cannon
 		required_missions = { the_divine_wind JAP_establish_political_supremacy }
 		position = 4
@@ -322,33 +364,14 @@ uujap_2 = {
 		}
 		effect = {
 			add_adm_power = 100
-			korea_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			ningguta_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			jilin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}	
+			add_permanent_claim_multi_provinces = { target = korea_region }
+			add_permanent_claim_multi_provinces = { target = ningguta_area }
+			add_permanent_claim_multi_provinces = { target = jilin_area }
 		}
 	}
 	establish_footholding_in_manchuria = {	#TODO
 		icon = mission_manchu_warrior
-		required_missions = { conquer_southern_korea }
+		required_missions = { uujap_attack_korea }
 		position = 5
 		provinces_to_highlight = {
 			OR = {
@@ -364,17 +387,17 @@ uujap_2 = {
 			OR = {
 				AND = {
 					ningguta_area = { 
-					type = all 
-					country_or_non_sovereign_subject_holds = ROOT 
-				}
-			jilin_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			furdan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+					jilin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					furdan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 				AND = {
 					any_known_country = { 
@@ -390,10 +413,10 @@ uujap_2 = {
 						jilin_area = {
 							type = all
 							country_or_non_sovereign_subject_holds = PREV
-			}
-			furdan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = PREV
+						}
+						furdan_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
 						}
 						NOT = { 
 							total_development = 300 
@@ -404,36 +427,19 @@ uujap_2 = {
 			}
 		}
 		effect = {
+			custom_tooltip = uujap_manchurian_client_state_tt
 			add_mil_power = 100
 			add_country_modifier = {
 				name = "military_victory"	#TODO change
 				duration = 7300
 			}
-			hebei_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			liaoning_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			liaodong_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim_multi_provinces = { target = hebei_area }
+			add_permanent_claim_multi_provinces = { target = liaoning_area }
+			add_permanent_claim_multi_provinces = { target = liaodong_area }
 		}
 	}
 	
-	JAP_emperor_of_china = {	#TODO
+	JAP_emperor_of_china = {
 		icon = mng_outer_city_beijing
 		required_missions = { 
 			establish_footholding_in_manchuria 
@@ -466,23 +472,43 @@ uujap_2 = {
 			}
 		}
 		effect = {
-			every_known_country = {
-				limit = { 
-					capital_scope = { 
-						OR = {
-							superregion = china_superregion 
-							region = korea_region
+			custom_tooltip = uujap_stabhit_chinese_tt
+			tooltip = {
+				every_known_country = {
+					limit = {
+						is_emperor_of_china = yes
+					}
+					add_mandate = -25
+				}
+			}
+			hidden_effect = {
+				every_known_country = {
+					limit = { 
+						capital_scope = { 
+							OR = {
+								superregion = china_superregion 
+								region = korea_region
+							}
+						} 
+						NOT = { 
+							OR = {
+								alliance_with = ROOT 
+								is_subject_of = ROOT
+							}
 						}
-					} 
-					NOT = { 
-						OR = {
-							alliance_with = ROOT 
-							is_subject_of = ROOT
-						}
+						is_emperor_of_china = no
+					}
+					country_event = {
+						id = uujap_events.3
 					}
 				}
-				country_event = {
-					id = event #TODO add -1 stab, or liberty desire? 
+				every_known_country = {
+					limit = {
+						is_emperor_of_china = yes
+					}
+					country_event = {
+						id = uujap_events.3
+					}
 				}
 			}
 		}
@@ -508,7 +534,12 @@ uujap_2 = {
 		}
 		position = 9
 		trigger = { #TODO 
-			#strongest trade power in malacca 
+			1361 = { 
+				trade_share = {
+					country = ROOT
+					share = 50
+				} 
+			}
 			#owns x provinces in malacca 
 			#owns x centres of trade in malacca 
 		}
@@ -603,20 +634,8 @@ uujap_3 = {
 		}
 		effect = {
 			add_prestige_or_monarch_power = { amount = 50 }
-			south_korea_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			eastern_korea_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim_multi_provinces = { target = south_korea_area }
+			add_permanent_claim_multi_provinces = { target = eastern_korea_area }
 			if = { 
 				limit = { 
 					RYU = { 
@@ -669,13 +688,7 @@ uujap_3 = {
 			} else = {
 				# province modifier in okinawa. 3 mountains.
 			}
-			taiwan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim_multi_provinces = { target = taiwan_area }
 		}
 	}
 	
@@ -735,11 +748,16 @@ uujap_3 = {
 			if = {
 				limit = { 4954 = { is_city = no } }
 				create_colony_mission_reward = { province = 4954 }
-			} 
-			#TODO allow recruiting of explo, conquistador
+			}
+			add_permanent_claim_multi_provinces = { target = mindanao_area }
+			add_permanent_claim_multi_provinces = { target = west_mindanao_area }
+			add_permanent_claim_multi_provinces = { target = visayas_area }
+			add_permanent_claim_multi_provinces = { target = palawan_area }
+			add_permanent_claim_multi_provinces = { target = luzon_area }
+			add_permanent_claim_multi_provinces = { target = southern_luzon_area }
 		}
 	}
-	uujap_philippines = {	#TODO
+	uujap_philippines = {
 		icon = mission_las_islas_filipinas
 		required_missions = {
 			jap_colonize_taiwan
@@ -768,21 +786,46 @@ uujap_3 = {
 					area = southern_luzon_area
 				}
 			}
-			1397 = { is_strongest_trade_power = ROOT }
+			1397 = { 
+				trade_share = {
+					country = ROOT
+					share = 80
+				} 
+			}
 		}
 		effect = {
-			#TODO permaclaims on spice islands, mission colonist?
+			add_permanent_claim_multi_provinces = { target = spice_islands_area }
+			add_permanent_claim_multi_provinces = { target = molluca_area }
+			add_permanent_claim_province = { province = 2714 }
+			add_permanent_claim_province = { province = 641 }
+			add_permanent_claim_province = { province = 629 }
+			add_permanent_claim_province = { province = 630 }
+			add_permanent_claim_province = { province = 624 }
 		}
 	}
-	uujap_spice_islands = {	#TODO
+	uujap_spice_islands = {
 		icon = mission_rb_colonise_spice_islands
 		required_missions = {
 			uujap_philippines
 		}
 		position = 9
-		trigger = {
-			#owns 5 clove provinces? 
-			#trading in cloves 
+		trigger = {	
+			num_of_owned_provinces_with = {
+				value = 6
+				trade_goods = cloves
+				is_city = yes
+				has_production_building_trigger = yes
+			}
+			trading_bonus = {
+				trade_goods = cloves
+				value = yes
+			}
+			1357 = {	#Moluccas/Spice Islands
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
 		}
 		effect = {
 			change_price = {
@@ -794,7 +837,7 @@ uujap_3 = {
 		}
 	}
 
-	uujap_tanegashima_guns = {	#TODO
+	uujap_tanegashima_guns = {
 		icon = mission_pol_develop_countryside
 		required_missions = { }
 		position = 11
@@ -830,7 +873,11 @@ uujap_3 = {
 			}
 		}
 		effect = {
-			#todo
+			add_mil_power = 50
+			custom_tooltip = uujap_samurai_from_weapons_dev_tt
+			set_country_flag = uujap_samurai_from_weapons_dev_flag
+			custom_tooltip = uujap_inno_ap_at_from_mil_tech_tt
+			set_country_flag = uujap_inno_ap_at_from_mil_tech_flag
 		}
 	}
 	uujap_all_incidents = {	#TODO
@@ -839,6 +886,10 @@ uujap_3 = {
 		position = 12
 		trigger = {
 			religion = shinto
+			OR = { 
+				is_incident_happened = incident_shogunate_authority
+				NOT = { is_subject_of_type = daimyo_vassal }
+			}
 			custom_trigger_tooltip = {
 				tooltip = uujap_all_incidents_trigger_tt
 				is_incident_happened = incident_neo_confucianism
@@ -848,10 +899,6 @@ uujap_3 = {
 				is_incident_happened = incident_ikko_shu
 				is_incident_happened = incident_wokou
 				is_incident_happened = incident_urbanization
-			}
-			OR = { 
-				is_incident_happened = incident_shogunate_authority
-				NOT = { is_subject_of_type = daimyo_vassal }
 			}
 		}
 		effect = {

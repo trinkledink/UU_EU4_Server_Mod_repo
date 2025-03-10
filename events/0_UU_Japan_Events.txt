@@ -59,3 +59,23 @@ country_event = {   #Osaka and the Dojima Rice Exhange
         }
     }
 }
+
+country_event = {   #Japan Threatens the Mandate
+    id = uujap_events.3
+    title = uujap_events.3.t 
+    desc = uujap_events.3.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #oh no
+        name = uuujap_events.3.a
+        add_stability = -1
+        if = {
+            limit = {
+                is_emperor_of_china = yes
+            }
+            add_mandate = -25
+        }
+    }
+}
