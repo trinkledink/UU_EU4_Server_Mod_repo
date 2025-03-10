@@ -852,6 +852,10 @@ uujap_malacca_trade_eff_mod = {
 	trade_efficiency = 0.15
 	trade_range_modifier = 0.33
 }
+uujap_three_mountains_mod = {
+	local_tax_modifier = 0.25
+	province_trade_power_value = 5
+}
 uujap_edo_new_capital_mod = {
 	local_great_project_upgrade_cost = -0.25
 	local_development_cost = -0.3

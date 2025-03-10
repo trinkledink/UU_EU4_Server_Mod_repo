@@ -210,7 +210,7 @@ uujap_1 = {
 			add_permanent_claim_multi_provinces = { target = central_valley_area }
 		}
 	}
-	uujap_empire_rising_sun = {	#TODO
+	uujap_empire_rising_sun = {
 		icon = jap_edo_jidai
 		required_missions = { uujap_alaska }
 		position = 9
@@ -686,7 +686,12 @@ uujap_3 = {
 					id = event # TODO country event for either japanese cooperation with the emperor, or defiance. cf shimazu overlordship of ryukyu
 				}
 			} else = {
-				# province modifier in okinawa. 3 mountains.
+				1015 = {
+					add_province_modifier = {
+						name = uujap_three_mountains_mod	#TODO
+						duration = -1
+					}
+				}
 			}
 			add_permanent_claim_multi_provinces = { target = taiwan_area }
 		}
