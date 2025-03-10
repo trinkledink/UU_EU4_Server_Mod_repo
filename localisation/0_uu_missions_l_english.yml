@@ -837,6 +837,9 @@
  uujap_events.3.t:0 "The Fall of Beijing"
   uujap_events.3.desc:0 "It seems a new power has risen in the East, with the might to rival China. The perennial failure to check Japanese control over Manchuria has finally borne bitter fruit, and already they have breached the Great Wall and have captured Beijing, the Northern Capital. The Manchurians follow the orders of the Japanese Shogun in lockstep, and they marshal their hostile forces freely where once the banners of the Ming proudly flew. This can be nothing other than a precursor to a full-scale invasion of China."
   uujap_events.3.a:0 "Ok."
+ uujap_events.4.t:0 "Manchuria, at a Cost"
+  uujap_events.4.desc:0 "With the help of our Japanese allies, we have managed to take hold of our homeland, however we had to make many concessions for it. Now, the Japanese have gained a lot of influence over our government, and are asking for their debts to be repaid. We stand to gain a lot of legitimacy and undoubtedly a powerful supporter against China, but we also have no choice."
+  uujap_events.4.a:0 "Ok."  
   
  #Tooltips
  uujap_eventopt_tt_a:0 "§MThe event will give you the choice between:\nOption A:§!"

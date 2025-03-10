@@ -179,7 +179,7 @@ uujap_1 = {
 			}
 		}
 	}
-	uujap_alaska = {	#TODO
+	uujap_alaska = {
 		icon = mission_colonize_alaska
 		required_missions = { JAP_siberian_intervention }
 		position = 7
@@ -201,6 +201,7 @@ uujap_1 = {
 				duration = -1
 			}
 			increase_gold_discovery = yes
+			custom_tooltip = " "
 			add_permanent_claim_multi_provinces = { target = straits_of_georgia_area }
 			add_permanent_claim_multi_provinces = { target = salish_sea_area }
 			add_permanent_claim_multi_provinces = { target = columbia_river_area }
@@ -369,7 +370,7 @@ uujap_2 = {
 			add_permanent_claim_multi_provinces = { target = jilin_area }
 		}
 	}
-	establish_footholding_in_manchuria = {	#TODO
+	establish_footholding_in_manchuria = {
 		icon = mission_manchu_warrior
 		required_missions = { uujap_attack_korea }
 		position = 5
@@ -400,8 +401,7 @@ uujap_2 = {
 					}
 				}
 				AND = {
-					any_known_country = { 
-						alliance_with = ROOT 
+					any_ally = { 
 						OR = {
 							primary_culture = manchu
 							primary_culture = manchu_new
@@ -419,7 +419,8 @@ uujap_2 = {
 							country_or_non_sovereign_subject_holds = PREV
 						}
 						NOT = { 
-							total_development = 300 
+							total_development = 300
+							total_development = ROOT  
 							army_size = ROOT
 						}
 					}
@@ -428,14 +429,66 @@ uujap_2 = {
 		}
 		effect = {
 			custom_tooltip = uujap_manchurian_client_state_tt
+			custom_tooltip = " "
 			add_mil_power = 100
 			add_country_modifier = {
-				name = "military_victory"	#TODO change
+				name = uujap_manchu_controller_mod
 				duration = 7300
 			}
 			add_permanent_claim_multi_provinces = { target = hebei_area }
 			add_permanent_claim_multi_provinces = { target = liaoning_area }
 			add_permanent_claim_multi_provinces = { target = liaodong_area }
+			if = {
+				limit = {
+					any_ally = { 
+						OR = {
+							primary_culture = manchu
+							primary_culture = manchu_new
+						}
+						ningguta_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+						jilin_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+						furdan_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+						NOT = { 
+							total_development = 300
+							total_development = ROOT 
+							army_size = ROOT
+						}
+					}
+				}
+				every_ally = { 
+					limit = {
+						ningguta_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+						jilin_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+						furdan_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV
+						}
+					}
+					ROOT = { create_march = PREV }
+					add_country_modifier = {
+						name = uujap_manchu_march_mod
+						duration = 7300
+					}
+					country_event = {
+						id = uujap_events.4 #Subject becomes Manchu
+					}
+				} 
+			}
 		}
 	}
 	
@@ -521,7 +574,35 @@ uujap_2 = {
 		}
 		position = 8
 		trigger = {
-			#todo own nanjing state, guangzhou state, most trade power in hangzhou and canton nodes
+			south_jiangsu_area = {	#Nanjing
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			684 = { 
+				trade_share = {
+					country = ROOT
+					share = 50
+				} 
+			}
+			guangzhou_area = {		#Canton
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1371 = { 
+				trade_share = {
+					country = ROOT
+					share = 50
+				} 
+			}
+			OR = {
+				NOT = { imperial_mandate = 20 }
+				NOT = { 
+					any_country = {
+						is_emperor_of_china = yes
+					}
+				}
+				is_emperor_of_china = yes
+			}
 		}
 		effect = {
 			#permaclaims on malacca cots, some modifier about loyalists in china? some sort of local organization maybe even
@@ -540,8 +621,17 @@ uujap_2 = {
 					share = 50
 				} 
 			}
-			#owns x provinces in malacca 
-			#owns x centres of trade in malacca 
+			num_of_owned_provinces_with = {
+				country_or_non_sovereign_subject_holds = ROOT
+				same_trade_node_as = 1361
+				value = 20
+			}
+			num_of_owned_provinces_with = {
+				country_or_non_sovereign_subject_holds = ROOT
+				same_trade_node_as = 1361
+				province_has_center_of_trade_of_level = 2
+				value = 5
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -688,7 +778,7 @@ uujap_3 = {
 			} else = {
 				1015 = {
 					add_province_modifier = {
-						name = uujap_three_mountains_mod	#TODO
+						name = uujap_three_mountains_mod
 						duration = -1
 					}
 				}
@@ -790,11 +880,12 @@ uujap_3 = {
 					area = luzon_area
 					area = southern_luzon_area
 				}
+				has_production_building_trigger = yes
 			}
 			1397 = { 
 				trade_share = {
 					country = ROOT
-					share = 80
+					share = 50
 				} 
 			}
 		}
@@ -812,6 +903,24 @@ uujap_3 = {
 		icon = mission_rb_colonise_spice_islands
 		required_missions = {
 			uujap_philippines
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = spice_islands_area
+				area = molluca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 6
+						trade_goods = cloves
+						is_city = yes
+						has_production_building_trigger = yes
+						has_manufactory_trigger = yes
+					}
+				}
+			}
 		}
 		position = 9
 		trigger = {	

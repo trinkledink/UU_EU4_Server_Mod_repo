@@ -79,3 +79,99 @@ country_event = {   #Japan Threatens the Mandate
         }
     }
 }
+
+country_event = {   #Japanese Protectorate
+    id = uujap_events.4
+    title = uujap_events.4.t 
+    desc = uujap_events.4.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #we become manchu
+        name = uuujap_events.4.a
+        
+        #Basically just copying the decision 
+        if = {
+            limit = {
+                NOT = {
+                    tag = MCH 
+                    tag = QNG
+                }
+            }
+            set_country_flag = formed_tier_three_flag
+            add_prestige = 25
+            change_tag = MCH
+            on_change_tag_effect = yes
+            swap_non_generic_missions = yes
+            if = {
+                limit = {
+                    NOT = { government_rank = 2 }
+                }
+                set_government_rank = 2
+            }
+            change_primary_culture = manchu_new
+            set_ruler_culture = manchu_new
+            if = {
+                limit = {
+                    has_heir = yes
+                }
+                set_heir_culture = manchu_new
+            }
+            if = {
+                limit = {
+                    has_consort = yes
+                    consort_culture = manchu
+                }
+                set_consort_culture = manchu_new
+            }
+            hidden_effect = {
+                every_province = {
+                    limit = {
+                        culture = manchu
+                    }
+                    change_culture = manchu_new
+                }
+                every_country = {
+                    limit = {
+                        primary_culture = manchu
+                    }
+                    change_primary_culture = manchu_new
+                    set_ruler_culture = manchu_new
+                    if = {
+                        limit = {
+                            has_heir = yes
+                        }
+                        set_heir_culture = manchu_new
+                    }
+                    if = {
+                        limit = {
+                            has_consort = yes
+                            consort_culture = manchu
+                        }
+                        set_consort_culture = manchu_new
+                    }
+                }
+            }
+            custom_tooltip = manchu_culture_tt
+            730 = {
+                move_capital_effect = yes
+            }
+            manchuria_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    is_city = yes
+                }
+                add_core = MCH
+            }
+            set_country_flag = formed_manchu_flag
+            if = {
+                limit = { 
+                    has_custom_ideas = no
+                    NOT = { has_idea_group = MCH_ideas }
+                }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+        }
+    }
+}
