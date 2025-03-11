@@ -789,13 +789,19 @@
  ########################################################################
 
  uujap_build_army_mission_title:0 "Prepare the Army"
+  uujap_build_army_mission_desc:0 "The Sengoku Jidai is upon us. We must prepare to lead our armies to defend our domain, or preemptively cut down our threatening neighbours."
  uujap_alaska_title:0 "Into the Sunrise"
+  uujap_alaska_desc:0 "The inhabitants of Siberia tell us of another land to the East, across the great sea, towards the sunrise. If there are riches to be gained from settling this new land, we must explore it and find them."
  uujap_empire_rising_sun_title:0 "Empire of the Rising Sun"
+  uujap_empire_rising_sun_desc:0 "Our empire stretches from coast to coast across the great waters, the eastern terminus of the Known World. We are known as the Land of the Rising Sun, but now our dominion stretches even onto this new continent, towards the Rising Sun. Let us improve the infrastructure of these faraway colonies and connect them to our networks so that we may truly become a modern global empire, the Empire of the Rising Sun."
  uujap_south_china_title:0 "Control Southern China"
+  uujap_south_china_desc:0 "Now that the Chinese Empire has been sufficiently crippled, they can no longer try to assert their pretend superiority on us. Now, we must move to secure the centers of power in the region to cement our control, and ensure the Chinese may never rise again."
  uujap_malacca_strait_title:0 "Malay Trade"
+  uujap_malacca_strait_desc:0 "We now find ourselves in prime position to take advantage of the rich markets of Malaya. We should try to establish ourselves in this region, and gain a commanding position over the great volume of commerce that passes through the region."
  uujap_expand_the_domain_title:0 "Domain Expansion"
   uujap_expand_the_domain_desc:0 "Our clan's ancestral domain will no longer suffice in such an era of warfare. If we are to survive, we must expand our domain to prevent annexation."
  uujap_conquer_ryukyu_title:0 "Kingdom of Ryukyu"
+  uujap_conquer_ryukyu_desc:0 "As tributaries of the Chinese Emperor, the kings of Ryukyu enjoy strong relations with the merchants of the Sinosphere and can trade in many ports in Southeast Asia. Taking hold of this strategic juncture may be difficult, but it would serve as a springboard into other commercial affairs further south, and undermine the power of the Chinese."
  uujap_philippines_title:0 "Another Archipelago"
   uujap_philippines_desc:0 "The islands to our south are home to a number of exotic trade goods that we cannot grow in Japan. It would be advantageous to take control of this region and extend our influence in the South China Sea."
  uujap_spice_islands_title:0 "The Spice Islands"
@@ -840,6 +846,10 @@
  uujap_events.4.t:0 "Manchuria, at a Cost"
   uujap_events.4.desc:0 "With the help of our Japanese allies, we have managed to take hold of our homeland, however we had to make many concessions for it. Now, the Japanese have gained a lot of influence over our government, and are asking for their debts to be repaid. We stand to gain a lot of legitimacy and undoubtedly a powerful supporter against China, but we also have no choice."
   uujap_events.4.a:0 "Ok."  
+ uujap_events.5.t:0 "The Surrender of Ryukyu"
+  uujap_events.5.desc:0 "We have managed to secure control of the Ryukyu kingdom in its entirety. Upon our landing, the Ryukyuan king astutely realized that resistance was futile, and ordered his men to surrender. The king himself was swiftly captured, and now awaits transfer to Kagoshima.\nHowever, the Ryukyu kingdom has traditionally been under the protection of the Chinese emperor, who would surely take it as a grave insult were we to simply annex the kingdom; however, the Ryukyuans have offered to pay us tribute and grant us effective control over the island if we leave them be, and since we have the Ryukyuan royal family in custody, we would effectively gain indefinite control of Ryukyu without the Chinese even suspecting a difference."
+  uujap_events.5.a:0 "As long as the Ryukyuans know who's really in charge..."
+  uujap_events.5.b:0 "We do not care for the empty words of a decrepit dragon." 
   
  #Tooltips
  uujap_eventopt_tt_a:0 "§MThe event will give you the choice between:\nOption A:§!"
@@ -848,7 +858,21 @@
  uujap_gokaido_tt:0 "§GAll of the aforementioned provinces will gain the following reward:§!"
  uujap_manchurian_client_state_tt:0 "If any allied Manchurian nation fulfils the conditions, they will become our loyal §YMarch§! and become the nation of @MCH §Y[MCH.GetName]§!."
  uujap_stabhit_chinese_tt:0 "Every known country with their capital in the China or Korea superregions which is not allied or subject to us will gain §R-1§! Stability."
+ uujap_prepare_sneakattack_ryukyu_tt:0 "If we complete this mission by fulfilling the last set of requirements, the resources will be consumed to launch an §Yexpeditionary force§! to capture §YOkinawa§! without the Chinese noticing."
+ uujap_annex_ryu_unlock_decision_tt:0 "§YWe will gain a decision to annex Ryukyu whenever we want, which will also trigger the effects of the second option, while removing the permanent modifier we gain from this event.§!"
  uujap_samurai_from_weapons_dev_tt:0 "Developing the provinces with §YWeapons Manufactories§! in the §YJapan§! region will have a §Y50%§! chance of spawning a §YSamurai§! regiment on the province."
- uujap_inno_ap_at_from_mil_tech_tt:0 "Advancing in §YMilitary Technology§! will give us §+G1§! Innovativeness, §G1%§! Army Professionalism, and §G+5§! Army Tradition."
+ uujap_inno_ap_at_from_mil_tech_tt:0 "Advancing in §YMilitary Technology§! will give us §G+1§! Innovativeness, §G1%§! Army Professionalism, and §G+5§! Army Tradition."
+ uujap_dip_dev_for_miyadaiku_tt:0 "All provinces fulfilling the above requirements gain §G+1§! Base Production."
  uujap_all_incidents_trigger_tt:0 "Aside from §YRising Shogunate Authority,§! all other Shinto Incidents have happened for [Root.GetName]."
  uujap_all_incidents_unlock_decision_tt:0 "§lWe will unlock a decision to adjust our own Isolationism at the cost of Stability every 30 years.§!"
+
+ #Mission-Unlocked Decisions
+  #Shinto Isolationism Decisions
+ uu_iso_plus_title:0 "(§Y+Isolationism§!) Tighten Migration Restrictions"
+  uu_iso_plus_desc:0 "By placing more limitations on who can enter and leave the country as well as on foreign trade and relations, we can adopt a more Isolationist foreign policy."
+ uu_iso_minus_title:0 "(§Y-Isolationism§!) Relax Migration Restrictions"
+  uu_iso_minus_desc:0 "By repealing limitations on who can enter and leave the country as well as on foreign trade and relations, we can adopt a more Open foreign policy."
+ shinto_incident_recent_tooltip_uu2:0 "At least 30 years since last incident, or since last change in Isolationism"
+  #Ryukyu
+ uujap_annex_ryu_decision_title:0 "@JAP Annexation of the Ryukyus"
+  uujap_annex_ryu_decision_desc:0 "The time has come to integrate the Kingdom of Ryukyu into our own realm, and abandon the pretense of sharing it with the Chinese."

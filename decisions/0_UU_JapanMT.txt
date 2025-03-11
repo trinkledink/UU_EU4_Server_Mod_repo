@@ -1,0 +1,99 @@
+country_decisions = {
+    uujap_annex_ryu_decision = {
+    
+        color = { 194  53  60 }
+        major = yes
+        potential = {
+            has_country_modifier = uujap_suzerain_ryukyu_mod             
+        }
+
+        allow = {
+            has_country_modifier = uujap_suzerain_ryukyu_mod
+            is_at_war = no
+            RYU = {
+                owns = 1015
+                alliance_with = ROOT
+            }
+        }
+
+        effect = {
+            remove_country_modifier = uujap_suzerain_ryukyu_mod   
+            1015 = {
+                cede_province = ROOT
+                add_province_modifier = {
+                    name = uujap_three_mountains_mod
+                    duration = -1
+                }
+            }
+            every_country = {
+                limit = {
+                    is_emperor_of_china = yes 
+                }
+                add_mandate = -5
+                add_permanent_claim_province = { province = 1015 }
+                add_casus_belli = {
+                    target = ROOT
+                    type = cb_insult
+                    months = 60
+                }
+            }                                             
+        }
+        ai_will_do = {
+		    factor = 0
+		}
+    }
+
+    uu_iso_plus = {
+		color = { 204 0 0 }
+		major = yes
+		potential = {
+			religion = shinto
+			mission_completed = uujap_all_incidents
+			NOT = { isolationism = 4 }	#cannot use if at 4 (max) iso
+		}
+		allow = {
+			stability = 1	
+			is_at_war = no
+			custom_trigger_tooltip = {
+				tooltip = shinto_incident_recent_tooltip_uu2
+				NOT = { is_incident_active = yes }
+				OR = {
+					NOT = { has_country_flag = shinto_incident_recent }
+					had_country_flag = { flag = shinto_incident_recent days = 10950 }
+				}
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_isolationism = 1
+			set_country_flag = shinto_incident_recent 
+		}
+	}
+
+	uu_iso_minus = {
+		color = { 194 0 0 }
+		major = yes
+		potential = {
+			religion = shinto
+			mission_completed = uujap_all_incidents
+			isolationism = 1	#cannot use if at 0 (min) iso
+		}
+		allow = {
+			stability = 1	
+			is_at_war = no
+			custom_trigger_tooltip = {
+				tooltip = shinto_incident_recent_tooltip_uu2
+				NOT = { is_incident_active = yes }
+				OR = {
+					NOT = { has_country_flag = shinto_incident_recent }
+					had_country_flag = { flag = shinto_incident_recent days = 10950 }
+				}
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_isolationism = -1
+			set_country_flag = shinto_incident_recent 
+		}
+	}
+}

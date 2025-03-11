@@ -861,8 +861,14 @@ uujap_malacca_trade_eff_mod = {
 	trade_efficiency = 0.15
 	trade_range_modifier = 0.33
 }
+uujap_suzerain_ryukyu_mod = {
+	global_tax_income = 6
+	global_foreign_trade_power = 0.2
+	trade_range_modifier = 0.2
+	prestige_decay = -0.01
+}
 uujap_three_mountains_mod = {
-	local_tax_modifier = 0.25
+	prestige_decay = -0.01
 	province_trade_power_value = 5
 }
 uujap_edo_new_capital_mod = {
@@ -871,6 +877,9 @@ uujap_edo_new_capital_mod = {
 	local_governing_cost = -0.5
 	local_build_time = -0.25
 	province_trade_power_value = 10
+}
+uujap_miyadaiku_carpentry_mod = {
+	development_cost_modifier = -0.05
 }
 uujap_inflation_goods_mod = {
 	inflation_reduction = 0.1

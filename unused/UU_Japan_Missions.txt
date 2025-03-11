@@ -1,4 +1,4 @@
-uujap_1 = {
+uujap_1 = { #DONE
 	slot = 1
 	generic = no
 	ai = yes
@@ -337,8 +337,7 @@ uujap_2 = {
 				duration = 7300
 			}
 		}
-	}
-	
+	}	
 	uujap_attack_korea = {
 		icon = mission_asian_cannon
 		required_missions = { the_divine_wind JAP_establish_political_supremacy }
@@ -490,8 +489,7 @@ uujap_2 = {
 				} 
 			}
 		}
-	}
-	
+	}	
 	JAP_emperor_of_china = {
 		icon = mng_outer_city_beijing
 		required_missions = { 
@@ -605,7 +603,7 @@ uujap_2 = {
 			}
 		}
 		effect = {
-			#permaclaims on malacca cots, some modifier about loyalists in china? some sort of local organization maybe even
+			#todo permaclaims on malacca cots, some modifier about loyalists in china? some sort of local organization maybe even
 		}
 	}
 	uujap_malacca_strait = {
@@ -663,7 +661,6 @@ uujap_2 = {
 				duration = 7300
 			}
 			add_navy_tradition = 10 
-			#unlock a flagship modifier?
 		}
 	}
 }
@@ -699,8 +696,7 @@ uujap_3 = {
 				duration = 7300
 			}
 		}
-	}
-	
+	}	
 	JAP_establish_political_supremacy = {
 		icon = mission_unite_home_region
 		required_missions = { 
@@ -743,7 +739,6 @@ uujap_3 = {
 			}
 		}
 	}
-	
 	uujap_conquer_ryukyu = { #TODO
 		icon = mission_invade_island
 		required_missions = { JAP_establish_political_supremacy }
@@ -761,21 +756,52 @@ uujap_3 = {
 			OR = {
 				1015 = { controlled_by = ROOT }
 				1015 = { country_or_non_sovereign_subject_holds = ROOT }
+				AND = {
+					stability = 1
+					is_at_war = no
+					1012 = { country_or_non_sovereign_subject_holds = ROOT }
+					years_of_manpower = 1
+					treasury = 400
+					adm_power = 30
+					dip_power = 30
+					mil_power = 30
+					has_casus_belli = {
+						type = cb_vassalize_mission
+						target = RYU
+					}
+				}
 			}
 		}
 		effect = {
 			if = {
 				limit = {
-					exists = RYU 
-					has_dlc = "Mandate of Heaven"
-					any_country = {
-						is_emperor_of_china = yes
+					NOT = {
+						1015 = { controlled_by = ROOT }
+						1015 = { country_or_non_sovereign_subject_holds = ROOT }						
 					}
 				}
-				country_event = {
-					id = event # TODO country event for either japanese cooperation with the emperor, or defiance. cf shimazu overlordship of ryukyu
+				custom_tooltip = uujap_prepare_sneakattack_ryukyu_tt
+				add_years_of_manpower = -1
+				add_treasury = -400
+				add_adm_power = -30
+				add_dip_power = -30
+				add_mil_power = -30
+				remove_casus_belli = {
+					target = RYU
+					type = cb_vassalize_mission
 				}
-			} else = {
+			}
+			if = {
+				limit = {
+					1015 = { owned_by = RYU }
+				}
+				country_event = {
+					id = uujap_events.5
+				}
+			} else_if = {
+				limit = {
+					1015 = { country_or_non_sovereign_subject_holds = ROOT }
+				}
 				1015 = {
 					add_province_modifier = {
 						name = uujap_three_mountains_mod
@@ -786,8 +812,7 @@ uujap_3 = {
 			add_permanent_claim_multi_provinces = { target = taiwan_area }
 		}
 	}
-	
-	jap_colonize_taiwan = {	#TODO
+	jap_colonize_taiwan = {
 		icon = mission_caribbean_cn
 		required_missions = { uujap_conquer_ryukyu }
 		position = 7
@@ -950,7 +975,6 @@ uujap_3 = {
 			}
 		}
 	}
-
 	uujap_tanegashima_guns = {
 		icon = mission_pol_develop_countryside
 		required_missions = { }
@@ -994,7 +1018,7 @@ uujap_3 = {
 			set_country_flag = uujap_inno_ap_at_from_mil_tech_flag
 		}
 	}
-	uujap_all_incidents = {	#TODO
+	uujap_all_incidents = {
 		icon = mission_buddhist_monk_praying
 		required_missions = { }
 		position = 12
@@ -1152,7 +1176,7 @@ uujap_4 = {
 				change_province_name = Edo
 				rename_capital = Edo 
 				add_province_modifier = {
-					name = uujap_edo_new_capital_mod #TODO great project upgrade cost, dev modifier, gov cost, build cost
+					name = uujap_edo_new_capital_mod
 					duration = -1
 				}
 			}
@@ -1175,29 +1199,61 @@ uujap_4 = {
 		required_missions = { uujap_fate_emperor }
 		position = 9
 		trigger = {
-			#todo probably absolutism
+			absolutism = 99
+			#todo related to previous mission
 		}
 		effect = {
 			#todo some permanent gov reform?
 		}
 	}
 
-	jap_miyadaiku_method = {	#TODO not sure what i want to do with this yet
+	jap_miyadaiku_method = {
 		icon = jap_miyadaiku_method
 		required_missions = { }
 		position = 11
+		provinces_to_highlight = {
+			OR = {
+				has_manufactory_trigger = yes
+				num_of_buildings_in_province = 3
+			}
+			NOT = {
+				AND = {
+					has_manufactory_trigger = yes
+					num_of_buildings_in_province = 3
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				is_incident_happened = incident_urbanization
 				NOT = { religion = shinto }
 			}
 			num_of_owned_provinces_with = {
-				has_production_building_trigger = yes 
-				value = 15 
+				has_manufactory_trigger = yes
+				num_of_buildings_in_province = 3
+				value = 50 
 			}
 		}
 		effect = {
-			#todo
+			if = { 
+				limit = { has_dlc = "Rights of Man" NOT = { num_of_ruler_traits = { amount = 3 } } } 
+				add_ruler_personality = great_engineer_personality 
+			}
+			else = { change_ruler_stat = { type = adm amount = 1 } }
+			custom_tooltip = uujap_dip_dev_for_miyadaiku_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_manufactory_trigger = yes
+						num_of_buildings_in_province = 3
+					}
+					add_base_production = 1
+				}
+			}
+			add_country_modifier = {
+				name = uujap_miyadaiku_carpentry_mod
+				duration = -1
+			}
 		}
 	}
 

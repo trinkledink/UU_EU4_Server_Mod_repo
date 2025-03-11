@@ -80,7 +80,7 @@ country_event = {   #Japan Threatens the Mandate
     }
 }
 
-country_event = {   #Japanese Protectorate
+country_event = {   #Manchu: Japanese Protectorate
     id = uujap_events.4
     title = uujap_events.4.t 
     desc = uujap_events.4.desc 
@@ -171,6 +171,62 @@ country_event = {   #Japanese Protectorate
                     NOT = { has_idea_group = MCH_ideas }
                 }
                 country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+        }
+    }
+}
+
+country_event = {   #The Question of Ryukyu
+    id = uujap_events.5
+    title = uujap_events.5.t 
+    desc = uujap_events.5.desc 
+    picture = GIFTS_TO_EMPEROR_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #shared tributary status.
+        name = uuujap_events.5.a
+        custom_tooltip = uujap_annex_ryu_unlock_decision_tt
+        white_peace = RYU
+        create_alliance = RYU
+        add_trust = {
+            who = RYU
+            value = 50
+            mutual = yes
+        }
+        add_country_modifier = {
+            name = uujap_suzerain_ryukyu_mod
+            duration = -1
+        }
+    }
+
+    option = {  #we yoink
+        name = uuujap_events.5.b
+        add_prestige = 20
+        if = {
+            limit = {
+                NOT = { 
+                    1015 = { country_or_non_sovereign_subject_holds = ROOT }	
+                }
+            }
+            1015 = {
+                cede_province = ROOT
+                add_province_modifier = {
+                    name = uujap_three_mountains_mod
+                    duration = -1
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                is_emperor_of_china = yes 
+            }
+            add_mandate = -5
+            add_permanent_claim_province = { province = 1015 }
+            add_casus_belli = {
+                target = ROOT
+                type = cb_insult
+                months = 60
             }
         }
     }

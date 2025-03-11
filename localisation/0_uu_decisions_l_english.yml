@@ -32,12 +32,6 @@
  benefit_from_offerings_title:0 "(§Y-Karma§!) Benefit From Temple Offerings"
   benefit_from_offerings_desc:0 "Things are going good and people have left plenty of offerings at the temples..."
  uu_buddhist_decision_tooltip:0 "This decision can only be taken once every §Y10§! years."
- #Shinto Isolationism Decisions
- uu_iso_plus_title:0 "(§Y+Isolationism§!) Tighten Migration Restrictions"
-  uu_iso_plus_desc:0 "By placing more limitations on who can enter and leave the country as well as on foreign trade and relations, we can adopt a more Isolationist foreign policy."
- uu_iso_minus_title:0 "(§Y-Isolationism§!) Relax Migration Restrictions"
-  uu_iso_minus_desc:0 "By repealing limitations on who can enter and leave the country as well as on foreign trade and relations, we can adopt a more Open foreign policy."
- shinto_incident_recent_tooltip_uu2:0 "At least 30 years since last incident, or since last change in Isolationism"
  #MJL Change Muslim School
  mjl_change_muslim_school_title:0 "Change Islamic School"
   mjl_change_muslim_school_desc:0 "§YChanging Islamic chools is only possible once per game!§!\n"
