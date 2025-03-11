@@ -336,12 +336,39 @@ japanese_atakebune = {
 			has_country_flag = unlocked_japanese_atakebuna_doctrine_flag
 			culture_group = japanese_g
 		}
+		NOT = { has_country_modifier = uujap_tekkosen_modifier }
 	}
 
 	cost = 0.1
 	country_modifier = {
-		heavy_ship_power = 0.05
-		naval_morale = 0.05
+		galley_power = 0.2
+		blockade_efficiency = 0.25
+		siege_blockade_progress = 1
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 16
+}
+
+japanese_atakebune_2 = {	#UU
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			has_country_flag = unlocked_japanese_atakebuna_doctrine_flag
+			culture_group = japanese_g
+		}
+		has_country_modifier = uujap_tekkosen_modifier 
+	}
+
+	cost = 0.1
+	country_modifier = {
+		galley_power = 0.2
+		blockade_efficiency = 0.25
+		siege_blockade_progress = 1
+		allowed_galleass_fraction = 0.1
+		has_galleass = yes
 	}
 	effect = {}
 	removed_effect = {}

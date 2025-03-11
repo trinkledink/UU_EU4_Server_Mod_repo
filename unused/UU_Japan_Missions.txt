@@ -612,7 +612,7 @@ uujap_2 = {
 			uujap_south_china
 		}
 		position = 9
-		trigger = { #TODO 
+		trigger = {
 			1361 = { 
 				trade_share = {
 					country = ROOT
@@ -638,8 +638,7 @@ uujap_2 = {
 			}
 		}
 	}
-
-	uujap_atakebune = {	#TODO
+	uujap_atakebune = {
 		icon = jap_deploy_atakebune
 		required_missions = { }
 		position = 11
@@ -648,24 +647,32 @@ uujap_2 = {
 				is_incident_happened = incident_wokou
 				NOT = { religion = shinto }
 			}
-			heavy_ship_fraction = 0.1
 			OR = { 
 				navy_tradition = 50
-				num_of_heavy_ship = 10 
+				navy_size_percentage = 0.9
 			}
-			navy_size_percentage = 0.9
+			num_of_galley = 30
 		}
 		effect = {
+			custom_tooltip = uujap_unlock_better_doctrine_tt
 			add_country_modifier = {
-				name = jap_tekkosen_modifier	#maybe change these - galleys?
-				duration = 7300
+				name = uujap_tekkosen_modifier
+				duration = -1
 			}
-			add_navy_tradition = 10 
+			add_navy_tradition = 20
+			define_admiral = {
+				shock = 5
+				fire = 2
+				manuever = 2
+				siege = 2
+				name = "Mukai Tadakatsu"
+				trait = naval_engineer_personality 
+			}
 		}
 	}
 }
 
-uujap_3 = {
+uujap_3 = {	#DONE
 	slot = 3
 	generic = no
 	ai = yes
@@ -739,7 +746,7 @@ uujap_3 = {
 			}
 		}
 	}
-	uujap_conquer_ryukyu = { #TODO
+	uujap_conquer_ryukyu = {
 		icon = mission_invade_island
 		required_missions = { JAP_establish_political_supremacy }
 		position = 5
@@ -1087,8 +1094,7 @@ uujap_4 = {
 			add_legitimacy = 50
 		}
 	}
-
-	uujap_samurai = {
+	uujap_samurai = { 	#TODO
 		icon = jap_train_samurai
 		required_missions = { 
 			uujap_capture_emperor
@@ -1119,7 +1125,6 @@ uujap_4 = {
 			}
 		}
 	}
-
 	JAP_sankin_kotai = {	#TODO
 		icon = jap_strengthen_bakuhan_system
 		required_missions = { uujap_samurai }
@@ -1153,7 +1158,6 @@ uujap_4 = {
 			}
 		}
 	}
-
 	uujap_new_capital_mission = {
 		icon = jap_financial_cliques
 		required_missions = { JAP_sankin_kotai }
@@ -1182,8 +1186,7 @@ uujap_4 = {
 			}
 		}
 	}
-
-	uujap_fate_emperor = {
+	uujap_fate_emperor = {	#TODO
 		icon = jap_five_regent_houses
 		required_missions = { uujap_new_capital_mission }
 		position = 8
@@ -1194,7 +1197,7 @@ uujap_4 = {
 			#todo event, maybe gov mechanic thing. henceforth emperor and shogun are in opposition
 		}
 	}
-	uujap_secure_authority = {
+	uujap_secure_authority = {	#TODO
 		icon = jap_restoration
 		required_missions = { uujap_fate_emperor }
 		position = 9
@@ -1206,7 +1209,6 @@ uujap_4 = {
 			#todo some permanent gov reform?
 		}
 	}
-
 	jap_miyadaiku_method = {
 		icon = jap_miyadaiku_method
 		required_missions = { }
@@ -1256,10 +1258,9 @@ uujap_4 = {
 			}
 		}
 	}
-
 }
 
-uujap_5 = {
+uujap_5 = {	#DONE
 	slot = 5
 	generic = no
 	ai = yes
@@ -1356,7 +1357,6 @@ uujap_5 = {
 			}
 		}
 	}
-
 	uujap_issue_new_coin = {
 		icon = mission_african_gold
 		required_missions = { JAP_balance_the_four_divisions }
@@ -1444,7 +1444,6 @@ uujap_5 = {
 			}
 		}
 	}
-	
 	uujap_permit_money_changers = {
 		icon = mission_high_income
 		required_missions = { uujap_issue_new_coin }
@@ -1498,7 +1497,6 @@ uujap_5 = {
 			}
 		}
 	}
-
 	uujap_gokaido = {	#Five roads
 		icon = mission_the_caucasus_rus
 		required_missions = { uujap_permit_money_changers JAP_sankin_kotai }
@@ -1620,7 +1618,6 @@ uujap_5 = {
 			}
 		}
 	}
-
 	uujap_religious_harmony = {
 		icon = mission_to_china
 		required_missions = { }

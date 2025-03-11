@@ -861,6 +861,12 @@ uujap_malacca_trade_eff_mod = {
 	trade_efficiency = 0.15
 	trade_range_modifier = 0.33
 }
+uujap_tekkosen_modifier = {
+	ship_durability = 0.1
+	can_transport_units = yes
+	global_ship_cost = 0.5
+	is_galleass_modifier = yes
+}
 uujap_suzerain_ryukyu_mod = {
 	global_tax_income = 6
 	global_foreign_trade_power = 0.2

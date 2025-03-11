@@ -858,6 +858,7 @@
  uujap_gokaido_tt:0 "§GAll of the aforementioned provinces will gain the following reward:§!"
  uujap_manchurian_client_state_tt:0 "If any allied Manchurian nation fulfils the conditions, they will become our loyal §YMarch§! and become the nation of @MCH §Y[MCH.GetName]§!."
  uujap_stabhit_chinese_tt:0 "Every known country with their capital in the China or Korea superregions which is not allied or subject to us will gain §R-1§! Stability."
+ uujap_unlock_better_doctrine_tt:0 "Upgrades the Atakebune naval doctrine to allow the construction of Tekkousen - early ironclads - (reskinned Galleasses) in provinces with §YShipyards§! or §YDocks§!."
  uujap_prepare_sneakattack_ryukyu_tt:0 "If we complete this mission by fulfilling the last set of requirements, the resources will be consumed to launch an §Yexpeditionary force§! to capture §YOkinawa§! without the Chinese noticing."
  uujap_annex_ryu_unlock_decision_tt:0 "§YWe will gain a decision to annex Ryukyu whenever we want, which will also trigger the effects of the second option, while removing the permanent modifier we gain from this event.§!"
  uujap_samurai_from_weapons_dev_tt:0 "Developing the provinces with §YWeapons Manufactories§! in the §YJapan§! region will have a §Y50%§! chance of spawning a §YSamurai§! regiment on the province."
