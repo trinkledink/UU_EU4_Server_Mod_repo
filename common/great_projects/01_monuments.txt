@@ -14854,6 +14854,18 @@ porcelain_tower_nanjing = {
 		}
 		on_upgraded = {
 		}
+		conditional_modifier = {	#UU
+			trigger = {
+				owner = { 
+					tag = JAP
+					mission_completed = uujap_south_china
+				}
+			}
+			modifier = {
+				years_of_nationalism = -5
+				governing_capacity = 50
+			}
+		}
 	}
 
 	tier_2 = {
@@ -14875,6 +14887,18 @@ porcelain_tower_nanjing = {
 		}
 		on_upgraded = {
 		}
+		conditional_modifier = {	#UU
+			trigger = {
+				owner = { 
+					tag = JAP
+					mission_completed = uujap_south_china
+				}
+			}
+			modifier = {
+				years_of_nationalism = -10
+				governing_capacity = 100
+			}
+		}
 	}
 
 	tier_3 = {
@@ -14895,6 +14919,18 @@ porcelain_tower_nanjing = {
 			embracement_cost = -0.15
 		}
 		on_upgraded = {
+		}
+		conditional_modifier = {	#UU
+			trigger = {
+				owner = { 
+					tag = JAP
+					mission_completed = uujap_south_china
+				}
+			}
+			modifier = {
+				years_of_nationalism = -10
+				governing_capacity = 250
+			}
 		}
 	}
 }

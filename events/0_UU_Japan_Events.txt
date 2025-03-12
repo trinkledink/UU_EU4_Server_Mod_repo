@@ -9,7 +9,7 @@ country_event = {   #Erizeni-Rei and the Issue of Coins
     is_triggered_only = yes 
 
     option = {
-        name = uuujap_events.1.a
+        name = uujap_events.1.a
         add_inflation = -1 
         add_country_modifier = {
             name = uujap_inflation_goods_mod
@@ -17,7 +17,7 @@ country_event = {   #Erizeni-Rei and the Issue of Coins
         } 
     }
     option = {
-        name = uuujap_events.1.b 
+        name = uujap_events.1.b 
         add_years_of_income = 0.5 
         add_inflation = 2
         if = {
@@ -38,12 +38,12 @@ country_event = {   #Osaka and the Dojima Rice Exhange
     id = uujap_events.2
     title = uujap_events.2.t 
     desc = uujap_events.2.desc 
-    picture = ECONOMY_eventPicture  #TODO
+    picture = URBANISATION_INCIDENT_eventPicture
 
     is_triggered_only = yes 
     
     option = {  #embrace the inflation
-        name = uuujap_events.2.a
+        name = uujap_events.2.a
         add_years_of_income = 1
         add_country_modifier = {
             name = uujap_ricebroker_inflation_mod
@@ -52,7 +52,7 @@ country_event = {   #Osaka and the Dojima Rice Exhange
     }
 
     option = {  #embrace the inflation
-        name = uuujap_events.2.b
+        name = uujap_events.2.b
         add_country_modifier = {
             name = uujap_ricebroker_interest_mod
             duration = -1
@@ -69,7 +69,7 @@ country_event = {   #Japan Threatens the Mandate
     is_triggered_only = yes 
     
     option = {  #oh no
-        name = uuujap_events.3.a
+        name = uujap_events.3.a
         add_stability = -1
         if = {
             limit = {
@@ -89,7 +89,7 @@ country_event = {   #Manchu: Japanese Protectorate
     is_triggered_only = yes 
     
     option = {  #we become manchu
-        name = uuujap_events.4.a
+        name = uujap_events.4.a
         
         #Basically just copying the decision 
         if = {
@@ -185,7 +185,7 @@ country_event = {   #The Question of Ryukyu
     is_triggered_only = yes 
     
     option = {  #shared tributary status.
-        name = uuujap_events.5.a
+        name = uujap_events.5.a
         custom_tooltip = uujap_annex_ryu_unlock_decision_tt
         white_peace = RYU
         create_alliance = RYU
@@ -201,7 +201,7 @@ country_event = {   #The Question of Ryukyu
     }
 
     option = {  #we yoink
-        name = uuujap_events.5.b
+        name = uujap_events.5.b
         add_prestige = 20
         if = {
             limit = {
@@ -229,5 +229,23 @@ country_event = {   #The Question of Ryukyu
                 months = 60
             }
         }
+    }
+}
+
+country_event = {   #The Samurai Caste - To Open or Close?
+    id = uujap_events.6
+    title = uujap_events.6.t 
+    desc = uujap_events.6.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #Keep it Closed
+        name = uujap_events.6.a
+        #unlock reform
+    }
+    option = {  #Open it 
+        name = uujap_events.6.b
+        #unlock reform
     }
 }

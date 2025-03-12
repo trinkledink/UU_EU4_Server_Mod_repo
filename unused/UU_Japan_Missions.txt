@@ -138,7 +138,7 @@ uujap_1 = { #DONE
 	}
 	JAP_siberian_intervention = {
 		icon = mission_steppe_warriors
-		required_missions = { establish_footholding_in_manchuria JAP_take_the_thousand_islands }
+		required_missions = { uujap_manchuria JAP_take_the_thousand_islands }
 		position = 6
 		
 		provinces_to_highlight = {
@@ -306,7 +306,7 @@ uujap_1 = { #DONE
 	}
 }
 
-uujap_2 = {
+uujap_2 = {	#DONE
 	slot = 2
 	generic = no
 	ai = yes
@@ -367,9 +367,10 @@ uujap_2 = {
 			add_permanent_claim_multi_provinces = { target = korea_region }
 			add_permanent_claim_multi_provinces = { target = ningguta_area }
 			add_permanent_claim_multi_provinces = { target = jilin_area }
+			add_permanent_claim_multi_provinces = { target = central_jilin_area }
 		}
 	}
-	establish_footholding_in_manchuria = {
+	uujap_manchuria = {
 		icon = mission_manchu_warrior
 		required_missions = { uujap_attack_korea }
 		position = 5
@@ -398,9 +399,15 @@ uujap_2 = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
+					central_jilin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT						
+					}
 				}
 				AND = {
-					any_ally = { 
+					is_at_war = no
+					any_ally = {
+						is_at_war = no 
 						OR = {
 							primary_culture = manchu
 							primary_culture = manchu_new
@@ -417,6 +424,10 @@ uujap_2 = {
 							type = all
 							country_or_non_sovereign_subject_holds = PREV
 						}
+						central_jilin_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV						
+						}
 						NOT = { 
 							total_development = 300
 							total_development = ROOT  
@@ -428,15 +439,6 @@ uujap_2 = {
 		}
 		effect = {
 			custom_tooltip = uujap_manchurian_client_state_tt
-			custom_tooltip = " "
-			add_mil_power = 100
-			add_country_modifier = {
-				name = uujap_manchu_controller_mod
-				duration = 7300
-			}
-			add_permanent_claim_multi_provinces = { target = hebei_area }
-			add_permanent_claim_multi_provinces = { target = liaoning_area }
-			add_permanent_claim_multi_provinces = { target = liaodong_area }
 			if = {
 				limit = {
 					any_ally = { 
@@ -455,6 +457,10 @@ uujap_2 = {
 						furdan_area = {
 							type = all
 							country_or_non_sovereign_subject_holds = PREV
+						}
+						central_jilin_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV						
 						}
 						NOT = { 
 							total_development = 300
@@ -477,6 +483,10 @@ uujap_2 = {
 							type = all
 							country_or_non_sovereign_subject_holds = PREV
 						}
+						central_jilin_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = PREV						
+						}
 					}
 					ROOT = { create_march = PREV }
 					add_country_modifier = {
@@ -486,14 +496,23 @@ uujap_2 = {
 					country_event = {
 						id = uujap_events.4 #Subject becomes Manchu
 					}
-				} 
+				}
+				custom_tooltip = " "
+				add_mil_power = 100
+				add_country_modifier = {
+					name = uujap_manchu_controller_mod
+					duration = 7300
+				}
+				add_permanent_claim_multi_provinces = { target = hebei_area }
+				add_permanent_claim_multi_provinces = { target = liaoning_area }
+				add_permanent_claim_multi_provinces = { target = liaodong_area } 
 			}
 		}
 	}	
 	JAP_emperor_of_china = {
 		icon = mng_outer_city_beijing
 		required_missions = { 
-			establish_footholding_in_manchuria 
+			uujap_manchuria 
 			uujap_conquer_ryukyu
 		}
 		position = 6
@@ -562,9 +581,11 @@ uujap_2 = {
 					}
 				}
 			}
+			add_permanent_claim_multi_provinces = { target = south_jiangsu_area }
+			add_permanent_claim_multi_provinces = { target = guangzhou_area }
 		}
 	}
-	uujap_south_china = {	#TODO
+	uujap_south_china = {
 		icon = mng_expand_bogue
 		required_missions = {
 			JAP_emperor_of_china
@@ -603,7 +624,19 @@ uujap_2 = {
 			}
 		}
 		effect = {
-			#todo permaclaims on malacca cots, some modifier about loyalists in china? some sort of local organization maybe even
+			custom_tooltip = uujap_permaclaim_malacca_cot_tt
+			hidden_effect = {
+				every_province = {
+					limit = {
+						same_trade_node_as = 1361
+						province_has_center_of_trade_of_level = 1
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_permanent_claim_multi_provinces = { target = north_china_region }
+			add_permanent_claim_multi_provinces = { target = south_china_region }
+			custom_tooltip = uujap_porcelain_tower_buff_tt
 		}
 	}
 	uujap_malacca_strait = {
@@ -655,6 +688,7 @@ uujap_2 = {
 		}
 		effect = {
 			custom_tooltip = uujap_unlock_better_doctrine_tt
+			custom_tooltip = " "
 			add_country_modifier = {
 				name = uujap_tekkosen_modifier
 				duration = -1
@@ -788,7 +822,7 @@ uujap_3 = {	#DONE
 					}
 				}
 				custom_tooltip = uujap_prepare_sneakattack_ryukyu_tt
-				add_years_of_manpower = -1
+				add_yearly_manpower = -1
 				add_treasury = -400
 				add_adm_power = -30
 				add_dip_power = -30
@@ -1021,6 +1055,7 @@ uujap_3 = {	#DONE
 			add_mil_power = 50
 			custom_tooltip = uujap_samurai_from_weapons_dev_tt
 			set_country_flag = uujap_samurai_from_weapons_dev_flag
+			custom_tooltip = " "
 			custom_tooltip = uujap_inno_ap_at_from_mil_tech_tt
 			set_country_flag = uujap_inno_ap_at_from_mil_tech_flag
 		}
@@ -1106,7 +1141,9 @@ uujap_4 = {
 			if = {
 				limit = { ai = no }
 				num_of_samurai = 20
-			} else = { num_of_samurai = 10 }
+			} else = { 
+				num_of_samurai = 10 
+			}
 			has_completed_idea_group_of_category = { mil_ideas = yes } 
 			army_tradition = 70 
 			reform_level = 5
@@ -1114,6 +1151,14 @@ uujap_4 = {
 		effect = {
 			country_event = {
 				id = event #TODO Philosophy of the Samurai. Unlocks gov reforms. Expand samurai class or restrict?
+			}
+			custom_tooltip = uujap_eventopt_tt_a
+			tooltip = {
+
+			}
+			custom_tooltip = uujap_eventopt_tt_b
+			tooltip = {
+				
 			}
 			define_advisor = {
 				name = "Miyamoto Musashi" # The greatest samurai of all ages, author of the Book of the Five Rings
@@ -1149,8 +1194,7 @@ uujap_4 = {
 			}
 		}
 		effect = {
-			#TODO t3 gov reform?
-			#name change?
+			#TODO t3 gov reform, unlock clan granting system?
 			add_country_modifier = { 
 				name = jap_stability_edo_period_modifier
 				duration = -1 
@@ -1191,10 +1235,10 @@ uujap_4 = {
 		required_missions = { uujap_new_capital_mission }
 		position = 8
 		trigger = {
-			#todo, preparation fo some kind.
+			#todo, preparation fo some kind. reach x reform level
 		}
 		effect = {
-			#todo event, maybe gov mechanic thing. henceforth emperor and shogun are in opposition
+			#todo event, maybe gov mechanic thing. henceforth emperor and shogun are in opposition. t9?
 		}
 	}
 	uujap_secure_authority = {	#TODO
