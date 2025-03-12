@@ -6,8 +6,8 @@ shogunate_vs_monarchy_mechanic = {
 	powers = {
 		governmental_power = {
 			gui = parliament_vs_monarchy_gov_mech
-			max = 100	#Monarchy direction
-			min = -100	#Parliament direction
+			max = 100	#Emperor direction
+			min = -100	#Shogunate direction
 			base_monthly_growth = 0
 			scaled_modifier = {
 				trigger = {
@@ -18,7 +18,11 @@ shogunate_vs_monarchy_mechanic = {
 					}
 				}
 				modifier = {
-
+					#max absolutism
+					#reduced liberty desire from dev
+					#tolerance of truefaith
+					#reform progress
+					#annexation cost
 				}
 				start_value = 0
 				end_value = 100			
@@ -34,28 +38,18 @@ shogunate_vs_monarchy_mechanic = {
 					}
 				}
 				modifier = {
-
+					#max absolutism
+					#liberty desire on same continent
+					#vassal tax 
+					#nobles loyalty 
+					#AT decay
 				}
 				start_value = -100
 				end_value = 0
 			}
 			on_max_reached = {
-				custom_tooltip = uujap_civilwar_tt_a
-				hidden_effect = {
-					set_country_flag = eng_monarchy_in_absolute_power
-					country_event = {
-						id = flavor_gbr.113
-					}
-				}
 			}
 			on_min_reached = {
-				custom_tooltip = uujap_civilwar_tt_b
-				hidden_effect = {
-					set_country_flag = eng_parliament_in_absolute_power
-					country_event = {
-						id = flavor_gbr.113
-					}
-				}
 			}
 		}
 	}

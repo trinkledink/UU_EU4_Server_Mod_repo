@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Respawning leaders
  uu_respawn.1.t:0 "A New Leader for our Explorers"
   uu_respawn.1.desc:0 "With the untimely death of Diogo Gomes, the Portuguese [Root.Monarch.GetTitle] put out a call to recruitment for another capable sailor to lead the nation into the age of discovery. Though the loss of Gomes was a tragedy, we must not let that hold us back from our destiny over the seas."
   uu_respawn.1.a:0 "For Portugal!"
@@ -65,7 +66,7 @@
  uu_Maritime_Infra_policy_localization:0 "Coastal Development Cost"
  uu_Maritime_Pluto_policy_localization:0 "Coastal Goods Produced Modifier"
 
- #A ngevin
+ #Angevin
  UU_ave_mission_events.1.t:0 "Our new culture!"
  UU_ave_mission_events.1.d:0 "A new language has popped up in our lands now that France and England are united. It is a mixture of both languages and it appears to be incredibly popular as many are learning it day by day."
  UU_ave_mission_events.1.a:0 "Let us spread this glorious merging of cultures at once!"
@@ -85,3 +86,6 @@
   UU_balance_events.16.b:0 "Good, but don't show me this message again."
    uu_slacken_tt_2:0 "This event and its rewards will still fire, but will be §Yhidden for the rest of the campaign.§!"
   uu_slackening_cd:0 ""
+
+ #advisor event option
+ u_u_maybe_later:0 "Maybe later"

@@ -429,7 +429,7 @@ uujap_2 = {	#DONE
 							country_or_non_sovereign_subject_holds = PREV						
 						}
 						NOT = { 
-							total_development = 300
+							total_development = 250
 							total_development = ROOT  
 							army_size = ROOT
 						}
@@ -463,7 +463,7 @@ uujap_2 = {	#DONE
 							country_or_non_sovereign_subject_holds = PREV						
 						}
 						NOT = { 
-							total_development = 300
+							total_development = 250
 							total_development = ROOT 
 							army_size = ROOT
 						}
@@ -1008,6 +1008,7 @@ uujap_3 = {	#DONE
 			}
 		}
 		effect = {
+			add_treasury = 2000
 			change_price = {
 				trade_goods = cloves
 				key = uujap_clove_monopoly_mod
@@ -1235,7 +1236,9 @@ uujap_4 = {
 		required_missions = { uujap_new_capital_mission }
 		position = 8
 		trigger = {
-			#todo, preparation fo some kind. reach x reform level
+			reform_level = 6
+			absolutism = 50
+			#todo, preparation fo some kind. 
 		}
 		effect = {
 			#todo event, maybe gov mechanic thing. henceforth emperor and shogun are in opposition. t9?
@@ -1447,6 +1450,7 @@ uujap_5 = {	#DONE
 					}
 				}
 			}
+			custom_tooltip = " "
 			custom_tooltip = uujap_spawned_gold_mission_tt
 			tooltip = {
 				capital_scope = { 
@@ -1622,6 +1626,8 @@ uujap_5 = {	#DONE
 		}
 		position = 9
 		trigger = {
+			current_income_balance = 100
+			NOT = { subsidised_percent_amount = { value = 0.1 } }
 			num_of_owned_provinces_with = { 
 				trade_goods = grain 
 				has_manufactory_trigger = yes

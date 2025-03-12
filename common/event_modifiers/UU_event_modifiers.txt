@@ -187,9 +187,6 @@ colorado_estuary_modifier = {
 	province_trade_power_value = 10
 	picture = "estuary_icon"
 }
-# Recent Papal Creed
-recent_papal_creed = {
-}
 
 #papal election modifier
 UU_recent_papal_election = {
