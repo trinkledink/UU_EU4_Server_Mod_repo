@@ -30,7 +30,9 @@ country_decisions = {
                     is_emperor_of_china = yes 
                 }
                 add_mandate = -5
-                add_permanent_claim_province = { province = 1015 }
+                1015 = {
+					add_permanent_claim = PREV
+				}
                 add_casus_belli = {
                     target = ROOT
                     type = cb_insult

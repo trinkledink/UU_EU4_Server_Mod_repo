@@ -129,8 +129,11 @@ uujap_1 = { #DONE
 				name = uujap_colonist_mod
 				duration = 10950
 			}
+			discover_province = 1381
+			discover_province = 1382 
+			discover_province = 1383
 			kamchatka_area = {
-				discover = ROOT
+				discover_country = ROOT
 			}
 			add_permanent_claim_multi_provinces = { target = kamchatka_area }
 			add_permanent_claim_multi_provinces = { target = okhotsk_area }
@@ -1130,7 +1133,7 @@ uujap_4 = {
 			add_legitimacy = 50
 		}
 	}
-	uujap_samurai = { 	#TODO
+	uujap_samurai = {
 		icon = jap_train_samurai
 		required_missions = { 
 			uujap_capture_emperor
@@ -1147,19 +1150,27 @@ uujap_4 = {
 			}
 			has_completed_idea_group_of_category = { mil_ideas = yes } 
 			army_tradition = 70 
-			reform_level = 5
+			reform_level = 2
 		}
 		effect = {
 			country_event = {
-				id = event #TODO Philosophy of the Samurai. Unlocks gov reforms. Expand samurai class or restrict?
+				id = uujap_events.6 #TODO Philosophy of the Samurai. Unlocks gov reforms. Expand samurai class or restrict?
 			}
 			custom_tooltip = uujap_eventopt_tt_a
+			custom_tooltip = uujap_entrenched_samurai_class_tt
 			tooltip = {
-
+				add_country_modifier = { 
+					name = uujap_entrenched_samurai_class_mod
+					duration = -1
+				}
 			}
 			custom_tooltip = uujap_eventopt_tt_b
+			custom_tooltip = uujap_expanded_samurai_class_tt
 			tooltip = {
-				
+				add_country_modifier = { 
+					name = uujap_expanded_samurai_class_mod
+					duration = -1
+				}
 			}
 			define_advisor = {
 				name = "Miyamoto Musashi" # The greatest samurai of all ages, author of the Book of the Five Rings

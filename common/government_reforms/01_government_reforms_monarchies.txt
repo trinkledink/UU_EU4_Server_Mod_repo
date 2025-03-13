@@ -4822,6 +4822,23 @@ enforce_privileges_reform = {
 		maratha_exclusive_influence_modifier = 0.1
 		rajput_exclusive_influence_modifier = 0.1
 	}
+	effect = {
+		if = {
+			limit = { has_country_flag = uujap_entrenched_samurai_class_flag }
+			custom_tooltip = uujap_samurai_choice_tt
+			add_country_modifier = { 
+				name = uujap_entrenched_samurai_class_mod
+				duration = -1
+			}
+			remove_country_modifier = uujap_expanded_samurai_class_mod
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = { has_country_modifier = uujap_entrenched_samurai_class_mod }
+			remove_country_modifier = uujap_entrenched_samurai_class_mod
+		}
+	}
 	ai = {
 		factor = 1
 		modifier = {
@@ -4843,6 +4860,23 @@ quash_noble_power_reform = {
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 		#parliament_effect_duration = -2
+	}
+	effect = {
+		if = {
+			limit = { has_country_flag = uujap_expanded_samurai_class_flag }
+			custom_tooltip = uujap_samurai_choice_tt
+			add_country_modifier = { 
+				name = uujap_expanded_samurai_class_mod
+				duration = -1
+			}
+			remove_country_modifier = uujap_entrenched_samurai_class_mod
+		}
+	}
+	removed_effect = {
+		if = {
+			limit = { has_country_modifier = uujap_expanded_samurai_class_mod }
+			remove_country_modifier = uujap_expanded_samurai_class_mod
+		}
 	}
 	ai = {
 		factor = 1

@@ -878,6 +878,15 @@ uujap_three_mountains_mod = {
 	prestige_decay = -0.01
 	province_trade_power_value = 5
 }
+uujap_entrenched_samurai_class_mod = {
+	mil_advisor_cost = -0.15
+	prestige_decay = -0.01
+	nobles_loyalty_modifier = 0.05
+}
+uujap_expanded_samurai_class_mod = {
+	allowed_samurai_fraction = 0.1
+	burghers_loyalty_modifier = 0.05
+}
 uujap_edo_new_capital_mod = {
 	local_great_project_upgrade_cost = -0.25
 	local_development_cost = -0.3

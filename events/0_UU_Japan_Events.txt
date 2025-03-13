@@ -242,10 +242,24 @@ country_event = {   #The Samurai Caste - To Open or Close?
     
     option = {  #Keep it Closed
         name = uujap_events.6.a
-        #unlock reform
+        set_country_flag = uujap_entrenched_samurai_class_flag
+        custom_tooltip = uujap_entrenched_samurai_class_tt
+        tooltip = {
+            add_country_modifier = { 
+				name = uujap_entrenched_samurai_class_mod
+				duration = -1
+			}
+        }
     }
     option = {  #Open it 
         name = uujap_events.6.b
-        #unlock reform
+        set_country_flag = uujap_expanded_samurai_class_flag
+        custom_tooltip = uujap_expanded_samurai_class_tt
+        tooltip = {
+            add_country_modifier = { 
+				name = uujap_expanded_samurai_class_mod
+				duration = -1
+			}
+        }
     }
 }
