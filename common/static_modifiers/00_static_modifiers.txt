@@ -127,11 +127,13 @@ coastal = {
 	province_trade_power_modifier = 0.25
 }
 
-seat_in_parliament = {	#uu doubled
-	local_manpower_modifier = 0.2
-	local_sailors_modifier = 0.2
-	local_tax_modifier = 0.30
-	local_production_efficiency = 0.2
+seat_in_parliament = {	#uu trippled
+	local_manpower_modifier = 0.3
+	local_sailors_modifier = 0.3
+	local_tax_modifier = 0.50
+	local_production_efficiency = 0.3
+	local_governing_cost = -0.25 #extra courthouse
+	trade_goods_size_modifier = 0.1
 	max_absolutism = -1	#uu added
 }
 

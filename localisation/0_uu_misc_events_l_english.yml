@@ -63,6 +63,7 @@
  UU_balance_events.9.t:0 "Papal State Gets 0.5 Government Power"
  UU_balance_events.10.t:0 "Papal State Gets 1 Government Power"
  uu_land_reform_tt:0 "And for the next §Y10§! years:\n Every seat in parliament will get §G-10%§! Development Cost and §G-5%§! Construction Cost."
+ uu_military_engineering_tt:0 "§G15§! random Development will be distributed among provinces with a seat in parliament"
  uu_Maritime_Infra_policy_localization:0 "Coastal Development Cost"
  uu_Maritime_Pluto_policy_localization:0 "Coastal Goods Produced Modifier"
 

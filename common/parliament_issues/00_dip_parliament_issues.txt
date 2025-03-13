@@ -195,7 +195,7 @@ colonial_taxation = {
 	}
 	
 	modifier = {
-		global_tariffs = 0.1
+		global_tariffs = 0.15
 	}
 	
 	chance = {
@@ -853,6 +853,23 @@ UU_dip_money_issue = {
 			factor = 2
 			num_of_loans = 6	#UU lowered threashold
 		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+UU_dip_gov_power_issue = {
+
+	category = 2
+
+	allow = {
+		NOT = { has_country_flag = uu_just_passed_dip_issue }
+	}
+
+	modifier = {
+		yearly_government_power = 10
 	}
 
 	ai_will_do = {

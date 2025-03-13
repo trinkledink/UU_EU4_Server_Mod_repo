@@ -70,7 +70,7 @@ backing_war_effort = {
 	
 	modifier = {
 		war_exhaustion = -0.05
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.15
 	}
 	
 	chance = {
@@ -113,6 +113,11 @@ combat_janissary_decadence = {
 			clr_country_flag = uu_just_passed_dip_issue
 			clr_country_flag = uu_just_passed_adm_issue
 		}
+		add_government_power_scaled_to_seats = {	#uu seems an oversight not to...
+			mechanic_type = ottoman_decadence_mechanic
+			power_type = ottoman_decadence
+			value = -10
+		}
 	}
 	
 	modifier = {
@@ -153,7 +158,7 @@ drill_exercises = {
 	on_issue_taken = {
 		if = {
 			limit = { has_dlc = "Cradle of Civilization" }
-			add_army_professionalism = 0.05
+			add_army_professionalism = 0.07
 		}
 		else = { add_army_tradition = 10 }
 	}
@@ -252,10 +257,24 @@ extend_militarization_of_the_state = {
 
 	allow = {
 		NOT = { has_country_flag = uu_just_passed_mil_issue }
-		has_government_mechanic = militarization_mechanic
+		OR = {
+			has_government_mechanic = militarization_mechanic
+			has_government_mechanic = hessian_militarization_mechanic
+			has_government_mechanic = naval_professionalism_mechanic
+		}
 	}
 	
 	effect = {
+		add_government_power_scaled_to_seats = {	#uu added for DEI
+			mechanic_type = hessian_militarization_mechanic
+			power_type = hessian_militarization
+			value = 20
+		}
+		add_government_power_scaled_to_seats = {	#uu added for DEI
+			mechanic_type = naval_professionalism_mechanic
+			power_type = naval_professionalism
+			value = 20
+		}
 		add_government_power_scaled_to_seats = {
 			mechanic_type = militarization_mechanic
 			power_type = militarized_society
@@ -476,7 +495,7 @@ uu_generic_drill_exercises = {
 	on_issue_taken = {
 		if = {
 			limit = { has_dlc = "Cradle of Civilization" }
-			add_army_professionalism = 0.02
+			add_army_professionalism = 0.05
 		}
 		else = { add_army_tradition = 10 }
 	}
@@ -505,5 +524,140 @@ uu_generic_drill_exercises = {
 		}
 	}
 	
-	ai_will_do = { factor = 1 }
+	ai_will_do = { factor = 0.5 }
+}
+
+uu_military_engineering = {
+
+	category = 1
+
+	allow = {
+		NOT = { has_country_flag = uu_just_passed_mil_issue }
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.05
+		}
+		else = { add_army_tradition = 10 }
+	}
+
+	effect = {
+		custom_tooltip = uu_military_engineering_tt #fleeing_serfs_tt
+		hidden_effect = {
+			set_country_flag = uu_just_passed_mil_issue
+			clr_country_flag = uu_just_passed_dip_issue
+			clr_country_flag = uu_just_passed_adm_issue
+
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				add_random_development = 1
+			}
+		}
+	}
+	
+	modifier = {
+		defensiveness = 0.1
+	}
+
+	chance = { 
+		factor = 1 
+		modifier = {
+			factor = 2
+			army_tradition = 60
+		}
+		modifier = {
+			factor = 2
+			army_professionalism  = 0.5
+		}
+	}
+	
+	ai_will_do = { factor = 0.5 }
 }

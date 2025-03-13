@@ -141,6 +141,7 @@
  uu_generic_drill_exercises:0 "£mil£ Drill Exercises"
  quartering_of_troops:0 "£mil£ Quartering of Troops"
  extend_militarization_of_the_state:0 "£mil£ Extend Militarization of the State"
+ uu_military_engineering:0 "£mil£ Military Engineering"
  #dip group
  charter_colonies:0 "£dip£ Charter Colonies"
  establish_new_siberian_frontier:0 "£dip£ Extend Siberian Frontiers"
@@ -152,6 +153,7 @@
  charter_trade_companies:0 "£dip£ Charter Trade Company"
  colonial_taxation:0 "£dip£ Colonial Taxation"
  emergency_impressment_act:0 "£dip£ Emergency Impressment Act"
+ UU_dip_gov_power_issue:0 "£dip£ Consolidation of Executive Privileges"
  #adm group
  charter_university:0 "£adm£ Fund Expansion of Universities"
  development_of_infrastructure:0 "£adm£ Land Reform"
