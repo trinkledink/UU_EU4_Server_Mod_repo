@@ -4,11 +4,11 @@ shogunate_vs_monarchy_mechanic = {
 	}
 
 	powers = {
-		governmental_power = {
+		uu_shogun_power = {
 			gui = parliament_vs_monarchy_gov_mech
 			max = 100	#Emperor direction
 			min = -100	#Shogunate direction
-			base_monthly_growth = 0
+			base_monthly_growth = -0.5
 			scaled_modifier = {
 				trigger = {
 					has_government_power = { 
@@ -18,11 +18,12 @@ shogunate_vs_monarchy_mechanic = {
 					}
 				}
 				modifier = {
-					#max absolutism
-					#reduced liberty desire from dev
-					#tolerance of truefaith
-					#reform progress
-					#annexation cost
+					max_absolutism = 50
+					yearly_absolutism = 2
+					liberty_desire_from_subject_development = -0.33
+					tolerance_own = 2
+					reform_progress_growth = 0.3
+					diplomatic_annexation_cost = -0.2
 				}
 				start_value = 0
 				end_value = 100			
@@ -38,11 +39,12 @@ shogunate_vs_monarchy_mechanic = {
 					}
 				}
 				modifier = {
-					#max absolutism
-					#liberty desire on same continent
-					#vassal tax 
-					#nobles loyalty 
-					#AT decay
+					max_absolutism = 50
+					yearly_absolutism = 2
+					reduced_liberty_desire_on_same_continent = 33
+					vassal_income = 0.33
+					global_autonomy = -0.05
+					army_tradition_decay = -0.01
 				}
 				start_value = -100
 				end_value = 0

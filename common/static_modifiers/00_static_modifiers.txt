@@ -1025,6 +1025,7 @@ legitimacy = {
 	monthly_cultural_unity = 0.2
 	monthly_divine_authority = 0.3
 	imperial_authority_value = 0.1				#UU Change
+	monthly_uu_shogun_power = -2
 }
 
 #Multiplied by current Horde Unity - 50

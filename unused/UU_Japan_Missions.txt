@@ -273,7 +273,6 @@ uujap_1 = { #DONE
 			}
 		}
 	}
-
 	uujap_dejima = {
 		icon = mission_market_place_with_asian_traders
 		required_missions = {  }
@@ -1182,7 +1181,7 @@ uujap_4 = {
 			}
 		}
 	}
-	JAP_sankin_kotai = {	#TODO
+	JAP_sankin_kotai = {
 		icon = jap_strengthen_bakuhan_system
 		required_missions = { uujap_samurai }
 		position = 6
@@ -1197,7 +1196,7 @@ uujap_4 = {
 				1028 = {
 					has_great_project = {
 						type = sankin_kotai_palaces
-						tier = 2
+						tier = 1
 					}
 				}
 			}
@@ -1206,7 +1205,23 @@ uujap_4 = {
 			}
 		}
 		effect = {
-			#TODO t3 gov reform, unlock clan granting system?
+			add_stability = 1
+			if = {
+				limit = {
+					1028 = {
+						has_great_project = {
+							type = sankin_kotai_palaces
+							tier = 2
+						}
+					}
+				}
+				add_prestige_or_monarch_power = 50
+			} else = {
+				add_great_project_tier = {
+					type = sankin_kotai_palaces
+					tier = 1
+				}
+			}
 			add_country_modifier = { 
 				name = jap_stability_edo_period_modifier
 				duration = -1 
@@ -1242,17 +1257,26 @@ uujap_4 = {
 			}
 		}
 	}
-	uujap_fate_emperor = {	#TODO
+	uujap_fate_emperor = {
 		icon = jap_five_regent_houses
 		required_missions = { uujap_new_capital_mission }
 		position = 8
 		trigger = {
 			reform_level = 6
-			absolutism = 50
-			#todo, preparation fo some kind. 
+			absolutism = 80
+			custom_trigger_tooltip = {
+				tooltip = japan_has_encountered_the_west_tooltip
+				has_global_flag = japan_has_encountered_the_west
+			}
 		}
 		effect = {
-			#todo event, maybe gov mechanic thing. henceforth emperor and shogun are in opposition. t9?
+			custom_tooltip = uujap_begin_centralizing_tt
+			add_government_reform = uu_shogunate_vs_monarchy_reform
+			country_event = {
+				id = uujap_events.99
+			}
+			add_stability = -1
+			add_absolutism = -40
 		}
 	}
 	uujap_secure_authority = {	#TODO
@@ -1260,11 +1284,25 @@ uujap_4 = {
 		required_missions = { uujap_fate_emperor }
 		position = 9
 		trigger = {
-			absolutism = 99
+			absolutism = 80
+			OR = {
+				has_government_power = {
+					mechanic_type = shogunate_vs_monarchy_mechanic
+					power_type = uu_shogun_power
+					value = 95
+				}
+				NOT = {
+					has_government_power = {
+						mechanic_type = shogunate_vs_monarchy_mechanic
+						power_type = uu_shogun_power
+						value = -95
+					}
+				}
+			}
 			#todo related to previous mission
 		}
 		effect = {
-			#todo some permanent gov reform?
+			#TODO enact the t1 supreme shogunate or the t1 emperor reform. staying shogunate should be the expensive option, so it should be worth trying to keep the infinite vassal swarm.
 		}
 	}
 	jap_miyadaiku_method = {

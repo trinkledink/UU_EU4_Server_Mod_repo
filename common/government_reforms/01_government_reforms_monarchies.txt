@@ -6714,6 +6714,36 @@ parliament_vs_monarchy_reform = {
 	}
 }
 
+uu_shogunate_vs_monarchy_reform = {
+	icon = "shogunate"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = uu_shogunate_vs_monarchy_reform
+	}
+	
+	trigger = {
+		has_reform = uu_shogunate_vs_monarchy_reform
+	}
+
+	modifiers = {
+		max_absolutism = -40
+		stability_cost_modifier = 0.3
+		global_unrest = 2
+		autonomy_change_time = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			shogunate_vs_monarchy_mechanic
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
 #Legitimation of Power
 machiavellianistic_rule_reform = {
 	icon = "machiavellianism"
@@ -7163,7 +7193,7 @@ absolute_shogunate_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
-		OR = {
+		OR = {	#TODO
 			AND = {
 				is_playing_custom_nation = yes
 				has_reform = absolute_shogunate_reform
@@ -7179,10 +7209,12 @@ absolute_shogunate_reform = {
 	}
 	fixed_rank = 3
 	maintain_dynasty = yes
-	modifiers = {
+	modifiers = {	#UU
+		max_absolutism = 15 
 		can_transfer_vassal_wargoal = yes
-		administrative_efficiency = 0.05
-		monarch_military_power = 1
+		reduced_liberty_desire_on_same_continent = 33
+		vassal_income = 0.33
+		army_tradition_decay = -0.01
 		allowed_samurai_fraction = 0.1
 	}
 }
@@ -7192,7 +7224,7 @@ japanese_divine_empire = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
-		OR = { 
+		OR = { 	#TODO
 			AND = {
 				is_playing_custom_nation = yes
 				has_reform = japanese_divine_empire
@@ -7203,29 +7235,6 @@ japanese_divine_empire = {
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}
-	#trigger = {
-	#	if = { 
-	#		limit = { has_estate = estate_nobles }
-	#		num_of_estate_privileges = {
-	#			estate = estate_nobles 
-	#			value = 6 
-	#		}
-	#	}
-	#	if = { 
-	#		limit = { has_estate = estate_burghers }
-	#		num_of_estate_privileges = {
-	#			estate = estate_burghers 
-	#			value = 6 
-	#		}
-	#	}
-	#	if = { 
-	#		limit = { has_estate = estate_church }
-	#		num_of_estate_privileges = {
-	#			estate = estate_church 
-	#			value = 6 
-	#		}
-	#	}
-	#}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	nation_designer_trigger = {
@@ -7233,12 +7242,13 @@ japanese_divine_empire = {
 	}
 	fixed_rank = 3
 	maintain_dynasty = yes
-	modifiers = {
-		all_estate_possible_privileges = 1
-		no_stability_loss_on_monarch_death = yes 
-		all_estate_loyalty_equilibrium = 0.1
+	modifiers = {	#UU
+		max_absolutism = 15
+		administrative_efficiency = 0.05
+		liberty_desire_from_subject_development = -0.33
+		reform_progress_growth = 0.3
+		diplomatic_annexation_cost = -0.2
 		tolerance_own = 3 
-		allowed_samurai_fraction = 0.1
 	}
 }
 

@@ -939,3 +939,18 @@ uujap_religious_harmony_mod = {
 uujap_all_incidents_mod = {
 	tolerance_own = 2
 }
+uujap_support_shogun_pmod = {
+	local_unrest = -1
+	monthly_uu_shogun_power = -0.25
+}
+uujap_support_emperor_pmod = {
+	local_unrest = 1
+	monthly_uu_shogun_power = 0.25
+}
+uujap_govt_disarray = {
+	all_power_cost = 0.05
+}
+uujap_jingoist_politician = {
+	land_morale = 0.05
+	global_regiment_recruit_speed = -0.20
+}

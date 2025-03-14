@@ -360,6 +360,7 @@ monarchy = {
 				catalan_cortes_reform
 				great_council_of_mechelen_reform
 				parliament_vs_monarchy_reform
+				uu_shogunate_vs_monarchy_reform #uu
 				restoration_of_the_senate_reform
 			}
 		}

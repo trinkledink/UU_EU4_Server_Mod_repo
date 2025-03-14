@@ -16,3 +16,13 @@ opinion_timurid_rival_claimant = {
 uu_sent_attache_opinion_mod = {	#cursed
 	opinion = 15
 }
+
+uu_broke_treaty = {
+	opinion = -30
+	yearly_decay = 3
+}
+
+uu_insulted_2 = {
+	opinion = -30
+	yearly_decay = 3
+}

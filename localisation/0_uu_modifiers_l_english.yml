@@ -150,6 +150,10 @@
  uujap_dejima_port_entry_modifier:0 "Dejima Island Port"
  uujap_confucianism_harmony_mod:0 "Religious Harmony"
  uujap_religious_harmony_mod:0 "Religious Harmony"
+ uujap_support_shogun_pmod:0 "Supporting the Shogun"
+ uujap_support_emperor_pmod:0 "Opposing the Shogun"
+ uujap_govt_disarray:0 "Bakufu in Disarray"
+ uujap_jingoist_politician:0 "Jingoist Politician"
 
  ###############################################################
  # New Estuaries
