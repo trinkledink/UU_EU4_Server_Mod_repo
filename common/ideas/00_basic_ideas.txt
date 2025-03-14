@@ -311,6 +311,7 @@ innovativeness_ideas = { #Innovative Ideas
 
 	bonus = {
 		monthly_splendor = 2
+		max_possible_parliament_seats = 10
 	}
 	
 	empiricism = {
