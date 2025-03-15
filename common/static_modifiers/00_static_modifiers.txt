@@ -1549,6 +1549,7 @@ daimyo_subject = {
 }
 
 appanage_subject = {
+	stability_cost_to_declare_war = 3	#UU TRUST ME ON THIS ONE
 }
 
 appanage_overlord = {

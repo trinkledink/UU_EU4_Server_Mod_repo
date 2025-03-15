@@ -366,7 +366,18 @@ is_valid_for_subject_vassal_ideas = {
 	NOT = { has_idea_group = subject_march_ideas }
 }
 is_valid_for_subject_march_ideas = {
-    is_march = yes
+    OR = {
+        is_march = yes
+        AND = {
+            is_subject_of_type = daimyo_vassal
+            overlord = { 
+                has_great_project = {
+                    type = sankin_kotai_palaces
+                    tier = 3
+                } 
+            }
+        }
+    }
     ai = yes
     overlord = { full_idea_group = influence_ideas }
 	NOT = { has_idea_group = subject_vassal_ideas }

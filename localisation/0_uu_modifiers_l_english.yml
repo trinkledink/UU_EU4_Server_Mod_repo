@@ -154,6 +154,8 @@
  uujap_support_emperor_pmod:0 "Opposing the Shogun"
  uujap_govt_disarray:0 "Bakufu in Disarray"
  uujap_jingoist_politician:0 "Jingoist Politician"
+ uujap_legacy_sengoku:0 "Legacy of the Sengoku Jidai"
+  uujap_legacy_sengoku_desc:0 "We may no longer be mere daimyo, but we sure can still fight like one."
 
  ###############################################################
  # New Estuaries

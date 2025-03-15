@@ -52,6 +52,7 @@ parliamentary_reform = {
 				tag = BYZ
 				was_tag = BYZ 
 			}
+			has_reform = japanese_divine_empire	#UU they have a unique one
 		}
 	}
 	

@@ -954,3 +954,7 @@ uujap_jingoist_politician = {
 	land_morale = 0.05
 	global_regiment_recruit_speed = -0.20
 }
+uujap_legacy_sengoku = {
+	land_morale = 0.1
+	infantry_power = 0.1
+}

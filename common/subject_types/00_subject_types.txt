@@ -418,6 +418,17 @@ daimyo_vassal = {
 	modifier_subject = {
 		modifier = subject_nation
 	}
+	modifier_subject = {
+		modifier = appanage_subject	#UU TRUST ME ON THIS ONE
+		trigger = {
+			overlord = {
+				has_great_project = {
+					type = sankin_kotai_palaces
+					tier = 2
+				}
+			}
+		}
+	}
 	modifier_overlord = {
 		modifier = daimyo_subject
 	}

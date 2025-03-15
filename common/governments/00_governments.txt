@@ -361,6 +361,8 @@ monarchy = {
 				great_council_of_mechelen_reform
 				parliament_vs_monarchy_reform
 				uu_shogunate_vs_monarchy_reform #uu
+				strengthen_bakuhan_system_reform #uu moved, changed 
+				uu_meiji_constitution_reform #uu
 				restoration_of_the_senate_reform
 			}
 		}
@@ -439,7 +441,6 @@ monarchy = {
 				revolutionary_council_reform
 				#1.35 Addition
 				mng_seal_of_the_emperor_reform
-				strengthen_bakuhan_system_reform
 			}
 		}
 		separation_of_power = {

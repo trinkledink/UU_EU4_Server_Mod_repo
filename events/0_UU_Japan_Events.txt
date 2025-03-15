@@ -317,7 +317,7 @@ country_event = { #Famine in Osaka, Oshio Heihachiro's Revolt
     option = {  
         name = uujap_events.100.a   #Crucify his supporters to show force.
         add_mil_power = 25
-        kansai_area = {
+        kinai_area = {
             type = all 
             add_unrest = 5
         }
@@ -553,8 +553,13 @@ country_event = { #Emperor Komei dies, Satsuma and Choshu influence the young em
 
     is_triggered_only = yes 
     
+    immediate = {
+        set_country_flag = uujap_bakumatsu_chain_over_flag
+    }
+    
     option = {  #Harmless
         name = uujap_events.103.a
+        custom_tooltip = uujap_bakumatsu_chain_over_tt_2
         add_stability = 1
         add_government_power = {
             mechanic_type = shogunate_vs_monarchy_mechanic
@@ -564,6 +569,7 @@ country_event = { #Emperor Komei dies, Satsuma and Choshu influence the young em
     }
     option = {  #Spend resources to stop them
         name = uujap_events.103.b
+        custom_tooltip = uujap_bakumatsu_chain_over_tt_2
         add_adm_power = -25
         add_dip_power = -25
         add_mil_power = -25

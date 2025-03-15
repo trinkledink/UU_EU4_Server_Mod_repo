@@ -310,9 +310,7 @@ shogunate = {
 		envoy_travel_time = -0.25
 		max_absolutism = 5
 		amount_of_samurai = 10
-		has_samurai = yes
-		land_morale = 0.1		#UU 
-		infantry_power = 0.1	#UU		
+		has_samurai = yes	
 	}
 
 	custom_attributes = {
@@ -6744,6 +6742,36 @@ uu_shogunate_vs_monarchy_reform = {
 	}
 }
 
+uu_meiji_constitution_reform = {
+	icon = "laesio_enormis_reform"
+	potential = {
+		has_reform = japanese_divine_empire
+	}
+	trigger = {
+		has_reform = japanese_divine_empire
+	}
+	modifiers = {
+		global_unrest = -2
+		reform_progress_growth = 0.1
+		technology_cost = -0.1
+		global_institution_spread = 0.25
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			disables_estate_nobles = yes
+			blocked_call_diet = yes
+		}
+	}
+}
+
 #Legitimation of Power
 machiavellianistic_rule_reform = {
 	icon = "machiavellianism"
@@ -7215,7 +7243,7 @@ absolute_shogunate_reform = {
 		reduced_liberty_desire_on_same_continent = 33
 		vassal_income = 0.33
 		army_tradition_decay = -0.01
-		allowed_samurai_fraction = 0.1
+		allowed_samurai_fraction = 0.3
 	}
 }
 
@@ -7303,16 +7331,10 @@ strengthen_bakuhan_system_reform = {
 	icon = "strengthen_bakuhan_system_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
-			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
+		has_reform = absolute_shogunate_reform	#UU
 	}
 	trigger = {
-		OR = {
-			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
+		has_reform = absolute_shogunate_reform	#UU
 	}
 	modifiers = {
 		max_absolutism_effect = 0.2

@@ -8684,6 +8684,10 @@ sankin_kotai_palaces = {		#UU changed
 	build_trigger = {
 		culture_group = japanese_g
 		province_is_or_accepts_culture = yes
+		OR = {	#UU
+			has_reform = shogunate
+			has_reform = absolute_shogunate_reform
+		}
 	}
 
 	#what to do when it's built
@@ -8700,12 +8704,20 @@ sankin_kotai_palaces = {		#UU changed
 	can_use_modifiers_trigger = {
 		culture_group = japanese_g
 		province_is_or_accepts_culture = yes
+		OR = {	#UU
+			has_reform = shogunate
+			has_reform = absolute_shogunate_reform
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		culture_group = japanese_g
 		province_is_or_accepts_culture = yes
+		OR = {	#UU
+			has_reform = shogunate
+			has_reform = absolute_shogunate_reform
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -8801,6 +8813,7 @@ sankin_kotai_palaces = {		#UU changed
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			custom_tooltip = uujap_block_daimyo_war_tt
 		}
 	}
 
@@ -8834,6 +8847,7 @@ sankin_kotai_palaces = {		#UU changed
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
+			custom_tooltip = uujap_allow_daimyo_march_ideas_tt
 		}
 	}
 }
