@@ -10,3 +10,9 @@ uu_eth_ada_cb = {
 	
 	war_goal = UU_ETH_ADA_war
 }
+
+cb_uujap_boshin = {
+	is_triggered_only = yes
+
+	war_goal = UU_JAP_civilwar
+}

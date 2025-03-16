@@ -311,6 +311,12 @@
  SLACKEN_BELOW_MIN_AP:0 "You need at least §Y10§! Army Professionalism to slacken recruiting standards!"
  SLACK_TEXT_NODROP:0 "Lose §Y0§! Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will fire in 12 months, granting us §G2§! years of manpower for §R10§! Army Professionalism.\n\nThis event will recur every 12 months thereafter until invalid."
 
+ #JAPAN
+ jap_gokaido_reform:0 "Expand the Gokaido System"
+ jap_gokaido_reform_desc:0 "The Five Routes have been constructed in Japan, with post stations set up along the route where travelers can rest and buy supplies. We should extend this road network to all of Japan."
+ mechanic_benefits_for_japan_yes:1 "\nThe '§YGokaido Network Extension§!' modifier will be applied to all other owned provinces in the §YJapanese Region,§! giving:\nLocal Goods Produced: §G+20%§!\nLocal Province Trade Power Modifier: §G+20%§!\nLocal Development Cost: §G-5%§!"
+ japanese_divine_empire:0 "Japanese Empire"
+ 
  #missions 
  TIM_timurid_empire_title:0 "§MTimurid Empire§!"
  #decisions

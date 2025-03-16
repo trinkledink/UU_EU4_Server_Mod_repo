@@ -266,7 +266,7 @@ country_event = {   #The Samurai Caste - To Open or Close?
 
 ##Shogunate vs. Emperor 
 
-country_event = {
+country_event = {   #Bakumatsu Event Chain Start
     id = uujap_events.99
     title = uujap_events.99.t 
     desc = uujap_events.99.desc 
@@ -587,7 +587,7 @@ country_event = {   #Looping event
     id = uujap_events.110
     title = uujap_events.110.t 
     desc = uujap_events.110.desc 
-    picture = CHINESE_GENERAL_eventPicture
+    picture = URBANISATION_INCIDENT_eventPicture
     goto = uujap_support_target
 
     trigger = {
@@ -640,5 +640,135 @@ country_event = {   #Looping event
                 duration = -1
             }
         }           
+    }
+}
+
+country_event = {   #Shogunate Triumphant
+    id = uujap_events.120
+    title = uujap_events.120.t 
+    desc = uujap_events.120.desc 
+    picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+
+    option = {
+        name = uujap_events.120.a
+        add_stability = 1 
+        remove_government_reform = uu_shogunate_vs_monarchy_reform
+        add_government_reform = absolute_shogunate_reform
+        custom_tooltip = uujap_friend_daimyo_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    has_reform = daimyo 
+                }
+                add_liberty_desire = -50
+            }
+        }
+    }  
+}
+
+country_event = {   #Honorable Restoration
+    id = uujap_events.121
+    title = uujap_events.121.t 
+    desc = uujap_events.121.desc 
+    picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+
+    immediate = {
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    has_reform = daimyo
+                }
+                country_event = {
+                    id = uujap_events.122
+                }
+            }
+        }
+    }
+    option = {
+        name = uujap_events.121.a
+        add_stability = 1
+        custom_tooltip = uujap_war_on_daimyo_tt
+        remove_government_reform = uu_shogunate_vs_monarchy_reform
+        add_government_reform = japanese_divine_empire 
+        #change_tag = JAP
+    }     
+}
+
+country_event = {   #Boshin War
+    id = uujap_events.122
+    title = uujap_events.122.t 
+    desc = uujap_events.122.desc 
+    picture = SENGOKU_eventPicture
+
+    option = {  #get annexed
+        name = uujap_events.122.a
+        FROM = {
+            inherit = ROOT
+            add_dip_power = -100
+        }
+    }
+    option = {  #no
+        name = uujap_events.122.b
+        every_owned_province = {
+            add_permanent_claim = FROM
+        }
+        add_casus_belli = {
+            target = FROM
+            type = cb_uujap_boshin
+            months = 1
+        }
+        declare_war_with_cb = {
+            who = FROM
+            casus_belli = cb_uujap_boshin
+        }
+    }    
+
+    after = {
+        hidden_effect = {
+            remove_casus_belli = {
+                target = FROM
+                type = cb_uujap_boshin
+            }
+        }
+    }      
+}
+
+country_event = {   #Founding of Tokyo
+    id = uujap_events.123
+    title = uujap_events.123.t 
+    desc = uujap_events.123.desc 
+    picture = URBANISATION_INCIDENT_eventPicture
+
+    trigger = {
+        tag = JAP
+        is_at_war = no 
+        has_reform = japanese_divine_empire
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    fire_only_once = yes
+
+    option = {  #Tokyo - Western Capital
+        name = uujap_events.123.a
+        1028 = {
+            move_capital_effect = yes
+            destroy_great_project = {
+                type = sankin_kotai_palaces
+            }
+            change_province_name = Tokyo  
+            rename_capital = Tokyo  
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+    }
+    option = {  #Kyoto is fine
+        name = uujap_events.123.b
+        1020 = { 
+            add_base_tax = 1
+        }
     }
 }

@@ -907,10 +907,16 @@ uujap_premier_gold_mine_mod = {
 }
 uujap_gokaido_mod = {
 	local_friendly_movement_speed = 0.2
-	local_autonomy = -0.2
-	local_tax_modifier = 0.15
-	local_production_efficiency = 0.15
+	local_tax_modifier = 0.2
+	trade_goods_size_modifier = 0.2
+	province_trade_power_modifier = 0.2
+	local_development_cost = -0.05
 	local_governing_cost = -0.15
+}
+uujap_gokaido_mod_2 = {
+	trade_goods_size_modifier = 0.2
+	province_trade_power_modifier = 0.2
+	local_development_cost = -0.05	
 }
 uujap_ricebroker_inflation_mod = {
 	interest = -1.5

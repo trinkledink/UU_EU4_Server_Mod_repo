@@ -6745,7 +6745,8 @@ uu_shogunate_vs_monarchy_reform = {
 uu_meiji_constitution_reform = {
 	icon = "laesio_enormis_reform"
 	potential = {
-		has_reform = japanese_divine_empire
+		culture_group = japanese_g
+		NOT = { has_reform = absolute_shogunate_reform }
 	}
 	trigger = {
 		has_reform = japanese_divine_empire
@@ -6766,7 +6767,7 @@ uu_meiji_constitution_reform = {
 		}
 		has_parliament = yes
 		custom_attributes = {
-			disables_estate_nobles = yes
+			#disables_estate_nobles = yes	#Nobles still existed, same as British system
 			blocked_call_diet = yes
 		}
 	}
@@ -7327,11 +7328,12 @@ land_christian_sun_reform = {
 	}
 }
 
-strengthen_bakuhan_system_reform = {
+strengthen_bakuhan_system_reform = {	#UU rework
 	icon = "strengthen_bakuhan_system_reform"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = absolute_shogunate_reform	#UU
+		culture_group = japanese_g	#UU
+		NOT = { has_reform = japanese_divine_empire }
 	}
 	trigger = {
 		has_reform = absolute_shogunate_reform	#UU

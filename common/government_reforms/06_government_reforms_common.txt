@@ -4081,30 +4081,28 @@ laesio_enormis_reform = {
 	}
 }
 
-jap_gokaido_reform = {
+jap_gokaido_reform = {	#UU rework
 	icon = "jap_gokaido_reform"
 	allow_normal_conversion = no
 	potential = {
 		culture_group = japanese_g
 	}
 	trigger = {
-		OR = {
-			have_had_reform = jap_gokaido_reform
-			has_reform = jap_gokaido_reform
-			mission_completed = jap_expand_gokaido
-		}
+		mission_completed = uujap_gokaido
 	}
 	modifiers = {
 		merchants = 1 
+		state_maintenance_modifier = 0.33
 	}
 	effect = {
 		every_owned_province = {
 			limit = { 
 				region = japan_region 
 				NOT = { has_province_modifier = jap_gokaido_modifier }
+				NOT = { has_province_modifier = uujap_gokaido_mod }
 			}
 			add_province_modifier = {
-				name = jap_gokaido_modifier
+				name = uujap_gokaido_mod_2
 				duration = -1 
 				hidden = yes
 			}
@@ -4114,9 +4112,9 @@ jap_gokaido_reform = {
 		every_owned_province = {
 			limit = { 
 				region = japan_region 
-				has_province_modifier = jap_gokaido_modifier
+				has_province_modifier = uujap_gokaido_mod_2
 			}	
-			remove_province_modifier = jap_gokaido_modifier
+			remove_province_modifier = uujap_gokaido_mod_2
 		}
 	}
 	custom_attributes = { benefits_for_japan = yes } 
