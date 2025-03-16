@@ -849,7 +849,7 @@ uujap_rising_sun_colony_mod = {
 	liberty_desire = -10
 }
 uujap_manchu_controller_mod = {
-	leader_shock = 1
+	leader_land_shock = 1
 	siege_ability = 0.15
 }
 uujap_manchu_march_mod = {

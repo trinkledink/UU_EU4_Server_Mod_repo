@@ -7222,13 +7222,13 @@ absolute_shogunate_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
-		OR = {	#TODO
+		OR = {
 			AND = {
 				is_playing_custom_nation = yes
 				has_reform = absolute_shogunate_reform
 			}
 			have_had_reform = absolute_shogunate_reform
-			mission_completed = jap_restoration
+			mission_completed = uujap_secure_authority
 		}
 	}
 	valid_for_nation_designer = yes
@@ -7253,14 +7253,14 @@ japanese_divine_empire = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
-		OR = { 	#TODO
+		OR = {
 			AND = {
 				is_playing_custom_nation = yes
 				has_reform = japanese_divine_empire
 			}
 			has_country_flag = JPE_gov_flag
 			have_had_reform = japanese_divine_empire
-			mission_completed = jap_restoration
+			mission_completed = uujap_secure_authority
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}

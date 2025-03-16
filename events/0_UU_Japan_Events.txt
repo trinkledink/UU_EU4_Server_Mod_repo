@@ -694,6 +694,15 @@ country_event = {   #Honorable Restoration
         add_government_reform = japanese_divine_empire 
         change_tag = JAP
         restore_country_name = yes
+        define_ruler = {
+			dynasty = "Yamato"
+			change_adm = 3
+			change_dip = 3
+			change_mil = 3
+			change_original_dynasty = yes
+            age = 16
+		}
+        add_ruler_personality = reformist_personality
         if = {
             limit = { has_custom_ideas = no }
             country_event = { id = ideagroups.1 } #Swap Ideas

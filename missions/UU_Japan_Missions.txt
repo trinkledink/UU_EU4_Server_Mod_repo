@@ -1347,8 +1347,8 @@ uujap_4 = { #DONE
 				country_event = {
 					id = uujap_events.120
 				} 
+				add_government_reform = absolute_shogunate_reform
 			}
-			tooltip = { add_government_reform = absolute_shogunate_reform }
 			custom_tooltip = uujap_unlock_shogunate_t6_tt
 		
 			custom_tooltip = " "
@@ -1356,11 +1356,15 @@ uujap_4 = { #DONE
 			#If Emperor wins:
 			custom_tooltip = uujap_if_emperor_wins_tt
 			tooltip = { 
+				change_tag = JAP
 				country_event = {
 					id = uujap_events.121
+				}
+				define_ruler = {
+					dynasty = "Yamato"
 				} 
+				add_government_reform = japanese_divine_empire
 			}
-			tooltip = { add_government_reform = japanese_divine_empire }
 			custom_tooltip = uujap_unlock_emperor_t6_tt
 			
 			hidden_effect = {
