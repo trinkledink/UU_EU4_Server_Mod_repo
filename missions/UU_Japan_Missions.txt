@@ -35,7 +35,7 @@ uujap_1 = { #DONE
 			factor = 10 # AI will go (up to) this many percent above army budget in order to reach the army size needed
 		}
 	}
-	JAP_pacify_the_north = {	
+	uujap_pacify_the_north = {	
 		icon = mng_end_sengoku_jidai
 		required_missions = { uujap_build_army_mission }
 		position = 3
@@ -107,9 +107,9 @@ uujap_1 = { #DONE
 			add_permanent_claim_multi_provinces = { target = sakhalin_area }
 		}
 	}
-	JAP_take_the_thousand_islands = {
+	uujap_take_the_thousand_islands = {
 		icon = mission_japanese_samurai
-		required_missions = { JAP_pacify_the_north }
+		required_missions = { uujap_pacify_the_north }
 		position = 5
 		provinces_to_highlight = {
 			OR = {
@@ -139,9 +139,9 @@ uujap_1 = { #DONE
 			add_permanent_claim_multi_provinces = { target = okhotsk_area }
 		}
 	}
-	JAP_siberian_intervention = {
+	uujap_siberian_intervention = {
 		icon = mission_steppe_warriors
-		required_missions = { uujap_manchuria JAP_take_the_thousand_islands }
+		required_missions = { uujap_manchuria uujap_take_the_thousand_islands }
 		position = 6
 		
 		provinces_to_highlight = {
@@ -168,7 +168,7 @@ uujap_1 = { #DONE
 				name = uujap_colonist_mod_2
 				duration = 10950
 			}
-			custom_tooltip = JAP_siberian_intervention_tt
+			custom_tooltip = uujap_siberian_intervention_tt
 			hidden_effect = {
 				east_siberia_region = {
 					limit = {
@@ -184,7 +184,7 @@ uujap_1 = { #DONE
 	}
 	uujap_alaska = {
 		icon = mission_colonize_alaska
-		required_missions = { JAP_siberian_intervention }
+		required_missions = { uujap_siberian_intervention }
 		position = 7
 
 		provinces_to_highlight = {
@@ -324,7 +324,7 @@ uujap_2 = {	#DONE
 	}
 	has_country_shield = yes
 
-	the_divine_wind = {
+	uujap_the_divine_wind = {
 		icon = mission_junk_boat
 		required_missions = {}
 		position = 2
@@ -342,7 +342,7 @@ uujap_2 = {	#DONE
 	}	
 	uujap_attack_korea = {
 		icon = mission_asian_cannon
-		required_missions = { the_divine_wind JAP_establish_political_supremacy }
+		required_missions = { uujap_the_divine_wind uujap_establish_political_supremacy }
 		position = 4
 		
 		provinces_to_highlight = {
@@ -511,7 +511,7 @@ uujap_2 = {	#DONE
 			}
 		}
 	}	
-	JAP_emperor_of_china = {
+	uujap_emperor_of_china = {
 		icon = mng_outer_city_beijing
 		required_missions = { 
 			uujap_manchuria 
@@ -590,8 +590,8 @@ uujap_2 = {	#DONE
 	uujap_south_china = {
 		icon = mng_expand_bogue
 		required_missions = {
-			JAP_emperor_of_china
-			jap_colonize_taiwan
+			uujap_emperor_of_china
+			uujap_colonize_taiwan
 		}
 		position = 8
 		trigger = {
@@ -741,11 +741,11 @@ uujap_3 = {	#DONE
 			}
 		}
 	}	
-	JAP_establish_political_supremacy = {
+	uujap_establish_political_supremacy = {
 		icon = mission_unite_home_region
 		required_missions = { 
 			uujap_expand_the_domain
-			the_divine_wind
+			uujap_the_divine_wind
 			uujap_capture_emperor
 		}
 		position = 3
@@ -804,7 +804,7 @@ uujap_3 = {	#DONE
 	}
 	uujap_conquer_ryukyu = {
 		icon = mission_invade_island
-		required_missions = { JAP_establish_political_supremacy }
+		required_missions = { uujap_establish_political_supremacy }
 		position = 5
 		provinces_to_highlight = {
 			province_id = 1015
@@ -875,7 +875,7 @@ uujap_3 = {	#DONE
 			add_permanent_claim_multi_provinces = { target = taiwan_area }
 		}
 	}
-	jap_colonize_taiwan = {
+	uujap_colonize_taiwan = {
 		icon = mission_caribbean_cn
 		required_missions = { uujap_conquer_ryukyu }
 		position = 7
@@ -943,7 +943,7 @@ uujap_3 = {	#DONE
 	uujap_philippines = {
 		icon = mission_las_islas_filipinas
 		required_missions = {
-			jap_colonize_taiwan
+			uujap_colonize_taiwan
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -1157,7 +1157,7 @@ uujap_4 = {
 		icon = jap_train_samurai
 		required_missions = { 
 			uujap_capture_emperor
-			JAP_establish_political_supremacy
+			uujap_establish_political_supremacy
 		}
 		position = 4
 
@@ -1204,7 +1204,7 @@ uujap_4 = {
 			}
 		}
 	}
-	JAP_sankin_kotai = {
+	uujap_sankin_kotai = {
 		icon = jap_strengthen_bakuhan_system
 		required_missions = { uujap_samurai }
 		position = 6
@@ -1238,7 +1238,7 @@ uujap_4 = {
 						}
 					}
 				}
-				add_prestige_or_monarch_power = 50
+				add_prestige_or_monarch_power = { amount = 50 }
 			} else = {
 				add_great_project_tier = {
 					type = sankin_kotai_palaces
@@ -1255,7 +1255,7 @@ uujap_4 = {
 	}
 	uujap_new_capital_mission = {
 		icon = jap_financial_cliques
-		required_missions = { JAP_sankin_kotai }
+		required_missions = { uujap_sankin_kotai }
 		position = 7
 		provinces_to_highlight = {
 			province_id = 1028 
@@ -1456,13 +1456,13 @@ uujap_5 = {	#DONE
 	}
 	has_country_shield = yes
 
-	JAP_balance_the_four_divisions = {
+	uujap_balance_the_four_divisions = {
 		icon = jap_balance_shinokosho
 		required_missions = {}
 		position = 1
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = JAP_balance_the_four_divisions_tt
+				tooltip = uujap_balance_the_four_divisions_tt
 				OR = {
 					AND = {
 						if = {
@@ -1539,7 +1539,7 @@ uujap_5 = {	#DONE
 	}
 	uujap_issue_new_coin = {
 		icon = mission_african_gold
-		required_missions = { JAP_balance_the_four_divisions }
+		required_missions = { uujap_balance_the_four_divisions }
 		position = 3
 		trigger = {
 			years_of_income = 2 
@@ -1681,7 +1681,7 @@ uujap_5 = {	#DONE
 	}
 	uujap_gokaido = {	#Five roads
 		icon = mission_the_caucasus_rus
-		required_missions = { uujap_permit_money_changers JAP_sankin_kotai }
+		required_missions = { uujap_permit_money_changers uujap_sankin_kotai }
 		position = 7
 		provinces_to_highlight = {
 			AND = { 	

@@ -243,6 +243,23 @@ uu_grant_daimyo_to_clan_effect = {
 	}
 }
 
+uujap_shogunate_name_effect = {
+	if = { limit = { tag = ASK } override_country_name = ASK_2 }
+	else_if = { limit = { tag = UES } override_country_name = UES_2 }
+	else_if = { limit = { tag = TKI } override_country_name = TKI_2 }
+	else_if = { limit = { tag = SMZ } override_country_name = SMZ_2 }
+	else_if = { limit = { tag = TKD } override_country_name = TKD_2 }
+	else_if = { limit = { tag = OUC } override_country_name = OUC_2 }
+	else_if = { limit = { tag = YMN } override_country_name = YMN_2 }
+	else_if = { limit = { tag = HSK } override_country_name = HSK_2 }
+	else_if = { limit = { tag = ODA } override_country_name = ODA_2 }
+	else_if = { limit = { tag = SBA } override_country_name = SBA_2 }
+	else_if = { limit = { tag = TKG } override_country_name = TKG_2 }
+	else_if = { limit = { tag = HTK } override_country_name = HTK_2 }
+	else_if = { limit = { tag = STK } override_country_name = STK_2 }
+	else_if = { limit = { tag = DTE } override_country_name = DTE_2 }
+}
+
 uutim_remove_all_content_effect = {
 	custom_tooltip = uutim_remove_all_content_tt
 	hidden_effect = {

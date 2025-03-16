@@ -648,6 +648,7 @@ country_event = {   #Shogunate Triumphant
     title = uujap_events.120.t 
     desc = uujap_events.120.desc 
     picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+    major = yes
 
     option = {
         name = uujap_events.120.a
@@ -671,6 +672,7 @@ country_event = {   #Honorable Restoration
     title = uujap_events.121.t 
     desc = uujap_events.121.desc 
     picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+    major = yes
 
     immediate = {
         hidden_effect = {
@@ -690,7 +692,12 @@ country_event = {   #Honorable Restoration
         custom_tooltip = uujap_war_on_daimyo_tt
         remove_government_reform = uu_shogunate_vs_monarchy_reform
         add_government_reform = japanese_divine_empire 
-        #change_tag = JAP
+        change_tag = JAP
+        restore_country_name = yes
+        if = {
+            limit = { has_custom_ideas = no }
+            country_event = { id = ideagroups.1 } #Swap Ideas
+        }
     }     
 }
 

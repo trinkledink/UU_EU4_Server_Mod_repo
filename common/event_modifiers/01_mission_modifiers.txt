@@ -4270,7 +4270,7 @@ JAP_gokaido_stations = {
 	local_friendly_movement_speed = 0.1
 }
 
-JAP_sankin_kotai_modifier = {
+uujap_sankin_kotai_modifier = {
 	diplomatic_upkeep = 1
 }
 

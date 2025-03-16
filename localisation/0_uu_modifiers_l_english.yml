@@ -123,42 +123,6 @@
  uu_shaman_vision_quest:0 "Shaman Vision Quest"
 
  ###############################################################
- # Japan Mission Modifiers
- ###############################################################
-
- uujap_inflation_goods_mod:0 "Currency Shortage Relieved"
- uujap_premier_gold_mine_mod:0 "Premier Mint for Gold and Silver Coins"
- uujap_gokaido_mod:0 "Gokaido"
-  uujap_gokaido_mod_2:0 "Gokaido Network Extension"
- uujap_ricebroker_inflation_mod:0 "Genroku Period Prosperity"
- uujap_ricebroker_interest_mod:0 "Early Banking System"
- uujap_colonist_mod:0 "Early Colonial Ventures"
- uujap_colonist_mod_2:0 "Expanding Colonial Ventures"
- uujap_colonist_mod_3:0 "Permanent Colonial Affairs Office"
- uujap_empire_rising_sun_mod:0 "Empire of the Rising Sun"
- uujap_rising_sun_colony_mod:0 "Colony of the Rising Sun"
- uujap_manchu_controller_mod:0 "Manchurian Support"
- uujap_manchu_march_mod:0 "Japanese Support"
- uujap_edo_new_capital_mod:0 "A Second Capital"
- uujap_miyadaiku_carpentry_mod:0 "Miyadaiku Carpentry"
- uujap_all_incidents_mod:0 "All Incidents Resolved"
- uujap_entrenched_samurai_class_mod:0 "Samurai Class Entrenched"
- uujap_expanded_samurai_class_mod:0 "Samurai Class Expanded"
- uujap_malacca_trade_eff_mod:0 "Control of Malaya"
- uujap_tekkosen_modifier:0 "Tekkousen - Iron Ships"
- uujap_three_mountains_mod:0 "The Three Mountains"
- uujap_suzerain_ryukyu_mod:0 "Suzerainty of Ryukyu"
- uujap_dejima_port_entry_modifier:0 "Dejima Island Port"
- uujap_confucianism_harmony_mod:0 "Religious Harmony"
- uujap_religious_harmony_mod:0 "Religious Harmony"
- uujap_support_shogun_pmod:0 "Supporting the Shogun"
- uujap_support_emperor_pmod:0 "Opposing the Shogun"
- uujap_govt_disarray:0 "Bakufu in Disarray"
- uujap_jingoist_politician:0 "Jingoist Politician"
- uujap_legacy_sengoku:0 "Legacy of the Sengoku Jidai"
-  uujap_legacy_sengoku_desc:0 "We may no longer be mere daimyo, but we sure can still fight like one."
-
- ###############################################################
  # New Estuaries
  ###############################################################
 
