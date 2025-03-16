@@ -1118,7 +1118,7 @@ uujap_3 = {	#DONE
 	}
 }
 
-uujap_4 = {
+uujap_4 = { #DONE
 	slot = 4
 	generic = no
 	ai = yes
@@ -1343,23 +1343,26 @@ uujap_4 = {
 		effect = {
 			#If Shogun wins:
 			custom_tooltip = uujap_if_shogunate_wins_tt
-			tooltip = { add_government_reform = absolute_shogunate_reform }
-			custom_tooltip = uujap_unlock_shogunate_t6_tt
 			tooltip = { 
 				country_event = {
 					id = uujap_events.120
 				} 
 			}
+			tooltip = { add_government_reform = absolute_shogunate_reform }
+			custom_tooltip = uujap_unlock_shogunate_t6_tt
+		
 			custom_tooltip = " "
+
 			#If Emperor wins:
 			custom_tooltip = uujap_if_emperor_wins_tt
-			tooltip = { add_government_reform = japanese_divine_empire }
-			custom_tooltip = uujap_unlock_emperor_t6_tt
 			tooltip = { 
 				country_event = {
 					id = uujap_events.121
 				} 
 			}
+			tooltip = { add_government_reform = japanese_divine_empire }
+			custom_tooltip = uujap_unlock_emperor_t6_tt
+			
 			hidden_effect = {
 				if = {						#Give correct gov reform.
 					limit = {

@@ -422,9 +422,11 @@ daimyo_vassal = {
 		modifier = appanage_subject	#UU TRUST ME ON THIS ONE
 		trigger = {
 			overlord = {
-				has_great_project = {
-					type = sankin_kotai_palaces
-					tier = 2
+				any_owned_province = {
+					has_great_project = {
+						type = sankin_kotai_palaces
+						tier = 2
+					}
 				}
 			}
 		}
