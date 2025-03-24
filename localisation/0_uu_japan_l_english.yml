@@ -174,7 +174,7 @@
  uujap_samurai_from_weapons_dev_tt:0 "Developing the provinces with §YWeapons Manufactories§! in the §YJapan§! region will have a §Y50%§! chance of spawning a §YSamurai§! regiment on the province."
  uujap_inno_ap_at_from_mil_tech_tt:0 "Advancing in §YMilitary Technology§! will give us §G+1§! Innovativeness, §G1%§! Army Professionalism, and §G+5§! Army Tradition."
  uujap_entrenched_samurai_class_tt:0 "The Tier 2 '§YStrengthen Noble Privileges§!' reform will be enhanced with the following modifier:"
- uujap_expanded_samurai_class_tt:0 "The Tier 2 '§YCurtail Noble Privileges§!'' reform will be enhanced with the following modifier:"
+ uujap_expanded_samurai_class_tt:0 "The Tier 2 '§YCurtail Noble Privileges§!' reform will be enhanced with the following modifier:"
  uujap_samurai_choice_tt:0 "§GBecause of our choice in the 'The Samurai Caste' mission:§!"
  uujap_dip_dev_for_miyadaiku_tt:0 "All provinces fulfilling the mission requirements will gain §G+1§! Base Production."
  uujap_all_incidents_trigger_tt:0 "Aside from §YRising Shogunate Authority,§! all other Shinto Incidents have happened for [Root.GetName]."
@@ -191,7 +191,7 @@
  uujap_if_emperor_wins_tt:0 "§MIf we completed this mission by restoring the Emperor:§!"
   uujap_unlock_emperor_t6_tt:0 "Unlock the '§YMeiji Constitution§!' government reform."
  uujap_friend_daimyo_tt:0 "Every §YDaimyo§! subject will §Jlose 50 Liberty Desire.§!"
- uujap_war_on_daimyo_tt:0 "Every §YDaimyo§! subject will be given the option to either be §Gintegrated§! for §R100 £dip£§! each, or §Rdeclare war§! on us, allowing us to take land from them for §G0 Aggressive Expansion.§!"
+ uujap_war_on_daimyo_tt:0 "Every §YDaimyo§! subject will be given the option to either be §Gintegrated§! for §R100 £dip£§! each, or §Rdeclare war§! on us, allowing us to take land from them for §Gsignificantly reduced Aggressive Expansion.§!"
  #Mission Unlocks
   #Shinto Isolationism Decisions
  uu_iso_plus_title:0 "(§Y+Isolationism§!) Tighten Migration Restrictions"

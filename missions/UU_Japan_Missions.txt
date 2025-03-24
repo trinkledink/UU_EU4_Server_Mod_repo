@@ -1196,7 +1196,7 @@ uujap_4 = { #DONE
 			custom_tooltip = " "
 			define_advisor = {
 				name = "Miyamoto Musashi" # The greatest samurai of all ages, author of the Book of the Five Rings
-				culture = kyushuan
+				culture = japanese
 				religion = ROOT
 				cost_multiplier = 0.33
 				skill = 2 #book of five rings is a major work on strategy
@@ -1348,6 +1348,7 @@ uujap_4 = { #DONE
 					id = uujap_events.120
 				} 
 				add_government_reform = absolute_shogunate_reform
+				custom_tooltip = uujap_friend_daimyo_tt
 			}
 			custom_tooltip = uujap_unlock_shogunate_t6_tt
 		
@@ -1360,10 +1361,12 @@ uujap_4 = { #DONE
 				country_event = {
 					id = uujap_events.121
 				}
+				custom_tooltip = uujap_war_on_daimyo_tt
+				add_government_reform = japanese_divine_empire
 				define_ruler = {
 					dynasty = "Yamato"
-				} 
-				add_government_reform = japanese_divine_empire
+				}
+				remove_heir = { allow_new_heir = no } 
 			}
 			custom_tooltip = uujap_unlock_emperor_t6_tt
 			
@@ -1393,7 +1396,6 @@ uujap_4 = { #DONE
 					remove_province_modifier = uujap_support_shogun_pmod
 				}
 			}
-			#TODO add the final event. If emperor, any remaining daimyos declare war on us and we have to annex them. Auto-integrate every vassal with under 5 provinces for 100 dip each. define ruler in event.
 		}
 	}
 	jap_miyadaiku_method = {
