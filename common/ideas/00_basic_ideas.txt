@@ -698,7 +698,36 @@ defensive_ideas = {
 		may_refill_garrison = yes
 	}
 	relentless_charge = {
-		garrison_damage = 0.3 
+		garrison_damage = 0.3
+		effect = {		#dutch stuff from vanilla
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ned_buffed_forts_flag
+					}
+					every_owned_province = {
+						limit = {
+							region = low_countries_region
+							has_fort_building_trigger = yes
+						}
+						remove_province_modifier = ned_low_countries_fort_buff
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+					remove_province_modifier = ned_low_countries_fort_buff_buffed
+				}
+			}
+		} 
 	}	
 	
 	ai_will_do = {
@@ -916,6 +945,11 @@ economic_ideas = {
 	smithian_economics = { 
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35 for eco ideas are done so via: on_actions for the loans, and via the buildings file for the dev from manufactories! happy moding 
 		production_efficiency = 0.1
+		effect = {
+			hidden_effect = {
+				uu_apply_manu_dev_effect = yes
+			}
+		}
  	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.2
@@ -989,6 +1023,7 @@ exploration_ideas = {
 	}
 	colonial_ventures = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	overseas_exploration = {
 		range = 0.5
@@ -1444,6 +1479,7 @@ expansion_ideas = {
 
 	additional_colonists = {
 		colonists = 1
+		effect = { remove_temporary_colonist = yes }
 	}
 	additional_merchants = {
 		merchants = 1
@@ -1461,6 +1497,7 @@ expansion_ideas = {
 	general_colonization_law  = {
 		colonists = 1
 		colonist_placement_chance = 0.05
+		effect = { remove_temporary_colonist = yes }
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2

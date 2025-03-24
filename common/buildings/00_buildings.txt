@@ -2450,7 +2450,7 @@ weapons = {
 		}
 		add_dev_from_building = {
 			building = manufactory 
-			type = manpower 
+			type = production #UU
 			value = 1 
 		}
 		if = {
@@ -2478,7 +2478,7 @@ weapons = {
 		}
 		remove_dev_from_building = {
 			building = manufactory 
-			type = manpower 
+			type = production #UU
 			value = 1
 		}
 		if = {
@@ -2736,12 +2736,22 @@ furnace = {
 			type = production
 			value = 1 #UU
 		}
+		add_dev_from_building = {	#UU this wasnt in vanilla for some reason.
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = manufactory
 			type = production
 			value = 1 #UU
+		}
+		remove_dev_from_building = {	#UU this wasnt in vanilla for some reason.
+			building = manufactory 
+			type = production 
+			value = 1 
 		}
 	}
 	on_obsolete = {
@@ -2771,7 +2781,7 @@ ramparts = {
 	
 	on_built = {
 		add_dev_from_building = {
-			building = manufactory 
+			building = ramparts 
 			type = manpower 
 			value = 1 
 		}
@@ -2795,7 +2805,7 @@ ramparts = {
 			remove_province_modifier = per_reinforced_defenses
 		}
 		remove_dev_from_building = {
-			building = manufactory 
+			building = ramparts 
 			type = manpower 
 			value = 1
 		}
@@ -2845,12 +2855,12 @@ soldier_households = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
 		add_development_from_building = {
-			building = manufactory
+			building = soldier_households
 			type = manpower
 			value = 1 #UU
 		}
 		add_dev_from_building = {
-			building = manufactory 
+			building = soldier_households 
 			type = manpower 
 			value = 1 
 		}
@@ -2868,12 +2878,12 @@ soldier_households = {
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = manufactory
+			building = soldier_households
 			type = manpower
 			value = 1 #UU
 		}
 		remove_dev_from_building = {
-			building = manufactory 
+			building = soldier_households 
 			type = manpower 
 			value = 1
 		}
@@ -3026,6 +3036,11 @@ state_house = {
 			building = state_house
 			type = tax
 			value = 1 #UU
+		}
+		remove_dev_from_building = { #uu
+			building = state_house 
+			type = tax #UU 
+			value = 1 
 		}
 	}
 	on_obsolete = {

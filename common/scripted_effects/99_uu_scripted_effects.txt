@@ -177,6 +177,68 @@ uu_special_name_effect = { #Applies specific names to nations depending on gov't
 	}
 }
 
+uu_apply_manu_dev_effect = {
+	every_owned_province = {
+		limit = {
+			OR = {
+				has_building = wharf 
+				has_building = weapons 
+				has_building = textile
+				has_building = plantations
+				has_building = tradecompany
+				has_building = farm_estate
+				has_building = mills 
+				has_building = furnace
+			}
+		}
+		add_dev_from_building = {	#N/B: will only add if not already added. 
+			building = manufactory 
+			type = production 
+			value = 1 
+		}
+	}
+	every_owned_province = {
+		limit = {
+			has_building = ramparts
+		}
+		add_dev_from_building = {
+			building = ramparts 
+			type = manpower 
+			value = 1 
+		}
+	}
+	every_owned_province = {
+		limit = {
+			has_building = soldier_households
+		}
+		add_dev_from_building = {
+			building = soldier_households 
+			type = manpower 
+			value = 1 
+		}
+	}
+	every_owned_province = {
+		limit = {
+			has_building = impressment_offices
+		}
+		add_dev_from_building = {
+			building = impressment_offices
+			type = production 
+			value = 1 
+		}
+	}
+	every_owned_province = {
+		limit = {
+			has_building = state_house
+		}
+		add_dev_from_building = {
+			building = state_house
+			type = tax 
+			value = 1 
+		}
+	}
+}
+
 uu_grant_daimyo_to_clan_effect = {
 	[[target]
 		every_owned_province = {
