@@ -20,7 +20,9 @@ bookmark =
 	country = BUG
 	country = LFA
 	country = ADA
+	country = ASK
 	
 	easy_country = LFA
 	easy_country = ADA
+	easy_country = ASK
 }

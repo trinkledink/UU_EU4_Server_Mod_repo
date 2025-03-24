@@ -702,6 +702,7 @@ country_event = {   #Honorable Restoration
 			change_original_dynasty = yes
             age = 16
 		}
+        remove_heir = { allow_new_heir = no }
         add_ruler_personality = reformist_personality
         if = {
             limit = { has_custom_ideas = no }
