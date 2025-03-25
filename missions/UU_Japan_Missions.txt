@@ -1305,7 +1305,7 @@ uujap_4 = { #DONE
 			}
 		}
 	}
-	uujap_secure_authority = {	#TODO
+	uujap_secure_authority = {
 		icon = jap_restoration
 		required_missions = { uujap_fate_emperor }
 		position = 9
