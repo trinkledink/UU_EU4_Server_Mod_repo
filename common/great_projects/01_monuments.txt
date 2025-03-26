@@ -14870,8 +14870,8 @@ porcelain_tower_nanjing = {
 		}
 		conditional_modifier = {	#UU
 			trigger = {
-				owner = { 
-					tag = JAP
+				owner = {
+					culture_group = japanese_g  
 					mission_completed = uujap_south_china
 				}
 			}
@@ -14903,8 +14903,8 @@ porcelain_tower_nanjing = {
 		}
 		conditional_modifier = {	#UU
 			trigger = {
-				owner = { 
-					tag = JAP
+				owner = {
+					culture_group = japanese_g  
 					mission_completed = uujap_south_china
 				}
 			}
@@ -14936,8 +14936,8 @@ porcelain_tower_nanjing = {
 		}
 		conditional_modifier = {	#UU
 			trigger = {
-				owner = { 
-					tag = JAP
+				owner = {
+					culture_group = japanese_g 
 					mission_completed = uujap_south_china
 				}
 			}

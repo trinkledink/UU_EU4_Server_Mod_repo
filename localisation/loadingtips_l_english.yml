@@ -83,7 +83,7 @@
  LOADING_TIP_81:0 "The base monthly cost of an advisor is the square of its skill level, e.g. a Level 3 advisor costs a base of 9 ducats monthly."  
  LOADING_TIP_82:0 "Don't just look at the Fire and Shock pips when comparing military units. Keep in mind your Fire and Shock modifiers, too."
  LOADING_TIP_83:0 "High level forts are virtually unsiegeable without artillery. Make sure you bring enough firepower."
- LOADING_TIP_84:0 "Moving an army to a rebellious province may considerably reduce the local unrest."
+ LOADING_TIP_84:0 "Moving an army to a rebellious province reduces the local unrest by up to 5, with 20 regiments, without modifiers."
  LOADING_TIP_85:0 "You may use your fleet to block your enemy from crossing a strait if they do not control the provinces on both sides."
  LOADING_TIP_86:0 "You can find your screenshots from the game here: ../Documents/Paradox Interactive/Europa Universalis IV/Screenshots"
  LOADING_TIP_87:0 "Press F11 to save a screenshot of the game."

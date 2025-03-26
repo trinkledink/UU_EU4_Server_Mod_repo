@@ -168,7 +168,7 @@ uujap_1 = { #DONE
 				name = uujap_colonist_mod_2
 				duration = 10950
 			}
-			custom_tooltip = uujap_siberian_intervention_tt
+			custom_tooltip = JAP_siberian_intervention_tt
 			hidden_effect = {
 				east_siberia_region = {
 					limit = {
@@ -498,6 +498,9 @@ uujap_2 = {	#DONE
 					country_event = {
 						id = uujap_events.4 #Subject becomes Manchu
 					}
+					add_permanent_claim_multi_provinces = { target = hebei_area }
+					add_permanent_claim_multi_provinces = { target = liaoning_area }
+					add_permanent_claim_multi_provinces = { target = liaodong_area } 
 				}
 				custom_tooltip = " "
 				add_mil_power = 100
@@ -505,6 +508,8 @@ uujap_2 = {	#DONE
 					name = uujap_manchu_controller_mod
 					duration = 7300
 				}
+			} else = {
+				add_mil_power = 50
 				add_permanent_claim_multi_provinces = { target = hebei_area }
 				add_permanent_claim_multi_provinces = { target = liaoning_area }
 				add_permanent_claim_multi_provinces = { target = liaodong_area } 
@@ -763,25 +768,6 @@ uujap_3 = {	#DONE
 			stability = 1
 		}
 		effect = {
-			if = {
-				limit = {
-					has_reform = shogunate
-					have_had_reform = daimyo
-				}
-				add_country_modifier = {
-					name = uujap_legacy_sengoku
-					duration = -1
-					desc = uujap_legacy_sengoku_desc
-				}
-			} else = {
-				custom_tooltip = uujap_shogunate_get_buff_tt
-				tooltip = {
-					add_country_modifier = {
-						name = uujap_legacy_sengoku
-						duration = -1
-					}
-				}
-			}
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_permanent_claim_multi_provinces = { target = south_korea_area }
 			add_permanent_claim_multi_provinces = { target = eastern_korea_area }
@@ -1348,10 +1334,12 @@ uujap_4 = { #DONE
 					id = uujap_events.120
 				} 
 				add_government_reform = absolute_shogunate_reform
+				custom_tooltip = " "
 				custom_tooltip = uujap_friend_daimyo_tt
 			}
 			custom_tooltip = uujap_unlock_shogunate_t6_tt
 		
+			custom_tooltip = " "
 			custom_tooltip = " "
 
 			#If Emperor wins:
@@ -1361,12 +1349,10 @@ uujap_4 = { #DONE
 				country_event = {
 					id = uujap_events.121
 				}
-				custom_tooltip = uujap_war_on_daimyo_tt
 				add_government_reform = japanese_divine_empire
-				define_ruler = {
-					dynasty = "Yamato"
-				}
-				remove_heir = { allow_new_heir = no } 
+				custom_tooltip = " "
+				custom_tooltip = uujap_war_on_daimyo_tt
+				custom_tooltip = uujap_emperor_comes_to_power_tt
 			}
 			custom_tooltip = uujap_unlock_emperor_t6_tt
 			
@@ -1802,7 +1788,6 @@ uujap_5 = {	#DONE
 					duration = -1
 				}
 			}
-			custom_tooltip = " "
 			custom_tooltip = " "
 			1021 = {
 				change_province_name = Osaka 

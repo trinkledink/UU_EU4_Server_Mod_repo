@@ -925,7 +925,7 @@ uujap_ricebroker_inflation_mod = {
 }
 uujap_ricebroker_interest_mod = {
 	interest = -0.5
-	inflation_action_cost = -0.25
+	inflation_action_cost = -0.33
 }
 uujap_dejima_port_entry_modifier = {
 	global_own_trade_power = 0.2
@@ -963,4 +963,5 @@ uujap_jingoist_politician = {
 uujap_legacy_sengoku = {
 	land_morale = 0.1
 	infantry_power = 0.1
+	allowed_samurai_fraction = 0.1
 }

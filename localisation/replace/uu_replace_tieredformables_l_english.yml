@@ -88,6 +88,7 @@
  declare_hanseatic_league_title:0 "(§T§O3§!§!)@[Root.GetTag] Declare the Hanseatic League"
  #unite_japan_title:0 "(§R4§!)@JAP Unite Japan!"
  united_japan_title:0 "(§R4§!)@[Root.GetTag] Japan is United"
+  united_japan_desc:0 "The warring factions of Japan have finally been united under a strong Shogun."
  united_japan_daimyo_title:0 "(§R4§!)@JAP Japan is United"
  form_manchu_dynasty_title:0 "(§R4§!)@QNG Qing Dynasty"
  malayan_nation_title:0 "(§T§O3§!§!)@MSA Form Malaya"

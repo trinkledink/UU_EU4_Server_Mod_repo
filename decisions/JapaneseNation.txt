@@ -18,10 +18,17 @@ country_decisions = {
 		allow = {
 			NOT = { exists = JAP }
 			is_free_or_tributary_trigger = yes
+			has_reform = shogunate
 			owns = 1020
 			owns = 1028
 			is_at_war = no
-			japan_region = { country_or_non_sovereign_subject_holds = ROOT }
+			japan_region = {
+				type = all 
+				OR = {
+					area = hokkaido_area
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+			}
 		}
 		effect = {
 			set_country_flag = formed_tier_four_flag
@@ -35,16 +42,27 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			if = { 
-				limit = { has_dlc = "Domination" }
-				add_country_modifier = {
-					name = jap_grant_samurai_modifier
-					duration = -1 
-				}
-			}
 			if = {
-				limit = { ai = no }
-				on_change_tag_effect = yes
+				limit = {
+					has_reform = shogunate
+					OR = {
+						have_had_reform = daimyo
+						tag = ASK
+					}
+				}
+				add_country_modifier = {
+					name = uujap_legacy_sengoku
+					duration = -1
+					desc = uujap_legacy_sengoku_desc
+				}
+			} else = {
+				custom_tooltip = uujap_shogunate_get_buff_tt
+				tooltip = {
+					add_country_modifier = {
+						name = uujap_legacy_sengoku
+						duration = -1
+					}
+				}
 			}
 			uujap_shogunate_name_effect = yes
 		}

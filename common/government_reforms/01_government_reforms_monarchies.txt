@@ -267,14 +267,14 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
-		#NOT = { has_country_flag = formed_japan_flag } #UU removed
+		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
 				capital_scope = {
 					province_id = 1020
 				}
 				culture_group = japanese_g
-				#NOT = { exists = JAP } UU removed
+				NOT = { exists = JAP }
 			}
 			AND = {
 				is_playing_custom_nation = yes
