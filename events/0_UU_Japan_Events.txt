@@ -650,6 +650,8 @@ country_event = {   #Shogunate Triumphant
     picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
     major = yes
 
+    is_triggered_only = yes
+
     option = {
         name = uujap_events.120.a
         add_stability = 1 
@@ -673,6 +675,8 @@ country_event = {   #Honorable Restoration
     desc = uujap_events.121.desc 
     picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
     major = yes
+
+    is_triggered_only = yes
 
     immediate = {
         hidden_effect = {
@@ -716,6 +720,8 @@ country_event = {   #Boshin War
     title = uujap_events.122.t 
     desc = uujap_events.122.desc 
     picture = SENGOKU_eventPicture
+
+    is_triggered_only = yes
 
     option = {  #get annexed
         name = uujap_events.122.a

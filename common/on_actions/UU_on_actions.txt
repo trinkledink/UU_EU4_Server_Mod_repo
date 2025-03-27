@@ -66,6 +66,20 @@ on_startup = {
         which = exploit_mil_clicks_2
         value = 0
     }
+	if = {	#Check if MP lobby
+		limit = {
+			NOT = { has_global_flag = uu_is_sp_lobby }
+			NOT = { has_global_flag = uu_is_mp_lobby }
+			ai = no
+			any_country = { 
+				NOT = { tag = ROOT }
+				ai = no
+			}
+		}
+		set_global_flag = uu_is_mp_lobby
+	} else = {
+		set_global_flag = uu_is_sp_lobby
+	}
 	#Disinherit counter
 	change_variable = {
         which = uu_disinherit_counter_var
@@ -428,6 +442,30 @@ on_adm_development = {
 				which = dev_sum_clicks_2
 				value = 1
 			}
+			if = {	#global tracker
+				limit = {
+					OR = {
+						AND = {
+							has_global_flag = uu_is_mp_lobby
+							OR = {
+								ai = no 
+								was_player = yes
+							}
+						}
+						has_global_flag = uu_is_sp_lobby
+					}	
+				}
+				REB = {
+					change_variable = {
+						which = dev_adm_clicks
+						value = 1
+					}
+					change_variable = {
+						which = dev_sum_clicks
+						value = 1
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -463,6 +501,30 @@ on_dip_development = {
 				which = dev_sum_clicks_2
 				value = 1
 			}
+			if = {	#global tracker
+				limit = {
+					OR = {
+						AND = {
+							has_global_flag = uu_is_mp_lobby
+							OR = {
+								ai = no 
+								was_player = yes
+							}
+						}
+						has_global_flag = uu_is_sp_lobby
+					}	
+				}
+				REB = {
+					change_variable = {
+						which = dev_dip_clicks
+						value = 1
+					}
+					change_variable = {
+						which = dev_sum_clicks
+						value = 1
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -497,6 +559,30 @@ on_mil_development = {
 			change_variable = {
 				which = dev_sum_clicks_2
 				value = 1
+			}
+			if = {	#global tracker
+				limit = {
+					OR = {
+						AND = {
+							has_global_flag = uu_is_mp_lobby
+							OR = {
+								ai = no 
+								was_player = yes
+							}
+						}
+						has_global_flag = uu_is_sp_lobby
+					}	
+				}
+				REB = {
+					change_variable = {
+						which = dev_mil_clicks
+						value = 1
+					}
+					change_variable = {
+						which = dev_sum_clicks
+						value = 1
+					}
+				}
 			}
 		}
 		if = {
@@ -631,6 +717,26 @@ on_expanded_infrastructure = {
         	which = infra_clicks_2
         	value = 1
 		}
+		if = {	#global tracker
+			limit = {
+					OR = {
+						AND = {
+							has_global_flag = uu_is_mp_lobby
+							OR = {
+								ai = no 
+								was_player = yes
+							}
+						}
+						has_global_flag = uu_is_sp_lobby
+					}	
+				}
+			REB = {
+				change_variable = {
+					which = infra_clicks
+					value = 1
+				}
+			}
+		}
     }
 }
 
@@ -643,6 +749,26 @@ on_expanded_infrastructure_removed = {
 		change_variable = {
 			which = infra_clicks_2
 			value = -1
+		}
+		if = {	#global tracker
+			limit = {
+				OR = {
+					AND = {
+						has_global_flag = uu_is_mp_lobby
+						OR = {
+							ai = no 
+							was_player = yes
+						}
+					}
+					has_global_flag = uu_is_sp_lobby
+				}	
+			}
+			REB = {
+				change_variable = {
+					which = infra_clicks
+					value = -1
+				}
+			}
 		}
 	}
 }
@@ -657,6 +783,26 @@ on_adm_exploited = {
 			which = exploit_adm_clicks_2
 			value = 1
 		}
+		if = {	#global tracker
+			limit = {
+				OR = {
+					AND = {
+						has_global_flag = uu_is_mp_lobby
+						OR = {
+							ai = no 
+							was_player = yes
+						}
+					}
+					has_global_flag = uu_is_sp_lobby
+				}	
+			}
+			REB = {
+				change_variable = {
+					which = exploit_adm_clicks
+					value = 1
+				}
+			}
+		}
 	}
 }
 
@@ -670,6 +816,26 @@ on_dip_exploited = {
 			which = exploit_dip_clicks_2
 			value = 1
 		}
+		if = {	#global tracker
+			limit = {
+				OR = {
+					AND = {
+						has_global_flag = uu_is_mp_lobby
+						OR = {
+							ai = no 
+							was_player = yes
+						}
+					}
+					has_global_flag = uu_is_sp_lobby
+				}	
+			}
+			REB = {
+				change_variable = {
+					which = exploit_dip_clicks
+					value = 1
+				}
+			}
+		}
 	}
 }
 
@@ -682,6 +848,26 @@ on_mil_exploited = {
 		change_variable = {
 			which = exploit_mil_clicks_2
 			value = 1
+		}
+		if = {	#global tracker
+			limit = {
+				OR = {
+					AND = {
+						has_global_flag = uu_is_mp_lobby
+						OR = {
+							ai = no 
+							was_player = yes
+						}
+					}
+					has_global_flag = uu_is_sp_lobby
+				}	
+			}
+			REB = {
+				change_variable = {
+					which = exploit_mil_clicks
+					value = 1
+				}
+			}
 		}
 	}
 }

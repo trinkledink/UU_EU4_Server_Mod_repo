@@ -1,0 +1,79 @@
+country_decisions = { 
+	dev_sum_clicks_decision = {
+		color = { 60 120 60 }
+		major = yes
+		potential = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+					NOT = { has_country_flag = uudev_toggle_global_flag }
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_tooltip_1
+					always = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_page_1
+					always = yes
+				}
+			} else_if = {
+				limit = {
+					has_country_flag = uudev_toggle_thissession_flag
+					NOT = { has_country_flag = uudev_toggle_global_flag }
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_tooltip_2
+					always = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_page_2
+					always = yes
+				}
+			} else_if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+					has_country_flag = uudev_toggle_global_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_tooltip_3
+					always = yes
+				}
+				custom_trigger_tooltip = {
+					tooltip = dev_sum_clicks_decision_page_3
+					always = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+					NOT = { has_country_flag = uudev_toggle_global_flag }
+				}
+				custom_tooltip = dev_sum_clicks_decision_page_1
+				set_country_flag = uudev_toggle_thissession_flag
+			} else_if = {
+				limit = {
+					has_country_flag = uudev_toggle_thissession_flag
+					NOT = { has_country_flag = uudev_toggle_global_flag }					
+				}
+				custom_tooltip = dev_sum_clicks_decision_page_2
+				clr_country_flag = uudev_toggle_thissession_flag
+				set_country_flag = uudev_toggle_global_flag
+			} else_if = {
+				limit = {
+					NOT = { has_country_flag = uudev_toggle_thissession_flag }
+					has_country_flag = uudev_toggle_global_flag
+				}
+				custom_tooltip = dev_sum_clicks_decision_page_3
+				clr_country_flag = uudev_toggle_global_flag
+			}
+		}
+	}
+}
