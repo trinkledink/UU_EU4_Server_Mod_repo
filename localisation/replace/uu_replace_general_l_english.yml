@@ -325,11 +325,15 @@
  MUG_commission_the_peacock_throne:0 "@MUG Commission the Peacock Throne"
  MUG_viceroyalty_of_deccan:0 "@MUG Viceroyalty of Deccan"
  #Bookmarks
- #GC_AFRICA_BOOKMARK:0 "" #todo maybe
  UU_BOOKMARK:0 "§GFeatured Nations§!"
- UU_BOOKMARK_DESC:0 "These are some of the nations that have been updated in the mod. This may include new formables, government reforms, mission trees, etc. This list is non-exhaustive, see the patch notes for more details."
+ UU_BOOKMARK_DESC:0 "These nations have received changes in the most recent mod patch.\n§MPatch 1.15§! includes new starting content for §YAdal§!, a new §YJapan§!/daimyo combined mission tree, some changes to §YEngland§!'s non-colonial missions, and the introduction of §YLanfang§! to the start date."
  BOOKMARK_COUNTRY_EASY:0 "§GThis country was updated in the most recent mod patch.§!"
-
+ A1_UU_EUROPE:0 "Europe"
+ A1_UU_EUROPE_DESC:0 "New formable §YElbian Confederation§! added, formable by §YSaxony§! or §YBohemia§!. Mission trees for most German minors and HRE free cities have been added, and some HRE reforms have been upgraded. §YLubeck§! is now a Free City at the start. §YBurgundy§!'s start is now stronger, and §YLotharingia§! now has stronger national ideas. §YScandinavia§! now has different ideas depending on your starting nation. §YPapal States§! now has a unique government mechanic. §YMilan§! can become a Military Dictatorship with the Prussian Militarization mechanic. §YAndalusia§! can now recruit Janissaries.\n§lSee the Changelog for full details.§!"
+ A2_UU_AFRICA:0 "Africa"
+ A2_UU_AFRICA_DESC:0 "New formable §YCarthage§! added, formable by §YTunis§!. Significant new content for formables §YSokoto§! and §YKitara§! added. Mission tree for §YKanem Bornu§! added. Starting content for §YMorocco§! and §YAdal§! have been added. Added many new provinces out of wastelands.\n§lSee the Changelog for full details.§!"
+ A3_UU_ASIA:0 "Asia"
+ A3_UU_ASIA_DESC:0 "§YTimurids§! region has been split up, with significant content added for all Timurid nations. Mission tree for §YJapan§! has been overhauled completely. §YLanfang§! added to start date. §YPersia§! nerfed significantly. Added many new provinces to the China region. \n§lSee the Changelog for full details.§!"
  #Relocalizing base game ideas for clarity
  estates_general:0 "Estates General of France" #France, was just Estates General
  army_professionalism:0 "Prussian Professionalism"  #Prussia, was just Army Professionalism

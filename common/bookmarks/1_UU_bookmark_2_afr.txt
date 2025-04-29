@@ -1,0 +1,20 @@
+bookmark = {
+	name = "A2_UU_AFRICA"
+	desc = "A2_UU_AFRICA_DESC"
+	date = 1444.11.11
+	
+	center = 1795
+	
+	country = GAO
+	country = ETH
+	country = MOR
+	country = KBU
+	country = KBO
+	country = ADA
+	country = ZZZ
+	country = TUN
+	country = BUG
+	country = MIR
+
+	easy_country = ADA	
+}
