@@ -1158,31 +1158,31 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"
 		}
-		
+
 		checkboxType = {
-			name = "build_ramparts"
-			position = { x = 61 y = 420 }
-			quadTextureSprite = "GFX_furnace"
+			name = "build_mint"
+			position = { x = 61 y = 420 }	
+			quadTextureSprite = "GFX_mint"
 		}
 
 		instantTextBoxType={
-			name = "ramparts_cost"
-			position = {x = 61 y = 470 }
+			name = "mint_cost"
+			position = {x = 61 y = 470 }	
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"
 		}
-
+		
 		checkboxType = {
-			name = "build_impressment_offices"
+			name = "build_ramparts"
 			position = { x = 113 y = 420 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
-			name = "impressment_offices_cost"
+			name = "ramparts_cost"
 			position = {x = 113 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1192,13 +1192,13 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_state_house"
+			name = "build_impressment_offices"
 			position = { x = 165 y = 420 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
-			name = "state_house_cost"
+			name = "impressment_offices_cost"
 			position = {x = 165 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1208,13 +1208,13 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_soldier_households"
+			name = "build_state_house"
 			position = { x = 217 y = 420 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
-			name = "soldier_households_cost"
+			name = "state_house_cost"
 			position = {x = 217 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1224,13 +1224,13 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_furnace"
+			name = "build_soldier_households"
 			position = { x = 269 y = 420 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
-			name = "furnace_cost"
+			name = "soldier_households_cost"
 			position = {x = 269 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
@@ -1240,14 +1240,14 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_mint"
-			position = { x = 321 y = 420 }	
-			quadTextureSprite = "GFX_mint"
+			name = "build_furnace"
+			position = { x = 321 y = 420 }
+			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
-			name = "mint_cost"
-			position = {x = 321 y = 470 }	
+			name = "furnace_cost"
+			position = {x = 321 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128

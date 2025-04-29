@@ -59,7 +59,7 @@ mint = {
 	}
 	
 	ai_will_do = {
-		factor = 1000		
+		factor = 1		
 		modifier = {
 			factor = 0.75
 			NOT = { base_tax = 2 }

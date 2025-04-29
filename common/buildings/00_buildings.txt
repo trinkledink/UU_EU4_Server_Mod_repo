@@ -291,7 +291,7 @@ barracks = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -334,7 +334,7 @@ barracks = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -893,7 +893,7 @@ regimental_camp = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -926,7 +926,7 @@ regimental_camp = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -1529,7 +1529,7 @@ training_fields = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -1567,7 +1567,7 @@ training_fields = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -2100,7 +2100,7 @@ conscription_center = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}
@@ -2133,7 +2133,7 @@ conscription_center = {
 		if = {
 			limit = {
 				FROM = {
-					mission_completed = jap_tanegashima_teppo
+					always = no #mission_completed = jap_tanegashima_teppo
 					has_dlc = "Cradle of Civilization" 
 				}
 			}

@@ -7285,15 +7285,7 @@ land_christian_sun_reform = {
 	icon = "land_christian_sun_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
-			AND = {
-				has_reform = land_christian_sun_reform
-				is_playing_custom_nation = yes
-			}
-			have_had_reform = land_christian_sun_reform
-			mission_completed = jap_spread_the_christian_faith
-			has_reform = land_christian_sun_reform
-		}
+		always = no
 	}
 	# trigger = {
 		# OR = {
