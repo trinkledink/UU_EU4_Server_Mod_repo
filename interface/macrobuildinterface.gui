@@ -1240,13 +1240,13 @@ guiTypes = {
 		}
 
 		checkboxType = {
-			name = "build_uu_road_1"
+			name = "build_mint"
 			position = { x = 321 y = 420 }	
-			quadTextureSprite = "GFX_uu_road_1"
+			quadTextureSprite = "GFX_mint"
 		}
 
 		instantTextBoxType={
-			name = "uu_road_1_cost"
+			name = "mint_cost"
 			position = {x = 321 y = 470 }	
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}

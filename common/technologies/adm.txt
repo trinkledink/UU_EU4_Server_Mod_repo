@@ -77,7 +77,7 @@ technology = { #Temples
 
 	# Temple
 	temple = yes
-	uu_road_1 = yes
+	
 	
 }
 
@@ -203,6 +203,9 @@ technology = { #Improved Drainage
 	production_efficiency 	=	0.02
 	administrative_efficiency = 0.05	#UU		
 	allowed_idea_groups	= 4		#UU						 
+
+    mint = yes
+
 }
 
 technology = { #Scientific Experimentation

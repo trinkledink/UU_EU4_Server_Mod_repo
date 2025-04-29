@@ -24,19 +24,61 @@
 # It will still check whether it can afford a building before doing so though, but may save up to it.
 
 
-uu_road_1 = {
-	cost = 50
-	time = 12
 
-	modifier = {
-		local_friendly_movement_speed = 0.3
-		local_hostile_movement_speed = 0.3
-		local_state_maintenance_modifier = 0.5
-		supply_limit = 30
-		allowed_num_of_buildings = 1
+mint = {
+	manufactory = {
+		all
 	}
 
+	modifier = {
+		tax_income = 4
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = mint
+			type = tax
+			value = 2
+		}
+		hidden_effect = {
+			FROM = {
+				change_variable = {
+					which = num_of_buildings_built
+					value = 1
+				}
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = mint
+			type = tax
+			value = 2
+		}
+	}
+	
 	ai_will_do = {
-		factor = 0
+		factor = 1000		
+		modifier = {
+			factor = 0.75
+			NOT = { base_tax = 2 }
+		}	
+		modifier = {
+			factor = 0.75
+			NOT = { base_tax = 4 }
+		}		
+		modifier = {
+			factor = 2.0
+			base_tax = 6
+		}
+		modifier = {
+			factor = 2.0
+			base_tax = 8
+		}	
+		modifier = {
+			factor = 2.0
+			base_tax = 10
+		}			
 	}
 }
