@@ -104,7 +104,6 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
-	ramparts = yes
 }
 
 technology = { #Renaissance Thought
@@ -143,6 +142,9 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
+
+	ramparts = yes #UU 
+	    mint = yes #UU
 	
 
 }
@@ -202,9 +204,7 @@ technology = { #Improved Drainage
 	#Improved Drainage
 	production_efficiency 	=	0.02
 	administrative_efficiency = 0.05	#UU		
-	allowed_idea_groups	= 4		#UU						 
-
-    mint = yes
+	allowed_idea_groups	= 4		#UU						
 
 }
 
