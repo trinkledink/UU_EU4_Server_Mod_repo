@@ -153,6 +153,7 @@
  Divine-Maritime:0 "§ODivine-Maritime§!"
   desc_Divine-Maritime:0 "§YWhile Active:§! Marine regiments gain §G+10%§! Morale."
   uu_divi_mari_mod:0 "Divine-Maritime"
+  uu_inno_mari_mod:0 "Inno-Maritime"
  
 
  ###############################################################

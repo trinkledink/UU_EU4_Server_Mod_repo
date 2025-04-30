@@ -552,7 +552,7 @@ Eco-Horde = {
 		full_idea_group = economic_ideas
 	}
 	
-	available_province_loot = 2
+	available_province_loot = 4
 	loot_amount = 1
 	movement_speed = 0.15
 	
