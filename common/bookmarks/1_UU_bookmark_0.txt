@@ -14,5 +14,5 @@ bookmark = {
 	easy_country = LFA
 	easy_country = ADA 
 	easy_country = ASK
-	country = ENG
+	easy_country = ENG
 }
