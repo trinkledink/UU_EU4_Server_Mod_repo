@@ -736,7 +736,7 @@ country_decisions = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
-								value = 9
+								value = 6
 								OR = {
 									area = south_saxony_area
 									area = thuringia_area
@@ -796,7 +796,7 @@ country_decisions = {
 				}
 			}
 			num_of_owned_provinces_with = {
-				value = 9
+				value = 6
 				OR = {
 					area = south_saxony_area
 					area = thuringia_area
@@ -812,10 +812,9 @@ country_decisions = {
 			change_tag = SAX
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			1758 = {
+			61 = {
 				move_capital_effect = yes
 				add_base_tax = 1 
-				rename_capital = "Dresden"
 			}
 			south_saxony_area = {
 				limit = {

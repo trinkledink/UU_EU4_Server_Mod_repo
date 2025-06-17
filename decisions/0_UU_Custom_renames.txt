@@ -199,4 +199,30 @@ country_decisions = {
 		}
 		ai_importance = 0
 	}
+
+	uubru_rename_decision = { 			#Brunswick-Luneburg
+		potential = {
+			OR = {
+				tag = BRU 
+				tag = LUN 
+				tag = CLB
+			}
+			NOT = { has_country_flag = uubru_rename_decision_flag }
+		}
+		allow = {
+			is_at_war = no
+			braunschweig_area = {
+				is_core = ROOT
+				owned_by = ROOT
+				type = all
+			}
+			owns = 53
+			owns = 4772
+		}
+		effect = {
+			set_country_flag = uubru_rename_decision_flag 
+			override_country_name = UUBRULUN
+			add_prestige = 25
+		}
+	}
 }

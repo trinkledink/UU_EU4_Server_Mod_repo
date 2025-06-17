@@ -242,9 +242,9 @@ l_english:
  greenland_area:0 "Greenland"
  greenland_area_name:0 "Greenland"
  greenland_area_adj:0 "Greenlandic"
- iceland_area:0 "Iceland"
- iceland_area_name:0 "Iceland"
- iceland_area_adj:0 "Icelandic"
+ iceland_area:0 "Iceland 2" #UU Don't question
+ iceland_area_name:0 "Iceland 2"
+ iceland_area_adj:0 "Icelandic 2"
  estonia_ingria_area:0 "Estonia"
  estonia_ingria_area_name:0 "Estonia"
  estonia_ingria_area_adj:0 "Estonian"
