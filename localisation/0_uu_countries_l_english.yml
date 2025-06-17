@@ -31,6 +31,8 @@
   #Custom names
  UUHSA2:0 "Hansa"
   UUHSA2_ADJ:0 "Hanseatic"
+ UUHSA3:0 "The Hansa"
+  UUHSA3_ADJ:0 "Hanseatic"  
  UUKANEM:0 "Kanem"
   UUKANEM_ADJ:0 "Kanem"
  UUFOUTATORO:0 "Fouta Tooro"

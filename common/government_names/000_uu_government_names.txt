@@ -392,3 +392,74 @@ lanfang_republic = {
 		has_reform = kongsi_federation
 	}
 }
+
+hre_landgrave = {
+	rank = {
+		1 = UU_LANDGRAVIATE
+	}
+	ruler_male = {
+		1 = UU_LANDGRAVE 
+	}
+	ruler_female = {
+		1 = UU_LANDGRAVINE
+	}
+	consort_male = {
+		1 = UU_LANDGRAVE_CONSORT
+	}
+	consort_female = {
+		1 = UU_LANDGRAVINE
+	}
+	heir_male = {
+		1 = HEIR 
+	}
+	heir_female = {
+		1 = HEIR_fem 
+	}
+
+	trigger = {
+		government = monarchy 
+		is_part_of_hre = yes
+		is_elector = no
+		NOT = { government_rank = 2 }
+		OR = {
+			tag = HES #Landgraviate of Hesse 
+			tag = THU #Landgraviate of Thuringia
+		}
+	}
+}
+
+hre_margrave = {
+	rank = {
+		1 = UU_MARGRAVIATE
+	}
+	ruler_male = {
+		1 = MARGRAVE
+	}
+	ruler_female = {
+		1 = MARGRAVINE
+	}
+	consort_male = {
+		1 = MARGRAVE_CONSORT
+	}
+	consort_female = {
+		1 = UU_LANDGRAVINE
+	}
+	heir_male = {
+		1 = HEIR 
+	}
+	heir_female = {
+		1 = HEIR_fem 
+	}
+
+	trigger = {
+		government = monarchy 
+		is_part_of_hre = yes
+		is_elector = no
+		NOT = { government_rank = 2 }
+		OR = {
+			tag = BRA #Margraviate of Brandenburg
+			tag = BAD #Margraviate of Baden 
+			tag = MEI #Margraviate of Meissen
+		}
+	}
+}

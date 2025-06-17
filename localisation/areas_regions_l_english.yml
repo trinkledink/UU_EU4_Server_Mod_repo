@@ -236,7 +236,7 @@ l_english:
  western_norway:0 "Western Norway" #UU Anglicized
  western_norway_name:0 "Bergenshus"
  western_norway_adj:0 "Bergenshusian"
- subarctic_islands_area:2 "North Atlantic Islands"
+ subarctic_islands_area:2 "Iceland" #UU So the map text when owning Iceland reads 'Iceland'
  subarctic_islands_area_name:0 "Faroes"
  subarctic_islands_area_adj:1 "Faroese"
  greenland_area:0 "Greenland"

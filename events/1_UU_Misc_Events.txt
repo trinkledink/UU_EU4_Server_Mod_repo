@@ -261,6 +261,10 @@ country_event = { 	#Hanseatic League rename to Hansa if they want to
 		override_country_name = UUHSA2
 	}
 	option = {
+		name = UU_balance_events.6.aa
+		override_country_name = UUHSA3
+	}
+	option = {
 		name = UU_balance_events.6.b
 		override_country_name = UUHSA
 	}

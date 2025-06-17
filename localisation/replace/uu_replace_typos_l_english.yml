@@ -22,3 +22,7 @@
  BUILD_GREAT_PROJECT_EFFECT:0 "Builds the great project $NAME|Y$.\n" #UU added \n
  DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$.\n"   #UU added \n
  MODIFIER_MAX_ABSOLUTISM_EFFECT:0 "Max Absolutism modifier" #UU Change
+
+ #EU5 Ported
+ estate_boyars:0 "Boyarstvo"
+ estate_popes:0 "Dukhovenstvo"

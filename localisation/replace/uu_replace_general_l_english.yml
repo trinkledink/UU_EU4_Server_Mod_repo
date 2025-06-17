@@ -15,6 +15,7 @@
   AV1:0 "Anglo-French Union"
    AV1_ADJ:0 "Anglo-French"
  ADA_ADJ:0 "Adalite" #Actual adjective for this place
+ LAU:0 "Lauenburg"  #Removing all Saxe- prefixes
 
  #Trade Nodes
  katsina:0 "Hausaland"

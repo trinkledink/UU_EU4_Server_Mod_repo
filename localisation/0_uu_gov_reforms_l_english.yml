@@ -21,3 +21,9 @@
  UU_CALIPHATE:0 "Caliphate" #For Sokoto
  UU_ALMAMI:0 "Almami" #For not-Sokoto theocracies
  UU_KONGSI_FEDERATION:0 "Kongsi Federation" #Lanfang
+ UU_LANDGRAVIATE:0 "Landgraviate" #For HRE Landgraves of Thuringia, Hesse
+  UU_LANDGRAVE:0 "Landgrave"
+  UU_LANDGRAVINE:0 "Landgravine"
+  UU_LANDGRAVE_CONSORT:0 "Landgrave-Consort"
+ UU_MARGRAVIATE:0 "Margraviate"  #For German HRE Margraves Meissen, Brandenburg, Baden (if not electors)
+ 

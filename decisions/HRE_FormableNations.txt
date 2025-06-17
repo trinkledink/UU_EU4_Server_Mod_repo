@@ -703,6 +703,26 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				AND = {
+					ROOT = { NOT = { tag = MEI } }
+					MEI = {
+						OR = {
+							num_of_cities = 5
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = MEI
+				}
+				AND = {
+					ROOT = { NOT = { tag = THU } }
+					THU = {
+						OR = {
+							num_of_cities = 5
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = THU
+				}
 				province_id = 59
 				AND = {
 					NOT = { ROOT = { owns_core_province = 61 } }
@@ -716,11 +736,13 @@ country_decisions = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
-								value = 6
+								value = 9
 								OR = {
 									area = south_saxony_area
 									area = thuringia_area
 									area = northern_saxony_area
+									province_id = 4716
+									province_id = 1857
 								}
 								is_core = root
 							}
@@ -753,12 +775,34 @@ country_decisions = {
 				owns_core_province = 61			#Dresden
 				owns_core_province = 62			#Leipzig
 			}
+			if = {
+				limit = { NOT = { tag = MEI } }
+				OR = {
+					NOT = { exists = MEI }
+					MEI = {
+						NOT = { num_of_cities = 5 }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = THU } }
+				OR = {
+					NOT = { exists = THU }
+					THU = {
+						NOT = { num_of_cities = 5 }
+						is_subject_of = ROOT
+					}
+				}
+			}
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 9
 				OR = {
 					area = south_saxony_area
 					area = thuringia_area
 					area = northern_saxony_area
+					province_id = 4716
+					province_id = 1857
 				}
 				is_core = root
 			}
@@ -768,6 +812,11 @@ country_decisions = {
 			change_tag = SAX
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			1758 = {
+				move_capital_effect = yes
+				add_base_tax = 1 
+				rename_capital = "Dresden"
+			}
 			south_saxony_area = {
 				limit = {
 					NOT = { owned_by = root }
@@ -806,6 +855,8 @@ country_decisions = {
 				limit = {
 					NOT = { tag = THU }
 					NOT = { was_tag = THU }
+					NOT = { tag = MEI }
+					NOT = { was_tag = MEI }
 				}
 				swap_non_generic_missions = yes
 			}

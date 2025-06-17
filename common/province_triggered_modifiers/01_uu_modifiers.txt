@@ -1,0 +1,51 @@
+uu_freiberg_silver_mine_1 = {
+	potential = {
+		NOT = { development = 15 }
+	}
+	trigger = {
+		NOT = { development = 15 }
+	}
+	tax_income = 12
+	local_development_cost = -0.05
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+uu_freiberg_silver_mine_2 = {
+	potential = {
+		NOT = { development = 30 }
+		development = 15
+	}
+	trigger = {
+		NOT = { development = 30 }
+		development = 15
+	}
+	tax_income = 36
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+uu_freiberg_silver_mine_3 = {
+	potential = {
+		development = 30
+	}
+	trigger = {
+		development = 30
+	}
+	tax_income = 72
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}

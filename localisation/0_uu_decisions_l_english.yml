@@ -60,6 +60,7 @@
  UU_balance_events.6.t:0 "Change Country Name to just 'Hansa'"
   UU_balance_events.6.desc:0 "Exactly what it says on the tin. You only get to make this choice once because the guys don't want to file all the paperwork again"
   UU_balance_events.6.a:0 "Let's shorten our name (Hansa)"
+  UU_balance_events.6.a:0 "Let's shorten our name but keep the article (The Hansa)"
   UU_balance_events.6.b:0 "Keep current name (Hanseatic League)."
   UU_balance_events.6.c:0 "Keep current name (if your name is neither, for some reason)"
  #Subjects Decisions
