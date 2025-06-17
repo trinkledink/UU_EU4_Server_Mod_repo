@@ -192,6 +192,18 @@ colorado_estuary_modifier = {
 	picture = "estuary_icon"
 }
 
+#saxony
+uu_freiberg_silver_mine_1 = {
+	tax_income = 12
+	local_development_cost = -0.05
+}
+uu_freiberg_silver_mine_2 = {
+	tax_income = 36
+}
+uu_freiberg_silver_mine_3 = {
+	tax_income = 72
+}
+
 #papal election modifier
 UU_recent_papal_election = {
 }
