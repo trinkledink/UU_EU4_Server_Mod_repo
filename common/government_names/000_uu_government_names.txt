@@ -458,8 +458,46 @@ hre_margrave = {
 		NOT = { government_rank = 2 }
 		OR = {
 			tag = BRA #Margraviate of Brandenburg
-			tag = BAD #Margraviate of Baden 
+			AND = {
+				tag = BAD #Margraviate of Baden
+				NOT = { has_idea = bad_grand_duchy }
+			}
 			tag = MEI #Margraviate of Meissen
+		}
+	}
+}
+
+hre_marquis = {
+	rank = {
+		1 = UU_MARQUISATE
+	}
+	ruler_male = {
+		1 = MARQUIS
+	}
+	ruler_female = {
+		1 = MARQUISE
+	}
+	consort_male = {
+		1 = MARQUIS_CONSORT
+	}
+	consort_female = {
+		1 = MARQUISE
+	}
+	heir_male = {
+		1 = HEIR 
+	}
+	heir_female = {
+		1 = HEIR_fem 
+	}
+
+	trigger = {
+		government = monarchy 
+		is_elector = no
+		NOT = { government_rank = 2 }
+		OR = {
+			tag = SZO #Marquisate of Saluzzo
+			tag = MFA #Marquisate of Montferrat
+			tag = MAN #Marquisate of Mantua
 		}
 	}
 }

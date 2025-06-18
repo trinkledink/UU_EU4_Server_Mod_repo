@@ -26,4 +26,8 @@
   UU_LANDGRAVINE:0 "Landgravine"
   UU_LANDGRAVE_CONSORT:0 "Landgrave-Consort"
  UU_MARGRAVIATE:0 "Margraviate"  #For German HRE Margraves Meissen, Brandenburg, Baden (if not electors)
+ UU_MARQUISATE:0 "Marquisate"  #For Italian HRE Marches Saluzzo, Montferrat, Mantua (if not electors)
+  MARQUIS:0 "Marquis"
+  MARQUISE:0 "Marquise"
+  MARQUIS_CONSORT:0 "Marquis-Consort"
  
