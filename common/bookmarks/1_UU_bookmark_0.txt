@@ -6,13 +6,13 @@ bookmark = {
 	center = 112
 	default = yes
 	
+	country = MEI
 	country = LFA
 	country = ADA
 	country = ASK
-	country = ENG
 	
+	easy_country = MEI
 	easy_country = LFA
 	easy_country = ADA 
 	easy_country = ASK
-	easy_country = ENG
 }
