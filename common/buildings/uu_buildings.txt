@@ -82,3 +82,35 @@ mint = {
 		}			
 	}
 }
+
+
+uu_road_1 = {
+	cost = 30
+	time = 12
+
+	build_trigger = {
+		OR = {
+			is_capital = yes 
+			province_has_center_of_trade_of_level = 1
+			any_neighbor_province = { 
+				OR = {
+					has_construction = uu_road_1
+					has_building = uu_road_1
+				}
+			}
+		}
+	}
+
+	modifier = {
+		local_friendly_movement_speed = 0.3
+		local_hostile_movement_speed = 0.3
+		local_state_maintenance_modifier = 1
+		tax_income = -3
+		supply_limit = 10
+		allowed_num_of_buildings = 1
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

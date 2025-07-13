@@ -27,6 +27,7 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+	uu_road_1 = yes
 
 	#effect = { } # When a country researches the technology
 }

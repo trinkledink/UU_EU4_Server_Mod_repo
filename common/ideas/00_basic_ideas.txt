@@ -1572,7 +1572,7 @@ administrative_ideas = {
 		monarch_admin_power = 1
 	}
 	bookkeeping = {
-		state_maintenance_modifier = -0.25
+		merchants = 1
 	}
 	great_works_project_adm_idea = { 		#The Great Works Project
 		great_project_upgrade_cost = -0.25
@@ -1582,7 +1582,6 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		adm_tech_cost_modifier = -0.1
-		merchants = 1
 	}
 
 	ai_will_do = {
@@ -1910,7 +1909,7 @@ infrastructure_ideas = {
 		expand_administration_cost = -1
 	}
 	state_efficiency = {
-		state_maintenance_modifier = -0.5
+		state_maintenance_modifier = -0.33
 	}
 	efficient_construction_plans = {
 		expand_infrastructure_cost_modifier = -0.25
@@ -1918,7 +1917,6 @@ infrastructure_ideas = {
 	}
 	expanded_infrastructure_network = {
 		global_supply_limit_modifier = 0.25
-		#movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
 	}
 	uu_efficient_mining = {	#UU

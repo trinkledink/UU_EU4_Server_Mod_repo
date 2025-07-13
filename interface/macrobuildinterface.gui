@@ -580,6 +580,22 @@ guiTypes = {
 		}			
 
 		checkboxType = {
+			name = "build_uu_road_1"
+			position = { x = 212 y = 32 }	
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+
+		instantTextBoxType={
+			name = "uu_road_1_cost"
+			position = {x = 212 y = 82 }	
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "30¤"
+		}
+
+		checkboxType = {
 			name = "build_town_hall"
 			position = { x = 316 y = 32 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
