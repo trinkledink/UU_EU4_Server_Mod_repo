@@ -807,3 +807,34 @@ country_event = {	#slacken recruitment - visible
 		custom_tooltip = uu_slacken_tt_2
 	}
 }
+
+
+country_event = {	#hidden, africa bridge opens
+	id = UU_balance_events.17
+	title = UU_balance_events.16.t
+	desc = UU_balance_events.16.desc
+	picture = muslimgfx_CITY_VIEW_eventPicture
+
+	fire_only_once = yes 
+	mean_time_to_happen = {
+		months = 1
+	}
+	hidden = yes
+
+	trigger = {
+		has_global_flag = africa_bridge_flag
+		owns = 341
+		owns = 4736
+		is_subject = no
+		adm_tech = 16 
+	}
+	option = {
+		name = UU_balance_events.16.a
+		341 = {
+			add_great_project_tier = {
+				type = africa_bridge
+				tier = 3
+			}
+		}
+	}
+}

@@ -309,6 +309,16 @@ uu_closed_canal_mod = {
 	province_trade_power_modifier = -0.5
 	picture = "great_project_upgrade_cost_opposite"
 }
+africa_bridge_tunis_mod = {
+	province_trade_power_value = 25
+	local_state_maintenance_modifier = 2
+	local_friendly_movement_speed = 0.2
+}
+africa_bridge_sicily_mod = {
+	province_trade_power_value = 25
+	local_state_maintenance_modifier = 2
+	local_friendly_movement_speed = 0.2
+}
 
 #Plot Armour
 uu_plot_armour = {
