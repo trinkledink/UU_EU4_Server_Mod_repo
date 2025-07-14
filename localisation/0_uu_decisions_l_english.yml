@@ -96,9 +96,11 @@
  uu_replace_transports_title:0 "Replace Transports with Transport Light Ship"
   uu_replace_transports_trigger_tt:0 "Any owned province:\n§Y[Root.GetName]§!: At least 1 §YCog§! present"
   uu_replace_transports_desc:0 "§RMAKE SURE ALL COGS ARE IN PORT BEFORE YOU CLICK THE DECISION, OTHERWISE IT WILL BREAK.§!\nEvery owned Cog will be deleted and replaced with a Transport Light Ship at the cost of 20 ducats and 0 sailors each. Replacement units will spawn at a port in your country."
- #Pench Estate Checker
+ #Pench Decisions
  Pench_Estate_Influence_title:0 "Estate Influence Viewer"
   Pench_Estate_Influence_desc:0 "§YThis decision is only visible when at least one estate has over 100 influence.§! Hover over the decision button to see the actual influence of each estate.\n\n(btw pench made this)"
+ PenchStateHouseCheck_title:0 "State House Display Tool"
+  PenchStateHouseCheck_desc:0 "Hover over the decision button to see which states do not have a State House, either built or under construction.\n\n(btw pench made this)" 
  #Kitara
  uu_kitara_embrace_isolationism_title:0 "Embrace Isolationism"
   uu_kitara_embrace_isolationism_desc:0 "Our lands are prosperous and very defensible. There is no need to seek conflict within our borders, we should keep contact to the outside world to a minimum."

@@ -1,7 +1,6 @@
 country_decisions = {
 	Pench_Estate_Influence = {
 		color = { 60 120 60 }
-		major = yes
 		potential = {
 			OR ={
 				estate_influence = {
@@ -268,6 +267,31 @@ country_decisions = {
 					duration = 0
 				}
 			}
+		}
+	}
+	PenchStateHouseCheck = {
+		color = { 60 120 60 }
+		potential = {
+			adm_tech = 12
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = {
+				any_province_in_state = {
+					OR = {
+						has_building = state_house
+						has_construction = state_house
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			always = no
+		}
+		effect = {
 		}
 	}
 }

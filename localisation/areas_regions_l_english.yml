@@ -395,7 +395,7 @@ l_english:
  bohemia_area:0 "Bohemia"
  bohemia_area_name:0 "Bohemia"
  bohemia_area_adj:0 "Bohemian"
- erzgebirge_area:0 "Erzgebirge"
+ erzgebirge_area:0 "Ore Mountains" #UU Anglicized
  erzgebirge_area_name:0 "Plzen"
  erzgebirge_area_adj:0 "Plzner"
  south_saxony_area:1 "Saxony"
@@ -605,7 +605,7 @@ l_english:
  al_jazira_area:0 "al-Jazira" #UU Change for consistent Arabic anglicization
  al_jazira_area_name:0 "Al Jazira"
  al_jazira_area_adj:0 "Al Jaziran"
- iraq_arabi_area:0 "Iraq al-Arab" #UU Change for consistent Arabic anglicization
+ iraq_arabi_area:0 "Iraq al-Arab" #UU Change for consistent Arabic anglicization. Arab Iraq, in Arab.
  iraq_arabi_area_name:0 "Iraq"
  iraq_arabi_area_adj:0 "Iraqi"
  basra_area:0 "Basra"
@@ -1095,7 +1095,7 @@ l_english:
  farsistan_area:0 "Farsistan"
  farsistan_area_name:0 "Farsistan"
  farsistan_area_adj:0 "Farsistani"
- iraq_e_ajam_area:0 "Iraq-e-Ajam"
+ iraq_e_ajam_area:0 "Eraq-e Ajami" #Persian Iraq, in Persian
  iraq_e_ajam_area_name:0 "Persia"
  iraq_e_ajam_area_adj:0 "Persian"
  isfahan_area:0 "Isfahan"
@@ -1419,7 +1419,7 @@ l_english:
  brunei_area:0 "Brunei"
  brunei_area_name:0 "Brunei"
  brunei_area_adj:0 "Bruneian"
- kalimantan_area:0 "Kalimantan"
+ kalimantan_area:0 "West Kalimantan" #UU Fixed Inaccuracy
  kalimantan_area_name:0 "Kalimantan"
  kalimantan_area_adj:0 "Kalimantan"
  spice_islands_area:0 "Spice Islands"
@@ -1575,7 +1575,7 @@ l_english:
  ilan_hala_area:1 "North Ilin Hala"
  ilan_hala_area_name:0 "Deren"
  ilan_hala_area_adj:0 "Dereni"
- liaoning_area:0 "Shenyang" #changed
+ liaoning_area:0 "Shenyang" #UU Changed
  liaoning_area_name:0 "Shenyang"
  liaoning_area_adj:0 "Shenyangian"
  ordos_area:0 "Ordos"
@@ -1623,9 +1623,9 @@ l_english:
  kham_area:0 "Kham"
  kham_area_name:0 "Kham"
  kham_area_adj:0 "Khami"
- tsang_area:1 "U"
- tsang_area_name:1 "U"
- tsang_area_adj:1 "Uic"
+ tsang_area:1 "Ü" #UU Added Accent
+ tsang_area_name:1 "Ü"
+ tsang_area_adj:1 "Üic"
  utsang_area:2 "Tsang"
  utsang_area_name:2 "Tsang"
  utsang_area_adj:2 "Tsang"
@@ -1653,19 +1653,19 @@ l_english:
  zhejiang_area:0 "Zhejiang"
  zhejiang_area_name:0 "Zhejiang"
  zhejiang_area_adj:0 "Zhejiangi"
- jiangxi_area:0 "North Jiangxi" #Changed
+ jiangxi_area:0 "North Jiangxi" #UU Changed
  jiangxi_area_name:0 "Jiangxi"
  jiangxi_area_adj:0 "Jiangxian"
  fujian_area:0 "Fujian"
  fujian_area_name:0 "Fujian"
  fujian_area_adj:0 "Fujianian"
- taiwan_area:0 "Taiwan"
+ taiwan_area:0 "Formosa"  #UU Changed for earlier name (though neither date to 1444)
  taiwan_area_name:0 "Taiwan"
  taiwan_area_adj:0 "Taiwanese"
  guangdong_area:0 "East Guangdong"
  guangdong_area_name:0 "Guangdong"
  guangdong_area_adj:0 "Guangdongian"
- west_guangdong_area:0 "Hainan" #Changed
+ west_guangdong_area:0 "Hainan" #UU Changed
  west_guangdong_area_name:0 "Hainan"
  west_guangdong_area_adj:0 "Hainanese"
  guangxi_area:0 "Guangxi"
@@ -1683,7 +1683,7 @@ l_english:
  chuannan_area:0 "Chuannan"
  chuannan_area_name:0 "Chuannan"
  chuannan_area_adj:0 "Chuannani"
- huguang_area:0 "East Hubei" #Changed
+ huguang_area:0 "East Hubei" #UU Changed
  huguang_area_name:0 "Huguang"
  huguang_area_adj:0 "Huguangese"
  hunan_area:0 "Hunan"
@@ -2415,7 +2415,7 @@ l_english:
  south_china_region:0 "South China"
  south_china_region_name:0 "Guangdong"
  south_china_region_adj:0 "Guangdongi"
- xinan_region:0 "Xinan"
+ xinan_region:0 "Southwest China" #UU Anglicization
  xinan_region_name:0 "Xinan"
  xinan_region_adj:0 "Xinan"
  north_china_region:0 "North China"
