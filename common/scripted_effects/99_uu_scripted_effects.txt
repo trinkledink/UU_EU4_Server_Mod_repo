@@ -237,6 +237,16 @@ uu_apply_manu_dev_effect = {
 			value = 1 
 		}
 	}
+	every_owned_province = {
+		limit = {
+			has_building = uu_mint
+		}
+		add_dev_from_building = {
+			building = mint
+			type = tax 
+			value = 1 
+		}
+	}
 }
 
 uu_grant_daimyo_to_clan_effect = {

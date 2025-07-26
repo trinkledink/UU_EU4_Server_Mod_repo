@@ -23,30 +23,21 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					OR = {
-						AND = {
-							region = mongolia_region
-							is_empty = no
-						}
-						region = central_asia_region
-						region = crimea_region
-						province_id = 1816
-						province_id = 1821
-						province_id = 667
-					}
-					NOT = { owned_by = ROOT }
+					region = mongolia_region
+					is_empty = no
 				}
-				AND = {
-					OR = {
-						region = khorasan_region
-						region = persia_region
-						province_id = 295
-						province_id = 280
-					}
-					NOT = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+				region = central_asia_region
+				region = crimea_region
+				region = khorasan_region
+				region = persia_region
+				province_id = 295
+				province_id = 280
+				province_id = 667
+				province_id = 1816
+				province_id = 1821
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		allow = {

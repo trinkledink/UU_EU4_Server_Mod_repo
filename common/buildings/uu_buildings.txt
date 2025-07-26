@@ -39,22 +39,24 @@ mint = {
 		add_development_from_building = {
 			building = mint
 			type = tax
-			value = 2
+			value = 1
 		}
-		hidden_effect = {
-			FROM = {
-				change_variable = {
-					which = num_of_buildings_built
-					value = 1
-				}
-			}
+		add_dev_from_building = {
+			building = mint
+			type = tax
+			value = 1
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = mint
 			type = tax
-			value = 2
+			value = 1
+		}
+		remove_dev_from_building = {
+			building = mint
+			type = tax
+			value = 1
 		}
 	}
 	

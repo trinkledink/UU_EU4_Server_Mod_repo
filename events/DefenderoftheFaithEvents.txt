@@ -565,6 +565,7 @@ country_event = {
 			religion = anglican
 			religion = hussite
 		}
+		current_age = age_of_reformation #UU
 		NOT = {
 			has_country_modifier = victory_for_the_reformation
 		}

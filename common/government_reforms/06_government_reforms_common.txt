@@ -1543,6 +1543,13 @@ head_of_the_patriarchy_reform = {
 					duration = -1
 				}
 			}
+			if = {		#UU bugfix
+				limit = { is_defender_of_faith = yes }
+				add_country_modifier = {
+					name = gov_improved_defender_of_faith_mod
+					duration = -1
+				}
+			}
 		}
 	}
 	post_removed_effect = {
@@ -1553,6 +1560,7 @@ head_of_the_patriarchy_reform = {
 				}
 				remove_province_modifier = gov_expanded_temple_rights_mod
 			}
+			remove_country_modifier = gov_improved_defender_of_faith_mod	#UU bugfix
 		}
 	}
 	ai = {
@@ -5135,33 +5143,33 @@ merchant_representation_reform = {
 	}
 }
 
-integrated_ottoman_officials = {
-	icon = "integrated_ottoman_officials"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "King of Kings"
-		OR = {
-			have_had_reform = integrated_ottoman_officials
-			has_unlocked_government_reform = { government_reform = integrated_ottoman_officials }
-		}
-	}
-	modifiers = {
-		global_autonomy = -0.05
-		tolerance_of_heathens_capacity = 1
-	}
-
-	conditional = {
-		allow = { 
-			has_dlc = "Cradle of Civilization"
-		}
-		has_pashas = yes
-		custom_attributes = { reveal_ruler_skills_for_mamluks = yes }
-	}
-
-	ai = {
-		factor = 10
-	}
-}
+#integrated_ottoman_officials = {	#UU This is a duplicate, the exact same reform can be found above
+#	icon = "integrated_ottoman_officials"
+#	allow_normal_conversion = yes
+#	potential = {
+#		has_dlc = "King of Kings"
+#		OR = {
+#			have_had_reform = integrated_ottoman_officials
+#			has_unlocked_government_reform = { government_reform = integrated_ottoman_officials }
+#		}
+#	}
+#	modifiers = {
+#		global_autonomy = -0.05
+#		tolerance_of_heathens_capacity = 1
+#	}
+#
+#	conditional = {
+#		allow = { 
+#			has_dlc = "Cradle of Civilization"
+#		}
+#		has_pashas = yes
+#		custom_attributes = { reveal_ruler_skills_for_mamluks = yes }
+#	}
+#
+#	ai = {
+#		factor = 10
+#	}
+#}
 
 seven_provinces_reform = {
 	icon = "seven_provinces_reform"

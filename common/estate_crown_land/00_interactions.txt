@@ -59,17 +59,17 @@ interaction = {
 				loyalty = 10
 				short = yes
 			}
-			if = {
-				limit = {
-					has_government_attribute = selling_titles_increases_pa
-				}
-				add_patriarch_authority = 0.05
-			}
 		}
 		else = {
 			country_event = {
 				id = estate_privileges_and_agendas_events.6
 			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = selling_titles_increases_pa
+			}
+			add_patriarch_authority = 0.05
 		}
 		if = {
 			limit = {

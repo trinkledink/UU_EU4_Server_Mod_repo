@@ -27,14 +27,18 @@
 232 = "Braganza"
 334 = "Tangier"
 
-4892 = "Kingston"
+4892 = { "Kingston" "Kingston" }
 2550 = { "Fredericksburg" "Fredericksburg" }
 957 = { "Delaware" "Wilmington" }
-962 = "Trenton"
+962 = { "Trenton" "Trenton"}
 2639 = { "Newark" "Newark" }
-2010 = "Hartford"
-989 = { "Northumberland" "Cobourg" }
+2010 = { "Hartford" "Hartford" }
+989 = { "Cobourg" "Cobourg" }
 938 = { "New Bern" "New Bern" }
+2585 = { "Muskoka" "Muskoka" }
+874 = { "Seattle" "Seattle" }
+2485 = { "Olympia" "Olympia" }
+972 = { "Vancouver Isl." "Victoria" }
 
 356 = "Benghazi"
 357 = "Derna"
@@ -117,7 +121,7 @@
 985 = { "Moncton" "Moncton" }
 986 = "Gaspe"
 987 = { "Windsor" "Windsor" }
-988 = { "Simcoe" "Midhurst" }
+988 = { "Barrie" "Barrie" }
 #989 = { "Ontario" "Kingston" }         #UU This is not where Kingston is
 990 = "Three Rivers"
 992 = { "Hull" "Hull" }
@@ -133,7 +137,6 @@
 1005 = "York Factory"
 1006 = { "Churchill" "Churchill" }
 1007 = { "Thunder Bay" "Thunder Bay" }
-#1008 = "Red River"
 1008 = { "Winnipeg" "Winnipeg" }        #UU
 1009 = "Berens River"
 1010 = "Dauphin"
@@ -193,16 +196,15 @@
 2563 = { "Vermont" "Montpelier" }
 2564 = "White Mountains"
 2566 = "Castine"
-2568 = "Cape Sable"
-2569 = { "Halifax" "Halifax" }
-2570 = "Saint John"
+2568 = { "Argyle" "Halifax" }
+2570 = "Saint John"  #UU
 2572 = "Campbelton"
 2574 = "Nain"
 2577 = "Seven Islands"
 2580 = "Wemotaci"
 2582 = "Rimouski"
-2586 = "Nottawasaga"
-2587 = "Manitoulin"
+2586 = "Kitchener"  #UU
+2587 = "Owen Sound"  #UU
 2595 = { "English River" "Ile a la Crosse" }
 2597 = "South Branch"
 2588 = "Cloche"
@@ -215,8 +217,8 @@
 2605 = "Shuswap"
 2606 = { "Fort Alexandria" "Fort Alexandria" }
 2670 = { "Toronto" "York" }
-2671 = "Ronde"
-4890 = "Ottawa"
+2671 = "Sudbury"     #UU
+4890 = { "Ottawa" "Bytown" }    #UU
 
 #Italy
 104 = { "Milan" "Milan" }

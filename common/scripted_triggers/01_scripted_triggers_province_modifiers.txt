@@ -78,6 +78,7 @@ has_river_estuary_trigger = {
 			#China
 			has_province_modifier = mng_bogue_modifier
 			has_province_modifier = expanded_nile_estuary_modifier
+			has_province_modifier = pol_daugava_estuary_modifier
 		}
 	}
 }
@@ -155,9 +156,11 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = orange_river_estuary_modifier
 			has_province_modifier = jubba_estuary_modifier
 			has_province_modifier = volta_estuary_modifier
+			has_province_modifier = colorado_estuary_modifier
 			#China
 			has_province_modifier = mng_bogue_modifier
 			has_province_modifier = expanded_nile_estuary_modifier
+			has_province_modifier = pol_daugava_estuary_modifier
 		}
 	}
 }

@@ -18,7 +18,7 @@
  ctg_mercantilism_desc:0 "New mercantilism policies to protect our new local economy."
  ctg_spreading_civilsation:0 "Spreading Civilization"
  ctg_spreading_civilsation_desc:0 "It is once again our duty to spread civilization and prosperity across the Mediterranean."
- ctg_fertile_lands:0 "Fertile lands"
+ ctg_fertile_lands:0 "Fertile Lands"
  ctg_fertile_lands_desc:0 "The fertile lands of northern Africa can supply a huge population."
  
  ###############################################################
@@ -32,7 +32,7 @@
  kob_legacy_of_hannibal_desc:0 "It is not without reason that Hannibal Barcid is known as one of the strongest generals of all time. His campaigns are widely studied in our military academies, and his blood runs through our veins."
  kob_strong_fortifications:0 "Strong Fortifications"
  kob_strong_fortifications_desc:0 "With new Carthaginian settlers arriving in the Kingdom of Barcid, we may find inspiration in the ancient fortified Carthaginian cities for our new establishments."
- kob_anti_rival_sentiment:0 "Anti-rival Sentiment"
+ kob_anti_rival_sentiment:0 "Anti-Rival Sentiment"
  kob_anti_rival_sentiment_desc:0 "Our people harbour strong resentment and grudges towards our rivals and adversaries. One should not underestimate the morale of a people once brought to destruction. They've stared death in the face and would rather bring it than face it again."
  kob_valencia_coast:0 "The Valencian Coastline"
  kob_valencia_coast_desc:0 "We hold one of the most important coastlines for trade thorugh the Mediterranean. This puts us at an advantageous position to direct trade."
@@ -241,7 +241,7 @@
  sok_six_hundred_madrasahs:0 "Six Hundred Madrasas of Seku Amadu"
  sok_six_hundred_madrasahs_desc:0 "To further the spread of Islam in our nation, we will build mosques and madrasas in every city."
  sok_jihad_as_reform:0 "Jihad as Reform"
- sok_jihad_as_reform_desc:0 "The primary purpose of the Fulani jihads was to spread Islam in defiance of the heathen kings who sought to ban it, but a secondary reason for the uprising was to enact social change. Reforms were created to counter problems such as goods shortages; increase literacy; and defending against the encroaching colonizers from beyond Africa."
+ sok_jihad_as_reform_desc:0 "The primary purpose of the Fulani jihads was to spread Islam in defiance of the heathen kings who sought to ban it, but a secondary reason was to enact social change. Reforms were created to counter problems such as goods shortages; increase literacy; and defend against the encroaching colonizers from beyond Africa."
  sok_fulani_jihad:0 "Fulani Revolution"
  sok_fulani_jihad_desc:0 "We must not forget why we established this nation in the first place. Though we have thrown off the shackles of the corrupt Muslim aristocracies and heathen rulers before us, there are still many realms of unbelievers, and kingdoms where monarchs call themselves Muslims yet raise the flag of a worldly kingdom above the banner of Islam. These unbelievers will not triumph over our state.\n§YUnlocks a unique estate privilege for the Ulema.§!"
  

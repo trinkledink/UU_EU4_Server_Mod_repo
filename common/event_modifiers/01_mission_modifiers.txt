@@ -7510,9 +7510,9 @@ gen_hoa_great_power_modifier = {
 	prestige_decay = -0.02
 }
 
-gen_hoa_unify_horn_modifier = {
-	local_monthly_devastation = -0.1
-	local_unrest = -2
+gen_hoa_unify_horn_modifier = {	#UU bugfix
+	global_monthly_devastation = -0.1
+	global_unrest = -2
 	development_cost = -0.05
 }
 
