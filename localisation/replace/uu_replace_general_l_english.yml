@@ -17,7 +17,12 @@
  ADA_ADJ:0 "Adalite" #Actual adjective for this place
  LAU:0 "Lauenburg"  #Removing all Saxe- prefixes
  TIR:0 "Tyrol" #Most common English name for this place
- TAU:0 "Taungoo" #Most common English name for this place
+ TAU:0 "Toungoo" #Most common English name for this place
+  TAU_ADJ:0 "Toungoo"
+ ARK:0 "Mrauk-U" #Official name for this place
+ PEG:0 "Hanthawaddy" #Most common English name for this place
+  PEG_ADJ:0 "Hanthawaddy"
+
 
  #Trade Nodes
  katsina:0 "Hausaland"
@@ -53,6 +58,7 @@
  
  zhuang:0 "Cuengh"
   zhuang_new:0 "Zhuang"
+ arakanese:0 "Rakhine" 
 
  white_house:0 "District of Columbia"  #UU Change
  sankore_madrasah:0 "Sankoré Madrasah" #UU Change

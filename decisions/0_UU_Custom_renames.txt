@@ -227,6 +227,10 @@ country_decisions = {
 	}
 
 	uuspa_rename_decision = {
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { owned_by = ROOT }
+		}
 		potential = {
 			OR = {
 				tag = SPA 

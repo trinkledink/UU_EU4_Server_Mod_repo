@@ -579,14 +579,14 @@ l_english:
  PROV576:0 "Kalat"
  PROV577:0 "Quetta"
  PROV578:0 "Roh"
- PROV579:0 "Mrauk U"
+ PROV579:0 "Mrauk-U" #UU Change
  PROV580:0 "Kale"
  PROV581:0 "Sagaing"
  PROV582:0 "Mong Yang"
  PROV583:0 "Hsenwi"
  PROV584:0 "Ava"
- PROV585:0 "Taungoo"
- PROV586:0 "Pegu"
+ PROV585:0 "Toungoo"  #UU Change
+ PROV586:0 "Bago"  #UU Change
  PROV587:0 "Kengtung"
  PROV588:0 "Mong Nai"
  PROV589:0 "Chiang Mai"

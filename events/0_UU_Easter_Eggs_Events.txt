@@ -544,14 +544,17 @@ country_event = { #Baril
         custom_tooltip = uu_easter_egg_events.17.tt 
     }
     option = {
-        name = uu_easter_egg_events.17.b 
+        name = uu_easter_egg_events.17.c 
         add_prestige = -100
         custom_tooltip = uu_easter_egg_events.17.tt
         set_country_flag = uu_baril_flag
-        add_ruler_modifier = {
-            name = uu_baril_modifier
-            desc = uu_baril_modifier_desc
-            duration = -1
+        custom_tooltip = uu_easter_egg_events.17.tt2
+        hidden_effect = {
+            add_ruler_modifier = {
+                name = uu_baril_modifier
+                desc = uu_baril_modifier_desc
+                duration = -1
+            }
         }
     }
 }

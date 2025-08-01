@@ -85,11 +85,12 @@
  uu_easter_egg_events.16.a:0 "We remember the Alamo!"
 
  uu_easter_egg_events.17.t:0 "A Curious Map Error"
- uu_easter_egg_events.17.desc:0 "[Root.Monarch.GetName] was perusing through maps and charts of the [Root.GetAdjective] empire one day, marvelling at the size of the territories which called [Root.Monarch.GetHerHim] their ruler, when he noticed a curious typographical error: the South American colony of Brazil, one of the largest possessions of the crown, had mysteriously been labeled by a different name.\nLater, in the court, [Root.Monarch.GetName] heard it again, among the whispers of his attendants; even later, at dinnertime, in the chatter of the diplomats. Whether it was all imagination or not, the word would not leave [Root.Monarch.GetHerHis] mind: it was something powerful; something meaningful; perhaps even divine. And for a whole week hence, all that [Root.Monarch.GetName] could think about was that erroneous yet auspicious name: \nBaril."
+ uu_easter_egg_events.17.desc:0 "[Root.Monarch.GetName] was perusing through maps and charts of the [Root.GetAdjective] empire one day, marvelling at the size of the territories which called [Root.Monarch.GetHerHim] their ruler, when he noticed a curious typographical error: the South American colony of Brazil, one of the largest possessions of the crown, had mysteriously been labeled by a different name.\nLater, in the court, [Root.Monarch.GetName] heard it again, among the whispers of his attendants; even later, at dinnertime, in the chatter of the diplomats. Whether it was all imagination or not, the word would not leave [Root.Monarch.GetHerHis] mind: it was something powerful; something meaningful; perhaps even divine. And for a whole week hence, all that [Root.Monarch.GetName] could think about was that erroneous, yet auspicious, name:\n\nBaril."
  uu_easter_egg_events.17.a:0 "What the hell is a Baril?"
  uu_easter_egg_events.17.b:0 "This idea deserves additional thought."
  uu_easter_egg_events.17.c:0 "One day, may we all call ourselves proud Barileiros."
  uu_easter_egg_events.17.tt:0 "Unlocks the decision '§YThe Baril Agenda§!'."
+ uu_easter_egg_events.17.tt2:0 "[Root.GetName] gets modifier '§YPondering Barilidade§!' until the death of the current ruler."
  uu_baril_modifier:0 "Pondering Barilidade"
  uu_baril_modifier_desc:0 "+2 DIP: Grand visions of a new culture\n-1 ADM: Not much else going on up there"
  uubrz_rename_decision_title:0 "The Baril Agenda"
