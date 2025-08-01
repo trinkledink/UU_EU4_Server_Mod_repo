@@ -413,6 +413,17 @@ on_mandate_of_heaven_gained = {
 	}
 }
 
+# When a nation loses the Mandate of Heaven
+# FROM = New Emperor, ROOT = Old Emperor
+on_mandate_of_heaven_lost = {
+	if = {
+		limit = {
+			has_country_flag = uueoc_rename_decision_flag
+		}
+		restore_country_name = yes		#Clears the 'Great X' name from the former emperor
+	}
+}
+
 on_embrace_revolution = {
     if = {
 		limit = { NOT = { government = republic } }

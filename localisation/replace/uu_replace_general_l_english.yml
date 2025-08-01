@@ -17,6 +17,7 @@
  ADA_ADJ:0 "Adalite" #Actual adjective for this place
  LAU:0 "Lauenburg"  #Removing all Saxe- prefixes
  TIR:0 "Tyrol" #Most common English name for this place
+ TAU:0 "Taungoo" #Most common English name for this place
 
  #Trade Nodes
  katsina:0 "Hausaland"
@@ -66,6 +67,8 @@
  kilwa_city:0 "Kilwa Kisiwani"    #UU Change
  fire_temple_of_ateshgah:0 "Fire Temple of Baku" #UU Change because this is objectively cooler
  kiev_pechersk_lavra:0 "Kyiv Pechersk Lavra"  #UU Change
+ hampi:0 "City of Hampi" #UU Change
+ salvador_da_bahia:0 "City of Salvador da Bahia"  #UU Change
  
 
  #Ideas 

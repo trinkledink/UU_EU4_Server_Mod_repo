@@ -404,6 +404,11 @@ uu_alamo_remembrance = {
    land_morale = 0.10
 }
 
+uu_baril_modifier = {
+	country_admin_power = -1
+	country_diplomatic_power = 2
+}
+
 uu_usa_marines_modifier = {	
 	discipline = 0.05
 	infantry_power = 0.10

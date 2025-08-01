@@ -165,9 +165,9 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
-		ai_importance = 0
+		ai_importance = 1
 	}
 
 	uucsh_rename_decision = {			#Emperor of China - Shun
@@ -223,6 +223,54 @@ country_decisions = {
 			set_country_flag = uubru_rename_decision_flag 
 			override_country_name = UUBRULUN
 			add_prestige = 25
+		}
+	}
+
+	uuspa_rename_decision = {
+		potential = {
+			OR = {
+				tag = SPA 
+				tag = POR
+			}
+			is_subject = no
+			num_of_owned_provinces_with = {
+				value = 45
+				region = iberia_region
+				is_core = root
+			}
+		}
+		allow = {
+			is_at_war = no
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = uuspa_rename_decision_flag 
+			override_country_name = UUSPA_IBE
+			add_prestige = 25
+		}
+	}
+
+	uubrz_rename_decision = {
+		potential = {
+			has_country_flag = uu_baril_flag
+			BRZ = { NOT = { has_global_flag = uubrz_rename_decision_flag } }
+			ai = no
+			OR = {
+				tag = BRZ 
+				overlord_of = BRZ
+			}
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			BRZ = {
+				set_country_flag = uubrz_rename_decision_flag 
+				override_country_name = UUBRZ    
+			}
 		}
 	}
 }

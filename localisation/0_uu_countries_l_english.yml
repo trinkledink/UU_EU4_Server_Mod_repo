@@ -53,6 +53,8 @@
   UUEOC_GCSH_ADJ:0 "Great Shun"
  UUBRULUN:0 "Brunswick-Lüneburg" 
   UUBRULUN_ADJ:0 "Brunswick-Lüneburgian"
+ UUSPA_IBE:0 "Iberia" 
+  UUSPA_IBE_ADJ:0 "Iberian"
  #For runfile purposes only
  UU_AUH2:0 "Revolutionary Hungary-Austria"
   UU_AUH2_ADJ:0 "Revolutionary Hungaro-Austrian"

@@ -113,7 +113,7 @@ country_event = { #El Dorado Delhi
         has_country_modifier = sce_search_eldorado
     }
     mean_time_to_happen = {
-        months = 1200
+        months = 600
     }
     option = {
         name = uu_easter_egg_events.4.a
@@ -506,11 +506,52 @@ country_event = { # Remember the alamo
     }
      
 
- option = {
-     name = uu_easter_egg_events.16.a
+    option = {
+        name = uu_easter_egg_events.16.a
         add_country_modifier = {
             name = uu_alamo_remembrance
             duration = 2    
         }     
+    }
+}
+
+country_event = { #Baril
+    id = uu_easter_egg_events.17
+    title = uu_easter_egg_events.17.t
+    desc = uu_easter_egg_events.17.desc
+    picture = COASTLINE_MAP_eventPicture
+
+    trigger = {
+        ai = no
+        OR = {
+            tag = BRZ 
+            overlord_of = BRZ
+        }
+    }
+    mean_time_to_happen = {
+        months = 120
+    }
+     
+
+    option = {
+        name = uu_easter_egg_events.17.a 
+        add_prestige = 1 
+    }
+    option = {
+        name = uu_easter_egg_events.17.b 
+        add_prestige = -1
+        set_country_flag = uu_baril_flag
+        custom_tooltip = uu_easter_egg_events.17.tt 
+    }
+    option = {
+        name = uu_easter_egg_events.17.b 
+        add_prestige = -100
+        custom_tooltip = uu_easter_egg_events.17.tt
+        set_country_flag = uu_baril_flag
+        add_ruler_modifier = {
+            name = uu_baril_modifier
+            desc = uu_baril_modifier_desc
+            duration = -1
+        }
     }
 }
