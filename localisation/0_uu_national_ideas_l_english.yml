@@ -66,28 +66,6 @@
  elb_university_founding_desc:0 "A lot of bright minds within our realm needed more room to grow their ideas. By establishing Universities across the country we ensure that we will always be as innovative as ever"
  
  ###############################################################
- # Austro-Hungarian ideas
- ###############################################################
- 
- AUH_ideas:0 "Austro-Hungarian Ideas"
- AUH_ideas_start:0 "Austro-Hungarian Traditions"
- AUH_ideas_bonus:0 "Austro-Hungarian Ambition"
- imperial_administration:0 "Imperial Administration"
- imperial_administration_desc:0 "The process of adopting a bureaucracy more centralized than the Holy Roman Empire has yielded a stronger nation-state that supercedes sub-national allegiences."
- AUH_alpine_engineering:0 "Alpine Engineering"
- AUH_alpine_engineering_desc:0 "The utilization of a standing army has made available the resources to operate and maintain remote and advanced fortifications under the direction of our most senior military engineers."
- centralization_of_mining_rights:0 "Centralization of Mining Rights"
- centralization_of_mining_rights_desc:0 "The regulation of mining output has allowed us to simultaneously manage production and prices, allowing for concessionary financing for government works, giving our industrialization efforts a leg up on the private competition."
- wag_of_the_chin:0 "Wag of the Chin"
- wag_of_the_chin_desc:0 "Bella gerant alii, tu felix Austria, nube!"
- #AUH_bulwark_of_christendom:0 "Bulwark of Christendom"
- #AUH_bulwark_of_christendom_desc:0 "Pacification of the populus begins with the homogeneity of the nation's religions. In the face of the Otto-Turk, we must be united."
- herren_generals:0 "Multinational Army"
- herren_generals_desc:0 "As our Empire expands to include more and more non-Germans, we will organize our army into regiments of people who all speak (mostly) the same language, to increase cohesion at least within individual regiments."
- #unter_dem_doppeladler:0 "Unter Dem Doppeladler"
- #unter_dem_doppeladler_desc:0 "'Under the Double Eagle' is a march composed by Josef Franz Wagner, an Austrian military bandmaster and composer.This march is referring to the double eagle in the coat of arms of the Austro-Hungarian empire."
-
- ###############################################################
  # Kingdom of God ideas 
  ###############################################################
  

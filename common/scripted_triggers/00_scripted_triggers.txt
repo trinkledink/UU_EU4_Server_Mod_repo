@@ -710,6 +710,7 @@ has_manufactory_trigger = { #Province Scope
 			has_building = soldier_households
 			has_building = impressment_offices
 			has_building = state_house
+			has_building = mint	#UU
 		}
 	}
 }
