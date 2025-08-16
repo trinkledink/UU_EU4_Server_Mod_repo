@@ -981,7 +981,7 @@ la_plata_region = {
 		southern_pampas_area
 		buenos_aires_area
 		banda_oriental_area
-		south_atlantic_islands_area
+		#south_atlantic_islands_area
 		southern_chile_area
 		central_chile_area
 		misiones_area
@@ -1140,6 +1140,7 @@ oceanea_region = {
 		te_waipounamu_area
 		northern_polynesia_area
 		eastern_polynesia_area
+		south_atlantic_islands_area
 	}
 	monsoon = {
 		00.07.01

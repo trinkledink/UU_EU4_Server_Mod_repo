@@ -659,6 +659,7 @@ subarctic_islands_area = { #4
 
 greenland_area = { #2
 	1104 1105
+	481 #UU Bermuda
 }
 
 ########################################
@@ -1930,7 +1931,8 @@ guinea_coast_area = { #4
 }
 
 south_atlantic_islands_area = { #2
-	1095 2025
+	1095 2025 
+	2002	#UU Galapagos
 }
 
 matamba_area = { #3
@@ -3153,7 +3155,7 @@ banda_oriental_area = { #5
 }
 
 guyana_area = { #4
-	502 743 744 2803 
+	743 744 2803 
 }
 
 suriname_area = { #3
@@ -3237,7 +3239,7 @@ peruan_coast = { #3
 }
 
 chimor_area = { #5
-	812 2002 2821 2822 2826
+	812 2821 2822 2826
 }
 
 ucayali_area = { #3
@@ -3797,7 +3799,8 @@ dominica_area = { #5
 }
 
 greater_antilles_area = { #4
-    487 481 491 492
+    487 491 492
+	502
 }
 
 lucayan_area = { #2

@@ -124,6 +124,25 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1822;5006;sea;1373;4699;1170;4696;1177;Yangtze Delta UU Added
 4228;2741;sea;1389;-1;-1;-1;-1;Jeju-Naju UU Added 
 979;2611;sea;1680;-1;-1;-1;-1;Alaska Aleutians UU Added
+482;483;sea;1524;-1;-1;-1;-1;Bahamas-Turks UU Zeb Added
+483;2654;sea;1524;-1;-1;-1;-1;Turks-Cuba UU Zeb Added
+2654;489;sea;1524;-1;-1;-1;-1;Cuba-Hispaniola UU Zeb Added
+489;483;sea;1524;-1;-1;-1;-1;Hispaniola-Turks UU Zeb Added
+2655;487;sea;1516;-1;-1;-1;-1;Cuba-Jamaica UU Zeb Added
+487;488;sea;1516;-1;-1;-1;-1;Jamaica-Hispaniola UU Zeb Added 
+4621;492;sea;1526;-1;-1;-1;-1;Hispaniola-Puerto Rico UU Zeb Added
+492;493;sea;1526;-1;-1;-1;-1;Puerto Rico-Lesser Antilles UU Zeb Added
+493;1881;sea;1526;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+1881;494;sea;1523;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+496;497;sea;1523;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+500;501;sea;1522;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+491;2808;sea;1519;-1;-1;-1;-1;Aruba UU Zeb Added
+2550;950;sea;1501;-1;-1;-1;-1;Chesapeake Bay UU Zeb Added
+1097;5009;sea;1465;-1;-1;-1;-1;Fernando Po-Cameroon UU Zeb Added
+2683;2684;sea;1351;-1;-1;-1;-1;Nias-Mentawai UU Zeb Added
+2719;1236;sea;1405;-1;-1;-1;-1;Madang-Rabaul UU Zeb Added
+632;634;sea;1355;-1;-1;-1;-1;Sumba-Sumbawa UU Zeb Added
+1099;2788;sea;1446;-1;-1;-1;-1;Socotra-Hafun UU Zeb Added
 815;2934;canal;815;-1;-1;-1;-1;amazon_peru_strait UU Added
 2900;2934;canal;2934;-1;-1;-1;-1;amazon_brazil_strait UU Added
 341;4736;canal;341;-1;-1;-1;-1;africa_bridge UU Zeb Added
