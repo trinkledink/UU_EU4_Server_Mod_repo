@@ -12,7 +12,7 @@ country_decisions = {
 				has_reform = indep_daimyo
 			}
 			NOT = { has_country_flag = formed_japan_flag }
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_four_trigger = yes	#should be redundant
 			NOT = { exists = JAP }
 		}
 		allow = {
@@ -49,10 +49,18 @@ country_decisions = {
 						tag = ASK
 					}
 				}
-				add_country_modifier = {
-					name = uujap_legacy_sengoku
-					duration = -1
-					desc = uujap_legacy_sengoku_desc
+				hidden_effect = {
+					add_country_modifier = {
+						name = uujap_legacy_sengoku
+						duration = -1
+						desc = uujap_legacy_sengoku_desc
+					}
+				}
+				tooltip = {
+					add_country_modifier = {
+						name = uujap_legacy_sengoku
+						duration = -1
+					}
 				}
 			} else = {
 				custom_tooltip = uujap_shogunate_get_buff_tt
