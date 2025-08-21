@@ -132,9 +132,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 487;488;sea;1516;-1;-1;-1;-1;Jamaica-Hispaniola UU Zeb Added 
 4621;492;sea;1526;-1;-1;-1;-1;Hispaniola-Puerto Rico UU Zeb Added
 492;493;sea;1526;-1;-1;-1;-1;Puerto Rico-Lesser Antilles UU Zeb Added
-493;1881;sea;1526;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+493;1881;sea;1526;1799;1155;1819;1160;Lesser Antilles UU Zeb Added
 1881;494;sea;1523;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
-496;497;sea;1523;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
+496;497;sea;1523;1844;1125;1847;1121;Lesser Antilles UU Zeb Added
 500;501;sea;1522;-1;-1;-1;-1;Lesser Antilles UU Zeb Added
 491;2808;sea;1519;-1;-1;-1;-1;Aruba UU Zeb Added
 2550;950;sea;1501;-1;-1;-1;-1;Chesapeake Bay UU Zeb Added

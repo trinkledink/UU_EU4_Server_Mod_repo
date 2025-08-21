@@ -2392,6 +2392,7 @@ malacca_area = { #3
 }
 
 khorat_area = { #5
+	color = { 118  99  181 }
 	612 4836 2383 2386
 }
 
@@ -2795,6 +2796,7 @@ liaodong_area = {  # UU New
 }
 
 ordos_area = { #4 (Western Inner Mongolia)
+	color = { 18  199  151 }	#UU
 	701 709 2191 4223 4676
 }
 
@@ -2957,8 +2959,8 @@ guangxi_area = { #5
 	664 1840 2162 2163 2164
 }
 
-yun_gui_area = { #5 (Yun-Gui Hinterland)
-	662 663 673 674 4199
+yun_gui_area = { #5 (Yun-Gui Hinterland)	#UU East Yunnan
+	662 663 675
 }
 
 yun_gui_borderland_area = { #5
@@ -2966,16 +2968,15 @@ yun_gui_borderland_area = { #5
 }
 
 sichuan_area = { #3
-	679 680 4212 
-	4964 4963 #UU
+	2748 4213 4212 679 2170
 }
 
-chuannan_area = { #4
-	675 2168 2748 4213
+chuannan_area = { #4 #UU Now Guiyang
+	2168 674 673 4199
 }
 
 chuanbei_area = { #3
-	2169 2170 4211
+	2169 4211 680 4963 4964
 }
 
 huguang_area = {   #4 (east hubei)
@@ -3594,6 +3595,7 @@ ottawa_valley_area = { #3 NEW
 }
 
 james_bay_area = { #5
+	color = { 138  99  151 }	#UU
     998 999 1000 1003 1004
 }
 
