@@ -311,6 +311,7 @@
  TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain"  #UU Rework
  TIM_will_be_necessary_to_form_persia:0 " "
  AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!"
+ shogun_every_daimyo_sankin_kotai_tt:0 "\nFor §Y10§! years every §YDaimyo§! subject will receive: \nMonthly Autonomy Change: §R+0.15%§! \n "
  less_than_15_provinces_on_same_continent:0 "Has less than §Y15§! provinces in States."
  less_than_25_provinces_on_same_continent:0 "Has less than §Y25§! provinces in States."
  less_than_35_provinces_on_same_continent:0 "Has less than §Y35§! provinces in States."

@@ -237,8 +237,18 @@
 4957 = "Liuyeung" #Liaoyang
 4958 = "Sanhoi" #Shanhai Pass
 4960 = "Pohing" #Baoqing
+4961 = "Sekchow" #Shizhou
 4962 = "Dak-on" #De'an
 4963 = "Kwaichow" #Cuizhou
+4964 = "Sichow" #Sizhou
+4965 = "Gaugong" #Jiujiang
+4966 = "Gwongseun" #Guangxin
+4967 = "Seungjiu" #Shangrao
+4968 = "Chengchow" #Zhengzhou
+4969 = "Sammumhap" #Sanmenxia
 5003 = "Meichow" #Meizhou
 5004 = "Namtau" #Nantou
 5005 = "Kongmun" #Jiangmen, Xinhui
+5006 = "Tungchow" #Tongzhou
+5007 = "Luk-on" #Liu'an
+
