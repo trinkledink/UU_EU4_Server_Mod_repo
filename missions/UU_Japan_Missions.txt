@@ -8,6 +8,7 @@ uujap_1 = { #DONE
 			has_reform = daimyo
 			has_reform = shogunate
 			tag = JAP
+			tag = SOO
 		}
 		culture_group = japanese_g
 		NOT = { map_setup = map_setup_random }
@@ -318,6 +319,7 @@ uujap_2 = {	#DONE
 			has_reform = daimyo
 			has_reform = shogunate
 			tag = JAP
+			tag = SOO
 		}
 		culture_group = japanese_g
 		NOT = { map_setup = map_setup_random }
@@ -724,6 +726,7 @@ uujap_3 = {	#DONE
 			has_reform = daimyo
 			has_reform = shogunate
 			tag = JAP
+			tag = SOO
 		}
 		culture_group = japanese_g
 		NOT = { map_setup = map_setup_random }
@@ -1114,6 +1117,7 @@ uujap_4 = { #DONE
 			has_reform = daimyo
 			has_reform = shogunate
 			tag = JAP
+			tag = SOO
 		}
 		culture_group = japanese_g
 		NOT = { map_setup = map_setup_random }
@@ -1445,6 +1449,7 @@ uujap_5 = {	#DONE
 			has_reform = daimyo
 			has_reform = shogunate
 			tag = JAP
+			tag = SOO
 		}
 		culture_group = japanese_g
 		NOT = { map_setup = map_setup_random }
@@ -1457,7 +1462,7 @@ uujap_5 = {	#DONE
 		position = 1
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = uujap_balance_the_four_divisions_tt
+				tooltip = JAP_balance_the_four_divisions_tt
 				OR = {
 					AND = {
 						if = {

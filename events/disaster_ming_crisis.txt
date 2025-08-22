@@ -173,6 +173,7 @@ country_event = {
 						area = hebei_area
 						area = south_hebei_area
 						area = liaoning_area
+						area = liaodong_area #UU
 					}
 					OR = {
 						controlled_by = REB
@@ -859,6 +860,15 @@ country_event = {
 		name = ming_crisis.9.A
 
 		liaoning_area = {
+			limit = {
+				owned_by = CSH
+				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_claim = ROOT
+		}
+
+		liaodong_area = {	#UU
 			limit = {
 				owned_by = CSH
 				NOT = { is_claim = ROOT }

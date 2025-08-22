@@ -1871,7 +1871,7 @@ overlord_sankin_kotai = {
 }
 
 subject_sankin_kotai = {
-	global_autonomy = 0.25
+	global_autonomy = 0.15	#UU
 }
 
 overlord_expel_ronin = {

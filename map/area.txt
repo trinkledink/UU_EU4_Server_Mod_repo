@@ -2392,7 +2392,6 @@ malacca_area = { #3
 }
 
 khorat_area = { #5
-	color = { 118  99  181 }
 	612 4836 2383 2386
 }
 
@@ -2796,7 +2795,6 @@ liaodong_area = {  # UU New
 }
 
 ordos_area = { #4 (Western Inner Mongolia)
-	color = { 18  199  151 }	#UU
 	701 709 2191 4223 4676
 }
 
@@ -3595,7 +3593,6 @@ ottawa_valley_area = { #3 NEW
 }
 
 james_bay_area = { #5
-	color = { 138  99  151 }	#UU
     998 999 1000 1003 1004
 }
 

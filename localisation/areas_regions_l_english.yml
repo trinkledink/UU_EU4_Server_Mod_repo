@@ -1332,7 +1332,7 @@ l_english:
  karenni_area:0 "Karenni"
  karenni_area_name:0 "Karreni"
  karenni_area_adj:0 "Karreni"
- arakan_area:0 "Rakhine"
+ arakan_area:0 "Arakan" #UU Change
  arakan_area_name:0 "Arakan"
  arakan_area_adj:0 "Arakanese"
  malaya_area:0 "Malaya"
@@ -1359,7 +1359,7 @@ l_english:
  north_tenasserim_area:0 "North Tenasserim"
  north_tenasserim_area_name:0 "Ratchaburi"
  north_tenasserim_area_adj:0 "Ratchaburi"
- red_river_delta_area:0 "Sông Hông"
+ red_river_delta_area:0 "Tonkin"  #UU Change
  red_river_delta_area_name:0 "Vietnam"
  red_river_delta_area_adj:0 "Vietnamese"
  vietnam_area:2 "Annam"
