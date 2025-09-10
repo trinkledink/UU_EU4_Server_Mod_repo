@@ -122,7 +122,7 @@
 986 = "Gaspe"
 987 = { "Windsor" "Windsor" }
 988 = { "Barrie" "Barrie" }
-#989 = { "Ontario" "Kingston" }         #UU This is not where Kingston is
+989 = { "Cobourg" "Cobourg" }   #UU
 990 = "Three Rivers"
 992 = { "Hull" "Hull" }
 993 = { "Montreal" "Montreal" }
@@ -196,7 +196,8 @@
 2563 = { "Vermont" "Montpelier" }
 2564 = "White Mountains"
 2566 = "Castine"
-2568 = { "Argyle" "Halifax" }
+2568 = { "Argyle" "Yarmouth" }  #UU
+2569 = { "Halifax" "Halifax" }
 2570 = "Saint John"  #UU
 2572 = "Campbelton"
 2574 = "Nain"
