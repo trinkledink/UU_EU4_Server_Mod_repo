@@ -60,7 +60,7 @@ country_decisions = {
 			}
 			estate_influence = {
 				estate = estate_church
-				influence = 90
+				influence = 70
 			}
 			estate_loyalty = {
 				estate = estate_church
@@ -68,7 +68,7 @@ country_decisions = {
 			}
 			estate_territory = {
 				estate = estate_church
-				territory = 40
+				territory = 30
 			}
 			NOT = {
 				estate_influence = {
