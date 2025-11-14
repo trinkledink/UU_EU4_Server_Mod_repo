@@ -1,0 +1,3746 @@
+##These the UU ones
+
+uu_spain_1_colony = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_plus_ultra = { #From Vanilla
+		icon = mission_plus_ultra
+		required_missions = { }
+		position = 1 #just in case
+		completed_by = 1492.1.1
+
+		provinces_to_highlight = {
+			province_id = 4565 #Tenerife
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_explorers = 1
+			custom_trigger_tooltip = {
+				tooltip = spa_plus_ultra_tooltip
+				OR = {
+					owns_core_province = 4565 #Tenerife
+					any_owned_province = {
+						OR = {
+							continent = north_america
+							continent = south_america
+							continent = new_world
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "spa_plus_ultra"
+				duration = 7300
+			}
+		}
+	}
+	uu_spa_discover_new_colonies = { #New
+		icon = mission_establish_high_seas_navy
+		required_missions = { uu_spa_plus_ultra }
+		position = 3
+		completed_by = 1492.1.1
+
+		trigger = {
+			num_of_colonists = 1
+			calc_true_if = {
+				all_province = {
+					is_empty = yes
+					has_discovered = ROOT
+				}
+				amount = 10
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					owns_core_province = 224
+				}
+				set_country_flag = sevilla_trade_center_flag
+				country_event = { id = flavor_spa.3153 }
+			}
+			add_country_modifier = {
+				name = "spa_hispaniola_discovered"
+				duration = 5475
+			}
+		}
+	}
+	uu_spa_tordesillas = {
+		icon = mission_sail_to_the_east_indies
+		required_missions = { 
+			uu_spa_discover_new_colonies 
+			uu_spa_portugal_frens
+		}
+		position = 4
+		completed_by = 1494.7.2
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						any_owned_province = {
+							continent = africa
+							NOT = { region = maghreb_region }
+							NOT = { region = egypt_region }
+						}
+						any_owned_province = {
+							continent = north_america
+						}
+						any_owned_province = {
+							continent = south_america
+						}
+					}
+					OR = {
+						has_idea = land_of_opportunity #explo 4
+						dip_tech = 7
+					}
+				}
+				#custom_trigger_tooltip = { #if portugal passes the mission, it will unlock for you too
+				#	tooltip = uu_spa_tordesillas_already_signed_tt
+				#	OR = {
+				#		has_country_flag = uu_spa_flag_west_path
+				#		has_country_flag = uu_spa_flag_east_path
+				#	}
+				#}
+			}
+			#is_subject = no #no weird edge cases where you are a subject yet fire the event before your overlord
+			papal_influence = 50
+		}
+
+		effect = {
+			add_papal_influence = -50
+			#if = { #no double firing					#todo later
+			#	limit = {
+			#		NOT = {
+			#			has_country_flag = uu_spa_flag_west_path
+			#			has_country_flag = uu_spa_flag_east_path					
+			#		}
+			#	}		
+			#	country_event = {
+			#		id = uu_spa_events.100 
+			#	}
+			#}
+			country_event = {							
+				id = uu_spa_events.999
+			}
+		}
+	}	
+}
+
+uu_spain_2_reconquista = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_reconquista_granada = { #From Vanilla with edits
+		icon = mission_unite_home_region
+		required_missions = { uu_spa_army_ready }
+		position = 2
+		completed_by = 1492.1.1
+
+		provinces_to_highlight = {
+			area = upper_andalucia_area
+			OR = {
+				AND = {
+					NOT = { has_country_flag = uu_spa_portugal_frens_flag }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			}
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+				}
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_portugal_can_trigger_tt
+					has_country_flag = uu_spa_portugal_frens_flag
+				}
+				upper_andalucia_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			} else = {
+				upper_andalucia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = fate_of_granada_mission_flag
+			country_event = {
+				id = flavor_spa.8 #Fate of the Kingdom of Granada
+			}
+		}
+	}
+	uu_spa_iberia_christian = { #From Vanilla
+		icon = mission_religious
+		required_missions = { uu_spa_reconquista_granada }
+		position = 3
+		completed_by = 1511.1.1
+
+		# free mission
+
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { religion_group = ROOT }
+		}
+
+		trigger = {
+			iberia_region = {
+				type = all
+				religion_group = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "spa_rb_christian_iberia"
+				duration = 5475
+			}
+			126 = {
+				add_permanent_claim = ROOT
+			}
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	uu_spa_reconquista_morocco = { #modified from vanilla
+		icon = mission_retake_ceuta
+		required_missions = { 
+			uu_spa_iberia_christian 
+			uu_spa_portugal_frens
+		}
+		position = 4
+
+		provinces_to_highlight = {
+			area = northern_morocco_area
+			OR = {
+				AND = {
+					NOT = { has_country_flag = uu_spa_portugal_frens_flag }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			}
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+				}
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_portugal_can_trigger_tt
+					has_country_flag = uu_spa_portugal_frens_flag
+				}
+				northern_morocco_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			} else = {
+				northern_morocco_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+
+		effect = {
+			northern_morocco_area = {
+				add_province_modifier = {
+					name = "uu_spa_modifier_into_africa"
+					duration = 5475
+				}
+			}	
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			barbary_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
+			}
+			4562 = {
+				if = { 
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_permanent_claim = ROOT	
+				}			
+			}
+			341 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_permanent_claim = ROOT		
+				}		
+			}			
+		}
+	}
+	uu_spa_destroy_berber_piracy = { #new
+		icon = reclaim_the_aegean
+		required_missions = { uu_spa_reconquista_morocco }
+		position = 5
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = uu_spa_destroyed_berber_pirates_tt
+				NOT = {
+					any_country = {
+						AND = {
+							capital_scope = {
+								region = maghreb_region
+							}
+							OR = {
+								navy_size = 5
+								1293 = { #Sevilla node
+									has_privateer_share_in_trade_node = {
+										who = PREV
+										share = 0.05
+									}
+								}
+								1295 = { #Valencia node
+									has_privateer_share_in_trade_node = {
+										who = PREV
+										share = 0.05
+									}
+								}
+								1298 = { #Genoa node
+									has_privateer_share_in_trade_node = {
+										who = PREV
+										share = 0.05
+									}
+								}
+							}
+						}
+					}								
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "spa_rb_italian_ambition_mod"
+				duration = 5475
+			}
+			tooltip = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = maghreb_region
+						}
+					}
+					add_country_modifier = {
+						name = "uu_spa_modifier_cowed_pirates"
+						duration = 5475
+					}
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = maghreb_region
+						}
+					}
+					country_event = {
+						id = uu_spa_events.2
+					}
+				}
+			}
+		}
+	}
+	uu_spa_secure_the_coast = {
+		icon = mission_conquer_tunisia
+		required_missions = { uu_spa_destroy_berber_piracy }
+		position = 6
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4562
+				province_id = 337
+				province_id = 338
+				province_id = 342
+				province_id = 345
+				province_id = 1110
+				province_id = 341
+			}
+			OR = {
+				AND = {
+					NOT = { has_country_flag = uu_spa_portugal_frens_flag }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			}
+		}
+
+		trigger = { 
+			if = {
+				limit = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+				}
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_portugal_can_trigger_tt
+					has_country_flag = uu_spa_portugal_frens_flag
+				}
+				4562 = { #Mers el Kebir
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				337 = { #Oran
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				338 = { #Algiers/Al Djazair
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				342 = { #Gharb/Rabat
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				345 = { #Safi
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				1110 = { #Agadir
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				341 = { #Tunis
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			} else = {
+				4562 = { #Mers el Kebir
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				337 = { #Oran
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				338 = { #Algiers/Al Djazair
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				342 = { #Gharb/Rabat
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				345 = { #Safi
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				1110 = { #Agadir
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				341 = { #Tunis
+					country_or_non_sovereign_subject_holds = ROOT
+				}		
+			}						
+		}
+
+		effect = {
+			add_mercantilism = 5
+			if = {
+				limit = {
+					337 = {
+						NOT = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+					}
+				}
+				337 = {
+					add_building = fort_15th
+				}
+			}
+			337 = {
+				add_province_modifier = {
+					name = "por_makeshift_defenses"
+					duration = -1
+				}
+			}
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
+			}
+			marrekesh_area = { #paradox typo
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
+			}
+			sus_area = { #sus??????
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
+			}			
+		}
+	}	
+	uu_spa_destroy_morocco = {
+		icon = mission_new_world_power
+		required_missions = { uu_spa_secure_the_coast }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				area = marrekesh_area
+				area = sus_area
+				area = algiers_area
+			}
+			OR = {
+				AND = {
+					NOT = { has_country_flag = uu_spa_portugal_frens_flag }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+			}
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = uu_spa_portugal_frens_flag
+					alliance_with = POR
+				}
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_portugal_can_trigger_tt
+					has_country_flag = uu_spa_portugal_frens_flag
+				}
+				marrekesh_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				sus_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}
+				algiers_area = {
+					type = all
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						country_or_non_sovereign_subject_holds = POR
+					}
+				}	
+				OR = {
+					NOT = { exists = MOR }
+					MOR = {
+						is_subject_of = ROOT 
+					}
+					MOR = {
+						is_subject_of = POR 
+					}					
+				}							
+			} else = {
+				marrekesh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sus_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				algiers_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				OR = {
+					MOR = {
+						is_subject_of = ROOT 
+						exists = no
+					}
+				}								
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "completing_the_reconquista"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							area = marrekesh_area
+							area = sus_area
+							area = algiers_area
+						}
+					}
+				}
+				country_event = {
+					id = uu_spa_events.4
+				}
+			}
+		}
+	}
+}
+
+uu_spain_3_army = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_army_ready = { #modified from vanilla
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1445.1.1
+
+		# free mission
+
+		trigger = {
+			army_size_percentage = 1
+			navy_size_percentage = 0.75 #down from 1
+			manpower_percentage = 0.6
+			num_of_generals = 1
+			treasury = 150
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+uu_spain_3_portugal = { #new
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_portugal_frens = {
+		icon = mission_lusitanian_empire
+		required_missions = { uu_spa_weather_civil_war }
+		position = 3
+
+		trigger = {
+			is_at_war = no
+			if = {
+				limit = {
+					exists = POR
+				}
+				POR = {
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT 
+					}
+				}
+				NOT = { truce_with = POR }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = POR
+					POR = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT 
+						}
+					} 
+				}
+				country_event = {
+					id = uu_spa_events.1
+				}
+			} else = {
+				add_prestige = 10
+			}
+		}
+	}
+
+	uu_spa_peace_in_iberia = { #new
+		icon = mission_conquer_50_development
+		required_missions = { uu_spa_portugal_frens }
+		position = 4
+
+		trigger = {
+			stability = 3
+			NOT = {
+				any_province = {
+					region = iberia_region
+					devastation = 1
+				}
+			}
+			if = {
+				limit = {
+					exists = POR
+				}
+				OR = {
+					AND = {
+						custom_trigger_tooltip = {
+							tooltip = uu_spa_chose_peace_portugal_tt
+							has_country_flag = uu_spa_portugal_frens_flag
+						}
+						alliance_with = POR 
+						marriage_with = POR
+						reverse_has_opinion = {
+							who = POR
+							value = 200
+						}
+						trust = { 
+							who = ROOT 
+							value = 100 
+						}
+					}
+					AND = {
+						custom_trigger_tooltip = {
+							tooltip = uu_spa_chose_violence_portugal_tt
+							NOT = { has_country_flag = uu_spa_portugal_frens_flag }
+						}
+						senior_union_with = POR
+						NOT = {
+							POR = {
+								liberty_desire = 0.1
+							}
+						}
+						reverse_has_opinion = {
+							who = POR
+							value = 200
+						}
+						trust = { 
+							who = ROOT 
+							value = 50 
+						}
+					}
+				}
+			} else = {
+				NOT = {
+					any_province = {
+						region = iberia_region
+						NOT = { owned_by = ROOT }
+					}
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 5475 #15 years, generic is 25
+			}
+			capital_scope = {
+				add_prosperity = 100		
+			}
+		}		
+	}
+}
+
+uu_spain_3_bullion = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_acquire_bullion = { #new
+		icon = mission_african_gold
+		required_missions = { uu_spa_reconquista_morocco }
+		position = 5
+
+		trigger = {
+			346 = { #Tafilalt
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 6
+				NOT = {
+					devastation = 1
+				}
+			}
+		}		
+		effect = {
+			346 = {
+				add_base_production = 2
+			}
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					trade_goods = gold
+				}
+			}
+			if = {
+				limit = {
+					346 = {
+						has_province_modifier = bullion_gold_mining
+					}
+				}
+				346 = {
+					add_base_tax = 2
+					add_base_production = 2
+				}
+			}
+		}
+	}	
+}
+
+uu_spain_3_armada = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_turk_holy_league = { #new
+		icon = mission_combat_barbary_piracy
+		required_missions = {
+			uu_spa_destroy_berber_piracy 
+			uu_spa_control_pope
+		}
+		position = 6
+
+		trigger = {
+			navy_size = 60
+			if = {
+				limit = {
+					exists = TUR
+				}
+				navy_size = TUR
+				has_won_war_against = {
+					who = TUR
+					max_years_since = 10
+				}
+			} else_if = {
+				limit = {
+					exists = RUM
+				}
+				navy_size = RUM
+				has_won_war_against = {
+					who = RUM
+					max_years_since = 10
+				}
+			} else_if = {
+				limit = {
+					any_country = {
+						NOT = { religion_group = christian }
+						any_owned_province = {
+							OR = {
+								region = egypt_region
+								region = mashriq_region
+								region = anatolia_region
+							}
+							has_port = yes
+						}
+					}
+				}
+				any_country = {
+					NOT = { religion_group = christian }
+					any_owned_province = {
+						OR = {
+							region = egypt_region
+							region = mashriq_region
+							region = anatolia_region
+						}
+						has_port = yes
+					}
+					NOT = { navy_size = ROOT }
+					ROOT = {
+						has_won_war_against = {
+							who = PREV
+							max_years_since = 10
+						}	
+					}
+				}
+			} else = {
+				NOT = {
+					any_country = {
+						NOT = { religion_group = christian }
+						any_owned_province = {
+							superregion = near_east_superregion
+							has_port = yes
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_papal_influence = 50
+			add_prestige = 20
+			every_country = {
+				limit = {
+					NOT = {
+						tag = CAS
+						tag = SPA
+					}
+					religion_group = christian
+					any_owned_province = {
+						OR = {
+							region = balkan_region
+							region = iberia_region
+							region = italy_region
+							superregion = near_east_superregion 
+						}
+						has_port = yes
+					}
+				}
+				add_country_modifier = {
+					name = "uu_spa_modifier_holy_league_victorious"
+					duration = 5475
+				}
+			}
+			add_country_modifier = {
+				name = "uu_spa_modifier_holy_league_victorious_spain"
+				duration = 9125
+			}
+		}
+	}
+
+	uu_spa_spanish_armada = { #new
+		icon = mission_spanish_armada
+		required_missions = { uu_spa_turk_holy_league }
+		position = 7
+
+		trigger = {
+			has_flagship = yes
+			NOT = {
+				any_country = {
+					capital_scope = {
+						region = british_isles_region
+					}
+					num_of_heavy_ship = ROOT
+				}
+			}
+			num_of_heavy_ship = 25
+		}
+		effect = {
+			add_country_modifier = {
+				name = "uu_spa_modifier_spanish_armada"
+				duration = 7300
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						region = british_isles_region						
+					}
+					NOT = { is_subject_of = ROOT }
+					NOT = { has_matching_religion = ROOT }
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_crusade #lol?
+					months = 600
+				}
+			}
+		}
+	}
+
+	uu_spa_secure_treasure_fleets = { #new
+		icon = mission_the_triangle_trade
+		required_missions = { uu_spa_spanish_armada }
+		position = 8
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				trade_goods = gold
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = uu_spa_flag_east_path }
+				}
+				1516 = { #Caribbean Sea node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				835 = { #Panama node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				1551 = { #Mexico node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				2499 = { #Rio Grande node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				809 = { #Lima node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+			} else = {
+				1466 = { #Ivory Coast node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				1460 = { #Cape node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				1448 = { #Zanzibar node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				1361 = { #Malacca node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+				1110 = { #Safi node
+					NOT = {
+						trade_share = {
+							country = PIR
+							share = 1
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = uu_spa_flag_east_path
+				}
+				every_owned_province = {
+					limit = {
+						NOT = {
+							continent = europe
+						}
+						trade_goods = gold
+					}
+					add_province_modifier = {
+						name = "uu_spa_modifier_moar_gold"
+						duration = -1
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "uu_spa_modifier_more_treasure_fleets"
+				duration = -1
+			}
+		}
+	}
+
+	uu_spa_rule_hispania = { #new
+		icon = mission_rb_grow_the_channel
+		required_missions = { uu_spa_secure_treasure_fleets }
+		position = 9
+
+		trigger = {
+			NOT = {
+				any_country = {
+					navy_size = ROOT
+					num_of_heavy_ship = ROOT
+				}
+			}
+			naval_forcelimit = 140
+			num_of_heavy_ship = 70
+			monthly_income = 300
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "uu_spa_modifier_rule_hispania"
+				duration = 3650
+			}
+		}	
+	}
+}
+
+uu_spain_4_iberia = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_weather_civil_war = { #NEW
+		icon = mission_castillian_aggression
+		required_missions = { uu_spa_army_ready }
+		position = 2
+		completed_by = 1478.1.1
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = uu_spa_pass_cas_cw_tt
+				has_any_disaster = no
+				OR = {
+					has_country_flag = had_cas_civil_war 				
+					is_year = 1480
+				}
+			}
+		}
+
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = had_cas_civil_war }
+					}
+					set_country_flag = had_cas_civil_war 
+				}
+			}
+			custom_tooltip = uu_spa_no_more_cas_cw_tt 
+			add_country_modifier = {
+				name = "eng_rb_roses_legit"
+				duration = 5475
+			}
+			210 = { #Navarra
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	uu_spa_navarra = { #from vanilla
+		icon = mission_subjugate_navarra
+		required_missions = { uu_spa_weather_civil_war }
+		completed_by = 1493.1.1
+		position = 3
+
+		provinces_to_highlight = {
+			province_id = 210
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			210 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					210 = {
+						NOT = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+					}
+				}
+				210 = {
+					add_building = fort_15th
+				}
+			}
+			210 = {
+				add_province_modifier = {
+					name = "fortified_navarra"
+					duration = 10950 #30 years
+				}
+			}
+		}
+	}
+	uu_spa_iberian_hegemon = { #new
+		icon = mission_monarch_in_throne_room
+		required_missions = { 
+			uu_spa_navarra
+			uu_spa_trastamara_domain
+			uu_spa_peace_in_iberia
+		}
+		position = 5
+		
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { 
+				area = beieras_area #paradox typo
+				area = alentejo_area
+			}
+			OR = {
+				NOT = {
+					owned_by = ROOT
+				}
+				NOT = {
+					is_state_core = ROOT
+				}
+				nationalism = 0.1
+				local_autonomy = 0.1
+				has_owner_religion = no
+				OR = {
+					has_owner_culture = no
+					has_owner_accepted_culture = no
+				}
+			}
+		}
+
+		trigger = {
+			tag = SPA
+			NOT = {
+				any_province = {
+					AND = { #for clarity
+						region = iberia_region
+						NOT = { 
+							area = beieras_area #paradox typo
+							area = alentejo_area
+						}
+					}
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							is_state_core = ROOT
+						}
+						nationalism = 0.1
+						local_autonomy = 0.1
+						has_owner_religion = no
+						OR = {
+							has_owner_culture = no
+							has_owner_accepted_culture = no
+						}
+					}
+				}
+			}
+			development_in_provinces = {
+				value = 700
+				region = iberia_region
+			}
+		}
+
+		effect = {
+			add_prestige = 100
+			set_government_rank = 3
+			add_country_modifier = {
+				name = "uu_spa_modifier_iberian_hegemon"
+				duration = -1
+			}
+		}
+	}
+}
+
+uu_spain_4_genoa = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_supplant_genoa = { #new
+		icon = mission_dominate_genoa
+		required_missions = { 
+			uu_spa_turk_holy_league
+			uu_spa_intervene_in_italy 
+		}
+		position = 7
+
+		provinces_to_highlight = {
+			province_id = 101
+		}
+
+		trigger = {
+			any_owned_province = {
+				NOT = { province_id = 101 }
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_supplant_genoa_tt
+					OR = {
+						area = provence_area
+						area = tuscany_area
+						area = lazio_area
+						area = calabria_area
+						area = western_sicily_area
+						area = corsica_sardinia_area
+						area = sicily_area
+						area = naples_area
+						area = liguria_area
+					}
+					has_port = yes
+					higher_development_than = 101
+				}
+				base_production = 10
+			}
+			1298 = {
+				is_strongest_trade_power = ROOT			
+			}
+			NOT = {
+				any_country = {
+					ROOT = {
+						NOT = { dip_tech = PREV } #Checks if no country has more dip tech, copied from Songhai mission. Double negations are fun!
+					}
+				}
+			}
+		}
+		effect = {
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					has_port = yes
+				}
+				add_permanent_claim = ROOT
+			}
+			1247 = { #Corsica
+				add_permanent_claim = ROOT
+			}
+		}		
+	}
+
+	uu_spa_protectors_of_the_western_med = { #new
+		icon = mission_rb_mediterranean_authority
+		required_missions = { uu_spa_supplant_genoa }
+		position = 8
+
+		trigger = {
+			1293 = { #Sevilla node
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 50
+				} 
+				NOT = {
+					trade_share = {
+						country = PIR
+						share = 1
+					}
+				}
+			}
+			1295 = { #Valencia node
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 80
+				} 
+				NOT = {
+					trade_share = {
+						country = PIR
+						share = 1
+					}
+				}
+			}
+			1298 = { #Genoa node
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+				NOT = {
+					trade_share = {
+						country = PIR
+						share = 1
+					}
+				} 
+			}
+			341 = { #Tunis node
+				is_strongest_trade_power = ROOT 
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+				NOT = {
+					trade_share = {
+						country = PIR
+						share = 1
+					}
+				}
+			}
+			num_of_galley = 30	
+		}
+		effect = {
+			358 = { #Alexandria node
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = uu_spa_modifier_spanish_traders_dominant
+				}
+			}
+			377 = { #Aleppo node
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = uu_spa_modifier_spanish_traders_dominant
+				}
+			}
+			1320 = { #Constantinople node
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = uu_spa_modifier_spanish_traders_dominant
+				}
+			}
+			137 = { #Ragusa node
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = uu_spa_modifier_spanish_traders_dominant
+				}
+			}
+			add_country_modifier = {
+				name = uu_spa_modifier_protectors_of_the_med
+				duration = 7300
+			}
+		}		
+	}	
+}
+
+uu_spain_5_trastamara = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	uu_spa_aragon = { #from vanilla
+		icon = mission_have_two_subjects
+		required_missions = { uu_spa_weather_civil_war }
+		position = 3
+		completed_by = 1479.1.1
+
+		provinces_to_highlight = {
+			OR = {
+				area = valencia_area
+				area = catalonia_area
+				area = aragon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			OR = {
+				ARA = {
+					junior_union_with = ROOT
+				}
+				AND = {
+					valencia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					catalonia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					aragon_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					exists = NAP
+					valid_for_personal_unions_trigger = yes
+					NAP = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = NAP
+				}
+			}
+			if = {
+				limit = {
+					exists = SIC
+					valid_for_personal_unions_trigger = yes
+					SIC = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = SIC
+				}
+			}
+			if = {
+				limit = {
+					exists = TTS
+					valid_for_personal_unions_trigger = yes
+					TTS = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = TTS
+				}
+			}
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			120 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			#for the new mission
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT				
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { province_id = 1247 }
+				}
+				add_permanent_claim = ROOT						
+			}
+		}
+	}
+
+	uu_spa_trastamara_domain = { #from vanilla
+		icon = king_of_naples
+		required_missions = { uu_spa_aragon }
+		position = 4
+		completed_by = 1516.1.1
+
+		provinces_to_highlight = {
+			OR = {
+				area = sicily_area
+				area = western_sicily_area
+				area = calabria_area
+				area = apulia_area
+				area = naples_area
+				province_id = 120
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			OR = {
+				NAP = {
+					junior_union_with = ROOT
+				}
+				AND = {
+					calabria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					apulia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					naples_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					120 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			OR = {
+				SIC = {
+					junior_union_with = ROOT
+				}
+				sicily_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				western_sicily_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "uu_spa_king_of_sicilies_modifier"
+				duration = -1
+			}
+			hidden_effect = {
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = NAP
+				}
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = TTS
+				}
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = SIC
+				}
+			}
+		}
+	}
+
+	uu_spa_control_pope = { #new
+		icon = catholic_confraternity
+		required_missions = { uu_spa_trastamara_domain }
+		position = 5
+		
+		trigger = {
+			if = {
+				limit = {
+					exists = PAP
+					PAP = { ai = yes }
+				}
+				is_papal_controller = yes
+				OR = {
+					PAP = {
+						is_subject = no
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+					PAP = {
+						is_subject_of = ROOT 
+						NOT = { liberty_desire = 0.1 }
+					}
+				}
+			} else_if = { #Multiplayer Friendly!
+				limit = {
+					exists = PAP
+					PAP = { ai = no }
+				}
+				OR = {
+					is_papal_controller = yes
+					PAP = {
+						is_subject = no
+						alliance_with = ROOT
+						guaranteed_by = ROOT
+					}
+				}
+			}
+			else = { #if pope does not exist
+				is_papal_controller = yes
+				owns = 118 #Rome
+			}
+		}
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			add_country_modifier = {
+				name = uu_spa_modifier_i_am_the_pope
+				duration = 7300 #20y
+			}
+		}
+	}
+
+	uu_spa_intervene_in_italy = { #new
+		icon = mission_italian_condottiere
+		required_missions = { uu_spa_control_pope }
+		position = 6
+		
+		trigger = {
+			if = {
+				limit = { #Tuscany
+					exists = TUS
+					TUS = { owns = 116 }
+				}
+				military_strength = {
+					who = TUS
+					value = 2.0
+				}
+				OR = {
+					marriage_with = TUS 
+					overlord_of = TUS 
+					has_spy_network_in = {
+						who = TUS
+						value = 50
+					}
+				}
+			} else_if = {
+				limit = { #Florence
+					exists = LAN
+					LAN = { owns = 116 }
+				}
+				military_strength = {
+					who = LAN
+					value = 2.0
+				}
+				OR = {
+					marriage_with = LAN 
+					overlord_of = LAN 
+					has_spy_network_in = {
+						who = LAN
+						value = 50
+					}
+				}
+			}
+			if = {
+				limit = { #Milan
+					exists = MLO
+					MLO = { owns = 104 }
+				}
+				military_strength = {
+					who = MLO
+					value = 2.0
+				}
+				OR = {
+					marriage_with = MLO 
+					overlord_of = MLO 
+					has_spy_network_in = {
+						who = MLO
+						value = 50
+					}
+				}
+			}
+			if = {
+				limit = { #Ferrara
+					exists = FER
+					FER = { owns = 113 }
+				}
+				military_strength = {
+					who = FER
+					value = 2.0
+				}
+				OR = {
+					marriage_with = FER 
+					overlord_of = FER 
+					has_spy_network_in = {
+						who = FER
+						value = 50
+					}
+				}
+			}
+			if = {
+				limit = { #Italy
+					exists = ITA
+				}
+				military_strength = {
+					who = ITA
+					value = 2.0
+				}
+				OR = {
+					marriage_with = ITA 
+					overlord_of = ITA 
+					has_spy_network_in = {
+						who = ITA
+						value = 50
+					}
+				}
+			}
+			NOT = {
+				any_province = {
+					region = italy_region
+					NOT = { owned_by = ROOT }
+					owner = {
+						NOT = { culture_group = latin }
+						great_power_rank = 8
+					}
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						region = italy_region
+					}
+					ai = yes
+					NOT = { tag = FRA }
+					NOT = { tag = HAB }			
+				}
+				add_opinion = {
+					who = FRA
+					modifier = reduced_opinion_favor
+				}
+				add_opinion = {
+					who = HAB
+					modifier = reduced_opinion_favor
+				}
+				add_opinion = {
+					who = ROOT 
+					modifier = opinion_eased_tension
+				}		
+			}
+			add_country_modifier = {
+				name = uu_spa_in_italy_modifier 
+				duration = 7300 #20y
+			}
+		}
+	}
+
+	uu_spa_embrace_counter_reformation = { #new
+		icon = victor_for_the_true_faith
+		required_missions = { uu_spa_intervene_in_italy }
+		position = 7
+		
+		trigger = {
+			is_religion_enabled = protestant
+			OR = {
+				has_country_modifier = counter_reformation
+				AND = {
+					religion_years = { protestant = 150 }
+					religious_unity = 1
+				}
+			}
+			has_idea_group = religious_ideas
+			has_idea = inquisition #religious 6
+			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+				has_holy_order_trigger = yes
+				value = 25
+			}
+		}
+		effect = {
+			add_papal_influence = 50
+			add_yearly_manpower = 0.3
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = protestant
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = protestant
+					}
+					protestant_rebels = 2
+				}				
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = reformed
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = reformed
+					}
+					reformed_rebels = 2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = orthodox
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = orthodox
+					}
+					orthodox_rebels = 1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = coptic
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = coptic
+					}
+					coptic_rebels = 1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = hussite
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = hussite
+					}
+					hussite_rebels = 2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion = anglican
+					}
+				}
+				random_owned_province = {
+					limit = {
+						religion = anglican
+					}
+					anglican_rebels = 2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						religion_group = christian
+						NOT = { religion = catholic }
+						is_reformation_center = no
+						base_tax = 2					
+					}
+				}
+				custom_tooltip = uu_spa_heretics_purged_tt
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							religion_group = christian
+							NOT = { religion = catholic }
+							NOT = { religion = orthodox }
+							NOT = { religion = coptic }
+							is_reformation_center = no
+						}
+						change_religion = catholic
+						if = {
+							limit = {
+								base_tax = 2
+								NOT = { base_tax = 3 }
+							}
+							add_base_tax = -1
+							add_prosperity = -5
+							add_devastation = 5
+						}						
+						if = {
+							limit = {
+								base_tax = 3
+							}
+							add_base_tax = -2
+							add_prosperity = -5
+							add_devastation = 10
+						}				
+					}
+				}
+			}
+		}
+	}
+
+	uu_spa_win_league_war = { #new
+		icon = the_holy_league
+		required_missions = { uu_spa_embrace_counter_reformation }
+		position = 8
+		
+		trigger = {
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				custom_trigger_tooltip = {
+					tooltip = uu_spa_catholic_league_tt
+					has_country_flag = religious_league_war_on_winning_side
+					hre_religion = catholic #this is double counted so if you join the protestant side and win, it won't say that you were with the catholic league
+				}
+				hre_religion_locked = yes
+				hre_religion = catholic
+			} else = {
+				NOT = {
+					any_country = {
+						religion = protestant
+						capital_scope = {
+							superregion = europe_superregion
+						}
+						total_development = 100
+					}
+				}
+			}
+			
+		}
+		effect = {
+			add_adm_power = 25
+			add_dip_power = 25
+			add_mil_power = 25
+			every_country = {
+				limit = {
+					is_elector = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = answered_call_to_empire_elector
+				}
+			}
+		}
+	}
+
+	uu_spa_catholic_monarchy_pogchamp = { #new
+		icon = mission_imperial_spain
+		required_missions = { uu_spa_win_league_war }
+		position = 9
+		
+		trigger = {
+			papal_influence = 100
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				is_emperor = yes
+				calc_true_if = {
+					all_elector = {
+						preferred_emperor = ROOT
+						has_opinion = { who = ROOT value = 100 }
+					}
+					amount = 5
+				}
+			} else = {
+				num_of_owned_provinces_with = {
+					value = 100
+					religion = catholic
+				}
+			}
+		}
+		effect = {
+			change_adm = 1
+			change_dip = 1		
+			add_country_modifier = {
+				name = uu_spa_catholic_monarchy_modifier
+			}
+		}
+	}			
+}
+
+uu_spain_1_branching = { 
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = uu_spa_flag_west_path }
+		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+	uu_spa_branch_c1r9 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_tordesillas }
+		position = 9
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_branch_c1r10 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r9 }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}	
+
+	uu_spa_branch_c1r11 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { 
+			uu_spa_branch_c1r10 
+			uu_spa_branch_c2r10
+		}
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_branch_c1r12 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r11 }
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_branch_c1r13 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r12 }
+		position = 13
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}		
+}
+
+uu_spain_2_branching = { 
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = uu_spa_flag_west_path }
+		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+	uu_spa_branch_c2r10 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r9 }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_branch_c2r11 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c2r10 }
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_branch_c2r12 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c2r11 }
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_branch_c2r13 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c2r12 }
+		position = 13
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_branch_c2r14 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c2r13 }
+		position = 14
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}		
+}
+
+uu_spain_3_branching = { 
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = uu_spa_flag_west_path }
+		NOT = { has_country_flag = uu_spa_flag_east_path }
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+	uu_spa_branch_c3r10 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r9 }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_branch_c3r11 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c3r10 }
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_branch_c3r12 = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { } #none
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+}
+
+uu_spain_1_western_path = { 
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		#has_country_flag = uu_spa_flag_west_path				#todo later
+		#NOT = { has_country_flag = uu_spa_flag_east_path }
+	}
+	has_country_shield = yes
+
+	uu_spa_caribbean_colony = { #from vanilla
+		icon = mission_iberian_conquistador
+		required_missions = { uu_spa_tordesillas }
+		position = 9
+		completed_by = 1494.7.2
+
+		# free mission
+
+		provinces_to_highlight = {
+			colonial_region = colonial_the_carribean
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_caribbean
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_the_carribean
+					is_city = yes
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+		}
+	}
+
+	uu_spa_found_havana = { #from vanilla with edits
+		icon = mission_found_havana
+		required_missions = { uu_spa_caribbean_colony }
+		position = 10
+		completed_by = 1514.8.25
+
+		provinces_to_highlight = {
+			OR = {
+				area = cuba_area
+				area = east_cuba_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				484 = { #Havana
+					country_or_non_sovereign_subject_holds = ROOT
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+				}
+			}
+			else = {
+				484 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value =  5
+				OR = {
+					area = cuba_area
+					area = east_cuba_area
+				}
+			}
+		}
+		effect = {
+			set_country_flag = spa_house_of_trade_flag
+			country_event = { id = flavor_spa.1003 }
+			define_conquistador = {
+				shock = 5
+				fire = 5
+				manuever = 6
+				siege = 1
+				name = "Hernando Cortes"
+			}
+			if = {
+				limit = {
+					any_subject_country = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+						owns = 484
+					}
+				}
+				every_subject_country = {
+					limit = {
+						owns = 484
+					}
+					484 = {
+						prev_move_capital_effect = yes
+					}
+				}
+			}
+		}
+	}	
+
+	uu_spa_mexican_gold = { #new
+		icon = mission_mayan_conquest
+		required_missions = { 
+			uu_spa_found_havana
+			uu_spa_spanish_main 
+		}
+		position = 11
+		completed_by = 1521.8.12
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = uu_spa_discovered_mexican_gold_tt
+				calc_true_if = {
+					all_province = {
+						has_discovered = ROOT
+						colonial_region = colonial_mexico
+						trade_goods = gold
+					}
+					amount = 8
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				colonial_region = colonial_mexico
+				is_city = yes
+			}
+		}
+		effect = {
+			colonial_mexico = {
+				add_permanent_claim = ROOT
+			}
+			random_province = {
+				limit = {
+					colonial_region = colonial_mexico
+					is_city = yes
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				ROOT = {
+					mercenary_infantry = PREV #balanced?
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					cavalry = PREV
+					artillery = PREV
+					artillery = PREV
+					artillery = PREV
+				}
+			}
+		}
+
+	}
+	uu_spa_new_spain = { #basically new
+		icon = mission_kingdom_of_new_spain
+		required_missions = { uu_spa_mexican_gold }
+		position = 12
+		completed_by = 1535.1.1
+
+		provinces_to_highlight = {
+			region = mexico_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_trigger_tooltip = {
+					tooltip = mexico_holy_order_tooltip
+					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+						has_holy_order_trigger = yes
+						region = mexico_region
+						value = 5
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = mexico_holy_order_alternative_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						religion = ROOT
+						region = mexico_region
+						value = 25
+					}
+				}
+			}
+			any_subject_country = {
+				OR = {
+					is_subject_of_type = colony
+					is_subject_of_type = crown_colony
+					is_subject_of_type = private_enterprise
+					is_subject_of_type = self_governing_colony
+				}
+				owns = 852 #Mexico-Tenochtitlan
+			}
+			NOT = { exists = AZT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "viceroyalty_of_new_spain"
+				duration = 7300
+			}
+			country_event = {
+				id = uu_spa_events.3
+			}
+		}
+	}
+
+	uu_spa_california = { #from vanilla
+		icon = mission_colonize_california
+		required_missions = { uu_spa_new_spain }
+		position = 13
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_california
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_holy_order_trigger = yes
+				}
+			}
+			else = {
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_california
+				is_city = yes
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			2021 = {
+				add_base_tax = 3
+			}
+			colonial_california = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+}
+
+uu_spain_2_western_path = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		#has_country_flag = uu_spa_flag_west_path				#todo later
+		#NOT = { has_country_flag = uu_spa_flag_east_path }
+	}
+	has_country_shield = yes
+
+	uu_spa_spanish_main = { #from vanilla mostly
+		icon = mission_colonize_the_caribbean
+		required_missions = { uu_spa_caribbean_colony }
+		position = 10
+
+		provinces_to_highlight = {
+			colonial_region = colonial_colombia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = yes
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_colombia
+				is_city = yes
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_legitimacy = 25
+			}
+		}
+	}
+
+	uu_spa_new_granada = { #from vanilla mostly
+		icon = mission_new_kingdom_of_granada
+		required_missions = { uu_spa_spanish_main }
+		position = 11
+
+		provinces_to_highlight = {
+			OR = {
+				area = popayan_area
+				area = cordillera_occidental_area
+				area = coquivacoa_area
+				area = bogota_area
+				area = maracaibo_area
+				area = central_llanos_area
+				area = western_llanos
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_trigger_tooltip = {
+					tooltip = colombia_holy_order_tooltip
+					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+						has_holy_order_trigger = yes
+						colonial_region = colonial_colombia
+						value = 5
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = colombia_holy_order_alternative_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						religion = ROOT
+						colonial_region = colonial_colombia
+						value = 25
+					}
+				}
+			}
+			popayan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cordillera_occidental_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			coquivacoa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bogota_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			maracaibo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_llanos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_llanos = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "spa_new_granada"
+				duration = 7300
+			}
+			define_conquistador = {
+				name = "Francisco Pizarro"
+				fire = 4
+				shock = 4
+				manuever = 5
+				siege = 1
+			}
+			upper_peru = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			potosi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			antisuyu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kuntisuyu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			huanuco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cajamarca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			quito_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			794 = {
+				add_permanent_claim = ROOT
+			}
+			2837 = {
+				add_permanent_claim = ROOT
+			}
+			2823 = {
+				add_permanent_claim = ROOT
+			}
+			2826 = {
+				add_permanent_claim = ROOT
+			}
+			812 = {
+				add_permanent_claim = ROOT
+			}
+			2822 = {
+				add_permanent_claim = ROOT
+			}
+			2821 = {
+				add_permanent_claim = ROOT
+			}
+			#deleted claims in mexico from vanilla
+			if = {
+				limit = {
+					any_subject_country = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+						owns = 825
+					}
+					825 = { is_capital = no }
+				}
+				every_subject_country = {
+					limit = {
+						owns = 825
+					}
+					825 = {
+						prev_move_capital_effect = yes
+					}
+				}
+			}
+		}
+	}
+
+	uu_spa_incan_gold = { #similar to vanilla
+		icon = mission_war_chest
+		required_missions = { uu_spa_new_granada }
+		position = 12
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_peru
+				trade_goods = gold
+			}
+		}
+		effect = {
+			add_treasury = 500
+			colonial_peru = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	uu_spa_potosi_silver = { #mostly from vanilla
+		icon = mission_potosi_silver
+		required_missions = { uu_spa_incan_gold }
+		position = 13
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 795
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 809
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					OR = {
+						province_id = 809
+						province_id = 835
+						province_id = 1516
+					}
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+				AND = { 
+					province_id = 809 
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+			}
+		}
+
+		trigger = {
+			owns_or_non_sovereign_subject_of = 809
+			owns_or_non_sovereign_subject_of = 795
+			809 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				809 = {
+					province_has_center_of_trade_of_level = 3
+				}
+			}
+			809 = {
+				OR = {
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				795 = {
+					has_great_project = {
+						type = potosi
+						tier = 1
+					}
+				}
+			}
+			809 = {
+				is_strongest_trade_power = ROOT
+			}
+			835 = {
+				is_strongest_trade_power = ROOT
+			}
+			1516 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = gc_cas_spa_potosi_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_subject_country = {
+							OR = {
+								is_subject_of_type = colony
+								is_subject_of_type = crown_colony
+								is_subject_of_type = private_enterprise
+								is_subject_of_type = self_governing_colony
+							}
+							owns = 809
+						}
+					}
+					every_subject_country = {
+						limit = {
+							owns = 809
+						}
+						809 = {
+							prev_move_capital_effect = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				795 = {
+					set_great_project_tier_2 = {
+						type = potosi
+					}
+				}
+			}
+			795 = {
+				add_province_modifier = {
+					name = "spa_rb_gold_rush"
+					duration = 1825 #5y
+				}
+			}
+			2946 = {
+				add_province_modifier = {
+					name = "spa_rb_gold_rush"
+					duration = 1825 #5y
+				}
+			}
+			2941 = {
+				add_province_modifier = {
+					name = "spa_rb_gold_rush"
+					duration = 1825 #5y
+				}
+			}
+			804 = {
+				add_province_modifier = {
+					name = "spa_rb_gold_rush"
+					duration = 1825 #5y
+				}
+			}
+		}
+	}
+	uu_spa_la_plata = { #new basically
+		icon = mission_advance_to_the_dnieper
+		required_missions = { uu_spa_potosi_silver }
+		position = 14
+
+		provinces_to_highlight = {
+			OR = {
+				area = banda_oriental_area
+				area = chaco_area
+				area = misiones_area
+				area = paraguay_area
+				province_id = 794
+				province_id = 2837
+				province_id = 2849
+				province_id = 2848
+				province_id = 778
+				province_id = 2842
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = yes
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = uu_spa_settle_la_plata_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					is_city = yes
+					OR = {
+						area = banda_oriental_area
+						area = chaco_area
+						area = misiones_area
+						area = paraguay_area
+						province_id = 794
+						province_id = 2837
+						province_id = 2849
+						province_id = 2848
+						province_id = 778
+						province_id = 2842
+					}
+				}
+			}
+		}
+
+		effect = {
+			colonial_la_plata = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "spa_rb_overseas_trade"
+				duration = 5475
+			}
+		}
+	}
+}
+
+uu_spain_3_western_path = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		#has_country_flag = uu_spa_flag_west_path				#todo later
+		#NOT = { has_country_flag = uu_spa_flag_east_path }
+	}
+	has_country_shield = yes
+
+	uu_spa_reach_the_pacific = { #new
+		icon = mission_invade_island
+		required_missions = { uu_spa_caribbean_colony }
+		position = 10
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 787 #Picunmapu
+				province_id = 809 #Lima
+				province_id = 812 #Chanchan
+				province_id = 823 #Cauca 
+				province_id = 849 #Tlapanec
+				province_id = 854 #Sayultecas
+				province_id = 4637 #Ohlone
+				#province_id = 874 #Seattle (NOT IN GAME)
+				#province_id = 973 #Vancouver (NOT IN GAME)
+			}
+			has_discovered = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			treasury = 100
+			custom_trigger_tooltip = {
+				tooltip = uu_spa_discovered_pacific_tt
+				OR = {
+					has_discovered = 1539
+					any_province = {
+						OR = {
+							province_id = 787 #Picunmapu
+							province_id = 809 #Lima
+							province_id = 812 #Chanchan
+							province_id = 823 #Cauca 
+							province_id = 849 #Tlapanec
+							province_id = 854 #Sayultecas
+							province_id = 4637 #Ohlone
+							#province_id = 874 #Seattle (NOT IN GAME)
+							#province_id = 973 #Vancouver (NOT IN GAME)
+						}
+						province_has_center_of_trade_of_level = 1 
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_treasury = -100
+			define_explorer = {
+				name = "Fernando de Magallanes"
+				shock = 1
+				fire = 2
+				manuever = 6
+				siege = 3
+				trait = accomplished_sailor_personality
+			}
+			random_province = {
+				limit = {
+					OR = {
+						province_id = 787 #Picunmapu
+						province_id = 809 #Lima
+						province_id = 812 #Chanchan
+						province_id = 823 #Cauca 
+						province_id = 849 #Tlapanec
+						province_id = 854 #Sayultecas
+						province_id = 4637 #Ohlone
+						#province_id = 874 #Seattle (NOT IN GAME)
+						#province_id = 973 #Vancouver (NOT IN GAME)
+					}
+					province_has_center_of_trade_of_level = 1
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				ROOT = { #Magellan had 5 Ships
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+				}
+			}
+		}
+	}
+
+	uu_spa_islas_filipinas = { #basically new
+		icon = mission_las_islas_filipinas
+		required_missions = { uu_spa_reach_the_pacific }
+		position = 11
+		trigger = {
+			mindanao_area = {
+				has_discovered = ROOT
+			}
+			west_mindanao_area = {
+				has_discovered = ROOT
+			}
+			visayas_area = {
+				has_discovered = ROOT
+			}
+			palawan_area = {
+				has_discovered = ROOT
+			}
+			luzon_area = {
+				has_discovered = ROOT
+			}
+			southern_luzon_area = {
+				has_discovered = ROOT
+			}
+		}
+		effect = {
+			mindanao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_mindanao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			visayas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palawan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							area = mindanao_area
+							area = west_mindanao_area
+							area = visayas_area
+							area = palawan_area
+							area = luzon_area
+							area = southern_luzon_area
+						}
+					}
+					NOT = { is_subject_of = ROOT }
+					NOT = { has_matching_religion = ROOT }
+					NOT = { total_development = 150 }
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_world_crusade #lol?
+					months = 600
+				}
+			}
+		}
+	}
+
+	#uu_spa_christianize_america = { #todo?
+	#	icon = mission_establish_jesuit_missions
+	#	required_missions = {  } #i think no prereqs for this one
+	#	position = 12
+	#	trigger = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = selectable_mission_trigger_tt
+	#			always = yes
+	#		}
+	#		#add actual requirements?
+	#	}
+	#	effect = {
+	#		#center of reformation in new world!
+	#		852 = {
+	#			change_religion = catholic
+	#			add_reform_center = catholic
+	#			add_permanent_province_modifier = {
+	#				name = "religious_zeal_at_conv"
+	#				duration = 9000
+	#			}
+	#		}
+	#	}
+	#}
+}
+
+uu_spain_1_eastern_path = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = uu_spa_flag_east_path
+		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+		uu_spa_beyond_sahara = { #todo?
+		icon = mission_west_african_ports
+		required_missions = { uu_spa_tordesillas }
+		position = 9
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_west_african_bases = { #todo?
+		icon = mission_shipyards_of_gujarat
+		required_missions = { uu_spa_beyond_sahara }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#solid amount of ports in guinea, kongo?
+		}
+		effect = {
+			#tooltippery
+		}
+	}	
+
+	uu_spa_african_gold = { #todo?
+		icon = mission_war_chest
+		required_missions = { 
+			uu_spa_west_african_bases
+			uu_spa_bottom_of_africa
+		}
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_lords_of_zanzibar = { #todo?
+		icon = scramble_for_africa
+		required_missions = { uu_spa_african_gold }
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+	uu_spa_prester_john = { #todo?
+		icon = befriend_ethiopia
+		required_missions = { uu_spa_lords_of_zanzibar }
+		position = 13
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}		
+}
+
+uu_spain_2_eastern_path = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = uu_spa_flag_east_path
+		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+	uu_spa_bottom_of_africa = { #todo?
+		icon = mission_unknown_mission
+		required_missions = { uu_spa_branch_c1r9 }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_trade_with_india = { #todo?
+		icon = mission_indian_trade_company
+		required_missions = { uu_spa_bottom_of_africa }
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_spanish_malacca = { #todo?
+		icon = mission_asian_city
+		required_missions = { uu_spa_trade_with_india }
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_colonize_indonesia = { #todo?
+		icon = mnd_maj_sunda_relations
+		required_missions = { uu_spa_spanish_malacca }
+		position = 13
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_spice_lords = { #todo?
+		icon = mission_rb_colonise_spice_islands
+		required_missions = { uu_spa_colonize_indonesia }
+		position = 14
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}	
+}
+
+uu_spain_3_eastern_path = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = uu_spa_flag_east_path
+		NOT = { has_country_flag = uu_spa_flag_west_path } 
+		has_country_flag = uu_spa_impossible_to_get					#todo later
+	}
+	has_country_shield = yes
+
+	uu_spa_go_westwards = { #todo?
+		icon = mission_look_west
+		required_missions = { uu_spa_beyond_sahara }
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_promote_bandeirantes = { #todo?
+		icon = mission_iberian_conquistador
+		required_missions = { uu_spa_go_westwards }
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#tooltippery
+		}
+	}
+
+	uu_spa_cathay_zipangu = { #todo?
+		icon = mission_trade_with_japan
+		required_missions = { } #none
+		position = 11
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			#add actual requirements?
+		}
+		effect = {
+			#event that spawns center of reformation??? omegalul???
+		}
+	}
+} 

@@ -1,0 +1,58 @@
+bookmark = {
+	name = "A1_UU_EUROPE"
+	desc = "A1_UU_EUROPE_DESC"
+	date = 1444.11.11
+	
+	center = 112
+	
+	country = BUR	#nations with mod content?
+	country = SAX
+	country = HSA
+	country = ENG	
+	country = PAP
+	country = MLO
+	country = KAZ
+	country = LIT 
+	country = NOR 
+}
+
+bookmark = {
+	name = "A2_UU_AFRICA"
+	desc = "A2_UU_AFRICA_DESC"
+	date = 1444.11.11
+	
+	center = 1795
+	
+	country = GAO
+	country = ETH
+	country = MOR
+	country = KBU
+	country = KBO
+	country = ADA
+	country = ZZZ
+	country = TUN
+	country = BUG
+	country = MIR
+
+	easy_country = ADA	
+}
+
+bookmark = {
+	name = "A3_UU_ASIA"
+	desc = "A3_UU_ASIA_DESC"
+	date = 1444.11.11
+
+	center = 2133
+	
+	country = ASK
+	country = UES
+	country = LFA 
+	country = TIM
+	country = KHO
+	country = TRS
+	country = AFG
+
+	easy_country = ASK 
+	easy_country = UES 
+	easy_country = LFA
+} #had to change this because it bugged out after timurids got killed

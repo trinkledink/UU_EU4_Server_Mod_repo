@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = apostolic_kingdom
 primary_culture = hungarian
 add_accepted_culture = slovak
 add_accepted_culture = transylvanian
@@ -15,6 +15,7 @@ change_estate_land_share = {
 unlock_estate_privilege = {
 	estate_privilege = estate_burghers_orthodox_tolerance
 }
+
 
 1387.3.31 = {
 	monarch = {

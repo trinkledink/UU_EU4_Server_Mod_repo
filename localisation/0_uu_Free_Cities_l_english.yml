@@ -1,0 +1,40 @@
+﻿l_english:
+ ###########################################
+ ##############  MISSIONS  #################
+ ###########################################
+ 
+ uu_fc_tt:0 "[Root.uu_fc_tt] If we are the §YFirst Free City§! to complete the mission:"
+ uu_freeest_tt:0 " Gain access to the §YFree-est City§! country modifier, granting §G+1 Diplomatic Reputation§! and §G-15% Diplomatic Annexation Cost§! for as long as we remain a Free City."
+ 
+ uu_FC_empire_title:0 "Imperial Diplomacy"
+ uu_FC_empire_desc:0 "We must set our city above all others in the eyes of the Emperor in order to secure future imperial favor over the other Cities."
+ uu_FC_trade_title:0 "Dominate Imperial Trade"
+ uu_FC_trade_desc:0 "A focus on dominating trade will secure our infamy over all other Free Cities."
+ uu_FC_development_title:0 "Emerald of the Empire"
+ uu_FC_development_desc:0 "To establish our economic dominance, we must become the lead producer of goods within the empire."
+ uu_FC_estates_title:0 "The Great Game"
+ uu_FC_estates_desc:0 "The interests of various estates dilute our authority. If we are to become a beacon of progress among Free Cities, we must align their interests with ours."
+ 
+ 
+ ###########################################
+ ##############  MODIFIERS  ################
+ ###########################################
+ 
+ uu_FC_imperial_diplomacy:0 "Imperial Recognition"
+ uu_FC_emperor_freeest:0 "The Freeest City"
+ 
+ 
+ ###########################################
+ ################  EVENTS  #################
+ ###########################################
+ UU_FC_1:0 "New Production Methods"
+ UU_balance_events.4.DESC:0 "With the level of production we have reached, we have run low on the number of workers. It is being proposed that we turn towards the production of more specialized goods using new methods of labor-saving production."
+ UU_balance_events.4a:0 "Produce dyes."
+ UU_balance_events.4b:0 "Produce cloth."
+ UU_balance_events.4c:0 "Produce paper."
+ UU_balance_events.4d:0 "Stay the course, just get more men."
+ UU_FC_2:0 "A New City Council"
+ UU_balance_events.5.DESC:0 "The world marvels at the cohesion of our City's governance. With the estates under our thumb, we must choose who is best suited to cary out our next move..."
+ UU_balance_events.5a:0 "We will put our faith in the Church."
+ UU_balance_events.5b:0 "I said T-R-A-D-E-R, not traitor!"
+ UU_balance_events.5c:0 "The strong will do as they please."

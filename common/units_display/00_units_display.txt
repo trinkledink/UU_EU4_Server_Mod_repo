@@ -1,0 +1,32 @@
+#UU UPDATED 1.37.5
+infantry = {
+	factor = 1
+}
+cavalry = {
+	factor = 1
+	modifier = {
+		factor = 5
+        OR = {
+            has_dharma_elephants_trigger = yes
+            tag = POL
+            tag = PLC
+			tag = SIA 
+			has_reform = steppe_horde
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.5
+			}
+        }
+	}
+	modifier = {
+		factor = 2
+        has_country_flag = MUG_more_chance_for_elephants_flag
+	}
+}
+artillery = {
+	factor = 1
+	modifier = {
+		factor = 3
+		tag = SMO
+	}
+}

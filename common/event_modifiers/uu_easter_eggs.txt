@@ -1,3 +1,0 @@
-uu_blessed_by_dream = {
-	prestige = 1
-}

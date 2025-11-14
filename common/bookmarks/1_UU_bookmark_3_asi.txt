@@ -1,0 +1,19 @@
+bookmark = {
+	name = "A3_UU_ASIA"
+	desc = "A3_UU_ASIA_DESC"
+	date = 1444.11.11
+
+	center = 2133
+	
+	country = ASK
+	country = UES
+	country = LFA 
+	country = TIM
+	country = KHO
+	country = TRS
+	country = AFG
+
+	easy_country = ASK 
+	easy_country = UES 
+	easy_country = LFA
+}

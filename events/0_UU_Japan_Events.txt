@@ -1,0 +1,797 @@
+namespace = uujap_events
+
+country_event = {   #Erizeni-Rei and the Issue of Coins
+    id = uujap_events.1
+    title = uujap_events.1.t 
+    desc = uujap_events.1.desc 
+    picture = ECONOMY_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = uujap_events.1.a
+        add_inflation = -1 
+        add_country_modifier = {
+            name = uujap_inflation_goods_mod
+            duration = 7300
+        } 
+    }
+    option = {
+        name = uujap_events.1.b 
+        add_years_of_income = 0.5 
+        add_inflation = 2
+        if = {
+            limit = {
+                any_owned_province = { trade_goods = gold }
+            }
+            random_owned_province = {
+                limit = {
+                    trade_goods = gold
+                }
+                add_base_production = 1
+            }
+        }
+    }
+}
+
+country_event = {   #Osaka and the Dojima Rice Exhange 
+    id = uujap_events.2
+    title = uujap_events.2.t 
+    desc = uujap_events.2.desc 
+    picture = URBANISATION_INCIDENT_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #embrace the inflation
+        name = uujap_events.2.a
+        add_years_of_income = 1
+        add_country_modifier = {
+            name = uujap_ricebroker_inflation_mod
+            duration = 5840 #16 years
+        }
+    }
+
+    option = {  #embrace the inflation
+        name = uujap_events.2.b
+        add_country_modifier = {
+            name = uujap_ricebroker_interest_mod
+            duration = -1
+        }
+    }
+}
+
+country_event = {   #Japan Threatens the Mandate
+    id = uujap_events.3
+    title = uujap_events.3.t 
+    desc = uujap_events.3.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #oh no
+        name = uujap_events.3.a
+        add_stability = -1
+        if = {
+            limit = {
+                is_emperor_of_china = yes
+            }
+            add_mandate = -25
+        }
+    }
+}
+
+country_event = {   #Manchu: Japanese Protectorate
+    id = uujap_events.4
+    title = uujap_events.4.t 
+    desc = uujap_events.4.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #we become manchu
+        name = uujap_events.4.a
+        
+        #Basically just copying the decision 
+        if = {
+            limit = {
+                NOT = {
+                    tag = MCH 
+                    tag = QNG
+                }
+            }
+            set_country_flag = formed_tier_three_flag
+            add_prestige = 25
+            change_tag = MCH
+            on_change_tag_effect = yes
+            swap_non_generic_missions = yes
+            if = {
+                limit = {
+                    NOT = { government_rank = 2 }
+                }
+                set_government_rank = 2
+            }
+            change_primary_culture = manchu_new
+            set_ruler_culture = manchu_new
+            if = {
+                limit = {
+                    has_heir = yes
+                }
+                set_heir_culture = manchu_new
+            }
+            if = {
+                limit = {
+                    has_consort = yes
+                    consort_culture = manchu
+                }
+                set_consort_culture = manchu_new
+            }
+            hidden_effect = {
+                every_province = {
+                    limit = {
+                        culture = manchu
+                    }
+                    change_culture = manchu_new
+                }
+                every_country = {
+                    limit = {
+                        primary_culture = manchu
+                    }
+                    change_primary_culture = manchu_new
+                    set_ruler_culture = manchu_new
+                    if = {
+                        limit = {
+                            has_heir = yes
+                        }
+                        set_heir_culture = manchu_new
+                    }
+                    if = {
+                        limit = {
+                            has_consort = yes
+                            consort_culture = manchu
+                        }
+                        set_consort_culture = manchu_new
+                    }
+                }
+            }
+            custom_tooltip = manchu_culture_tt
+            730 = {
+                move_capital_effect = yes
+            }
+            manchuria_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    is_city = yes
+                }
+                add_core = MCH
+            }
+            set_country_flag = formed_manchu_flag
+            if = {
+                limit = { 
+                    has_custom_ideas = no
+                    NOT = { has_idea_group = MCH_ideas }
+                }
+                country_event = { id = ideagroups.1 } #Swap Ideas
+            }
+        }
+    }
+}
+
+country_event = {   #The Question of Ryukyu
+    id = uujap_events.5
+    title = uujap_events.5.t 
+    desc = uujap_events.5.desc 
+    picture = GIFTS_TO_EMPEROR_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #shared tributary status.
+        name = uujap_events.5.a
+        custom_tooltip = uujap_annex_ryu_unlock_decision_tt
+        white_peace = RYU
+        create_alliance = RYU
+        add_trust = {
+            who = RYU
+            value = 50
+            mutual = yes
+        }
+        add_country_modifier = {
+            name = uujap_suzerain_ryukyu_mod
+            duration = -1
+        }
+    }
+
+    option = {  #we yoink
+        name = uujap_events.5.b
+        add_prestige = 20
+        if = {
+            limit = {
+                NOT = { 
+                    1015 = { country_or_non_sovereign_subject_holds = ROOT }	
+                }
+            }
+            1015 = {
+                cede_province = ROOT
+                add_province_modifier = {
+                    name = uujap_three_mountains_mod
+                    duration = -1
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                is_emperor_of_china = yes 
+            }
+            add_mandate = -5
+            add_permanent_claim_province = { province = 1015 }
+            add_casus_belli = {
+                target = ROOT
+                type = cb_insult
+                months = 60
+            }
+        }
+    }
+}
+
+country_event = {   #The Samurai Caste - To Open or Close?
+    id = uujap_events.6
+    title = uujap_events.6.t 
+    desc = uujap_events.6.desc 
+    picture = CHINESE_GENERAL_eventPicture
+
+    is_triggered_only = yes 
+    
+    option = {  #Keep it Closed
+        name = uujap_events.6.a
+        set_country_flag = uujap_entrenched_samurai_class_flag
+        custom_tooltip = uujap_entrenched_samurai_class_tt
+        tooltip = {
+            add_country_modifier = { 
+				name = uujap_entrenched_samurai_class_mod
+				duration = -1
+			}
+        }
+    }
+    option = {  #Open it 
+        name = uujap_events.6.b
+        set_country_flag = uujap_expanded_samurai_class_flag
+        custom_tooltip = uujap_expanded_samurai_class_tt
+        tooltip = {
+            add_country_modifier = { 
+				name = uujap_expanded_samurai_class_mod
+				duration = -1
+			}
+        }
+    }
+}
+
+##Shogunate vs. Emperor 
+
+country_event = {   #Bakumatsu Event Chain Start
+    id = uujap_events.99
+    title = uujap_events.99.t 
+    desc = uujap_events.99.desc 
+    picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+
+    is_triggered_only = yes 
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.100 days = 720 random = 90 }   
+        }
+    }
+
+    option = {
+        name = uujap_events.99.a
+        capital_scope = {
+            add_province_modifier = {
+                name = uujap_support_shogun_pmod
+                duration = -1
+            }
+        }
+    }
+    option = {
+        name = uujap_events.99.b
+        capital_scope = {
+            add_province_modifier = {
+                name = uujap_support_emperor_pmod
+                duration = -1
+            }
+        }
+    }   
+}
+
+country_event = { #Famine in Osaka, Oshio Heihachiro's Revolt
+    id = uujap_events.100
+    title = uujap_events.100.t 
+    desc = uujap_events.100.desc 
+    picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.101 days = 720 random = 90 }   
+        }
+    }
+    
+    option = {  
+        name = uujap_events.100.a   #Crucify his supporters to show force.
+        add_mil_power = 25
+        kinai_area = {
+            type = all 
+            add_unrest = 5
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  
+        name = uujap_events.100.b   #Alleviate the famine ourselves.
+        add_adm_power = -25
+        add_dip_power = -25
+        add_years_of_income = -1
+        add_estate_loyalty = {
+            estate = estate_nobles 
+            loyalty = -15
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+
+country_event = { #Emperor opposes a treaty
+    id = uujap_events.101
+    title = uujap_events.101.t 
+    desc = uujap_events.101.desc 
+    picture = GIFTS_TO_EMPEROR_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.102 days = 720 random = 90 }   
+        }
+        random_known_country = {
+            limit = {
+                is_great_power = yes
+                NOT = { 
+                    is_enemy = ROOT
+                    is_rival = ROOT 
+                }
+            }
+            save_event_target_as = uujap_harris_treaty_target
+        }
+    }
+    
+    option = {  
+        name = uujap_events.101.a   #Go ahead with the treaty
+        event_target:uujap_harris_treaty_target = {
+            add_opinion = {
+                who = ROOT
+                modifier = opinion_treaty_of_amity_and_commerce
+            }
+        }
+        add_prestige = -20
+        add_dip_power = 40
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  
+        name = uujap_events.101.b   #Back down from the treaty.
+        add_legitimacy = -10
+        event_target:uujap_harris_treaty_target = {
+            add_opinion = {
+                who = ROOT
+                modifier = opinion_angry
+            }
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+country_event = { #Ansei Purge - power recentered in bakufu
+    id = uujap_events.102
+    title = uujap_events.102.t 
+    desc = uujap_events.102.desc 
+    picture = IMPERIAL_SEAL_eventPicture
+
+    is_triggered_only = yes 
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.103 days = 720 random = 90 }   
+        }
+    }
+    
+    option = {     #Unnecessary bloodshed
+        name = uujap_events.102.a
+        add_heir_claim = -20
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  #Purge the loyalists
+        name = uujap_events.102.b
+        add_absolutism = 10
+        add_country_modifier = {
+            name = uujap_govt_disarray
+            duration = 12
+        }
+        random_list = {
+            1 = { remove_advisor_by_category = ADM 	remove_advisor_by_category = DIP } 
+            1 = { remove_advisor_by_category = ADM 	remove_advisor_by_category = MIL } 
+            1 = { remove_advisor_by_category = MIL 	remove_advisor_by_category = DIP } 
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+country_event = { #Shogun's family member is pro-restoration
+    id = uujap_events.103
+    title = uujap_events.103.t 
+    desc = uujap_events.103.desc 
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes 
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.104 days = 720 random = 90 }   
+        }
+    }
+    
+    option = {  #Too risky to move against him
+        name = uujap_events.103.a
+        add_country_modifier = {
+            name = uujap_jingoist_politician
+            duration = 120
+        }
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = 5
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  #House arrest for him
+        name = uujap_events.103.b
+        add_legitimacy = -10
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -10
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+country_event = { #Shimonoseki Incident
+    id = uujap_events.104
+    title = uujap_events.104.t 
+    desc = uujap_events.104.desc 
+    picture = WOKOU_INCIDENT_eventPicture
+
+    is_triggered_only = yes 
+
+    
+    immediate = {
+        hidden_effect = {
+            country_event = { id = uujap_events.105 days = 720 random = 90 }   
+        }
+        random_known_country = {
+            limit = {
+                is_great_power = yes
+            }
+            save_event_target_as = uujap_shimonoseki_target
+        }
+    }
+    
+    option = {  #we must support our subjects for solidarity
+        name = uujap_events.104.a
+        add_dip_power = -50
+        every_subject_country = { add_liberty_desire = -15 }
+        event_target:uujap_shimonoseki_target = {
+            add_opinion = {
+                who = ROOT
+                modifier = opinion_angry
+            }
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  #Emperor must support us for solidarity
+        name = uujap_events.104.b
+        add_legitimacy = 5
+        add_adm_power = 25
+        event_target:uujap_shimonoseki_target = {
+            add_opinion = {
+                who = ROOT
+                modifier = opinion_eased_tension
+            }
+        }
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+country_event = { #Emperor Komei dies, Satsuma and Choshu influence the young emperor against us
+    id = uujap_events.105
+    title = uujap_events.105.t 
+    desc = uujap_events.105.desc 
+    picture = KING_SICK_IN_BED_eventPicture
+
+    is_triggered_only = yes 
+    
+    immediate = {
+        set_country_flag = uujap_bakumatsu_chain_over_flag
+    }
+    
+    option = {  #Harmless
+        name = uujap_events.103.a
+        custom_tooltip = uujap_bakumatsu_chain_over_tt_2
+        add_stability = 1
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = 20
+        }
+    }
+    option = {  #Spend resources to stop them
+        name = uujap_events.103.b
+        custom_tooltip = uujap_bakumatsu_chain_over_tt_2
+        add_adm_power = -25
+        add_dip_power = -25
+        add_mil_power = -25
+        add_government_power = {
+            mechanic_type = shogunate_vs_monarchy_mechanic
+            power_type = uu_shogun_power
+            value = -20
+        }
+    }
+}
+
+
+
+country_event = {   #Looping event
+    id = uujap_events.110
+    title = uujap_events.110.t 
+    desc = uujap_events.110.desc 
+    picture = URBANISATION_INCIDENT_eventPicture
+    goto = uujap_support_target
+
+    trigger = {
+        has_reform = uu_shogunate_vs_monarchy_reform
+        any_owned_province = {
+            region = japan_region 
+            NOT = {
+                has_province_modifier = uujap_support_shogun_pmod
+                has_province_modifier = uujap_support_emperor_pmod
+            }
+        }
+    }
+    immediate = {
+        random_owned_province = {
+            limit = {
+                region = japan_region 
+                NOT = {
+                    has_province_modifier = uujap_support_shogun_pmod
+                    has_province_modifier = uujap_support_emperor_pmod
+                }
+            }
+            save_event_target_as = uujap_support_target
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 10 
+    }
+    
+    option = { 
+        name = uujap_events.110.a   #Harmless anyway
+        add_legitimacy = -2.5
+        event_target:uujap_support_target = {   
+            add_province_modifier = {
+                name = uujap_support_emperor_pmod
+                duration = -1
+            }
+        }   
+    }
+    option = {  
+        name = uujap_events.110.b   #Spend court resources to boost our own loyalists
+        random_list = {
+            1 = { add_adm_power = -15 }
+            1 = { add_dip_power = -15 }
+            1 = { add_mil_power = -15 }
+        }      
+        event_target:uujap_support_target = {   
+            add_province_modifier = {
+                name = uujap_support_shogun_pmod
+                duration = -1
+            }
+        }           
+    }
+}
+
+country_event = {   #Shogunate Triumphant
+    id = uujap_events.120
+    title = uujap_events.120.t 
+    desc = uujap_events.120.desc 
+    picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = uujap_events.120.a
+        add_stability = 1 
+        remove_government_reform = uu_shogunate_vs_monarchy_reform
+        add_government_reform = absolute_shogunate_reform
+        custom_tooltip = uujap_friend_daimyo_tt
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    has_reform = daimyo 
+                }
+                add_liberty_desire = -50
+            }
+        }
+    }  
+}
+
+country_event = {   #Honorable Restoration
+    id = uujap_events.121
+    title = uujap_events.121.t 
+    desc = uujap_events.121.desc 
+    picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+    major = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            every_subject_country = {
+                limit = {
+                    has_reform = daimyo
+                }
+                country_event = {
+                    id = uujap_events.122
+                }
+            }
+        }
+    }
+    option = {
+        name = uujap_events.121.a
+        add_stability = 1
+        custom_tooltip = uujap_war_on_daimyo_tt
+        remove_government_reform = uu_shogunate_vs_monarchy_reform
+        add_government_reform = japanese_divine_empire 
+        change_tag = JAP
+        restore_country_name = yes
+        define_ruler = {
+			dynasty = "Yamato"
+			change_adm = 3
+			change_dip = 3
+			change_mil = 3
+			change_original_dynasty = yes
+            age = 16
+		}
+        remove_heir = { allow_new_heir = no }
+        add_ruler_personality = reformist_personality
+        if = {
+            limit = { has_custom_ideas = no }
+            country_event = { id = ideagroups.1 } #Swap Ideas
+        }
+    }     
+}
+
+country_event = {   #Boshin War
+    id = uujap_events.122
+    title = uujap_events.122.t 
+    desc = uujap_events.122.desc 
+    picture = SENGOKU_eventPicture
+
+    is_triggered_only = yes
+
+    option = {  #get annexed
+        name = uujap_events.122.a
+        FROM = {
+            inherit = ROOT
+            add_dip_power = -100
+        }
+    }
+    option = {  #no
+        name = uujap_events.122.b
+        every_owned_province = {
+            add_permanent_claim = FROM
+        }
+        add_casus_belli = {
+            target = FROM
+            type = cb_uujap_boshin
+            months = 1
+        }
+        declare_war_with_cb = {
+            who = FROM
+            casus_belli = cb_uujap_boshin
+        }
+    }    
+
+    after = {
+        hidden_effect = {
+            remove_casus_belli = {
+                target = FROM
+                type = cb_uujap_boshin
+            }
+        }
+    }      
+}
+
+country_event = {   #Founding of Tokyo
+    id = uujap_events.123
+    title = uujap_events.123.t 
+    desc = uujap_events.123.desc 
+    picture = URBANISATION_INCIDENT_eventPicture
+
+    trigger = {
+        tag = JAP
+        is_at_war = no 
+        has_reform = japanese_divine_empire
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    fire_only_once = yes
+
+    option = {  #Tokyo - Western Capital
+        name = uujap_events.123.a
+        1028 = {
+            move_capital_effect = yes
+            destroy_great_project = {
+                type = sankin_kotai_palaces
+            }
+            change_province_name = Tokyo  
+            rename_capital = Tokyo  
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+    }
+    option = {  #Kyoto is fine
+        name = uujap_events.123.b
+        1020 = { 
+            add_base_tax = 1
+        }
+    }
+}

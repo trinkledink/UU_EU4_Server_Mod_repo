@@ -1,5 +1,7 @@
 namespace = tribal_succession
 
+#UU UPDATED 1.37.0
+
 # Tribal Succession Crisis
 country_event = {
 	id = tribal_succession.1
@@ -10,7 +12,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		always = no	 
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
@@ -24,6 +25,22 @@ country_event = {
 		OR = {
 			NOT = { tag = CRI }
 			has_global_flag = death_of_haji_giray
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = hordes_any_child_can_be_khans_flag }
+			}
+			OR = {
+				NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
+				NOT = {
+					heir_total_stats = {
+						amount = 9	#uu changed
+					}
+				}
+			}
+		}
+		else = {
+			NOT = { has_estate_privilege = estate_nomadic_tribes_secured_succession }
 		}
 	}
 	
@@ -50,9 +67,9 @@ country_event = {
 	
 	option = {
 		name = tribal_succession.1.a
-		trigger = {
-			NOT = { legitimacy_or_horde_unity = 50 }
-		}
+		#trigger = {									#UU removed trigger for this option
+		#	NOT = { legitimacy_or_horde_unity = 50 }
+		#}
 		if = {
 			limit = {
 				any_owned_province = {

@@ -1,0 +1,58 @@
+shogunate_vs_monarchy_mechanic = {
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		uu_shogun_power = {
+			gui = parliament_vs_monarchy_gov_mech
+			max = 100	#Emperor direction
+			min = -100	#Shogunate direction
+			base_monthly_growth = -0.25
+			scaled_modifier = {
+				trigger = {
+					has_government_power = { 
+						mechanic_type = shogunate_vs_monarchy_mechanic
+						power_type = governmental_power
+						value = 0
+					}
+				}
+				modifier = {
+					max_absolutism = 50
+					yearly_absolutism = 2
+					liberty_desire_from_subject_development = -0.33
+					tolerance_own = 2
+					reform_progress_growth = 0.3
+					diplomatic_annexation_cost = -0.2
+				}
+				start_value = 0
+				end_value = 100			
+			}
+			reverse_scaled_modifier = {
+				trigger = {
+					NOT = {
+						has_government_power = { 
+							mechanic_type = shogunate_vs_monarchy_mechanic
+							power_type = governmental_power
+							value = 0
+						}
+					}
+				}
+				modifier = {
+					max_absolutism = 50
+					yearly_absolutism = 2
+					reduced_liberty_desire_on_same_continent = 33
+					vassal_income = 0.33
+					global_autonomy = -0.05
+					army_tradition_decay = -0.01
+				}
+				start_value = -100
+				end_value = 0
+			}
+			on_max_reached = {
+			}
+			on_min_reached = {
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 43  165  157 }
+revolutionary_colors = { 8 1 8 }
+
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	spy_ideas
+	offensive_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+}
+
+monarch_names = {	#zeb
+	"Fong-Pak #0" = 20	
+	"Vu-Pak #0" = 20
+	"Kong-Yau #0" = 20
+	"Sen-Loong #0" = 20
+	"Siew-Chen #0" = 20
+	"Yun-San #0" = 20
+	"Siew-Tshin #0" = 20
+	"Siew-Sin #0" = 20
+	"Ngiuk-Sin #0" = 20
+	"Yin-Kon #0" = 20
+	"En-Cheok #0" = 20
+	"Tse-Choi #0" = 20
+	"Yun-Fook #0" = 20
+	"Fung-Kap #0" = 20
+	"Kong-Tee #0" = 20
+	"Tsung-Koi #0" = 20
+	"Tsung-San #0" = 20
+	"Fat-Khui #0" = 20
+	"Kiam-Yin #0" = 20
+	"Yau-Bong #0" = 20
+	"Sin-Chee #0" = 20
+	"Sin-Woo #0" = 20
+	"Sin-Leong #0" = 20
+	"Hau-Hian #0" = 20
+	"Muk-Yen #0" = -20
+	"Kho #0" = 20
+	"Ngok #0" = 20
+
+	"Yin-Vun #0" = -20
+	"Yin-Lok #0" = -20
+	"Kim-Yan #0" = -20
+	"Choo-Ngiong #0" = -20
+	"Ga-Fa #0" = -20
+	"Fook-Chun #0" = -20
+	"Hiao-Pui #0" = -20
+	"Ga-Fui #0" = -20
+	"Tet-Han #0" = -20	
+
+}
+
+leader_names = {
+	Chau Choo Ng Chong Chiu Li Liew Kwok Yeong Wong Chin Ma Meng Ko 
+	Chan Sun Siow Yau Chow Bai Yau Tang Law Tsui Lim
+	Fong Fa Gu Fei Fu Mei Sih Liu Kam Ye He Lam Tu Fong Mok Ho 
+	Kong Si Pan Zuo Ding Yim Tang Luo Yen Yim Ngiu Zeng
+	Tung Lin Sum Choi Dai Keung Yueh Hung Chui Voon Low
+}
+
+ship_names = {
+	Gaodi Huidi Wendi Zhaodi Zhangdi "Da Ming Guo"
+	Beijing "Zeng He" Ji'nan Nanjing Hangzhou 
+	Wuchang Fuzhou Nanchang Guilin Guangzhou
+	Guiyang Yunnan Chendo Xi'an Taiyuan "Huang He"
+	"Chang Jiang" "Xijiang" "Kung-fu tzu" Mencius
+	"Xun Zi" "Yan Hui" "Min Sun" "Ran Geng" "Ran Yong"
+	"Zi-you" "Zi-lu" "Zi-wo" "Zi-gong" "Yan Yan"
+	"Zi-xia" "Zi-zhang" "Zeng Shen" "Dantai Mieming"
+	"Fu Buji" "Yuan Xian" "Gungye Chang" "Nangong Guo"
+	"Gongxi Ai" "Zeng Dian" "Yan Wuyao" "Shang Zhu"
+	"Gao Chai" "Qidiao Kai" "Gongbo Liao" "Sima Geng"
+	"Fan Xu" "You Ruo" "Gongxi Chi" "Wuma Shi" "Liang Zhan"
+	"Yan Xing" "Ran Ru" "Cao Xu" "Bo Qian" "Gongsun Long"
+}

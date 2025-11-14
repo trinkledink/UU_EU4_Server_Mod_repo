@@ -1,0 +1,674 @@
+namespace = UU_elb_mission_events
+
+#Hamburg World Port
+country_event = {
+	id = UU_elb_mission_events.1
+	title = UU_elb_mission_events.1.t
+	desc = "UU_elb_mission_events.1.d"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UU_elb_mission_events.1.a
+		add_country_modifier = {
+			name = elb_contesting_colonies
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = UU_elb_mission_events.1.b
+		add_mercantilism = 15
+		add_stability_or_adm_power = yes
+	}
+}
+
+country_event = { #Czech gets German culture
+	id = UU_elb_mission_events.2
+	title = UU_elb_mission_events.2.t
+	desc = "UU_elb_mission_events.2.d"
+	picture = CZECH_NOBLES_eventPicture
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ELB
+		was_tag = BOH
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new #man this new russia stuff really makes life hard sometimes
+		}
+		stability = -1
+		OR = {
+			any_owned_province = {
+				culture = czech
+			}
+			any_owned_province = {
+				culture = czech_new
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 20
+			NOT = { culture_group = west_slavic }
+			NOT = { culture_group = slavic }
+		}
+	}
+
+	option = { #Convert immediately!
+		name = UU_elb_mission_events.2.a
+		add_stability = -2
+		custom_tooltip = uu_elbified_tt
+		change_primary_culture = czech_newer
+		hidden_effect = { #tooltip given later for readability reasons
+			bohemia_area = {
+				type = all
+				add_core = BOH
+			}
+			erzgebirge_area = {
+				type = all
+				add_core = BOH
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = erzgebirge_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = saxon
+				}
+				change_culture = czech_newer 
+			}
+			every_owned_province = {
+				limit = {
+					culture = czech
+				}
+				change_culture = czech_newer 
+			}
+			every_owned_province = {
+				limit = {
+					culture = czech_new
+				}
+				change_culture = czech_newer 
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
+				}
+				change_culture = czech_newer 
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
+				}
+				change_culture = czech_newer 
+			}
+			if = {
+				limit = {
+					ruler_culture = czech
+				}
+				set_ruler_culture = czech_newer 
+			}
+			if = {
+				limit = {
+					heir_culture = czech
+				}
+				set_heir_culture = czech_newer
+			}
+		}
+		tooltip = { #effect executed above for script order reasons
+			bohemia_area = {
+				type = all
+				add_core = BOH
+			}
+			erzgebirge_area = {
+				type = all
+				add_core = BOH
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = erzgebirge_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+		}
+	}
+
+	option = { #Let it happen naturally
+		name = UU_elb_mission_events.2.b
+		add_prestige = -15
+		add_legitimacy = -5
+		custom_tooltip = uu_elb_again_tt
+		add_country_modifier = {
+			name = elb_eroding_czech_identity
+			duration = 10950
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+	}
+
+	option = { #Stop it forcibly
+		name = UU_elb_mission_events.2.c
+		add_stability = 1
+		add_prestige = 15
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { culture_group = west_slavic }
+					NOT = { culture_group = slavic }
+				}
+				add_province_modifier = { 
+					name = elb_czech_supremacy_1
+					duration = 14600
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
+				}
+				add_province_modifier = { 
+					name = elb_czech_supremacy_2
+					duration = 14600
+				}
+			}
+		}
+		custom_tooltip = uu_elb_national_supremacy_tt
+	}		
+}
+
+country_event = { #Non-Czech version of previous
+	id = UU_elb_mission_events.3
+	title = UU_elb_mission_events.3.t
+	desc = "UU_elb_mission_events.3.d"
+	picture = CZECH_NOBLES_eventPicture
+
+	mean_time_to_happen = {
+		months = 150
+	}
+
+	trigger = {
+		tag = ELB
+		NOT = {
+			was_tag = BOH
+			primary_culture = czech
+			primary_culture = czech_new
+		}
+		stability = 1
+		any_owned_province = {
+			OR = {
+				culture = czech
+				culture = czech_new
+			}
+		}
+		erzgebirge_area = {
+			is_core = ROOT
+			owned_by = ROOT
+			type = all
+		}
+		bohemia_area = {
+			is_core = ROOT
+			owned_by = ROOT
+			type = all
+		}
+	}
+	option = { #Ok
+		name = UU_elb_mission_events.3.a 
+		add_adm_power = -100
+		add_dip_power = -100
+		custom_tooltip = uu_elb_again_tt
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}		
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		bohemia_area = {
+			type = all
+			add_core = BOH
+		}
+		erzgebirge_area = {
+			type = all
+			add_core = BOH
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = BOH
+			}
+		}
+		set_country_flag = uu_elbification_start_flag
+	}
+	option = { #Stop it
+		name = UU_elb_mission_events.3.b 
+		add_stability = 1
+		add_prestige = 25
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
+				}
+				add_province_modifier = { 
+					name = elb_czech_supremacy_2
+					duration = 14600
+				}
+			}
+		}
+		custom_tooltip = uu_elb_national_supremacy_2_tt
+	}
+	option = { #Switch culture
+		name = UU_elb_mission_events.3.c
+		add_stability = -2
+		custom_tooltip = uu_elbified_tt
+		change_primary_culture = czech_newer
+		hidden_effect = { #tooltip given later for readability reasons
+			bohemia_area = {
+				type = all
+				add_core = BOH
+			}
+			erzgebirge_area = {
+				type = all
+				add_core = BOH
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = erzgebirge_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = saxon
+				}
+				change_culture = czech_newer 
+			}
+			every_owned_province = {
+				limit = {
+					culture = czech
+				}
+				change_culture = czech_newer 
+			}
+			every_owned_province = {
+				limit = {
+					culture = czech_new
+				}
+				change_culture = czech_newer 
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
+				}
+				change_culture = czech_newer 
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = germanic
+					any_neighbor_province = { 
+						culture = czech_newer
+					}
+				}
+				change_culture = czech_newer 
+			}
+			if = {
+				limit = {
+					ruler_culture = saxon
+				}
+				set_ruler_culture = czech_newer 
+			}
+			if = {
+				limit = {
+					heir_culture = saxon
+				}
+				set_heir_culture = czech_newer
+			}
+		}
+		tooltip = { #effect executed above for script order reasons
+			bohemia_area = {
+				type = all
+				add_core = BOH
+			}
+			erzgebirge_area = {
+				type = all
+				add_core = BOH
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = bohemia_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = erzgebirge_area
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 2
+					friend = BOH
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Periodic Conversion event
+	id = UU_elb_mission_events.4
+	title = UU_elb_mission_events.4.t
+	desc = {
+		trigger = {
+			NOT = {
+				primary_culture = czech
+				primary_culture = czech_new 
+				primary_culture = czech_newer
+			}
+		}
+		desc = "UU_elb_mission_events.4.da"
+	}
+	desc = {
+		trigger = {
+			OR = {
+				primary_culture = czech
+				primary_culture = czech_new 
+				primary_culture = czech_newer
+			}
+		}
+		desc = "UU_elb_mission_events.4.db"
+	}
+	picture = CZECH_NOBLES_eventPicture
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	trigger = {
+		tag = ELB
+		has_country_flag = uu_elbification_start_flag
+		any_owned_province = {
+			OR = {
+				culture = czech
+				culture = czech_new
+			}
+		}
+	}
+	option = { #Ok
+		name = UU_elb_mission_events.4.a
+		if = {
+			limit = {
+				OR = {
+					primary_culture = czech
+					primary_culture = czech_new
+					primary_culture = czech_newer
+				}
+			}
+			add_country_modifier = {
+				name = elb_eroding_czech_identity
+				duration = 10950 #30y but will recur
+			}
+		} else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+					friend = BOH
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+				}
+				any_neighbor_province = { 
+					culture_group = germanic
+				}
+			}
+			change_culture = czech_newer 
+		}
+		random_owned_province = {
+			limit = {
+				culture = saxon
+				any_neighbor_province = { 
+					OR = {
+						culture = czech
+						culture = czech_new
+						culture = czech_newer
+					}
+				}
+			}
+			change_culture = czech_newer 
+		}
+	}
+	option = { #Stop this
+		name = UU_elb_mission_events.4.b 
+		trigger = {
+			OR = {
+				primary_culture = czech
+				primary_culture = czech_new
+				primary_culture = czech_newer
+			}
+		}
+		clr_country_flag = uu_elbification_start_flag
+		custom_tooltip = uu_elbification_stop_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { culture_group = west_slavic }
+					NOT = { culture_group = slavic }
+				}
+				add_province_modifier = { 
+					name = elb_czech_supremacy_1
+					duration = 14600
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = czech
+						culture = czech_new
+					}
+				}
+				add_province_modifier = { 
+					name = elb_czech_supremacy_2
+					duration = 14600
+				}
+			}
+		}
+		custom_tooltip = uu_elb_national_supremacy_tt
+	}
+}

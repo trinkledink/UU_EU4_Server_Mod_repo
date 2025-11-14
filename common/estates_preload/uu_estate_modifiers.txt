@@ -1,0 +1,21 @@
+#Define estate loyalty and influence modifiers here
+
+estate_special = {
+	modifier_definition = {
+		type = loyalty
+		key = uu_Maritime_Infra_policy_localization
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+estate_special = {
+	modifier_definition = {
+		type = loyalty
+		key = uu_Maritime_Pluto_policy_localization
+		trigger = {
+			always = yes
+		}
+	}
+}

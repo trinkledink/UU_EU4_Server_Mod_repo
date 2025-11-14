@@ -1,0 +1,352 @@
+﻿l_english:
+ #Countries
+ SOF:0 "Bambara"
+  SOF_ADJ:0 "Bambara"
+ ZAF:0 "Massina"
+  ZAF_ADJ:0 "Massina" 
+ RZI:0 "Rozwi" 
+  RZI_ADJ:0 "Rozwi"
+ KUR:0 "Courland" #Most common English name for this place
+  KUR_ADJ:0 "Couronian"
+ AVE:0 "Dual Monarchy"
+   AVE_ADJ:0 "Anglo-French"
+  AV0:0 "Anglo-French Republic"
+   AV0_ADJ:0 "Anglo-French"
+  AV1:0 "Anglo-French Union"
+   AV1_ADJ:0 "Anglo-French"
+ ADA_ADJ:0 "Adalite" #Actual adjective for this place
+ LAU:0 "Lauenburg"  #Removing all Saxe- prefixes
+ TIR:0 "Tyrol" #Most common English name for this place
+ TAU:0 "Toungoo" #Most common English name for this place
+  TAU_ADJ:0 "Toungoo"
+ ARK:0 "Mrauk-U" #Official name for this place
+ PEG:0 "Hanthawaddy" #Most common English name for this place
+  PEG_ADJ:0 "Hanthawaddy"
+
+
+ #Trade Nodes
+ katsina:0 "Hausaland"
+ rheinland:0 "Rhineland"
+ sevilla:0 "Seville"
+ kiev:0 "Kyiv"
+ safi:0 "Agadir"
+ saxony:0 "Dresden"
+  trade_company_saxony:0 "Elbe Charter"
+ bordeaux:0 "Nantes"
+  trade_company_bordeaux:0 "Loire Charter"
+   TRADE_COMPANY_BORDEAUX_Root_Culture_GetName:0 "[Root.Culture.GetName] Loire Company"
+   TRADE_COMPANY_BORDEAUX_European_Trade_Company:0 "Loire Trade Company"
+ valencia:0 "Toulouse" 
+  trade_company_valencia:0 "Occitanian Charter"
+   TRADE_COMPANY_VALENCIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Occitania Company"
+   TRADE_COMPANY_VALENCIA_European_Trade_Company:0 "Occitania Trade Company"
+ venice:0 "Po Valley"
+  trade_company_venice:0 "North Italian Charter"
+   TRADE_COMPANY_VENICE_Root_Culture_GetName:0 "[Root.Culture.GetName] Po Valley Company"
+   TRADE_COMPANY_VENICE_European_Trade_Company:0 "Po Valley Trade Company"
+ pest:0 "Danubia"
+  trade_company_pest:0 "Danubian Charter"
+   TRADE_COMPANY_PEST_Root_Culture_GetName:0 "[Root.Culture.GetName] Danubia Company"
+   TRADE_COMPANY_PEST_European_Trade_Company:0 "Danubia Trade Company"
+ the_moluccas:0 "Spice Islands"
+  trade_company_indonesia:0 "Malayan Charter" #this is for malacca node, but indented for organization purposes
+   TRADE_COMPANY_INDONESIA_Indonesia_Trade_Company:0 "Malaya Trade Company" 
+
+ #Miscellaneous map
+ huang_he_estuary_modifier:0 "Yellow River Estuary"
+  desc_huang_he_estuary_modifier:0 "Controlling the important river estuary of the Yellow River strengthens our hold of the trade in the region."
+ 
+ zhuang:0 "Cuengh"
+  zhuang_new:0 "Zhuang"
+ arakanese:0 "Rakhine" 
+
+ white_house:0 "District of Columbia"  #UU Change
+ sankore_madrasah:0 "Sankoré Madrasah" #UU Change
+ belem_tower:0 "Belém Tower"    #UU Change
+ st_basil_cathedral:0 "St. Basil's Cathedral" #UU Change
+ stpeters_cathedral:0 "St. Peter's Basilica"  #UU Change
+ grand_canal_1:0 "Grand Canal: Hangzhou"  #UU Change
+ grand_canal_2:0 "Grand Canal: Suzhou"    #UU Change
+ grand_canal_3:0 "Grand Canal: Zhenjiang" #UU Change
+ grand_canal_4:0 "Grand Canal: Yangzhou"  #UU Change
+ khami_ruins:0 "Great Zimbabwe"   #UU Change
+ kilwa_city:0 "Kilwa Kisiwani"    #UU Change
+ fire_temple_of_ateshgah:0 "Fire Temple of Baku" #UU Change because this is objectively cooler
+ kiev_pechersk_lavra:0 "Kyiv Pechersk Lavra"  #UU Change
+ hampi:0 "City of Hampi" #UU Change
+ salvador_da_bahia:0 "City of Salvador da Bahia"  #UU Change
+ 
+
+ #Ideas 
+ indigenous_ideas:0 "Advancement Ideas"
+  indigenous_ideas_bonus:0 "Full Advancement"
+
+ #Ages 
+ obj_5_centers_of_trade_desc:1 "Own, control and core at least §Y3§! provinces with level 2 or higher Centers of Trade."
+ obj_renaissance_desc:0 "Embrace the Renaissance institution, and keep it in every stated province you own."
+ obj_many_vassals_desc:0 "Have at least §Y4§! subjects of any kind."
+ obj_humiliate_rival_desc:0 "Humiliate or use Show Strength on a rival through a peace treaty."
+ obj_christian_convert_desc:2 "Change your state religion."
+  obj_christian_convert_tooltip:0 "Has changed state religion"
+ obj_humanism_religious_desc:0 "Fully embrace either the Humanist or Religious idea group."
+ obj_convert_10_provinces:0 "Convert Provinces"
+  obj_convert_10_provinces_desc:0 "Convert at least §Y10§! provinces to your faith."
+ obj_colonial_empire_desc:0 "Have at least §Y3§! colonial nations as subjects."
+ obj_asian_trade_desc:0 "Gain the trade bonus from either §YSilk, Spices, Cloves, Chinaware,§! or §YTea§!."
+ obj_unify_culture_desc:0 "Own all provinces of your culture group, or have §Y3§! promoted cultures."
+ obj_3_trade_companies_desc:0 "Found at least §Y3§! different trade companies."
+ obj_universities_desc:0 "Own at least §Y5§! universities."
+ obj_large_forcelimit_desc:0 "Have a land force limit of at least §Y200§! regiments."
+ obj_90_absolutism_desc:0 "Absolutism must be at least §Y90§!."
+ obj_emperor_of_china:0 "Professional Army"
+  obj_emperor_of_china_desc:0 "Have at least §Y80§! Army Professionalism."
+ obj_cultures_accepted_desc:0 "Have at least §Y5§! promoted cultures."
+ obj_emperor_desc:0 "Have a government rank of Empire."
+ obj_large_subject_desc:0 "Have a subject with over §Y250§! development."
+ obj_disc_army_desc:0 "Have least §Y125%§! discipline in your armies."
+ obj_huge_capital_desc:0 "At least §Y50§! development in the capital."
+ obj_two_institutions_desc:0 "Own and control at least §Y2§! provinces where institutions originated from."
+ ab_autonomy:0 "Absolutism of Age"
+
+ #Hedgemons
+ HEGEMONS_TITLE_WIN:0 "Hedgemons"
+ lost_hegemony:0 "Lost Hedgemony"
+ IS_NOT_HEGEMON_TRIGGER:0 "Is NOT a hedgemon"
+ IS_HEGEMON_TRIGGER:0 "Is a Hedgemon"
+ LOST_HEGEMON_US_TITLE:0 "Hedgemony Lost"
+ LOST_HEGEMON_US_SETUP:0 "When we lose our position as a hedgemon!"
+ LOST_HEGEMON_US_1:0 "Hedgemony lost!"
+ LOST_HEGEMON_THEM_TITLE:0 "Hedgemony Lost"
+ LOST_HEGEMON_THEM_SETUP:0 "When another nation lose their position as a hedgemon."
+ LOST_HEGEMON_THEM_1:0 "Hedgemony lost!"
+ GAIN_HEGEMON_US_TITLE:0 "Hedgemony Gained"
+ GAIN_HEGEMON_US_SETUP:0 "When you proclaim a Hedgemony"
+ GAIN_HEGEMON_US_1:0 "Hedgemony proclaimed!"
+ GAIN_HEGEMON_THEM_TITLE:0 "Hedgemony Gained"
+ GAIN_HEGEMON_THEM_SETUP:0 "When another nation proclaims a Hedgemony"
+ GAIN_HEGEMON_THEM_1:0 "Hedgemony proclaimed!"
+ cb_hegemon:0 "Contain Hedgemon"
+ military_hegemon:0 "Military Hedgemon"
+ naval_hegemon:0 "Naval Hedgemon"
+ economic_hegemon:0 "Economic Hedgemon"
+ HEGEMON_ALREADY:0 "You are already a hedgemon!"
+ OTHER_HEGEMON_ALREADY:0 "There is already a $WHICH|Y$. You need to make sure $WHO|Y$ loses a war, which will make them lose their hedgemony."
+ WE_ARE_BOTH_HEGEMONS:0 "Hedgemons can not ally with other Hedgemons"
+ DIPLO_HEGEMON:0 "$WHO$ is a Hedgemon: "
+ is_hegemon:0 "Hedgemon"
+ allied_to_hegemon:0 "Allied to Hedgemon"
+ SCORE_HEGEMONY:2 "Final score is multiplied by $VAL$, as being a Hedgemon increases it, while being allied to one decreases it."
+ PROCLAIM_HEGEMONY_DESC:0 "Proclaiming a hedgemony will give us plenty of benefits, increasing our power projection, but will also make us stand more alone in the world!"
+ HAVE_HEGEMONY_PROGRESS_LESS_THAN:0 "Hedgemony Power is less than $VAL|Y%$"
+ HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "Hedgemony Power is at least $VAL|Y%$"
+ #kekw
+ insult_default12:0 "ima be real wit u i just need the pp bro"
+ #Parliament
+ MODIFIER_MAX_POSSIBLE_PARLIAMENT_SEATS:0 "Possible Parliament Seats" #Was max possible, but now represents a hard limit
+ JAP_parliament_name:0 "Kokkai" #National Diet
+ #mil group
+ backing_war_effort:0 "£mil£ Support the War Effort"
+ combat_janissary_decadence:0 "£mil£ Combat Janissary Decadence"
+ drill_exercises:0 "£mil£ Polish Drill Exercises"
+ the_draft:0 "£mil£ The Draft"
+ uu_generic_drill_exercises:0 "£mil£ Drill Exercises"
+ quartering_of_troops:0 "£mil£ Quartering of Troops"
+ extend_militarization_of_the_state:0 "£mil£ Extend Militarization of the State"
+ uu_military_engineering:0 "£mil£ Military Engineering"
+ #dip group
+ charter_colonies:0 "£dip£ Charter Colonies"
+ establish_new_siberian_frontier:0 "£dip£ Extend Siberian Frontiers"
+ imports_exports:0 "£dip£ Restrict Imports"
+ invest_heir_education:0 "£dip£ Invest in Princely Education"
+ offices_to_vassals:0 "£dip£ Create Offices for Vassal Nobles"
+ reduce_trade_regulations:0 "£dip£ Reduce Trade Regulations"
+ UU_dip_money_issue:0 "£dip£ Reform Wealth Tax"
+ charter_trade_companies:0 "£dip£ Charter Trade Company"
+ colonial_taxation:0 "£dip£ Colonial Taxation"
+ emergency_impressment_act:0 "£dip£ Emergency Impressment Act"
+ UU_dip_gov_power_issue:0 "£dip£ Consolidation of Executive Privileges"
+ #adm group
+ charter_university:0 "£adm£ Fund Expansion of Universities"
+ development_of_infrastructure:0 "£adm£ Land Reform"
+ election_reform:0 "£adm£ Election Reform"
+ estates_fund_industrialization:0 "£adm£ Fund an Industrial Project"
+ fund_expansion_of_bureaucracy:0 "£adm£ Fund Expansion of Bureaucracy"
+ increase_crown_land_share:0 "£adm£ Centralize Land Ownership"
+ reform_government_act:0 "£adm£ Reform the Government"
+ propagation_of_state_religion:0 "£adm£ Propagation of State Religion"
+ prohibit_use_of_local_languages:0 "£adm£ Assimilation and Settlement Policy"
+ appoint_a_new_prime_minister:0 "£adm£ Appoint a New Prime Minister"
+ #ENG/GBR
+ english_scottish_act_of_union:0 "(§T§O3§!§!)@GBR Acts of Union"
+ english_french_act_of_union:0 "(§T§O3§!§!)@AVE Acts of Union"
+ crown_of_ireland_act:0 "@[Root.GetTag] Crown of Ireland Act"
+ bill_of_rights_act:0 "@[Root.GetTag] Bill of Rights"
+ the_black_act:0 "@[Root.GetTag] The Black Act"
+ the_tea_act:0 "@[Root.GetTag] The Tea Act"
+ french_english_reconciliation_act:0 "@[Root.GetTag] French-English Reconciliation Act"
+ crush_french_nobles:0 "@[Root.GetTag] Curtail French Nobility"
+ the_bank_charter_act:0 "@[Root.GetTag] The Bank Charter Act"
+ acts_of_naval_professionalism:0 "@[Root.GetTag] Act of Naval Professionalism"
+ the_sugar_act:0 "@[Root.GetTag] The Sugar Act"
+ royal_impressment_act:0 "@[Root.GetTag] Royal Impressment Act"
+ isolationism_act:0 "@[Root.GetTag] Isolationism Act"
+ colonial_act:0 "@[Root.GetTag] Colonial Act"
+ military_reassignment_act:0 "@[Root.GetTag] Military Reassignment Act"
+ acts_of_annexation:1 "@[Root.GetTag] Acts of Development"
+ global_empire_act:0 "@[Root.GetTag] Global Empire Act"
+ naval_reassignment_act:0 "@[Root.GetTag] Naval Reassignment Act"
+ diplomatic_act:0 "@[Root.GetTag] Diplomatic Act"
+ internal_focus_act:0 "@[Root.GetTag] Internal Focus Act"
+ discipline_for_the_marines_acts:0 "@[Root.GetTag] Maritime Discipline Acts"
+ improved_man_of_war_acts:0 "@[Root.GetTag] Man-of-War Acts"
+ army_reform_acts:0 "@[Root.GetTag] Army Reform Acts"
+ enact_the_wales_acts:0 "@[Root.GetTag] Laws in Wales Acts"
+ wales_act:0 "@[Root.GetTag] Laws in Wales"
+ acts_of_high_admiralty:0 "@[Root.GetTag] Acts of High Admiralty"
+ acts_of_maritime_courage:0 "@[Root.GetTag] Maritime Courage Acts"
+ acts_of_maritime_professionalism:0 "@[Root.GetTag] Acts of Maritime Professionalism"
+ british_ideas_laws:0 "@[Root.GetTag] Adjust British Laws"
+ angevin_ideas_laws:0 "@[Root.GetTag] Adjust Angevin Laws"
+ english_ideas_laws:0 "@[Root.GetTag] Adjust English Laws"
+ cultural_unity_act:0 "@[Root.GetTag] Act of Cultural Unity"
+ colonial_venture_act:0 "@[Root.GetTag] Colonial Venture"
+ crown_of_iberia_act:1 "@[Root.GetTag] Act of the Spanish Crown"
+ act_of_exploration:0 "@[Root.GetTag] Exploration Act"
+ acts_of_impressment:0 "@[Root.GetTag] Acts of Impressment"
+ acts_of_taxation:0 "@[Root.GetTag] Taxation Acts"
+ act_of_representation:0 "@[Root.GetTag] Acts of Representation"
+ crown_of_italy_act:0 "@[Root.GetTag] Act of the Italian Crown"
+ crown_of_the_empire_act:0 "@[Root.GetTag] Crown of the Empire"
+ the_gold_act:0 "@[Root.GetTag] Gold Act"
+ the_spice_act:0 "@[Root.GetTag] Spice Act"
+ appointment_of_state_minister:0 "@[Root.GetTag] Appointment of State Minister"
+ enact_mercantilism:0 "@[Root.GetTag] Mercantilism Act"
+ promote_free_trade:0 "@[Root.GetTag] Act of Free Trade"
+ royal_marine_act:0 "@[Root.GetTag] Royal Marines Act"
+ military_reform_acts:0 "@[Root.GetTag] Acts of State Military"
+ #HRE
+ establish_the_imperial_diet_act:0 "@HRE Establish the Imperial Diet"
+ act_of_imperial_diplomacy:0 "@HRE Act of Imperial Diplomacy"
+ landsknechte_act:0 "@HRE Landsknechte Act"
+ imperial_religious_unity_act:0 "@HRE Imperial Religious Unity Act"
+ gemeiner_pfennig_act:0 "@HRE Gemeiner Pfennig Act"
+
+ #VOC Indiamen
+ ONLY_VOC_INDIAMEN_MODIFIER:0 "§YAffects only Transport Light Ships§!"
+ VOC_INDIAMEN_NAME:1 "Transport $NAME$"
+ MODIFIER_ALLOWED_VOC_INDIAMEN_FRACTION:1 "Transport Light Ship Force Limit"
+ VOC_INDIAMEN_FORCELIMIT:1 "We can recruit up to $LIMIT|Y$ §GTransport Ships§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our naval forcelimit of $FL$:\n"
+ VOC_INDIAMEN_LIMIT_CULTURE:1 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Transport Light Ships here."
+ ADD_VOC_INDIAMEN_SUB_UNIT_EFFECT:1 "Get '§GTransport§!' $UNIT$ in $WHERE|Y$."
+ VOC_INDIAMEN_DESC:1 " "
+ REGCAT_voc_indiamen:1 "Transport"
+ VOC_INDIAMEN_REGIMENT:1 "Transport Light Ships \n$EFFECT$"
+ HAVE_LESS_VOC_INDIAMEN_THAN:1 "Have less Transport Light Ships than §Y$VALUE$§!.\n"
+ voc_indiamen_modifier:1 "Transport Light Ships Hired"
+ MODIFIER_AMOUNT_OF_VOC_INDIAMEN:1 "Transport Light Ship Force Limit"
+ MODIFIER_HAS_VOC_INDIAMEN:0 "Country Allows Transport Light Ships"
+ NED_UNLOCK_MAXIMIZE_CARGO_SPACE_PRIVILEGE:1 "Unlocks the §YMaximize Cargo-Space§! Privilege for the §Y[Root.GetBurghersName]§!, which grants the following:\n   Ship Cannons: §R-25.0%§!\n   Ship Trade Power Modifier: §G+50.0%§!\n   §YAffects only Transport Light Ships§!"
+ NED_UNLOCK_DIVERSIFY_FLUYTS_PRIVILEGE:1 "Unlocks the §YDiversify the Fluyts§! Privilege for the §Y[Root.GetBurghersName]§!, which grants the following:\n   Ship Cannons: §G+10.0%§!\n   Ship Trade Power Modifier: §R-30.0%§!\n   Hull Size: §G+15.0%§!\n   Ship Costs: §R+30.0%§!\n   §YAffects only Transport Light Ships§!"
+ voc_indiamen_ship:1 "Transport Light Ship"
+
+ #Rum
+ cb_ottoman_subjugation_war:0 "Establish Eyalet" #UU Change because Rum can also have this CB, not just Ottomans
+ fabricate_ottoman_invasion_cb_desc:1 "Justify Invasion will reduce the size of our §Y[From.GetAdjective]§! Spy Network by §R[Root.GetSpyCostHardCoded]§! and will give us the '§YEstablish Eyalet§!' casus belli against §Y[From.GetName]§!, allowing us to subjugate §Y[From.GetName]§! and turning them into an §YEyalet§! of our [Root.GovernmentName].\n\nThis casus belli will last for §Y5 years§!.\n\n§YEyalets can be turned into Core Eyalets which can be annexed for 6 £dip£ per development.§!" #UU Change because Rum can also have this CB, not just Ottomans
+ fabricate_ottoman_invasion_cb_tooltip:0 "Justify an invasion against the target country and gain the 'Establish Eyalet' casus belli against them." #UU Change because Rum can also have this CB, not just Ottomans
+ HAS_OTTOMAN_INVASION_CB_ALREADY_TT:0 "§R- §Y[Root.GetName]§! already has an §YEstablish Eyalet§! casus belli against §Y[From.GetName]§!.§!" #UU Change because Rum can also have this CB, not just Ottomans
+ 
+ #England
+ flavor_gbr.20.a:0 "Long live the Anglo-French Empire!" #UU Modded
+ flavor_gbr.20.b:0 "[Root.Monarch.GetName] is now recognized as the rightful sovereign [Root.Monarch.GetTitle] of both England and France." #UU Modded
+ flavor_gbr.20.d:0 "The Monarchy is no more! Long live the new Republic!" #UU Modded
+ flavor_gbr.20.e:0 "We will choose a new name representative of the union of our two states." #UU Modded
+ flavor_gbr.20.f:0 "This change is unnecessary." #UU Modded
+ desc_gbr_new_world_dominance:0 "The New World and all of its resources belong to the [Root.GetAdjective] [Root.GovernmentName]!\n\nAll §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #This is the country modifier description. UU Nerfed
+ gbr_dominiate_new_world_at:1 "All §YColonial§! subjects gain §G+10.0%§! Production Efficiency and §G+10.0%§! Trade Efficiency." #This is the mission tooltip. UU nerf
+ ave_pax_angevina:0 "Pax Andecavina" #UU Better Latin
+
+ #Origins Tooltips
+ estate_church_one_faith_one_culture_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!" #UU change
+ estate_church_one_faith_one_culture_buffed_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Unrest: §G-1.00§!\nLocal Tax Modifier: §G+15.0%§!\nLocal Production Efficiency: §G+15.0%§!\nLocal Manpower Modifier: §G+15.0%§!\nLocal Trade Power: §G+10.0%§!\nProvince Governing Cost: §G-10.0%§!" #UU change
+ estate_church_one_faith_one_culture_gtb:2 "Every owned province, which is NOT in the §Y[Root.Culture.GetGroupName]§! culture group and has NOT an §Yaccepted culture§!, gains '§YHeretic Culture§!', giving the following effects:\nLocal Unrest: §R+3.00§!\nLocal Culture Conversion Cost: §R+10.0%§!" #UU change
+ enable_cult_for_heirs_tt:0 "Heirs can choose a second §YCult§! for your country!" #UU Change
+ disable_cult_for_heirs_tt:0 "§RHeirs can no longer choose a second §YCult§! for your country!" #UU Change
+ hanafi_school_bonus_tt:0 "Idea Cost: §G-5.0%§!" #UU Change
+ hanbali_school_bonus_tt:0 "Aggressive Expansion Impact: §G-10.0%§!\nMaximum Absolutism: §G+10.0§!"
+ maliki_school_bonus_tt:0 "Reform Progress Growth: §G+20.0%§!"
+ shafii_school_bonus_tt:0 "Merchants: §G+1§!\nTrade Steering: §G+15.0%§!" #UU change
+ mal_dominate_ivory_coast_and_timbuktu_tt:1 "No §YEuropean§! country has §Y20%§! Trade Power in the Trade Nodes §YIvory Coast§!, §YTimbuktu§! or §YHausaland§!." #UU Change
+ mal_absolute_authority_ct:0 "The §YDecline of Mali§! disaster will end, if it is active." #UU Change
+ junior_yemoja_cult:0 "Heir Cult - Yemoja"
+ junior_roog_cult:0 "Heir Cult - Roog"
+ junior_nyame_cult:0 "Heir Cult - Nyame"
+ junior_cwezi_cult:0 "Heir Cult - Cwezi"
+ junior_central_african_ancestor_cult:0 "Heir Cult - Mlira"
+ junior_mwari_cult:0 "Heir Cult - Mwari"
+ junior_enkai_cult:0 "Heir Cult - Enkai"
+ junior_waaq_cult:0 "Heir Cult - Waaq"
+ junior_zanahary_cult:0 "Heir Cult - Zanahary"
+ junior_christianity_cult:0 "Heir Cult - Christianity"
+ junior_islam_cult:0 "Heir Cult - Islam"
+ junior_buddhism_cult:0 "Heir Cult - Buddhadharma"
+ junior_dharmic_cult:0 "Heir Cult - Sanatana Dharma"
+ junior_south_central_american_cult:0 "Heir Cult - Teotl"
+ junior_norse_cult:0 "Heir Cult - Freyja" 
+ junior_zoroastrian_cult:0 "Heir Cult - Mazdayasna"
+ junior_jewish_cult:0 "Heir Cult - Haymanot"
+ tooltip_yemoja_cult:0 "This cult has the following benefits when selected:\nNaval Maintenance Modifier: §G-15.0%§!\nNaval Force Limit Modifier: §G+20.0%§!" #UU Change
+ tooltip_roog_cult:0 "This cult has the following benefits when selected:\nLand Attrition: §G-15.0%§!\nMovement Speed: §G+10.0%§!" #UU Change
+ tooltip_nyame_cult:0 "This cult has the following benefits when selected:\nDiplomatic Reputation: §G+1.00§!\nDiplomatic Annexation Cost: §G-15.0%§!" #UU Change
+ tooltip_south_central_american_cult:0 "This cult has the following benefits when selected:\nMorale of Armies: §G+7.5%§!" #UU Change
+ tooltip_zoroastrian_cult:1 "This cult has the following benefits when selected:\nMerchants: §G+2§!\nMerchant Trade Power: §G+10.00§!" #UU Change
+ tooltip_jewish_cult:1 "This cult has the following benefits when selected:\nAdvisor Cost: §G-10.0%§!\nInterest Per Annum: §G-0.25§!" #UU Change
+
+ #misc tooltips, updated for UU changes
+ mechanic_gain_monarch_power_from_force_converting_yes:0 "Enforcing Religion in peace deals will grant Monarch Points equal to the development of the converted nation." #UU Rework
+ mechanic_manpower_from_defeating_armies_yes:0 "Winning battles gives us §G20%§! manpower of the enemy troops that fell in battle." #UU Change from +10%
+ unlock_vozove_hradby_reform_tt:1 "Unlock '§YWagenburg Tactics§!' Tier 5 government reform, giving the following effects:\nMorale Damage Received: §G-10.0%§!\n\nThis reform also includes the following government mechanic:\nWinning battles on §Y[Root.GetAdjectiveCap]§! territory grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ mechanic_battles_on_own_territory_bonus_tradition_yes:2 "Winning battles on our territory grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ mechanic_army_tradition_on_stackwipe_yes:0 "Overrunning enemy armies now grants §G+0.33§! bonus Army Tradition." #UU Change from +0.1
+ tupchi_artillery_corps_tt:0 "Grants §G-10.0%§! Artillery Cost if we have an ally or a subject with §YWestern§! or §YEastern§! technology or has its capital in §YEurope§!."  #UU Change from -33%
+ TIM_unlock_razing_gov_reform:0 "Unlock the '§YPlunder Economy§!' Government Reform, at the §YNoble Privileges§! Monarchy Tier giving us §G+50.0%§! Razing Power Gain"  #UU Rework
+ TIM_will_be_necessary_to_form_persia:0 " "
+ AZT_MODIFY_MECHANIC_TLALOC:1 "Make §YTlaloc§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Construction Time: §G-20.0%§!\n   Development Cost in Primary Cultures: §G-7.5%§!"
+ shogun_every_daimyo_sankin_kotai_tt:0 "\nFor §Y10§! years every §YDaimyo§! subject will receive: \nMonthly Autonomy Change: §R+0.15%§! \n "
+ less_than_15_provinces_on_same_continent:0 "Has less than §Y15§! provinces in States."
+ less_than_25_provinces_on_same_continent:0 "Has less than §Y25§! provinces in States."
+ less_than_35_provinces_on_same_continent:0 "Has less than §Y35§! provinces in States."
+ less_than_50_provinces_on_same_continent:0 "Has less than §Y50§! provinces in States."
+ at_least_15_provinces_on_same_continent:0 "Has at least §Y15§! provinces in States."
+ at_least_25_provinces_on_same_continent:0 "Has at least §Y25§! provinces in States."
+ at_least_35_provinces_on_same_continent:0 "Has at least §Y35§! provinces in States."
+ at_least_50_provinces_on_same_continent:0 "Has at least §Y50§! provinces in States."
+ SLACKEN_BELOW_MIN_AP:0 "You need at least §Y10§! Army Professionalism to slacken recruiting standards!"
+ SLACK_TEXT_NODROP:0 "Lose §Y0§! Army Professionalism immediately.\n\nThe event '§YSlackening Recruitment Standards§!' will fire in 12 months, granting us §G2§! years of manpower for §R10§! Army Professionalism.\n\nThis event will recur every 12 months thereafter until invalid."
+
+ #JAPAN
+ jap_gokaido_reform:0 "Expand the Gokaido System"
+ jap_gokaido_reform_desc:0 "The Five Routes have been constructed in Japan, with post stations set up along the route where travelers can rest and buy supplies. We should extend this road network to all of Japan."
+ mechanic_benefits_for_japan_yes:1 "\nThe '§YGokaido Network Extension§!' modifier will be applied to all other owned provinces in the §YJapanese Region,§! giving:\nLocal Goods Produced: §G+20%§!\nLocal Province Trade Power Modifier: §G+20%§!\nLocal Development Cost: §G-5%§!"
+ japanese_divine_empire:0 "Japanese Empire"
+ 
+ #missions 
+ TIM_timurid_empire_title:0 "§MTimurid Empire§!"
+ #decisions
+ TIM_bring_taxation_under_control_title:0 "@TIM Restore the Treasury"
+ TIM_supremacy_of_the_sharia_title:0 "@TIM Supremacy of the Sharia"
+ MUG_commission_the_peacock_throne:0 "@MUG Commission the Peacock Throne"
+ MUG_viceroyalty_of_deccan:0 "@MUG Viceroyalty of Deccan"
+ #Bookmarks
+ UU_BOOKMARK:0 "§GFeatured Nations§!"
+ UU_BOOKMARK_DESC:0 "These nations have received changes in the most recent mod patch.\n§MPatch 1.16§! is a small update with §YSaxony§! no longer on the starting map, with small flavour added for §YMeissen§! as well as some other HRE minors.\n§MPatch 1.15§! includes new starting content for §YAdal§!, a new §YJapan§!/daimyo combined mission tree, some changes to §YEngland§!'s non-colonial missions, and the introduction of §YLanfang§! to the start date."
+ BOOKMARK_COUNTRY_EASY:0 "§GThis country was updated in the most recent mod patch.§!"
+ A1_UU_EUROPE:0 "§YEurope§!"
+ A1_UU_EUROPE_DESC:0 "New formable §YElbian Confederation§! added, formable by §YSaxony§! or §YBohemia§!. Mission trees for most German minors and HRE free cities have been added, and some HRE reforms have been upgraded. §YLubeck§! is now a Free City at the start. §YBurgundy§!'s start is now stronger, and §YLotharingia§! now has stronger national ideas. §YScandinavia§! now has different ideas depending on your starting nation. §YPapal States§! now has a unique government mechanic. §YMilan§! can become a Military Dictatorship with the Prussian Militarization mechanic. §YAndalusia§! can now recruit Janissaries.\n§lSee the Changelog for full details.§!"
+ A2_UU_AFRICA:0 "§YAfrica§!"
+ A2_UU_AFRICA_DESC:0 "New formable §YCarthage§! added, formable by §YTunis§!. Significant new content for formables §YSokoto§! and §YKitara§! added. Mission tree for §YKanem Bornu§! added. Starting content for §YMorocco§! and §YAdal§! have been added. Added many new provinces out of wastelands.\n§lSee the Changelog for full details.§!"
+ A3_UU_ASIA:0 "§YAsia§!"
+ A3_UU_ASIA_DESC:0 "§YTimurids§! region has been split up, with significant content added for all Timurid nations. Mission tree for §YJapan§! has been overhauled completely. §YLanfang§! added to start date. §YPersia§! nerfed significantly. Added many new provinces to the China region. \n§lSee the Changelog for full details.§!"
+ #Relocalizing base game ideas for clarity
+ estates_general:0 "Estates General of France" #France, was just Estates General
+ army_professionalism:0 "Prussian Professionalism"  #Prussia, was just Army Professionalism
+ the_qizilbash:1 "Qizilbash Warriors" #Persia, was The Qizilbash

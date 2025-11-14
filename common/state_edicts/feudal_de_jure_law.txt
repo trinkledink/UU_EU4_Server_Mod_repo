@@ -11,7 +11,6 @@ edict_feudal_de_jure_law = {
 			tooltip = edict_feudal_de_jure_law_tooltip
 			has_country_flag = feudal_de_jure_law
 		}
-								
 	}
 	
 	modifier = { # OBS: Modify AI accordingly if this is changed

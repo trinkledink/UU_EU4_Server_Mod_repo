@@ -3,7 +3,7 @@ edict_religion_enforced = {
 		OR = {
 			current_age = age_of_reformation
 			has_country_flag = religion_enforced_edict
-		}	
+		}
 	}
 	
 	allow = {
@@ -13,8 +13,8 @@ edict_religion_enforced = {
 		}
 	}
 	
-	modifier = {
-		local_religious_conversion_resistance = 1.0
+	modifier = {	#Also now prevents propagate religion
+		local_religious_conversion_resistance = 9.99 # +999%
 	}
 	
 	color = {  42 125 138  }

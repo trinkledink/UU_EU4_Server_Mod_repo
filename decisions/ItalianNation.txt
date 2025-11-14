@@ -4,7 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			can_form_tier_three_trigger = yes
 			NOT = { has_country_flag = formed_italy_flag }
 			OR = {
 				ai = no
@@ -14,9 +14,6 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = ITA }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			culture_group = latin
 			OR = {
 				ai = no
@@ -63,6 +60,16 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = ITA }
+			custom_trigger_tooltip = {
+				tooltip = uu_no_kog_tt
+				NOT = {
+					AND = {
+						exists = PAP
+						PAP = { has_country_flag = is_kingdom_of_god_flag }
+					}
+				}
+			}
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -77,6 +84,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = formed_tier_three_flag
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -104,6 +112,7 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = ITA
+			on_change_tag_effect = yes
 			#this is so that a tier 1 reform is always selected, preventing the user from just never selecting one and enjoying loads of absolutism
 			if = {
 				limit = {
@@ -200,6 +209,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = ITA } #UU
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

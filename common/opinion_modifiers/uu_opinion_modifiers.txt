@@ -7,3 +7,22 @@ ctg_opinion_sack_of_rome = {
 	opinion = -75
 	yearly_decay = 1
 }
+
+opinion_timurid_rival_claimant = {
+	opinion = -200
+	yearly_decay = 1
+}
+
+uu_sent_attache_opinion_mod = {	#cursed
+	opinion = 15
+}
+
+uu_broke_treaty = {
+	opinion = -30
+	yearly_decay = 3
+}
+
+uu_insulted_2 = {
+	opinion = -30
+	yearly_decay = 3
+}

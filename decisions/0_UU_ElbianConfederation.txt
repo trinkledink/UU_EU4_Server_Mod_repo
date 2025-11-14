@@ -1,0 +1,301 @@
+country_decisions = {
+
+	elbian_nation = {
+		major = yes
+		potential = {
+			ai = no
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_elbian_confederation_flag }
+			can_form_tier_three_trigger = yes	#technically redundant
+			OR = {
+				tag = BOH
+				tag = SAX
+			}
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = ELB }	#makes sense to be here
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 266		# Praha
+				province_id = 61		# Dresden
+				province_id = 62		# Leipzig
+				province_id = 52		# Magdeburg
+				province_id = 264		# Wroclaw
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			OR = {
+				religion = protestant
+				religion = anglican
+				religion = reformed
+				religion = hussite
+			}
+			owns_core_province = 266		# Praha
+			owns_core_province = 61			# Dresden
+			owns_core_province = 62			# Leipzig
+			owns_core_province = 52			# Magdeburg
+			owns_core_province = 264		# Wroclaw
+		}
+		effect = {		
+			set_country_flag = formed_tier_three_flag	
+			change_tag = ELB
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			bohemia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			silesia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			south_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			lusatia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			if = {
+				limit = {
+					primary_culture = czech
+					NOT = { accepted_culture = saxon }
+				}
+				266 = {						#Prague
+					move_capital_effect = yes
+				}
+				add_accepted_culture = saxon
+			}
+			else_if = {
+				limit = {
+					primary_culture = saxon
+					NOT = { accepted_culture = czech }
+				}
+				61 = {						#Dresden
+					move_capital_effect = yes
+				}
+				add_accepted_culture =  czech
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_elbian_confederation_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+	
+	elbian_nation_diplomatically = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { exists = ELB }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				AND = {
+					tag = BOH
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							SAX = {	is_subject_of = BOH	}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							SAX = { NOT = { num_of_cities = 10 } } #Keep this number the same as in allow
+						}
+					}
+				}
+				AND = {
+					tag = SAX
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							BOH = {	is_subject_of = SAX	}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							BOH = { NOT = { num_of_cities = 25 } } #Keep this number the same as in allow
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			legitimacy = 100
+			OR = {
+				religion = protestant
+				religion = anglican
+				religion = reformed
+				religion = hussite
+			}
+			OR = {
+				AND = {
+					tag = BOH
+					OR = {
+						SAX = {	junior_union_with = BOH	}
+						SAX = {	is_subject_of = BOH	}
+					}
+					SAX = { NOT = { num_of_cities = 10 } } #Keep this number the same as in potential
+				}
+				AND = {
+					tag = SAX
+					OR = {
+						BOH = {	junior_union_with = SAX	}
+						BOH = {	is_subject_of = SAX	}
+					}
+					BOH = { NOT = { num_of_cities = 25 } } #Keep this number the same as in potential
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = BOH
+					SAX = {
+						ai = yes
+					}
+				}
+				inherit = SAX
+			}
+			if = {
+				limit = {
+					tag = SAX
+					BOH = {
+						ai = yes
+					}
+				}
+				inherit = BOH
+			}
+			if = {
+				limit = {
+					primary_culture = czech
+					NOT = { accepted_culture = saxon }
+				}
+				266 = {
+					move_capital_effect = yes
+				}
+				add_accepted_culture = saxon
+			}
+			if = {
+				limit = {
+					primary_culture = saxon
+					NOT = { accepted_culture = czech }
+				}
+				61 = {
+					move_capital_effect = yes
+				}
+				add_accepted_culture =  czech
+			}
+			change_tag = ELB
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			bohemia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			silesia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			south_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			lusatia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ELB
+			}
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+
+}

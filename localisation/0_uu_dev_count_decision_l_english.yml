@@ -1,0 +1,14 @@
+﻿l_english:
+ dev_sum_clicks_decision_title:0 "Dev + Infrastructure Tracker"
+ dev_sum_clicks_decision_desc:0 "Page 3 displays stats of all nations if the game is SP, and only all player nations if the game is MP. The dev clicks tracker was graciously stolen from our friends at MJL but I think they stole it from Arumba so it cancels out (?)."
+ 
+ dev_sum_clicks_decision_tooltip_1:0 "Development Clicks:\n\n£adm£ Development Gained: §G[This.dev_adm_clicks.GetValue]§! \n£dip£ Development Gained: §G[This.dev_dip_clicks.GetValue]§! \n£mil£ Development Gained: §G[This.dev_mil_clicks.GetValue]§! \nTotal Development Gained: §Y[This.dev_sum_clicks.GetValue]§! \n\nDevelopment Exploited:\n\n ¤   Development Exploited: §R[This.exploit_adm_clicks.GetValue]§! \n£icon_sailors£ Development Exploited: §R[This.exploit_dip_clicks.GetValue]§! \n£icon_manpower£ Development Exploited: §R[This.exploit_mil_clicks.GetValue]§! \n\nInfrastructure Levels: §l[This.infra_clicks.GetValue]§!\n "
+
+ dev_sum_clicks_decision_tooltip_2:0 "Development Clicks:\n\n£adm£ Development Gained: §G[This.dev_adm_clicks_2.GetValue]§! \n£dip£ Development Gained: §G[This.dev_dip_clicks_2.GetValue]§! \n£mil£ Development Gained: §G[This.dev_mil_clicks_2.GetValue]§! \nTotal Development Gained: §Y[This.dev_sum_clicks_2.GetValue]§! \n\nDevelopment Exploited:\n\n ¤   Development Exploited: §R[This.exploit_adm_clicks_2.GetValue]§! \n£icon_sailors£ Development Exploited: §R[This.exploit_dip_clicks_2.GetValue]§! \n£icon_manpower£ Development Exploited: §R[This.exploit_mil_clicks_2.GetValue]§! \n\nInfrastructure Levels: §l[This.infra_clicks_2.GetValue]§!\n "
+
+ dev_sum_clicks_decision_tooltip_3:0 "Development Clicks:\n\n£adm£ Development Gained: §G[REB.dev_adm_clicks.GetValue]§! \n£dip£ Development Gained: §G[REB.dev_dip_clicks.GetValue]§! \n£mil£ Development Gained: §G[REB.dev_mil_clicks.GetValue]§! \nTotal Development Gained: §Y[REB.dev_sum_clicks.GetValue]§! \n\nDevelopment Exploited:\n\n ¤   Development Exploited: §R[REB.exploit_adm_clicks.GetValue]§! \n£icon_sailors£ Development Exploited: §R[REB.exploit_dip_clicks.GetValue]§! \n£icon_manpower£ Development Exploited: §R[REB.exploit_mil_clicks.GetValue]§! \n\nInfrastructure Levels: §l[REB.infra_clicks.GetValue]§!\n "
+
+ dev_sum_clicks_decision_page_1:0 "§OPage (1/3):§! Campaign Stats\n§OClick decision to toggle!§!"
+ dev_sum_clicks_decision_page_2:0 "§OPage (2/3):§! Session Stats\n§OClick decision to toggle!§!"
+ dev_sum_clicks_decision_page_3:0 "§OPage (3/3):§! Lobby Stats\n§OClick decision to toggle!§!"
+ #Note: Make sure all sets of tooltips match each other! -zeb

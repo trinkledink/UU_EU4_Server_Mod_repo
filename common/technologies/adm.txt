@@ -1,9 +1,12 @@
+#UU UPDATED 1.37.0
 monarch_power = ADM
 
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	production_efficiency = 0.2
 	yearly_corruption = -0.05
+	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_adm = 1
 }
 
 # Pre-era techs
@@ -24,6 +27,9 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+	uu_road_1 = yes
+
+	#effect = { } # When a country researches the technology
 }
 
 technology = { #Advanced Tribes
@@ -73,6 +79,7 @@ technology = { #Temples
 	# Temple
 	temple = yes
 	
+	
 }
 
 technology = { #National Ideas
@@ -98,7 +105,7 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
-	ramparts = yes
+	mint = yes #UU
 }
 
 technology = { #Renaissance Thought
@@ -137,8 +144,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
-	
-
+	ramparts = yes #UU 
 }
 
 technology = { #Modern Theocracy
@@ -195,7 +201,9 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
+	administrative_efficiency = 0.05	#UU		
+	allowed_idea_groups	= 4		#UU						
+
 }
 
 technology = { #Scientific Experimentation
@@ -209,7 +217,8 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
+	#allowed_idea_groups	= 4
+	administrative_efficiency = 0.05	#UU	
 }
 
 technology = { #Military Administration
@@ -235,10 +244,10 @@ technology = { #Metallurgy
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	town_hall = yes
+	town_hall = yes	#UU moved from 22
 	mills = yes
 	production_efficiency 	=	0.02
-
+	allowed_idea_groups	= 5	#UU
 
 }
 
@@ -254,7 +263,7 @@ technology = { #University
 	}
 	
 	university = yes	
-	governing_capacity = 250
+	governing_capacity = 125	#UU moved half to 18
 	
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
@@ -271,7 +280,9 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
-	allowed_idea_groups	= 5
+	# allowed_idea_groups	= 5
+	governing_capacity = 125	#moved from 17
+	administrative_efficiency = 0.05	#UU	
 }
 
 technology = { #Cathedral
@@ -287,7 +298,8 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
-	administrative_efficiency = 0.05								 
+		
+	allowed_idea_groups	= 6 #UU				 
 }
 
 technology = { #Absolute Rulership
@@ -303,6 +315,7 @@ technology = { #Absolute Rulership
 	
 	republican_dictatorship = yes
 	governing_capacity = 250
+	administrative_efficiency = 0.05	#UU	
 }
 
 technology = { #Land Clearance
@@ -319,7 +332,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
-	administrative_efficiency = 0.05								 
+	administrative_efficiency = 0.1	#UU							 
 	furnace = yes
 }
 
@@ -335,9 +348,11 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	allowed_idea_groups = 6
+	allowed_idea_groups = 7 #UU
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
+
+	#town_hall = yes #uu moved to 16
 }
 
 technology = { #Measuring the World
@@ -368,7 +383,6 @@ technology = { #Bonds and Tontines
 		manufactories = 0.5
 		enlightenment = 0.15
 	}
-	
 	counting_house = yes  
 	governing_capacity = 250
 }
@@ -388,7 +402,8 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
-		administrative_efficiency = 0.05							 
+	allowed_idea_groups	= 8 #uu
+					 
 }
 
 technology = { #Separation of Powers
@@ -404,7 +419,8 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	7
+	administrative_efficiency = 0.1		#UU	
+	# allowed_idea_groups 	= 	7
 }
 
 technology = { #Modern Bureaucracy
@@ -457,7 +473,8 @@ technology = { #Rights of Man
 		industrialization = 0.5
 	}
 
-	allowed_idea_groups = 8
+	# allowed_idea_groups = 8
+	governing_capacity = 250 #UU moved half from 31
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
@@ -496,7 +513,7 @@ technology = { #Revolutionary Ideals
 	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	governing_capacity = 500
+	governing_capacity = 250	#UU moved half to 29
 }
 
 technology = { #Four Field Rotation

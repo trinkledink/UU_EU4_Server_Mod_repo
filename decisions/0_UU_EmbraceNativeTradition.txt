@@ -1,0 +1,80 @@
+country_decisions = {
+	embrace_native_traditions = {
+		potential = {
+			OR = {
+				tag = CAN
+				tag = MEX 
+				tag = PEU
+			}
+			NOT = { has_country_flag = uu_embraced_native_traditions_flag }
+		}
+		allow  = {
+			OR = {
+				AND = {
+					tag = CAN
+					num_of_owned_provinces_with = {
+						value = 3
+						religion = totemism
+						development = 15
+					} 
+				}
+				AND = {
+					tag = MEX 
+					num_of_owned_provinces_with = {
+						value = 3
+						religion = nahuatl
+						development = 15
+					} 
+				}
+				AND = {
+					tag = PEU
+					num_of_owned_provinces_with = {
+						value = 3
+						religion = inti
+						development = 15
+					} 
+				}
+			}
+			stability = 3
+			prestige = 80
+			government = republic
+			republican_tradition = 85
+			reform_level = 4
+			adm_tech = 15	#takes 10 to form nation
+		}
+		effect = {
+			custom_tooltip = uu_cannot_form_nations_tt
+			add_stability = -2
+			add_prestige = -100
+			if = {
+				limit = { 
+					tag = CAN 
+				}
+				change_religion = totemism
+				add_government_reform = uu_canada_totemist_reform
+				change_technology_group = high_american
+				change_unit_type = high_american
+			} 
+			else_if = {
+				limit = { 
+					tag = MEX 
+				}
+				change_religion = nahuatl 
+				add_government_reform = uu_mexico_nahuatl_reform
+				set_country_flag = unlock_aztec_missions_flag	#UU this is to block the decision. surely MEX will never update their missions
+			}
+			else_if = {
+				limit = { 
+					tag = PEU 
+				}
+				change_religion = inti 
+				add_government_reform = uu_peru_inti_reform
+			}
+			set_country_flag = uu_embraced_native_traditions_flag
+			set_country_flag = formed_tier_five_flag 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

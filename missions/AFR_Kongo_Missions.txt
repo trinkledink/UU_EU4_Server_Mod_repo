@@ -10,7 +10,10 @@ kongo_fetishist_missions_slot = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = KON
+		or = {
+			has_country_flag = kon_picked_fetishism
 		NOT = { has_country_flag = kon_picked_side_with_europeans }	#Default until the Europeans arrive
+		}
 	}
 	has_country_shield = yes
 
@@ -19,6 +22,7 @@ kongo_fetishist_missions_slot = {
 		required_missions = {  }
 		position = 1
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			num_of_unlocked_cults = 4
 			religion = shamanism
 		}
@@ -49,6 +53,7 @@ kongo_fetishist_missions_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = shamanism
 			OR = {
 				AND = {
@@ -91,6 +96,7 @@ kongo_fetishist_missions_slot = {
 		required_missions = { kon_fetishist_alliances }
 		position = 4
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = shamanism
 			OR = {
 				NOT = { current_age = age_of_discovery }
@@ -137,6 +143,7 @@ kongo_fetishist_missions_slot = {
 			is_empty = no
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = shamanism
 			custom_trigger_tooltip = {
 				tooltip = kon_convert_west_africa_bt
@@ -181,6 +188,7 @@ kongo_catholic_missions_slot = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = KON
+		not = { has_country_flag = kon_picked_fetishism }
 		has_country_flag = kon_picked_side_with_europeans
 	}
 	has_country_shield = yes
@@ -194,6 +202,7 @@ kongo_catholic_missions_slot = {
 			owned_by = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = catholic
 			dominant_religion = catholic
 			ruler_religion = catholic
@@ -226,6 +235,7 @@ kongo_catholic_missions_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = catholic
 			calc_true_if = {
 				all_owned_province = {
@@ -266,6 +276,7 @@ kongo_catholic_missions_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = catholic
 			OR = {
 				custom_trigger_tooltip = {
@@ -358,6 +369,7 @@ kongo_catholic_missions_slot = {
 			NOT = { religion = catholic }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = KON }
 			religion = catholic
 			calc_true_if = {
 				all_province = {
@@ -411,12 +423,12 @@ kongo_choose_path_missions_slot = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_institution = feudalism  }
+					NOT = { has_institution = renaissance  }
 				}
 				capital_scope = {
 					add_institution_embracement = {
-						which = feudalism
-						value = 100
+						which = renaissance
+						value = 50
 					}
 				}
 			}
@@ -434,9 +446,12 @@ kongo_choose_path_missions_slot = {
 		required_missions = { kon_annex_vassals }
 		position = 2
 		trigger = {
-			has_institution = feudalism
+			has_institution = renaissance
 			stability = 1
 			legitimacy = 90
+			#has_reached_government_reform_tier = {
+			#	tier_3 = yes
+			#} #paradox deleted this trigger and now im mad
 			reform_level = 3
 			custom_trigger_tooltip = {
 				tooltip = kon_find_europe_ct
@@ -448,7 +463,9 @@ kongo_choose_path_missions_slot = {
 				name = kon_european_influence
 				duration = 9125
 			}
-			change_government_to_monarchy = yes
+			country_event = {
+				id = flavor_kon.16
+			}
 		}
 		ai_weight = {
 			factor = 500	#They became a proper monarchy after becoming Catholic. Though, you could argue that the tribal version is also a monarchy too...
@@ -677,6 +694,7 @@ kongo_conquest_armies_missions_slot = {
 		provinces_to_highlight = {
 			culture = kuba
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			is_city = yes
 		}
 		trigger = {
 			custom_trigger_tooltip = {
@@ -685,6 +703,7 @@ kongo_conquest_armies_missions_slot = {
 					any_province = {
 						culture = kuba
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						is_city = yes
 					}
 				}
 			}
@@ -738,7 +757,7 @@ kongo_conquest_armies_missions_slot = {
 						trade_goods = iron
 					}
 				}
-				custom_tooltip = MONOPOLY_INCOME_IRON_DESC
+				custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
 			}
 			create_colony_mission_reward = {
 				province = 4109
@@ -1347,7 +1366,7 @@ kongo_colonies_centralization_missions_slot = {
 				NOT = { num_of_rebel_armies = 1 }
 				NOT = { num_of_rebel_controlled_provinces = 1 }
 				custom_trigger_tooltip = {
-					tooltip = kon_absolute_rule_ct
+					tooltip = absolutism_dynamic_reward_tt
 					is_absolutism_active = no
 				}
 			}

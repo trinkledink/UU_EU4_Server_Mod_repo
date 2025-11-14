@@ -869,7 +869,7 @@ emp_pap_slot_3 = {
 	emp_pap_pontifical_universities = {
 		icon = pontifical_universities
 		required_missions = { emp_pap_establish_vatican_library }
-		position = 5
+		position = 6
 
 		trigger = {
 			num_of_owned_and_controlled_institutions = 1
@@ -1153,10 +1153,44 @@ emp_pap_slot_4 = {
 		}
 	}
 	
-	emp_pap_new_st_peters_basilica = {
-		icon = new_st_peters_basilica
+	UU_st_peters_basilica = {
+		icon = public_works
 		required_missions = { emp_pap_restore_curia_funding }
 		position = 3
+		
+		trigger = {
+			118 = {
+				has_great_project = {
+					type = stpeters_cathedral
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				if = {
+					limit = { NOT = { has_building = cathedral } }
+					remove_building = temple
+					add_building = cathedral
+				}
+				else = { add_base_tax = 2 }
+			}
+			if = {
+				limit = {
+					NOT = { legitimacy_equivalent = 85 }
+				}
+				add_devotion = 20
+			}
+			else = {
+				add_stability_or_adm_power = yes
+			}
+		}
+	}
+	
+	emp_pap_new_st_peters_basilica = {
+		icon = new_st_peters_basilica
+		required_missions = { UU_st_peters_basilica }
+		position = 4
 		
 		provinces_to_highlight = {
 			province_id = 118
@@ -1202,7 +1236,7 @@ emp_pap_slot_4 = {
 	emp_pap_establish_vatican_library = {
 		icon = found_the_vatican_library
 		required_missions = { } 
-		position = 4
+		position = 5
 		completed_by = 1450.1.1
 		
 		trigger = {
@@ -1220,7 +1254,7 @@ emp_pap_slot_4 = {
 	emp_pap_subiaco_press = {
 		icon = subiaco_press
 		required_missions = { emp_pap_establish_vatican_library }
-		position = 5
+		position = 6
 		completed_by = 1560.1.1
 		
 		trigger = {
@@ -1573,7 +1607,8 @@ emp_pap_slot_5 = {
 		trigger = {
 			OR = {
 				is_religion_enabled = protestant
-				is_defender_of_faith_of_tier = 4
+				is_defender_of_faith = yes
+
 				AND = {
 					hre_religion_locked = yes
 					hre_religion = catholic

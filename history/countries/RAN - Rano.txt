@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_tradekingdom
+primary_culture = hausa
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2281	
+religious_school = maliki_school
+
+1435.1.1 = { #made up
+	monarch = {
+		name = "Kutambi I"
+		dynasty = "Rano"
+		dip = 4
+		adm = 2
+		mil = 2
+	}
+} 

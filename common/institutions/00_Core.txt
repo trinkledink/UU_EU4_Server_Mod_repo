@@ -1,4 +1,4 @@
-#
+#UU UPDATED 1.37.5
 # remember to add graphics for relevant ones when you add to this
 #
 # if a modifier is scaled, its multiplied with development in the province.
@@ -20,8 +20,9 @@ feudalism = {
 		free_leader_pool = 1
 	}
 
-	trade_company_efficiency = 0.2
+	trade_company_efficiency = 0.1	#UU Halved
 
+#effect = { } # When a country embraces it
 
 	history = {
 		is_year = 1000
@@ -64,6 +65,7 @@ feudalism = {
 					culture_group = dravidian
 					culture_group = east_asian
 					culture_group = east_slavic
+					culture_group = slavic
 					culture_group = eastern_aryan
 					culture_group = japanese_g
 					culture_group = korean_g
@@ -94,16 +96,16 @@ feudalism = {
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
-						
-						
-					primary_culture = bedouin_arabic
-					primary_culture = uyghur
+					#government = tribal				#UU allowed for all old world
+					#government = native
+					#primary_culture = bedouin_arabic
+					#primary_culture = uyghur
 					technology_group = andean
 					technology_group = mesoamerican
 					technology_group = north_american
 					technology_group = south_american
-								   
-									   
+					#technology_group = sub_saharan
+					technology_group = aboriginal_tech
 				}
 			}
 			AND = {
@@ -213,6 +215,7 @@ feudalism = {
 				NOT = { continent = north_america }
 				NOT = { continent = south_america }
 				NOT = { continent = new_world }
+				NOT = { region = australia_region }
 				owner = {
 					NOT = { government = tribal }
 					NOT = { government = native }
@@ -277,7 +280,7 @@ renaissance = {
 		build_cost = -0.05
 	}
 
-	trade_company_efficiency = 0.4
+	trade_company_efficiency = 0.2 #UU Halved
 
 
 	historical_start_date = 1450.1.1
@@ -541,7 +544,7 @@ new_world_i = {
 		global_prov_trade_power_modifier = 0.10
 	}
 
-	trade_company_efficiency = 0.6
+	trade_company_efficiency = 0.3 #UU Halved
 
 
 	historical_start_date = 1500.1.1
@@ -633,14 +636,35 @@ new_world_i = {
 		has_port = yes
 		is_island = no
 		is_state = yes
-		OR = {
-			province_has_center_of_trade_of_level = 1
-			development = 12
-			is_capital = yes
+		if = {	##UU added this if statement/condition to increase availability to leading colonizers
+			limit = {
+				owner = { 
+					any_subject_country = {
+						OR = {	
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
+			}
+			OR = {
+				province_has_center_of_trade_of_level = 2
+				development = 8
+				is_capital = yes
+			}
+		}
+		else = {
+			OR = {
+				province_has_center_of_trade_of_level = 2
+				development = 12
+				is_capital = yes
+			}
 		}
 		is_in_capital_area = yes
 		owner = { 
-			has_any_exploration_idea = yes
+			has_any_colonist_idea = yes	#UU change
 			#at least one province colonised or colonising, or have a subject colony
 			OR = {
 				any_owned_province = {
@@ -835,7 +859,7 @@ printing_press = {
 		stability_cost_modifier = -0.05
 	}
 
-	trade_company_efficiency = 0.8
+	trade_company_efficiency = 0.4 #UU Halved
 
 	historical_start_date = 1550.1.1
 	historical_start_province = 1876 #Frankfurt
@@ -931,6 +955,8 @@ printing_press = {
 		OR = {
 			religion = protestant
 			religion = reformed
+			religion = hussite	##UU added
+			religion = anglican ##UU added
 			region = north_german_region
 			region = south_german_region
 		}
@@ -948,6 +974,12 @@ printing_press = {
 
 	
 	embracement_speed = {
+
+		modifier = {	#UU
+			factor = 0.5
+			scale = yes
+			trade_goods = paper
+		}
 	
 		modifier = {
 			factor = 0.6
@@ -1187,7 +1219,7 @@ global_trade = {
 		merchants = 1
 	}
 
-	trade_company_efficiency = 1.0
+	trade_company_efficiency = 0.5 #UU Halved
 
 	historical_start_date = 1600.1.1
 	historical_start_province = 97 #Holland
@@ -1490,7 +1522,7 @@ manufactories = {
 		global_trade_goods_size_modifier = 0.1
 	}
 
-	trade_company_efficiency = 1.25
+	trade_company_efficiency = 0.66 #UU Halved
 
 	historical_start_date = 1650.1.1
 	historical_start_province = 183 #Paris
@@ -1572,9 +1604,20 @@ manufactories = {
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
-		development = 20
 		printing_press = 100
 		global_trade = 100
+		if = {
+			limit = {
+				has_global_flag = bottger_happened
+			}
+			OR = {
+				province_id = 61			#Dresden
+				development = 30
+			}
+		}
+		else = {
+			development = 20
+		}
 		custom_trigger_tooltip = {
 			tooltip = two_neighbor_dev_15_provinces
 			calc_true_if = {
@@ -1997,7 +2040,7 @@ enlightenment = {
 		culture_conversion_cost = -0.25
 	}
 
-	trade_company_efficiency = 1.5
+	trade_company_efficiency = 0.75 #UU Halved
 
 	historical_start_date = 1700.1.1
 	historical_start_province = 236 #London
@@ -2376,7 +2419,7 @@ enlightenment = {
 #######################################
 industrialization = {
 	
-	trade_company_efficiency = 2.0
+	trade_company_efficiency = 1.0 #UU Halved
 
 	bonus = {
 		global_manpower_modifier = 0.25

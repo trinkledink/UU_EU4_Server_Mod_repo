@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_uu_road_1"
+		texturefile = "gfx//interface//buildings//uu_road_1.tga"
+		loadType = "INGAME"
+	}
+}

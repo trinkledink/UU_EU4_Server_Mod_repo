@@ -1,0 +1,27 @@
+##NEW
+#Hainan
+666 = "Kiun-chu" #Kingchow 
+2160 = "Ngai-chu" #Ngaichow
+
+#Canton
+667 = "Kong-chu" #Canton 
+668 = "O-mun" #Macau 
+665 = "Seu-khin" #Shiuhing
+2156 = "Chheu-chu" #Chaochow
+670 = "Kam-chu" #Ganzhou
+2157 = "Fei-chu" #Waichow
+2158 = "Seu-koan" #Shiukwan
+2159 = "Lui-chu" #Leichow
+2161 = "Lien-chu" #Limchow
+2162 = "Ngo-chu" #Ngchow
+2164 = "Namnen" #Namning
+2153 = "Tin-chu" #Tingzhou
+
+#UU
+4953 = "Ha-mun" #Xiamen
+5003 = "Moi-chu" #Meizhou
+5004 = "Nam-theu" #Nantou
+5005 = "Kong-mun" #Jiangmen, Xinhui
+
+4802 = "Khun-tien"  #Pontianak
+4803 = "Siang-ngau" #Sanggau

@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = hausa
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1148	
+religious_school = maliki_school
+
+1435.1.1 = { #made up
+	monarch = {
+		name = "Yakubu I"
+		dynasty = "Gobir"
+		dip = 1
+		adm = 2
+		mil = 5
+	}
+} 

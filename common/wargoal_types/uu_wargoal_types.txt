@@ -1,0 +1,115 @@
+UU_TIM_crush_rebellion = {
+	type = take_capital	#uu changed from take_core
+
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		allowed_provinces = {
+			is_core = ROOT
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_become_vassal
+		}
+		
+		prov_desc = ALL_CORES
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		allowed_provinces = {
+			is_core = FROM
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_become_vassal
+		}
+		
+		prov_desc = ALL_CORES	
+	}
+	
+	war_name = UU_TIM_CRUSH_REBELLION_WARNAME
+}
+
+UU_ETH_ADA_war = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.7
+
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.7
+
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		prov_desc = ALL_CGROUP_PROVS	
+	}
+	
+	war_name = UU_ETH_ADA_WARNAME
+}
+
+UU_JAP_civilwar = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_gold
+			po_annul_treaties
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.1
+		prestige_factor = 0.5
+		peace_cost_factor = 0.2
+		
+		peace_options = {
+			po_become_vassal
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+		}
+	}
+
+	war_name = NORMAL_WAR_NAME
+}

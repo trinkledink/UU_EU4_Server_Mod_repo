@@ -53,4 +53,22 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_advisor_strategist"
+		texturefile = "gfx//interface//advisors//strategist.dds"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_strategist_female"
+		texturefile = "gfx//interface//advisors//strategist_female.dds"
+		noOfFrames = 1
+	
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
 }
